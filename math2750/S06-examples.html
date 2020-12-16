@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>MATH2750 Introduction to Markov Processes</title>
+  <title>Section 6 Examples from actuarial science | MATH2750 Introduction to Markov Processes</title>
   <meta name="description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="MATH2750 Introduction to Markov Processes" />
+  <meta property="og:title" content="Section 6 Examples from actuarial science | MATH2750 Introduction to Markov Processes" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="MATH2750 Introduction to Markov Processes" />
+  <meta name="twitter:title" content="Section 6 Examples from actuarial science | MATH2750 Introduction to Markov Processes" />
   
   <meta name="twitter:description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="S00-about.html"/>
+<link rel="prev" href="S05-markov-chains.html"/>
+<link rel="next" href="P03.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -178,31 +178,117 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">MATH2750 Introduction to Markov Processes</h1>
-<p class="author"><em>Matthew Aldridge</em></p>
-<p class="date"><em>University of Leeds, 2020–2021</em></p>
-</div>
-<div id="home" class="section level1 unnumbered">
-<h1>Schedule</h1>
-<div class="mysched">
-<p><strong>Week 1</strong> (25–29 January)</p>
+<div id="S06-examples" class="section level1">
+<h1><span class="header-section-number">Section 6</span> Examples from actuarial science</h1>
+<div class="mysummary">
 <ul>
-<li><a href="S00-about.html#S00-about">About the module</a></li>
-<li><a href="S01-stochastic-processes.html#S01-stochastic-processes">Section 1: Stochastic processes and the Markov property</a></li>
-<li><a href="#S02-random-walks">Section 2: Random walks</a></li>
-<li><a href="P01.html#P01">Problem Sheet 1</a></li>
+<li>Three Markov chain models for insurance problems</li>
 </ul>
 </div>
+<p>In this lecture we’ll set up three simple models for an insurance company that can be analysed using ideas about Markov chains. The first example has a direct Markov chain model. For the second and third examples, we will have to be clever to find a Markov chain associated to the situation.</p>
+<div id="S06-example1" class="section level2">
+<h2><span class="header-section-number">6.1</span> A simple no-claims discount model</h2>
+<p>A motor insurance company puts policy holders into three categories:</p>
+<ul>
+<li>no discount on premiums (state 1)</li>
+<li>25% discount on premiums (state 2)</li>
+<li>50% discount on premiums (state 3)</li>
+</ul>
+<p>New policy holders start with no discount (state 1). Following a year with no insurance claims, policy holders move up one level of discount. If they start the year in state 3 and make no claim, they remain in state 3. Following a year with at least one claim, they move down one level of discount. If they start the year in state 1 and make at least one claim, they remain in state 1. The insurance company believes that probability that a motorist has a claim free year is <span class="math inline">\(\frac34\)</span>.</p>
+<p>We can model this directly as a Markov chain:</p>
+<ul>
+<li>the state space <span class="math inline">\(\mathcal S = \{1,2,3\}\)</span> is discrete, as is the time (each year);</li>
+<li>the probability of being in a certain state at a future time is completely determined by the present state (the Markov property);</li>
+<li>the one-step transition probabilities are not time dependent (time homogeneous).</li>
+</ul>
+<p>The transition probability and transition diagram of the Markov chain are:
+<span class="math display">\[ \mathsf P = \begin{pmatrix} \frac14 &amp; \frac34 &amp; 0 \\ \frac14 &amp; 0 &amp; \frac34 \\ 0 &amp; \frac14 &amp; \frac34 \end{pmatrix} . \]</span></p>
+<p><img src="math2750_files/figure-html/example1-1.png" width="384" style="display: block; margin: auto;" /></p>
+<div class="example">
+<p><span id="exm:unlabeled-div-12" class="example"><strong>Example 6.1  </strong></span><em>What is the probability of having a 50% reduction to your premium three years from now, given that you currently have no reduction on the premium?</em></p>
+<p>We want to find the three-step transition probability
+<span class="math display">\[
+p_{13}(3) = \mathbb P(X_{3} = 3 \mid X_0=1) .
+\]</span>
+We can find this by summing over all paths <span class="math inline">\(1 \to k_1 \to k_2 \to 3\)</span>. There are two such paths, <span class="math inline">\(1 \to 1 \to 2 \to 3\)</span> and <span class="math inline">\(1 \to 2 \to 3 \to 3\)</span>. Thus
+<span class="math display">\[ p_{13}(3) = p_{11}p_{12}p_{23} + p_{12}p_{23}p_{33} = \frac14 \cdot\frac34 \cdot\frac34 + \frac34 \cdot\frac34 \cdot\frac34 = \frac{36}{64} = \frac{9}{16} . \]</span></p>
+<p>Alternatively, we could directly calculate all the three-step transition probabilities by the matrix method, to get
+<span class="math display">\[ \mathsf P(3) = \mathsf P^3 = \mathsf{PPP} = \frac{1}{64} \begin{pmatrix} 7 &amp; 21 &amp; 36 \\ 7 &amp; 12 &amp; 45 \\ 4 &amp; 15 &amp; 45 \end{pmatrix} .\]</span>
+(You can check this yourself.) The desired <span class="math inline">\(p_{13}(3)\)</span> is the top right entry <span class="math inline">\(36/64 = 9/16\)</span>.</p>
+</div>
+</div>
+<div id="S06-example2" class="section level2">
+<h2><span class="header-section-number">6.2</span> An accident model with memory</h2>
+<p>According to a different model, a motorist’s <span class="math inline">\(n\)</span>th year of driving is either accident free, or has exactly one accident. (The model does not allow for more than one accident in a year.) Let <span class="math inline">\(Y_n\)</span> be a random variable so that,
+<span class="math display">\[
+Y_n=\begin{cases}
+0&amp;\text{ if the motorist has no accident in year $n$,}\\
+1&amp;\text{ if the motorist has one accident in year $n$.}
+\end{cases}
+\]</span>
+This defines a stochastic process <span class="math inline">\((Y_n)\)</span> with finite state space <span class="math inline">\(\mathcal{S}=\{0,1\}\)</span> and discrete time <span class="math inline">\(n = 1,2,3,\dots\)</span>.</p>
+<p>The probability of an accident in year <span class="math inline">\(n+1\)</span> is modelled as a function of the total number of previous accidents over a function of the number of years in the policy; that is,
+<span class="math display">\[
+\mathbb P(Y_{n+1}= 1 \mid Y_n=y_{n},\dots ,Y_2=y_{2},Y_1=y_{1} )=\frac{f(y_1+y_2+\cdots +y_n)}{g(n)},
+\]</span>
+and <span class="math inline">\(Y_{n+1} = 0\)</span> otherwise,
+where <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are non-negative increasing functions with <span class="math inline">\(0\leq f(m)\leq g(m)\)</span> for all <span class="math inline">\(m\)</span>.</p>
+<p>Unfortunately <span class="math inline">\((Y_n)\)</span> is <em>not</em> a Markov chain – it’s clear that <span class="math inline">\(Y_{n+1}\)</span> depends not only on <span class="math inline">\(Y_n\)</span>, the number accidents this year, but the entire history <span class="math inline">\(Y_1, Y_2, \dots, Y_n\)</span>.</p>
+<p>However, we have a cunning work-around. Define <span class="math inline">\(X_n=\sum_{i=1}^n Y_i\)</span> to be the total number of accidents up to year <span class="math inline">\(n\)</span>. Then <span class="math inline">\((X_n)\)</span> <em>is</em> a Markov chain. In fact, we have
+<span class="math display">\[\begin{align*}
+    \mathbb P(X_{n+1}={}&amp;{}x_{n}+1\mid X_n=x_n, \dots, X_2=x_2, X_1=x_1)\\
+    &amp;=\mathbb P(Y_{n+1}=1\mid Y_n=x_n - x_{n-1}, \dots Y_2=x_2-x_1, Y_1=x_1)\\
+    &amp;=\frac{f\big((x_n-x_{n-1}) +\cdots +(x_2-x_1) + x_1\big)}{g(n)}\\
+    &amp;=\frac{f(x_n)}{g(n)},
+\end{align*}\]</span>
+and <span class="math inline">\(X_{n+1} = x_n\)</span> otherwise. This clearly depends only on <span class="math inline">\(x_n\)</span>. Thus we can use Markov chain techniques on <span class="math inline">\((X_n)\)</span> to lean about the non-Markov process <span class="math inline">\((Y_n)\)</span></p>
+<p>Let’s think about the conditions we placed on this model. First, the transition probabilities should lie in the range <span class="math inline">\([0,1]\)</span>. Since <span class="math inline">\(\sum_{i=1}^n y_i\leq n\)</span>, this is where we use <span class="math inline">\(0\leq f(m)\leq g(m)\)</span>. Second, the condition that <span class="math inline">\(f\)</span> is increasing means that between drivers who have been driving the same number of years, we think the more accident-prone in the past is more likely to have an accident in the future. Third, the condition that <span class="math inline">\(g\)</span> is increasing means that between drivers who have had the same number of accidents, we think the one who has spread those accidents over a longer period of time is less likely to have accidents in the future.</p>
+</div>
+<div id="S06-example3" class="section level2">
+<h2><span class="header-section-number">6.3</span> A no-claims discount model with memory</h2>
+<p>Sometimes, we are presented with a stochastic process which is not a Markov chain, but by altering the state space <span class="math inline">\(\mathcal{S}\)</span> we can sometimes end up with a process which is a Markov chain. As such, it is important to think carefully about choice of state space. To see this we will return to the no-claims discount example.</p>
+<p>Suppose now we have an model with four levels of discount:</p>
+<ul>
+<li>no discount (state 1)</li>
+<li>20% discount (state 2)</li>
+<li>40% discount (state 3)</li>
+<li>60% discount (state 4)</li>
+</ul>
+<p>If a year is accident free, then the discount increases one level, to a maximum of 60%. If the year has an accident, then the discount decreases, by one level if the year previous to that was accident free, but by two levels if the previous year had an accident also, to a minimum of no discount.
+As before, the insurance company believes that probability that a motorist has a claim-free year is <span class="math inline">\(\frac34 = 0.75\)</span>.</p>
+<p>We might consider the most natural example of a state space, where the states are discount levels; say, <span class="math inline">\(\mathcal{S}=\{1,2,3,4\}\)</span>. But this is not a Markov chain, since if a policy holder has an accident, we may need to know about the past in order to determine probabilities for future states, which violates the Markov property. In particular, if a motorist is in state 3 (40% discount) and has an accident, they will either move down to level 2 (if they had not crashed the previous year, so had previously been in state 2) or to level 1 (if they had crashed the previous year, so had previously been in state 4), depending on their previous level. You can check this is the only violation of the Markov property.</p>
+<p>However, we can be clever again, this time in the choice of our state space. Instead, we can split the 40% level into two different states: state “3a” if there was an accident the previous year and state “3b” if there was no accident the previous year. Our states are now:</p>
+<ul>
+<li>no discount (state 1)</li>
+<li>20% discount (state 2)</li>
+<li>40% discount, no claim in previous year (state 3a)</li>
+<li>40% discount, claim in previous year (state 3b)</li>
+<li>60% discount (state 4)</li>
+</ul>
+<p>Now this <em>is</em> a Markov chain. Under the assumption of 25% of drivers having an accident each year, the transition matrix is
+<span class="math display">\[
+\mathsf P=\begin{pmatrix}
+0.25 &amp; 0.75 &amp; 0 &amp; 0 &amp; 0\\
+0.25 &amp; 0 &amp; 0.75 &amp; 0 &amp; 0\\
+0 &amp; 0.25 &amp; 0 &amp; 0 &amp; 0.75\\
+0.25 &amp; 0 &amp; 0 &amp; 0 &amp; 0.75\\
+0 &amp; 0 &amp; 0 &amp; 0.25 &amp; 0.75\end{pmatrix}.
+\]</span>
+The transition diagram is shown below. (Recall that we don’t draw arrows with probability 0.)</p>
+<p><img src="math2750_files/figure-html/example3-1.png" width="480" style="display: block; margin: auto;" /></p>
+<div class="mysummary">
+<p><strong>In the next section</strong>, we look at how to study large Markov chains by splitting them into smaller pieces called “classes”.</p>
+</div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="S00-about.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="S05-markov-chains.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="P03.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

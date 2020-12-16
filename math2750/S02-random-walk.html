@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>MATH2750 Introduction to Markov Processes</title>
+  <title>Section 2 Random walk | MATH2750 Introduction to Markov Processes</title>
   <meta name="description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="MATH2750 Introduction to Markov Processes" />
+  <meta property="og:title" content="Section 2 Random walk | MATH2750 Introduction to Markov Processes" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="MATH2750 Introduction to Markov Processes" />
+  <meta name="twitter:title" content="Section 2 Random walk | MATH2750 Introduction to Markov Processes" />
   
   <meta name="twitter:description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="S00-about.html"/>
+<link rel="prev" href="S01-stochastic-processes.html"/>
+<link rel="next" href="P01.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -178,31 +178,103 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">MATH2750 Introduction to Markov Processes</h1>
-<p class="author"><em>Matthew Aldridge</em></p>
-<p class="date"><em>University of Leeds, 2020–2021</em></p>
-</div>
-<div id="home" class="section level1 unnumbered">
-<h1>Schedule</h1>
-<div class="mysched">
-<p><strong>Week 1</strong> (25–29 January)</p>
+<div id="S02-random-walk" class="section level1">
+<h1><span class="header-section-number">Section 2</span> Random walk</h1>
+
+<div class="mysummary">
 <ul>
-<li><a href="S00-about.html#S00-about">About the module</a></li>
-<li><a href="S01-stochastic-processes.html#S01-stochastic-processes">Section 1: Stochastic processes and the Markov property</a></li>
-<li><a href="#S02-random-walks">Section 2: Random walks</a></li>
-<li><a href="P01.html#P01">Problem Sheet 1</a></li>
+<li>Definition of the simple random walk and the exact binomial distribution</li>
+<li>Expectation and variance of general random walks</li>
 </ul>
 </div>
+<div id="S02-1-simple-random-walk" class="section level2">
+<h2><span class="header-section-number">2.1</span> Simple random walk</h2>
+<p>Consider the following <strong>simple random walk</strong> on the integers <span class="math inline">\(\mathbb Z\)</span>: We start at <span class="math inline">\(0\)</span>, then at each time step, we go up by one with probability <span class="math inline">\(p\)</span> and down by one with probability <span class="math inline">\(q = 1-p\)</span>. When <span class="math inline">\(p = q = \frac12\)</span>, we’re equally as likely to go up as down, and we call this the <strong>simple symmetric random walk</strong>.</p>
+<p>The simple random walk is a simple but very useful model for lots of processes, like stock prices, sizes of populations, or positions of gas particles. (In many modern models, however, these have been replaced by more complicated continuous time and space models.) The simple random walk is sometimes called the “drunkard’s walk”, suggesting it could model a drunk person trying to stagger home.</p>
+<div class="figure"><span id="fig:rw-pics"></span>
+<img src="math2750_files/figure-html/rw-pics-1.png" alt="Two simulations of random walks." width="50%" /><img src="math2750_files/figure-html/rw-pics-2.png" alt="Two simulations of random walks." width="50%" />
+<p class="caption">
+Figure 2.1: Two simulations of random walks.
+</p>
+</div>
+<p>We can write this as a stochastic process <span class="math inline">\((X_n)\)</span> with discrete time <span class="math inline">\(n = \{0,1,2,\dots\} = \mathbb Z_+\)</span> and discrete state space <span class="math inline">\(\mathcal S = \mathbb Z\)</span>, where <span class="math inline">\(X_0 = 0\)</span> and, for <span class="math inline">\(n \geq 0\)</span>, we have
+<span class="math display">\[ X_{n+1} = \begin{cases} X_n + 1 &amp; \text{with probability $p$,} \\
+                             X_n - 1 &amp; \text{with probability $q$.} \end{cases} \]</span></p>
+<p>It’s clear from this definition that <span class="math inline">\(X_{n+1}\)</span> (the future) depends on <span class="math inline">\(X_n\)</span> (the present), but, given <span class="math inline">\(X_n\)</span>, does not depend on <span class="math inline">\(X_{n-1}, \dots, X_1, X_0\)</span> (the past). Thus the Markov property holds, and the simple random walk is a <strong>discrete time Markov process</strong> or <strong>Markov chain</strong>.</p>
+<div class="example">
+<p><span id="exm:unlabeled-div-2" class="example"><strong>Example 2.1  </strong></span><em>What is the probability that after two steps a simple random walk has reached <span class="math inline">\(X_2 = 2\)</span>?</em></p>
+<p>To achieve this, the walk must go upwards in both time steps, so <span class="math inline">\(\mathbb P(X_2 = 2) = pp = p^2\)</span>.</p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-3" class="example"><strong>Example 2.2  </strong></span><em>What is the probability that after three steps a simple random walk has reached <span class="math inline">\(X_3 = -1\)</span>?</em></p>
+<p>There are three ways to reach <span class="math inline">\(-1\)</span> after three steps: up–down–down, down–up–down, or down–down–up. So
+<span class="math display">\[ \mathbb P(X_3 = -1) = pqq+qpq+qqp = 3pq^2 . \]</span></p>
+</div>
+</div>
+<div id="S02-2-random-walks" class="section level2">
+<h2><span class="header-section-number">2.2</span> General random walks</h2>
+<p>An alternative way to write the simple random walk is to put
+<span class="math display" id="eq:rw">\[\begin{equation}
+    X_n = X_0 + \sum_{i=1}^n Z_i ,  \tag{2.1}
+  \end{equation}\]</span>
+where the starting point is <span class="math inline">\(X_0 = 0\)</span> and the <strong>increments</strong> <span class="math inline">\(Z_1, Z_2, \dots\)</span> are independent and identically distributed (IID) random variables with distribution given by <span class="math inline">\(\mathbb P(Z_i = 1) = p\)</span> and <span class="math inline">\(\mathbb P(Z_i = -1) = q\)</span>. You can check that <a href="S02-random-walk.html#eq:rw">(2.1)</a> means that <span class="math inline">\(X_{n+1} = X_n + Z_{n+1}\)</span>, and that this property defines the simple random walk.</p>
+<p>Any stochastic process with the form <a href="S02-random-walk.html#eq:rw">(2.1)</a> for some <span class="math inline">\(X_0\)</span> and some distribution for the IID <span class="math inline">\(Z_i\)</span>s is called a <strong>random walk</strong> (without the word “simple”).</p>
+<p>Random walks often have state space <span class="math inline">\(\mathcal S = \mathbb Z\)</span>, like the simple random walk, but they could be defined on other state spaces. We could look at higher dimensional simple random walks: in <span class="math inline">\(\mathbb Z^2\)</span>, for example, we could step up, down, left or right each with probability <span class="math inline">\(\frac14\)</span>. We could even have a continuous state space like <span class="math inline">\(\mathbb R\)</span>, if, for example, the <span class="math inline">\(Z_i\)</span>s had a normal distribution.</p>
+<p>We can use this structure to calculate the expectation or variance of any random walk (including the simple random walk).</p>
+<p>Let’s start with the expectation. For a random walk <span class="math inline">\((X_n)\)</span> we have
+<span class="math display">\[ \mathbb E X_n = \mathbb E \left(X_0 + \sum_{i=1}^n Z_i\right) = \mathbb E X_0 + \sum_{i=1}^n \mathbb E Z_i = \mathbb EX_0 + n \mathbb E Z_1 , \]</span>
+where we’ve used the linearity of expectation, and that the <span class="math inline">\(Z_i\)</span>s are identically distributed.</p>
+<p>In the case of the simple random walk, we have <span class="math inline">\(\mathbb E X_0 = 0\)</span>, since we start from <span class="math inline">\(0\)</span> with certainty, and
+<span class="math display">\[ \mathbb E Z_1 = \sum_{z \in \mathbb Z} z \mathbb P(Z_1 = z) = 1\times p + (-1)\times q = p-q .\]</span>
+Hence, for the simple random walk, <span class="math inline">\(\mathbb EX_n = n(p-q)\)</span>.</p>
+<p>If <span class="math inline">\(p &gt; \frac12\)</span>, then <span class="math inline">\(p &gt; q\)</span>, so <span class="math inline">\(\mathbb E X_n\)</span> grows ever bigger over time, while if <span class="math inline">\(p &lt; \frac12\)</span>, then <span class="math inline">\(\mathbb E X_n\)</span> grows ever smaller (that is, negative with larger absolute value) over time. If <span class="math inline">\(p = \frac12 = q\)</span>, which is the case of the simple symmetric random walk, then then the expectation <span class="math inline">\(\mathbb E X_n = 0\)</span> is zero for all time.</p>
+<p>Now the variance of a random walk. We have
+<span class="math display">\[ \mathop{\mathrm{Var}}(X_n) = \mathop{\mathrm{Var}}\left(X_0 + \sum_{i=1}^n Z_i\right) = \mathop{\mathrm{Var}}X_0 + \sum_{i=1}^n \mathop{\mathrm{Var}}Z_i = \mathop{\mathrm{Var}}X_0 + n \mathop{\mathrm{Var}}Z_1 , \]</span>
+where it was crucial that <span class="math inline">\(X_0\)</span> and all the <span class="math inline">\(Z_i\)</span>s were independent (so we had no covariance terms).</p>
+<p>For the simple random walk we have <span class="math inline">\(\mathop{\mathrm{Var}}X_0 = 0\)</span>, since we always start from <span class="math inline">\(0\)</span> with certainty. To calculate the variance of the increments, we write
+<span class="math display">\[\begin{align*}
+  \mathop{\mathrm{Var}}(Z_1) &amp;= \mathbb E (Z_1 - \mathbb EZ_1)^2 \\
+            &amp;= p\big(1 - (p-q)\big)^2 + q \big(-1 - (p-q)\big)^2\\
+            &amp;= p(2q)^2 + q(-2p)^2\\
+            &amp;= 4pq^2 + 4p^2q \\
+            &amp;= 4pq(p+q) \\
+            &amp;= 4pq .
+  \end{align*}\]</span>
+Here we’ve used that <span class="math inline">\(1-p = q\)</span>, <span class="math inline">\(1-q=p\)</span>, and <span class="math inline">\(p+q = 1\)</span> – you should take a few moments to check you’ve followed the algebra here. Hence the variance of the simple random walk is <span class="math inline">\(4pqn\)</span>. We see that (unless <span class="math inline">\(p\)</span> is <span class="math inline">\(0\)</span> or <span class="math inline">\(1\)</span>) the variance grows over time, so it becomes harder and harder to predict where the random walk will be.</p>
+<p>The variance of the simple symmetric random walk is <span class="math inline">\(4 \frac12 \frac12 n = n\)</span>.</p>
+<p>For large <span class="math inline">\(n\)</span>, we can use a normal approximation for a random walk. Suppose the increments process <span class="math inline">\((Z_n)\)</span> has mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span>, and that the walk starts from <span class="math inline">\(X_0 = 0\)</span>. Then we have <span class="math inline">\(\mathbb E X_n = \mu n\)</span> and <span class="math inline">\(\mathop{\mathrm{Var}}(X_n) = \sigma^2 n\)</span>, so for large <span class="math inline">\(n\)</span> we can use the normal approximation <span class="math inline">\(X_n \approx \mathrm{N}(\mu n, \sigma^2 n)\)</span>. (Remember, of course, that the <span class="math inline">\(X_n\)</span> are not independent.) To be more formal, the central limit theorem tells us that, as <span class="math inline">\(n \to \infty\)</span>, we have
+<span class="math display">\[ \frac{X_n - n\mu}{\sigma \sqrt{n}} \to \mathrm{N}(0,1) . \]</span></p>
+</div>
+<div id="S02-exact-distribution" class="section level2">
+<h2><span class="header-section-number">2.3</span> Exact distribution of the simple random walk</h2>
+<p>In the case of the simple random walk, we can in fact give the exact distribution by writing down an exact formula for <span class="math inline">\(\mathbb P(X_n = i)\)</span> for any time <span class="math inline">\(n\)</span> and any state <span class="math inline">\(i\)</span>.</p>
+<p>Recall that, at each of the first <span class="math inline">\(n\)</span> times, we independently take an upward step with probability <span class="math inline">\(p\)</span>, and otherwise take a downward step. So if we let <span class="math inline">\(Y_n\)</span> be the number of upward steps over the first <span class="math inline">\(n\)</span> time periods, we see that <span class="math inline">\(Y_n\)</span> has a binomial distribution <span class="math inline">\(Y_n \sim \text{Bin}(n,p)\)</span>.</p>
+<p>Recall that the binomial distribution has probability
+<span class="math display">\[  \mathbb P(Y_n = k)  = \binom nk p^k (1-p)^{n-k} = \binom nk p^k q^{n-k} , \]</span>
+for <span class="math inline">\(k = 0,1,\dots, n\)</span>, where <span class="math inline">\(\binom{n}{k}\)</span> is the binomial coefficient “<span class="math inline">\(n\)</span> choose <span class="math inline">\(k\)</span>”.</p>
+<p>If <span class="math inline">\(Y_n = k\)</span>, that means we’ve taken <span class="math inline">\(k\)</span> upward steps and <span class="math inline">\(n-k\)</span> downward steps, leaving us at position <span class="math inline">\(k - (n-k) = 2k - n\)</span>. Thus we have that
+<span class="math display" id="eq:bin">\[\begin{equation}
+  \mathbb P(X_n = 2k - n) = \mathbb P(Y_n = k) = \binom nk p^k q^{n-k} .  \tag{2.2}
+  \end{equation}\]</span></p>
+<p>Note that after an odd number of time steps <span class="math inline">\(n\)</span> we’re always at an odd-numbered state, since <span class="math inline">\(2k - \text{odd} = \text{odd}\)</span>, while after an even number of time steps <span class="math inline">\(n\)</span> we’re always at an even-numbered state, since <span class="math inline">\(2k - \text{even} = \text{even}\)</span>.</p>
+<p>Writing <span class="math inline">\(i = 2k - n\)</span> gives <span class="math inline">\(k = (n+i)/2\)</span> and <span class="math inline">\(n-k = (n-i)/2\)</span>. So we can rearrange <a href="S02-random-walk.html#eq:bin">(2.2)</a> to see that the distribution for the simple random walk is
+<span class="math display">\[ \mathbb P(X_n = i) =  \binom{n}{(n+i)/2} p^{(n+i)/2} q^{(n-i)/2} , \]</span>
+when <span class="math inline">\(n\)</span> and <span class="math inline">\(i\)</span> have the same parity with <span class="math inline">\(-n \leq i \leq n\)</span>, and is <span class="math inline">\(0\)</span> otherwise.</p>
+<p>In the special case of the simple symmetric random walk, we have
+<span class="math display">\[ \mathbb P(X_n = i) = \binom{n}{(n+i)/2} \left(\frac12\right)^{(n+i)/2} \left(\frac12\right)^{(n-i)/2} = \binom{n}{(n+i)/2} 2^{-n} . \]</span></p>
+<div class="mysummary">
+<p><strong>In the next section</strong>, we look at a gambling problem based on the simple random walk.</p>
+</div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="S00-about.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="S01-stochastic-processes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="P01.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

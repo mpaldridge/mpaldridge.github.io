@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>MATH2750 Introduction to Markov Processes</title>
+  <title>Section 12 Revision of Part 1: Discrete time Markov chains | MATH2750 Introduction to Markov Processes</title>
   <meta name="description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="MATH2750 Introduction to Markov Processes" />
+  <meta property="og:title" content="Section 12 Revision of Part 1: Discrete time Markov chains | MATH2750 Introduction to Markov Processes" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="MATH2750 Introduction to Markov Processes" />
+  <meta name="twitter:title" content="Section 12 Revision of Part 1: Discrete time Markov chains | MATH2750 Introduction to Markov Processes" />
   
   <meta name="twitter:description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="S00-about.html"/>
+<link rel="prev" href="S11-long-term-chains.html"/>
+<link rel="next" href="P06.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -178,31 +178,60 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">MATH2750 Introduction to Markov Processes</h1>
-<p class="author"><em>Matthew Aldridge</em></p>
-<p class="date"><em>University of Leeds, 2020–2021</em></p>
-</div>
-<div id="home" class="section level1 unnumbered">
-<h1>Schedule</h1>
-<div class="mysched">
-<p><strong>Week 1</strong> (25–29 January)</p>
+<div id="S11-revision-i" class="section level1">
+<h1><span class="header-section-number">Section 12</span> Revision of Part 1: Discrete time Markov chains</h1>
+<div class="mysummary">
 <ul>
-<li><a href="S00-about.html#S00-about">About the module</a></li>
-<li><a href="S01-stochastic-processes.html#S01-stochastic-processes">Section 1: Stochastic processes and the Markov property</a></li>
-<li><a href="#S02-random-walks">Section 2: Random walks</a></li>
-<li><a href="P01.html#P01">Problem Sheet 1</a></li>
+<li>No new material in this section, but a half-week break to catch up and revise what we’ve learned</li>
 </ul>
 </div>
+<div id="S12-revision" class="section level2">
+<h2><span class="header-section-number">12.1</span> Things to do</h2>
+<p>We’ve now finished the material of the Part 1 of the module, on discrete time Markov chains. So this is a good time to take stock, revise what we’ve learned, and make sure we’re completely up to date before starting Part 2 of the module on continuous time processes.</p>
+<p>Some things you may want to do in lieu of reading a section of notes:</p>
+<ul>
+<li>Make sure you’ve completed <strong>Problem Sheets 1 to 6</strong>, and go back to any questions that stumped you before.</li>
+<li>Start working on <strong><a href="#A2">Assessment 2</a></strong> which is due on ?????? ??? (Week 8).</li>
+<li>Start working on <strong><a href="#computer">Computer Practical 2</a></strong> (which doubles as Assessment 3). There are optional computer drop-in sessions in Week 7, and the work is due on ????? ???? (Week 9).</li>
+<li>Re-read any sections of notes you struggled with earlier.</li>
+<li>Take the opportunity to look at the optional non-examinable subsections if you opted out the first time around. (<a href="S09-recurrence-transience.html#S09-strong-markov">Section 9</a>, <a href="S10-stationary-distributions.html#S10-proof">Section 10</a>, <a href="S11-long-term-chains.html#S11-proofs">Section 11</a>)</li>
+<li><a href="mailto:m.aldridge@leeds.ac.uk">Let me know</a> if there’s anything from this part of the course you’d like me to go through in next week’s lecture.</li>
+</ul>
+</div>
+<div id="S12-summary-i" class="section level2">
+<h2><span class="header-section-number">12.2</span> Summary of Part 1</h2>
+<p>The following list is not exhaustive, but if you can do most of the things on the list, you’re well placed for the exam.</p>
+<ul>
+<li><p>Define the simple random walk and other random walks.</p></li>
+<li><p>Perform elementary calculations for the simple random walk, including by referring to the exact binomial distribution.</p></li>
+<li><p>Calculate the expectation and variance of general random walks.</p></li>
+<li><p>Define the gambler’s ruin Markov chain.</p></li>
+<li><p>Find the ruin probability and expected duration for the gambler’s ruin by (i) setting up equations by conditioning on the first step and (ii) solving the resulting linear difference equation.</p></li>
+<li><p>Draw a transition diagram of a Markov chain given the transition matrix</p></li>
+<li><p>Calculate <span class="math inline">\(n\)</span>-step transitions probabilities by (a) summing the probabilities over all relevant paths or (b) calculating the matrix power</p></li>
+<li><p>Find the communicating classes in a Markov chain.</p></li>
+<li><p>Calculate the period of communicating class,</p></li>
+<li><p>Calculate hitting probabilities and expected hitting times by (i) setting up equations by conditioning on the first step and (ii) solving the resulting simultaneous equations</p></li>
+<li><p>Define positive recurrence, null recurrence and transience, and explain their properties</p></li>
+<li><p>Find the positive recurrence, null recurrence or transience of communicating classes</p></li>
+<li><p>Find the stationary distribution of Markov chain</p></li>
+<li><p>Give conditions for a stationary distribution to exist and be unique</p></li>
+<li><p>Give conditions for convergence to an equilibrium distribution</p></li>
+<li><p>Calculate long-term proportions of time using the ergodic theorem</p></li>
+</ul>
+<div class="mysummary">
+<p><strong>In the next section</strong>, we begin our study of continuous time Markov processes by looking at the most important example: the Poisson process.</p>
+</div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="S00-about.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="S11-long-term-chains.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="P06.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
