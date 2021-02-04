@@ -201,7 +201,60 @@
             <section class="normal" id="section-">
 <div id="A1" class="section level1 unnumbered">
 <h1>Assessment 1</h1>
-<p>Assessment 1</p>
+<div class="mysummary">
+<p>This assessment counts as 4% of your final module grade. You should attempt both questions. You must show your working, and there are marks for the quality of your mathematical writing.</p>
+<p>The deadline for submission is <strong>Thursday 11 February at 2pm</strong>. Submission will be to Gradescope via Minerva, from Monday 8 February. It would be helpful to start your solution to Question 2 on a new page. If you hand-write your solutions and scan them using your phone, please convert to PDF using a scanning app (I like Microsoft Office Lens or Adobe Scan) rather than submit images.</p>
+<p>Late submissions up to Wednesday 17 February at 2pm will still be marked, but the total mark will be reduced by 10% per day or part-day for which the work is late. Submissions are not permitted after Wednesday 17 February.</p>
+</div>
+<div class="myq">
+<p><strong>1.</strong> Let <span class="math inline">\((X_n)\)</span> be a simple random walk that starts from <span class="math inline">\(X_0 = 0\)</span> and on each step goes up one with probability <span class="math inline">\(p\)</span> and down one with probability <span class="math inline">\(q = 1-p\)</span>.</p>
+<p>Calculate:</p>
+<div class="subq">
+<p><strong>(a)</strong> <span class="math inline">\(\mathbb P(X_6 = 0)\)</span>, <span style="float:right">[1 mark]</span></p>
+</div>
+<div class="subq">
+<p><strong>(b)</strong> <span class="math inline">\(\mathbb EX_6\)</span>, <span style="float:right">[1]</span></p>
+</div>
+<div class="subq">
+<p><strong>(c)</strong> <span class="math inline">\(\text{Var}(X_6)\)</span>, <span style="float:right">[1]</span></p>
+</div>
+<div class="subq">
+<p><strong>(d)</strong> <span class="math inline">\(\mathbb E(X_{10} \mid X_4 = 4)\)</span>, <span style="float:right">[1]</span></p>
+</div>
+<div class="subq">
+<p><strong>(e)</strong> <span class="math inline">\(\mathbb P(X_{10} = 0 \mid X_6 = 2)\)</span>, <span style="float:right">[1]</span></p>
+</div>
+<div class="subq">
+<p><strong>(f)</strong> <span class="math inline">\(\mathbb P(X_4 = 2 \mid X_{10} = 6)\)</span>. <span style="float:right">[1]</span></p>
+</div>
+<p>Consider the case <span class="math inline">\(p = 0.6\)</span>, so <span class="math inline">\(q = 0.4\)</span>.</p>
+<div class="subq">
+<p><strong>(g)</strong> What are <span class="math inline">\(\mathbb E X_{100}\)</span> and <span class="math inline">\(\text{Var}(X_{100})\)</span>? <span style="float:right">[1]</span></p>
+</div>
+<div class="subq">
+<p><strong>(h)</strong> Using a normal approximation, estimate <span class="math inline">\(\mathbb P(16 \leq X_{100} \leq 26)\)</span>. You should use an appropriate “continuity correction”, and explain why you chose it. (Bear in mind the possible values <span class="math inline">\(X_{100}\)</span> can take.) <span style="float:right">[3]</span></p>
+</div>
+</div>
+<div class="myq">
+<p><strong>2.</strong> Consider the gambler’s ruin with draws: Alice starts with £<span class="math inline">\(a\)</span> and Bob with £<span class="math inline">\((m-a)\)</span>, and at each time step Alice wins £1 off Bob with probability <span class="math inline">\(p\)</span>, loses £1 to Bob with probability <span class="math inline">\(q\)</span>, and no money is exchanged with probability <span class="math inline">\(s\)</span>, where <span class="math inline">\(p+q+s =1\)</span>. We consider the case where Bob and Alice are equally matched, so <span class="math inline">\(p = q\)</span> and <span class="math inline">\(s = 1-2p\)</span>. (We assume <span class="math inline">\(0 &lt; p &lt; 1/2\)</span>.)</p>
+<p>Let <span class="math inline">\(r_i\)</span> be Alice’s ruin probability from the point she has £<span class="math inline">\(i\)</span>.</p>
+<div class="subq">
+<p><strong>(a)</strong> By conditioning on the first step, explain why <span class="math inline">\(pr_{i+1} - (1-s)r_i + pr_{i-1} = 0\)</span>, and give appropriate boundary conditions. <span style="float:right">[2]</span></p>
+</div>
+<div class="subq">
+<p><strong>(b)</strong> Solve this linear difference equation to find an expression for <span class="math inline">\(r_i\)</span>. <span style="float:right">[2]</span></p>
+</div>
+<p>Let <span class="math inline">\(d_i\)</span> be the expected duration of the game from the point Alice has £<span class="math inline">\(i\)</span>.</p>
+<div class="subq">
+<p><strong>(c)</strong> Explain why <span class="math inline">\(pd_{i+1} - (1-s)d_i + pd_{i-1} = -1\)</span>, and give appropriate boundary conditions. <span style="float:right">[2]</span></p>
+</div>
+<div class="subq">
+<p><strong>(d)</strong> Solve this linear difference equation to find an expression for <span class="math inline">\(d_i\)</span>. <span style="float:right">[2]</span></p>
+</div>
+<div class="subq">
+<p><strong>(e)</strong> Compare your answer to parts (b) and (d) with those for the standard gambler’s ruin problem with <span class="math inline">\(p = 1/2\)</span>, and give reasons for the similarities or differences. <span style="float:right">[2]</span></p>
+</div>
+</div>
 
 </div>
             </section>

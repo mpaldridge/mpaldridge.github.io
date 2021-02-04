@@ -222,11 +222,13 @@ $(document).ready(function() {
 });
 </script>
 -->
+<!--
 <style>
 .myanswers { 
 display: none !important;
 }
 </style>
+-->
 
 <div class="mysummary">
 <p>You should attempt all these questions and write up your solutions in advance of your workshop in week 3 (Monday 8 or Tuesday 9 February) where the answers will be discussed.</p>
@@ -300,7 +302,7 @@ Then <span class="math inline">\((X_n)\)</span> is the half-reflecting random wa
 </div>
 </div>
 <div class="myq">
-<p><strong>4.</strong> Consider the gambler’s ruin problem with draws: at each step, Alice wins £1 with probability <span class="math inline">\(p\)</span>, loses £1 with probability <span class="math inline">\(q\)</span>, and neither wins nor loses any money with probability <span class="math inline">\(s\)</span>, where <span class="math inline">\(p + q +s = 1\)</span>, and <span class="math inline">\(0 &lt; p,q,s&lt;1\)</span>. Alice starts with £<span class="math inline">\(a\)</span> and Bob with £<span class="math inline">\((m-a)\)</span>.</p>
+<p><strong>3.</strong> Consider the gambler’s ruin problem with draws: at each step, Alice wins £1 with probability <span class="math inline">\(p\)</span>, loses £1 with probability <span class="math inline">\(q\)</span>, and neither wins nor loses any money with probability <span class="math inline">\(s\)</span>, where <span class="math inline">\(p + q +s = 1\)</span>, and <span class="math inline">\(0 &lt; p,q,s&lt;1\)</span>. Alice starts with £<span class="math inline">\(a\)</span> and Bob with £<span class="math inline">\((m-a)\)</span>.</p>
 <div class="subq">
 <p><strong>(a)</strong> Let <span class="math inline">\(r_i\)</span> be Alice’s probability of ruin given that she has £<span class="math inline">\(i\)</span>.</p>
 <div class="subq">
@@ -349,7 +351,7 @@ Hence the solution is
 </div>
 </div>
 <div class="subq">
-<p><strong>(c)</strong> Alice starts playing against Bob in a standard gambler’s ruin game with probabilities <span class="math inline">\(p \neq q\)</span> and <span class="math inline">\(s = 0\)</span>. A draw probability <span class="math inline">\(s &gt; 0\)</span> is then introduced in such a way that the ratio <span class="math inline">\(\rho = q/p\)</span> remains constant. How does this change Alice’s ruin probability and the expected duration of the game.</p>
+<p><strong>(c)</strong> Alice starts playing against Bob in a standard gambler’s ruin game with probabilities <span class="math inline">\(p \neq q\)</span> and <span class="math inline">\(s = 0\)</span>. A draw probability <span class="math inline">\(s &gt; 0\)</span> is then introduced in such a way that the ratio <span class="math inline">\(\rho = q/p\)</span> remains constant. Comment on how this changes Alice’s ruin probability and the expected duration of the game.</p>
 <div class="myanswers">
 <p><em>Solution.</em> The ruin probability does not change, as we see immediately. This is not surprising, as the win and lose probabilities for a round conditional on the round not being a draw have stayed the same.</p>
 <p>The expected duration of the game increases. If <span class="math inline">\(\rho = q/p\)</span> stays the same while introducing a draw probability <span class="math inline">\(s\)</span>, then the “new” <span class="math inline">\(q\)</span> and <span class="math inline">\(p\)</span> are <span class="math inline">\((1-s)q\)</span> and <span class="math inline">\((1-s)p\)</span>, so <span class="math inline">\(q-p\)</span> becomes<span class="math inline">\((1-s)q - (1-s)p = (1-s)(q-p)\)</span>. Hence expected duration goes up by a factor of <span class="math inline">\(1/(1-s)\)</span>. This makes sense, since number of rounds until a non-draw result is a geometric distribution with expectation <span class="math inline">\(1/(1-s)\)</span>, so each step takes <span class="math inline">\(1/(1-s)\)</span> times as long on average.</p>
@@ -357,7 +359,7 @@ Hence the solution is
 </div>
 </div>
 <div class="myq">
-<p><strong>5.</strong> The Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, …, where each number in the sequence is the sum of the two previous numbers. Show that the ratio of consecutive Fibonacci numbers tends to the “golden ratio” <span class="math inline">\(\phi = (1 + \sqrt{5})/2\)</span>.</p>
+<p><strong>4.</strong> The Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, …, where each number in the sequence is the sum of the two previous numbers. Show that the ratio of consecutive Fibonacci numbers tends to the “golden ratio” <span class="math inline">\(\phi = (1 + \sqrt{5})/2\)</span>.</p>
 <div class="myanswers">
 <p><em>Solution.</em> The Fibonacci numbers <span class="math inline">\((F_n)\)</span> satisfy <span class="math inline">\(F_{n+1} = F_n + F_{n-1}\)</span>, which rearranges to <span class="math inline">\(F_{n+1} -F_n - F_{n-1} = 0\)</span>. The is a linear difference equation with characteristic equation <span class="math inline">\(\lambda^2 - \lambda - 1 = 0\)</span>. This has two solutions, which can be found using the quadratic formula. The solution with larger absolute value is <span class="math inline">\(\lambda_1 = (1+\sqrt{5})/2 = \phi\)</span>, the golden ratio, and the solution with smaller absolute value is <span class="math inline">\(\lambda_2 = (1-\sqrt{5})/2\)</span>. Hence, the general solution to the equation is <span class="math inline">\(F_n = A\phi^n + B\lambda_2^n\)</span>. We could use the initial conditions <span class="math inline">\(F_1 = 1\)</span> and <span class="math inline">\(F_2 = 1\)</span> to find <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, but there’s no need to here.</p>
 <p>The ratio of consecutive Fibonacci numbers is

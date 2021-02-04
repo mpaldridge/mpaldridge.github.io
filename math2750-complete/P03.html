@@ -201,7 +201,300 @@
             <section class="normal" id="section-">
 <div id="P03" class="section level1 unnumbered">
 <h1>Problem sheet 3</h1>
-<p>Problem Sheet 3</p>
+<!--
+<style>
+.fold-btn { 
+  float: right; 
+  margin: -12px 0 0 0;
+}
+</style
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $folds = $(".myanswers");
+  $folds.wrapInner("<div class=\"fold-blck\">"); // wrap a div container around content
+  $folds.prepend("<button class=\"fold-btn\">Show solution</button>");  // add a button
+  $(".fold-blck").toggle();  // fold all blocks
+  $(".fold-btn").on("click", function() {  // add onClick event
+    $(this).text($(this).text() === "Hide solution" ? "Show solution" : "Hide solution");  // if the text equals "Fold", change it to "Unfold"or else to "Fold" 
+    $(this).next(".fold-blck").toggle("linear");  // "swing" is the default easing function. This can be further customized in its speed or the overall animation itself.
+  })
+});
+</script>
+-->
+<style>
+.myanswers { 
+display: none !important;
+}
+</style>
+
+<div class="mysummary">
+<p>You should attempt all these questions and write up your solutions in advance of your workshop in week 4 (Monday 15 or Tuesday 16 February) where the answers will be discussed.</p>
+</div>
+<div class="myq">
+<p><strong>2.</strong> Consider the two-state “broken printer” Markov chain, with state space <span class="math inline">\(\mathcal S = \{0,1\}\)</span>, transition matrix
+<span class="math display">\[ \mathsf P = \begin{pmatrix} 1-\alpha &amp; \alpha \\
+                 \beta &amp; 1-\beta \end{pmatrix} \]</span>
+with <span class="math inline">\(0 &lt; \alpha, \beta &lt; 1\)</span>, and initial distribution <span class="math inline">\(\boldsymbol\lambda = (\lambda_0, \lambda_1)\)</span>. Write <span class="math inline">\(\mu_n =\mathbb P(X_n = 0)\)</span>.</p>
+<div class="subq">
+<p><strong>(a)</strong> By writing <span class="math inline">\(\mu_{n+1}\)</span> in terms of <span class="math inline">\(\mu_n\)</span>, show that we have
+<span class="math display">\[ \mu_{n+1} - \big(1-(\alpha+\beta)\big)\mu_n = \beta . \]</span></p>
+<div class="myanswers">
+<p>Using the law of total probability, we have
+<span class="math display">\[\begin{multline*}
+\mathbb P(X_{n+1} = 0) = \mathbb P(X_n = 0)\,\mathbb P(X_{n+1} = 0 \mid X_n = 0) \\
++ \mathbb P(X_n = 1)\,\mathbb P(X_{n+1} = 0 \mid X_n = 1) ,
+\end{multline*}\]</span>
+which in terms of <span class="math inline">\((\mu_n)\)</span> is
+<span class="math display">\[ \mu_{n+1} = \mu_n (1-\alpha) + (1 - \mu_n)\beta . \]</span>
+We used here that <span class="math inline">\(\mathbb P(X_n = 1) = 1-\mu_n\)</span>.
+Rearranging this gives the answer.</p>
+</div>
+</div>
+<div class="subq">
+<p><strong>(b)</strong> By solving this linear difference equation using the initial condition <span class="math inline">\(\mu_0 = \lambda_0\)</span>, or otherwise, show that
+<span class="math display">\[ \mu_n = \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n   . \]</span></p>
+<div class="myanswers">
+<p>The characteristic equation is <span class="math inline">\(\lambda - (1-(\alpha+\beta)) = 0\)</span> with a single root at <span class="math inline">\(\lambda = 1 - (\alpha+\beta)\)</span>. The general solution to the homogeneous equation is, therefore, <span class="math inline">\(A(1-(\alpha+\beta))^n\)</span>.</p>
+<p>For a particular solution, we guess a solution <span class="math inline">\(\mu_n = C\)</span>, and <span class="math inline">\(C - (1-(\alpha+\beta))C = \beta\)</span> gives <span class="math inline">\(C = \beta/(\alpha+\beta)\)</span>. Thus the general solution to the inhomogeneous equation is
+<span class="math display">\[ \mu_n = \frac{\beta}{\alpha+\beta} + A\big(1-(\alpha+\beta)\big)^n .\]</span></p>
+<p>From the initial condition, we get <span class="math inline">\(\lambda_0 = \beta/(\alpha+\beta) + A\)</span>, and therefore <span class="math inline">\(A = \lambda_0 - \beta/(\alpha+\beta)\)</span>. The solution is therefore as given.</p>
+</div>
+</div>
+<div class="subq">
+<p><strong>(c)</strong> What, therefore, are <span class="math inline">\(\lim_{n\to\infty} \mathbb P(X_n = 0)\)</span> and <span class="math inline">\(\lim_{n\to\infty} \mathbb P(X_n = 1)\)</span>?</p>
+<div class="myanswers">
+<p>Note that <span class="math inline">\(-1 &lt; 1 - (\alpha + \beta) &lt; 1\)</span>, so <span class="math inline">\((1-(\alpha+\beta))^n \to 0\)</span>. Therefore we have
+<span class="math display">\[\begin{align*}
+\lim_{n\to\infty} \mathbb P(X_n = 0) &amp;= \lim_{n\to\infty} \mu_n \\
+&amp;= \lim_{n\to\infty} \left( \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n \right) \\
+&amp;= \frac{\beta}{\alpha+\beta} .
+\end{align*}\]</span>
+Since <span class="math inline">\(\mathbb P(X_n = 1) = 1- \mathbb P(X_n = 0)\)</span>, we have
+<span class="math display">\[ \mathbb P(X_n = 1) \to 1 - \frac{\beta}{\alpha+\beta} = \frac{\alpha}{\alpha+\beta} . \]</span></p>
+</div>
+</div>
+<div class="subq">
+<p><strong>(d)</strong> Explain what happens if the Markov chain is started in the distribution
+<span class="math display">\[ \lambda_0 = \frac{\beta}{\alpha+\beta} , \qquad \lambda_1 = \frac{\alpha}{\alpha+\beta}  . \]</span></p>
+<div class="myanswers">
+<p>We then have that <span class="math inline">\(\mathbb P(X_n = 0) = \mu_n = \beta/(\alpha+\beta)\)</span> and <span class="math inline">\(\mathbb P(X_n = 1) = \alpha/(\alpha+\beta)\)</span> for all times <span class="math inline">\(n\)</span>; that is, the Markov chain remains in the same `stationary distribution’ forever.</p>
+</div>
+</div>
+</div>
+<p>** <em>More questions to follow.</em> **</p>
+<!--
+
+\vspace{9pt}
+
+\ifprintanswers
+\newpage
+\fi
+
+\begin{minipage}{\linewidth}
+
+\begin{wrapfigure}{r}{0.16\textwidth}
+    \vspace{-14pt} \hspace{-20pt} %\includegraphics[width=0.21\textwidth]{tetra}
+\end{wrapfigure}
+
+\question Consider a Markov chain $(X_n)$ which moves between the vertices of
+a tetrahedron.  At each time step, the process randomly chooses one of the edges connected to the current vertex and follows it to a new vertex.  The adjacent edges are selected randomly with all options having equal probability and each selection is independent of the past movements.  Let
+$X_n$ be the vertex the process is in after step~$n$.
+
+\end{minipage}
+
+
+
+\begin{parts}
+\part Write down the transition matrix $\mathsf P$ of this Markov chain.
+\begin{solution}
+The chain can move from a state to any of the other $3$ states, each with probability $1/3$. So
+\[ \mathsf P = \begin{pmatrix} 0 & \frac13 & \frac13 & \frac13 \\[0.8ex]
+                               \frac13 & 0 & \frac13 & \frac13 \\[0.8ex]
+                               \frac13 & \frac13 & 0 & \frac13 \\[0.8ex]
+                               \frac13 & \frac13 & \frac13 & 0 \end{pmatrix} . \]
+                               
+\vspace{-8pt}
+\end{solution}
+\part By summing over all relevant paths of length two, calculate the two-step transition probabilities $p_{11}^{(2)}$ and $p_{12}^{(2)}$. Hence, write down the two-step transition matrix $\mathsf P^{(2)}$.
+\begin{solution}
+Then paths from $1$ to $1$ are $1 \to k \to 1$ for $k = 2,3,4$, so
+\[ p^{(2)}_{11} = p_{12}p_{21} + p_{13}p_{31} + p_{14}p_{41} = \tfrac13 \tfrac13 +  \tfrac13 \tfrac13 + \tfrac13 \tfrac13 = \tfrac13     \]
+The paths from $1$ to $2$ are $1 \to 3 \to 2$ and $1 \to 4 \to 2$, so
+\[ p^{(2)}_{12} = p_{13}p_{32} + p_{14}p_{42} = \tfrac13 \tfrac13 + \tfrac13 \tfrac13 = \tfrac29 .    \]
+By symmetry, $p_{ii}^{(2)} = p_{11}^{(2)}$ for all $i$, and $p_{ij}^{(2)} = p_{12}^{(2)}$ for all $i \neq j$. Therefore
+\[ \mathsf P^{(2)} = \begin{pmatrix} \frac13 & \frac29 & \frac29 & \frac29 \\[0.8ex]
+                               \frac29 & \frac13 & \frac29 & \frac29 \\[0.8ex]
+                               \frac29 & \frac29 & \frac13 & \frac29 \\[0.8ex]
+                               \frac29 & \frac29 & \frac29 & \frac13 \end{pmatrix} . \]
+                               
+\vspace{-8pt}
+\end{solution}
+
+\ifprintanswers
+\newpage
+\fi
+
+\part Check your answer by calculating the matrix square $\mathsf P^2$.
+\begin{solution}
+We can verify that
+\[ \mathsf P^2 = \begin{pmatrix} 0 & \frac13 & \frac13 & \frac13 \\[0.8ex]
+\frac13 & 0 & \frac13 & \frac13 \\[0.8ex]
+\frac13 & \frac13 & 0 & \frac13 \\[0.8ex]
+\frac13 & \frac13 & \frac13 & 0 \end{pmatrix} \begin{pmatrix} 0 & \frac13 & \frac13 & \frac13 \\[0.8ex]
+\frac13 & 0 & \frac13 & \frac13 \\[0.8ex]
+\frac13 & \frac13 & 0 & \frac13 \\[0.8ex]
+\frac13 & \frac13 & \frac13 & 0 \end{pmatrix}=
+\begin{pmatrix} \frac13 & \frac29 & \frac29 & \frac29 \\[0.8ex]
+\frac29 & \frac13 & \frac29 & \frac29 \\[0.8ex]
+\frac29 & \frac29 & \frac13 & \frac29 \\[0.8ex]
+\frac29 & \frac29 & \frac29 & \frac13 \end{pmatrix} , \]
+as above.
+\end{solution}
+\end{parts}
+
+%\newpage
+
+%\begin{center}
+%   \begin{tikzpicture}
+%   \draw[thick,dotted] (0,2) -- (5,3.2);
+%   \draw[thick] (0,2) node[left]{1} -- (3,0.5) node[below]{2}
+%   -- (5,3.2) node[right]{3} -- (2.2,6) node[above]{4} -- cycle;
+%   \draw[thick] (3,0.5) -- (2.2,6);
+%   \end{tikzpicture}
+%\end{center}
+
+\question
+Let $(X_n)$ be a Markov chain. Show that, for any $m \geq 1$, we have
+\begin{multline*} \mathbb P(X_{n+m} = x_{n+m} \mid X_n = x_n, X_{n-1} = x_{n-1}, \dots, X_0 = x_0) \\ =  \mathbb P(X_{n+m} = x_{n+m} \mid X_n = x_n) . \end{multline*}
+
+\begin{solution}
+For reasons of space, we adopt notation where we suppress the capital $X$s, so we want to show that
+\[ \mathbb P(x_{n+m} \mid x_n, x_{n-1}, \dots, x_0 ) = \mathbb P(x_{n+m} \mid x_n) . \]
+We work by induction on $m$. The base case $m = 1$ is the standard Markov property.
+
+$\quad$ Assume the result holds for $m$; we now need to show it holds for $m+1$. For $m+1$ we have, by conditioning on the first step $x_{n+1}$,
+\begin{multline*} \mathbb P(x_{n+m+1} \mid x_n, x_{n-1}, \dots, x_0 ) \\
+ = \sum_{x_{n+1}} \mathbb P(x_{n+1} \mid x_n, x_{n-1}, \dots, x_0 )\,\mathbb P(x_{n+m+1} \mid x_{n+1}, x_n, x_{n-1}, \dots, x_0 )     \end{multline*}
+By the standard Markov property the first term simplifies to $\mathbb P(x_{n+1} \mid x_n)$, and by the result for $m$ the second term simplifies to $\mathbb P(x_{n+m+1} \mid x_{n+1})$. So we have
+\[ \mathbb P(x_{n+m+1} \mid x_n, x_{n-1}, \dots, x_0 ) = \sum_{x_{n+1}} \mathbb P(x_{n+1} \mid x_n) \mathbb P(x_{n+m+1} \mid x_{n+1}) . \]
+But the right-hand side here is $\mathbb P(x_{n+m+1} \mid x_n)$ written using conditioning on the first step using the result for $m$. By induction, we are done.
+\end{solution}
+
+\ifprintanswers
+\else
+\smallskip
+\fi
+
+\question
+A car insurance company operates a no-claims discount system for existing policy holders.  The possible discounts on premiums are $\{0\%,25\%,40\%,50\%\}$. Following a claim-free year, a policyholder's discount level increases by one level (or remains at $50\%$ discount).  If the policyholder makes one or more claims in a year, the discount level decreases by one level (or remains at $0\%$ discount).
+
+The insurer believes that the probability of of making at least one claim in a year is $0.1$ if the previous year was claim-free and $0.25$ if the previous year was not claim-free.
+\begin{parts}
+\part Explain why we cannot use $\{0\%,25\%,40\%,50\%\}$ as the state space of a Markov chain to model discount levels for policyholders.
+\begin{solution}
+    The Markov property does not hold for the time-homogeneous process described since the probability of moving to a given state at the next time step is not simply dependent on the current state if $\mathcal S=\{0\%,25\%,40\%,50\%\}$.  For example,
+    \[
+    \mathbb P(X_{n+1}=25\% \mid X_n= 40\% )=\begin{cases} 
+    0.25 & \text{if $X_{n-1}=50\%$}\\
+    0.1 & \text{if $X_{n-1}=25\%$.} \end{cases} \]
+\end{solution}
+\part By considering additional states, show that a Markov chain can be used to model the discount level.
+\begin{solution}
+The problem is that the process has a memory of the previous year.
+If we currently have a discount of $0\%$, we know a claim was made in the year before, so no changes are required. Similarly, at $50\%$ discount, we know that no claim was made in the previous year. The other two states, $25\%$ and $40\%$, have different behaviour depending on whether or not there was a claim in the previous year. So we will split each of these into two states: $25+$ will denote a $25\%$ discount with no claim in the previous year, while $25-$ will denote a $25\%$ discount with a claim in the previous year. We define the state $40+$ and $40-$ similarly. Then we have a Markov chain, since the current state and the number of claims in the previous year completely defines the distribution on future behaviour.
+\end{solution}
+
+\ifprintanswers
+\newpage
+\fi
+
+\part Draw the transition diagram and write down the transition matrix.
+\begin{solution}
+    The transition diagram is as shown below.
+    \begin{center}
+        \begin{tikzpicture}
+        \node[state] (0) at (0,0) {$0$};
+        \node[state] (25) at (2,2) {$25+$};
+        \node[state] (251) at (2,-2) {$25-$};
+        \node[state] (40) at (5,2) {$40+$};
+        \node[state] (401) at (5,-2) {$40-$};
+        \node[state] (50) at (7,0) {$50$};
+        
+        \path[->]   (0) edge[bend left] node [above left]{0.75} (25);
+        \path[->]   (25) edge node [above]{0.9} (40);
+        \path[->]   (40) edge node [above right]{0.9} (50);
+        \path[->]   (50) edge[bend left] node [below right]{0.1} (401);
+        \path[->]   (401) edge node [below]{0.25} (251);
+        \path[->]   (251) edge node [below left]{0.25} (0);
+        \path[->]   (0) edge [loop left] node [left]{0.25} ();
+        \path[->]   (50) edge [loop right] node [right]{0.9} ();
+        
+        \path[->]   (25) edge[bend left] node [above left]{0.1} (0);
+        \path[->]   (40) edge[bend left] node [above left]{0.1} (251);
+        \path[->]   (251) edge[bend left] node [above left]{0.75} (40);
+        \path[->]   (401) edge[bend left] node [above left]{0.75} (50);
+        \end{tikzpicture}
+    \end{center}
+    The one-step transition matrix is given by,
+    \[ \mathsf P = 
+    \bordermatrix{ & 0 & 25+ & 25- & 40+ & 40- & 50 \cr
+    0   & 0.25 & 0.75 & 0 & 0 &0 & 0 \cr
+    25+ & 0.1 & 0 & 0 & 0.9 &0 & 0\cr
+    25- & 0.25 & 0 & 0 & 0.75 &0 & 0\cr
+    40+ & 0 & 0 & 0.1 & 0 & 0 &0.9 \cr
+    40- & 0 & 0 & 0.25 & 0 & 0 &0.75 \cr
+    50  & 0 & 0 & 0 & 0 & 0.1 & 0.9 }
+    \]
+\end{solution}
+\end{parts}
+
+\ifprintanswers
+\newpage
+\else
+\bigskip
+\fi
+
+
+\question
+The credit rating of a company can be modelled as a Markov chain.  Assume the rating is assessed once per year at the end of the year and possible ratings are A (good), B (fair) and D (in default).  The transition matrix is
+\[\mathsf P=\begin{pmatrix} 0.92&0.05&0.03\\
+0.05&0.85&0.1\\
+0&0&1 \end{pmatrix} . \]
+\begin{parts}
+\part Calculate the two-step transition probabilities, and hence find the expected number of defaults in the next two years from $100$ companies all rated A at the start of the period.
+\begin{solution}
+The matrix of two-step transition probabilities is given by the matrix square
+\[\mathsf P^{(2)} = \mathsf P^2= \begin{pmatrix} 0.8489&0.0885&0.0626\\
+0.0885&0.7250&0.1865\\
+0&0&1 \end{pmatrix}. \]
+The number of defaults in two years from $100$ A-rated companies is $100 \times p_{\mathrm{AD}}^{(2)} = 100 \times 0.0626 = 6.26$.
+\end{solution}
+\part What is the probability that a company rated A will at some point default without ever having been rated B in the meantime?
+\begin{solution}
+Let $\delta$ be the desired probability that an A-rated company will default without having been rated B. We condition on the first step: with probability $0.92$ we remain in state A, and by the Markov property the probability of the given event remains at $\delta$; with probability $0.05$ we move to state B, and the event fails to occur; and with probability $0.03$ we move to state D and the event occurs immediately. Therefore, we have
+\[ \delta = 0.92\delta + 0.05\times 0 + 0.03 \times 1 = 0.92\delta + 0.03 ,  \]
+which has solution $\delta = 0.03/(1-0.92) = 0.375$.
+\end{solution}
+
+\ifprintanswers
+\newpage
+\fi
+
+\uplevel{A corporate bond portfolio manager follows an investment strategy which means that bonds which falls from A-rated to B-rated is sold and replaced with an A-rated bond.  The manger believes this will improve the returns on the portfolio because it will reduce the number of defaults experienced.}
+\part Calculate the expected number of defaults in the manager's portfolio over the next two years given there are initially 100 A-rated bonds.
+\begin{solution}
+Given that B-rated bonds are replaced by A-rated bonds, we have a new Markov chain with state space $\{\mathrm{A},\mathrm{D}\}$ and transition matrix
+\[ \mathsf P = \begin{pmatrix} 0.92+0.05 & 0.03 \\ 0 & 1 \end{pmatrix} =  \begin{pmatrix} 0.97 & 0.03 \\ 0 & 1 \end{pmatrix} .  \]
+The two-step transition probability is
+\[ \mathsf P^{(2)} = \mathsf P^2 =  \begin{pmatrix} 0.97 & 0.03 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 0.97 & 0.03 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 0.9409 & 0.0591 \\ 0 & 1 \end{pmatrix} .  \]
+Thus the number of defaults from $100$ A-rated bonds in two years is $100\times p_{\mathrm{AD}}^{(2)} = 100\times 0.0591 = 5.91$. The manager was right: this is slightly less than the $6.26$ from part (a).
+\end{solution}
+\end{parts}
+
+\end{questions}
+
+-->
 
 </div>
             </section>

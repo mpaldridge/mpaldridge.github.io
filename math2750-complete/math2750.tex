@@ -109,6 +109,26 @@
 \section*{Schedule}\label{home}}
 \addcontentsline{toc}{section}{Schedule}
 
+\textbf{Week 2} (1--5 February)
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{S03-gamblers-ruin}{\textbf{Section 3}: Gambler's ruin}
+\item
+  \protect\hyperlink{S04-ldes}{\textbf{Section 4}: Linear difference equations}
+\item
+  \protect\hyperlink{P01}{\textbf{Problem Sheet 2}}
+\item
+  \protect\hyperlink{A1}{\textbf{Assessment 1}} due Thursday 11 February (next week) at 1400
+\item
+  \textbf{Lecture}: Tuesday at 1400 (Zoom)
+\item
+  \textbf{Workshops} on Problem Sheet 1: Monday or Tuesday
+\item
+  \textbf{Drop-in sessions}: Tuesday or Wednesday (Teams)
+\end{itemize}
+
 \textbf{Week 1} (25--29 January)
 
 \begin{itemize}
@@ -122,7 +142,7 @@
 \item
   \protect\hyperlink{P01}{\textbf{Problem Sheet 1}}
 \item
-  \textbf{Lecture}: Tuesday at 1400 (link in Minerva)
+  \textbf{Lecture}: Tuesday at 1400 (Zoom)
 \item
   \textbf{Drop-in sessions}: Tuesday or Wednesday (Teams)
 \end{itemize}
@@ -227,7 +247,9 @@ The first computing worksheet will be a practice run, while a report on the seco
 \subsubsection*{Drop-in sessions}\label{dropin}}
 \addcontentsline{toc}{subsubsection}{Drop-in sessions}
 
-If you there is something in the course you wish to discuss in detail, the place for the is the optional weekly drop-in session. You will have been assigned to one of three groups on Tuesdays or Wednesdays with \href{https://eps.leeds.ac.uk/maths/pgr/4992/nikita-merkulov}{Nikita Merkulov} or me. The drop-in sessions will be run the Microsoft Teams. Your drop-in session would be an excellent place to go if you are having trouble understanding something in the written notes, or if you're still truggling on a problem sheet question after your workshop.
+If you there is something in the course you wish to discuss in detail, the place for the is the optional weekly drop-in session. The drop-in sessions are an optional opportunity for you to ask questions you have to a member of staff -- nothing will happen unless you being your questions.
+
+You will have been assigned to one of three groups on Tuesdays or Wednesdays with \href{https://eps.leeds.ac.uk/maths/pgr/4992/nikita-merkulov}{Nikita Merkulov} or me. The drop-in sessions will be run the Microsoft Teams. Your drop-in session would be an excellent place to go if you are having trouble understanding something in the written notes, or if you're still struggling on a problem sheet question after your workshop.
 
 \hypertarget{team}{%
 \subsubsection*{Microsoft Team}\label{team}}
@@ -422,7 +444,7 @@ A \textbf{model} is an imitation of a real-world system. For example, you might 
 
 To design a model requires a set of assumptions about how it will work and suitable parameters need to be determined, perhaps based on past collected data.
 
-An important distinction is between \textbf{deterministic} models and \textbf{random} models. Another word for a random model is a \textbf{stochastic} (``\emph{sto-\textsc{kass}-tik}'') model. Deterministic models do not contain any random components, so the output is completely determined by the inputs and any parameters. Random models have variable outcomes to account for uncertainty and unpredictability, so they can be run many times to give a sense of the range of possible outcomes.
+An important distinction is between \textbf{deterministic} models and \textbf{random} models. Another word for a random model is a \textbf{stochastic} (``\emph{sto}-\textsc{\emph{kass}}-\emph{tik}'') model. Deterministic models do not contain any random components, so the output is completely determined by the inputs and any parameters. Random models have variable outcomes to account for uncertainty and unpredictability, so they can be run many times to give a sense of the range of possible outcomes.
 
 Consider models for:
 
@@ -633,7 +655,7 @@ For large \(n\), we can use a normal approximation for a random walk. Suppose th
 \hypertarget{exact-distribution}{%
 \subsection{Exact distribution of the simple random walk}\label{exact-distribution}}
 
-In the case of the simple random walk, we can in fact give the exact distribution by writing down an exact formula for \(\mathbb P(X_n = i)\) for any time \(n\) and any state \(i\).
+We have calculated the expectation and variance of any random walk. But for the simple random walk, we can in fact give the exact distribution, by writing down an exact formula for \(\mathbb P(X_n = i)\) for any time \(n\) and any state \(i\).
 
 Recall that, at each of the first \(n\) times, we independently take an upward step with probability \(p\), and otherwise take a downward step. So if we let \(Y_n\) be the number of upward steps over the first \(n\) time periods, we see that \(Y_n\) has a binomial distribution \(Y_n \sim \text{Bin}(n,p)\).
 
@@ -661,6 +683,8 @@ In the special case of the simple symmetric random walk, we have
 \section*{Problem Sheet 1}\label{P01}}
 \addcontentsline{toc}{section}{Problem Sheet 1}
 
+\commtrue
+
 You should attempt all these questions and write up your solutions in advance of your workshop in week 2 (Monday 1 or Tuesday 2 February) where the answers will be discussed.
 
 \textbf{1.} When designing a model for a quantity that changes over time, one has many decisions to make:
@@ -679,13 +703,13 @@ You should attempt all these questions and write up your solutions in advance of
 
 What would you decide for the following scenarios:
 
-\textbf{(a)} The percentage of US voters with a positive opinion of Donald Trump in the Gallup weekly tracking poll.
+\textbf{(a)} The percentage of UK voters with a positive opinion of Boris Johnson in a weekly tracking poll.
 
 \textbf{(b)} The number of points won by a football league club throughout the season.
 
 \textbf{(c)} The temperature of a bowl of water placed in an oven.
 
-\textbf{(d)} The number of people inside the Chemistry building.
+\textbf{(d)} The number of people inside the University of Leeds library.
 
 \begin{myanswers}
 
@@ -697,7 +721,7 @@ What would you decide for the following scenarios:
 
 \textbf{(c)} Continuous space (temperature); continuous time; if the oven is reliable and the experiment carried out carefully, a deterministic model might be sufficient.
 
-\textbf{(d)} Discrete space (number of people); continuous time; stochastic; Markov property might not be appropriate due to `bursts' of people leaving during fire drills or lectures finishing early.
+\textbf{(d)} Discrete space (number of people); continuous time; stochastic; Markov property might not be appropriate due to `bursts' of people leaving during fire drills or entering when it starts raining.
 
 \end{myanswers}
 
@@ -820,7 +844,7 @@ Compared to before, the centre of the prediction interval is slightly higher, be
 
 \begin{myanswers}
 
-\emph{Solution.} In \(10\) time steps, the process went up \(k = 8\) times and down \(n - k = 2\) times. So it seems reasonable to guess that \(p\) has the value \(\hat p = 8/10 = 0.8\).
+\emph{Solution.} In \(10\) time steps, the process went up \(k = 8\) times and down \(n - k = 2\) times. So it seems reasonable to guess that \(p\) has the value \(\hat p = \frac{8}{10} = 0.8\).
 
 \end{myanswers}
 
@@ -837,16 +861,20 @@ Compared to before, the centre of the prediction interval is slightly higher, be
 
 \begin{myanswers}
 
-\emph{Solution.} You could answer this question by using what you know about maximum likelihood estimation for the binomial distribution from MATH1712, but we'll reason from first principles here.
+\emph{Solution.} The concept of ``maximum likelihood estimation'' will be known to those who have done MATH2715; this might be new for those who didn't take that course.
 
-If we let \(k\) be the number of upward steps, then the likelihood is
+Let \(k = (n + x_n)/2\) be the number of upward steps. Then the ``likelihood'' is the probability mass function
 \[ f(\mathbf x; p) = p^{k}(1-p)^{n-k} , \]
-making the the log-likelihood
+since we take \(k\) steps up and \(n-k\) steps down.
+Given \(\mathbf x\) (or equivalently \(k\)) the ``maximum likelihood estimate'' is the value of \(p\) that maximises this likelihood.
+
+As is often the case, it's equivalent but actually more convenient to maximise the log-likelihood
 \[ \ell(\mathbf x; p) = \ln f(\mathbf x; p) = k \ln p + (n-k)\ln(1-p) .\]
-We maximise this by differentiating and setting equal to \(0\). The derivative is
+We can perform the maximisation by differentiating and setting equal to \(0\). The derivative is
 \[ \frac{\text{d}}{\text{d}p} \ell(\mathbf x; p) = \frac kp - \frac{n-k}{1-p} ,\]
 so the maximum likelihood estimate \(\hat p\) satisfies
 \[ 0 = \frac k{\hat p} - \frac{n-k}{1-\hat p} . \]
+
 Solving this by clearing denominators we get
 \[ 0 = (k - k\hat p) - (n\hat p - k\hat p) = k - n \hat p , \]
 and rearranging gives \(\hat p = k/n\) as desired.
@@ -867,7 +895,7 @@ and rearranging gives \(\hat p = k/n\) as desired.
 \hypertarget{ruin-chain}{%
 \subsection{Gambler's ruin Markov chain}\label{ruin-chain}}
 
-Consider the following gambling problem. Alice is gambling against Bob. Alice starts with £\(a\) and Bob starts with £\(b\). It will be convenient to write \(m = a + b\) for the total amount of money, so Bob starts with £\((m-a)\). At each step of the game, both players bet £\(1\); Alice wins £\(1\) off Bob with probability \(p\), or Bob wins £\(1\) off Alice with probability \(q\). The game continues until one player is out of money (or is ``ruined'').
+Consider the following gambling problem. Alice is gambling against Bob. Alice starts with £\(a\) and Bob starts with £\(b\). It will be convenient to write \(m = a + b\) for the total amount of money, so Bob starts with £\((m-a)\). At each step of the game, both players bet £1; Alice wins £1 off Bob with probability \(p\), or Bob wins £1 off Alice with probability \(q\). The game continues until one player is out of money (or is ``ruined'').
 
 Let \(X_n\) denote how much money Alice has after \(n\) steps of the game. We can write this as a stochastic process with discrete time \(n \in \{0,1,2,\dots\} = \mathbb Z_+\) and discrete state space \(\mathcal S = \{0,1,\dots,m\}\). Then \(X_0 = a\), and, for \(n \geq 0\), we have
 \[ X_{n+1} = \begin{cases} X_n + 1 & \text{with probability $p$ if $1\leq X_n \leq m-1$,} \\
@@ -880,6 +908,17 @@ We see that the gambler's ruin process \((X_n)\) clearly satisfies the Markov pr
 
 The gambler's ruin process is exactly like a simple random walk started from \(X_0 = a\) except that we have \textbf{absorbing barriers} and \(0\) and \(m\), where the random walk stops because one of the players has ruined. (One could also consider random walks with \textbf{reflecting barriers}, that bounce the random walk back into the state space, or \textbf{mixed barriers} that are absorbing or reflecting at random.)
 
+There are two questions about the gambler's ruin that we'll try to answer in this section:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  What is the probability that the game ends by Alice ruining?
+\item
+  How long does the game last on average?
+\end{enumerate}
+
 \hypertarget{ruin-probability}{%
 \subsection{Probability of ruin}\label{ruin-probability}}
 
@@ -887,16 +926,16 @@ The gambling game continues until either Alice is ruined (\(X_n = 0\)) or Bob is
 
 Let us write \(r_i\) for the probability Alice ends up ruined if she currently has £\(i\). Then the probability of ruin for the whole game is \(r_a\), since Alice initially starts with £\(a\). The probability Bob will end up ruined is \(1 - r_a\), since one of the players must lose.
 
-What can we say about \(r_i\)? Clearly we have \(r_0 = 1\) and \(r_m = 0\), since this means Alice (\(i=0\)) or Bob (\(i=m\)) is already out of money and is ruined. What about for \(1 \leq i \leq m-1\)?
+What can we say about \(r_i\)? Clearly we have \(r_0 = 1\), since \(X_n = 0\) means that Alice has run out of money and is ruined, and \(r_m = 0\), since \(X_n = m\) means that Alice has won all the money and Bob is ruined. What about when \(1 \leq i \leq m-1\)?
 
 The key is to \emph{condition on the first step}. That is, we can write
 \begin{align*}
 \mathbb P(\text{ruin}) &= \mathbb P(\text{win first round}) \, \mathbb P(\text{ruin} \mid \text{win first round}) \\
-&\qquad{}+ \mathbb P(\text{lose first round}) \, \mathbb P(\text{ruin} \mid \text{lose first round}) \\
+&\qquad{}\quad {}+ \mathbb P(\text{lose first round}) \, \mathbb P(\text{ruin} \mid \text{lose first round}) \\
 &= p\,\mathbb P(\text{ruin} \mid \text{win first round}) + q \,\mathbb P(\text{ruin} \mid \text{lose first round}) .
 \end{align*}
-Here we have conditioned on whether Alice wins or loses the first round. More formally, we have used the \textbf{law of total probability}, which says that if the disjoint events \(B_1, \dots, B_k\) cover the whole sample space, then
-\[ \mathbb P(A) = \sum_{i=1}^k \mathbb P(A \cap B_i) = \sum_{i=1}^k \mathbb P(B_i) \, \mathbb P(A \mid B_i) . \]
+Here we have conditioned on whether Alice wins or loses the first round. More formally, we have used the \textbf{law of total probability}, which says that if the events \(B_1, \dots, B_k\) are disjoint and cover the whole sample space, then
+\[ \mathbb P(A) = \sum_{i=1}^k \mathbb P(B_i) \, \mathbb P(A \mid B_i) . \]
 Here, \(\{\text{Alice wins the first round}\}\) and \(\{\text{Alice loses the first round}\}\) are indeed disjoint events that cover the whole sample space. This idea of ``conditioning on the first step'' will be the most crucial tool throughout this whole module.
 
 If Alice wins the first round from having £\(i\), she now has £\((i+1)\). Her probability of ruin is now \(r_{i+1}\), because, by the Markov property, it's as if the game were starting again with Alice having £\((i+1)\) to start with. The Markov property tells us that it doesn't matter \emph{how} Alice got to having £\((i+1)\), it only matters how much she has now. Similarly, if Alice loses the first round, she now has £\((i-1)\), and the ruin probability is \(r_{i-1}\). Hence we have
@@ -911,7 +950,7 @@ We will see how to solve this equation in the next lecture. We will see that, if
            1 - \displaystyle\frac{a}{m} & \text{if $\rho = 1$.} \end{cases} \]
 Note that \(\rho = 1\) is the same as the symmetric condition \(p = q = \frac12\).
 
-Imagine Alice is not playing against her opponent Bob, but rather is up against a large casino. In this case, the casino's capital £\((m-a)\) is typically much bigger than Alice's £\(a\). We can model this by keeping \(a\) fixed taking a limit \(m \to \infty\). Typically, the casino has ``an edge'', meaning they have a better than \(50:50\) chance of winning; this means that \(q > p\), so \(\rho > 1\). In this case, we see that the ruin probability is
+Imagine Alice is not playing against a similar opponent Bob, but rather is up against a large casino. In this case, the casino's capital £\((m-a)\) is typically much bigger than Alice's £\(a\). We can model this by keeping \(a\) fixed taking a limit \(m \to \infty\). Typically, the casino has an ``edge'', meaning they have a better than \(50:50\) chance of winning; this means that \(q > p\), so \(\rho > 1\). In this case, we see that the ruin probability is
 \[ \lim_{m \to \infty} r_a = \lim_{m \to \infty} \frac{\rho^a - \rho^m}{1 - \rho^m} = \lim_{m \to \infty} \frac{\rho^a/\rho^m - 1}{1/\rho^m - 1} = \frac{0-1}{0-1} = 1, \]
 so Alice will be ruined with certainty.
 
@@ -919,14 +958,14 @@ Even with a generous casino that offered an exactly fair game with \(p = q = \fr
 \[ \lim_{m \to \infty} r_a = \lim_{m \to \infty}\left( 1 - \frac{a}{m} \right) = 1-0 = 1 , \]
 so, even with this fair game, Alice would still be ruined with certainty.
 
-The official advice of the University of Leeds module MATH2750 is that you shouldn't gamble against a casino if you can't afford to lose.
+(The official advice of the University of Leeds module MATH2750 is that you shouldn't gamble against a casino if you can't afford to lose.)
 
 \hypertarget{expected-duration}{%
 \subsection{Expected duration of the game}\label{expected-duration}}
 
 We could also ask for how long we expect the game to last.
 
-We approach this like before. Let \(d_i\) be the expected duration of the game when Alice has £\(i\). Our boundary conditions are \(d_0 = d_m = 0\), because \(X_n = 0\) or \(X_n = m\) means that the game is over with Alice or Bob ruined. Again, we proceed by conditioning on the first step, so
+We approach this like before. Let \(d_i\) be the expected duration of the game from a point when Alice has £\(i\). Our boundary conditions are \(d_0 = d_m = 0\), because \(X_n = 0\) or \(X_n = m\) means that the game is over with Alice or Bob ruined. Again, we proceed by conditioning on the first step, so
 \begin{align*}
 \mathbb E(\text{duration}) &= \mathbb P(\text{win first round}) \, \mathbb E(\text{duration} \mid \text{win first round}) \\
 &\qquad{}+ \mathbb P(\text{lose first round}) \, \mathbb E(\text{duration} \mid \text{lose first round}) \\
@@ -971,13 +1010,15 @@ So here, Alice will ruin with certainty, but it may take a very long time until 
   Solving for probability of ruin and expected duration of the gambler's ruin
 \end{itemize}
 
-\textbf{Linear difference equations} are equations that look like
+In \protect\hyperlink{S03-gamblers-ruin}{the previous section}, we looked at the probability of ruin and expected duration of the gambler's ruin process. We set up linear difference equations to find these. In this section, we'll learn how to solve these equations.
+
+A \textbf{linear difference equation} is an equation that looks like
 \begin{equation}
 a_k x_{n+k} + a_{k-1} x_{n+k-1} + \cdots + a_1 x_{n+1} + a_0 x_n = f(n) \label{eq:lde} 
 \end{equation}
 for \(n = 0,1,\dots\), where the \(a_i\) are given constants, \(f(n)\) is a given function, and we want to solve for the sequence \((x_n)\). The equation normally comes with some extra conditions, such as the value of the first few \(x_n\)s.
 
-When the right-hand side of \eqref{eq:lde} is zero, so \(f(n) = 0\), we say the equation is \textbf{homogeneous}; if the right-hand side is nonzero, it is \textbf{inhomogeneous}. The number \(k\), where there are \(k+1\) terms on the left-hand side, is called the \textbf{degree} of the equation; we are mostly interested in second-degree linear difference equations, which have three terms on the left-hand side.
+When the right-hand side of \eqref{eq:lde} is zero, so \(f(n) = 0\), we say the equation is \textbf{homogeneous}; when the right-hand side is nonzero, it is \textbf{inhomogeneous}. The number \(k\), where there are \(k+1\) terms on the left-hand side, is called the \textbf{degree} of the equation; we are mostly interested in second-degree linear difference equations, which have three terms on the left-hand side.
 
 \hypertarget{hom-ldes}{%
 \subsection{Homogeneous linear difference equations}\label{hom-ldes}}
@@ -1029,7 +1070,7 @@ In conclusion, the process here was:
   Use the extra conditions to find the values of the constants in the general solution.
 \end{enumerate}
 
-If you think you've got the hang of this, you should press on to \protect\hyperlink{S04-ruin-probability}{the next subsection}. But if you're still a bit unsure, here are two extra optional examples. (These also give an idea of how I would expect you to set out your answers to similar problems.)
+Here are two more examples. These also give an idea of how I would expect you to set out your own answers to similar problems.
 
 \begin{example}
 \protect\hypertarget{exm:lde1}{}\label{exm:lde1}
@@ -1048,7 +1089,7 @@ to find the solutions \(\lambda_1 = -2\) and \(\lambda_2 = 3\). Thus the general
 x_0 &= A(-2)^0 + B3^0 = A + B = 3 \\
 x_1 &= A(-2)^1 + B3^1 = -2A + 3B = 4 .
 \end{align*}
-We can add twice the first equation from the second to get \(5B = 10\), so \(B=2\). We can substitute this into the first equation to get \(A = 1\).
+We can add twice the first equation to the second to get \(5B = 10\), so \(B=2\). We can substitute this into the first equation to get \(A = 1\).
 
 The solution is therefore
 \[ x_n = 1\cdot(-2)^n + 2 \cdot 3^n = (-2)^n + 2 \cdot 3^n . \]
@@ -1124,12 +1165,12 @@ Solving inhomogeneous linear difference equations requires three steps:
 \item
   Find the general solution to the \emph{homogeneous} equation by writing down and solving the characteristic equation.
 \item
-  Find any solution (a ``particular solution'') to the inhomogeneous equation. The general solution to the inhomogeneous equation is a particular solution plus the general solution to the homogeneous equation.
+  By making an ``educated guess'', find a solution (a ``particular solution'') to the inhomogeneous equation. The general solution to the inhomogeneous equation is a particular solution plus the general solution to the homogeneous equation.
 \item
   Use the extra conditions to find the values of the constants in the general solution.
 \end{enumerate}
 
-This idea works because adding a solution to the \emph{homogeneous} equation to the left-hand side adds zero to the right-hand side, so maintains a solution to the inhomogeneous equation.
+This idea works because, once you have a particular solution, adding a solution to the \emph{homogeneous} equation to the left-hand side adds zero to the right-hand side, so maintains a solution to the inhomogeneous equation.
 
 Let's work through the example
 \[ x_{n+2} - 5x_{n+1} + 6x_{n} = 2 \qquad \text{subject to } x_0 = 4, x_1 = 9 . \]
@@ -1137,11 +1178,11 @@ Let's work through the example
 We already know from earlier that the general solution to the homogeneous equation \(x_{n+2} - 5x_{n+1} + 6x_{n} = 0\) (with a zero on the right-hand side) is
 \[ x_n = A2^n + B3^n . \]
 
-We now need to find a \textbf{particular solution} -- that is, any solution -- to our new inhomogeneous equation. A general hint here is to guess a solution with the same ``shape'' as the right-hand side. For example, if the right-hand side is a constant, try a constant for the particular solution. Here our right-hand side is the constant \(2\), so we should try a constant \(x_n = C\). Substituting this into the inhomogeneous equation gives us \(C - 5C + 6C = 2\), thus \(2C = 2\) and \(C = 1\), giving a particular solution \(x_n = 1\). The general solution to the inhomogeneous equation is therefore
+We now need to find a \textbf{particular solution} -- that is, any solution -- to our new inhomogeneous equation. The usual process here is to guess a solution with the same ``shape'' as the right-hand side. For example, if the right-hand side is a constant, try a constant for the particular solution. Here our right-hand side is the constant \(2\), so we should try a constant \(x_n = C\). Substituting this into the inhomogeneous equation gives us \(C - 5C + 6C = 2\), thus \(2C = 2\) and \(C = 1\), giving a particular solution \(x_n = 1\). The general solution to the inhomogeneous equation is therefore
 \[ x_n = 1 + A2^n + B3^n , \]
 the sum of the particular solution \(x_n = 1\) and the general solution to the homogeneous equation.
 
-The right-hand side being a constant, so we guess a constant, is the main case we will deal with. Other cases you could come across include:
+Because the right-hand side was a constant, we guessed a constant -- this is the main case we will deal with. Other cases you could come across include:
 
 \begin{itemize}
 \tightlist
@@ -1150,18 +1191,18 @@ The right-hand side being a constant, so we guess a constant, is the main case w
 \item
   If the right-hand side is \(\alpha^n\) for some \(\alpha\), try \(C\alpha^n\).
 \item
-  If the right-hand side is a constant, but a constant \(C\) doesn't work, try \(Cn\). If that still doesn't work, try \(Cn^2\), and so on. We discuss this case further in the next subsection.
+  If the right-hand side is a constant, but a constant \(C\) doesn't work, try \(Cn\). If that still doesn't work, try \(Cn^2\), and so on. A general rule is that is 1 is a root of the characteristic equation with multiplicity \(m\), you need to try \(Cn^m\). We discuss this case further in the next subsection.
 \end{itemize}
 
-Again, we use the initial conditions to get the constants \(A\) and \(B\). We have
+Continuing with the example, we use the initial conditions to get the constants \(A\) and \(B\). We have
 \begin{gather*}
 x_0 = 1 + A2^0 + B3^0 = 1+ A + B = 4 , \\
-x_1 = 1 + A2^1 + B3^1 = 1+ 2A + 3B = 9 ,
+x_1 = 1 + A2^1 + B3^1 = 1+ 2A + 3B = 9 .
 \end{gather*}
-and we can easily check this gives \(A = 1, B = 2\). Thus the solution is
+The second equation minus twice the first gives \(-1 + B = 1\), so \(B=2\), and substituting that back into the first gives \(A = 1\). Thus the solution is
 \[ x_n = 1 + 1\cdot 2^n + 2 \cdot 3^n = 1 + 2^n + 2 \cdot 3^n . \]
 
-Again, if you have the hang of this, \protect\hyperlink{duration-solve}{press on}, but we present an extra optional example if things are still unclear.
+Here's another example.
 
 \begin{example}
 \protect\hypertarget{exm:lde3}{}\label{exm:lde3}
@@ -1186,7 +1227,7 @@ with solution \(C=2\). Thus a particular solution is \(x_n = 2\), and the genera
 x_0 = 2 + A\left(\frac12\right)^0 + B\left(\frac15\right)^0 = 2 + A + B = 0 \quad &\Rightarrow \quad A + B = -2 \\
 x_1 = 2 + A\left(\frac12\right)^1 + B\left(\frac15\right)^1 = 2 + A\frac12 + B\frac15 = \frac{13}{10} \quad &\Rightarrow \quad 5A + 2B = -7.
 \end{align*}
-We can subtract twice the first equation from the second to get \(3A = -3\), so \(A = -1\). We can substitute this into the second equation to get \(B = -1\).
+We can take twice the first equation abd subtract the second to get \(-3A = 3\), so \(A = -1\). We can substitute this into the second equation to get \(B = -1\).
 
 The solution is therefore
 \[ x_n = 2 - \left(\frac12\right)^n - \left(\frac15\right)^n . \]
@@ -1203,7 +1244,7 @@ As before, we divide cases based on whether or not \(\rho = 1\).
 First, the case \(\rho \neq 1\). We already know that the general solution to the homogeneous equation is
 \[ d_i =  A \rho^i + B . \]
 
-Now we need a particular solution. It's tempting to guess a constant \(C\) for a particular solution, but we know that constants solve the homogeneous equation, since \(d_i = B\) is a solution -- so a constant will give right-hand side \(0\), not \(-1\). (You could try out \(x_i = C\); you should find that the equation for \(C\) doesn't have a solution.) The next best try is to go one degree up: let's guess \(x_i = Ci\) instead. This gives
+Now we need a particular solution. It's tempting to guess a constant \(C\) for a particular solution, but we know that constants solve the homogeneous equation, since \(d_i = B\) is a solution, so a constant will give right-hand side \(0\), not \(-1\). (We could try out \(x_i = C\) if we wanted; we would get \((p - 1 + q)C = -1\), but \(p-1+q=0\), and \(0 \times C = -1\) has no solution.) The next best try is to go one degree up: let's guess \(x_i = Ci\) instead. This gives
 \begin{align*}
   -1 &= pC(i+1) - Ci + qC(i-1)\\
      &= C(pi + p - i + qi - q) \\
@@ -1217,14 +1258,14 @@ Then to find the constants, we have
 \begin{gather*} d_0 = \frac{0}{q-p} + A \rho^0 + B = A+B = 0, \\
                   d_m = \frac{m}{q-p} + A \rho^m + B = 0 , \end{gather*}
 which you can check gives
-\[ A = -B = \frac{1}{q-p} \cdot \frac{m}{1 - \rho^m} . \]
+\[ A = -B = \frac{m}{q-p} \cdot \frac{1}{1 - \rho^m} . \]
 Hence, the solution is
-\[ d_i = \frac{i}{q-p} + \frac{1}{q-p} \cdot \frac{m}{1 - \rho^m} \rho^i - \frac{1}{q-p} \cdot \frac{m}{1 - \rho^m} =  \frac{1}{q-p} \left(i - m\frac{1-\rho^i}{1- \rho^m} \right) . \]
+\[ d_i = \frac{i}{q-p} + \frac{m}{q-p} \frac{1}{1 - \rho^m} \rho^i - \frac{m}{q-p} \frac{1}{1 - \rho^m} =  \frac{1}{q-p} \left(i - m\frac{1-\rho^i}{1- \rho^m} \right) . \]
 
 Second, the case \(\rho = 1\), so \(p = q = \frac12\). We already know that the general solution to the homogeneous equation is
 \[ d_i =  A + Bi . \]
 
-We need a particular solution. Since both constants \(x_i = A\) and linear \(x_i = Bi\) terms solve the homogeneous equation (or by checking that guessing \(x_i = C\) or \(x_i = Ci\) doesn't work), we'll have to go up another degree and try \(x_i = Ci^2\). This gives
+We need a particular solution. Since 1 is a double root of the characteristic equation, both constants \(x_i = A\) and linear \(x_i = Bi\) terms solve the homogeneous equation. (You can check that guessing \(x_i = C\) or \(x_i = Ci\) doesn't work, if you like.) So we'll have to go up another degree and try \(x_i = Ci^2\). This gives
 \begin{align*}
     -1 &= \tfrac12 C(i+1)^2 - Ci^2 + \tfrac 12 C(i-1)^2 \\
        &= \tfrac12 C(i^2 + 2i + 1 - 2i^2 + i^2 - 2i + 1) \\
@@ -1240,13 +1281,13 @@ Then to find the constants, we have
 giving \(A = 0, B = m\). The solution is
 \[ d_i = -i^2 + 0 + mi = i(m-i) .\]
 
-\textbf{In the next section}, we move on to the general theory of discrete time Markov chains.
+\textbf{In the next section}, we move on from the specific cases we've looked at so far to the general theory of discrete time Markov chains.
 
 \hypertarget{P02}{%
 \section*{Problem sheet 2}\label{P02}}
 \addcontentsline{toc}{section}{Problem sheet 2}
 
-\commfalse
+\commtrue
 
 You should attempt all these questions and write up your solutions in advance of your workshop in week 3 (Monday 8 or Tuesday 9 February) where the answers will be discussed.
 
@@ -1333,7 +1374,7 @@ Then \((X_n)\) is the half-reflecting random walk we consider in this question. 
 
 \end{myanswers}
 
-\textbf{4.} Consider the gambler's ruin problem with draws: at each step, Alice wins £1 with probability \(p\), loses £1 with probability \(q\), and neither wins nor loses any money with probability \(s\), where \(p + q +s = 1\), and \(0 < p,q,s<1\). Alice starts with £\(a\) and Bob with £\((m-a)\).
+\textbf{3.} Consider the gambler's ruin problem with draws: at each step, Alice wins £1 with probability \(p\), loses £1 with probability \(q\), and neither wins nor loses any money with probability \(s\), where \(p + q +s = 1\), and \(0 < p,q,s<1\). Alice starts with £\(a\) and Bob with £\((m-a)\).
 
 \textbf{(a)} Let \(r_i\) be Alice's probability of ruin given that she has £\(i\).
 
@@ -1388,7 +1429,7 @@ Hence the solution is
 
 \end{myanswers}
 
-\textbf{(c)} Alice starts playing against Bob in a standard gambler's ruin game with probabilities \(p \neq q\) and \(s = 0\). A draw probability \(s > 0\) is then introduced in such a way that the ratio \(\rho = q/p\) remains constant. How does this change Alice's ruin probability and the expected duration of the game.
+\textbf{(c)} Alice starts playing against Bob in a standard gambler's ruin game with probabilities \(p \neq q\) and \(s = 0\). A draw probability \(s > 0\) is then introduced in such a way that the ratio \(\rho = q/p\) remains constant. Comment on how this changes Alice's ruin probability and the expected duration of the game.
 
 \begin{myanswers}
 
@@ -1398,7 +1439,7 @@ The expected duration of the game increases. If \(\rho = q/p\) stays the same wh
 
 \end{myanswers}
 
-\textbf{5.} The Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, \ldots, where each number in the sequence is the sum of the two previous numbers. Show that the ratio of consecutive Fibonacci numbers tends to the ``golden ratio'' \(\phi = (1 + \sqrt{5})/2\).
+\textbf{4.} The Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, \ldots, where each number in the sequence is the sum of the two previous numbers. Show that the ratio of consecutive Fibonacci numbers tends to the ``golden ratio'' \(\phi = (1 + \sqrt{5})/2\).
 
 \begin{myanswers}
 
@@ -1414,7 +1455,49 @@ as \(n \to \infty\), since \(|\lambda_2/\phi| < 1\) means that \(\lambda_2^n / \
 \section*{Assessment 1}\label{A1}}
 \addcontentsline{toc}{section}{Assessment 1}
 
-Assessment 1
+This assessment counts as 4\% of your final module grade. You should attempt both questions. You must show your working, and there are marks for the quality of your mathematical writing.
+
+The deadline for submission is \textbf{Thursday 11 February at 2pm}. Submission will be to Gradescope via Minerva, from Monday 8 February. It would be helpful to start your solution to Question 2 on a new page. If you hand-write your solutions and scan them using your phone, please convert to PDF using a scanning app (I like Microsoft Office Lens or Adobe Scan) rather than submit images.
+
+Late submissions up to Wednesday 17 February at 2pm will still be marked, but the total mark will be reduced by 10\% per day or part-day for which the work is late. Submissions are not permitted after Wednesday 17 February.
+
+\textbf{1.} Let \((X_n)\) be a simple random walk that starts from \(X_0 = 0\) and on each step goes up one with probability \(p\) and down one with probability \(q = 1-p\).
+
+Calculate:
+
+\textbf{(a)} \(\mathbb P(X_6 = 0)\), {{[}1 mark{]}}
+
+\textbf{(b)} \(\mathbb EX_6\), {{[}1{]}}
+
+\textbf{(c)} \(\text{Var}(X_6)\), {{[}1{]}}
+
+\textbf{(d)} \(\mathbb E(X_{10} \mid X_4 = 4)\), {{[}1{]}}
+
+\textbf{(e)} \(\mathbb P(X_{10} = 0 \mid X_6 = 2)\), {{[}1{]}}
+
+\textbf{(f)} \(\mathbb P(X_4 = 2 \mid X_{10} = 6)\). {{[}1{]}}
+
+Consider the case \(p = 0.6\), so \(q = 0.4\).
+
+\textbf{(g)} What are \(\mathbb E X_{100}\) and \(\text{Var}(X_{100})\)? {{[}1{]}}
+
+\textbf{(h)} Using a normal approximation, estimate \(\mathbb P(16 \leq X_{100} \leq 26)\). You should use an appropriate ``continuity correction'', and explain why you chose it. (Bear in mind the possible values \(X_{100}\) can take.) {{[}3{]}}
+
+\textbf{2.} Consider the gambler's ruin with draws: Alice starts with £\(a\) and Bob with £\((m-a)\), and at each time step Alice wins £1 off Bob with probability \(p\), loses £1 to Bob with probability \(q\), and no money is exchanged with probability \(s\), where \(p+q+s =1\). We consider the case where Bob and Alice are equally matched, so \(p = q\) and \(s = 1-2p\). (We assume \(0 < p < 1/2\).)
+
+Let \(r_i\) be Alice's ruin probability from the point she has £\(i\).
+
+\textbf{(a)} By conditioning on the first step, explain why \(pr_{i+1} - (1-s)r_i + pr_{i-1} = 0\), and give appropriate boundary conditions. {{[}2{]}}
+
+\textbf{(b)} Solve this linear difference equation to find an expression for \(r_i\). {{[}2{]}}
+
+Let \(d_i\) be the expected duration of the game from the point Alice has £\(i\).
+
+\textbf{(c)} Explain why \(pd_{i+1} - (1-s)d_i + pd_{i-1} = -1\), and give appropriate boundary conditions. {{[}2{]}}
+
+\textbf{(d)} Solve this linear difference equation to find an expression for \(d_i\). {{[}2{]}}
+
+\textbf{(e)} Compare your answer to parts (b) and (d) with those for the standard gambler's ruin problem with \(p = 1/2\), and give reasons for the similarities or differences. {{[}2{]}}
 
 \hypertarget{S05-markov-chains}{%
 \section{Discrete time Markov chains}\label{S05-markov-chains}}
@@ -1436,7 +1519,7 @@ So far we've seen a a few examples of stochastic processes in discrete time and 
 
 To define a so-called ``Markov chain'', we first need to say where we start from, and second what the probabilities of transitions from one state to another are.
 
-In our examples of the simple random walk and gambler's ruin, we specified the start point \(X_0\) exactly, but we could pick the start point at random according to some distribution \(\lambda_i = \mathbb P(X_0 = i)\).
+In our examples of the simple random walk and gambler's ruin, we specified the start point \(X_0 = x_0\) exactly, but we could pick the start point at random according to some distribution \(\lambda_i = \mathbb P(X_0 = i)\).
 
 After that, we want to know the \textbf{transition probabilities} \(\mathbb P(X_{n+1} = j \mid X_n = i)\) for \(i,j \in \mathcal S\). Here, because of the Markov property, the transition probability only needs to condition on the state we're in now \(X_n = i\), and not on the whole history of the process.
 
@@ -1464,9 +1547,9 @@ When the state space is finite (and even sometimes when it's not), it's convenie
 
 From this, we can calculate, for example,
 \[ \mathbb P(X_0 = i \text{ and } X_1 = j) = \lambda_i p_{ij} , \]
-as we must start from \(i\) and then move to \(j\). Another example would be
+as we must start from \(i\) and then move from \(i\) to \(j\). Another example would be
 \[ \mathbb P(X_{n+2} = j \text{ and } X_{n+1} = k \mid X_n = i) = p_{ik}p_{kj} , \]
-as we must first move from \(i\) to \(k\), then from \(k\) to \(j\).
+as we must first move from \(i\) to \(k\) then from \(k\) to \(j\).
 
 \hypertarget{S05-example}{%
 \subsection{A two-state example}\label{S05-example}}
@@ -1486,7 +1569,7 @@ We can illustrate \(\mathsf P\) by a \textbf{transition diagram}, where the blob
 \caption{Transition diagram for the two-state Markov chain}\label{fig:twostate}
 \end{figure}
 
-We can use this as a simple model of a broken printer, for example. If the printer is broken (state \(0\)) on one day, then with probability \(\alpha\) it will be fixed (state \(1\)) by the next day; while if it is working (state \(1\)), then with probability \(\beta\) it will have broken down (state \(0\)) by the next day.
+We can use this as a simple model of a broken printer, for example. If the printer is broken (state 0) on one day, then with probability \(\alpha\) it will be fixed (state 1) by the next day; while if it is working (state 1), then with probability \(\beta\) it will have broken down (state 0) by the next day.
 
 \begin{example}
 \protect\hypertarget{exm:printer}{}\label{exm:printer}
@@ -1495,17 +1578,18 @@ We can use this as a simple model of a broken printer, for example. If the print
 
 If we call Monday day \(n\), then Wednesday is day \(n+2\), and we want to find the two-step transition probability.
 \[ p_{11}(2) = \mathbb P (X_{n+2} = 1 \mid X_n = 1) . \]
-The key to calculating this is to condition on the first step again -- that is, on whether the printer is working on Tuesday. We have
+The key to calculating this is to \emph{condition on the first step} again -- that is, on whether the printer is working on Tuesday. We have
 \begin{align*}
-  p_{11}(2) &= \mathbb P (X_{n+1} = 0 \mid X_n = 1)\,\mathbb P (X_{n+2} = 1 \mid X_{n+1} = 0) \\
+  p_{11}(2) &= \mathbb P (X_{n+1} = 0 \mid X_n = 1)\,\mathbb P (X_{n+2} = 1 \mid X_{n+1} = 0, X_n = 1) \\
+  &\qquad{} + \mathbb P (X_{n+1} = 1 \mid X_n = 1)\,\mathbb P (X_{n+2} = 1 \mid X_{n+1} = 1, X_n = 1) \\
+  &= \mathbb P (X_{n+1} = 0 \mid X_n = 1)\,\mathbb P (X_{n+2} = 1 \mid X_{n+1} = 0) \\
   &\qquad{} + \mathbb P (X_{n+1} = 1 \mid X_n = 1)\,\mathbb P (X_{n+2} = 1 \mid X_{n+1} = 1) \\
   &= p_{10}p_{01} + p_{11}p_{11} \\
   &= \beta\alpha + (1-\beta)^2 .
 \end{align*}
+In the second equality, we used the Markov property to mean conditional probabilities like \(\mathbb P(X_{n+2} = 1 \mid X_{n+1} = k)\) did not have to depend on \(X_n\).
 
-Another way to think of this as we summing the probabilities of all length-\(2\) paths from \(1\) to \(1\), which are \(1\to 0\to 1\) with probability \(\beta\alpha\) and \(1 \to 1 \to 1\) with probability \((1-\beta)^2\)
-
-In the above, we used the Markov property to mean the conditional probabilities \(\mathbb P(X_{n+2} = 1 \mid X_{n+1} = k)\) did not have to depend on \(X_n\).
+Another way to think of this as we summing the probabilities of all length-2 paths from 1 to 1, which are \(1\to 0\to 1\) with probability \(\beta\alpha\) and \(1 \to 1 \to 1\) with probability \((1-\beta)^2\)
 
 \end{example}
 
@@ -1515,7 +1599,7 @@ In the above, we used the Markov property to mean the conditional probabilities 
 In the above example, we calculated a two-step transition probability \(p_{ij}(2) = \mathbb P (X_{n+2} = j \mid X_n = i)\) by conditioning on the first step. That is, by considering all the possible intermediate steps \(k\), we have
 \[ p_{ij}(2) = \sum_{k\in\mathcal S} \mathbb P (X_{n+1} = k \mid X_n = i)\mathbb P (X_{n+2} = j \mid X_{n+1} = k) = \sum_{k\in\mathcal S} p_{ik}p_{kj} . \]
 
-But this is exactly the formula for multiplying the matrix \(\mathsf P\) with itself! In other words, \(p_{ij}(2) = \sum_{k} p_{ik}p_{kj}\) is the \((i,j)\)th entry of the matrix \(\mathsf P^2 = \mathsf{PP}\). If we write \(\mathsf P(2) = (p_{ij}(2))\) for the matrix of two-step transition probabilities, we have \(\mathsf P(2) = \mathsf P^2\).
+But this is exactly the formula for multiplying the matrix \(\mathsf P\) with itself! In other words, \(p_{ij}(2) = \sum_{k} p_{ik}p_{kj}\) is the \((i,j)\)th entry of the matrix square \(\mathsf P^2 = \mathsf{PP}\). If we write \(\mathsf P(2) = (p_{ij}(2))\) for the matrix of two-step transition probabilities, we have \(\mathsf P(2) = \mathsf P^2\).
 
 More generally, we see that this rule holds over multiple steps, provided we sum over all the possible paths \(i\to k_1 \to k_2 \to \cdots \to k_{n-1} \to j\) of length \(n\) from \(i\) to \(j\).
 
@@ -1543,7 +1627,7 @@ or, in matrix notation, \(\mathsf P(n+m) = \mathsf P(n)\mathsf P(m)\).
 
 In other words, a trip of length \(n + m\) from \(i\) to \(j\) is a trip of length \(n\) from \(i\) to some other state \(k\), then a trip of length \(m\) from \(k\) back to \(j\), and this intermediate stop \(k\) can be any state, so we have to sum the probabilities.
 
-Of course, once we know that \(\mathsf P(n) = \mathsf P^n\) is given by the matrix power, it's totally obvious that \(\mathsf P(n+m) = \mathsf P^{n+m} = \mathsf P^n \mathsf P^m = \mathsf P(n)\mathsf P(m)\).
+Of course, once we know that \(\mathsf P(n) = \mathsf P^n\) is given by the matrix power, it's clear to see that \(\mathsf P(n+m) = \mathsf P^{n+m} = \mathsf P^n \mathsf P^m = \mathsf P(n)\mathsf P(m)\).
 
 \begin{example}
 \protect\hypertarget{exm:printer2}{}\label{exm:printer2}
@@ -1597,7 +1681,9 @@ We can model this directly as a Markov chain:
 \begin{itemize}
 \tightlist
 \item
-  the state space \(\mathcal S = \{1,2,3\}\) is discrete, as is the time (each year);
+  the state space \(\mathcal S = \{1,2,3\}\) is discrete;
+\item
+  the time index is discrete, as we have one discount level each year;
 \item
   the probability of being in a certain state at a future time is completely determined by the present state (the Markov property);
 \item
@@ -1607,7 +1693,14 @@ We can model this directly as a Markov chain:
 The transition probability and transition diagram of the Markov chain are:
 \[ \mathsf P = \begin{pmatrix} \frac14 & \frac34 & 0 \\ \frac14 & 0 & \frac34 \\ 0 & \frac14 & \frac34 \end{pmatrix} . \]
 
-\begin{center}\includegraphics{math2750_files/figure-latex/example1-1} \end{center}
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/example1-1} 
+
+}
+
+\caption{Transition diagram for the simple no-claims discount model}\label{fig:example1}
+\end{figure}
 
 \begin{example}
 \protect\hypertarget{exm:act1}{}\label{exm:act1}
@@ -1623,12 +1716,14 @@ We can find this by summing over all paths \(1 \to k_1 \to k_2 \to 3\). There ar
 
 Alternatively, we could directly calculate all the three-step transition probabilities by the matrix method, to get
 \[ \mathsf P(3) = \mathsf P^3 = \mathsf{PPP} = \frac{1}{64} \begin{pmatrix} 7 & 21 & 36 \\ 7 & 12 & 45 \\ 4 & 15 & 45 \end{pmatrix} .\]
-(You can check this yourself.) The desired \(p_{13}(3)\) is the top right entry \(36/64 = 9/16\).
+(You can check this yourself, if you want.) The desired \(p_{13}(3)\) is the top right entry \(36/64 = 9/16\).
 
 \end{example}
 
 \hypertarget{S06-example2}{%
 \subsection{An accident model with memory}\label{S06-example2}}
+
+Sometimes, we are presented with a situation where the ``obvious'' stochastic process is not a Markov chain. But sometimes we can find a related process that \emph{is} a Markov chain, and study that instead. As an example of this, we consider at a different accident model.
 
 According to a different model, a motorist's \(n\)th year of driving is either accident free, or has exactly one accident. (The model does not allow for more than one accident in a year.) Let \(Y_n\) be a random variable so that,
 \[
@@ -1657,12 +1752,12 @@ However, we have a cunning work-around. Define \(X_n=\sum_{i=1}^n Y_i\) to be th
 \end{align*}
 and \(X_{n+1} = x_n\) otherwise. This clearly depends only on \(x_n\). Thus we can use Markov chain techniques on \((X_n)\) to lean about the non-Markov process \((Y_n)\)
 
-Let's think about the conditions we placed on this model. First, the transition probabilities should lie in the range \([0,1]\). Since \(\sum_{i=1}^n y_i\leq n\), this is where we use \(0\leq f(m)\leq g(m)\). Second, the condition that \(f\) is increasing means that between drivers who have been driving the same number of years, we think the more accident-prone in the past is more likely to have an accident in the future. Third, the condition that \(g\) is increasing means that between drivers who have had the same number of accidents, we think the one who has spread those accidents over a longer period of time is less likely to have accidents in the future.
+Let's think about the conditions we placed on this model. First, the condition that \(f\) is increasing means that between drivers who have been driving the same number of years, we think the more accident-prone in the past is more likely to have an accident in the future. Second, the condition that \(g\) is increasing means that between drivers who have had the same number of accidents, we think the one who has spread those accidents over a longer period of time is less likely to have accidents in the future. Third, the transition probabilities should lie in the range \([0,1]\); but since \(\sum_{i=1}^m y_i\leq m\), our condition \(0\leq f(m)\leq g(m)\) guaranteed that this is the case.
 
 \hypertarget{S06-example3}{%
 \subsection{A no-claims discount model with memory}\label{S06-example3}}
 
-Sometimes, we are presented with a stochastic process which is not a Markov chain, but by altering the state space \(\mathcal{S}\) we can sometimes end up with a process which is a Markov chain. As such, it is important to think carefully about choice of state space. To see this we will return to the no-claims discount example.
+Sometimes, we are presented with a stochastic process which is not a Markov chain, but where by altering the state space \(\mathcal{S}\) we \emph{can} end up with a process which \emph{is} a Markov chain. As such, when making a model, it is important to think carefully about choice of state space. To see this we will return to the no-claims discount example.
 
 Suppose now we have an model with four levels of discount:
 
@@ -1678,12 +1773,13 @@ Suppose now we have an model with four levels of discount:
   60\% discount (state 4)
 \end{itemize}
 
-If a year is accident free, then the discount increases one level, to a maximum of 60\%. If the year has an accident, then the discount decreases, by one level if the year previous to that was accident free, but by two levels if the previous year had an accident also, to a minimum of no discount.
+If a year is accident free, then the discount increases one level, to a maximum of 60\%. This time, if the year has an accident, then the discount decreases by one level if the year previous to that was accident free, but decreases by \emph{two} levels if the previous year had an accident as well, both to a minimum of no discount.
+
 As before, the insurance company believes that probability that a motorist has a claim-free year is \(\frac34 = 0.75\).
 
-We might consider the most natural example of a state space, where the states are discount levels; say, \(\mathcal{S}=\{1,2,3,4\}\). But this is not a Markov chain, since if a policy holder has an accident, we may need to know about the past in order to determine probabilities for future states, which violates the Markov property. In particular, if a motorist is in state 3 (40\% discount) and has an accident, they will either move down to level 2 (if they had not crashed the previous year, so had previously been in state 2) or to level 1 (if they had crashed the previous year, so had previously been in state 4), depending on their previous level. You can check this is the only violation of the Markov property.
+We might consider the most natural choice of a state space, where the states are discount levels; say, \(\mathcal{S}=\{1,2,3,4\}\). But this is not a Markov chain, since if a policy holder has an accident, we may need to know about the past in order to determine probabilities for future states, which violates the Markov property. In particular, if a motorist is in state 3 (40\% discount) and has an accident, they will either move down to level 2 (if they had not crashed the previous year, so had previously been in state 2) or to level 1 (if they had crashed the previous year, so had previously been in state 4) -- but that depends on their previous level too, which the Markov property doesn't allow. (You can check this is the only violation of the Markov property.)
 
-However, we can be clever again, this time in the choice of our state space. Instead, we can split the 40\% level into two different states: state ``3a'' if there was an accident the previous year and state ``3b'' if there was no accident the previous year. Our states are now:
+However, we can be clever again, this time in the choice of our state space. Instead, we can split the 40\% level into two different states: state ``3a'' if there was no accident the previous year, and state ``3b'' if there was an accident the previous year. Our states are now:
 
 \begin{itemize}
 \tightlist
@@ -1699,7 +1795,7 @@ However, we can be clever again, this time in the choice of our state space. Ins
   60\% discount (state 4)
 \end{itemize}
 
-Now this \emph{is} a Markov chain. Under the assumption of 25\% of drivers having an accident each year, the transition matrix is
+Now this \emph{is} a Markov chain, because the new states 3s carry with them the memory of the previous year, to ensure the Markov property is preserved. Under the assumption of 25\% of drivers having an accident each year, the transition matrix is
 \[
 \mathsf P=\begin{pmatrix}
 0.25 & 0.75 & 0 & 0 & 0\\
@@ -1710,7 +1806,16 @@ Now this \emph{is} a Markov chain. Under the assumption of 25\% of drivers havin
 \]
 The transition diagram is shown below. (Recall that we don't draw arrows with probability 0.)
 
-\begin{center}\includegraphics{math2750_files/figure-latex/example3-1} \end{center}
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/example3-1} 
+
+}
+
+\caption{Transition diagram for the no-claims discount model with memory}\label{fig:example3}
+\end{figure}
+
+Note that when we move up from state 2, we go to 3a (no accident in the previous year); but when we move down from state 4, we go to 3b (accident in the previous year).
 
 \textbf{In the next section}, we look at how to study large Markov chains by splitting them into smaller pieces called ``classes''.
 
@@ -1718,7 +1823,71 @@ The transition diagram is shown below. (Recall that we don't draw arrows with pr
 \section*{Problem sheet 3}\label{P03}}
 \addcontentsline{toc}{section}{Problem sheet 3}
 
-Problem Sheet 3
+\commfalse
+
+You should attempt all these questions and write up your solutions in advance of your workshop in week 4 (Monday 15 or Tuesday 16 February) where the answers will be discussed.
+
+\textbf{2.} Consider the two-state ``broken printer'' Markov chain, with state space \(\mathcal S = \{0,1\}\), transition matrix
+\[ \mathsf P = \begin{pmatrix} 1-\alpha & \alpha \\
+                 \beta & 1-\beta \end{pmatrix} \]
+with \(0 < \alpha, \beta < 1\), and initial distribution \(\boldsymbol\lambda = (\lambda_0, \lambda_1)\). Write \(\mu_n =\mathbb P(X_n = 0)\).
+
+\textbf{(a)} By writing \(\mu_{n+1}\) in terms of \(\mu_n\), show that we have
+\[ \mu_{n+1} - \big(1-(\alpha+\beta)\big)\mu_n = \beta . \]
+
+\begin{myanswers}
+
+Using the law of total probability, we have
+\begin{multline*}
+\mathbb P(X_{n+1} = 0) = \mathbb P(X_n = 0)\,\mathbb P(X_{n+1} = 0 \mid X_n = 0) \\
++ \mathbb P(X_n = 1)\,\mathbb P(X_{n+1} = 0 \mid X_n = 1) ,
+\end{multline*}
+which in terms of \((\mu_n)\) is
+\[ \mu_{n+1} = \mu_n (1-\alpha) + (1 - \mu_n)\beta . \]
+We used here that \(\mathbb P(X_n = 1) = 1-\mu_n\).
+Rearranging this gives the answer.
+
+\end{myanswers}
+
+\textbf{(b)} By solving this linear difference equation using the initial condition \(\mu_0 = \lambda_0\), or otherwise, show that
+\[ \mu_n = \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n   . \]
+
+\begin{myanswers}
+
+The characteristic equation is \(\lambda - (1-(\alpha+\beta)) = 0\) with a single root at \(\lambda = 1 - (\alpha+\beta)\). The general solution to the homogeneous equation is, therefore, \(A(1-(\alpha+\beta))^n\).
+
+For a particular solution, we guess a solution \(\mu_n = C\), and \(C - (1-(\alpha+\beta))C = \beta\) gives \(C = \beta/(\alpha+\beta)\). Thus the general solution to the inhomogeneous equation is
+\[ \mu_n = \frac{\beta}{\alpha+\beta} + A\big(1-(\alpha+\beta)\big)^n .\]
+
+From the initial condition, we get \(\lambda_0 = \beta/(\alpha+\beta) + A\), and therefore \(A = \lambda_0 - \beta/(\alpha+\beta)\). The solution is therefore as given.
+
+\end{myanswers}
+
+\textbf{(c)} What, therefore, are \(\lim_{n\to\infty} \mathbb P(X_n = 0)\) and \(\lim_{n\to\infty} \mathbb P(X_n = 1)\)?
+
+\begin{myanswers}
+
+Note that \(-1 < 1 - (\alpha + \beta) < 1\), so \((1-(\alpha+\beta))^n \to 0\). Therefore we have
+\begin{align*}
+\lim_{n\to\infty} \mathbb P(X_n = 0) &= \lim_{n\to\infty} \mu_n \\
+&= \lim_{n\to\infty} \left( \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n \right) \\
+&= \frac{\beta}{\alpha+\beta} .
+\end{align*}
+Since \(\mathbb P(X_n = 1) = 1- \mathbb P(X_n = 0)\), we have
+\[ \mathbb P(X_n = 1) \to 1 - \frac{\beta}{\alpha+\beta} = \frac{\alpha}{\alpha+\beta} . \]
+
+\end{myanswers}
+
+\textbf{(d)} Explain what happens if the Markov chain is started in the distribution
+\[ \lambda_0 = \frac{\beta}{\alpha+\beta} , \qquad \lambda_1 = \frac{\alpha}{\alpha+\beta}  . \]
+
+\begin{myanswers}
+
+We then have that \(\mathbb P(X_n = 0) = \mu_n = \beta/(\alpha+\beta)\) and \(\mathbb P(X_n = 1) = \alpha/(\alpha+\beta)\) for all times \(n\); that is, the Markov chain remains in the same `stationary distribution' forever.
+
+\end{myanswers}
+
+** \emph{More questions to follow.} **
 
 \hypertarget{S07-classes}{%
 \section{Class structure}\label{S07-classes}}
@@ -2093,7 +2262,7 @@ One could also calculate expected hitting times \(\eta_{i0}\). For \(p \neq \fra
 
 For \(p = \frac12\), conditioning on the first step gives the equation
 \[ \eta_{i0} = 1 + \tfrac12\eta_{i+1\,0} + \tfrac12\eta_{i-1\,0} , \]
-with initial condition \(\eta_{00} = 0\). This has the solution \(\eta_{i0} = -i^2 + Bi = i(B-i)\). Then non-negativity demands \(B = \infty\), as any other value would make the \(-i^2\) negative for big enough \(i\). This gives \(\eta_{i0} = \infty\), and \(\mu_0 = \infty\) also.
+with initial condition \(\eta_{00} = 0\). This has the solution \(\eta_{i0} = -i^2 + Bi = i(B-i)\). Then non-negativity demands \(B = \infty\), as any other value would get drowned out by the \(-i^2\), making the term negative for big enough \(i\). Thus we have \(\eta_{i0} = \infty\), and \(\mu_0 = \infty\) also.
 So for \(p = \frac12\), while the random walk always return to \(0\), it may take a very long time to do so.
 
 In conclusion, this is what we found out:
