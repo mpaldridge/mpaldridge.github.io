@@ -134,7 +134,7 @@
 <li class="chapter" data-level="7.2" data-path="S07-classes.html"><a href="S07-classes.html#periodicity"><i class="fa fa-check"></i><b>7.2</b> Periodicity</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="S08-hitting-times.html"><a href="S08-hitting-times.html"><i class="fa fa-check"></i><b>8</b> Hitting times</a><ul>
-<li class="chapter" data-level="8.1" data-path="S08-hitting-times.html"><a href="S08-hitting-times.html#hitting-definitions"><i class="fa fa-check"></i><b>8.1</b> Hitting probability and expected hitting time</a></li>
+<li class="chapter" data-level="8.1" data-path="S08-hitting-times.html"><a href="S08-hitting-times.html#hitting-definitions"><i class="fa fa-check"></i><b>8.1</b> Hitting probabilities and expected hitting times</a></li>
 <li class="chapter" data-level="8.2" data-path="S08-hitting-times.html"><a href="S08-hitting-times.html#return-times"><i class="fa fa-check"></i><b>8.2</b> Return times</a></li>
 <li class="chapter" data-level="8.3" data-path="S08-hitting-times.html"><a href="S08-hitting-times.html#return-rw"><i class="fa fa-check"></i><b>8.3</b> Hitting and return times for the simple random walk</a></li>
 </ul></li>
@@ -159,9 +159,9 @@
 <li class="chapter" data-level="11.3" data-path="S11-long-term-chains.html"><a href="S11-long-term-chains.html#S11-ergodic"><i class="fa fa-check"></i><b>11.3</b> Ergodic theorem</a></li>
 <li class="chapter" data-level="11.4" data-path="S11-long-term-chains.html"><a href="S11-long-term-chains.html#S11-proofs"><i class="fa fa-check"></i><b>11.4</b> Proofs of the limit and ergodic theorems</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="S11-revision-i.html"><a href="S11-revision-i.html"><i class="fa fa-check"></i><b>12</b> Revision of Part 1: Discrete time Markov chains</a><ul>
-<li class="chapter" data-level="12.1" data-path="S11-revision-i.html"><a href="S11-revision-i.html#S12-revision"><i class="fa fa-check"></i><b>12.1</b> Things to do</a></li>
-<li class="chapter" data-level="12.2" data-path="S11-revision-i.html"><a href="S11-revision-i.html#S12-summary-i"><i class="fa fa-check"></i><b>12.2</b> Summary of Part 1</a></li>
+<li class="chapter" data-level="12" data-path="S12-revision-i.html"><a href="S12-revision-i.html"><i class="fa fa-check"></i><b>12</b> Revision of Part 1: Discrete time Markov chains</a><ul>
+<li class="chapter" data-level="12.1" data-path="S12-revision-i.html"><a href="S12-revision-i.html#S12-revision"><i class="fa fa-check"></i><b>12.1</b> Things to do</a></li>
+<li class="chapter" data-level="12.2" data-path="S12-revision-i.html"><a href="S12-revision-i.html#S12-summary-i"><i class="fa fa-check"></i><b>12.2</b> Summary of Part 1</a></li>
 </ul></li>
 <li class="part"><span><b>Part II: Continuous time Markov jump processes</b></span></li>
 <li class="chapter" data-level="13" data-path="S13-poisson-poisson.html"><a href="S13-poisson-poisson.html"><i class="fa fa-check"></i><b>13</b> Poisson process with Poisson increments</a><ul>
@@ -218,13 +218,13 @@
 <p><img src="math2750_files/figure-html/twostate2-1.png" width="384" style="display: block; margin: auto;" /></p>
 <p>Suppose we start the chain from the initial distribution
 <span class="math display">\[ \lambda_0 = \mathbb P(X_0 = 0) = \frac{\beta}{\alpha+\beta} \qquad \lambda_1 = \mathbb P(X_0 = 1) = \frac{\alpha}{\alpha+\beta} . \]</span>
-(You may recognise this from <a href="P03.html#P03">Question 1 on Problem Sheet 3</a>.) What’s the distribution after step 1? By conditioning on the initial state, we have
+(You may recognise this from <a href="P03.html#P03">Question 3 on Problem Sheet 3 and the associated video</a>.) What’s the distribution after step 1? By conditioning on the initial state, we have
 <span class="math display">\[\begin{align*}
   \mathbb P(X_1 = 0) &amp;= \lambda_0 p_{00} + \lambda_1 p_{10} = \frac{\beta}{\alpha+\beta}(1-\alpha) + \frac{\alpha}{\alpha+\beta}\beta = \frac{\beta}{\alpha+\beta} ,\\
   \mathbb P(X_1 = 1) &amp;= \lambda_0 p_{01} + \lambda_1 p_{11} = \frac{\beta}{\alpha+\beta}\alpha + \frac{\alpha}{\alpha+\beta}(1-\beta) = \frac{\alpha}{\alpha+\beta} .
 \end{align*}\]</span>
 So we’re still in the same distribution we started in. By repeating the same calculation, we’re still going to be in this distribution after step 2, and step 3, and forever.</p>
-<p>More generally, if we start from a state given by a distribution <span class="math inline">\(\boldsymbol \pi = (\pi_i)\)</span>, then after step 1 the probability we’re in state <span class="math inline">\(j\)</span> is <span class="math inline">\(\sum_i \pi_i p_{ij}\)</span>. So if <span class="math inline">\(\pi_j = \sum_i \pi_i p_{ij}\)</span>, we stay in this distribution forever. In matrix form, this is <span class="math inline">\(\boldsymbol \pi = \boldsymbol \pi\mathsf P\)</span>. (Remember that <span class="math inline">\(\boldsymbol \pi\)</span> is a <em>row</em> vector.) We call such a distribution a stationary distribution.</p>
+<p>More generally, if we start from a state given by a distribution <span class="math inline">\(\boldsymbol \pi = (\pi_i)\)</span>, then after step 1 the probability we’re in state <span class="math inline">\(j\)</span> is <span class="math inline">\(\sum_i \pi_i p_{ij}\)</span>. So if <span class="math inline">\(\pi_j = \sum_i \pi_i p_{ij}\)</span>, we stay in this distribution forever. We call such a distribution a stationary distribution. We again recodnise this formula as a matrix–vector multiplication, so this is <span class="math inline">\(\boldsymbol \pi = \boldsymbol \pi\mathsf P\)</span>, where <span class="math inline">\(\boldsymbol \pi\)</span> is a <em>row</em> vector.</p>
 <div class="definition">
 <p><span id="def:unlabeled-div-12" class="definition"><strong>Definition 10.1  </strong></span>Let <span class="math inline">\((X_n)\)</span> be a Markov chain on a state space <span class="math inline">\(\mathcal S\)</span> with transition matrix <span class="math inline">\(\mathsf P\)</span>.
 Let <span class="math inline">\(\boldsymbol \pi = (\pi_i)\)</span> be a distribution on <span class="math inline">\(\mathcal S\)</span>, in that <span class="math inline">\(\pi_i \geq 0\)</span> for all <span class="math inline">\(i \in \mathcal S\)</span> and <span class="math inline">\(\sum_{i \in \mathcal S} \pi_i = 1\)</span>. We call <span class="math inline">\(\boldsymbol \pi\)</span> a <strong>stationary distribution</strong> if
@@ -358,7 +358,7 @@ The less important point was that null recurrent and transitive Markov chains do
 <p><span id="unlabeled-div-13" class="proof"><em>Proof</em>. </span>Suppose that <span class="math inline">\((X_n)\)</span> is recurrent (either positive or null, for the moment).</p>
 <p>Our first task will be to find a stationary vector. Fix an initial state <span class="math inline">\(k\)</span>, and let <span class="math inline">\(\nu_i\)</span> be the expected number of visits to <span class="math inline">\(i\)</span> before we return back to <span class="math inline">\(k\)</span>. That is,
 <span class="math display">\[\begin{align*}
-\nu_i &amp;= \mathbb E \# \{\text{visits to $i$ before returning to $k$}\} \\
+\nu_i &amp;= \mathbb E (\# \text{ visits to $i$ before returning to $k$} \mid X_0 = k) \\
       &amp;= \mathbb E \sum_{n=1}^{M_k} \mathbb P(X_n = i \mid X_0 = k) \\
       &amp;= \sum_{n=1}^\infty \mathbb P(X_n = i \text{ and } n \leq M_k \mid X_0 = k)  ,
 \end{align*}\]</span>
@@ -380,7 +380,7 @@ We can now do a cheeky bit of monkeying around with the index <span class="math 
 &amp;= \nu_j .
 \end{align*}\]</span>
 So <span class="math inline">\(\boldsymbol\nu\)</span> is indeed a stationary vector.</p>
-<p>We now want normalise <span class="math inline">\(\boldsymbol\nu\)</span> into a stationary distribution by dividing through by <span class="math inline">\(\sum_i \nu_i\)</span>. We can do this if <span class="math inline">\(\sum_i \nu_i\)</span> is finite. But <span class="math inline">\(\sum_i \nu_i\)</span> is the expected total number of visits to all states before return to <span class="math inline">\(k\)</span>, which is precisely the expected return time <span class="math inline">\(\mu_k\)</span>. Now we use assume that <span class="math inline">\((X_n)\)</span> is <em>positive</em> recurrent. This means that <span class="math inline">\(\mu_k\)</span> is finite, so <span class="math inline">\(\boldsymbol\pi = (1/\mu_k) \boldsymbol\nu\)</span> is a stationary distribution.</p>
+<p>We now want normalise <span class="math inline">\(\boldsymbol\nu\)</span> into a stationary distribution by dividing through by <span class="math inline">\(\sum_i \nu_i\)</span>. We can do this if <span class="math inline">\(\sum_i \nu_i\)</span> is finite. But <span class="math inline">\(\sum_i \nu_i\)</span> is the expected total number of visits to all states before return to <span class="math inline">\(k\)</span>, which is precisely the expected return time <span class="math inline">\(\mu_k\)</span>. Now we use the assumption that <span class="math inline">\((X_n)\)</span> is <em>positive</em> recurrent. This means that <span class="math inline">\(\mu_k\)</span> is finite, so <span class="math inline">\(\boldsymbol\pi = (1/\mu_k) \boldsymbol\nu\)</span> is a stationary distribution.</p>
 </div>
 <div class="thpart">
 <p><strong>Uniqueness:</strong> <em>For an irreducible, positive recurrent Markov chain, the stationary distribution is unique and is given by <span class="math inline">\(\pi_i = 1/\mu_i\)</span>.</em></p>

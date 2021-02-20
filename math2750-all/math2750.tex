@@ -109,6 +109,26 @@
 \section*{Schedule}\label{home}}
 \addcontentsline{toc}{section}{Schedule}
 
+\textbf{Week 4} (15--19 February):
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{S07-classes}{\textbf{Section 7}: Class Structure}
+\item
+  \protect\hyperlink{S08-hitting-times}{\textbf{Section 8}: Hitting times}
+\item
+  \protect\hyperlink{P04}{\textbf{Problem Sheet 4}}
+\item
+  \protect\hyperlink{computing}{\textbf{Computational Worksheet 1}}, with \textbf{computational drop-in sessions}: Monday, Tuesday, or Wednesday (Teams)
+\item
+  \textbf{Lecture}: Tuesday at 1400 (Zoom)
+\item
+  \textbf{Workshops} on Problem Sheet 3: Monday or Tuesday (Zoom)
+\item
+  Non-computational \textbf{drop-in sessions}: Tuesday or Wednesday (Teams)
+\end{itemize}
+
 \textbf{Week 3} (8--12 February):
 
 \begin{itemize}
@@ -123,12 +143,6 @@
   \protect\hyperlink{A1}{\textbf{Assessment 1}} due Thursday 11 February (this week) at 1400
 \item
   \protect\hyperlink{computing}{\textbf{Computational Worksheet 1}}: computational drop-in sessions next week
-\item
-  \textbf{Lecture}: Tuesday at 1400 (Zoom)
-\item
-  \textbf{Workshops} on Problem Sheet 2: Monday or Tuesday (Zoom)
-\item
-  \textbf{Drop-in sessions}: Tuesday or Wednesday (Teams)
 \end{itemize}
 
 \textbf{Week 2} (1--5 February):
@@ -143,12 +157,6 @@
   \protect\hyperlink{P02}{\textbf{Problem Sheet 2}}
 \item
   \protect\hyperlink{A1}{\textbf{Assessment 1}} due Thursday 11 February (next week) at 1400
-\item
-  \textbf{Lecture}: Tuesday at 1400 (Zoom)
-\item
-  \textbf{Workshops} on Problem Sheet 1: Monday or Tuesday (Zoom)
-\item
-  \textbf{Drop-in sessions}: Tuesday or Wednesday (Teams)
 \end{itemize}
 
 \textbf{Week 1} (25--29 January):
@@ -163,10 +171,6 @@
   \protect\hyperlink{S02-random-walk}{\textbf{Section 2}: Random walks}
 \item
   \protect\hyperlink{P01}{\textbf{Problem Sheet 1}}
-\item
-  \textbf{Lecture}: Tuesday at 1400 (Zoom)
-\item
-  \textbf{Drop-in sessions}: Tuesday or Wednesday (Teams)
 \end{itemize}
 
 \hypertarget{S00-about}{%
@@ -1865,7 +1869,7 @@ Note that when we move up from state 2, we go to 3a (no accident in the previous
 \section*{Problem sheet 3}\label{P03}}
 \addcontentsline{toc}{section}{Problem sheet 3}
 
-\commfalse
+\commtrue
 
 You should attempt all these questions and write up your solutions in advance of your workshop in week 4 (Monday 15 or Tuesday 16 February) where the answers will be discussed.
 
@@ -2157,7 +2161,7 @@ which has solution \(\delta = 0.03/(1-0.92) = 0.375\).
 
 \end{myanswers}
 
-A corporate bond portfolio manager follows an investment strategy which means that bonds which falls from A-rated to B-rated is sold and replaced with an A-rated bond. The manger believes this will improve the returns on the portfolio because it will reduce the number of defaults experienced.
+A corporate bond portfolio manager follows an investment strategy which means that bonds which fall from A-rated to B-rated are sold and replaced with an A-rated bond. The manager believes this will improve the returns on the portfolio because it will reduce the number of defaults experienced.
 
 \textbf{(c)} Calculate the expected number of defaults in the manager's portfolio over the next two years given there are initially 100 A-rated bonds.
 
@@ -2261,7 +2265,7 @@ and the transition diagram is:
 
 }
 
-\caption{Transition for the healthy--sick--dead chain.}\label{fig:HSD}
+\caption{Transition diagram for the healthy--sick--dead chain.}\label{fig:HSD}
 \end{figure}
 
 Clearly H and S communicate with each other (you can become infected or recover), while D only communicates with itself (the dead do not recover). Hence, the state space \(\mathcal S = \{\mathrm{H},\mathrm{S},\mathrm{D}\}\) partitions into two communicating classes: \(\{\mathrm{H},\mathrm{S}\}\) and \(\{\mathrm{D}\}\).
@@ -2280,6 +2284,20 @@ We say that a communicating class is \textbf{closed} if no state outside the cla
 If a state \(i\) is in a communicating class \(\{i\}\) by itself and that class is closed, then we say state \(i\) is \textbf{absorbing}.
 
 \end{definition}
+
+In non-maths language:
+
+\begin{itemize}
+\tightlist
+\item
+  An irreducible Markov chain can't be broken down into smaller pieces.
+\item
+  Once you enter a closed class, you can't leave that class.
+\item
+  Once you reach an absorbing state, you can't leave that state.
+\end{itemize}
+
+How do these work for our earlier examples?
 
 \begin{example}
 \protect\hypertarget{exm:ex-irred}{}\label{exm:ex-irred}
@@ -2341,7 +2359,7 @@ Consider the Markov chain with transition diagram as shown:
 
 }
 
-\caption{Transition for an aperiodic irreducible Markov chain.}\label{fig:periods}
+\caption{Transition diagram for an aperiodic irreducible Markov chain.}\label{fig:periods}
 \end{figure}
 
 Importantly, we can't return from the triangle side back to the circle side. We thus see there are two communicating classes: \(\{1,2,3,4\}\), which is open, and \(\{5,6,7\}\), which is closed. The Markov chain is not irreducible, and there are no absorbing states.
@@ -2371,11 +2389,14 @@ Since \(i\leftrightarrow j\), there exist \(n,m\) such that \(p_{ij}(n)>0\) and 
 \[ p_{ii}(n+m) =  \sum_{k \in \mathcal S} p_{ik}(n) p_{ki}(m) \geq p_{ij}(n) p_{ji}(m) > 0 .  \]
 So \(d_i\) divides \(n+m\).
 
-Let \(r\) be such that \(p_{jj}(r)>0\). Then, by the Chapman-Kolmogorov equations again,
+Let \(r\) be such that \(p_{jj}(r)>0\). Then, by the same Chapman--Kolmogorov argument,
 \[
-    p_{ii}(n+m+r)\geq  p_{ij}(n) p_{jj}(r) p_{ji}(m) > 0.
+    p_{ii}(n+m+r)\geq  p_{ij}(n) p_{jj}(r) p_{ji}(m) > 0,
     \]
-Hence \(d_i\) divides \(n+m+r\). But since \(d_i\) divides \(n+m\), it must be that \(d_i\) divides \(r\) also. So whenever \(p_{jj}(r)>0\), we have that \(d_i\) divides \(r\). Since \(d_i\) is a common divisor of all the \(r\)s with \(p_{jj}(r)>0\), it can't be any bigger that the \emph{greatest} common divisor of all those \(r\)s. But that greatest common divisor is by definition \(d_j\), the period of \(j\). So \(d_i \leq d_j\).
+because we can get from \(i\) to \(i\) by going \(i \to j \to j \to i\).
+Hence \(d_i\) divides \(n+m+r\).
+
+But if \(d_i\) divides both \(n+m\) and \(n+m+r\), it must be that \(d_i\) divides \(r\) also. So whenever \(p_{jj}(r)>0\), we have that \(d_i\) divides \(r\). Since \(d_i\) is a common divisor of all the \(r\)s with \(p_{jj}(r)>0\), it can't be any bigger that the \emph{greatest} common divisor of all those \(r\)s. But that greatest common divisor is by definition \(d_j\), the period of \(j\). So \(d_i \leq d_j\).
 
 Repeating the same argument but with \(i\) and \(j\) swapped over, we get \(d_j\leq d_i\) too, and we're done.
 
@@ -2397,58 +2418,69 @@ Repeating the same argument but with \(i\) and \(j\) swapped over, we get \(d_j\
 \end{itemize}
 
 \hypertarget{hitting-definitions}{%
-\subsection{Hitting probability and expected hitting time}\label{hitting-definitions}}
+\subsection{Hitting probabilities and expected hitting times}\label{hitting-definitions}}
 
 In \protect\hyperlink{S03-gamblers-ruin}{Section 3} and \protect\hyperlink{S04-ldes}{Section 4}, we used conditioning on the first step to find the ruin probability and expected duration for the gambler's ruin problem. Here, we develop those ideas for general Markov chains.
 
 \begin{definition}
 \protect\hypertarget{def:hitting-defs}{}\label{def:hitting-defs}
 
-Let \((X_n)\) be a Markov chain on state space \(\mathcal S\). Let \(H_{A}\) be a random variable representing the hitting time to hit a state in \(A \subset \mathcal S\), given by
-\[ H_{A} = \min \{n \in \mathbb Z_+ : X_n \in A  \} . \]
+Let \((X_n)\) be a Markov chain on state space \(\mathcal S\). Let \(H_{A}\) be a random variable representing the \textbf{hitting time} to hit the set \(A \subset \mathcal S\), given by
+\[ H_{A} = \min \big\{n \in \{0,1,2,\dots\} : X_n \in A  \big\}  . \]
 The most common case we'll be interested in will be when \(A = \{j\}\) is just a single state, so
-\[ H_{j} = \min \{n \in \mathbb Z_+ : X_n = j  \} . \]
+\[ H_{j} = \min \big\{n \in \{0,1,2,\dots\} : X_n = j  \big\}  . \]
 (We use the convention that \(H_A = \infty\) if \(X_n \not\in A\) for all \(n\).)
 
-The \textbf{hitting probability} \(h_{iA}\) of states \(A \subset \mathcal S\) starting from state \(i \in \mathcal S\) is
+The \textbf{hitting probability} \(h_{iA}\) of the set \(A\) starting from state \(i\) is
 \[ h_{iA} = \mathbb P(X_n \in A \text{ for some $n \geq 0$} \mid X_0 = i) = \mathbb P(H_A < \infty \mid X_0 = i) .  \]
 Again, the most common case of interest is \(h_{ij}\) the hitting probability of state \(j\) starting from state \(i\).
 
-The \textbf{expected hitting time} \(\eta_{iA}\) of states \(A \subset \mathcal S\) starting from state \(i \in \mathcal S\) is
+The \textbf{expected hitting time} \(\eta_{iA}\) of the set \(A\) starting from state \(i\) is
 \[ \eta_{iA} = \mathbb E(H_A \mid X_0 = i) .  \]
 Clearly \(\eta_{iA}\) can only be finite if \(h_{iA} = 1\).
 
 \end{definition}
 
-For the gambler's ruin problem, we found equations for hitting probabilities and expected hitting times by conditioning on the first step and solving the resulting equations. We do the same here for other Markov chains.
+The short summary of this is:
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{hitting probability} \(h_{ij}\) is the probability we hit state \(j\) starting from state \(i\).
+\item
+  The \textbf{expected hitting time} \(\eta_{ij}\) is the expected time until we hit state \(j\) starting from state \(i\).
+\end{itemize}
+
+The good news us that we already know how to find hitting probabilities and expected hitting times, because we already did it for the \protect\hyperlink{S03-gamblers-ruin}{gambler's ruin problem}! The way we did it then is that we first found equations for hitting probabilities or expected hitting times by conditioning on the first step, and then we solved those equations. We do the same here for other Markov chains.
+
+Let's see an example of how to find a hitting probability.
 
 \begin{example}
 \protect\hypertarget{exm:hitting1}{}\label{exm:hitting1}
 
 \emph{Consider a Markov chain with transition matrix}
 \[ \begin{pmatrix}
-\frac15 & \frac15 & \frac15 & \frac25 \\[0.3ex]
-0 & 1 & 0 & 0 \\[0.3ex]
-0 & \frac12 & 0 & \frac12 \\[0.3ex]
+\frac15 & \frac15 & \frac15 & \frac25 \\
+0 & 1 & 0 & 0 \\
+0 & \frac12 & 0 & \frac12 \\
 0 & 0 & 0 & 1
 \end{pmatrix} . \]
 \emph{Calculate the probability that the chain is absorbed at state \(2\) when started from state \(1\).}
 
-This is asking for the hitting probability \(h_{12}\). The key is to find simultaneous equations for all hitting probabilities \(h_{i2}\) to state 2. Clearly we have \(h_{22} = 1\), as we are already there. Also, \(h_{42} = 0\), since 4\$is an absorbing state.
+This is asking for the hitting probability \(h_{12}\). We use -- as ever -- a conditioning on the first step argument. Specifically, we have
+\begin{align}
+  h_{12} &= p_{11} h_{12} + p_{12} h_{22} + p_{13} h_{32} + p_{14} h_{42}  \\
+         &= \tfrac 15 h_{12} + \tfrac 15 h_{22} + \tfrac 15 h_{32} + \tfrac 25 h_{42}  \label{eq:hiteq}
+\end{align}
+This is because, starting from 1, there's a \(p_{11} = \frac15\) probability of staying at 1; then by the Markov property it's like we're starting again from 1, so the hitting probability is still \(h_{12}\). Similarly, there's a \(p_{12} = \frac15\) probability of moving 2; then by the Markov property it's like we're starting again from 2, so the hitting probability is still \(h_{22}\). And so on.
 
-For the other states, we find equations by conditioning on the first step, as we did in the gambler's ruin problem. We have
-\[ h_{12} = \tfrac15 h_{12} + \tfrac15 h_{22} + \tfrac15 h_{32} + \tfrac25h_{42} \qquad \Rightarrow \qquad . \]
-This is because, starting from 1, there's a \(\frac15\) probability of staying at 1; then by the Markov property it's like we're starting again from 1, so the hitting probability is still \(h_{12}\). Similarly, there's a \(\frac15\) probability of moving 2; then by the Markov property it's like we're starting again from 2, so the hitting probability is still \(h_{22}\). And so on.
+Since \eqref{eq:hiteq} includes not just \(h_{12}\) but also \(h_{22}\), \(h_{32}\) and \(h_{42}\), we need to find equations for those too. Clearly we have \(h_{22} = 1\), as we are ``already there''. Also, \(h_{42} = 0\), since 4 is an absorbing state. For \(h_{32}\), another ``condition on the first step'' argument gives
+\[ h_{32} = p_{32}h_{22} + p_{34}h_{42} = \tfrac12 h_{22} + \tfrac12 h_{42} = \tfrac12 ,\]
+where we substituted in \(h_{22} = 1\) and \(h_{42} = 0\).
 
-We can make a similar equation for \(h_{32}\):
-\[ h_{32} = \tfrac12 h_{22} + \tfrac12 h_{42} 
-\]
-We can simplify these two equations, using \(h_{22} = 1\) and \(h_{42} = 0\), and rearrange them, to give
-\begin{align*}
-\tfrac45 \tfrac45 h_{12} &= \tfrac15  + \tfrac15 h_{32}\\
-h_{32} &= \tfrac12
-\end{align*}
-Substituting the second equation into the first, we get \(\frac45 h_{12} = \frac1{5} + \frac15\cdot\frac12 =\frac{3}{10}\), so \(h_{12} = \frac{5}{4}\,\frac{3}{10} = \frac{3}{8}\).
+Substituting \(h_{22} = 1\), \(h_{32} = \frac12\) and \(h_{42} = 0\) all into \eqref{eq:hiteq}, we get
+\[ h_{12} = \tfrac15 h_{12} + \tfrac15 + \tfrac15 \tfrac12 = \tfrac15 h_{12} + \tfrac{3}{10}. \]
+Hence \(\frac45 h_{12} = \frac{3}{10}\), so the answer we were after is \(h_{12} = \frac38\).
 
 \end{example}
 
@@ -2463,10 +2495,12 @@ So the technique to find hitting probability \(h_{ij}\) from \(i\) to \(j\) is:
   Solve the resulting simultaneous equations.
 \end{enumerate}
 
-It is recommended to derive equations for hitting probabilities from first principles by conditioning on the first step. However, we can state what the general formula is: by the same conditioning method, we get
+It is recommended to derive equations for hitting probabilities from first principles by conditioning on the first step, as we did in the example above. However, we can state what the general formula is: by the same conditioning method, we get
 \[ h_{iA} = \begin{cases} \displaystyle\sum_{j \in \mathcal S} p_{ij} h_{jA} & \text{if $i \not\in A$} \\
 1 & \text{if $i \in A$.} \end{cases} \]
-It can be shown that, if these equations have multiple solutions, that the hitting probabilities are in fact the smallest non-negative solutions.
+It can be shown that, if these equations have multiple solutions, then the hitting probabilities are in fact the smallest non-negative solutions.
+
+Now an example for expected hitting times.
 
 \begin{example}
 \protect\hypertarget{exm:hitting2}{}\label{exm:hitting2}
@@ -2479,14 +2513,15 @@ It can be shown that, if these equations have multiple solutions, that the hitti
     \end{pmatrix} .\]
 \emph{Given we start in state 1 (no discount), find the expected amount of time until we reach state 3 (50\% discount).}
 
-This question asks us to find \(\eta_{13}\). Again, we start by writing down equations for all the \(\eta_{i3}\)s. Clearly we have \(\eta_{33} = 0\).
+This question asks us to find \(\eta_{13}\). We follow the general method, and start by writing down equations for all the \(\eta_{i3}\)s.
 
-By conditioning on the first step, we have
+Clearly we have \(\eta_{33} = 0\).
+For the others, we condition on the first step to get
 \begin{align*}
 \eta_{13} = 1 + \tfrac14 \eta_{13} + \tfrac34 \eta_{23} \qquad &\Rightarrow \qquad \phantom{-}\tfrac34 \eta_{13} - \tfrac34\eta_{23} = 1 ,\\
 \eta_{23} = 1 + \tfrac14 \eta_{13} + \tfrac34 \eta_{33} \qquad &\Rightarrow \qquad  - \tfrac14\eta_{13} + \phantom{\tfrac34}\eta_{23} = 1 .
 \end{align*}
-This is because the first step takes time \(1\), then we condition on what happens next.
+This is because the first step takes time \(1\), then we condition on what happens next -- just like we did for the gambler's ruin.
 
 The first equation plus three-quarters times the second gives
 \[ \big(\tfrac34 - \tfrac34\tfrac14\big) \eta_{13} = \tfrac{9}{16}\eta_{13} = 1 + \tfrac34 = \tfrac 74 = \tfrac{28}{16} ,\]
@@ -2522,10 +2557,10 @@ where, if necessary, we take the minimal non-negative solution again.
 \hypertarget{return-rw}{%
 \subsection{Hitting and return times for the simple random walk}\label{return-rw}}
 
-We now turn to hitting probabilities for the simple random walk, which goes up with probability \(p\) and down with probability \(q = 1-p\). This material is mandatory and is examinable, but is a bit technical; students who are struggling or have fallen behind might make a tactical decision to skip to the \protect\hyperlink{thm:rw-summary}{summary theorem at the end of the subsection} and come back to the details at a later date.
+We now turn to hitting and return times for the simple random walk, which goes up with probability \(p\) and down with probability \(q = 1-p\). This material is mandatory and is examinable, but is a bit technical; students who are struggling or have fallen behind might make a tactical decision just to read the two summary theorems below and come back to the details at a later date.
 
-Without loss of generality, we look at \(h_{i0}\), the probability the random walk hits \(0\).
-We will assume that \(i \geq 0\). For \(i < 0\), we can get the desired result by looking at the random walk in the mirror -- that is, by swapping the role of \(p\) and \(q\), and treating the positive value \(-i\).
+Let's start with hitting probabilities. Without loss of generality, we look at \(h_{i0}\), the probability the random walk hits 0 starting from \(i\).
+We will assume that \(i > 0\). For \(i < 0\), we can get the desired result by looking at the random walk ``in the mirror'' -- that is, by swapping the role of \(p\) and \(q\), and treating the positive value \(-i\).
 
 For an initial condition, it's clear we have \(h_{00} = 1\).
 
@@ -2533,33 +2568,45 @@ For general \(i > 0\), we condition on the first step, to get
 \[ h_{i0} = ph_{i+1\, 0} + qh_{i-1\, 0} .  \]
 We recognise this equation from the gambler's ruin problem, and recall that we have to treat the cases \(p \neq \frac12\) and \(p = \frac12\) separately.
 
-When \(p \neq \frac12\), the general solution is \(h_{i0} = A + B\rho^i\), where \(\rho = q/p \neq 0\), as before. The initial condition \(h_{00} = 1\) gives \(A = 1-B\), so we have a family of solutions
-\[ h_{i0} = 1 + B(\rho^i - 1) . \]
+When \(p \neq \frac12\), the general solution is \(h_{i0} = A + B\rho^i\), where \(\rho = q/p \neq 1\), as before. The initial condition \(h_{00} = 1\) gives \(A = 1-B\), so we have a family of solutions
+\[ h_{i0} = (1 - B) + B\rho^i = 1 + B(\rho^i - 1) . \]
 
-In the gambler's ruin problem we had another boundary condition to find \(B\). Here we have no other conditions, but we can use the minimality condition that the hitting probabilities are the smallest non-negative solution to the equation.
+In the gambler's ruin problem we had another boundary condition to find \(B\). Here we have no other conditions, but we can use the minimality condition that the hitting probabilities are the smallest non-negative solution to the equation. This minimal non-negative solution will depend on whether \(\rho > 1\) or \(\rho < 1\).
 
-When \(\rho > 1\), so \(p < \frac12\), the term \(\rho^i\) tends to infinity. Thus the minimal non-negative solution will have to take \(B = 0\), since taking \(B < 0\) would eventually give a negative solution, so \(B = 0\) gives the smallest non-negative solution. Hence the solution is \(h_{i0} = 1 + 0\rho^i = 0\), meaning we hit \(0\) with certainty. This makes sense, because for \(p < 1/2\) the random walk ``drifts'' to the left, and eventually gets back to \(0\).
+When \(\rho > 1\), so \(p < \frac12\), the term \(\rho^i\) tends to infinity. Thus the minimal non-negative solution will have to take \(B = 0\), because taking \(B < 0\) would eventually give a negative solution, while \(B = 0\) gives the smallest of the non-negative solutions. Hence the solution is \(h_{i0} = 1 + 0(\rho^i-1) = 1\), meaning we hit 0 with certainty. This makes sense, because for \(p < \frac12\) the random walk ``drifts'' to the left, and eventually gets back to 0.
 
-When \(\rho < 1\), so \(p > \frac12\), we have that \(\rho^i - 1\) is negative and tends to \(-1\). So to get a small solution we want \(B\) as large as possible, but keeping the solution non-negative limits us to \(B \leq 1\); thus the minimality condition is achieved at \(B = 1\). The solution is \(h_{i0} = 1 + (\rho^i - 1) = \rho^i\). This is strictly less than \(1\), because for \(p > 1/2\), the random walk drifts to the right, so might drift further and further away from \(0\) and not come back.
+When \(\rho < 1\), so \(p > \frac12\), we have that \(\rho^i - 1\) is negative and tends to \(-1\). So to get a small solution we want \(B\) large and positive, but keeping the solution non-negative limits us to \(B \leq 1\), so the minimality condition is achieved at \(B = 1\). The solution is \(h_{i0} = 1 + 1(\rho^i - 1) = \rho^i\). This is strictly less than 1 as expected, because for \(p > 1/2\), the random walk drifts to the right, so might drift further and further away from 0 and not come back.
 
-For \(p = \frac12\), so \(\rho = 1\), we recall the general solution \(h_{i0} = A + Bi\), and the condition \(h_{00} = 1\) gives \(A = 1\). Because \(i\) is negative, to get the answer to be small we want \(B\) to be big, but non-negativity limits us to \(B \leq 0\). So the minimal non-negative solution takes \(B = 0\), so we have \(h_{i0} = 1\).
+For \(p = \frac12\), so \(\rho = 1\), we recall the general solution \(h_{i0} = A + Bi\). The condition \(h_{00} = 1\) gives \(A = 1\), so \(h_{i0} = 1 + Bi\). Because \(i\) is positive, to get the answer to be small we want \(B\) to be small, but non-negativity limits us to \(B\) positive, so the minimal non-negative solution takes \(B = 0\). This gives \(h_{i0} = 1 + 0i = 1\), so we will always get back to 0.
 
-In conclusion, for \(i > 0\), the hitting probabilities are given by
-\[ h_{i0} = \begin{cases} \left(\displaystyle\frac{q}{p}\right)^i & \text{if $p > \frac12$} \\ \ 1 & \text{if $p \leq \frac12$.} \end{cases} \]
-(Remember that for \(i < 0\), we get the desired result by swapping the role of \(p\) and \(q\), and treating the positive value \(-i\).)
+In conclusion, we have the following. (Recall that we get the result for \(i < 0\) by swapping the role of \(p\) and \(q\), and treating the positive value \(-i\).)
 
-What about the return time to \(0\) (or, by symmetry, to any state \(i \in \mathbb Z\))? By conditioning on the first step, \(m_0 = ph_{1\,0} + qh_{-1\,0}\). We then have
+\begin{theorem}
+\protect\hypertarget{thm:rw-hitting}{}\label{thm:rw-hitting}
+
+Consider a random walk with up probability \(p \neq 0, 1\). Then the hitting probabilities to 0 are givin by, for \(i > 0\),
+\[ h_{i0} = \begin{cases} \left(\displaystyle\frac{q}{p}\right)^i & \text{if $p > \frac12$} \\ \ 1 & \text{if $p \leq \frac12$,} \end{cases} \]
+and for \(i < 0\) by
+\[ h_{i0} = \begin{cases} \left(\displaystyle\frac{p}{q}\right)^{-i} & \text{if $p < \frac12$} \\ \ 1 & \text{if $p \geq \frac12$.} \end{cases} \]
+
+\end{theorem}
+
+Now we look at return times. What is the return probability to 0 (or, by symmetry, to any state \(i \in \mathbb Z\))? By conditioning on the first step, \(m_0 = ph_{1\,0} + qh_{-1\,0}\), and we've calculated those hitting times above. We have
 \[ m_0 = \begin{cases} p\times 1 \hspace{0.4em}+ q\times 1 \hspace{0.4em}= 1 & \text{if $p = \frac12$} \\
 p \times \displaystyle\frac qp + q\times 1 \hspace{0.4em}= 2q < 1 & \text{if $p > \frac12$} \\
 p\times 1 \hspace{0.4em} + q \times \displaystyle\frac pq = 2p < 1 & \text{if $p < \frac12$.}\end{cases} \]
-So for the simple symmetric random walk (\(p = \frac12\)) we have \(m_i = 1\) and are certain to return to \(0\) again and again, while for \(p \neq \frac12\), we have \(m_i < 1\) and we might never return.
 
-One could also calculate expected hitting times \(\eta_{i0}\). For \(p \neq \frac12\), we have \(\eta_{i0} = \infty\), since \(m_0 < 1\) and we might never come back.
+So for the simple symmetric random walk (\(p = \frac12\)) we have \(m_i = 1\) and are certain to return to the initial state again and again, while for \(p \neq \frac12\), we have \(m_i < 1\) and we might never return.
 
-For \(p = \frac12\), conditioning on the first step gives the equation
+What about the expected return times \(\mu_{0}\)? For \(p \neq \frac12\), we have \(\mu_{0} = \infty\), since \(m_0 < 1\) and we might never come back. For \(p = \frac12\), though, \(m_0 = 1\), so we have work to do.
+
+To get the expected return time for \(p = \frac12\), we'll need the expected hitting times for for \(p = \frac12\) too. Conditioning on the first step gives the equation
 \[ \eta_{i0} = 1 + \tfrac12\eta_{i+1\,0} + \tfrac12\eta_{i-1\,0} , \]
-with initial condition \(\eta_{00} = 0\). This has the solution \(\eta_{i0} = -i^2 + Bi = i(B-i)\). Then non-negativity demands \(B = \infty\), as any other value would get drowned out by the \(-i^2\), making the term negative for big enough \(i\). Thus we have \(\eta_{i0} = \infty\), and \(\mu_0 = \infty\) also.
-So for \(p = \frac12\), while the random walk always return to \(0\), it may take a very long time to do so.
+with initial condition \(\eta_{00} = 0\). We again recognise from the gambler's ruin problem the general solution \(\eta_{i0} = A + Bi -i^2\). The initial condition gives \(A = 0\), so \(\eta_{i0} = Bi - i^2 = i(B-i)\). Then non-negativity demands \(B = \infty\), as any other value would get drowned out by the large negative value \(-i^2\), making the whole expression negative for big enough \(i\). Thus we have \(\eta_{i0} = \infty\).
+
+Then we see easily that the return time is
+\[ \mu_0 = 1 + \tfrac12 \eta_{1\,0} + \tfrac12 \eta_{-1\,0} = 1 + \tfrac12 \infty + \tfrac12 \infty = \infty. \]
+So for \(p = \frac12\), while the random walk always return, it may take a very long time to do so.
 
 In conclusion, this is what we found out:
 
@@ -2571,11 +2618,9 @@ Consider the simple random walk with \(p \neq 0,1\). Then for all states \(i\) w
 \begin{itemize}
 \tightlist
 \item
-  For \(p \neq \frac12\), the return probability \(m_i\) is strictly less than 1.
+  For \(p \neq \frac12\), the return probability \(m_i\) is strictly less than 1, so the expected return time \(\mu_i\) is infinite.
 \item
-  For the simple symmetric random walk with \(p = \frac12\), the return probability \(m_i\) is equal to 1.
-\item
-  For all \(p\), the expected return time \(\mu_i\) is infinite.
+  For the simple symmetric random walk with \(p = \frac12\), the return probability \(m_i\) is equal to 1, but the expected return time \(\mu_i\) is still infinite.
 \end{itemize}
 
 \end{theorem}
@@ -2586,7 +2631,216 @@ Consider the simple random walk with \(p \neq 0,1\). Then for all states \(i\) w
 \section*{Problem sheet 4}\label{P04}}
 \addcontentsline{toc}{section}{Problem sheet 4}
 
-Problem Sheet 4
+\commfalse
+
+You should attempt all these questions and write up your solutions in advance of your workshop in week 5 (Monday 22 or Tuesday 23 February) where the answers will be discussed.
+
+\textbf{1.} Consider the Markov chain with state space \(\mathcal S = \{1,2,3,4\}\) and transition matrix
+\[ \mathsf P = \begin{pmatrix} 1 & 0 & 0 & 0 \\
+1-\alpha & 0 & \alpha & 0 \\
+0 & \beta & 0 & 1-\beta \\
+0 & 0 & 0 & 1 \end{pmatrix}   \]
+where \(0 < \alpha, \beta < 1\).
+
+\textbf{(a)} Draw a transition diagram for this Markov chain.
+
+\begin{myanswers}
+
+\emph{Solution.}
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/Q41-1} 
+
+}
+
+\caption{Transition diagram for Question 1.}\label{fig:Q41}
+\end{figure}
+
+\end{myanswers}
+
+\textbf{(b)} What are the communicating classes for this Markov chain? Is the chain irreducible? Which classes are closed? Which states are absorbing?
+
+\begin{myanswers}
+
+\emph{Solution.} Clearly \(\{1\}\) and \(\{4\}\) are closed communicating classes, so \(1\) and \(4\) are absorbing states. The other class, \(\{2,3\}\) is not closed. Because there are multiple classes, the chain is not irreducible.
+
+\end{myanswers}
+
+\textbf{(c)} Find the hitting probability \(h_{21}\) that, starting from state 2, the chain hits state 1.
+
+\begin{myanswers}
+
+\emph{Solution.} It's clear that \(h_{11} = 1\) and \(h_{41} = 0\). Then, by conditioning on the first step, we have
+\begin{gather*}
+    h_{21} = \alpha h_{31} + (1-\alpha) h_{11} = \alpha h_{31} + 1 - \alpha \\
+    h_{31} = \beta h_{21} + (1-\beta) h_{41} = \beta h_{21} .
+    \end{gather*}
+Substituting the second equation into the first, we get \(h_{21} = \alpha\beta h_{21} + 1 - \alpha\), so
+\[ h_{21} = \frac{1-\alpha}{1-\alpha\beta}  . \]
+
+\end{myanswers}
+
+\textbf{(d)} What is the expected time, starting from state 2, to reach an absorbing state?
+
+\begin{myanswers}
+
+\emph{Solution.} Let's write \(A = \{1,4\}\) for the absorbing states, and \(\eta_{iA}\) for the time to reach an absorbing state starting from state \(i\). Clearly \(\eta_{1A} = \eta_{4A} = 0\). By conditioning on the first step, we have
+\begin{gather*}
+    \eta_{2A} = 1 + \alpha \eta_{3A} + (1-\alpha) \eta_{1A} = 1 + \alpha \eta_{3A}  \\
+    \eta_{3A} = 1 + \beta \eta_{2A} + (1-\beta) \eta_{4A} = 1+\beta \eta_{2A} .
+    \end{gather*}
+Substituting the second equation into the first gives
+\(\eta_{2A}= 1 + \alpha + \alpha\beta \eta_{2A}\), so
+\[ \eta_{2A} = \frac{1+\alpha}{1-\alpha\beta}  . \]
+
+\end{myanswers}
+
+\textbf{2.}
+Consider the Markov chain with state space \(\mathcal S = \{1,2,3,4,5\}\) and transition matrix
+\[ \mathsf P = \begin{pmatrix} 0 & \frac13 & \frac23 & 0 & 0 \\
+                0 & 0 & 0 & \frac14 & \frac34 \\
+                0 & 0 & 0 & \frac14 & \frac34 \\
+                1 & 0 & 0 & 0 & 0 \\
+                1 & 0 & 0 & 0 & 0 \end{pmatrix} . \]
+
+\textbf{(a)} Draw a transition diagram for this Markov chain.
+
+\begin{myanswers}
+
+\emph{Solution.}
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/Q42-1} 
+
+}
+
+\caption{Transition diagram for Question 2.}\label{fig:Q42}
+\end{figure}
+
+\end{myanswers}
+
+\textbf{(b)} Show that the chain is irreducible.
+
+\begin{myanswers}
+
+\emph{Solution.} We have paths \(1 \to 2 \to 4 \to 1\) and \(1 \to 3 \to 5 \to 1\), so every state communicates with state 1, and by transitivity every state communicates with every other state.
+
+\end{myanswers}
+
+\textbf{(c)} What are the periods of the states?
+
+\begin{myanswers}
+
+\emph{Solution.} Any path from \(1\) to \(1\) goes \(1 \to \{2 \text{ or }3\} \to \{4 \text{ or }5\} \to 1\). So \(p_{11}^{(n)} > 0\) if and only if \(n\) is a multiple of \(3\). So state \(1\) has period \(d_1 = 3\). Because the chain is irreducible, all other states have period \(3\) too.
+
+\end{myanswers}
+
+\textbf{(d)} Find the expected hitting times \(\eta_{i1}\) from each state \(i\) to 1, and the expected return time \(\mu_i\) to 1.
+
+\begin{myanswers}
+
+\emph{Solution.} We could do this through a traditional conditioning on the first step argument. But in fact, the cyclic structure \(1 \to \{2 \text{ or }3\} \to \{4 \text{ or }5\} \to 1\) makes it immediately clear that \(\eta_11 = 0\), \(\eta_{41}=\eta_{51} = 1\), \(\eta_{21} = \eta_{31} = 2\), and \(\mu_1 = 3\).
+
+\end{myanswers}
+
+\textbf{3.}
+
+\textbf{(a)} Show that every Markov chain on a finite state space \(\mathcal S\) has at least one closed communicating class.
+
+\begin{myanswers}
+
+\emph{Solution.} For communicating classes \(C,D\), let's write \(C \to D\) if there is an \(i \in C\) and \(j \in D\) with \(i \to j\). Note that we can't have both \(C \to D\) and \(D \to C\) is \(C\) and \(D\) are distinct classes. This is because there would be \(i_1, j_2 \in C\) and \(i_2, j_1 \in D\) such that \(i_1 \to i_2 \to j_1 \to j_2 \to i_1\), so they would be the same class. Let's also note that there are a finite number of classes \(m\).
+
+Pick a class \(C_1\). If \(C_1\) is closed, we are done; otherwise \(C_1 \to C_2\) for some other class \(C_2\). If \(C_2\) is closed, we are done; otherwise \(C_2 \to C_3\) for some class \(C_3\) different to \(C_1\) and \(C_2\). (It can't be \(C_1\) by the arguemnt.) We repeat: if \(C_k\) is closed, we are done; otherwise there's a new class \(C_{k+1}\) with \(C_k \to C_{k+1}\). Repeating, we eventually find a closed class: we either terminate before step \(m\) at a closed class, or otherwise \(C_m\) must be closed, as none of the previous \(m-1\) classes can be accessible from it, by our earlier argument.
+
+\end{myanswers}
+
+\textbf{(b)} Give an example of a Markov chain that has no closed communicating classes.
+
+\begin{myanswers}
+
+\emph{Solution.} By part (a), the state space must be infinite. Here's one example: take \(\mathcal S = \mathbb Z\), and \(X_{n+1} = X_n + 1\) with probability 1, so the Markov chain just marches up and up. There are no states \(i\) and \(j\) such that \(i \leftrightarrow j\) (except for states communicating with themselves) so each state is a separate class. But clearly there is no absorbing state.
+
+\end{myanswers}
+
+\textbf{4.} Prove or give a counterexample: The period of a state \(i\) is the smallest \(d > 0\) such that \(p_{ii}(d) > 0\).
+
+\begin{myanswers}
+
+The statement is not true. Here's one counterexample:
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/counterexample-1} 
+
+}
+
+\caption{Transition diagram for a counterexample for Question 4.}\label{fig:counterexample}
+\end{figure}
+
+We see that \(p_{00} = p_{00}(1) = 0\), but \(p_{00}(2) = \frac12 > 0\) (going via A) and \(p_{00}(3) = \frac12 > 0\) (going via B and C). Hence \(d_0 \leq \text{gcd}\{2,3\} = 1\), so \(d_0 = 1\), contradicting the statement in the question.
+
+\end{myanswers}
+
+\textbf{5.} Consider the simple random walk with \(p < \frac12\), and let \(i > 0\). Show that
+\(\eta_{i0} = i/(q-p)\).
+
+\begin{myanswers}
+
+By conditioning on the first step, we have
+\[ \eta_{i0} = 1 + p\eta_{i+1\,0} + q\eta_{i-1\,0} . \]
+Either by solving this linear difference equation directly or by remembering the solution from when we did expected duration of the gambler's ruin, the general solution is
+\[ \eta_{i0} = A + B\rho^i + \frac{i}{q-p} , \]
+where \(\rho = q/p > 0\).
+
+We have one initial condition \(\eta_{00} = 0\) (since we're ``already there''). This gives \(0 = A + B\), so we have
+\[ \eta_{i0} = -B + B\rho^i + \frac{i}{q-p} = B(\rho^i - 1) + \frac{i}{q-p} . \]
+
+We now have to use the principle of the minimum non-negative solution. Since \(\rho > 1\), we also have \(\rho^i - 1 > 0\). Hence \(B\) must be non-negative, to ensure the whole solution is non-negative, but we want \(B\) to be as small as possible, to ensure minimality. Hence we must have \(B = 0\), finally giving the solution
+\[ \eta_{i0} = \frac{i}{q-p} \]
+as desired.
+
+\end{myanswers}
+
+\textbf{6.} Consider the Markov chain with the following transition matrix and transition diagram:
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/Q45-1} 
+
+}
+
+\caption{Transition diagram for Question 6.}\label{fig:Q45}
+\end{figure}
+
+\[ \mathsf P = \begin{pmatrix} 0 & \frac14 & \frac12 & \frac14 \\
+               \frac12 & 0& 0& \frac12 \\
+               \frac12 & 0& 0& \frac12 \\
+               0 & \frac13 & \frac23 & 0 \end{pmatrix} \]
+
+The Markov chain starts from state 1.
+
+\textbf{(a)} What is the probability that we hit state 2 before we hit state 3?
+
+\begin{myanswers}
+
+\emph{Solution.} Write \(k_i\) for the probability we hit state 2 before state 3 starting from \(i\). Then clearly \(k_2 = 1\) (since we've hit 2 first) and \(k_3 = 0\) (since we've hit 3 first). Further, by conditioning on the first step, \(k_4 = \frac13 k_2 + \frac23 k_3 = \frac13\), and
+\[ k_1 = \tfrac14 k_2 + \tfrac12k_3 + \tfrac14 k_4   = \tfrac14 + \tfrac14 k_4 = \tfrac14 + \tfrac14\tfrac13 = \tfrac13 . \]
+The desired solution is \(k_1 = \frac13\).
+
+\end{myanswers}
+
+\textbf{(b)} What is the expected time until we hit a state in the set \(\{2,3\}\)?
+
+\begin{myanswers}
+
+Let \(A = \{2,3\}\), and \(\eta_{iA}\) be the expected time until hitting the first of states \(2\) and \(3\) starting from \(i\). Clearly \(\eta_{2A} = \eta_{3A} = 0\). By conditioning on the first step, \(\eta_{4A} = 1+ \frac13 \eta_{2A} + \frac23 \eta_{3A} = 1\), and
+\[ \eta_{1A} = 1 + \tfrac14 \eta_{2A} + \tfrac12\eta_{3A} + \tfrac14 \eta_{4A} = 1 + \tfrac14 = \tfrac54 .        \]
+The desired solution is \(\eta_{1A} = \tfrac54\).
+
+\end{myanswers}
 
 \hypertarget{S09-recurrence-transience}{%
 \section{Recurrence and transience}\label{S09-recurrence-transience}}
@@ -2604,17 +2858,41 @@ Problem Sheet 4
 \hypertarget{rec-trans-def}{%
 \subsection{Recurrence and transience of states}\label{rec-trans-def}}
 
-When thinking about the long-run behaviour of Markov chains, we are interested two different types of states:
+When thinking about the long-run behaviour of Markov chains, it's useful to classify two different types of states: ``recurrent'' states and ``transient'' states.
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Recurrent states}, which we always keep returning to again and again;
-\item
-  \textbf{Transient states}, which we may return to a few times, but eventually we will leave and never come back.
-\end{itemize}
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.47\columnwidth}\raggedright
+Recurrent states\strut
+\end{minipage} & \begin{minipage}[b]{0.47\columnwidth}\raggedright
+Transient states\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+If we ever visit \(i\), then we keep returning to \(i\) again and again\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+We might visit \(i\) a few times, but eventually we leave \(i\) and never come back\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Starting from \(i\), the expected number of visits to \(i\) is infinite\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+Starting from \(i\), the expected number of visits to \(i\) is finite\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+Starting from \(i\), the number of visits to \(i\) is certain to be infinite\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+Starting from \(i\), the number of visits to \(i\) is certain to be finite\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright
+The return probability \(m_i\) equals 1\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright
+The return probability \(m_i\) is strictly less than 1\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
-The official definition is as follows; we will show that other properties follow from this.
+We'll take the last one of these, about the return probability, as the definition, then prove that the others follow.
 
 \begin{definition}
 \protect\hypertarget{def:unlabeled-div-3}{}\label{def:unlabeled-div-3}
@@ -2625,58 +2903,68 @@ If \(m_i = 1\), we say that state \(i\) is \textbf{recurrent}; if \(m_i < 1\), w
 
 \end{definition}
 
+Before stating this theorem, let us note that, from the point we're at state \(i\), the expected number of visits to \(i\) is
+\[
+\mathbb E(\#\text{ visits to $i$} \mid X_0 = i) = \sum_{n=0}^\infty \mathbb P(X_n = i \mid X_0 = i) = \sum_{n=1}^\infty p_{ii}(n) .
+\]
+
 \begin{theorem}
 \protect\hypertarget{thm:rectran}{}\label{thm:rectran}
 
-Consider a Markov chain with transition matrix \(\mathsf P\) and state space \(\mathcal S\).
+Consider a Markov chain with transition matrix \(\mathsf P\).
 
 \begin{itemize}
 \tightlist
 \item
-  If the state \(i\) is recurrent, then \(\sum_{n=1}^\infty p_{ii}(n) = \infty\), and we return to state \(i\) infinitely many times with probability \(1\).
+  If the state \(i\) is recurrent, then \(\sum_{n=1}^\infty p_{ii}(n) = \infty\), and we return to state \(i\) infinitely many times with probability 1.
 \item
-  If the state \(i\) is transient, then \(\sum_{n=1}^\infty p_{ii}(n) < \infty\), and we return to state \(i\) infinitely many times with probability \(0\).
+  If the state \(i\) is transient, then \(\sum_{n=1}^\infty p_{ii}(n) < \infty\), and we return to state \(i\) infinitely many times with probability 0.
 \end{itemize}
 
 \end{theorem}
-
-Here \(\sum_{n=1}^\infty p_{ii}^{(n)}\) is the expected number of returns to \(i\) starting from \(i\).
 
 We'll come to the proof in a moment, but first some examples.
 
 \begin{example}
 \protect\hypertarget{exm:rw-rec-trans}{}\label{exm:rw-rec-trans}
 
-Consider the simple random walk. \protect\hyperlink{S08-return-rw}{In the last section} we saw that \(m_i = 1\) for the simple symmetric random walk with \(p = \frac12\), so the simple symmetric random walk is recurrent. But for \(p \neq \frac12\), we have \(m_i < 1\), so all the other simple random walks are transient.
+Consider the simple random walk. \protect\hyperlink{S08-return-rw}{In the last section} we saw that for the simple symmetric random walk with \(p = \frac12\) we have \(m_i = 1\), so the simple symmetric random walk is recurrent, but for \(p \neq \frac12\) we have \(m_i < 1\), so all the other simple random walks are transient.
 
 \end{example}
 
 \begin{example}
 \protect\hypertarget{exm:rec}{}\label{exm:rec}
 
-We saw \protect\hyperlink{periodicity}{this example in Lecture 7}:
+We saw this chain previously as Example \ref{exm:weird-period}:
 
-\begin{center}\includegraphics{math2750_files/figure-latex/periods-recap-1} \end{center}
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/periods-recap-1} 
+
+}
+
+\caption{Transition diagram from Subsection 7.2.}\label{fig:periods-recap}
+\end{figure}
 
 For states 5, 6 and 7, it's clear that the return probability is 1, since the Markov chain cycles around the triangle, so these states are recurrent.
 
-States 1, 2, 3 and 4 are recurrent. In a moment we'll see a very quick way to show this, but in the meantime we can prove it directly by getting our hands dirty.
+States 1, 2, 3 and 4 are transient. In a moment we'll see a very quick way to show this, but in the meantime we can prove it directly by getting our hands dirty.
 
-From state 4, we might go straight to state 5, in which case we can't come back, so \(m_4 \leq 1 - p_{45} = \frac23\), and state 4 is transient. Similarly, \(m_1 \leq 1 - p_{14}p_{45} = \frac56\), because if we move from 1 to 4 to 5, we definitely won't come back to 1, so state 1 is transient. By the similar arguments, \(m_3 \leq 1 - p_{34}p_{45} = \frac56\), and \(m_2 \leq 1 - p_{21}p_{14}p_{45} = \frac{11}{12}\), so these states are both transient too.
+From state 4, we might go straight to state 5, in which case we can't come back, so \(m_4 \leq 1 - p_{45} = \frac23\), and state 4 is transient. Similarly, if we move from 1 to 4 to 5, we definitely won't come back to 1, so \(m_1 \leq 1 - p_{14}p_{45} = \frac56\), and state 1 is transient. By the similar arguments, \(m_3 \leq 1 - p_{34}p_{45} = \frac56\), and \(m_2 \leq 1 - p_{21}p_{14}p_{45} = \frac{11}{12}\), so these states are both transient too.
 
 \end{example}
 
-Notice that the communicating class \(\{1,2,3,4\}\) is all transient, while the communicating class \(\{5,6,7\}\) is all recurrent. We shall return to this point shortly. But first, we've put off the proof for too long.
+Notice that all states in the communicating class \(\{1,2,3,4\}\) are transient, while all states in the communicating class \(\{5,6,7\}\) are recurrent. We shall return to this point shortly. But first, we've put off the proof for too long.
 
 \begin{proof}[Proof of Theorem \ref{thm:rectran}]
 
-Suppose state \(i\) is recurrent, so the probability we return to \(i\) is \(m_i = 1\). By the Markov property, we it's as if we restart the chain from \(i\), so the probability we return to \(i\) is again still \(m_i = 1\). Repeating this, we visit infinitely often with probability \(1\). In particular, the if number of visits to \(i\) starting from \(i\) is infinite, then its expectation is infinite too, and this expectation is \(\sum_{n=1}^\infty p_{ii}(n) = \infty\).
+Suppose state \(i\) is recurrent. So starting from \(i\), the probability we return is \(m_i = 1\). After that return, it's as if we restart the chain from \(i\), because of the Markov property -- so the probability we return to \(i\) is again still \(m_i = 1\). Repeating this, we keep on returning, definitely visit infinitely often (with probability 1). In particular, since the number of visits to \(i\) starting from \(i\) is always infinite, its expectation is infinite too, and this expectation is \(\sum_{n=1}^\infty p_{ii}(n) = \infty\).
 
-Suppose state \(i\) is transient, so the probability we return to \(i\) is \(m_i < 1\). Then the probability we return to \(i\) exactly \(r\) times before never coming back is
+Suppose, on the other hand, that state \(i\) is transient. So starting from \(i\) the probability we return is \(m_i < 1\). Then the probability we return to \(i\) exactly \(r\) times before never coming back is
 \[  \mathbb P \big((\text{number of returns to $i$}) = r\big) = m_i^r(1-m_i) , \]
-since we must return on the first \(r\) occasions, but then fail to return any more. This is a geometric distribution \(\text{Geom}(1-m_i)\) (the version with support \(\{0,1,2,\dots\}\)). Since the expectation of a \(\text{Geom}(p)\) random variable is \((1 - p)/p\), the expected number of returns is
+since we must return on the first \(r\) occasions, but then fail to return on the next occasion.. This is a geometric distribution \(\text{Geom}(1-m_i)\) (the version with support \(\{0,1,2,\dots\}\)). Since the expectation of this type of \(\text{Geom}(p)\) random variable is \((1 - p)/p\), the expected number of returns is
 \[ \mathbb E(\text{number of returns to $i$}) = \sum_{n=1}^\infty p_{ii}(n)  = \frac{1 - (1 - m_i)}{1 - m_i} = \frac{m_i}{1 - m_i} . \]
-This is finite, since \(m_i <1\). Since the expected number of returns is finite, the probability we return infinitely many times must be \(0\).
+This is finite, since \(m_i <1\). Since the expected number of returns is finite, the probability we return infinitely many times must be 0.
 
 \end{proof}
 
@@ -2698,11 +2986,15 @@ For this reason, we can refer to a communicating class as a ``recurrent class'' 
 
 \begin{proof}
 
-\emph{First part.} Suppose \(i \leftrightarrow j\) and \(i\) is recurrent. Then, for some \(m\), \(n\) we have \(p_{ij}^{(n)}\), \(p_{ji}^{(m)} > 0\). Then, by the Chapman--Kolmogorov equations,
-\[ \sum_{r=1}^\infty p_{jj}^{(n+m+r)} \geq \sum_{r=1}^\infty p_{ji}^{(m)}p_{ii}^{(r)} p_{ij}^{(n)} = p_{ji}^{(m)} \left(\sum_{r=1}^\infty p_{ii}^{(r)} \right) p_{ij}^{(n)} .   \]
-If \(i\) is recurrent, then \(\sum_r p_{ii}^{(r)} = \infty\). Then from the above equation, we also have \(\sum_r p_{jj}^{(n+m+r)} = \infty\), meaning \(\sum_s p_{jj}^{(s)} = \infty\), and \(j\) is recurrent.
+\emph{First part.} Suppose \(i \leftrightarrow j\) and \(i\) is recurrent. Then, for some \(n\), \(m\) we have \(p_{ij}(n)\), \(p_{ji}(m) > 0\). Then, by the Chapman--Kolmogorov equations,
+\begin{align*}
+\sum_{r=1}^\infty p_{jj}(n+m+r)
+&\geq \sum_{r=1}^\infty p_{ji}(m)p_{ii}(r) p_{ij}(n) \\
+&= p_{ji}^{(m)} \left(\sum_{r=1}^\infty p_{ii}(r) \right) p_{ij}(n) .
+\end{align*}
+If \(i\) is recurrent, then \(\sum_r p_{ii}(r) = \infty\). Then from the above equation, we also have \(\sum_r p_{jj}(n+m+r) = \infty\), meaning \(\sum_s p_{jj}(s) = \infty\), and \(j\) is recurrent.
 
-\emph{Second part.} Suppose \(i\) is transient. Then \(j\) cannot be recurrent, because the previous argument with \(i\) and \(j\) swapped over would force \(i\) to in fact be recurrent also. So \(j\) must be transient.
+\emph{Second part.} Suppose \(i\) is transient. Then \(j\) cannot be recurrent, because if it were, the previous argument with \(i\) and \(j\) swapped over would force \(i\) to in fact be recurrent also. So \(j\) must be transient.
 
 \end{proof}
 
@@ -2752,12 +3044,12 @@ It can be useful to further divide recurrent classes, where the return probabili
 \begin{definition}
 \protect\hypertarget{def:unlabeled-div-9}{}\label{def:unlabeled-div-9}
 
-Let \((X_n)\) be a Markov chain on a state space \(\mathcal S\). Let \(i \in \mathcal S\) be a recurrent state, and let \(\mu_i\) be the expected return time.
+Let \((X_n)\) be a Markov chain on a state space \(\mathcal S\). Let \(i \in \mathcal S\) be a recurrent state, so \(m_i = 1\), and let \(\mu_i\) be the expected return time.
 If \(\mu_i < \infty\), we say that state \(i\) is \textbf{positive recurrent}; if \(\mu_i = \infty\), we say that state \(i\) is \textbf{null recurrent}.
 
 \end{definition}
 
-The following facts are not difficult to prove, in a similar way to the previous results:
+The following facts can be proven in a similar way to the previous results:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2770,7 +3062,7 @@ The following facts are not difficult to prove, in a similar way to the previous
 
 The first result means we can refer to a ``positive recurrent class'' or a ``null recurrent class'', and an irreducible Markov chain can be a ``positive recurrent Markov chain'' or a ``null recurrent Markov chain''.
 
-Putting everything so far together:
+Putting everything so far together, we have the following classification:
 
 \begin{itemize}
 \tightlist
@@ -2793,9 +3085,9 @@ We can also consider the simple symmetric random walk in \(d\)-dimensions, on \(
 
 There was a cheat somewhere earlier in this section -- did you notice it?
 
-The Markov property says that, if at some fixed time \(n\) we have \(X_n = i\), then the Markov chain from that point on is just like starting all over again from the state \(i\). When we applied this in the proof of Theorem \ref{thm:rectran}, we were using as \(n\) the first return to state \(i\). But that's not a fixed time -- it's a random time! Have we messed up?
+The Markov property says that, if at some fixed time \(n\) we have \(X_n = i\), then the Markov chain from that point on is just like starting all over again from the state \(i\). When we applied this in the proof of Theorem \ref{thm:rectran}, we were using as \(n\) the first return to state \(i\). But that's not a fixed time -- it's a random time! Did we cheat?
 
-Actually we're fine. The reason is that the first return to \(i\) isn't just any old random time, it's a ``stopping time'', and the Markov property also applies to stopping times too. Roughly speaking, a \textbf{stopping time} is a random time where ``you know when you get there''.
+Actually we're fine. The reason is that the first return to \(i\) isn't just any old random time, it's a ``stopping time'', and the Markov property also applies to stopping times too. Roughly speaking, a stopping time is a random time which has the property that ``you know when you get there''.
 
 \begin{definition}
 \protect\hypertarget{def:stopping}{}\label{def:stopping}
@@ -2824,7 +3116,7 @@ There are lots of places in probability theory and finance when something that i
 \protect\hypertarget{thm:strong-markov}{}\label{thm:strong-markov}
 
 Let \((X_n)\) be a Markov chain on a state space \(\mathcal S\), and let \(T\) be a stopping time that is finite with probability 1. Then all states \(x_0, \dots,x_{T-1}, i, j \in \mathcal S\) we have
-\[  \mathbb P(X_{T+1}=j \mid X_T=i, X_{T-1} = x_{T-1} \dots, X_0 = x_0) = \mathbb p_{ij} . \]
+\[  \mathbb P(X_{T+1}=j \mid X_T=i, X_{T-1} = x_{T-1} \dots, X_0 = x_0) = p_{ij} . \]
 
 \end{theorem}
 
@@ -2862,7 +3154,7 @@ Let \((X_n)\) be an irreducible and recurrent Markov chain. Then for any initial
 
 It suffices to prove the lemma when the initial distribution is ``start at \(i\)''. (We can repeat for all \(i\), then build any initial distribution from a weighted sum of ``start at \(i\)''s.)
 
-Since the chain is irreducible, we know we can get from \(i\) to \(j\), so pick \(m\) with \(p_{ji}(m) > 0\). Since the chain is recurrent, we know the return probability from \(j\) to \(j\) is 1, and we return infinitely many times with probability 1. We just need to glue these two facts together.
+Since the chain is irreducible, we have \(j \to i\), so pick \(m\) with \(p_{ji}(m) > 0\). Since the chain is recurrent, we know the return probability from \(j\) to \(j\) is 1, and we return infinitely many times with probability 1. We just need to glue these two facts together.
 
 We have
 \begin{align*}
@@ -2897,14 +3189,14 @@ Consider \protect\hyperlink{S05-example}{the two-state ``broken printer'' Markov
 
 Suppose we start the chain from the initial distribution
 \[ \lambda_0 = \mathbb P(X_0 = 0) = \frac{\beta}{\alpha+\beta} \qquad \lambda_1 = \mathbb P(X_0 = 1) = \frac{\alpha}{\alpha+\beta} . \]
-(You may recognise this from \protect\hyperlink{P03}{Question 1 on Problem Sheet 3}.) What's the distribution after step 1? By conditioning on the initial state, we have
+(You may recognise this from \protect\hyperlink{P03}{Question 3 on Problem Sheet 3 and the associated video}.) What's the distribution after step 1? By conditioning on the initial state, we have
 \begin{align*}
   \mathbb P(X_1 = 0) &= \lambda_0 p_{00} + \lambda_1 p_{10} = \frac{\beta}{\alpha+\beta}(1-\alpha) + \frac{\alpha}{\alpha+\beta}\beta = \frac{\beta}{\alpha+\beta} ,\\
   \mathbb P(X_1 = 1) &= \lambda_0 p_{01} + \lambda_1 p_{11} = \frac{\beta}{\alpha+\beta}\alpha + \frac{\alpha}{\alpha+\beta}(1-\beta) = \frac{\alpha}{\alpha+\beta} .
 \end{align*}
 So we're still in the same distribution we started in. By repeating the same calculation, we're still going to be in this distribution after step 2, and step 3, and forever.
 
-More generally, if we start from a state given by a distribution \(\boldsymbol \pi = (\pi_i)\), then after step 1 the probability we're in state \(j\) is \(\sum_i \pi_i p_{ij}\). So if \(\pi_j = \sum_i \pi_i p_{ij}\), we stay in this distribution forever. In matrix form, this is \(\boldsymbol \pi = \boldsymbol \pi\mathsf P\). (Remember that \(\boldsymbol \pi\) is a \emph{row} vector.) We call such a distribution a stationary distribution.
+More generally, if we start from a state given by a distribution \(\boldsymbol \pi = (\pi_i)\), then after step 1 the probability we're in state \(j\) is \(\sum_i \pi_i p_{ij}\). So if \(\pi_j = \sum_i \pi_i p_{ij}\), we stay in this distribution forever. We call such a distribution a stationary distribution. We again recodnise this formula as a matrix--vector multiplication, so this is \(\boldsymbol \pi = \boldsymbol \pi\mathsf P\), where \(\boldsymbol \pi\) is a \emph{row} vector.
 
 \begin{definition}
 \protect\hypertarget{def:unlabeled-div-12}{}\label{def:unlabeled-div-12}
@@ -3102,7 +3394,7 @@ Suppose that \((X_n)\) is recurrent (either positive or null, for the moment).
 
 Our first task will be to find a stationary vector. Fix an initial state \(k\), and let \(\nu_i\) be the expected number of visits to \(i\) before we return back to \(k\). That is,
 \begin{align*}
-\nu_i &= \mathbb E \# \{\text{visits to $i$ before returning to $k$}\} \\
+\nu_i &= \mathbb E (\# \text{ visits to $i$ before returning to $k$} \mid X_0 = k) \\
       &= \mathbb E \sum_{n=1}^{M_k} \mathbb P(X_n = i \mid X_0 = k) \\
       &= \sum_{n=1}^\infty \mathbb P(X_n = i \text{ and } n \leq M_k \mid X_0 = k)  ,
 \end{align*}
@@ -3127,7 +3419,7 @@ We can now do a cheeky bit of monkeying around with the index \(n\), by swapping
 \end{align*}
 So \(\boldsymbol\nu\) is indeed a stationary vector.
 
-We now want normalise \(\boldsymbol\nu\) into a stationary distribution by dividing through by \(\sum_i \nu_i\). We can do this if \(\sum_i \nu_i\) is finite. But \(\sum_i \nu_i\) is the expected total number of visits to all states before return to \(k\), which is precisely the expected return time \(\mu_k\). Now we use assume that \((X_n)\) is \emph{positive} recurrent. This means that \(\mu_k\) is finite, so \(\boldsymbol\pi = (1/\mu_k) \boldsymbol\nu\) is a stationary distribution.
+We now want normalise \(\boldsymbol\nu\) into a stationary distribution by dividing through by \(\sum_i \nu_i\). We can do this if \(\sum_i \nu_i\) is finite. But \(\sum_i \nu_i\) is the expected total number of visits to all states before return to \(k\), which is precisely the expected return time \(\mu_k\). Now we use the assumption that \((X_n)\) is \emph{positive} recurrent. This means that \(\mu_k\) is finite, so \(\boldsymbol\pi = (1/\mu_k) \boldsymbol\nu\) is a stationary distribution.
 
 \end{proof}
 
@@ -3422,8 +3714,8 @@ Because \((X_n)\) is recurrent, we keep returning to \(i\), so \(V_i(n) \to \inf
 
 This completes the material on discrete time Markov chains. \textbf{In the next section}, we recap what we have learned, and have a little time for some revision.
 
-\hypertarget{S11-revision-i}{%
-\section{Revision of Part 1: Discrete time Markov chains}\label{S11-revision-i}}
+\hypertarget{S12-revision-i}{%
+\section{Revision of Part 1: Discrete time Markov chains}\label{S12-revision-i}}
 
 \begin{itemize}
 \tightlist
@@ -3973,6 +4265,12 @@ The claim is proven, and we are (finally) done.
 \tightlist
 \item
   \textbf{Computational Worksheet 1:} \href{computing/C1.html}{{[}HTML format{]}} \href{computing/C1.Rmd}{{[}Rmd format{]}}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Example report: \href{computing/C1-example.html}{{[}HTML format{]}} \href{computing/C1-example.Rmd}{{[}Rmd format{]}}
+  \end{itemize}
 \end{itemize}
 
 \hypertarget{C-about}{%
