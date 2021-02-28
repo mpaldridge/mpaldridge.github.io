@@ -1483,13 +1483,7 @@ as \(n \to \infty\), since \(|\lambda_2/\phi| < 1\) means that \(\lambda_2^n / \
 \section*{Assessment 1}\label{A1}}
 \addcontentsline{toc}{section}{Assessment 1}
 
-This assessment counts as 4\% of your final module grade. You should attempt both questions. You must show your working, and there are marks for the quality of your mathematical writing.
-
-The deadline for submission is \textbf{Thursday 11 February at 2pm}. Submission will be to Gradescope via Minerva, from Monday 8 February. It would be helpful to start your solution to Question 2 on a new page. If you hand-write your solutions and scan them using your phone, please convert to PDF using a scanning app (I like Microsoft Office Lens or Adobe Scan) rather than submit images.
-
-Late submissions up to Wednesday 17 February at 2pm will still be marked, but the total mark will be reduced by 10\% per day or part-day for which the work is late. Submissions are not permitted after Wednesday 17 February.
-
-Your solutions to this assessment should be your own work. Copying, collaboration or plagiarism are not permitted. Asking others to do your work, including via the internet, is not permitted. Transgressions are considered to be a very serious matter, and will be dealt with according to the University's disciplinary procedures.
+A solutions sheet for this assessment is available on Minerva. Marks and feedback are available on Minerva and Gradescope respectively.
 
 \textbf{1.} Let \((X_n)\) be a simple random walk that starts from \(X_0 = 0\) and on each step goes up one with probability \(p\) and down one with probability \(q = 1-p\).
 
@@ -1672,6 +1666,8 @@ or, in matrix notation, \(\mathsf P(n+m) = \mathsf P(n)\mathsf P(m)\).
 In other words, a trip of length \(n + m\) from \(i\) to \(j\) is a trip of length \(n\) from \(i\) to some other state \(k\), then a trip of length \(m\) from \(k\) back to \(j\), and this intermediate stop \(k\) can be any state, so we have to sum the probabilities.
 
 Of course, once we know that \(\mathsf P(n) = \mathsf P^n\) is given by the matrix power, it's clear to see that \(\mathsf P(n+m) = \mathsf P^{n+m} = \mathsf P^n \mathsf P^m = \mathsf P(n)\mathsf P(m)\).
+
+Sidney Chapman (1888--1970) was a British applied mathematician and physicist, who studied applications of Markov processes. Andrey Nikolaevich Kolmogorov (1903--1987) was a Russian mathematician who did very important work in many different areas of mathematics, is considered the ``father of modern probability theory'', and studied the theory of Markov processes. (Kolmogorov is also \href{https://genealogy.math.ndsu.nodak.edu/id.php?id=53569}{my academic great-great-grandfather}.)
 
 \begin{example}
 \protect\hypertarget{exm:printer2}{}\label{exm:printer2}
@@ -2631,7 +2627,7 @@ Consider the simple random walk with \(p \neq 0,1\). Then for all states \(i\) w
 \section*{Problem sheet 4}\label{P04}}
 \addcontentsline{toc}{section}{Problem sheet 4}
 
-\commfalse
+\commtrue
 
 You should attempt all these questions and write up your solutions in advance of your workshop in week 5 (Monday 22 or Tuesday 23 February) where the answers will be discussed.
 
@@ -2751,9 +2747,9 @@ Consider the Markov chain with state space \(\mathcal S = \{1,2,3,4,5\}\) and tr
 
 \begin{myanswers}
 
-\emph{Solution.} For communicating classes \(C,D\), let's write \(C \to D\) if there is an \(i \in C\) and \(j \in D\) with \(i \to j\). Note that we can't have both \(C \to D\) and \(D \to C\) is \(C\) and \(D\) are distinct classes. This is because there would be \(i_1, j_2 \in C\) and \(i_2, j_1 \in D\) such that \(i_1 \to i_2 \to j_1 \to j_2 \to i_1\), so they would be the same class. Let's also note that there are a finite number of classes \(m\).
+\emph{Solution.} For communicating classes \(C,D\), let's write \(C \to D\) if there is an \(i \in C\) and \(j \in D\) with \(i \to j\). Note that we can't have both \(C \to D\) and \(D \to C\) if \(C\) and \(D\) are distinct classes. This is because there would be \(i_1, j_2 \in C\) and \(j_1, i_2 \in D\) such that \(i_1 \to j_1 \to i_2 \to j_2 \to i_1\), so they would be the same class. Let's also note that there are a finite number of classes \(m\).
 
-Pick a class \(C_1\). If \(C_1\) is closed, we are done; otherwise \(C_1 \to C_2\) for some other class \(C_2\). If \(C_2\) is closed, we are done; otherwise \(C_2 \to C_3\) for some class \(C_3\) different to \(C_1\) and \(C_2\). (It can't be \(C_1\) by the arguemnt.) We repeat: if \(C_k\) is closed, we are done; otherwise there's a new class \(C_{k+1}\) with \(C_k \to C_{k+1}\). Repeating, we eventually find a closed class: we either terminate before step \(m\) at a closed class, or otherwise \(C_m\) must be closed, as none of the previous \(m-1\) classes can be accessible from it, by our earlier argument.
+Pick a class \(C_1\). If \(C_1\) is closed, we are done; otherwise \(C_1 \to C_2\) for some other class \(C_2\). If \(C_2\) is closed, we are done; otherwise \(C_2 \to C_3\) for some class \(C_3\) different to \(C_1\) and \(C_2\). (It can't be \(C_1\) by the argument above.) We repeat: if \(C_k\) is closed, we are done; otherwise there's a new class \(C_{k+1}\) with \(C_k \to C_{k+1}\). We eventually find a closed class: we either terminate before step \(m\) at a closed class, or otherwise \(C_m\) must be closed, as none of the previous \(m-1\) classes can be accessible from it, by our earlier argument.
 
 \end{myanswers}
 
@@ -2769,7 +2765,7 @@ Pick a class \(C_1\). If \(C_1\) is closed, we are done; otherwise \(C_1 \to C_2
 
 \begin{myanswers}
 
-The statement is not true. Here's one counterexample:
+\emph{Solution.} The statement is not true. Here's one counterexample:
 
 \begin{figure}
 
@@ -2789,7 +2785,7 @@ We see that \(p_{00} = p_{00}(1) = 0\), but \(p_{00}(2) = \frac12 > 0\) (going v
 
 \begin{myanswers}
 
-By conditioning on the first step, we have
+\emph{Solution.} By conditioning on the first step, we have
 \[ \eta_{i0} = 1 + p\eta_{i+1\,0} + q\eta_{i-1\,0} . \]
 Either by solving this linear difference equation directly or by remembering the solution from when we did expected duration of the gambler's ruin, the general solution is
 \[ \eta_{i0} = A + B\rho^i + \frac{i}{q-p} , \]
@@ -2836,7 +2832,7 @@ The desired solution is \(k_1 = \frac13\).
 
 \begin{myanswers}
 
-Let \(A = \{2,3\}\), and \(\eta_{iA}\) be the expected time until hitting the first of states \(2\) and \(3\) starting from \(i\). Clearly \(\eta_{2A} = \eta_{3A} = 0\). By conditioning on the first step, \(\eta_{4A} = 1+ \frac13 \eta_{2A} + \frac23 \eta_{3A} = 1\), and
+\emph{Solution.} Let \(A = \{2,3\}\), and \(\eta_{iA}\) be the expected time until hitting the first of states \(2\) and \(3\) starting from \(i\). Clearly \(\eta_{2A} = \eta_{3A} = 0\). By conditioning on the first step, \(\eta_{4A} = 1+ \frac13 \eta_{2A} + \frac23 \eta_{3A} = 1\), and
 \[ \eta_{1A} = 1 + \tfrac14 \eta_{2A} + \tfrac12\eta_{3A} + \tfrac14 \eta_{4A} = 1 + \tfrac14 = \tfrac54 .        \]
 The desired solution is \(\eta_{1A} = \tfrac54\).
 
@@ -2848,7 +2844,7 @@ The desired solution is \(\eta_{1A} = \tfrac54\).
 \begin{itemize}
 \tightlist
 \item
-  Definitions of recurrence and transience
+  Definition of properties of recurrence and transience
 \item
   Recurrence and transience as class properties
 \item
@@ -2856,7 +2852,7 @@ The desired solution is \(\eta_{1A} = \tfrac54\).
 \end{itemize}
 
 \hypertarget{rec-trans-def}{%
-\subsection{Recurrence and transience of states}\label{rec-trans-def}}
+\subsection{Recurrent and transient states}\label{rec-trans-def}}
 
 When thinking about the long-run behaviour of Markov chains, it's useful to classify two different types of states: ``recurrent'' states and ``transient'' states.
 
@@ -2969,7 +2965,7 @@ This is finite, since \(m_i <1\). Since the expected number of returns is finite
 \end{proof}
 
 \hypertarget{rec-tran-classes}{%
-\subsection{Recurrence and transience of classes}\label{rec-tran-classes}}
+\subsection{Recurrent and transient classes}\label{rec-tran-classes}}
 
 We could find whether each state is transient or recurrent by calculating (or bounding) all the return probabilities \(m_i\), using the methods in \protect\hyperlink{S08-hitting-times}{the previous section}. But the following two theorems will give some highly convenient short-cuts.
 
@@ -3017,20 +3013,20 @@ This theorem completely classifies the transience and recurrence of classes, wit
 
 \begin{proof}
 
-\emph{First part.} Suppose \(i\) is in a non-closed communicating class, so for some \(j\) we have \(i \to j\), meaning \(p_{ij}^{(n)} > 0\) for some \(n\), but \(j \not\to i\), meaning that once we reach \(j\) we cannot return to \(i\). We need to show that \(i\) is transient.
+\emph{First part.} Suppose \(i\) is in a non-closed communicating class, so for some \(j\) we have \(i \to j\), meaning \(p_{ij}(n) > 0\) for some \(n\), but \(j \not\to i\), meaning that once we reach \(j\) we cannot return to \(i\). We need to show that \(i\) is transient.
 
-The probability we return to \(i\) after time \(n\) is
+Consider the probability we return to \(i\) after time \(n\). We condition on whether \(X_n = j\) or not. This gives
 \begin{align*}
 \mathbb P(\text{return} & \text{ to } i \text{ after time $n$} \mid X_0 = i) \\
-&= p_{ij}^{(n)}\,\mathbb P(\text{return to $i$ after time $n$} \mid X_n = j, X_0 = i) \\
-&\qquad {}+ \big(1 - p_{ij}^{(n)}\big)\,\mathbb P(\text{return to $i$ after time $n$} \mid X_n \neq j, X_0 = i) \\
-&\leq \mathbb P(\text{return to $i$ after time $n$} \mid X_n = j, X_0 = i) +  \big(1 - p_{ij}^{(n)}\big) \\
-&\leq 0 + \big(1 - p_{ij}^{(n)}\big) \\
+&= p_{ij}(n)\,\mathbb P(\text{return to $i$ after time $n$} \mid X_n = j, X_0 = i) \\
+&\qquad {}+ \big(1 - p_{ij}(n)\big)\,\mathbb P(\text{return to $i$ after time $n$} \mid X_n \neq j, X_0 = i) \\
+&\leq \mathbb P(\text{return to $i$ after time $n$} \mid X_n = j, X_0 = i) +  \big(1 - p_{ij}(n)\big) \\
+= 0 + \big(1 - p_{ij}(n)\big) \\
 &< 1,
 \end{align*}
-since we can't get from \(j\) to \(i\), and since \(p_{ij}^{(n)} > 0\). If \(i\) were recurrent we would certainly return infinitely often, and in particular certainly return after time \(n\). So \(i\) must be transient instead.
+since we can't get from \(j\) to \(i\), and since \(p_{ij}(n) > 0\). If \(i\) were recurrent we would certainly return infinitely often, and in particular certainly return after time \(n\). So \(i\) must be transient instead.
 
-\emph{Second part.} Suppose the class \(C\) is finite and closed. Then for some \(i \in C\), the probability that we return to \(i\) infinitely many times must be strictly positive, as we are going to stay in finitely many states of \(C\) for infinitely many time steps. Then that state \(i\) is not transient, so it must be recurrent, meaning the whole class is recurrent.
+\emph{Second part.} Suppose the class \(C\) is finite and closed. Then there must be an \(i \in C\) such that, once we visit \(i\), the probability that we return to \(i\) infinitely many times is strictly positive; this is because we are going to stay in the finitely many states of \(C\) for infinitely many time steps. Then that state \(i\) is not transient, so it must be recurrent, which means that the whole class is recurrent.
 
 \end{proof}
 
@@ -3039,7 +3035,7 @@ Going back to the \protect\hyperlink{exm:rec}{earlier example}, we see that the 
 \hypertarget{S09-positive-null}{%
 \subsection{Positive and null recurrence}\label{S09-positive-null}}
 
-It can be useful to further divide recurrent classes, where the return probability \(m_i = 1\), by whether the expected return time \(\mu_i\) is finite or not.
+It will be useful later to further divide recurrent classes, where the return probability \(m_i = 1\), by whether the expected return time \(\mu_i\) is finite or not. (Note that transient states always have \(\mu_i = \infty\).)
 
 \begin{definition}
 \protect\hypertarget{def:unlabeled-div-9}{}\label{def:unlabeled-div-9}
@@ -3074,7 +3070,7 @@ Putting everything so far together, we have the following classification:
   infinite closed classes can be positive recurrent, null recurrent, or transient.
 \end{itemize}
 
-We know that the simple symmetric random walk is recurrent. We also saw in {[}the last section{]}((\#S08-return-rw) that \(\mu_i = \infty\), so it is null recurrent.
+We know that the simple symmetric random walk is recurrent. We also saw in \protect\hyperlink{S08-return-rw}{the last section} that \(\mu_i = \infty\), so it is null recurrent.
 
 We can also consider the simple symmetric random walk in \(d\)-dimensions, on \(\mathbb Z^d\). At each step we pick one of the coordinates and increase or decrease it by one; each of the \(2d\) possibilities having probability \(1/(2d)\). We have seen that for \(d=1\) this is null recurrent. A famous result by the Hungarian mathematician George Pólya from 1921 states the simple symmetric random walk is null recurrent for \(d = 1\) and \(d = 2\), but is transient for \(d \geq 3\). (Perhaps this is why cars often crash into each other, but aeroplanes very rarely do?)
 
@@ -3181,11 +3177,18 @@ where the last line used the Markov property to treat the chain as starting over
 \end{itemize}
 
 \hypertarget{def-stationary-definition}{%
-\subsection{Definition}\label{def-stationary-definition}}
+\subsection{Definition of stationary distribution}\label{def-stationary-definition}}
 
 Consider \protect\hyperlink{S05-example}{the two-state ``broken printer'' Markov chain from Lecture 5}.
 
-\begin{center}\includegraphics{math2750_files/figure-latex/twostate2-1} \end{center}
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/twostate3-1} 
+
+}
+
+\caption{Transition diagram for the two-state broken printer chain.}\label{fig:twostate3}
+\end{figure}
 
 Suppose we start the chain from the initial distribution
 \[ \lambda_0 = \mathbb P(X_0 = 0) = \frac{\beta}{\alpha+\beta} \qquad \lambda_1 = \mathbb P(X_0 = 1) = \frac{\alpha}{\alpha+\beta} . \]
@@ -3246,7 +3249,7 @@ Let's choose \(\pi_2\) as our working variable. It turns out that \(\boldsymbol\
 Now let's turn to the normalising condition. That gives
 \[ \pi_1+\pi_2+\pi_3 = \tfrac13\pi_2+\pi_2+3\pi_2 = \tfrac{13}{3} \pi_2 = 1 .\]
 So the working variable is solved to be \(\pi_2 = \frac{3}{13}\). Substituting this back into \eqref{eq:statt}, we have \(\pi_1=\tfrac13\pi_2 = \frac{1}{13}\) and \(\pi_3=3\pi_2 = \frac{9}{13}\). So the full solution is
-\[ \boldsymbol \pi = (\pi_1\quad \pi_2\quad \pi_3) = \left(\tfrac{1}{13}\quad \tfrac{3}{13}\quad\tfrac{9}{13}\right). \]
+\[ \boldsymbol \pi = (\pi_1, \pi_2, \pi_3) = \left(\tfrac{1}{13}, \tfrac{3}{13}, \tfrac{9}{13}\right). \]
 
 The method we used here can be summarised as follows:
 
@@ -3288,7 +3291,7 @@ We choose to discard the third equation.
 \[ \pi_1 + \pi_2 + \pi_3 = \pi_1 + 2\pi_1 + 3\pi_1 = 6\pi_1 = 1 . \]
 Therefore \(\pi_1 = \frac16\). Substituting this into our previous expressions, we get \(\pi_2 = 2\pi_1 = \frac13\) and \(\pi_3 = 3\pi_1 = \frac12\).
 Thus the solution is
-\[ \boldsymbol\pi = \left( \tfrac16 \quad \tfrac13 \quad \tfrac12 \right) . \]
+\(\boldsymbol\pi = ( \tfrac16, \tfrac13, \tfrac12 )\).
 
 We can check our answer with the discarded third equation, just to make sure we didn't make any mistakes. We get
 \[ \pi_3 = \tfrac14\pi_1 + \tfrac14\pi_2 + \tfrac34\pi_3 = \tfrac14\tfrac16 + \tfrac14\tfrac13+\tfrac34\tfrac12 = \tfrac1{24} + \tfrac2{24} + \tfrac{9}{24} = \tfrac{1}{2} , \]
@@ -3468,7 +3471,219 @@ But the first term on the left and the last term on the right are equal, and bec
 \section*{Problem sheet 5}\label{P05}}
 \addcontentsline{toc}{section}{Problem sheet 5}
 
-Problem Sheet 5
+\commfalse
+
+You should attempt all these questions and write up your solutions in advance of your workshop in week 6 (Monday 1 or Tuesday 2 March) where the answers will be discussed.
+
+\textbf{1.} Find a stationary distribution for the Markov chain with transition matrix
+\[ \mathsf P = \begin{pmatrix} \frac13 & \frac23 & 0 \\
+                               \frac16 & \frac13 & \frac12 \\
+                               0 & \frac13 & \frac23 \end{pmatrix} . \]
+
+\begin{myanswers}
+
+\emph{Solution.} The equations are
+\begin{align*}
+\pi_1 &= \tfrac13 \pi_1 + \tfrac16 \pi_2 \\
+\pi_2 &= \tfrac23 \pi_1 + \tfrac13 \pi_2 + \tfrac23 \pi_3 \\
+\pi_3 &= \phantom{\tfrac23 \pi_1} + \tfrac12 \pi_2 + \tfrac23 \pi_3
+\end{align*}
+It'll make out lives more pleasant if we pick \(\pi_2\) as the working variable and delete the second equation. The first equation becomes \(\pi_1 = \tfrac14 \pi_2\), and the third equation become \(\pi_3 = \tfrac32 \pi_2\). The normalising condition is
+\[ \pi_1 + \pi_2 + \pi_3 = \left( \tfrac14 + 1 + \tfrac32\right) \pi_2 = \tfrac{11}{4} \pi_2 .    \]
+So \(\pi_2 = \frac4{11}\), so \(\pi_1 = \frac{1}{11}\) and \(\pi_3 = \frac{6}{11}\). The stationary distribution is \(\boldsymbol\pi = (\frac{1}{11}, \frac{4}{11}, \frac{6}{11})\).
+
+\end{myanswers}
+
+\textbf{2.} Consider a Markov chain with state space \(\mathcal S = \{1,2,3,4\}\) and transition matrix
+\[  \mathsf P = \begin{pmatrix} \frac14 & \frac12 &\frac14 & 0 \\
+                      \frac14 & \frac14 & \frac12 & 0 \\
+                      \frac12 & \frac12 & 0 & 0 \\
+                      \frac14 & 0       &\frac14 & \frac 12
+                      \end{pmatrix} . \]
+
+\textbf{(a)} Draw a transition diagram for this Markov chain.
+
+\begin{myanswers}
+
+\emph{Solution.}
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/Q52-1} 
+
+}
+
+\caption{Transition diagram for Question 2.}\label{fig:Q52}
+\end{figure}
+
+\end{myanswers}
+
+\textbf{(b)} Identify the communicating classes. State whether each class closed or not. State whether each class is positive recurrent, null recurrent, or transient.
+
+\begin{myanswers}
+
+\emph{Solution.} The class \(\{1,2,3\}\) is closed, so is positive recurrent. The class \(\{4\}\) is not closed, so is transient.
+
+\end{myanswers}
+
+\textbf{(c)} Find a stationary distribution for this Markov chain.
+
+\begin{myanswers}
+
+\emph{Solution.} First, we write out the equations \(\boldsymbol\pi = \boldsymbol\pi\mathsf P\), which are
+\begin{align*}
+\pi_1 &= \tfrac14\pi_1 + \tfrac14\pi_2 + \tfrac12\pi_3 + \tfrac14\pi_4 \\
+\pi_2 &= \tfrac12\pi_1 + \tfrac14\pi_2 + \tfrac12\pi_3 \\
+\pi_3 &= \tfrac14\pi_1 + \tfrac12\pi_2 \phantom{{}+\tfrac12\pi_3} + \tfrac14\pi_4 \\
+\pi_4 &= \phantom{\tfrac12\pi_1 + \tfrac14\pi_2 + \tfrac12\pi_3+{}}  \tfrac12 \pi_4 .
+\end{align*}
+From the fourth equation we immediately see that \(\pi_4 = 0\). Second, we rewrite the first two of the other equations with \(\pi_1\) as the working variable, which gives
+\begin{align}
+3\pi_1 &= \phantom{3}\pi_2 + 2\pi_3 \tag{1} \\
+2\pi_1 &= 3\pi_2 - 2\pi_3 \tag{2} .
+\end{align}
+Adding (1) and (2) gives \(5\pi_1 = 4\pi_2\), so \(\pi_2 = \frac54\pi_1\). Substituting this into (1) and solving gives \(\pi_3 = \frac78 \pi_1\). Third, the normalising condition is
+\[ \pi_1 + \pi_2 + \pi_3 + \pi_4 = \pi_1 + \tfrac54\pi_1 + \tfrac78\pi_1 + 0 = \tfrac{25}{8}\pi_1 = 1, \]
+so \(\pi_1 = \frac{8}{25}\). Hence, we have a stationary distribution
+\[ \boldsymbol\pi = \left(\tfrac{8}{25} \quad \tfrac{10}{25} \quad \tfrac{7}{25} \quad 0 \right) .\]
+
+\end{myanswers}
+
+\textbf{(d)} Is this the only stationary distribution?
+
+\begin{myanswers}
+
+\emph{Solution.} Yes. The Markov chain has one positive recurrent class, so there is a unique stationary distribution, and it is supported only on that class.
+
+\end{myanswers}
+
+\textbf{3.} Consider a Markov chain with state space \(\mathcal S = \{1,2,3,4,5\}\) and transition matrix
+\[  \mathsf P = \begin{pmatrix} \frac13 & \frac23 & 0 &0 & 0 \\
+                   \frac13 & \frac23 & 0 &0 & 0 \\
+                   0 &\frac35 & \frac15 & \frac15 & 0 \\
+                   0 & 0 & 0 & \frac14 &\frac34 \\
+                   0 & 0 & 0 & \frac12 & \frac12 \end{pmatrix} . \]
+
+\textbf{(a)} Draw a transition diagram for this Markov chain.
+
+\begin{myanswers}
+
+\emph{Solution.}
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/Q53-1} 
+
+}
+
+\caption{Transition diagram for Question 3.}\label{fig:Q53}
+\end{figure}
+
+\end{myanswers}
+
+\textbf{(b)} Identify the communicating classes. State whether each class closed or not. State if each class is positive recurrent, null recurrent, or transient.
+
+\begin{myanswers}
+
+\emph{Solution.} The class \(\{1,2\}\) is closed, so is positive recurrent. The class \(\{3\}\) is not closed, so is transient. The class \(\{4,5\}\) is closed, so is positive recurrent.
+
+\end{myanswers}
+
+\textbf{(c)} Find all of the stationary distributions for this Markov chain.
+
+\begin{myanswers}
+
+\emph{Solution.} We can have a stationary distribution supported on either of the positive recurrent classes, but we will always have \(\pi_3 = 0\), as that state is transient. For the class \(\{1,2\}\) we have
+\[ \pi_1 = \tfrac13\pi_1 + \tfrac13\pi_2 \qquad \pi_2 = \tfrac23\pi_1 + \tfrac23\pi_2 , \]
+giving \(\pi_2 = 2\pi_1\), and a stationary distribution \((\tfrac 13, \tfrac23, 0, 0, 0)\). For the class \(\{4,5\}\), we have
+\[ \pi_4 = \tfrac14\pi_4 + \tfrac12\pi_5 \qquad \pi_5 = \tfrac34\pi_4 + \tfrac12\pi_5 , \]
+giving \(3\pi_4 = 2\pi_5\), and a stationary distribution \((0,0,0,\frac25,\frac35)\). Finally, any linear combination of those where the coefficients are positive and add to \(1\) will also be a stationary distribution, so we have a family of stationary distributions
+\[ \left( \tfrac13\alpha \quad \tfrac23\alpha \quad 0 \quad \tfrac25(1-\alpha) \quad \tfrac35(1-\alpha) \right)    \]
+for \(0 \leq \alpha \leq 1\).
+
+\end{myanswers}
+
+\textbf{4.} Consider the simple random walk \((X_n)\) on \(\mathcal S = \mathbb Z_+ = \{0,1,2,\dots\}\) with up probability \(p\) and down probability \(q = 1-p\), and a mixed barrier at \(0\), where \(p_{01} = p\), \(p_{00} = q\), and \(p_{0i} = 0\) otherwise. We seek a stationary distribution for this Markov chain.
+
+\textbf{(a)} Suppose \(p \neq \frac12\). Show that the general solution to
+\[ \pi_j = \sum_i \pi_i p_{ij} = p\pi_{j-1} + q\pi_{j+1} \]
+is \(\pi_i = A + B\tau^i\), where \(\tau = p/q\).
+
+\begin{myanswers}
+
+\emph{Solution.} Let's rewrite this as \(q\pi_{j+1} - \pi_j + p\pi_{j-1} = 0\). This is a homogeneous linear difference equation. The characteristic equation is \(p\lambda^2 - \lambda + p = 0\), which factorises as \((q\lambda - p)(\lambda-1) = 0\) (using that \(p + q = 1\)), which has solutions \(\lambda = 1\) and \(\lambda = p/q = \tau\). Since \(p \neq \frac12\), these roots are distinct. So the general solution is \(\pi_i = A + B\tau^i\).
+
+\end{myanswers}
+
+\textbf{(b)} Show that the initial condition \(\pi_0 = q\pi_0 + q\pi_1\) gives \(A = 0\).
+
+\begin{myanswers}
+
+\emph{Solution.} The initial condition gives
+\[ A + B = q(A + B) + q(A + B\tau)  ,\]
+which after rearranging gives \((1-2q)A = 0\), where we have used \(q + q\tau = q + p = 1\). Since \(1-2q\neq 0\), we must have \(A = 0\).
+
+\end{myanswers}
+
+\textbf{(c)} By considering the normalising condition \(\sum_i \pi_i =1\), work out for what values of \(p \neq \frac12\) there exists a stationary distribution for \((X_n)\). What is the stationary distribution (when it exists)?
+
+\begin{myanswers}
+
+\emph{Solution.} We have \(\pi_i = B\tau^i\), so require \(B \sum_{i=1}^\infty \tau^i = 1\). When \(p > \frac12\), then \(\tau > 1\) and the sum does not converge, and we have no stationary distribution. When \(p < \frac12\), then \(\tau < 1\), so
+\[ \sum_{i=1}^\infty \tau^i = \frac{1}{1-\tau} \qquad \Rightarrow \qquad B = \frac{1}{\frac{1}{1-\tau}} = 1 - \tau, \]
+so we have a geometric stationary distribution \(\pi_i = (1-\tau)\tau^i\).
+
+\end{myanswers}
+
+\textbf{(d)} Does there exist a stationary distribution when \(p = \frac12\)?
+
+\begin{myanswers}
+
+\emph{Solution.}
+Here, the linear difference equation has general solution \(\pi_i = A + Bi\), as we saw with the symmetric gambler's ruin problem. The initial condition gives \(A = \frac12A + \frac12(A + B)\), and so \(B = 0\), giving \(\pi_i = A\). The normalisation condition is \(\infty \times A = 1\), which cannot be fulfilled. Hence no stationary distribution exists.
+
+\end{myanswers}
+
+\textbf{5.} The infinite rooted binary tree is a graph with no cycles. There is one special vertex, the root 0, that has two edges, and every other edge has three edges. A Markov chain \((X_n)\) starts from 0, then at each time step, takes one of the edges coming out of the current vertex and moves along it to the neighbouring vertex. Note that a step can go away from the root or towards the root.
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/tree-1} 
+
+}
+
+\caption{The first three-and-a-bit levels of the rooted binary tree.}\label{fig:tree}
+\end{figure}
+
+By considering the distance of \((X_n)\) from the root, or otherwise, show that \((X_n)\) is transient.
+
+\begin{myanswers}
+
+\emph{Solution.} We want to show that \(m_0\), the return probability to the root, is strictly less than 1.
+
+Let \(Y_n\) be the distance of \(X_n\) from the root as suggested in the question. Then \(X_n\) returns to to the root if and only if \(Y_n\) returns to \(0\), so we can look at that instead.
+
+If \((Y_n)\) is the distance from the root, than at each time step \(Y_{n+1} = Y_n + 1\) with probability \(\frac23\), if we take either of the two edges away from root, or \(Y_n = Y_n - 1\) with probability \(\frac13\), if we take the edge back towards the root. If \(Y_n = 0\) is at the root, then \(Y_{n+1} = Y_n+1\). So \((Y_n)\) is a simple random walk with positive drift \(p = \frac23 > \frac12\) and a reflecting barrier at \(0\), which is transient.
+
+To prove it's transient, we can use a conditioning on the first step argument to get \(m_0 = h_{10}\), and
+\[ h_{i\,0} = \tfrac23 h_{i+1\,0} + \tfrac23 h_{i-1,\,0} . \]
+The general solution is
+\[ h_{i0} = A + B\left(\tfrac12\right)^i , \]
+since \(\rho = \frac13 / \frac23 = \frac12\). The initial condition \(h_{00} = 1\) gives \(A + B = 1\), so
+\[ h_{i0} = 1 - B\left(1 - \left(\tfrac12\right)^i\right) , \]
+and non-negative minimlality requires \(B = 1\). Hence
+\[ h_{i0} = \left(\tfrac12\right)^i , \]
+and \(m_0 = h_{10} = \frac12 < 1\), as required.
+
+\end{myanswers}
+
+\textbf{6.} \emph{``Every Markov chain on a finite state space has at least one stationary distribution.''} Explain carefully why this is true. You may use facts from the notes or previous example sheets, provided that you state them clearly.
+
+\begin{myanswers}
+
+\emph{Solution.} In Problem Sheet 4, Question 3, we showed that every finite-state Markov chain has a closed communicating class. In lectures, we showed the finite closed communicating classes are positive recurrent. If we look at the Markov chain restricted to just such a positive recurrent and closed class, then that restricted Markov chain is irreducible and positive recurrent, so it has a stationary distribution \(\boldsymbol\pi\). Since the class is closed, we have a stationary distribution that is \(\boldsymbol\pi\) on the given closed class and \(0\) elsewhere.
+
+\end{myanswers}
 
 \hypertarget{S11-long-term-chains}{%
 \section{Long-term behaviour of Markov chains}\label{S11-long-term-chains}}
@@ -3486,7 +3701,7 @@ Problem Sheet 5
 
 In this section we're interested in what happens to a Markov chain \((X_n)\) in the long-run -- that is, when \(n\) tends to infinity.
 
-One thing that \emph{could} happen over time is that the distribution \(\boldsymbol\lambda \mathsf P^n\) of the Markov chain could gradually settle down towards some ``equilibrium distribution''. Further, perhaps that long-term equilibrium might not depend on the initial distribution, but the initial behaviour might eventually almost disappear, exhibiting a ``lack of memory'' of the start of the process.
+One thing that \emph{could} happen over time is that the distribution \(\mathbb P(X_n = i)\) of the Markov chain could gradually settle down towards some ``equilibrium'' distribution. Further, perhaps that long-term equilibrium might not depend on the initial distribution, but the effects of the initial distribution might eventually almost disappear, exhibiting a ``lack of memory'' of the start of the process.
 
 Just in case that does happen, let's give it a name.
 
@@ -3497,7 +3712,7 @@ Let \((X_n)\) be a Markov chain on a state space \(\mathcal S\) with transition 
 
 \end{definition}
 
-It's clear there can only be at most one equilibrium distribution -- but will there be one at all? The following is the most important result in this course. (Recall that an irreducible Markov chain is aperiodic if it has period \(1\).)
+It's clear there can only be at most one equilibrium distribution -- but will there be one at all? The following is the most important result in this course. (Recall that an irreducible Markov chain is aperiodic if it has period 1.)
 
 \begin{theorem}[Limit theorem]
 \protect\hypertarget{thm:limit}{}\label{thm:limit}
@@ -3516,7 +3731,7 @@ In particular:
 
 \end{theorem}
 
-I particularly like how this one theorem gathers together all the ideas from the course in one result (Markov chains, irreducibility, periodicity, recurrence/transience, positive/null recurrence, return times, stationary distributions\ldots).
+I particularly like how this one theorem gathers together all the ideas from the course in one result (Markov chains, irreducibility, periodicity, recurrence/transience, positive/null recurrence, return times, stationary distribution\ldots).
 
 Note the three conditions for convergence to an equilibrium distribution: irreducibility, aperiodicity, and positive recurrence.
 
@@ -3528,7 +3743,7 @@ Consider a irreducible, aperiodic, positive recurrent Markov chain. Taking the i
      \pi_1 & \pi_2 & \cdots & \pi_N \end{pmatrix} , \]
 where each row is identical.
 
-We give an \protect\hyperlink{S11-proofs}{full proof of the limit theorem} below (optional and nonexaminable). However, this result gets part way there and is straightforward.
+We give an \protect\hyperlink{S11-proofs}{full proof of the limit theorem} below (optional and nonexaminable). However, this easier result gets part way there.
 
 \begin{theorem}
 \protect\hypertarget{thm:unlabeled-div-15}{}\label{thm:unlabeled-div-15}
@@ -3555,7 +3770,7 @@ as desired.
 \begin{example}
 \protect\hypertarget{exm:conv1}{}\label{exm:conv1}
 
-\protect\hyperlink{S05-example}{The two-state ``broken printer'' Markov chain} is irreducible, aperiodic, and positive recurrent, so its stationary distribution is also the equilibrium distribution. We proved this from first principles in \protect\hyperlink{P03}{Question 1 on Problem Sheet 3}.
+The \protect\hyperlink{S05-example}{two-state ``broken printer'' Markov chain} is irreducible, aperiodic, and positive recurrent, so its stationary distribution is also the equilibrium distribution. We proved this from first principles in \protect\hyperlink{P03}{Question 3 on Problem Sheet 3}.
 
 \end{example}
 
@@ -3567,7 +3782,7 @@ Recall \protect\hyperlink{S06-example1}{the simple no-claims discount Markov cha
 
 From the limit theorem, we see that the \(n\)-step transition probability tends to a limit where every row is equal to \(\boldsymbol\pi\). We can check using a computer: for \(n = 12\), say,
 \[ \mathsf P(12) = \mathsf P^{12} = \begin{pmatrix} 0.0770 & 0.2308 & 0.6923 \\ 0.0769 & 0.2308 & 0.6923 \\ 0.0769 & 0.2308 & 0.6923 \end{pmatrix}, \]
-where \(p_{ij}(12)\) is equal to \(\pi_j\) up to at least 3 decimal places for all \(i,j\).
+where \(p_{ij}(12)\) is equal to \(\pi_j\) up to at least 3 decimal places for all \(i,j\). As \(n\) gets bigger, the matrix gets closer and closer to the limiting form.
 
 \end{example}
 
@@ -3596,7 +3811,14 @@ The point is that this chain is \emph{not} aperiodic: it has period \(2\), so th
 
 Consider a Markov chain with state space \(\mathcal S = \{1,2,3\}\) and transition diagram as shown below.
 
-\begin{center}\includegraphics{math2750_files/figure-latex/stat-ex-1} \end{center}
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/stat-ex-1} 
+
+}
+
+\caption{Transition diagram for a Markov chain with two positive recurrent classes.}\label{fig:stat-ex}
+\end{figure}
 
 This chain is not irreducible, but has two aperiodic and positive recurrent communicating classes. In particular, it has many stationary distributions including \((1, 0, 0)\) and \((0, \frac8{17}, \frac9{17})\) (optional exercise for the reader). If we start in state 1, then the limiting distribution is the former, while if we start in states 2 or 3, the limiting distribution is the latter.
 
@@ -3633,7 +3855,7 @@ In particular:
 
 For completeness, we should note that ``almost sure'' convergence means that \(\mathbb P(V_j(n)/n \to 1/\mu_j) = 1\), although the precise definition is not important for us in this module.
 
-Note that, because we are averaging over a long-time period, we no longer need the condition that the Markov chain is aperiodic. For converge of the long-term proportion of time to the stationary distribution we just need irreducibility and positive recurrence.
+Note that, because we are averaging over a long-time period, we no longer need the condition that the Markov chain is aperiodic; for convergence of the long-term proportion of time to the stationary distribution we just need irreducibility and positive recurrence.
 
 Again, we give an optional and nonexaminable proof \protect\hyperlink{S11-proofs}{below}.
 
@@ -3648,7 +3870,7 @@ Recall \protect\hyperlink{S06-example1}{the simple no-claims discount Markov cha
 \begin{example}
 \protect\hypertarget{exm:ergodic-ex2}{}\label{exm:ergodic-ex2}
 
-The two-state ``swapping'' chain we saw earlier did have a unique stationary distribution \((\frac12, \frac12)\), but did not have an equilibrium distribution, because it was periodic. But it is true that \(V_0(n)/n \to \pi_0 = \frac12\) and \(V_1(n)/n \to \pi_! = \frac12\), due to the ergodic theorem. So although where we are at some specific point in the future depends on where started from, in the long run we always spend half our time in each state.
+The two-state ``swapping'' chain we saw earlier did have a unique stationary distribution \((\frac12, \frac12)\), but did not have an equilibrium distribution, because it was periodic. But it is true that \(V_0(n)/n \to \pi_0 = \frac12\) and \(V_1(n)/n \to \pi_1 = \frac12\), due to the ergodic theorem. So although where we are at some specific point in the future depends on where we started from, in the long run we always spend half our time in each state.
 
 \end{example}
 
@@ -3715,16 +3937,16 @@ Because \((X_n)\) is recurrent, we keep returning to \(i\), so \(V_i(n) \to \inf
 This completes the material on discrete time Markov chains. \textbf{In the next section}, we recap what we have learned, and have a little time for some revision.
 
 \hypertarget{S12-revision-i}{%
-\section{Revision of Part 1: Discrete time Markov chains}\label{S12-revision-i}}
+\section{End of of Part I: Discrete time Markov chains}\label{S12-revision-i}}
 
 \begin{itemize}
 \tightlist
 \item
-  No new material in this section, but a half-week break to catch up and revise what we've learned
+  No new material in this section, but a half-week break to catch up and take stock on what we've learned
 \end{itemize}
 
-\hypertarget{S12-revision}{%
-\subsection{Things to do}\label{S12-revision}}
+\hypertarget{todo-revision}{%
+\subsection{Things to do}\label{todo-revision}}
 
 We've now finished the material of the Part 1 of the module, on discrete time Markov chains. So this is a good time to take stock, revise what we've learned, and make sure we're completely up to date before starting Part 2 of the module on continuous time processes.
 
@@ -3735,21 +3957,21 @@ Some things you may want to do in lieu of reading a section of notes:
 \item
   Make sure you've completed \textbf{Problem Sheets 1 to 6}, and go back to any questions that stumped you before.
 \item
-  Start working on \textbf{\protect\hyperlink{A2}{Assessment 2}} which is due on ?????? ??? (Week 8).
+  Start working on \textbf{\protect\hyperlink{computing}{Computational Worksheet 2}} (which doubles as \textbf{Assessment 2}). There are optional computer drop-in sessions in Week 7, and the work is due on Thursday 18 March 1400 (week 8).
 \item
-  Start working on \textbf{\protect\hyperlink{computer}{Computer Practical 2}} (which doubles as Assessment 3). There are optional computer drop-in sessions in Week 7, and the work is due on ????? ???? (Week 9).
+  Start working on \textbf{\protect\hyperlink{A3}{Assessment 3}} which is due on Thursday 25 March 1400 (week 9).
 \item
   Re-read any sections of notes you struggled with earlier.
 \item
-  Take the opportunity to look at the optional non-examinable subsections if you opted out the first time around. (\protect\hyperlink{S09-strong-markov}{Section 9}, \protect\hyperlink{S10-proof}{Section 10}, \protect\hyperlink{S11-proofs}{Section 11})
+  Take the opportunity to look at the optional nonexaminable subsections, if you opted out the first time around. (\protect\hyperlink{S09-strong-markov}{Section 9}, \protect\hyperlink{S10-proof}{Section 10}, \protect\hyperlink{S11-proofs}{Section 11})
 \item
   \href{mailto:m.aldridge@leeds.ac.uk}{Let me know} if there's anything from this part of the course you'd like me to go through in next week's lecture.
 \end{itemize}
 
-\hypertarget{S12-summary-i}{%
-\subsection{Summary of Part 1}\label{S12-summary-i}}
+\hypertarget{summary-i}{%
+\subsection{Summary of Part 1}\label{summary-i}}
 
-The following list is not exhaustive, but if you can do most of the things on the list, you're well placed for the exam.
+The following list is not exhaustive, but if you can do most of the things on this list, you're well placed for the exam.
 
 \begin{itemize}
 \item
@@ -3763,499 +3985,44 @@ The following list is not exhaustive, but if you can do most of the things on th
 \item
   Find the ruin probability and expected duration for the gambler's ruin by (i) setting up equations by conditioning on the first step and (ii) solving the resulting linear difference equation.
 \item
-  Draw a transition diagram of a Markov chain given the transition matrix
+  Draw a transition diagram of a Markov chain given the transition matrix.
 \item
-  Calculate \(n\)-step transitions probabilities by (a) summing the probabilities over all relevant paths or (b) calculating the matrix power
+  Calculate \(n\)-step transitions probabilities by (a) summing the probabilities over all relevant paths or (b) calculating the matrix power.
 \item
   Find the communicating classes in a Markov chain.
 \item
-  Calculate the period of communicating class,
+  Calculate the period of communicating class.
 \item
-  Calculate hitting probabilities and expected hitting times by (i) setting up equations by conditioning on the first step and (ii) solving the resulting simultaneous equations
+  Calculate hitting probabilities and expected hitting times by (i) setting up equations by conditioning on the first step and (ii) solving the resulting simultaneous equations.
 \item
-  Define positive recurrence, null recurrence and transience, and explain their properties
+  Define positive recurrence, null recurrence and transience, and explain their properties.
 \item
-  Find the positive recurrence, null recurrence or transience of communicating classes
+  Find the positive recurrence, null recurrence or transience of communicating classes.
 \item
-  Find the stationary distribution of Markov chain
+  Find the stationary distribution of Markov chain.
 \item
-  Give conditions for a stationary distribution to exist and be unique
+  Give conditions for a stationary distribution to exist and be unique.
 \item
-  Give conditions for convergence to an equilibrium distribution
+  Give conditions for convergence to an equilibrium distribution.
 \item
-  Calculate long-term proportions of time using the ergodic theorem
+  Calculate long-term proportions of time using the ergodic theorem.
 \end{itemize}
 
 \textbf{In the next section}, we begin our study of continuous time Markov processes by looking at the most important example: the Poisson process.
 
-\hypertarget{part-part-ii-continuous-time-markov-jump-processes}{%
-\part*{Part II: Continuous time Markov jump processes}\label{part-part-ii-continuous-time-markov-jump-processes}}
-\addcontentsline{toc}{part}{Part II: Continuous time Markov jump processes}
+\hypertarget{P06}{%
+\section*{Problem sheet 6}\label{P06}}
+\addcontentsline{toc}{section}{Problem sheet 6}
 
-\hypertarget{S13-poisson-poisson}{%
-\section{Poisson process with Poisson increments}\label{S13-poisson-poisson}}
+\commfalse
 
-\begin{itemize}
-\tightlist
-\item
-  Reminder: the Poisson distribution
-\item
-  The Poisson process has independent Poisson increments
-\item
-  Summed and marked Poisson processes
-\end{itemize}
+You should attempt all these questions and write up your solutions in advance of your workshop in week 7 (Monday 8 or Tuesday 9 March) where the answers will be discussed.
 
-\newcommand{\Po}{\operatorname{Po}}
-\newcommand{\ee}{\mathrm{e}}
+\hypertarget{A3}{%
+\section*{Assessment 3}\label{A3}}
+\addcontentsline{toc}{section}{Assessment 3}
 
-\hypertarget{poisson-dist}{%
-\subsection{Poisson distribution}\label{poisson-dist}}
-
-In the next three sections we'll be considering the Poisson process, a continuous time discrete space process with the Markov property. Given its name, it's not surprising to hear the Poisson \emph{process} is related to the Poisson \emph{distribution}. Let's start with a reminder of that.
-
-Recall that a discrete random variable \(X\) has a \textbf{Poisson distribution} with rate \(\lambda\), written \(X \sim \operatorname{Po}(\lambda)\), if its probability mass function is
-\[ \mathbb P(X = n) = \mathrm{e}^{-\lambda} \frac{\lambda^n}{n!} \qquad n = 0,1,2,\dots. \]
-
-The Poisson distribution is often used to model the number of ``arrivals'' in a fixed amount of time -- for example, the number of calls to a call centre in one hour, the number of claims to an insurance company in one year, or the number of particles decaying from a large amount of radioactive material in one second.
-
-The Poisson distribution is named after the French mathematician and physicist Siméon Denis Poisson, who studied it in 1837, although it was used by another French mathematician, Abraham de Moivre, more than 100 years earlier.
-
-Recall the following facts about of the Poisson distribution:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Its expectation is \(\mathbb EX = \lambda\) and the variance is \(\operatorname{Var}(X) = \lambda\).
-\item
-  If \(X \sim \operatorname{Po}(\lambda)\) and \(Y \sim \operatorname{Po}(\mu)\) are independent, then \(X + Y \sim \operatorname{Po}(\lambda+\mu)\).
-\item
-  Let \(X \sim \operatorname{Po}(\lambda)\) represent some arrivals, and independently ``mark'' each arrival with probability \(p\). Then the number of marked arrivals \(Y\) has distribution \(Y = \operatorname{Po}(p\lambda)\), the number of unmarked arrivals \(Z\) has distribution \(Z \sim \operatorname{Po}((1-p)\lambda)\), and \(Y\) and \(Z\) are independent.
-\end{enumerate}
-
-(When mathematicians say ``recall'' usually they mean ``remember this well-known fact you've been taught before'', but sometimes they secretly mean ``I'm going to tell you something you probably haven't seen before, but I can't be bothered to prove it''. Fact number 3 might be more of the latter kind\ldots)
-
-\hypertarget{poisson-def-poisson}{%
-\subsection{Definition 1: Poisson increments}\label{poisson-def-poisson}}
-
-Suppose that, instead of just modelling the number of arrivals in a \emph{fixed} amount of time, we want to continually model the total number of arrivals as it changes over time. This will be a stochastic process with discrete state space \(\mathcal S = \mathbb Z_+ = \{0,1,2,\dots\}\) and continuous time \(\mathbb R_+ = [0,\infty)\). In continuous time, we will normally write stochastic processes as \((X(t))\), with the time variable being a \(t\) in brackets, rather than a subscript \(n\) as we had in discrete time.
-
-Suppose calls arrive at a call centre at a rate of \(\lambda = 100\) an hour. The following assumptions seem reasonable:
-
-\begin{itemize}
-\tightlist
-\item
-  We begin counting with \(X(0) = 0\) calls.
-\item
-  The number of calls in the first hour is \(X(1) \sim \operatorname{Po}(100)\). The number of calls in the second hour \(X(2) - X(1)\) will also be \(\operatorname{Po}(100)\), and will be independent of the number of calls in the first hour.
-\item
-  The number of calls in a two hour period will be \(X(t+2) - X(t) \sim \operatorname{Po}(200)\), while the number of calls in a half-hour period will be \(X(t+\frac12) - X(t) \sim \operatorname{Po}(50)\).
-\end{itemize}
-
-These properties will define the Poisson process.
-
-\begin{definition}
-\protect\hypertarget{def:poisson-def-1}{}\label{def:poisson-def-1}
-
-The \textbf{Poisson process} with rate \(\lambda\) is defined as followed. It is a stochastic process \((X(t))\) with continuous time \(t \in [0,\infty)\) and discrete state space \(\mathcal S = \mathbb Z_+\) with the following properties:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \(X(0) = 0\);
-\item
-  Poisson increments: \(X(t+s) - X(t) \sim \operatorname{Po}(\lambda s)\) for all \(s,t>0\);
-\item
-  independent increments: \(X(t_2) - X(t_1)\) and \(X(t_4) - X(t_3)\) are independent for all \(t_1 \leq t_2 \leq t_3 \leq t_4\).
-\end{enumerate}
-
-\end{definition}
-
-Note that the condition \(t_1 \leq t_2 \leq t_3 \leq t_4\) means that the time interval from \(t_1\) to \(t_2\) and the time interval from \(t_3\) to \(t_4\) don't overlap. (Overlapping time intervals will not have independent increments, as arrivals in the overlap will count for both.)
-
-The Poisson process was discovered in the first decade 20th century, and the process was named after the distribution. Many people were working on similar things, so it's difficult to say who discovered it first, but important work was done by the Swedish actuary and mathematician Filip Lundberg and the Danish engineer and mathematician AK Erlang,
-
-\begin{example}
-\protect\hypertarget{exm:poisson-ex-1}{}\label{exm:poisson-ex-1}
-
-\emph{Claims arrive at insurance company at a rate of \(\lambda = 8\) per hour, modelled as a Poisson process. What is the probability there are no claims in a given \(15\) minute period?}
-
-By property 2, the number of claims in \(15\) minutes is a Poisson distribution with mean \(\frac{15}{60}\lambda = 2\). The probability there are no claims is
-\[ \mathrm{e}^{-2} \frac{2^0}{0!} = \mathrm{e}^{-2} = 0.135 . \]
-
-\end{example}
-
-\begin{example}
-\protect\hypertarget{exm:poisson-ex-2}{}\label{exm:poisson-ex-2}
-
-\emph{A professor receives visitors to her office at a rate of \(\lambda = 2.5\) per day, modelled as a Poisson process. What is the probability she gets at least one visitor every day this (5-day) week?}
-
-The probability she gets at least one visitor on any given day is
-\[ 1 - \mathrm{e}^{-2.5} \frac{2.5^0}{0!} = 1 - \mathrm{e}^{-2.5} = 0.918.   \]
-By property 3, the numbers of visitors on different days are independent, so the probability of getting at least one visitor each day this week is
-\(0.918^5 = 0.652\).
-
-\end{example}
-
-\hypertarget{summed-marked}{%
-\subsection{Summed and marked Poisson processes}\label{summed-marked}}
-
-The following theorem shows that the sum of two Poisson processes is itself a Poisson process.
-
-\begin{theorem}
-\protect\hypertarget{thm:summed}{}\label{thm:summed}
-
-Let \((X(t))\) and \((Y(t))\) be independent Poisson processes with rates \(\lambda\) and \(\mu\) respectively. Then the process \((Z(t))\) given by \(Z(t) = X(t) + Y(t)\) is a Poisson process with rate \(\lambda+\mu\).
-
-\end{theorem}
-
-\begin{proof}
-
-Given fact number 2, that the sum of a \(\operatorname{Po}(\lambda)\) and a \(\operatorname{Po}(\mu)\) is a \(\operatorname{Po}(\lambda+\mu)\), its easy to check the necessary properties.
-
-\end{proof}
-
-\begin{example}
-\protect\hypertarget{exm:poisson-ex-3}{}\label{exm:poisson-ex-3}
-
-\emph{A student receives email to her university mail address at a rate of \(\lambda = 4\) emails per hour, and to her personal email address at a rate of \(\mu = 2\) per hour. Using a Poisson process model, what is the probability the student receives 3 or fewer emails in a 30 minute period?}
-
-The total number of emails is a sum of Poisson processes with rate \(\lambda + \mu = 6\). The total number of emails received in half an hour is Poisson with rate \((\lambda + \mu)/2 = 3\). Thus the probability that 3 or fewer emails are received is
-\[ \mathrm{e}^{-3} \frac{3^0}{0!} + \mathrm{e}^{-3} \frac{3^1}{1!} + \mathrm{e}^{-3} \frac{3^2}{2!} + \mathrm{e}^{-3} \frac{3^3}{3!} = 13\mathrm{e}^{-3} = 0.647 . \]
-
-\end{example}
-
-We also have the \textbf{marked Poisson process}, which can be thought of as the opposite to the summed process: the summed process combines two processes together, while the marked process splits one process into two.
-
-\begin{theorem}
-\protect\hypertarget{thm:marked}{}\label{thm:marked}
-
-Let \((X(t))\) be a Poisson process with rate \(\lambda\). Each arrival is independently marked with probability \(p\). Then the marked process \((Y(t))\) is a Poisson process with rate \(p\lambda\), the unmarked process \((Z(t))\) is a Poisson process with rate \((1-p)\lambda\), and \((Y(t))\) and \((Z(t))\) are independent.
-
-\end{theorem}
-
-\begin{proof}
-
-Given the third fact that you were ``reminded'' of, it's easy to check the necessary properties.
-
-\end{proof}
-
-\begin{example}
-\protect\hypertarget{exm:pois-ex-4}{}\label{exm:pois-ex-4}
-
-\emph{In the 2017/18 English Premier League football season, an average of \(\lambda = 2.81\) goals were scored per game, with \(p = 0.56\) of them scored by the home team. If we model this as a Poisson process, what is the probability a game ends 1--1?}
-
-The number of home goals scored is Poisson with rate \(p\lambda = 0.56\times 2.81 = 1.57\), and the number of away goals scored is Poisson with rate \((1-p)\lambda = 1.24\). Since these are independent, the probability the home and the away team both score \(1\) goal is
-\[ \mathrm{e}^{-1.57} \frac{1.57^1}{1!} \times  \mathrm{e}^{-1.24} \frac{1.24^1}{1!} = 1.57\mathrm{e}^{-1.57} \times 1.24 \mathrm{e}^{-1.24} =  0.12, \]
-or 12\%.
-
-\end{example}
-
-\textbf{In the next section}, we look at the Poisson process in a different way: the times in between arrivals have an exponential distribution.
-
-\hypertarget{S14-poisson-exponential}{%
-\section{Poisson process with exponential holding times}\label{S14-poisson-exponential}}
-
-\begin{itemize}
-\tightlist
-\item
-  Reminder: the exponential distribution
-\item
-  The Poisson process has exponential holding times
-\item
-  The Markov property in continuous time
-\end{itemize}
-
-\newcommand{\Exp}{\operatorname{Exp}}
-
-\hypertarget{exponential}{%
-\subsection{Exponential distribution}\label{exponential}}
-
-Last time, we introduced the Poisson process by looking at the random number of arrivals in fixed time period, which follows a Poisson distribution. Another way of looking at the Poisson process is to look at the random amount of of time required for a fixed number of arrivals. For this, we'll need the exponential distribution.
-
-We start by recalling the exponential distribution.
-Recall that we say a continuous random variable \(T\) has the \textbf{exponential distribution} with rate \(\lambda\), and write \(T \sim \operatorname{Exp}(\lambda)\), if it has the probability distribution function \(f(t) = \lambda \mathrm{e}^{-\lambda t}\) for \(t \geq 0\).
-
-You are reminded of the following facts about the exponential distribution:
-
-\begin{itemize}
-\tightlist
-\item
-  The cumulative distribution function is \(F(t) = \mathbb P(T \leq t) = 1 - \mathrm{e}^{-\lambda t}\); although it is usually more convenient to deal with the tail probability \(\mathbb P(T > t) = 1 - F(t) = \mathrm{e}^{-\lambda t}\).
-\item
-  The expectation is \(\mathbb E T = 1/\lambda\) and the variance is \(\operatorname{Var}(T) = 1/\lambda^2\).
-\end{itemize}
-
-The following memoryless property will of course be important in a course about memoryless Markov processes.
-
-\begin{theorem}
-\protect\hypertarget{thm:memoryless-thm}{}\label{thm:memoryless-thm}
-
-Let \(T \sim \operatorname{Exp}(\lambda)\). Then, for any \(s,t\geq0\),
-\[ \mathbb P(T > t + s \mid T > t) = \mathbb P(T > s) . \]
-
-\end{theorem}
-
-Suppose we are waiting an exponentially distributed time for an alarm to go off. No matter how long we've been waiting for, the remaining time to wait is still exponentially distributed, with the same parameter -- hence ``memoryless''.
-
-\begin{proof}
-
-By standard use of conditional probability, we have
-\[ \mathbb P(T > t + s \mid T > t) = \frac{\mathbb P(T > t + s \text{ and } T > t)}{\mathbb P(T > t)} =  \frac{\mathbb P(T > t + s)}{\mathbb P(T > t)} = \frac{\mathrm{e}^{-\lambda(t+s)}}{\mathrm{e}^{-\lambda t}} = \mathrm{e}^{-\lambda s} , \]
-which is still the tail probability of the exponential distribution.
-
-\end{proof}
-
-The following property will be important later on in the course.
-
-\begin{theorem}
-\protect\hypertarget{thm:exponential-thm}{}\label{thm:exponential-thm}
-
-Let \(T_1 \sim \operatorname{Exp}(\lambda_1)\), \(T_2 \sim \operatorname{Exp}(\lambda_2)\), \(\dots\), \(T_n \sim \operatorname{Exp}(\lambda_n)\) be independent exponential distributions, and let \(T\) be the minimum of the \(T_i\)s, so \(T = \min\{T_1, T_2, \dots, T_n \}\). Then
-\[ T \sim \operatorname{Exp}(\lambda_1 + \lambda_2 + \cdots + \lambda_n) . \]
-Further, the probability that \(T_j\) is the smallest of all the \(T_i\)s is
-\[ \mathbb P(T = T_j) = \frac{\lambda_j}{\lambda_1 + \lambda_2 + \cdots + \lambda_n} . \]
-
-\end{theorem}
-
-The proof of this is an exercise on \protect\hyperlink{P07}{Problem Sheet 7}.
-
-\hypertarget{definition-2-exponential-holding-times}{%
-\subsection{Definition 2: exponential holding times}\label{definition-2-exponential-holding-times}}
-
-Exponential distributions are often used to model ``waiting times'' -- for example, the amount of time until a light bulb breaks, or the times between buses arriving. We often use the term `holding time' to refer to the time between consecutive arrivals.
-
-When modelling a process \((X(t))\) counting many arrivals at rate \(\lambda\), we might model the process like this: after waiting an \(\operatorname{Exp}(\lambda)\) amount of time, an arrival appears. After another \(\operatorname{Exp}(\lambda)\) amount of time, another arrival appears. And so on.
-
-\begin{itemize}
-\tightlist
-\item
-  We start with \(X(0) = 0\).
-\item
-  Let \(T_1, T_2, \dots \sim \operatorname{Exp}(\lambda)\) be the holding times, all independent. Then
-  \[ X(t) = \begin{cases} 0 & \text{for $0 \leq t < T_1$} \\
-    1 & \text{for $T_1 \leq t < T_1 + T_2$} \\
-    2 & \text{for $T_1+T_2 \leq t < T_1 + T_2 + T_3$} \\
-    \text{and so on.} & \end{cases} \]
-\end{itemize}
-
-It turns out (as you've probably already guessed) that the process as described above is also the Poisson process!
-
-\textbf{PICTURE PICTURE PICTURE}
-
-\begin{theorem}
-\protect\hypertarget{thm:pois-exp-equiv}{}\label{thm:pois-exp-equiv}
-
-Let \((X(t))\) be a Poisson process with rate \(\lambda\), as defined by its independent Poisson increments (Definition \textbf{REF REF REF}). Then \((X(t))\) has the exponential holding times structure described above.
-
-\end{theorem}
-
-\begin{proof}
-
-Let \((X(t))\) be a Poisson process with rate \(\lambda\). We seek the distribution of the first arrival time \(T_1\). We have
-\[ \mathbb P(T_1 > t_1) = \mathbb P\big(X(t_1) - X(0) = 0\big) = \mathrm{e}^{-\lambda t_1} \frac{(\lambda t_1)^0}{0!} = \mathrm{e}^{-\lambda t_1} , \]
-since the arrival comes after \(t_1\) if there are no arrivals in the interval \([0,t_1]\).
-But this is precisely the tail probability of an exponential distribution with rate \(\lambda\).
-
-Now consider the second holding time. We have
-\[ \mathbb P(T_2 > t_2 \mid T_1 = t_1) = \mathbb P\big(X(t_1 + t_2) - X(t_1) = 0\big) = \mathrm{e}^{-\lambda ((t_1 + t_2) - t_1)}  =  \mathrm{e}^{-\lambda t_2} \]
-by the same argument as before. This is the tail distribution for another \(\operatorname{Exp}(\lambda)\) distribution, independent of \(T_1\).
-
-Repeating this argument for all \(n\) gives the desired exponential holding time structure.
-
-\end{proof}
-
-\begin{example}
-\protect\hypertarget{exm:bookshop}{}\label{exm:bookshop}
-
-\emph{Customers visit a second-hand bookshop at a rate of \(\lambda = 5\) per hour. Each customer a book with probability \(p = 0.4\). What is the expected time to make ten sales, and what is the standard deviation?}
-
-The count of books sold marked Poisson process, which we saw last time is itself a Poisson process with rate \(p\lambda = 2\).
-
-The expected time of the tenth sale is
-\[ \mathbb E(T_1 + \dots + T_{10}) = 10\,\mathbb ET_1 = 10 \times \tfrac{1}{2} = 5 \text{ hours} .\]
-The variance is
-\[ \operatorname{Var}(T_1 + \dots + T_{10}) = 10\,\operatorname{Var}(T_1) = 10 \times \frac{1}{2^2} = 2.5 , \]
-where we used that the holding times are independent, so the standard deviation is \(\sqrt{2.5} = 1.58\) hours.
-
-\emph{What is the probability it takes more than an hour to sell the first book?}
-
-This is the probability the first holding time is longer than an hour, which is
-\[ \mathbb P(T_1 > 1) = \mathrm{e}^{-2\times 1} = \mathrm{e}^{-2} = 0.135. \]
-
-An alternative way to solve this would be to say that the first book is is sold later than \(1\) hour in if \(X(1) = 0\). So using the Poisson increments definition from last time, we have
-\[ \mathbb P\big(X(1) = 0\big) = \mathrm{e}^{-2\times 1} \frac{(2\times 1)^0}{0!}  = \mathrm{e}^{-2} = 0.135. \]
-We get the same answer either way.
-
-\end{example}
-
-\hypertarget{cont-markov}{%
-\subsection{Markov property in continuous time}\label{cont-markov}}
-
-We previously saw the Markov ``memoryless'' property in discrete time. The equivalent definition in continuous time is the following.
-
-\begin{definition}
-\protect\hypertarget{def:pp}{}\label{def:pp}
-
-Let \((X(t))\) be a stochastic process on a discrete state space \(\mathcal S\) and continuous time \(t \in [0,\infty)\). We say that \((X(t))\) has the \textbf{Markov property}
-if
-\begin{multline*}
-\mathbb P\big( X(t_{n+1}) = x_{n+1} \mid X(t_n) = x_n, \dots, X(t_1) = x_1, X(t_0) = x_0 \big) \\
-= \mathbb P\big( X(t_{n+1}) = x_{n+1} \mid X(t_n) = x_{n}\big)
-\end{multline*}
-for all times \(t_0 < t_1 < \cdots < t_n < t_{n+1}\) and all states \(x_0, x_1, \dots, x_n, x_{n+1} \in \mathcal S\).
-
-\end{definition}
-
-In other words, the state of the process at some point \(t_{n+1}\) in the future depends on where we are now \(t_n\), but, given that, does not depend on any collection of previous times \(t_0, t_1, \dots, t_{n-1}\).
-
-The Poisson process does indeed have the Markov property, since, by the property of independent increments, we have that
-\[ \mathbb P\big( X(t_{n+1}) = x_{n+1} \mid X(t_n) = x_n, \dots, X(t_0) = x_0 \big) = \mathbb P\big( X(t_{n+1}) -X(t_n) = x\big) , \]
-where \(x = x_{n+1}-x_n\). By Poisson increments, this has probability
-\[ \mathrm{e}^{-\lambda(t_{n+1}-t_n)} \frac{\big(\lambda(t_{n+1}-t_n)\big)^x}{x!} . \]
-
-Alternatively, by the memoryless property of the exponential distribution, we see that we can restart the holding time from \(t_n\) and still have this and all future holding times exponentially distributed.
-
-\textbf{In the next section}, we look at the Poisson process in a third way, by looking at what happens in a very small time period.
-
-\hypertarget{S15-poisson-exponential}{%
-\section{Poisson process in infinitesimal time periods}\label{S15-poisson-exponential}}
-
-\begin{itemize}
-\tightlist
-\item
-  Poisson process in terms of increments in infinitesimal time
-\item
-  Forward equations for the Poisson process
-\end{itemize}
-
-\hypertarget{infinitesimal}{%
-\subsection{Definition 3: increments in infinitesimal time}\label{infinitesimal}}
-
-We have seen two definitions of the Poisson process so far: one in terms of increments having a Poisson distribution, and one in therms of holding times having an exponential distribution. Here we will see another definition, by looking at what happens in a very small time period of length \(\tau\). Advantages of this approach include that does not require direct assumptions on the distributions involved, so may seem more ``natural'' or ``inevitable'' -- I consider this a conclusive argument that, if there are intelligent aliens out there, they have the Poisson process too! It also shows links between Markov processes and differential equations. A disadvantage is that it's normally easier to do calculations with the Poisson or exponential definitions.
-
-Let \((X(t))\) be a stochastic processes counting some arrivals over time. Consider the number of arrivals in a very small time period \(\tau\), which is \(X(t+\tau) - X(t)\). The following (seemingly) weak assumptions seem justified:
-
-\begin{itemize}
-\tightlist
-\item
-  It's quite likely that there will be no arrivals in the very small time period.
-\item
-  It's possible there will be one arrival, and that probability will be proportional to the time period \(\tau\).
-\item
-  It's extremely unlikely there will be two or more arrivals in such a short time period.
-\end{itemize}
-
-To write this down formally in maths, we will consider \(\mathbb P(X(t+\tau) - X(t) = j)\) as the length of the time period \(\tau\) tends to zero.
-
-It will be helpful to use ``little-\(o\)'' notation. Here \(o(\tau)\) means a term that is of ``lower order'' compared to \(\tau\). Specifically, \(o(\tau)\) stands for a function of \(\tau\) that tends to \(0\) as \(\tau \to 0\) even when divided by \(\tau\). That is,
-\[ f(\tau) = o(\tau) \qquad \iff \qquad \frac{f(\tau)}{\tau} \to 0 \quad \text{as $\tau \to 0$.}  \]
-Then our suggestions above translates to
-\begin{equation} \mathbb P \big(X(t+\tau) - X(t) = j\big) = \begin{cases} 1 - \lambda \tau + o(\tau) & \text{if $j = 0$,} \\
-\lambda\tau + o(\tau) & \text{if $j = 1$,} \\
-o(\tau) & \text{if $j \geq 2$.} \end{cases} \label{eq:tau} \end{equation}
-as \(\tau \to 0\).
-
-It will not be surprising to learn that we have once again defined the Poisson process with rate \(\lambda\).
-
-\begin{theorem}
-\protect\hypertarget{thm:def-inf}{}\label{thm:def-inf}
-
-Let \((X(t))\) be a stochastic process with the following properties:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \(X(0) = 0\);
-\item
-  infinitesimal increments: \(X(t+\tau) - X(t)\) has the structure in \eqref{eq:tau} above, as \(\tau \to 0\);
-\item
-  independent increments: \(X(t_2) - X(t_1)\) and \(X(t_4) - X(t_3)\) are independent for all \(t_1 \leq t_2 \leq t_3 \leq t_4\).
-\end{enumerate}
-
-Then \((X(t))\) is a Poisson process with rate \(\lambda\).
-
-\end{theorem}
-
-We will prove this in a moment. First let's see an example of its use.
-
-\hypertarget{sum2}{%
-\subsection{Example: sum of two Poisson processes}\label{sum2}}
-
-We \protect\hyperlink{summed-marked}{mentioned before the sum of two Poisson processes}: that if \((X(t))\) is a Poisson process with rate \(\lambda\) and \((Y(t))\) is an independent Poisson process with rate \(\mu\), then the sum \((Z(t))\) where \(Z(t) = X(t) + Y(t)\) is a Poisson process with rate \(\lambda + \mu\).
-
-On \protect\hyperlink{P07}{Problem Sheet 7}, Question 3, you proved this from the Poisson increments definition. But it's perhaps easier using the infinitesimals.
-
-We have
-\begin{align*}\mathbb P\big( Z(t+\tau) - Z(t) = 0 \big) &= \mathbb P\big( X(t+\tau) - X(t) = 0 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 0 \big) \\ &=\big(1 - \lambda \tau + o(\tau) \big)\big(1 - \mu \tau + o(\tau) \big) \\
-&= 1 - (\lambda + \mu)\tau + o(\tau) , \end{align*}
-since \(Z\) does not increase provided neither \(X\) nor \(Y\) increase. We also have
-\begin{align*}\mathbb P\big( Z(t+{}&\tau) - Z(t) = 1 \big) \\
-&= \mathbb P\big( X(t+\tau) - X(t) = 1 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 0 \big) \\ &\qquad {}+ \mathbb P\big( X(t+\tau) - X(t) = 0 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 1 \big) \\
-&= \big(\lambda \tau + o(\tau) \big)\big(1 - \mu \tau + o(\tau) \big) + \big(1 - \lambda \tau + o(\tau) \big)\big(\mu \tau + o(\tau) \big) \\
-&= (\lambda + \mu)\tau + o(\tau) , \end{align*}
-since \(Z\) increases by 1 if either \(X\) increases by 1 and \(Y\) stays fixed or vice versa. We used here that the probability that both \(X\) and \(Y\) increase is of order \(\tau^2 = o(\tau)\). Finally, since probabilities must add up to 1, we must have
-\[ \mathbb P\big( Z(t+\tau) - Z(t) \geq 2 \big) =  o(\tau) . \]
-
-But what we have written down is precisely the infinitesimals definition of a Poisson process with rate \(\lambda + \mu\).
-
-\hypertarget{forward}{%
-\subsection{Forward equations and proof of equivalence}\label{forward}}
-
-If we compare Theorem \ref{thm:def-inf} to the \protect\hyperlink{thm:ux5cux23poisson-def-1}{definition of the Poisson process in terms of Poisson increments}, we see that properties 1 and 3 are the same. We only need to check property 2, that \(X(t+s) - X(s)\) is a Poisson distribution with rate \(\lambda t\).
-
-Since the increments as defined in \eqref{eq:tau} are time homogeneous, it will suffice to consider \(s = 0\). So we need to show that \(X(t) \sim \text{Po}(\lambda t)\).
-
-Write \(p_j(t) = \mathbb P(X(t) = j)\). Then for \(j \geq 1\) we have
-\[ p_j(t + \tau) = \big(1 - \lambda\tau + o(\tau)\big)p_j(t) + \big(\lambda\tau + o(\tau)\big) p_{j-1}(t) + o(\tau) , \]
-since we get to \(j\) either by staying at \(j\) or moving up from \(j-1\), with all other highly unlikely possibilities being absorbed into the \(o(\tau)\). In order to deal with increments, it will be convenient to take a \(p_{j}(t)\) to the left-hand side and rearrange, to get the increment
-\[ p_j(t + \tau) - p_j(t) = -\lambda\tau p_j(t) + \lambda\tau p_{j-1}(\tau) + o(\tau) , \]
-where ``constant times \(o(\tau)\)'' is itself \(o(\tau)\).
-
-The only way to deal with the \(o(\tau)\) term, given its definition, is to divide everything by \(\tau\) and send \(\tau \to 0\). Dividing by \(\tau\) gives
-\[ \frac{p_j(t + \tau) - p_j(t)}{\tau} = -\lambda p_j(t) + \lambda p_{j-1}(t) + \frac{o(\tau)}{\tau} . \]
-Sending \(\tau\) to 0, the term \(o(\tau)/\tau\) tends to 0 and vanishes, while we recognise the limit of the left-hand side as being the derivative \(\mathrm d p_j(t) / \mathrm d t = p'_j(t)\).
-This leaves us with the differential equation
-\[ p'_j(t) = -\lambda p_j(t) + \lambda p_{j-1}(t) . \]
-We also have the initial condition \(p_j(0) = 0\) for \(j \geq 1\), since we start at 0, not at any \(j \geq 1\).
-
-We have to deal with the case \(j = 0\) separately. This is similar but a bit easier. We have
-\[ p_0(t + \tau) = \big(1 - \lambda\tau + o(\tau)\big)p_0(t) , \]
-since we must previously been at 0, then seen no arrivals.
-After rearranging to get an increment and sending \(\tau \to 0\), as before, we get the differential equation
-\[ p'_0(t) = -\lambda p_0(t) \]
-with the initial condition \(p_0(0) = 1\), since we always start at 0.
-
-In summary, we have derived the following equations:
-\begin{align*}
-   p'_0(t) &= -\lambda p_0(t) & \hspace{-1.5cm} p_0(0) & = 1 ,\\
-   p'_j(t) &= -\lambda p_j(t) + \lambda p_{j-1}(t) & \hspace{-1.5cm} p_j(0) &= 0 \quad \text{for $j \geq 1$} .
-\end{align*}
-These are called the \textbf{Kolmogorov forward equations}.
-
-We claim that the solution to these equations is the Poisson distribution
-\[ p_j(t) = \mathrm{e}^{-\lambda t} \frac{(\lambda t)^j}{j!} . \]
-This would prove the theorem.
-
-We must check that the claim holds. For \(j = 0\), the Poisson probability is
-\[ p_0(t) = \mathrm{e}^{-\lambda t} \frac{(\lambda t)^0}{0!} = \mathrm{e}^{-\lambda t} . \]
-This has
-\[ p'_0(t) = -\lambda \mathrm{e}^{-\lambda t} = -\lambda p_0(t) , \]
-as desired, and we also have the correct initial condition \(p_0(0) = \mathrm{e}^{0} = 1\).
-
-For \(j \geq 1\), the left-hand side is
-\begin{align*}
-p'_j(t) &= \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{-\lambda t} \frac{(\lambda t)^j}{j!} \\
-& = \frac{1}{j!} \left(-\lambda \mathrm{e}^{-\lambda t}(\lambda t)^j + \mathrm{e}^{-\lambda t} \lambda j(\lambda t)^{j-1} \right) \\
-&= - \lambda \mathrm{e}^{-\lambda t} \frac{(\lambda t)^j}{j!} + \lambda \mathrm{e}^{-\lambda t} \frac{(\lambda t)^{j-1}}{(j-1)!} \\
-&= -\lambda p_j(t) + \lambda p_{j-1}(t)
-\end{align*}
-as desired. We also have the initial condition \(p_j(0) = \mathrm{e}^{0} 0^j/j! = 0\).
-The claim is proven, and we are (finally) done.
-
-\textbf{In the next section}, we two new types of process that are similar to the Poisson process.
+Assessment 3 will be available very soon. The submission deadline is Thursday 25 March (week 9).
 
 \hypertarget{computing}{%
 \section*{Computational worksheets}\label{computing}}
@@ -4270,6 +4037,8 @@ The claim is proven, and we are (finally) done.
   \tightlist
   \item
     Example report: \href{computing/C1-example.html}{{[}HTML format{]}} \href{computing/C1-example.Rmd}{{[}Rmd format{]}}
+  \item
+    \textbf{Computational Worksheet 2 (Assessment 2):} \href{computing/C2.html}{{[}HTML format{]}} \href{computing/C2.Rmd}{{[}Rmd format{]}} This worksheet is assessed, and is due on Thursday 18 March at 2pm.
   \end{itemize}
 \end{itemize}
 
