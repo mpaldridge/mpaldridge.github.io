@@ -109,6 +109,42 @@
 \section*{Schedule}\label{home}}
 \addcontentsline{toc}{section}{Schedule}
 
+\textbf{Week 6} (1--5 March):
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{S11-long-term-chains}{\textbf{Section 11}: Long-term behaviour of Markov chians}
+\item
+  \protect\hyperlink{S12-revision-i}{\textbf{Section 12}: End of of Part I: Discrete time Markov chains}
+\item
+  \protect\hyperlink{P06}{\textbf{Problem Sheet 6}}
+\item
+  \protect\hyperlink{computing}{\textbf{Computational Worksheet 2 / Assessment 2}}: computational drop-in sessions next week, due 18 March
+\item
+  \protect\hyperlink{A3}{\textbf{Assessment 3}} \emph{to follow soon}: due 25 March
+\item
+  \textbf{Lecture}: Tuesday at 1400 (Zoom)
+\item
+  \textbf{Workshops} on Problem Sheet 3: Monday or Tuesday (Zoom)
+\item
+  \textbf{Drop-in sessions}: Tuesday or Wednesday (Teams)
+\end{itemize}
+
+\textbf{Week 5} (22--26 February):
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{S09-recurrence-transience}{\textbf{Section 9}: Recurrence and transience}
+\item
+  \protect\hyperlink{S10-stationary-distributions}{\textbf{Section 10}: Stationary distributions}
+\item
+  \protect\hyperlink{P05}{\textbf{Problem Sheet 5}}
+\item
+  \protect\hyperlink{computing}{\textbf{Computational Worksheet 1}}
+\end{itemize}
+
 \textbf{Week 4} (15--19 February):
 
 \begin{itemize}
@@ -120,13 +156,7 @@
 \item
   \protect\hyperlink{P04}{\textbf{Problem Sheet 4}}
 \item
-  \protect\hyperlink{computing}{\textbf{Computational Worksheet 1}}, with \textbf{computational drop-in sessions}: Monday, Tuesday, or Wednesday (Teams)
-\item
-  \textbf{Lecture}: Tuesday at 1400 (Zoom)
-\item
-  \textbf{Workshops} on Problem Sheet 3: Monday or Tuesday (Zoom)
-\item
-  Non-computational \textbf{drop-in sessions}: Tuesday or Wednesday (Teams)
+  \protect\hyperlink{computing}{\textbf{Computational Worksheet 1}}, with computational drop-in sessions
 \end{itemize}
 
 \textbf{Week 3} (8--12 February):
@@ -2581,9 +2611,9 @@ In conclusion, we have the following. (Recall that we get the result for \(i < 0
 \protect\hypertarget{thm:rw-hitting}{}\label{thm:rw-hitting}
 
 Consider a random walk with up probability \(p \neq 0, 1\). Then the hitting probabilities to 0 are givin by, for \(i > 0\),
-\[ h_{i0} = \begin{cases} \left(\displaystyle\frac{q}{p}\right)^i & \text{if $p > \frac12$} \\ \ 1 & \text{if $p \leq \frac12$,} \end{cases} \]
+\[ h_{i0} = \begin{cases} \left(\displaystyle\frac{q}{p}\right)^i < 1 & \text{if $p > \frac12$} \\ \ 1 & \text{if $p \leq \frac12$,} \end{cases} \]
 and for \(i < 0\) by
-\[ h_{i0} = \begin{cases} \left(\displaystyle\frac{p}{q}\right)^{-i} & \text{if $p < \frac12$} \\ \ 1 & \text{if $p \geq \frac12$.} \end{cases} \]
+\[ h_{i0} = \begin{cases} \left(\displaystyle\frac{p}{q}\right)^{-i} < 1 & \text{if $p < \frac12$} \\ \ 1 & \text{if $p \geq \frac12$.} \end{cases} \]
 
 \end{theorem}
 
@@ -3021,7 +3051,7 @@ Consider the probability we return to \(i\) after time \(n\). We condition on wh
 &= p_{ij}(n)\,\mathbb P(\text{return to $i$ after time $n$} \mid X_n = j, X_0 = i) \\
 &\qquad {}+ \big(1 - p_{ij}(n)\big)\,\mathbb P(\text{return to $i$ after time $n$} \mid X_n \neq j, X_0 = i) \\
 &\leq \mathbb P(\text{return to $i$ after time $n$} \mid X_n = j, X_0 = i) +  \big(1 - p_{ij}(n)\big) \\
-= 0 + \big(1 - p_{ij}(n)\big) \\
+&= 0 + \big(1 - p_{ij}(n)\big) \\
 &< 1,
 \end{align*}
 since we can't get from \(j\) to \(i\), and since \(p_{ij}(n) > 0\). If \(i\) were recurrent we would certainly return infinitely often, and in particular certainly return after time \(n\). So \(i\) must be transient instead.
@@ -3471,7 +3501,7 @@ But the first term on the left and the last term on the right are equal, and bec
 \section*{Problem sheet 5}\label{P05}}
 \addcontentsline{toc}{section}{Problem sheet 5}
 
-\commfalse
+\commtrue
 
 You should attempt all these questions and write up your solutions in advance of your workshop in week 6 (Monday 1 or Tuesday 2 March) where the answers will be discussed.
 
@@ -3974,6 +4004,7 @@ Some things you may want to do in lieu of reading a section of notes:
 The following list is not exhaustive, but if you can do most of the things on this list, you're well placed for the exam.
 
 \begin{itemize}
+\tightlist
 \item
   Define the simple random walk and other random walks.
 \item
@@ -4018,11 +4049,591 @@ The following list is not exhaustive, but if you can do most of the things on th
 
 You should attempt all these questions and write up your solutions in advance of your workshop in week 7 (Monday 8 or Tuesday 9 March) where the answers will be discussed.
 
+Remember that the \textbf{\href{https://forms.office.com/Pages/ResponsePage.aspx?id=qO3qvR3IzkWGPlIypTW3ywARQdZlKXRHsLcXi_ngX8NUM0NLOFFaQURFVExJMklIRjdVM04wQk8xTy4u}{mid-semester survey}} is still open.
+
+\textbf{1.} Consider a Markov chain \((X_n)\) with state space \(\mathcal S =\{1,2,3\}\) and transition matrix
+\[ \mathsf P = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}.   \]
+
+\textbf{(a)} Draw a transition diagram for this Markov chain. Is it irreducible? Is each state periodic or aperiodic?
+
+\begin{myanswers}
+
+\emph{Solution.}
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/Q61-1} 
+
+}
+
+\caption{Transition diagram for Question 1.}\label{fig:Q61}
+\end{figure}
+
+The Markov chain is irreducible, since we have \(1 \to 2 \to 3 \to 1\). Since we continually cycle around the triangle, it's clear that the period is \(d = 3\).
+
+\end{myanswers}
+
+\textbf{(b)} What is \(m_i\), the return probability, for each state? What is \(\mu_i\), the expected return time for each state.
+
+\begin{myanswers}
+
+\emph{Solution.}
+Again, since we continually cycle around the triangle, we always return in \(3\) steps, so \(m_i = 1\) and \(\mu_i =3\) for all \(i\).
+
+\end{myanswers}
+
+\textbf{(c)} By solving \(\boldsymbol \pi = \boldsymbol\pi \mathsf P\), find the stationary distribution. Use this to confirm the values of \(\mu_i\).
+
+\begin{myanswers}
+
+\emph{Solution.}
+The equations give \(\pi_1 = \pi_3\), \(\pi_2 = \pi_1\) and \(\pi_3 = \pi_2\), meaning they're all equal. The normalising condition gives \(\boldsymbol\pi = (\frac13, \frac13, \frac13)\). The expected return times are \(\mu_i = 1/\pi_i = 3\), as predicted.
+
+\end{myanswers}
+
+\textbf{(d)} For what initial distributions \(\boldsymbol\lambda\) do the limits \(\lim_{n \to \infty} \mathbb P(X_n = i)\) exist?
+
+\begin{myanswers}
+
+\emph{Solution.}
+For a given initial condition \((\lambda_1, \lambda_2, \lambda_3)\) it's clear we cycle through the initial condition, \((\lambda_2, \lambda_3, \lambda_1)\), and \((\lambda_3, \lambda_1, \lambda_2)\). Hence the limits only exist if \(\lambda_1 = \lambda_2 = \lambda_3 = \frac13\).
+
+\end{myanswers}
+
+\textbf{(e)} What is the long-run proportion of time spent in each state?
+
+\begin{myanswers}
+
+\emph{Solution.}
+Since the Markov chain is irreducible and positive recurrent (like every finite irreducible chain), the ergodic theorem tells us that the long-run proportion of time spent in each state \(i\) is \(\pi_i = \frac13\).
+
+\end{myanswers}
+
+\textbf{2.} Every person has two chromosomes; each chromosome is a copy of a chromosome from one of the person's parents. There are two types of chromosome, which are conventionally labelled X and Y. A child born with a Y chromosome is male, while a child with two X chromosomes is female.
+
+Haemophilia is a blood-clotting disorder caused by a defective X chromosome (we will label this as \(\text X^*\)). Females with the defective chromosome (\(\text X^*\text X\)) will not typically show symptoms of the disease but can pass it on to children -- they are `carriers'. Males with the defective chromosome (\(\text X^* \text Y\)) have the disease and its symptoms.
+
+A medical statistician is studying the progress of the disease through first-born children, starting with a female carrier. The statistician makes the following assumptions: First, each parent has an equal probability of passing either of their chromosomes to their children. Second, the partner of each person in the study does not have a defective X chromosome. Third, no new genetic disorders occur.
+
+\textbf{(a)} Show that we can use a Markov chain to model the progress of the disease under the above assumptions. What is the state space? Draw a transition diagram.
+
+\begin{myanswers}
+
+\emph{Solution.}
+Consider a stochastic process on the state space \(\mathcal S = \{\text{F}, \text{M}, \text{m}, \text{f}\}\), where F means the first-born child is a female carrier, M means the child is a male haemophiliac, f means the child is a female non-carrier, and m means the child is a male without the disease. (This is not the only way to set up the Markov chain.) If we let \((X_n)\) be the status of the first-born child at the \(n\)th generation, then it is clear that \(X_{n+1}\), the status of the \((n+1)\)st individual, will depend on the status of their parent \(X_n\), but, given that, will not depend further on the history of the process. So we have the Markov property.
+
+The transition probabilities are: From a female carrier, \(p_{\mathrm{FF}} = \frac14\) or \(p_{\mathrm{FM}} = \frac14\) if she passes on the \(\text X^*\), or \(p_{\mathrm{Ff}} = p_{\mathrm{Fm}} = \frac14\) if not. From a male haemophiliac, \(p_{\mathrm{MF}} = \frac12\) if he passes on the \(\text X^*\), or \(p_{\mathrm{Mm}} = \frac12\) if not. From those without the \(\text X^*\), we have \(p_{\mathrm{ff}} = p_{\mathrm{fm}} = p_{\mathrm{mf}} =p_{\mathrm{mm}} = \frac12\).
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/Q62-1} 
+
+}
+
+\caption{Transition diagram for Question 2.}\label{fig:Q62}
+\end{figure}
+
+\end{myanswers}
+
+\textbf{(b)} What are the communicating classes in the chain? Is each class positive recurrent, null recurrent, or transient?
+
+\begin{myanswers}
+
+\emph{Solution.}
+Note we can move from F or M to f or m but not back again. So the class \(\{\text F, \text M\}\) is non-closed and thus transient, while the class \(\{\text f, \text m\}\) is closed and thus positive recurrent.
+
+\end{myanswers}
+
+\textbf{(c)} Calculate a stationary distribution. Is this the only stationary distribution?
+
+\begin{myanswers}
+
+\emph{Solution.}
+We have a stationary distribution is \(\pi_{\mathrm M} = \pi_{\mathrm{F}} = 0\), \(\pi_{\mathrm m} = \pi_{\mathrm f} = \frac12\). One way to see this is to solve \(\boldsymbol\pi = \boldsymbol\pi\mathsf P\). Another way is the following: Since F and M are transient we must have \(\pi_{\mathrm M} = \pi_{\mathrm{F}} = 0\). But, within the recurrent class, m and f are symmetrical, so we must have \(\pi_{\mathrm m} = \pi_{\mathrm f}\). The result follows.
+
+Since there is exactly one positive recurrent class, the stationary distribution is unique.
+
+\end{myanswers}
+
+\textbf{(d)} Under this model, what is the limiting probability that, in many generations' time, a child has haemophilia?
+
+\begin{myanswers}
+
+\emph{Solution.}
+Since M and F are transient states, we have \(\lim \mathbb P(X_n = \mathrm F) = \lim \mathbb P(X_n = \mathrm M) = 0\), so the limiting probability is \(0\).
+
+\end{myanswers}
+
+\textbf{3.}
+An airline operates a frequent flyer scheme with four classes of membership; Ordinary, Bronze, Silver and Gold. Scheme members get benefits according to their membership class.
+Changing membership class operates as follows:
+
+\begin{itemize}
+\tightlist
+\item
+  If a member books two or more flights in a given year, they are moved up a class of membership for the next year (or remain at Gold).
+\item
+  If a member books a single flight, they remain in their current class in the following year.
+\item
+  If a member books no flights, they move down a class (or remain at Ordinary).
+\end{itemize}
+
+The airline's research has shown that in a given year 40\% of members book no flights, 40\% book exactly one flight and the remaining 20\% book two or more flights, independent of their history. Moreover, the cost of running the scheme per member is estimated as £0 for Ordinary members, £10 for Bronze members, £20 for Silver members, and £30 for Gold members.
+
+\textbf{(a)} Show that this system can be modelled using a Markov chain. Write down the transition probabilities and draw a transition diagram.
+
+\begin{myanswers}
+
+\emph{Solution.}
+We write \(\mathcal S = \{\text{O},\text{B},\text{S},\text{G}\}\) for the set of states, and let \(X_n\) be the membership level in year \(n\). Next year's membership level depends on this year's, but not, given this year's, on the previous history, so we have the Markov property.
+
+With probability \(40\%\), a member books no flights, giving
+\[ p_{\mathrm{BO}} = p_{\mathrm{SB}} = p_{\mathrm{GG}} = 0.4 . \]
+With probability \(40\%\), a member books one flights, giving
+\[ p_{\mathrm{BB}} = p_{\mathrm{SS}} = 0.4  \]
+and \(p_{\mathrm{OO}} = 0.4+0.4 = 0.8\).
+With probability \(20\%\), a member books two or more flights, giving
+\[ p_{\mathrm{OB}} = p_{\mathrm{BS}} = p_{\mathrm{SG}} = 0.2  \]
+and \(p_{\mathrm{GG}} = 0.4+0.2 = 0.6\).
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/Q63-1} 
+
+}
+
+\caption{Transition diagram for Question 3.}\label{fig:Q63}
+\end{figure}
+
+\end{myanswers}
+
+\textbf{(b)} Explain why a unique stationary distribution exists and calculate it.
+
+\begin{myanswers}
+
+\emph{Solution.}
+The Markov chain is irreducible and positive recurrent, so has a unique stationary distribution.
+
+The equations from \(\boldsymbol\pi = \boldsymbol\pi \mathsf P\) are
+\begin{align}
+    \pi_{\mathrm O} &= 0.8 \pi_{\mathrm O} + 0.4 \pi_{\mathrm B } \\
+    \pi_{\mathrm B} &= 0.2\pi_{\mathrm O} + 0.4\pi_{\mathrm B} + 0.4\pi_{\mathrm S} \\
+    \pi_{\mathrm S} &= \phantom{0.2 \pi_{\mathrm S} +} 0.2 \pi_{\mathrm B} + 0.4 \pi_{\mathrm S} + 0.4 \pi_{\mathrm G} \\
+    \pi_{\mathrm G} &= \phantom{0.2 \pi_{\mathrm S} + 0.2 \pi_{\mathrm B} +} 0.2 \pi_{\mathrm S} + 0.6 \pi_{\mathrm G} .
+    \end{align}
+We will choose \(\pi_{\mathrm B}\) as the working variable and discard the last equation. Rearranging the other three equations gives
+\begin{align*}
+\pi_{\mathrm O} \phantom{{}+ 2\pi_{\mathrm S} - 2\pi_{\mathrm G}} &= 2\pi_{\mathrm B} \\
+\pi_{\mathrm O} + 2\pi_{\mathrm S} \phantom{{}- 2\pi_{\mathrm G}} &= 3\pi_{\mathrm B} \\
+3\pi_{\mathrm S} - 2\pi_{\mathrm G} &= \pi_{\mathrm B} 
+\end{align*}
+Substituting the first of these into the second and rearranging gives \(\pi_{\mathrm S} = \frac12 \pi_{\mathrm B}\). Substituting this into the third and rearranging gives \(\pi_{\mathrm S} = \frac14 \pi_{\mathrm B}\)
+
+The normalising condition is
+\[ \pi_{\mathrm O} + \pi_{\mathrm B} + \pi_{\mathrm S} + \pi_{\mathrm G} = \left(2 + 1 + \tfrac12 + \tfrac14 \right)\pi_{\mathrm B} = \tfrac{15}{4} \pi_{\mathrm B} = 1 . \]
+Hence \(\pi_{\mathrm B} = \frac{4}{15}\). Back-solving, we get the solution
+\[ \left(\pi_{\mathrm O},\pi_{\mathrm B},\pi_{\mathrm S},\pi_{\mathrm G}\right) = \left(\tfrac8{15},\tfrac{4}{15},\tfrac{2}{15},\tfrac{1}{15} \right) . \]
+
+\end{myanswers}
+
+\textbf{(c)} The airline makes a profit of £10 per passenger per flight, before the cost of the frequent flyer scheme. In the long run, does the airline expect to remain in profit after the cost of the scheme?
+
+\begin{myanswers}
+
+\emph{Solution.}
+By the ergodic theorem, the long run time spent in state \(x\) is \(\pi_x\). So the long-run cost per member is
+\[ 0\pi_{\mathrm O} + 10\pi_{\mathrm B} + 20 \pi_{\mathrm S} + 30\pi_{\mathrm G}
+    = 0 \cdot\tfrac8{15} + 10\cdot\tfrac{4}{15} + 20\cdot\tfrac{2}{15} + 30 \cdot \tfrac{1}{15} = \tfrac{110}{15} = \tfrac{22}{3} , \]
+for a cost of \pounds 7.33.
+The average number of flights taken per member is at least
+\[ 0.4\times 0 + 0.4 \times 1 + 0.2\times 2 = 0.8 , \]
+for a profit of at least \(10\times0.8 = \text{\pounds}8\). (``At least'' because the probability \(0.2\) refers to ``two or more'' flights.) Since \(8 >7.33\), the airline will make a profit in the long run.
+
+\end{myanswers}
+
+\textbf{4.} We have \(N\) balls, each of which is placed into one of two urns. At each time step, a ball is chosen uniformly at random and moved to the other urn.
+
+\textbf{(a)} Show that the stationary probability the first urn contains \(i\) balls is
+\[ \frac{1}{2^N} \binom{N}{i} . \]
+
+\begin{myanswers}
+
+\emph{Solution.} One way to solve this is to let \(X_n\) be the number of balls in the first urn after having moved \(n\) balls. This has transition probabilities
+\[ p_{i,i+1} = 1 - \frac{i}{N} \qquad p_{i,i-1} = \frac{i}{N} . \]
+The equations for the stationary distribution are
+\[ \pi_i = \left(1 - \frac{i-1}{N}\right)\pi_{i-1} + \frac{i+1}N \pi_{i+1} . \]
+One can check that \(\pi_i = C \binom{N}{i}\) satisfies this for any constant \(C\) by using the combinatorial identities
+\begin{align*}
+\left(1 - \frac{i-1}{N}\right)\binom{N}{i-1} &= \binom{N-1}{i-1} \\
+\frac{i+1}N \binom{N}{i+1} &= \binom{N-1}{i} \\
+\binom{N-1}{i-1} + \binom{N-1}{i} &= \binom Ni ,
+\end{align*}
+and check that the normalising condition demands \(C = 1/2^N\) because of
+\[ \sum_{i=0}^N \binom Ni = 2^N . \]
+
+The following is perhaps a better way. Let \(Y_n^j = 1\) denote that ball \(j\) is in the first urn at time \(n\), and \(Y_n^j = 2\) denote that it is in the second urn. Let \(\mathbf Y_n = (Y_n^1, Y_n^2, \dots, Y_n^N)\). Then \((\mathbf Y_n)\) is a Markov chain on the state space \(\mathcal S = \{1,2\}^N\). The transition probabilities are that \(p_{\mathbf{yz}} = 1/N\) for any \(\mathbf y, \mathbf z \in \mathcal S\) that differ in exactly one of the \(N\) coordinates. Because of the symmetry, it's clear that we have a stationary distribution \(\boldsymbol\phi = (\phi_{\mathbf y})\) where \(\phi_{\mathbf y} = 1/|\mathcal S| = 1/2^N\) for all \(\mathbf y \in \mathcal S\). Since the Markov chain is irreducible and positive recurrent, this is the only stationary distribution. Hence the stationary probability the first urn contains \(i\) balls is
+\[ \sum_{\mathbf y \in \mathcal S(i)} \phi_{\mathbf y}  = \big|\mathcal S(i)\big|\, \frac{1}{2^N} = \binom{N}{i} \frac 1{2^N} , \]
+where \(\mathcal S(i)\) is the set of \(\mathbf y \in \mathcal S\) consisting of \(i\) \(1\)s and \(N-i\) \(2\)s.
+
+\end{myanswers}
+
+\textbf{(b)} Is this an equilibrium distribution?
+
+\begin{myanswers}
+
+\emph{Solution.} No.~The number of balls in the left-hand urn switches between odd and even each turn, so the chain is periodic with period 2, and does not have an equilibrium distribution.
+
+\end{myanswers}
+
+\textbf{(c)}
+In the long run, for what proportion of time are all of the balls in the same urn?
+
+\begin{myanswers}
+
+\emph{Solution.} By the ergodic theorem, the long run proportion of time that all the balls are in the same urn is
+\[ \pi_0 + \pi_N = \phi_{(1,1,\dots,1)} + \phi_{(2,2,\dots,2)} = \frac{1}{2^N} + \frac{1}{2^N} = \frac{1}{2^{N-1}} . \]
+
+\end{myanswers}
+
 \hypertarget{A3}{%
 \section*{Assessment 3}\label{A3}}
 \addcontentsline{toc}{section}{Assessment 3}
 
 Assessment 3 will be available very soon. The submission deadline is Thursday 25 March (week 9).
+
+\hypertarget{part-part-ii-continuous-time-markov-jump-processes}{%
+\part*{Part II: Continuous time Markov jump processes}\label{part-part-ii-continuous-time-markov-jump-processes}}
+\addcontentsline{toc}{part}{Part II: Continuous time Markov jump processes}
+
+\hypertarget{S13-poisson-poisson}{%
+\section{Poisson process with Poisson increments}\label{S13-poisson-poisson}}
+
+\begin{itemize}
+\tightlist
+\item
+  Reminder: the Poisson distribution
+\item
+  The Poisson process has independent Poisson increments
+\item
+  Summed and marked Poisson processes
+\end{itemize}
+
+\newcommand{\Po}{\operatorname{Po}}
+\newcommand{\ee}{\mathrm{e}}
+
+\hypertarget{poisson-dist}{%
+\subsection{Poisson distribution}\label{poisson-dist}}
+
+In the next three sections we'll be considering the Poisson process, a continuous time discrete space process with the Markov property. Given its name, it's not surprising to hear the Poisson \emph{process} is related to the Poisson \emph{distribution}. Let's start with a reminder of that.
+
+Recall that a discrete random variable \(X\) has a \textbf{Poisson distribution} with rate \(\lambda\), written \(X \sim \operatorname{Po}(\lambda)\), if its probability mass function is
+\[ \mathbb P(X = n) = \mathrm{e}^{-\lambda} \frac{\lambda^n}{n!} \qquad n = 0,1,2,\dots. \]
+
+The Poisson distribution is often used to model the number of ``arrivals'' in a fixed amount of time -- for example, the number of calls to a call centre in one hour, the number of claims to an insurance company in one year, or the number of particles decaying from a large amount of radioactive material in one second.
+
+The Poisson distribution is named after the French mathematician and physicist Siméon Denis Poisson, who studied it in 1837, although it was used by another French mathematician, Abraham de Moivre, more than 100 years earlier.
+
+Recall the following facts about of the Poisson distribution:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Its expectation is \(\mathbb EX = \lambda\) and the variance is \(\operatorname{Var}(X) = \lambda\).
+\item
+  If \(X \sim \operatorname{Po}(\lambda)\) and \(Y \sim \operatorname{Po}(\mu)\) are independent, then \(X + Y \sim \operatorname{Po}(\lambda+\mu)\).
+\item
+  Let \(X \sim \operatorname{Po}(\lambda)\) represent some arrivals, and independently ``mark'' each arrival with probability \(p\). Then the number of marked arrivals \(Y\) has distribution \(Y = \operatorname{Po}(p\lambda)\), the number of unmarked arrivals \(Z\) has distribution \(Z \sim \operatorname{Po}((1-p)\lambda)\), and \(Y\) and \(Z\) are independent.
+\end{enumerate}
+
+(I say ``recall'', but it's OK if the third one is new to you.)
+
+\hypertarget{poisson-def-poisson}{%
+\subsection{Definition 1: Poisson increments}\label{poisson-def-poisson}}
+
+Suppose that, instead of just modelling the number of arrivals in a \emph{fixed} amount of time, we want to continually model the total number of arrivals as it changes over time. This will be a stochastic process with discrete state space \(\mathcal S = \mathbb Z_+ = \{0,1,2,\dots\}\) and continuous time \(\mathbb R_+ = [0,\infty)\). In continuous time, we will normally write stochastic processes as \((X(t))\), with the time variable being a \(t\) in brackets, rather than a subscript \(n\) as we had in discrete time.
+
+Suppose calls arrive at a call centre at a rate of \(\lambda = 100\) an hour. The following assumptions seem reasonable:
+
+\begin{itemize}
+\tightlist
+\item
+  We begin counting with \(X(0) = 0\) calls.
+\item
+  The number of calls in the first hour is \(X(1) \sim \operatorname{Po}(100)\). The number of calls in the second hour \(X(2) - X(1)\) will also be \(\operatorname{Po}(100)\), and will be independent of the number of calls in the first hour.
+\item
+  The number of calls in a two hour period will be \(X(t+2) - X(t) \sim \operatorname{Po}(200)\), while the number of calls in a half-hour period will be \(X(t+\frac12) - X(t) \sim \operatorname{Po}(50)\).
+\end{itemize}
+
+These properties will define the Poisson process.
+
+\begin{definition}
+\protect\hypertarget{def:poisson-def-1}{}\label{def:poisson-def-1}
+
+The \textbf{Poisson process} with rate \(\lambda\) is defined as followed. It is a stochastic process \((X(t))\) with continuous time \(t \in [0,\infty)\) and discrete state space \(\mathcal S = \mathbb Z_+\) with the following properties:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(X(0) = 0\);
+\item
+  Poisson increments: \(X(t+s) - X(t) \sim \operatorname{Po}(\lambda s)\) for all \(s,t>0\);
+\item
+  independent increments: \(X(t_2) - X(t_1)\) and \(X(t_4) - X(t_3)\) are independent for all \(t_1 \leq t_2 \leq t_3 \leq t_4\).
+\end{enumerate}
+
+\end{definition}
+
+Note that the condition \(t_1 \leq t_2 \leq t_3 \leq t_4\) means that the time interval from \(t_1\) to \(t_2\) and the time interval from \(t_3\) to \(t_4\) don't overlap. (Overlapping time intervals will not have independent increments, as arrivals in the overlap will count for both.)
+
+The Poisson process was discovered in the first decade 20th century, and the process was named after the distribution. Many people were working on similar things, so it's difficult to say who discovered it first, but important work was done by the Swedish actuary and mathematician Filip Lundberg and the Danish engineer and mathematician AK Erlang.
+
+\begin{example}
+\protect\hypertarget{exm:poisson-ex-1}{}\label{exm:poisson-ex-1}
+
+\emph{Claims arrive at insurance company at a rate of \(\lambda = 8\) per hour, modelled as a Poisson process. What is the probability there are no claims in a given \(15\) minute period?}
+
+By property 2, the number of claims in \(15\) minutes is a Poisson distribution with mean \(\frac{15}{60}\lambda = 2\). The probability there are no claims is
+\[ \mathrm{e}^{-2} \frac{2^0}{0!} = \mathrm{e}^{-2} = 0.135 . \]
+
+\end{example}
+
+\begin{example}
+\protect\hypertarget{exm:poisson-ex-2}{}\label{exm:poisson-ex-2}
+
+\emph{A professor receives visitors to her office at a rate of \(\lambda = 2.5\) per day, modelled as a Poisson process. What is the probability she gets at least one visitor every day this (5-day) week?}
+
+The probability she gets at least one visitor on any given day is
+\[ 1 - \mathrm{e}^{-2.5} \frac{2.5^0}{0!} = 1 - \mathrm{e}^{-2.5} = 0.918.   \]
+By property 3, the numbers of visitors on different days are independent, so the probability of getting at least one visitor each day this week is
+\(0.918^5 = 0.652\).
+
+\end{example}
+
+\hypertarget{summed-marked}{%
+\subsection{Summed and marked Poisson processes}\label{summed-marked}}
+
+The following theorem shows that the sum of two Poisson processes is itself a Poisson process.
+
+\begin{theorem}
+\protect\hypertarget{thm:summed}{}\label{thm:summed}
+
+Let \((X(t))\) and \((Y(t))\) be independent Poisson processes with rates \(\lambda\) and \(\mu\) respectively. Then the process \((Z(t))\) given by \(Z(t) = X(t) + Y(t)\) is a Poisson process with rate \(\lambda+\mu\).
+
+\end{theorem}
+
+\begin{proof}
+
+Given fact number 2, that the sum of a \(\operatorname{Po}(\lambda)\) and a \(\operatorname{Po}(\mu)\) is a \(\operatorname{Po}(\lambda+\mu)\), its easy to check the necessary properties.
+
+\end{proof}
+
+\begin{example}
+\protect\hypertarget{exm:poisson-ex-3}{}\label{exm:poisson-ex-3}
+
+\emph{A student receives email to her university mail address at a rate of \(\lambda = 4\) emails per hour, and to her personal email address at a rate of \(\mu = 2\) per hour. Using a Poisson process model, what is the probability the student receives 3 or fewer emails in a 30 minute period?}
+
+The total number of emails is a sum of Poisson processes with rate \(\lambda + \mu = 6\). The total number of emails received in half an hour is Poisson with rate \((\lambda + \mu)/2 = 3\). Thus the probability that 3 or fewer emails are received is
+\[ \mathrm{e}^{-3} \frac{3^0}{0!} + \mathrm{e}^{-3} \frac{3^1}{1!} + \mathrm{e}^{-3} \frac{3^2}{2!} + \mathrm{e}^{-3} \frac{3^3}{3!} = 13\mathrm{e}^{-3} = 0.647 . \]
+
+\end{example}
+
+We also have the \textbf{marked Poisson process}, which can be thought of as the opposite to the summed process: the summed process combines two processes together, while the marked process splits one process into two.
+
+\begin{theorem}
+\protect\hypertarget{thm:marked}{}\label{thm:marked}
+
+Let \((X(t))\) be a Poisson process with rate \(\lambda\). Each arrival is independently marked with probability \(p\). Then the marked process \((Y(t))\) is a Poisson process with rate \(p\lambda\), the unmarked process \((Z(t))\) is a Poisson process with rate \((1-p)\lambda\), and \((Y(t))\) and \((Z(t))\) are independent.
+
+\end{theorem}
+
+\begin{proof}
+
+Given the third fact that you were ``reminded'' of, it's easy to check the necessary properties.
+
+\end{proof}
+
+\begin{example}
+\protect\hypertarget{exm:pois-ex-4}{}\label{exm:pois-ex-4}
+
+\emph{In the 2017/18 English Premier League football season, an average of \(\lambda = 2.81\) goals were scored per game, with \(p = 0.56\) of them scored by the home team. If we model this as a Poisson process, what is the probability a game ends 1--1?}
+
+The number of home goals scored is Poisson with rate \(p\lambda = 0.56\times 2.81 = 1.57\), and the number of away goals scored is Poisson with rate \((1-p)\lambda = 1.24\). Since these are independent, the probability the home and the away team both score \(1\) goal is
+\[ \mathrm{e}^{-1.57} \frac{1.57^1}{1!} \times  \mathrm{e}^{-1.24} \frac{1.24^1}{1!} = 1.57\mathrm{e}^{-1.57} \times 1.24 \mathrm{e}^{-1.24} =  0.12, \]
+or 12\%.
+
+\end{example}
+
+\textbf{In the next section}, we look at the Poisson process in a different way: the times in between arrivals have an exponential distribution.
+
+\hypertarget{S14-poisson-exponential}{%
+\section{Poisson process with exponential holding times}\label{S14-poisson-exponential}}
+
+\begin{itemize}
+\tightlist
+\item
+  Reminder: the exponential distribution
+\item
+  The Poisson process has exponential holding times
+\item
+  The Markov property in continuous time
+\end{itemize}
+
+\newcommand{\Exp}{\operatorname{Exp}}
+
+\hypertarget{exponential}{%
+\subsection{Exponential distribution}\label{exponential}}
+
+Last time, we introduced the Poisson process by looking at the random number of arrivals in fixed amount of time, which follows a Poisson distribution. Another way of looking at the Poisson process is to look at the random amount of of time required for a fixed number of arrivals. For this, we'll need the exponential distribution.
+
+We start by recalling the exponential distribution.
+Recall that we say a continuous random variable \(T\) has the \textbf{exponential distribution} with rate \(\lambda\), and write \(T \sim \operatorname{Exp}(\lambda)\), if it has the probability distribution function \(f(t) = \lambda \mathrm{e}^{-\lambda t}\) for \(t \geq 0\).
+
+Exponential distributions are often used to model ``waiting times'' -- for example, the amount of time until a light bulb breaks, the times between buses arriving, or the time between withdrawals from a bank account.
+
+You are reminded of the following facts about the exponential distribution:
+
+\begin{itemize}
+\tightlist
+\item
+  The cumulative distribution function is \(F(t) = \mathbb P(T \leq t) = 1 - \mathrm{e}^{-\lambda t}\); although it is usually more convenient to deal with the tail probability \(\mathbb P(T > t) = 1 - F(t) = \mathrm{e}^{-\lambda t}\).
+\item
+  The expectation is \(\mathbb E T = 1/\lambda\) and the variance is \(\operatorname{Var}(T) = 1/\lambda^2\).
+\end{itemize}
+
+The following memoryless property will of course be important in a course about memoryless Markov processes.
+
+\begin{theorem}
+\protect\hypertarget{thm:memoryless-thm}{}\label{thm:memoryless-thm}
+
+Let \(T \sim \operatorname{Exp}(\lambda)\). Then, for any \(s,t\geq0\),
+\[ \mathbb P(T > t + s \mid T > t) = \mathbb P(T > s) . \]
+
+\end{theorem}
+
+Suppose we are waiting an exponentially distributed time for an alarm to go off. No matter how long we've been waiting for, the remaining time to wait is still exponentially distributed, with the same parameter -- hence ``memoryless''.
+
+\begin{proof}
+
+By standard use of conditional probability, we have
+\[ \mathbb P(T > t + s \mid T > t) = \frac{\mathbb P(T > t + s \text{ and } T > t)}{\mathbb P(T > t)} =  \frac{\mathbb P(T > t + s)}{\mathbb P(T > t)} = \frac{\mathrm{e}^{-\lambda(t+s)}}{\mathrm{e}^{-\lambda t}} = \mathrm{e}^{-\lambda s} , \]
+which is still the tail probability of the exponential distribution.
+
+\end{proof}
+
+The following property will be important later on in the course.
+
+\begin{theorem}
+\protect\hypertarget{thm:exponential-thm}{}\label{thm:exponential-thm}
+
+Let \(T_1 \sim \operatorname{Exp}(\lambda_1)\), \(T_2 \sim \operatorname{Exp}(\lambda_2)\), \(\dots\), \(T_n \sim \operatorname{Exp}(\lambda_n)\) be independent exponential distributions, and let \(T\) be the minimum of the \(T_i\)s, so \(T = \min\{T_1, T_2, \dots, T_n \}\). Then
+\[ T \sim \operatorname{Exp}(\lambda_1 + \lambda_2 + \cdots + \lambda_n) . \]
+Further, the probability that \(T_j\) is the smallest of all the \(T_i\)s is
+\[ \mathbb P(T = T_j) = \frac{\lambda_j}{\lambda_1 + \lambda_2 + \cdots + \lambda_n} . \]
+
+\end{theorem}
+
+The proof of this is an exercise on \protect\hyperlink{P07}{Problem Sheet 7}.
+
+\hypertarget{definition-2-exponential-holding-times}{%
+\subsection{Definition 2: exponential holding times}\label{definition-2-exponential-holding-times}}
+
+We mentioned before that exponential distributions are often used to model ``waiting times''.
+When modelling a process \((X(t))\) counting many arrivals at rate \(\lambda\), we might model the process like this: after waiting an \(\operatorname{Exp}(\lambda)\) amount of time, an arrival appears. After another \(\operatorname{Exp}(\lambda)\) amount of time, another arrival appears. And so on. We often use the term ``holding time'' to refer to the time between consecutive arrivals.
+
+This suggests a process with the following properties:
+
+\begin{itemize}
+\tightlist
+\item
+  We start with \(X(0) = 0\).
+\item
+  Let \(T_1, T_2, \dots \sim \operatorname{Exp}(\lambda)\) be the holding times, all independent. Then
+  \[ X(t) = \begin{cases} 0 & \text{for $0 \leq t < T_1$} \\
+    1 & \text{for $T_1 \leq t < T_1 + T_2$} \\
+    2 & \text{for $T_1+T_2 \leq t < T_1 + T_2 + T_3$} \\
+    \text{and so on.} & \end{cases} \]
+\end{itemize}
+
+A process described like this is also the Poisson process!
+
+\textbf{PICTURE PICTURE PICTURE}
+
+\begin{theorem}
+\protect\hypertarget{thm:pois-exp-equiv}{}\label{thm:pois-exp-equiv}
+
+Let \((X(t))\) be a Poisson process with rate \(\lambda\), as defined by its independent Poisson increments (see Subsection \ref{poisson-def-poisson}). Then \((X(t))\) has the exponential holding times structure described above.
+
+\end{theorem}
+
+\begin{proof}
+
+Let \((X(t))\) be a Poisson process with rate \(\lambda\). We seek the distribution of the first arrival time \(T_1\). We have
+\[ \mathbb P(T_1 > t_1) = \mathbb P\big(X(t_1) - X(0) = 0\big) = \mathrm{e}^{-\lambda t_1} \frac{(\lambda t_1)^0}{0!} = \mathrm{e}^{-\lambda t_1} , \]
+since the arrival comes after \(t_1\) if there are no arrivals in the interval \([0,t_1]\).
+But this is precisely the tail probability of an exponential distribution with rate \(\lambda\).
+
+Now consider the second holding time. We have
+\[ \mathbb P(T_2 > t_2 \mid T_1 = t_1) = \mathbb P\big(X(t_1 + t_2) - X(t_1) = 0\big) = \mathrm{e}^{-\lambda ((t_1 + t_2) - t_1)}  =  \mathrm{e}^{-\lambda t_2} \]
+by the same argument as before. This is the tail distribution for another \(\operatorname{Exp}(\lambda)\) distribution, independent of \(T_1\).
+
+Repeating this argument for all \(n\) gives the desired exponential holding time structure.
+
+\end{proof}
+
+\begin{example}
+\protect\hypertarget{exm:bookshop}{}\label{exm:bookshop}
+
+\emph{Customers visit a second-hand bookshop at a rate of \(\lambda = 5\) per hour. Each customer a book with probability \(p = 0.4\). What is the expected time to make ten sales, and what is the standard deviation?}
+
+The count of books sold marked Poisson process, which we saw last time is itself a Poisson process with rate \(p\lambda = 2\).
+
+The expected time of the tenth sale is
+\[ \mathbb E(T_1 + \dots + T_{10}) = 10\,\mathbb ET_1 = 10 \times \tfrac{1}{2} = 5 \text{ hours} .\]
+The variance is
+\[ \operatorname{Var}(T_1 + \dots + T_{10}) = 10\,\operatorname{Var}(T_1) = 10 \times \frac{1}{2^2} = 2.5 , \]
+where we used that the holding times are independent and identically distributed, so the standard deviation is \(\sqrt{2.5} = 1.58\) hours.
+
+\emph{What is the probability it takes more than an hour to sell the first book?}
+
+This is the probability the first holding time is longer than an hour, which is
+\[ \mathbb P(T_1 > 1) = \mathrm{e}^{-2\times 1} = \mathrm{e}^{-2} = 0.135. \]
+
+An alternative way to solve this would be to say that the first book is is sold later than 1 hour in if \(X(1) = 0\). So using the Poisson increments definition from last time, we have
+\[ \mathbb P\big(X(1) = 0\big) = \mathrm{e}^{-2\times 1} \frac{(2\times 1)^0}{0!}  = \mathrm{e}^{-2} = 0.135. \]
+We get the same answer either way.
+
+\end{example}
+
+\hypertarget{cont-markov}{%
+\subsection{Markov property in continuous time}\label{cont-markov}}
+
+We previously saw the Markov ``memoryless'' property in discrete time. The equivalent definition in continuous time is the following.
+
+\begin{definition}
+\protect\hypertarget{def:pp}{}\label{def:pp}
+
+Let \((X(t))\) be a stochastic process on a discrete state space \(\mathcal S\) and continuous time \(t \in [0,\infty)\). We say that \((X(t))\) has the \textbf{Markov property}
+if
+\begin{multline*}
+\mathbb P\big( X(t_{n+1}) = x_{n+1} \mid X(t_n) = x_n, \dots, X(t_1) = x_1, X(t_0) = x_0 \big) \\
+= \mathbb P\big( X(t_{n+1}) = x_{n+1} \mid X(t_n) = x_{n}\big)
+\end{multline*}
+for all times \(t_0 < t_1 < \cdots < t_n < t_{n+1}\) and all states \(x_0, x_1, \dots, x_n, x_{n+1} \in \mathcal S\).
+
+\end{definition}
+
+In other words, the state of the process at some point \(t_{n+1}\) in the future depends on where we are now \(t_n\), but, given that, does not depend on any collection of previous times \(t_0, t_1, \dots, t_{n-1}\).
+
+The Poisson process does indeed have the Markov property, since, by the property of independent increments, we have that
+\[ \mathbb P\big( X(t_{n+1}) = x_{n+1} \mid X(t_n) = x_n, \dots, X(t_0) = x_0 \big) = \mathbb P\big( X(t_{n+1}) -X(t_n) = x\big) , \]
+where \(x = x_{n+1}-x_n\). By Poisson increments, this has probability
+\[ \mathrm{e}^{-\lambda(t_{n+1}-t_n)} \frac{\big(\lambda(t_{n+1}-t_n)\big)^x}{x!} . \]
+
+Alternatively, by the memoryless property of the exponential distribution, we see that we can restart the holding time from \(t_n\) and still have this and all future holding times exponentially distributed.
+
+\textbf{In the next section}, we look at the Poisson process in a third way, by looking at what happens in a very small time period.
 
 \hypertarget{computing}{%
 \section*{Computational worksheets}\label{computing}}
@@ -4037,9 +4648,9 @@ Assessment 3 will be available very soon. The submission deadline is Thursday 25
   \tightlist
   \item
     Example report: \href{computing/C1-example.html}{{[}HTML format{]}} \href{computing/C1-example.Rmd}{{[}Rmd format{]}}
-  \item
-    \textbf{Computational Worksheet 2 (Assessment 2):} \href{computing/C2.html}{{[}HTML format{]}} \href{computing/C2.Rmd}{{[}Rmd format{]}} This worksheet is assessed, and is due on Thursday 18 March at 2pm.
   \end{itemize}
+\item
+  \textbf{Computational Worksheet 2 (Assessment 2):} \href{computing/C2.html}{{[}HTML format{]}} \href{computing/C2.Rmd}{{[}Rmd format{]}} This worksheet is assessed, and is due on \emph{Thursday 18 March} at 2pm.
 \end{itemize}
 
 \hypertarget{C-about}{%
