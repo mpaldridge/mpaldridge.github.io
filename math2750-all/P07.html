@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Problem sheet 2 | MATH2750 Introduction to Markov Processes</title>
+  <title>Problem sheet 7 | MATH2750 Introduction to Markov Processes</title>
   <meta name="description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Problem sheet 2 | MATH2750 Introduction to Markov Processes" />
+  <meta property="og:title" content="Problem sheet 7 | MATH2750 Introduction to Markov Processes" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://mpaldridge.github.io/math2750/" />
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Problem sheet 2 | MATH2750 Introduction to Markov Processes" />
+  <meta name="twitter:title" content="Problem sheet 7 | MATH2750 Introduction to Markov Processes" />
   
   <meta name="twitter:description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="S04-ldes.html"/>
-<link rel="next" href="A1.html"/>
+<link rel="prev" href="S14-poisson-exponential.html"/>
+<link rel="next" href="S15-poisson-exponential.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -229,14 +229,16 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="P02" class="section level1 unnumbered">
-<h1>Problem sheet 2</h1>
+<div id="P07" class="section level1 unnumbered">
+<h1>Problem sheet 7</h1>
+<!--
 <style>
 .fold-btn { 
   float: right; 
   margin: -12px 0 0 0;
 }
 </style>
+
 <script type="text/javascript">
 $(document).ready(function() {
   $folds = $(".myanswers");
@@ -249,141 +251,190 @@ $(document).ready(function() {
   })
 });
 </script>
+-->
+<!--
+<style>
+.myanswers { 
+display: none !important;
+}
+</style>
+-->
 <div class="mysummary">
-<p>You should attempt all these questions and write up your solutions in advance of your workshop in week 3 (Monday 8 or Tuesday 9 February) where the answers will be discussed.</p>
+<p>You should attempt all these questions and write up your solutions in advance of your workshop in week 8 (Monday 15 or Tuesday 16 March) where the answers will be discussed.</p>
 </div>
 <div class="myq">
-<p><strong>1.</strong> Solve the following linear difference equations:</p>
+<p><strong>1.</strong> Let <span class="math inline">\((X(t))\)</span> be a Poisson process with rate <span class="math inline">\(\lambda = 5\)</span>. Calculate:</p>
 <div class="subq">
-<p><strong>(a)</strong> <span class="math inline">\(x_{n+2} - 4x_{n+1} + 3x_{n} = 0\)</span>, subject to <span class="math inline">\(x_0 = 0\)</span>, <span class="math inline">\(x_1 = 2\)</span>.</p>
+<p><strong>(a)</strong> <span class="math inline">\(\mathbb P\big(X(0.4) \leq 2\big)\)</span>;</p>
 <div class="myanswers">
-<p><em>Solution.</em> The characteristic equation is <span class="math inline">\(\lambda^2 - 4\lambda + 3 = 0\)</span>, which factorises as <span class="math inline">\((\lambda - 3)(\lambda - 1) = 0\)</span>, with solutions <span class="math inline">\(\lambda = 1,3\)</span>, so the general solution is <span class="math inline">\(x_n = A1^n + B3^n = A + B3^n\)</span>. The initial conditions give <span class="math inline">\(A+B = 0\)</span> and <span class="math inline">\(A + 3B = 2\)</span>, meaning <span class="math inline">\(B = 1\)</span> and <span class="math inline">\(A = -1\)</span>. Hence the solution is <span class="math inline">\(x_n = 3^n - 1\)</span>.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> <span class="math inline">\(4x_{n+1} = 4x_n - x_{n-1}\)</span>, subject to <span class="math inline">\(x_0 = 1\)</span>, <span class="math inline">\(x_1 = 0\)</span>.</p>
-<div class="myanswers">
-<p><em>Solution.</em> First, we rearrange to <span class="math inline">\(4x_{n+1} - 4x_n + x_{n-1} = 0\)</span>. The characteristic equation is <span class="math inline">\(4\lambda^2 - 4\lambda + 1 = 0\)</span>, which factorises as <span class="math inline">\((2\lambda - 1)^2 = 0\)</span>, which has a repeated root <span class="math inline">\(\lambda = \frac12\)</span>, so the general solution is <span class="math inline">\(x_n = (A + Bn)(\frac12)^n\)</span>. The initial conditions give <span class="math inline">\(A=1\)</span> and <span class="math inline">\((A + B)/2 = 0\)</span>, meaning <span class="math inline">\(B = -1\)</span>. Hence the solution is <span class="math inline">\(x_n = (1 - n)(\frac12)^n\)</span>.</p>
+<p><em>Solution.</em>
+We have that <span class="math inline">\(X(0.4) \sim \text{Po}(2)\)</span>, so
+<span class="math display">\[ \mathbb P\big(X(0.4) \leq 2\big) = \mathrm{e}^{-2} + 2\mathrm{e}^{-2} + \frac{2^2}{2} \mathrm{e}^{-2} = 5 \mathrm{e}^{-2} = 0.677 .\]</span></p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(c)</strong> <span class="math inline">\(x_n-5x_{n-1} + 6x_{n-2} = 1\)</span>, subject to <span class="math inline">\(x_0 = 1\)</span>, <span class="math inline">\(x_1 = 2\)</span>.</p>
+<p><strong>(b)</strong> <span class="math inline">\(\mathbb EX(6.4)\)</span>;</p>
 <div class="myanswers">
-<p><em>Solution.</em> The characteristic equation is <span class="math inline">\(\lambda^2 - 5\lambda + 6 = 0\)</span>, which factorises as <span class="math inline">\((\lambda - 2)(\lambda - 3) = 0\)</span>, with solutions <span class="math inline">\(\lambda = 2,3\)</span>, so the general solution to the homogeneous equation is <span class="math inline">\(A2^n + B3^n\)</span>. For a particular solution, we guess a solution of the form <span class="math inline">\(x_n = C\)</span>; substituting this into the inhomogeneous equation gives <span class="math inline">\(C - 5C + 6C = 1\)</span>, so <span class="math inline">\(C = \frac12\)</span>. So the general solution to the inhomogeneous equation is <span class="math inline">\(x_n = A2^n + B3^n + \frac12\)</span>. The initial conditions give <span class="math inline">\(A+B \frac12= 1\)</span> and <span class="math inline">\(2A + 3B + \frac12= 2\)</span>, which is solved by <span class="math inline">\(B = \frac12\)</span> and <span class="math inline">\(A = 0\)</span>. Hence the solution is <span class="math inline">\(x_n = \frac12 3^n + \frac12 = (3^n + 1)/2\)</span>.</p>
+<p><em>Solution.</em> We have that <span class="math inline">\(X(6.4) \sim \text{Po}(32)\)</span>, so <span class="math inline">\(\mathbb E X(6.4) = 32\)</span>.</p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(d)</strong> <span class="math inline">\(x_{n+2} - 2x_{n+1} + x_n = -1\)</span>, subject to <span class="math inline">\(x_0 = 0\)</span>, <span class="math inline">\(x_1 = 2\)</span>.</p>
+<p><strong>(c)</strong> <span class="math inline">\(\mathbb P\big(X(0.5) = 0 \text{ and } X(1) = 1\big)\)</span>.</p>
 <div class="myanswers">
-<p><em>Solution.</em> The characteristic equation is <span class="math inline">\(\lambda^2 - 2\lambda + 1 = 0\)</span>, which factorises as <span class="math inline">\((\lambda - 1)^2 = 0\)</span>, with a repeated root <span class="math inline">\(\lambda = 1\)</span>, so the general solution to the homogeneous equation is <span class="math inline">\((A + Bn)1^n = A + Bn\)</span>. For a particular solution, since constant and linear terms will equal <span class="math inline">\(0\)</span>, not <span class="math inline">\(-1\)</span>, we guess a solution of the form <span class="math inline">\(x_n = Cn^2\)</span>; substituting this into the inhomogeneous equation gives
-<span class="math display">\[ C(n+2)^2 - 2C(n+1)^2 + Cn^2 = 2C = -1  \]</span>
-so <span class="math inline">\(C = -\frac12\)</span>. So the general solution to the inhomogeneous equation is <span class="math inline">\(x_n = A + Bn - \frac12 n^2\)</span>. The initial conditions give <span class="math inline">\(A = 0\)</span> and <span class="math inline">\(A + B - \frac12= 2\)</span>, so <span class="math inline">\(B = \frac52\)</span>. Hence the solution is <span class="math inline">\(x_n = \frac52n - \frac12n^2 = \frac n2(5-n)\)</span>.</p>
+<p><em>Solution.</em>
+This happens if we have <span class="math inline">\(X(0.5) - X(0) = 0\)</span> and also the independent event <span class="math inline">\(X(1) - X(0.5) = 1\)</span>. Both increments are <span class="math inline">\(\text{Po}(2.5)\)</span>, so
+<span class="math display">\[\mathbb P\big(X(0.5) = 0 \text{ and } X(1) = 1\big) = \mathrm{e}^{-2.5} \times 2.5\mathrm{e}^{-2.5} = 0.0168.  \]</span></p>
 </div>
 </div>
-</div>
-<div class="myq">
-<p><strong>2.</strong> Consider a simple symmetric random walk on the state space <span class="math inline">\(\mathcal{S} = \{0,1,\ldots ,m\}\)</span> with an absorbing barrier at <span class="math inline">\(0\)</span> and a reflecting barrier at <span class="math inline">\(m\)</span>. In other words,
-<span class="math display">\[ \mathbb P(X_{n+1} = 0 \mid X_n = 0) = 1 \quad \text{and} \quad  \mathbb P(X_{n+1} = m-1 \mid X_n = m) = 1 . \]</span>
-Let <span class="math inline">\(\eta_i\)</span> be the expected time until the the walk hits <span class="math inline">\(0\)</span> when starting from <span class="math inline">\(i \in \mathcal S\)</span>.</p>
+<p>Let <span class="math inline">\(T_n\)</span> be the <span class="math inline">\(n\)</span>th holding time, and let <span class="math inline">\(J_n = T_1 + \cdots + T_n\)</span> be the <span class="math inline">\(n\)</span>th arrival time. Calculate:</p>
 <div class="subq">
-<p><strong>(a)</strong> Explain why <span class="math inline">\((\eta_i)\)</span> satisfies
-<span class="math display">\[ \eta_i = 1 + \tfrac12 \eta_{i+1} +\tfrac12 \eta_{i-1} \]</span>
-for <span class="math inline">\(i \in \{1,2,\dots,m-1\}\)</span>.</p>
+<p><strong>(d)</strong> <span class="math inline">\(\mathbb P(0.1 \leq T_2 &lt; 0.3)\)</span>;</p>
 <div class="myanswers">
-<p><em>Solution.</em> We condition on the first step. The first step itself takes time 1. After that, with probability <span class="math inline">\(\frac12\)</span> we are at state <span class="math inline">\(i+1\)</span>, with expected time remaining <span class="math inline">\(\eta_{i+1}\)</span>, while with probability <span class="math inline">\(\frac12\)</span> we are at state <span class="math inline">\(i-1\)</span>, with expected time remaining <span class="math inline">\(\eta_{i-1}\)</span>.</p>
+<p><em>Solution.</em> We have <span class="math inline">\(T_2 \sim \text{Exp}(5)\)</span>, so
+<span class="math display">\[\begin{multline*} \mathbb P(0.1 \leq T_2 &lt; 0.3) = \mathbb P(T_2 &gt; 0.1) - \mathbb P(T_2 &gt; 0.3) \\= \mathrm{e}^{-5\times0.1} - \mathrm{e}^{-5\times0.3} = \mathrm{e}^{-0.5} - \mathrm{e}^{-1.5} = 0.383.       \end{multline*}\]</span></p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(b)</strong> Give a similar equation for <span class="math inline">\(\eta_m\)</span>, and state the value of <span class="math inline">\(\eta_0\)</span>.</p>
+<p><strong>(e)</strong> <span class="math inline">\(\mathbb E J_{100}\)</span>;</p>
 <div class="myanswers">
-<p><em>Solution.</em> From <span class="math inline">\(m\)</span>, we move to <span class="math inline">\(m-1\)</span> with certainty, so conditioning on the first step gives <span class="math inline">\(\eta_m = 1 + \eta_{m-1}\)</span>.</p>
-<p>Clearly <span class="math inline">\(\eta_0 = 0\)</span>, as we stop immediately.</p>
+<p><em>Solution.</em>
+<span class="math display">\[ \mathbb E J_{100} = \mathbb E (T_1 + \dots + T_{100}) = 100 \, \mathbb ET_1 = 100 \times \tfrac15 = 20.     \]</span></p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(c)</strong> Hence, find the value of <span class="math inline">\(\eta_i\)</span> for all <span class="math inline">\(i \in \mathcal S\)</span>.</p>
+<p><strong>(f)</strong> <span class="math inline">\(\operatorname{Var}(J_{100})\)</span>.</p>
 <div class="myanswers">
-<p><em>Solution.</em> We rewrite the equation as <span class="math inline">\(\eta_{i+1} - 2 \eta_i + \eta_{i-1} = -2\)</span>. This has characteristic equation <span class="math inline">\(\lambda^2 - 2\lambda + 1 = 0\)</span>, which factorises as <span class="math inline">\((\lambda-1)^2\)</span>, with a repeated root of <span class="math inline">\(1\)</span>, so the general solution to the homogeneous equation is <span class="math inline">\(A + Bi\)</span>. By the same logic as before, we attempt a particular solution of the form <span class="math inline">\(\eta_i = Ci^2\)</span>, which gives
-<span class="math display">\[ C(i+1)^2 - 2Ci^2 + C(i-1)^2 = 2C = -2 ,   \]</span>
-so <span class="math inline">\(C = -1\)</span>. The general solution to the inhomogeneous equation is therefore <span class="math inline">\(\eta_i = A + Bi - i^2\)</span>. From the boundary condition <span class="math inline">\(k_0 = 0\)</span> we have <span class="math inline">\(A = 0\)</span>. From the boundary condition <span class="math inline">\(k_m = 1 + k_{m-1}\)</span> we have
-<span class="math display">\[ Bm - m^2 = 1 + B(m-1) - (m-1)^2 = Bm - B - m^2 +2m  , \]</span>
-giving <span class="math inline">\(B = 2m\)</span>. Therefore the solution is <span class="math inline">\(\eta_i = 2mi - i^2 = i(2m - i)\)</span>.</p>
+<p><em>Solution.</em>
+Using independence,
+<span class="math display">\[ \operatorname{Var}( J_{100}) = \operatorname{Var}E (T_1 + \dots + T_{100}) = 100 \, \operatorname{Var}(T_1) = 100 \times \tfrac1{5^2} = 4.     \]</span></p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(d)</strong> You should notice that your answer is the same as the expected duration of the gambler’s ruin for <span class="math inline">\(p = \frac12\)</span>, except with <span class="math inline">\(m\)</span> replaced by <span class="math inline">\(2m\)</span>. Can you explain why this might be?</p>
+<p><strong>(g)</strong> Using a normal approximation, approximate <span class="math inline">\(\mathbb P(18 \leq J_{100} \leq 22)\)</span>.</p>
 <div class="myanswers">
-<p><em>Solution.</em> This is an example of the <strong>reflection principle</strong>. Let <span class="math inline">\((Y_n)\)</span> be a gambler’s ruin (simple random walk with two absorbing barriers) on <span class="math inline">\(\{0,1,\dots, 2m\}\)</span>. Then consider placing a mirror at <span class="math inline">\(m\)</span>, and viewing the Markov chain so that it remains in the first half <span class="math inline">\(\{0,1,\dots,m\}\)</span>; more formally, we consider <span class="math inline">\((X_n)\)</span> where
-<span class="math display">\[ X_n = \begin{cases} Y_n &amp; \text{if $Y_n \leq m$} \\
-                      2m - Y_n &amp; \text{if $Y_n &gt; m$.} \end{cases}   \]</span>
-Then <span class="math inline">\((X_n)\)</span> is the half-reflecting random walk we consider in this question. Further, <span class="math inline">\((X_n)\)</span> is absorbed at <span class="math inline">\(0\)</span> when <span class="math inline">\((Y_n)\)</span> is absorbed at either <span class="math inline">\(0\)</span> or <span class="math inline">\(2m\)</span>, which has the given expected time <span class="math inline">\(i(2m-i)\)</span>.</p>
+<p><em>Solution.</em>
+The normal approximation is <span class="math inline">\(J_{100} \sim \mathrm N(20,4)\)</span>. So, letting <span class="math inline">\(Z \sim \text{N}(0,1)\)</span>, we have
+<span class="math display">\[\begin{multline*}  \mathbb P(18 \leq J_{100} \leq 22) = \mathbb P\left(\frac{18-20}{\sqrt4} \leq Z \leq \frac{18-20}{\sqrt4}\right) \\ = \mathbb P(-1 \leq Z \leq 1) = 2\Phi(1) - 1 = 0.683.  \end{multline*}\]</span></p>
 </div>
 </div>
 </div>
 <div class="myq">
-<p><strong>3.</strong> Consider the gambler’s ruin problem with draws: at each step, Alice wins £1 with probability <span class="math inline">\(p\)</span>, loses £1 with probability <span class="math inline">\(q\)</span>, and neither wins nor loses any money with probability <span class="math inline">\(s\)</span>, where <span class="math inline">\(p + q +s = 1\)</span>, and <span class="math inline">\(0 &lt; p,q,s&lt;1\)</span>. Alice starts with £<span class="math inline">\(a\)</span> and Bob with £<span class="math inline">\((m-a)\)</span>.</p>
+<p><strong>2.</strong> Suppose that telephone calls arrive at a call centre according to a Poisson process with rate <span class="math inline">\(\lambda = 100\)</span> per hour, and are answered with probability <span class="math inline">\(0.6\)</span>.</p>
 <div class="subq">
-<p><strong>(a)</strong> Let <span class="math inline">\(r_i\)</span> be Alice’s probability of ruin given that she has £<span class="math inline">\(i\)</span>.</p>
-<div class="subq">
-<p><strong>(i)</strong> Write down a linear difference equation for <span class="math inline">\((r_i)\)</span>, remembering to include appropriate boundary conditions.</p>
+<p><strong>(a)</strong> What is the probability that there are no answered calls in the next minute?</p>
 <div class="myanswers">
-<p><em>Solution.</em> By conditioning on the first step, we have
-<span class="math display">\[ r_i = pr_{i+1} + sr_i + qr_{i-1} , \]</span>
-which can be rearranged to
-<span class="math display">\[ pr_{i+1} - (1-s)r_i + qr_{i-1} = 0 . \]</span>
-The boundary conditions are <span class="math inline">\(r_0 = 1\)</span> and <span class="math inline">\(r_m = 0\)</span>.</p>
+<p><em>Solution.</em>
+The answered calls form a Poisson process with rate <span class="math inline">\(100 \times 0.6 = 60\)</span> per hour, or <span class="math inline">\(1\)</span> per minute. The probability there are no unanswered calls in one minute are <span class="math inline">\(\mathrm{e}^{-1} = 0.368\)</span>.</p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(ii)</strong> Solve the linear difference equation, to find <span class="math inline">\(r_a\)</span>, Alice’s probability of ruin. You may assume that <span class="math inline">\(p \neq q\)</span>.</p>
+<p><strong>(b)</strong> Use a suitable normal approximation, with a continuity correction, to find the probability that there will be at least <span class="math inline">\(25\)</span> answered calls in the next <span class="math inline">\(30\)</span> minutes.</p>
 <div class="myanswers">
-<p><em>Solution.</em> The characteristic equation is <span class="math inline">\(p\lambda^2 - (1-s)\lambda + q = 0\)</span>, which factorises as <span class="math inline">\((p\lambda - q)(\lambda - 1) = 0\)</span>, since <span class="math inline">\(p + q = 1-s\)</span>. The solutions are <span class="math inline">\(\lambda = q/p = \rho\)</span> and <span class="math inline">\(\lambda = 1\)</span>. Since we assume <span class="math inline">\(p \neq q\)</span>, we have that <span class="math inline">\(\rho \neq 1\)</span>, so we have unique roots, and general solution
-<span class="math inline">\(r_i = A + B \rho^i\)</span>. The boundary conditions give <span class="math inline">\(A + B = 1\)</span> and <span class="math inline">\(A + B\rho^m = 0\)</span>, meaning that <span class="math inline">\(B = 1/(1-\rho^m)\)</span> and <span class="math inline">\(A = -\rho^m/(1-\rho^m)\)</span>, so the solution is
-<span class="math display">\[ r_i = -\frac{\rho^m}{1-\rho^m} + \frac{1}{1-\rho^m}\rho^i = \frac{\rho^i - \rho^m}{1-\rho^m}.   \]</span></p>
-</div>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> Let <span class="math inline">\(d_i\)</span> be be the expected duration of the game from the point that Alice has £<span class="math inline">\(i\)</span>.</p>
-<div class="subq">
-<p><strong>(i)</strong> Write down a linear difference equation for <span class="math inline">\((d_i)\)</span>, remembering to include appropriate boundary conditions.</p>
-<div class="myanswers">
-<p><em>Solution.</em> By conditioning on the first step, we have
-<span class="math display">\[ d_i = p(1 + d_{i+1}) + s(1 + d_i) + q(1 + d_{i-1}) ,  \]</span>
-which after rearranging gives
-<span class="math display">\[ pd_{i+1} - (1-s)d_i + qd_{i-1} = -1.  \]</span>
-The boundary conditions are <span class="math inline">\(d_0 = 0\)</span> and <span class="math inline">\(d_m = 0\)</span>.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(ii)</strong> Solve the linear difference equation, to find <span class="math inline">\(d_a\)</span>, the expected duration of the game. You may assume that <span class="math inline">\(p \neq q\)</span>.</p>
-<div class="myanswers">
-<p><em>Solution.</em> As before, the solution to the homogeneous equation is <span class="math inline">\(A + B\rho^i\)</span>. We try a particular solution of the for <span class="math inline">\(d_i = Ci\)</span>, and find that
-<span class="math display">\[ pC(i+1) -(1-s)Ci + qC(i-1) = C(p-q) = -1 ,\]</span>
-so <span class="math inline">\(C= 1/(q-p)\)</span>, and the general solution to the inhomogeneous equation is
-<span class="math display">\[ d_i = A + B\rho^i + \frac{i}{q-p} .  \]</span>
-The boundary conditions give <span class="math inline">\(A + B = 0\)</span> and <span class="math inline">\(A + B \rho^m + m/(q-p) = 0\)</span>, meaning that
-<span class="math display">\[ B = -A = \frac{m}{q-p} \frac{1}{1-\rho^m} . \]</span>
-Hence the solution is
-<span class="math display">\[ d_i = \frac{1}{q-p} \left(i - m\frac{1-\rho^i}{1-\rho^m} \right) .   \]</span></p>
-</div>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Alice starts playing against Bob in a standard gambler’s ruin game with probabilities <span class="math inline">\(p \neq q\)</span> and <span class="math inline">\(s = 0\)</span>. A draw probability <span class="math inline">\(s &gt; 0\)</span> is then introduced in such a way that the ratio <span class="math inline">\(\rho = q/p\)</span> remains constant. Comment on how this changes Alice’s ruin probability and the expected duration of the game.</p>
-<div class="myanswers">
-<p><em>Solution.</em> The ruin probability does not change, as we see immediately. This is not surprising, as the win and lose probabilities for a round conditional on the round not being a draw have stayed the same.</p>
-<p>The expected duration of the game increases. If <span class="math inline">\(\rho = q/p\)</span> stays the same while introducing a draw probability <span class="math inline">\(s\)</span>, then the “new” <span class="math inline">\(q\)</span> and <span class="math inline">\(p\)</span> are <span class="math inline">\((1-s)q\)</span> and <span class="math inline">\((1-s)p\)</span>, so <span class="math inline">\(q-p\)</span> becomes<span class="math inline">\((1-s)q - (1-s)p = (1-s)(q-p)\)</span>. Hence expected duration goes up by a factor of <span class="math inline">\(1/(1-s)\)</span>. This makes sense, since number of rounds until a non-draw result is a geometric distribution with expectation <span class="math inline">\(1/(1-s)\)</span>, so each step takes <span class="math inline">\(1/(1-s)\)</span> times as long on average.</p>
+<p><em>Solution.</em>
+The number of calls in <span class="math inline">\(30\)</span> minutes is Poisson of rate <span class="math inline">\(30\)</span>, which has expectation <span class="math inline">\(30\)</span> and variance <span class="math inline">\(30\)</span>. So, using a continuity correction, we have
+<span class="math display">\[\begin{multline} \mathbb P \big(X(30) \geq 24.5 \big) = \mathbb P \left( Z \geq \frac{24.5 - 30}{\sqrt{30}} \right) \\= \mathbb P(Z \geq -1.00 ) = \Phi(1.00) = 0.842 . \end{multline}\]</span></p>
 </div>
 </div>
 </div>
 <div class="myq">
-<p><strong>4.</strong> The Fibonacci numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, …, where each number in the sequence is the sum of the two previous numbers. Show that the ratio of consecutive Fibonacci numbers tends to the “golden ratio” <span class="math inline">\(\phi = (1 + \sqrt{5})/2\)</span>.</p>
+<p><strong>3.</strong></p>
+<div class="subq">
+<p><strong>(a)</strong> Let <span class="math inline">\(X \sim \text{Po}(\lambda)\)</span> and <span class="math inline">\(Y \sim \text{Po}(\mu)\)</span> be two independent Poisson distributions. Show that <span class="math inline">\(X + Y \sim \text{Po}(\lambda + \mu)\)</span>. One way to start would be to write
+<span class="math display">\[ \mathbb P(X+Y = z) = \sum_{x=0}^z \mathbb P(X = x) \, \mathbb P(Y = z-x) . \]</span></p>
 <div class="myanswers">
-<p><em>Solution.</em> The Fibonacci numbers <span class="math inline">\((F_n)\)</span> satisfy <span class="math inline">\(F_{n+1} = F_n + F_{n-1}\)</span>, which rearranges to <span class="math inline">\(F_{n+1} -F_n - F_{n-1} = 0\)</span>. The is a linear difference equation with characteristic equation <span class="math inline">\(\lambda^2 - \lambda - 1 = 0\)</span>. This has two solutions, which can be found using the quadratic formula. The solution with larger absolute value is <span class="math inline">\(\lambda_1 = (1+\sqrt{5})/2 = \phi\)</span>, the golden ratio, and the solution with smaller absolute value is <span class="math inline">\(\lambda_2 = (1-\sqrt{5})/2\)</span>. Hence, the general solution to the equation is <span class="math inline">\(F_n = A\phi^n + B\lambda_2^n\)</span>. We could use the initial conditions <span class="math inline">\(F_1 = 1\)</span> and <span class="math inline">\(F_2 = 1\)</span> to find <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, but there’s no need to here.</p>
-<p>The ratio of consecutive Fibonacci numbers is
-<span class="math display">\[ \frac{F_{n+1}}{F_n} = \frac{A\phi^{n+1} + B\lambda_2^{n+1}}{A\phi^n + B\lambda_2^n} = \frac{\phi + B\lambda_2^{n+1}/A\phi^n}{1 + B\lambda_2^n/A\phi^n} \to \frac{\phi + 0}{1 + 0} = \phi \]</span>
-as <span class="math inline">\(n \to \infty\)</span>, since <span class="math inline">\(|\lambda_2/\phi| &lt; 1\)</span> means that <span class="math inline">\(\lambda_2^n / \phi^n \to 0\)</span>.</p>
+<p><em>Solution.</em> The most direct method is to use the hint in the question. We have
+<span class="math display">\[\begin{align*}
+\mathbb P(X+Y = z) &amp;= \sum_{x=0}^z \mathbb P(X = x) \, \mathbb P(Y = z-x) \\
+  &amp;= \sum_{x=0}^z \mathrm{e}^{-\lambda} \frac{\lambda^x}{x!} \mathrm{e}^{-\mu} \frac{\mu^{z-x}}{(z-x)!} \\
+  &amp;= \mathrm{e}^{-(\lambda + \mu)} \sum_{x=0}^z \frac{1}{x!(z-x)!} \lambda^x \mu^{z-x} \\
+  &amp;= \mathrm{e}^{-(\lambda + \mu)} \frac{1}{z!} \sum_{x=0}^z \frac{z!}{x!(z-x)!} \lambda^x \mu^{z-x} \\
+  &amp;= \mathrm{e}^{-(\lambda + \mu)} \frac{1}{z!} \sum_{x=0}^z \binom{z}{x} \lambda^x \mu^{z-x} .
+\end{align*}\]</span>
+But the sum here is precisely
+<span class="math display">\[ (\lambda + \mu)^z = \sum_{x=0}^z \binom{z}{x} \lambda^x \mu^{z-x} ,  \]</span>
+so we have
+<span class="math display">\[ \mathbb P(X+Y = z) = \mathrm{e}^{-(\lambda + \mu)} \frac{(\lambda+\mu)^z}{z!}    , \]</span>
+as desired.</p>
+<p>Alternatively, if you know about probability generating functions (PGFs), it can be easier to use those. The PGF <span class="math inline">\(G_X(s)\)</span> of a <span class="math inline">\(\operatorname{Po}(\lambda)\)</span> distribution is
+<span class="math display">\[ G_X(s) =  \mathbb Es^X = \sum_{x=0}^\infty s^x \mathrm{e}^{-\lambda} \frac{\lambda^x}{x!} 
+=   \mathrm{e}^{-\lambda}\sum_{x=0}^\infty \frac{(\lambda s)^x}{x!} = \mathrm{e}^{-\lambda} \mathrm{e}^{\lambda s} = \mathrm{e}^{\lambda (s-1)} . \]</span>
+Generally, the PGF of an independent sum <span class="math inline">\(Z = X+Y\)</span> is
+<span class="math display">\[ G_Z(s) = \mathbb E s^{X+Y} = \mathbb E s^{X}s^{Y} = \big(\mathbb Es^X\big)\big( \mathbb Es^Y\big) = G_X(s) G_Y(s) .\]</span>
+Here, that is
+<span class="math display">\[ G_Z(s) = G_X(s) G_Y(s) = \mathrm{e}^{\lambda (s-1)}\mathrm{e}^{\mu(s-1)} = \mathrm{e}^{(\lambda+\mu) (s-1)} , \]</span>
+which is the PGF of a <span class="math inline">\(\operatorname{Po}(\lambda + \mu)\)</span> distribution, as desired.</p>
+</div>
+</div>
+<div class="subq">
+<p><strong>(b)</strong> Let <span class="math inline">\((X(t))\)</span> and <span class="math inline">\((Y(t))\)</span> be independent Poisson processes with rate <span class="math inline">\(\lambda\)</span> and <span class="math inline">\(\mu\)</span> respectively. Use part (a) to show that <span class="math inline">\((X(t) + Y(t))\)</span> is a Poisson process with rate <span class="math inline">\(\lambda + \mu\)</span>.</p>
+<div class="myanswers">
+<p><em>Solution.</em>
+First, that <span class="math inline">\(Z(0) = X(0) + Y(0) = 0 + 0 = 0\)</span> is immediate. Second, the previous result shows that <span class="math inline">\((Z(t))\)</span> has independent Poisson increments with rate <span class="math inline">\(\lambda + \mu\)</span>. Third, since <span class="math inline">\((X(t))\)</span> and <span class="math inline">\((Y(t))\)</span> each have independent increments and are independent of each other, it follows that <span class="math inline">\((Z(t))\)</span> has independent increments also.</p>
+</div>
+</div>
+<div class="subq">
+<p><strong>(c)</strong> Number 1 buses arrive at a bus stop at a rate of <span class="math inline">\(\lambda_1 = 4\)</span> per hour, and Number 6 buses arrive at the rate <span class="math inline">\(\lambda_6 = 2\)</span> per hour. I’ve been waiting at the bus stop for 5 minutes for either bus to arrive; how much longer do I have to wait, on average?</p>
+<div class="myanswers">
+<p><em>Solution.</em>
+By the above, the arrivals of buses form a Poisson process of rate <span class="math inline">\(\lambda_1 + \lambda_6 = 6\)</span>. By the memoryless property of the exponential distribution, the fact we have already been waiting for 5 minutes is irrelevant. The waiting time is <span class="math inline">\(\text{Exp}(6)\)</span>, with mean <span class="math inline">\(\frac16\)</span> of an hour, or 10 minutes.</p>
+</div>
+</div>
+</div>
+<div class="myq">
+<p><strong>4.</strong>
+Let <span class="math inline">\(T_1 \sim \operatorname{Exp}(\lambda_1), T_2 \sim \operatorname{Exp}(\lambda_2), \dots, T_n \sim \operatorname{Exp}(\lambda_n)\)</span> be independent exponential distributions, and let <span class="math inline">\(T\)</span> be the minimum <span class="math inline">\(T = \min \{T_1, T_2 \dots, T_n\}\)</span>.</p>
+<div class="subq">
+<p><strong>(a)</strong> Show that <span class="math inline">\(T \sim \operatorname{Exp}(\lambda_1 + \lambda_2 + \cdots + \lambda_n)\)</span>. (You may use the fact that
+<span class="math display">\[ \mathbb P(T &gt; t) = \mathbb P(T_1 &gt; t) \, \mathbb P(T_2 &gt; t) \cdots \mathbb P(T_n &gt; t) , \]</span>
+provided you explain why it’s true.)</p>
+<div class="myanswers">
+<p><em>Solution.</em>
+For the minimum to be bigger than <span class="math inline">\(t\)</span>, we need all <span class="math inline">\(n\)</span> of the times to be bigger than <span class="math inline">\(t\)</span>. Hence
+<span class="math display">\[\begin{multline*} \mathbb P(T &gt; t) = \mathbb P(T_1 &gt; t)  \, \mathbb P(T_2 &gt; t)\cdots   \mathbb P(T_n &gt; t)\\ = \mathrm{e}^{-\lambda_1 t} \mathrm{e}^{-\lambda_2 t} \cdots \mathrm{e}^{-\lambda_n t} = \mathrm{e}^{-(\lambda_1 + \lambda_2 + \cdots + \lambda_n) t} . \end{multline*}\]</span>
+But this is precisely the tail probability of an <span class="math inline">\(\operatorname{Exp}(\lambda_1 + \lambda_2 + \cdots + \lambda_n)\)</span> distribution.</p>
+</div>
+</div>
+<div class="subq">
+<p><strong>(b)</strong> Show that the probability that the minimum is <span class="math inline">\(T_j\)</span> is given by
+<span class="math display">\[ \mathbb P(T_j = T) = \frac{\lambda_j}{\lambda_1 + \lambda_2 + \cdots + \lambda_n} . \]</span>
+(You could choose to begin by proving the <span class="math inline">\(n = 2\)</span> case, if you want.)</p>
+<div class="myanswers">
+<p><em>Solution.</em>
+By conditioning on the value of <span class="math inline">\(T_j\)</span> and arguing as above, we have
+<span class="math display">\[ \mathbb P(T_j = T) = \int_0^\infty f_{T_j}(t) \, \mathbb P(\text{all other $T_k$s} \geq t) \, \mathrm dt .  \]</span>
+Using the result above and substituting in the PDF of an exponential distribution, we get
+<span class="math display">\[\begin{align*} \mathbb P(T_j = T) &amp;= \int_0^\infty \lambda_j \mathrm{e}^{-\lambda_j t}\, \mathrm{e}^{-(\lambda_1 + \cdots + \lambda_{j-1} + \lambda_{j+1} + \cdots + \lambda_n)t} \, \mathrm dt \\         
+&amp;= \lambda_j \int_0^\infty \mathrm{e}^{-(\lambda_1 + \lambda_2 + \cdots + \lambda_n) t} \, \mathrm dt \\
+&amp;= \lambda_j \left[ -\frac{1}{\lambda_1 + \lambda_2 + \cdots + \lambda_n} \mathrm{e}^{-(\lambda_1 + \lambda_2 + \cdots + \lambda_n) t} \right]_0^\infty \\
+&amp;= \lambda_j \left(-0 - \left(- \frac{1}{\lambda_1 + \lambda_2 + \cdots + \lambda_n}\right)\right) \\
+&amp;= \frac{\lambda_j}{\lambda_1 + \lambda_2 + \cdots + \lambda_n} . \end{align*}\]</span></p>
+</div>
+</div>
+</div>
+<div class="myq">
+<p><strong>5.</strong>
+Let <span class="math inline">\((X(t))\)</span> be a Poisson process with rate <span class="math inline">\(\lambda\)</span>. Conditional on there being exactly 1 arrival before time <span class="math inline">\(t\)</span>, find the distribution of the time of that arrival.</p>
+<div class="myanswers">
+<p><em>Solution.</em>
+Clearly the arrival is in the interval <span class="math inline">\([0,t]\)</span>. The conditional CDF is
+<span class="math display">\[\begin{align*}
+  \mathbb P\big(T_1 \leq s \mid X(t) = 1\big)
+    &amp;= \frac{\mathbb P\big( T_1 \leq s \text{ and } X(t) = 1 \big)}{\mathbb P\big(X(t) = 1 \big)} %\\
+%    &amp;= \frac{\mathbb P( T_1 \leq s \text{ and } T_2 &gt; t-s )}{\mathbb P\big(X(t) = 1 \big)} \\
+%    &amp;= \frac{ (1 - \ee^{-\lambda s} ) \ee^{-\lambda(t-s)}{\ee^{-\lambda t}} \\
+%    &amp;= \frac{ \ee^{-\lambda(t-s)} 
+\end{align*}\]</span>
+The denominator is <span class="math inline">\(\lambda t \mathrm{e}^{-\lambda t}\)</span>. The numerator is
+<span class="math display">\[\begin{align*}
+\mathbb P\big( T_1 \leq s \text{ and } X(t) = 1 \big)
+  &amp;= \mathbb P\big(X(s) = 1 \text{ and } X(t) = 1 \big) \\
+  &amp;= \mathbb P \big(X(s)-X(0) = 1\big) \, \mathbb P\big(X(t) - X(s) = 0\big) \\
+  &amp;= \lambda s \mathrm{e}^{-\lambda s} \mathrm{e}^{\lambda(t-s)} \\
+  &amp;= \lambda s \mathrm{e}^{-\lambda t} .
+\end{align*}\]</span>
+Putting this together, the conditional CDF is
+<span class="math display">\[ \mathbb P\big(T_1 \leq s \mid X(t) = 1\big) = \frac{\lambda s \mathrm{e}^{-\lambda t}}{\lambda t \mathrm{e}^{-\lambda t}} = \frac{s}{t} .   \]</span>
+This is precisely the CDF for the uniform distribution on <span class="math inline">\([0,t]\)</span>.</p>
 </div>
 </div>
 
@@ -393,8 +444,8 @@ as <span class="math inline">\(n \to \infty\)</span>, since <span class="math in
           </div>
         </div>
       </div>
-<a href="S04-ldes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="A1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="S14-poisson-exponential.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="S15-poisson-exponential.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
