@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Problem sheet 3 | MATH2750 Introduction to Markov Processes</title>
+  <title>Section 15 Poisson process in infinitesimal time periods | MATH2750 Introduction to Markov Processes</title>
   <meta name="description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Problem sheet 3 | MATH2750 Introduction to Markov Processes" />
+  <meta property="og:title" content="Section 15 Poisson process in infinitesimal time periods | MATH2750 Introduction to Markov Processes" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://mpaldridge.github.io/math2750/" />
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Problem sheet 3 | MATH2750 Introduction to Markov Processes" />
+  <meta name="twitter:title" content="Section 15 Poisson process in infinitesimal time periods | MATH2750 Introduction to Markov Processes" />
   
   <meta name="twitter:description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="S06-examples.html"/>
-<link rel="next" href="S07-classes.html"/>
+<link rel="prev" href="P07.html"/>
+<link rel="next" href="S16-counting-processes.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -242,308 +242,130 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="P03" class="section level1 unnumbered">
-<h1>Problem sheet 3</h1>
-<style>
-.fold-btn { 
-  float: right; 
-  margin: -12px 0 0 0;
-}
-</style>
-<script type="text/javascript">
-$(document).ready(function() {
-  $folds = $(".myanswers");
-  $folds.wrapInner("<div class=\"fold-blck\">"); // wrap a div container around content
-  $folds.prepend("<button class=\"fold-btn\">Show solution</button>");  // add a button
-  $(".fold-blck").toggle();  // fold all blocks
-  $(".fold-btn").on("click", function() {  // add onClick event
-    $(this).text($(this).text() === "Hide solution" ? "Show solution" : "Hide solution");  // if the text equals "Fold", change it to "Unfold"or else to "Fold" 
-    $(this).next(".fold-blck").toggle("linear");  // "swing" is the default easing function. This can be further customized in its speed or the overall animation itself.
-  })
-});
-</script>
-<!--
-<style>
-.myanswers { 
-display: none !important;
-}
-</style>
--->
+<div id="S15-poisson-infinitesimal" class="section level1" number="15">
+<h1><span class="header-section-number">Section 15</span> Poisson process in infinitesimal time periods</h1>
 <div class="mysummary">
-<p>You should attempt all these questions and write up your solutions in advance of your workshop in week 4 (Monday 15 or Tuesday 16 February) where the answers will be discussed.</p>
+<ul>
+<li>Poisson process in terms of increments in infinitesimal time</li>
+<li>Forward equations for the Poisson process</li>
+</ul>
 </div>
-<div class="myq">
-<p><strong>1.</strong> Consider a Markov chain with state space <span class="math inline">\(\mathcal S = \{1,2,3\}\)</span>, and transition matrix partially given by
-<span class="math display">\[ \mathsf P = \begin{pmatrix} ? &amp; 0.3 &amp; 0.3 \\ 0.2 &amp; 0.4 &amp; ? \\ ? &amp; ? &amp; 1 \end{pmatrix} . \]</span></p>
-<div class="subq">
-<p><strong>(a)</strong> Replace the four question marks by the appropriate transition probabilities.</p>
-<div class="myanswers">
-<p><em>Solution.</em> Rows must add up to 1 and every entry must be non-negative, so the transition matrix is
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0.4 &amp; 0.3 &amp; 0.3 \\ 0.2 &amp; 0.4 &amp; 0.4 \\ 0 &amp; 0 &amp; 1 \end{pmatrix} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> Draw a transition diagram for this Markov chain.</p>
-<div class="myanswers">
-<p><em>Solution.</em></p>
-<div class="figure" style="text-align: center"><span id="fig:Q31"></span>
-<img src="math2750_files/figure-html/Q31-1.png" alt="Transition diagram for Question 1." width="384" />
-<p class="caption">
-Figure 6.3: Transition diagram for Question 1.
-</p>
-</div>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Find the matrix <span class="math inline">\(\mathsf P(2)\)</span> of two-step transition probabilities.</p>
-<div class="myanswers">
-<p><em>Solution.</em> <span class="math inline">\({\displaystyle \mathsf P(2) = \mathsf P^2 = \begin{pmatrix} 0.22 &amp; 0.24 &amp; 0.54 \\ 0.16 &amp; 0.22 &amp; 0.62 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}}\)</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(d)</strong> By summing the probabilities of all relevant paths, find the three-step transition probability <span class="math inline">\(p_{13}(3)\)</span>.</p>
-<div class="myanswers">
-<p><em>Solution.</em> There are seven relevant paths: <span class="math inline">\(1 \to 1 \to 1 \to 3\)</span>, <span class="math inline">\(1 \to 1 \to 2 \to 3\)</span>, <span class="math inline">\(1 \to 1 \to 3 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 1 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 2 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 3 \to 3\)</span>, and <span class="math inline">\(1 \to 3 \to 3 \to 3\)</span>. So
-<span class="math display">\[\begin{align*}
-p_{13}(3) &amp;= p_{11}p_{11}p_{11}p_{13} + p_{11}p_{12}p_{23} + p_{11}p_{13}p_{33}  + p_{12} p_{21} p_{13}\\
-&amp; \qquad{}+ p_{12}p_{22}p_{23} + p_{12}p_{23}p_{33} + p_{13}p_{33}p_{33}\\
-&amp; = 0.4 \cdot 0.4 \cdot 0.3 + 0.4\cdot 0.3\cdot 0.4 + 0.4\cdot 0.3 \cdot 1 + 0.3 \cdot 0.2 \cdot 0.3 \\
-&amp; \qquad{}+ 0.3\cdot 0.4 \cdot 0.4 + 0.3 \cdot 0.4 \cdot 1 + 0.3 \cdot 1 \cdot 1\\
-&amp;= 0.702
-\end{align*}\]</span></p>
-</div>
-</div>
-</div>
-<div style="display: flex;">
-<div>
-<div class="myq">
-<p><strong>2.</strong> Consider a Markov chain <span class="math inline">\((X_n)\)</span> which moves between the vertices of
-a tetrahedron.</p>
-<p>At each time step, the process randomly chooses one of the edges connected to the current vertex and follows it to a new vertex. The edge to follow is selected randomly with all options having equal probability and each selection is independent of the past movements. Let <span class="math inline">\(X_n\)</span> be the vertex the process is in after step <span class="math inline">\(n\)</span>.</p>
-<div class="subq">
-<p><strong>(a)</strong> Write down the transition matrix <span class="math inline">\(\mathsf P\)</span> of this Markov chain.</p>
-<div class="myanswers">
-<p>The chain can move from a state to any of the other <span class="math inline">\(3\)</span> states, each with probability <span class="math inline">\(1/3\)</span>. So
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-                               \frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-                               \frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-                               \frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> By summing over all relevant paths of length two, calculate the two-step transition probabilities <span class="math inline">\(p_{11}(2)\)</span> and <span class="math inline">\(p_{12}(2)\)</span>. Hence, write down the two-step transition matrix <span class="math inline">\(\mathsf P(2)\)</span>.</p>
-<div class="myanswers">
-<p>The length-2 paths from 1 to 1 are <span class="math inline">\(1 \to k \to 1\)</span> for <span class="math inline">\(k = 2,3,4\)</span>, so
-<span class="math display">\[ p_{11}(2) = p_{12}p_{21} + p_{13}p_{31} + p_{14}p_{41} = \tfrac13 \tfrac13 +  \tfrac13 \tfrac13 + \tfrac13 \tfrac13 = \tfrac13  .   \]</span>
-The length-2 paths from 1 to 2 are <span class="math inline">\(1 \to 3 \to 2\)</span> and <span class="math inline">\(1 \to 4 \to 2\)</span>, so
-<span class="math display">\[ p_{12}(2) = p_{13}p_{32} + p_{14}p_{42} = \tfrac13 \tfrac13 + \tfrac13 \tfrac13 = \tfrac29 . \]</span></p>
-<p>By symmetry, <span class="math inline">\(p_{ii}(2) = p_{11}(2)\)</span> for all <span class="math inline">\(i\)</span>, and <span class="math inline">\(p_{ij}(2) = p_{12}(2)\)</span> for all <span class="math inline">\(i \neq j\)</span>. Therefore
-<span class="math display">\[ \mathsf P(2) = \begin{pmatrix} \frac13 &amp; \frac29 &amp; \frac29 &amp; \frac29 \\
-                               \frac29 &amp; \frac13 &amp; \frac29 &amp; \frac29 \\
-                               \frac29 &amp; \frac29 &amp; \frac13 &amp; \frac29 \\
-                               \frac29 &amp; \frac29 &amp; \frac29 &amp; \frac13 \end{pmatrix} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Check your answer by calculating the matrix square <span class="math inline">\(\mathsf P^2\)</span>.</p>
-<div class="myanswers">
-<p>We can verify that
-<span class="math display">\[ \mathsf P^2 = \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix}=
-\begin{pmatrix} \frac13 &amp; \frac29 &amp; \frac29 &amp; \frac29 \\
-\frac29 &amp; \frac13 &amp; \frac29 &amp; \frac29 \\
-\frac29 &amp; \frac29 &amp; \frac13 &amp; \frac29 \\
-\frac29 &amp; \frac29 &amp; \frac29 &amp; \frac13 \end{pmatrix} , \]</span>
-as above.</p>
-</div>
-</div>
-</div>
-</div>
-<div>
-<div class="figure" style="text-align: center"><span id="fig:testing"></span>
-<img src="math2750_files/figure-html/testing-1.png" alt="A tetrahedron" width="850em" />
-<p class="caption">
-Figure 6.4: A tetrahedron
-</p>
-</div>
-</div>
-</div>
+<div id="infinitesimal" class="section level2" number="15.1">
+<h2><span class="header-section-number">15.1</span> Definition 3: increments in infinitesimal time</h2>
 <div class="videowrap">
 <div class="videowrapper">
-<iframe src="https://www.youtube.com/embed/E3qMZ6gRA0k">
+<iframe src="https://www.youtube.com/embed/NujUVyW0S78">
 </iframe>
 </div>
 </div>
-<div class="myq">
-<p><strong>3.</strong> Consider the two-state “broken printer” Markov chain, with state space <span class="math inline">\(\mathcal S = \{0,1\}\)</span>, transition matrix
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 1-\alpha &amp; \alpha \\
-                 \beta &amp; 1-\beta \end{pmatrix} \]</span>
-with <span class="math inline">\(0 &lt; \alpha, \beta &lt; 1\)</span>, and initial distribution <span class="math inline">\(\boldsymbol\lambda = (\lambda_0, \lambda_1)\)</span>. Write <span class="math inline">\(\mu_n =\mathbb P(X_n = 0)\)</span>.</p>
-<div class="subq">
-<p><strong>(a)</strong> By writing <span class="math inline">\(\mu_{n+1}\)</span> in terms of <span class="math inline">\(\mu_n\)</span>, show that we have
-<span class="math display">\[ \mu_{n+1} - \big(1-(\alpha+\beta)\big)\mu_n = \beta . \]</span></p>
-<div class="myanswers">
-<p>Using the law of total probability, we have
-<span class="math display">\[\begin{multline*}
-\mathbb P(X_{n+1} = 0) = \mathbb P(X_n = 0)\,\mathbb P(X_{n+1} = 0 \mid X_n = 0) \\
-+ \mathbb P(X_n = 1)\,\mathbb P(X_{n+1} = 0 \mid X_n = 1) ,
-\end{multline*}\]</span>
-which in terms of <span class="math inline">\((\mu_n)\)</span> is
-<span class="math display">\[ \mu_{n+1} = \mu_n (1-\alpha) + (1 - \mu_n)\beta . \]</span>
-We used here that <span class="math inline">\(\mathbb P(X_n = 1) = 1-\mu_n\)</span>.
-Rearranging this gives the answer.</p>
+<p>We have seen two definitions of the Poisson process so far: one in terms of increments having a Poisson distribution, and one in therms of holding times having an exponential distribution. Here we will see another definition, by looking at what happens in a very small time period of length <span class="math inline">\(\tau\)</span>. Advantages of this approach include that does not require direct assumptions on the distributions involved, so may seem more “natural” or “inevitable”. It also shows links between Markov processes and differential equations. A disadvantage is that it’s normally easier to do calculations with the Poisson or exponential definitions.</p>
+<p>Let <span class="math inline">\((X(t))\)</span> be a stochastic processes counting some arrivals over time. Consider the number of arrivals in a very small time period of length <span class="math inline">\(\tau\)</span>; that number of arrivals is <span class="math inline">\(X(t+\tau) - X(t)\)</span>. The following (seemingly) weak assumptions seem justified:</p>
+<ul>
+<li>It’s quite likely that there will be no arrivals in the very small time period.</li>
+<li>It is possible there will be one arrival, and that probability will be roughly proportional to the length <span class="math inline">\(\tau\)</span> of the time period.</li>
+<li>It’s extremely unlikely there will be two or more arrivals in such a short time period.</li>
+</ul>
+<p>To write this down formally in maths, we will consider <span class="math inline">\(\mathbb P(X(t+\tau) - X(t) = j)\)</span> as the length <span class="math inline">\(\tau\)</span> of the time period tends to zero.</p>
+<p>It will be helpful for us to use “little-<span class="math inline">\(o\)</span>” notation. Here <span class="math inline">\(o(\tau)\)</span> means a term that is of “lower order” compared to <span class="math inline">\(\tau\)</span>. These are terms like <span class="math inline">\(\tau^2\)</span> or <span class="math inline">\(\tau^3\)</span> that are so tiny that we’re safe to ignore them. Formally, <span class="math inline">\(o(\tau)\)</span> stands for a function of <span class="math inline">\(\tau\)</span> that tends to <span class="math inline">\(0\)</span> as <span class="math inline">\(\tau \to 0\)</span> even when divided by <span class="math inline">\(\tau\)</span>. That is,
+<span class="math display">\[ f(\tau) = o(\tau) \qquad \iff \qquad \frac{f(\tau)}{\tau} \to 0 \quad \text{as $\tau \to 0$.}  \]</span></p>
+<p>Then our suggestions above translate to
+<span class="math display" id="eq:tau">\[\begin{equation} \mathbb P \big(X(t+\tau) - X(t) = j\big) = \begin{cases} 1 - \lambda \tau + o(\tau) &amp; \text{if $j = 0$,} \\
+\lambda\tau + o(\tau) &amp; \text{if $j = 1$,} \\
+o(\tau) &amp; \text{if $j \geq 2$.} \end{cases} \tag{15.1} \end{equation}\]</span>
+as <span class="math inline">\(\tau \to 0\)</span>.</p>
+<p>It turns out that we have once again defined the Poisson process with rate <span class="math inline">\(\lambda\)</span>.</p>
+<div class="theorem">
+<p><span id="thm:def-inf" class="theorem"><strong>Theorem 15.1  </strong></span>Let <span class="math inline">\((X(t))\)</span> be a stochastic process with the following properties:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(X(0) = 0\)</span>;</li>
+<li>infinitesimal increments: <span class="math inline">\(X(t+\tau) - X(t)\)</span> has the structure in <a href="S15-poisson-infinitesimal.html#eq:tau">(15.1)</a> above, as <span class="math inline">\(\tau \to 0\)</span>;</li>
+<li>independent increments: <span class="math inline">\(X(t_2) - X(t_1)\)</span> and <span class="math inline">\(X(t_4) - X(t_3)\)</span> are independent for all <span class="math inline">\(t_1 \leq t_2 \leq t_3 \leq t_4\)</span>.</li>
+</ol>
+<p>Then <span class="math inline">\((X(t))\)</span> is a Poisson process with rate <span class="math inline">\(\lambda\)</span>.</p>
+</div>
+<p>We will prove this in a moment. First let’s see an example of its use.</p>
+</div>
+<div id="sum2" class="section level2" number="15.2">
+<h2><span class="header-section-number">15.2</span> Example: sum of two Poisson processes</h2>
+<p>We <a href="S13-poisson-poisson.html#summed-marked">mentioned before the sum of two Poisson processes</a>: that if <span class="math inline">\((X(t))\)</span> is a Poisson process with rate <span class="math inline">\(\lambda\)</span> and <span class="math inline">\((Y(t))\)</span> is an independent Poisson process with rate <span class="math inline">\(\mu\)</span>, then the sum <span class="math inline">\((Z(t))\)</span> where <span class="math inline">\(Z(t) = X(t) + Y(t)\)</span> is a Poisson process with rate <span class="math inline">\(\lambda + \mu\)</span>.</p>
+<p>On <a href="P07.html#P07">Problem Sheet 7</a>, Question 3, you proved this from the Poisson increments definition. But it’s perhaps even easier to prove using the infinitesimals definition.</p>
+<p>We have
+<span class="math display">\[\begin{align*}\mathbb P\big( Z(t+\tau) - Z(t) = 0 \big) &amp;= \mathbb P\big( X(t+\tau) - X(t) = 0 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 0 \big) \\ &amp;=\big(1 - \lambda \tau + o(\tau) \big)\big(1 - \mu \tau + o(\tau) \big) \\
+&amp;= 1 - (\lambda + \mu)\tau + o(\tau) , \end{align*}\]</span>
+since <span class="math inline">\(Z\)</span> does not increase provided neither <span class="math inline">\(X\)</span> nor <span class="math inline">\(Y\)</span> increases.</p>
+<p>We also have
+<span class="math display">\[\begin{align*}\mathbb P\big( Z(t+{}&amp;\tau) - Z(t) = 1 \big) \\
+&amp;= \mathbb P\big( X(t+\tau) - X(t) = 1 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 0 \big) \\ &amp;\qquad {}+ \mathbb P\big( X(t+\tau) - X(t) = 0 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 1 \big) \\
+&amp;= \big(\lambda \tau + o(\tau) \big)\big(1 - \mu \tau + o(\tau) \big) + \big(1 - \lambda \tau + o(\tau) \big)\big(\mu \tau + o(\tau) \big) \\
+&amp;= (\lambda + \mu)\tau + o(\tau) , \end{align*}\]</span>
+since <span class="math inline">\(Z\)</span> increases by 1 if either <span class="math inline">\(X\)</span> increases by 1 and <span class="math inline">\(Y\)</span> stays fixed or vice versa. We used here that the probability that <em>both</em> <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> increase is of order <span class="math inline">\(\tau^2 = o(\tau)\)</span>.</p>
+<p>Finally, since probabilities must add up to 1, we must have
+<span class="math display">\[ \mathbb P\big( Z(t+\tau) - Z(t) \geq 2 \big) =  o(\tau) . \]</span></p>
+<p>But what we have written down is precisely the infinitesimals definition of a Poisson process with rate <span class="math inline">\(\lambda + \mu\)</span>, so we are done.</p>
+</div>
+<div id="forward" class="section level2" number="15.3">
+<h2><span class="header-section-number">15.3</span> Forward equations and proof of equivalence</h2>
+<div class="videowrap">
+<div class="videowrapper">
+<iframe src="https://www.youtube.com/embed/aEAFNm04P8U">
+</iframe>
 </div>
 </div>
-<div class="subq">
-<p><strong>(b)</strong> By solving this linear difference equation using the initial condition <span class="math inline">\(\mu_0 = \lambda_0\)</span>, or otherwise, show that
-<span class="math display">\[ \mu_n = \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n   . \]</span></p>
-<div class="myanswers">
-<p>The characteristic equation is <span class="math inline">\(\lambda - (1-(\alpha+\beta)) = 0\)</span> with a single root at <span class="math inline">\(\lambda = 1 - (\alpha+\beta)\)</span>. The general solution to the homogeneous equation is, therefore, <span class="math inline">\(A(1-(\alpha+\beta))^n\)</span>.</p>
-<p>For a particular solution, we guess a solution <span class="math inline">\(\mu_n = C\)</span>, and <span class="math inline">\(C - (1-(\alpha+\beta))C = \beta\)</span> gives <span class="math inline">\(C = \beta/(\alpha+\beta)\)</span>. Thus the general solution to the inhomogeneous equation is
-<span class="math display">\[ \mu_n = \frac{\beta}{\alpha+\beta} + A\big(1-(\alpha+\beta)\big)^n .\]</span></p>
-<p>From the initial condition, we get <span class="math inline">\(\lambda_0 = \beta/(\alpha+\beta) + A\)</span>, and therefore <span class="math inline">\(A = \lambda_0 - \beta/(\alpha+\beta)\)</span>. The solution is therefore as given.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> What, therefore, are <span class="math inline">\(\lim_{n\to\infty} \mathbb P(X_n = 0)\)</span> and <span class="math inline">\(\lim_{n\to\infty} \mathbb P(X_n = 1)\)</span>?</p>
-<div class="myanswers">
-<p>Note that <span class="math inline">\(-1 &lt; 1 - (\alpha + \beta) &lt; 1\)</span>, so <span class="math inline">\((1-(\alpha+\beta))^n \to 0\)</span>. Therefore we have
+<p>If we compare Theorem <a href="S15-poisson-infinitesimal.html#thm:def-inf">15.1</a> to the <a href="#thm:#poisson-def-1">definition of the Poisson process in terms of Poisson increments</a>, we see that properties 1 and 3 are the same. We only need to check property 2, that <span class="math inline">\(X(t+s) - X(s)\)</span> is a Poisson distribution with rate <span class="math inline">\(\lambda t\)</span>.</p>
+<p>Since the increments as defined in <a href="S15-poisson-infinitesimal.html#eq:tau">(15.1)</a> are time homogeneous, it will suffice to consider <span class="math inline">\(s = 0\)</span>. So we need to show that <span class="math inline">\(X(t) \sim \text{Po}(\lambda t)\)</span>.</p>
+<p>Write <span class="math inline">\(p_j(t) = \mathbb P(X(t) = j)\)</span>. Then for <span class="math inline">\(j \geq 1\)</span> we have
+<span class="math display">\[ p_j(t + \tau) = \big(1 - \lambda\tau + o(\tau)\big)p_j(t) + \big(\lambda\tau + o(\tau)\big) p_{j-1}(t) + o(\tau) , \]</span>
+since we get to <span class="math inline">\(j\)</span> either by staying at <span class="math inline">\(j\)</span> or by moving up from <span class="math inline">\(j-1\)</span>, with all other highly unlikely possibilities being absorbed into the <span class="math inline">\(o(\tau)\)</span>. In order to deal with increments, it will be convenient to take a <span class="math inline">\(p_{j}(t)\)</span> to the left-hand side and rearrange, to get the increment
+<span class="math display">\[ p_j(t + \tau) - p_j(t) = -\lambda\tau p_j(t) + \lambda\tau p_{j-1}(\tau) + o(\tau) , \]</span>
+where “constant times <span class="math inline">\(o(\tau)\)</span>” is itself <span class="math inline">\(o(\tau)\)</span>.</p>
+<p>The only way to deal with the <span class="math inline">\(o(\tau)\)</span> term, given its definition, is to divide everything by <span class="math inline">\(\tau\)</span> and send <span class="math inline">\(\tau \to 0\)</span>. Dividing by <span class="math inline">\(\tau\)</span> gives
+<span class="math display">\[ \frac{p_j(t + \tau) - p_j(t)}{\tau} = -\lambda p_j(t) + \lambda p_{j-1}(t) + \frac{o(\tau)}{\tau} . \]</span>
+Sending <span class="math inline">\(\tau\)</span> to 0, the term <span class="math inline">\(o(\tau)/\tau\)</span> tends to 0 and vanishes, while we recognise the limit of the left-hand side as being the derivative <span class="math inline">\(\mathrm d p_j(t) / \mathrm d t = p&#39;_j(t)\)</span>.
+This leaves us with the differential equation
+<span class="math display">\[ p&#39;_j(t) = -\lambda p_j(t) + \lambda p_{j-1}(t) . \]</span>
+We also have the initial condition <span class="math inline">\(p_j(0) = 0\)</span> for <span class="math inline">\(j \geq 1\)</span>, since we start at 0, not at any <span class="math inline">\(j \geq 1\)</span>.</p>
+<p>We have to deal with the case <span class="math inline">\(j = 0\)</span> separately. This is similar but a bit easier. We have
+<span class="math display">\[ p_0(t + \tau) = \big(1 - \lambda\tau + o(\tau)\big)p_0(t) , \]</span>
+since we must previously been at 0, then seen no arrivals.
+After rearranging to get an increment and sending <span class="math inline">\(\tau \to 0\)</span>, as before, we get the differential equation
+<span class="math display">\[ p&#39;_0(t) = -\lambda p_0(t) \]</span>
+with the initial condition <span class="math inline">\(p_0(0) = 1\)</span>, since we always start at 0.</p>
+<p>In summary, we have derived the following equations:
 <span class="math display">\[\begin{align*}
-\lim_{n\to\infty} \mathbb P(X_n = 0) &amp;= \lim_{n\to\infty} \mu_n \\
-&amp;= \lim_{n\to\infty} \left( \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n \right) \\
-&amp;= \frac{\beta}{\alpha+\beta} .
+   p&#39;_0(t) &amp;= -\lambda p_0(t) &amp; p_0(0) &amp; = 1 ,\\
+   p&#39;_j(t) &amp;= -\lambda p_j(t) + \lambda p_{j-1}(t) &amp;  p_j(0) &amp;= 0 \quad \text{for $j \geq 1$} .
 \end{align*}\]</span>
-Since <span class="math inline">\(\mathbb P(X_n = 1) = 1- \mathbb P(X_n = 0)\)</span>, we have
-<span class="math display">\[ \mathbb P(X_n = 1) \to 1 - \frac{\beta}{\alpha+\beta} = \frac{\alpha}{\alpha+\beta} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(d)</strong> Explain what happens if the Markov chain is started in the distribution
-<span class="math display">\[ \lambda_0 = \frac{\beta}{\alpha+\beta} , \qquad \lambda_1 = \frac{\alpha}{\alpha+\beta}  . \]</span></p>
-<div class="myanswers">
-<p>Substituting in the value of <span class="math inline">\(\lambda_0\)</span> into the equation for <span class="math inline">\(\mu_n\)</span>, the second term cancel, and we have that <span class="math inline">\(\mathbb P(X_n = 0) = \mu_n = \beta/(\alpha+\beta)\)</span> for all times <span class="math inline">\(n\)</span>, and therefor <span class="math inline">\(\mathbb P(X_n = 1) = \alpha/(\alpha+\beta)\)</span> too. This means that the Markov chain remains in the same “stationary distribution” forever.</p>
-</div>
-</div>
-</div>
-<div class="myq">
-<p><strong>4.</strong> Let <span class="math inline">\((X_n)\)</span> be a Markov chain. Show that, for any <span class="math inline">\(m \geq 1\)</span>, we have
-<span class="math display">\[ \mathbb P(X_{n+m} = x_{n+m} \mid X_n = x_n, X_{n-1} = x_{n-1}, \dots, X_0 = x_0)  =  \mathbb P(X_{n+m} = x_{n+m} \mid X_n = x_n) . \]</span></p>
-<div class="myanswers">
-<p>Note that we have a sequence of statements here, for <span class="math inline">\(m = 1, 2, \dots\)</span>. Note also that the case <span class="math inline">\(m = 1\)</span> is the standard Markov property. When we have a sequence of statements and we can easily prove the first one, this is a good sign that a proof by induction is the way to go.</p>
-<p>Before starting, for reasons of space, we adopt notation where we suppress the capital <span class="math inline">\(X\)</span>s, so we want to show that
-<span class="math display">\[ \mathbb P(x_{n+m} \mid x_n, x_{n-1}, \dots, x_0 ) = \mathbb P(x_{n+m} \mid x_n) . \]</span></p>
-<p>We work by induction on <span class="math inline">\(m\)</span>. The base case <span class="math inline">\(m = 1\)</span> is the standard Markov property.</p>
-<p>Assume the inductive hypothesis: that result holds for <span class="math inline">\(m\)</span>. We now need to prove the inductive step: that the result holds for <span class="math inline">\(m+1\)</span>. For <span class="math inline">\(m+1\)</span> we have, by conditioning on the first step <span class="math inline">\(x_{n+1}\)</span>,
-<span class="math display">\[\begin{multline*} \mathbb P(x_{n+m+1} \mid x_n, x_{n-1}, \dots, x_0 ) \\
- = \sum_{x_{n+1}} \mathbb P(x_{n+1} \mid x_n, x_{n-1}, \dots, x_0 )\,\mathbb P(x_{n+m+1} \mid x_{n+1}, x_n, x_{n-1}, \dots, x_0 )     \end{multline*}\]</span>
-By the standard Markov property the first term simplifies to <span class="math inline">\(\mathbb P(x_{n+1} \mid x_n)\)</span>, and by the result for <span class="math inline">\(m\)</span> the second term simplifies to <span class="math inline">\(\mathbb P(x_{n+m+1} \mid x_{n+1})\)</span>. So we have
-<span class="math display">\[ \mathbb P(x_{n+m+1} \mid x_n, x_{n-1}, \dots, x_0 ) = \sum_{x_{n+1}} \mathbb P(x_{n+1} \mid x_n) \mathbb P(x_{n+m+1} \mid x_{n+1}) . \]</span>
-But the right-hand side here is <span class="math inline">\(\mathbb P(x_{n+m+1} \mid x_n)\)</span> written using conditioning on the first step and using the result for <span class="math inline">\(m\)</span>. By induction, we are done.</p>
-</div>
-</div>
-<div class="myq">
-<p><strong>5.</strong> A car insurance company operates a no-claims discount system for existing policy holders. The possible discounts on premiums are <span class="math inline">\(\{0\%,25\%,40\%,50\%\}\)</span>. Following a claim-free year, a policyholder’s discount level increases by one level (or remains at 50% discount). If the policyholder makes one or more claims in a year, the discount level decreases by one level (or remains at 0% discount).</p>
-<p>The insurer believes that the probability of of making at least one claim in a year is <span class="math inline">\(0.1\)</span> if the previous year was claim-free and <span class="math inline">\(0.25\)</span> if the previous year was not claim-free.</p>
-<div class="subq">
-<p><strong>(a)</strong> Explain why we cannot use <span class="math inline">\(\{0\%,25\%,40\%,50\%\}\)</span> as the state space of a Markov chain to model discount levels for policyholders.</p>
-<div class="myanswers">
-<p>The Markov property does not hold for the time-homogeneous process described since the probability of moving to a given state at the next time step is not simply dependent on the current state if <span class="math inline">\(\mathcal S=\{0\%,25\%,40\%,50\%\}\)</span>. For example,
-<span class="math display">\[
-    \mathbb P(X_{n+1}=25\% \mid X_n= 40\% )=\begin{cases} 
-    0.25 &amp; \text{if $X_{n-1}=50\%$}\\
-    0.1 &amp; \text{if $X_{n-1}=25\%$.} \end{cases} \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> By considering additional states, show that a Markov chain can be used to model the discount level.</p>
-<div class="myanswers">
-<p>The problem is that the process has a memory of the previous year.
-If we currently have a discount of 0%, we know a claim was made in the year before, so no changes are required. Similarly, at 50% discount, we know that no claim was made in the previous year. The other two states, 25% and 40%, have different behaviour depending on whether or not there was a claim in the previous year.</p>
-<p>So we will split each of these into two states: 25+ will denote a 25% discount with no claim in the previous year, while 25- will denote a 25% discount with a claim in the previous year. We define the state 40+ and 40- similarly. Then we have a Markov chain, since the current state and the number of claims in the previous year completely defines the distribution on future behaviour.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Draw the transition diagram and write down the transition matrix.</p>
-<div class="myanswers">
-<p>The transition diagram is as shown below.</p>
-<div class="figure" style="text-align: center"><span id="fig:fortyplus"></span>
-<img src="math2750_files/figure-html/fortyplus-1.png" alt="Transition diagram for the car insurance Markov chain" width="480" />
-<p class="caption">
-Figure 6.5: Transition diagram for the car insurance Markov chain
-</p>
-</div>
-<p>The transition matrix is given by,
-<span class="math display">\[ \mathsf P = 
-    \begin{matrix}
-    &amp; \begin{matrix} 
-        0 &amp; 25+ &amp; 25- &amp; 40+ &amp; 40- &amp; 50
-      \end{matrix} \\
-    \begin{matrix}
-      0 \\ 25+ \\ 25- \\ 40+ \\ 40- \\ 50
-    \end{matrix}
-    &amp;
-    \begin{pmatrix}
-    0.25 &amp; 0.75 &amp; 0    &amp; 0    &amp; 0   &amp; 0    \\
-      0.1  &amp; 0    &amp; 0    &amp; 0.9  &amp; 0   &amp; 0    \\
-      0.25 &amp; 0    &amp; 0    &amp; 0.75 &amp; 0   &amp; 0    \\
-      0    &amp; 0    &amp; 0.1  &amp; 0    &amp; 0   &amp; 0.9  \\
-      0    &amp; 0    &amp; 0.25 &amp; 0    &amp; 0   &amp; 0.75 \\
-      0    &amp; 0    &amp; 0    &amp; 0    &amp; 0.1 &amp; 0.9 
-    \end{pmatrix}
-    \end{matrix}
-    \]</span></p>
-</div>
-</div>
-</div>
-<div class="myq">
-<p><strong>6.</strong> The credit rating of a company can be modelled as a Markov chain. Assume the rating is assessed once per year at the end of the year and possible ratings are A (good), B (fair) and D (in default). The transition matrix is
-<span class="math display">\[\mathsf P=\begin{pmatrix} 0.92&amp;0.05&amp;0.03\\
-0.05&amp;0.85&amp;0.1\\
-0&amp;0&amp;1 \end{pmatrix} . \]</span></p>
-<div class="subq">
-<p><strong>(a)</strong> Calculate the two-step transition probabilities, and hence find the expected number of defaults in the next two years from <span class="math inline">\(100\)</span> companies all rated A at the start of the period.</p>
-<div class="myanswers">
-<p>The matrix of two-step transition probabilities is given by the matrix square
-<span class="math display">\[\mathsf P(2) = \mathsf P^2= \begin{pmatrix} 0.8489&amp;0.0885&amp;0.0626\\
-0.0885&amp;0.7250&amp;0.1865\\
-0&amp;0&amp;1 \end{pmatrix}. \]</span>
-The number of defaults in two years from <span class="math inline">\(100\)</span> A-rated companies is <span class="math inline">\(100 \times p_{\mathrm{AD}}(2) = 100 \times 0.0626 = 6.26\)</span>.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> What is the probability that a company rated A will at some point default without ever having been rated B in the meantime?</p>
-<div class="myanswers">
-<p>Let <span class="math inline">\(\delta\)</span> be the desired probability that an A-rated company will default without having been rated B. We condition on the first step: with probability <span class="math inline">\(0.92\)</span> we remain in state A, and by the Markov property the probability of the given event remains at <span class="math inline">\(\delta\)</span>; with probability <span class="math inline">\(0.05\)</span> we move to state B, and the event fails to occur; and with probability <span class="math inline">\(0.03\)</span> we move to state D and the event occurs immediately. Therefore, we have
-<span class="math display">\[ \delta = 0.92\delta + 0.05\times 0 + 0.03 \times 1 = 0.92\delta + 0.03 ,  \]</span>
-which has solution <span class="math inline">\(\delta = 0.03/(1-0.92) = 0.375\)</span>.</p>
-</div>
-</div>
-<p>A corporate bond portfolio manager follows an investment strategy which means that bonds which fall from A-rated to B-rated are sold and replaced with an A-rated bond. The manager believes this will improve the returns on the portfolio because it will reduce the number of defaults experienced.</p>
-<div class="subq">
-<p><strong>(c)</strong> Calculate the expected number of defaults in the manager’s portfolio over the next two years given there are initially 100 A-rated bonds.</p>
-<div class="myanswers">
-<p>Given that B-rated bonds are replaced by A-rated bonds, we have a new Markov chain with state space <span class="math inline">\(\{\mathrm{A},\mathrm{D}\}\)</span> and transition matrix
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0.92+0.05 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} =  \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} .  \]</span>
-The two-step transition probability is
-<span class="math display">\[ \mathsf P(2) = \mathsf P^2 =  \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} = \begin{pmatrix} 0.9409 &amp; 0.0591 \\ 0 &amp; 1 \end{pmatrix} .  \]</span>
-Thus the number of defaults from <span class="math inline">\(100\)</span> A-rated bonds in two years is <span class="math inline">\(100\times p_{\mathrm{AD}}(2) = 100\times 0.0591 = 5.91\)</span>. The manager was right: this is slightly less than the <span class="math inline">\(6.26\)</span> from part (a).</p>
-</div>
-</div>
+These are called the <strong>Kolmogorov forward equations</strong>.</p>
+<p>We claim that the solution to these equations is the Poisson distribution
+<span class="math display">\[ p_j(t) = \mathrm{e}^{-\lambda t} \frac{(\lambda t)^j}{j!} . \]</span>
+This would prove the theorem.</p>
+<p>We must check that the claim holds. For <span class="math inline">\(j = 0\)</span>, the Poisson probability is
+<span class="math display">\[ p_0(t) = \mathrm{e}^{-\lambda t} \frac{(\lambda t)^0}{0!} = \mathrm{e}^{-\lambda t} . \]</span>
+This has
+<span class="math display">\[ p&#39;_0(t) = -\lambda \mathrm{e}^{-\lambda t} = -\lambda p_0(t) , \]</span>
+as desired, and we also have the correct initial condition <span class="math inline">\(p_0(0) = \mathrm{e}^{0} = 1\)</span>.</p>
+<p>For <span class="math inline">\(j \geq 1\)</span>, the left-hand side is
+<span class="math display">\[\begin{align*}
+p&#39;_j(t) &amp;= \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{-\lambda t} \frac{(\lambda t)^j}{j!} \\
+&amp; = \frac{1}{j!} \left(-\lambda \mathrm{e}^{-\lambda t}(\lambda t)^j + \mathrm{e}^{-\lambda t} \lambda j(\lambda t)^{j-1} \right) \\
+&amp;= - \lambda \mathrm{e}^{-\lambda t} \frac{(\lambda t)^j}{j!} + \lambda \mathrm{e}^{-\lambda t} \frac{(\lambda t)^{j-1}}{(j-1)!} \\
+&amp;= -\lambda p_j(t) + \lambda p_{j-1}(t)
+\end{align*}\]</span>
+as desired. We also have the initial condition <span class="math inline">\(p_j(0) = \mathrm{e}^{0} 0^j/j! = 0\)</span>.
+The claim is proven, and we are (finally) done.</p>
+<div class="mysummary">
+<p><strong>In the next section</strong>, we two new types of process that are similar to the Poisson process.</p>
 </div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="S06-examples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="S07-classes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="P07.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="S16-counting-processes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

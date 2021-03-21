@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Problem sheet 3 | MATH2750 Introduction to Markov Processes</title>
+  <title>Section 17 Continuous time Markov jump processes | MATH2750 Introduction to Markov Processes</title>
   <meta name="description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Problem sheet 3 | MATH2750 Introduction to Markov Processes" />
+  <meta property="og:title" content="Section 17 Continuous time Markov jump processes | MATH2750 Introduction to Markov Processes" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://mpaldridge.github.io/math2750/" />
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Problem sheet 3 | MATH2750 Introduction to Markov Processes" />
+  <meta name="twitter:title" content="Section 17 Continuous time Markov jump processes | MATH2750 Introduction to Markov Processes" />
   
   <meta name="twitter:description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="S06-examples.html"/>
-<link rel="next" href="S07-classes.html"/>
+<link rel="prev" href="P08.html"/>
+<link rel="next" href="S18-forward-backward.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -242,308 +242,133 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="P03" class="section level1 unnumbered">
-<h1>Problem sheet 3</h1>
-<style>
-.fold-btn { 
-  float: right; 
-  margin: -12px 0 0 0;
-}
-</style>
-<script type="text/javascript">
-$(document).ready(function() {
-  $folds = $(".myanswers");
-  $folds.wrapInner("<div class=\"fold-blck\">"); // wrap a div container around content
-  $folds.prepend("<button class=\"fold-btn\">Show solution</button>");  // add a button
-  $(".fold-blck").toggle();  // fold all blocks
-  $(".fold-btn").on("click", function() {  // add onClick event
-    $(this).text($(this).text() === "Hide solution" ? "Show solution" : "Hide solution");  // if the text equals "Fold", change it to "Unfold"or else to "Fold" 
-    $(this).next(".fold-blck").toggle("linear");  // "swing" is the default easing function. This can be further customized in its speed or the overall animation itself.
-  })
-});
-</script>
-<!--
-<style>
-.myanswers { 
-display: none !important;
-}
-</style>
--->
+<div id="S17-continuous-time" class="section level1" number="17">
+<h1><span class="header-section-number">Section 17</span> Continuous time Markov jump processes</h1>
 <div class="mysummary">
-<p>You should attempt all these questions and write up your solutions in advance of your workshop in week 4 (Monday 15 or Tuesday 16 February) where the answers will be discussed.</p>
+<ul>
+<li>Time homogeneous continuous time Markov jump processes in terms of the jump Markov chain and the holding times</li>
+<li>Explosion of Markov jump processes</li>
+</ul>
 </div>
-<div class="myq">
-<p><strong>1.</strong> Consider a Markov chain with state space <span class="math inline">\(\mathcal S = \{1,2,3\}\)</span>, and transition matrix partially given by
-<span class="math display">\[ \mathsf P = \begin{pmatrix} ? &amp; 0.3 &amp; 0.3 \\ 0.2 &amp; 0.4 &amp; ? \\ ? &amp; ? &amp; 1 \end{pmatrix} . \]</span></p>
-<div class="subq">
-<p><strong>(a)</strong> Replace the four question marks by the appropriate transition probabilities.</p>
-<div class="myanswers">
-<p><em>Solution.</em> Rows must add up to 1 and every entry must be non-negative, so the transition matrix is
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0.4 &amp; 0.3 &amp; 0.3 \\ 0.2 &amp; 0.4 &amp; 0.4 \\ 0 &amp; 0 &amp; 1 \end{pmatrix} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> Draw a transition diagram for this Markov chain.</p>
-<div class="myanswers">
-<p><em>Solution.</em></p>
-<div class="figure" style="text-align: center"><span id="fig:Q31"></span>
-<img src="math2750_files/figure-html/Q31-1.png" alt="Transition diagram for Question 1." width="384" />
-<p class="caption">
-Figure 6.3: Transition diagram for Question 1.
-</p>
-</div>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Find the matrix <span class="math inline">\(\mathsf P(2)\)</span> of two-step transition probabilities.</p>
-<div class="myanswers">
-<p><em>Solution.</em> <span class="math inline">\({\displaystyle \mathsf P(2) = \mathsf P^2 = \begin{pmatrix} 0.22 &amp; 0.24 &amp; 0.54 \\ 0.16 &amp; 0.22 &amp; 0.62 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}}\)</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(d)</strong> By summing the probabilities of all relevant paths, find the three-step transition probability <span class="math inline">\(p_{13}(3)\)</span>.</p>
-<div class="myanswers">
-<p><em>Solution.</em> There are seven relevant paths: <span class="math inline">\(1 \to 1 \to 1 \to 3\)</span>, <span class="math inline">\(1 \to 1 \to 2 \to 3\)</span>, <span class="math inline">\(1 \to 1 \to 3 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 1 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 2 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 3 \to 3\)</span>, and <span class="math inline">\(1 \to 3 \to 3 \to 3\)</span>. So
-<span class="math display">\[\begin{align*}
-p_{13}(3) &amp;= p_{11}p_{11}p_{11}p_{13} + p_{11}p_{12}p_{23} + p_{11}p_{13}p_{33}  + p_{12} p_{21} p_{13}\\
-&amp; \qquad{}+ p_{12}p_{22}p_{23} + p_{12}p_{23}p_{33} + p_{13}p_{33}p_{33}\\
-&amp; = 0.4 \cdot 0.4 \cdot 0.3 + 0.4\cdot 0.3\cdot 0.4 + 0.4\cdot 0.3 \cdot 1 + 0.3 \cdot 0.2 \cdot 0.3 \\
-&amp; \qquad{}+ 0.3\cdot 0.4 \cdot 0.4 + 0.3 \cdot 0.4 \cdot 1 + 0.3 \cdot 1 \cdot 1\\
-&amp;= 0.702
-\end{align*}\]</span></p>
-</div>
-</div>
-</div>
-<div style="display: flex;">
-<div>
-<div class="myq">
-<p><strong>2.</strong> Consider a Markov chain <span class="math inline">\((X_n)\)</span> which moves between the vertices of
-a tetrahedron.</p>
-<p>At each time step, the process randomly chooses one of the edges connected to the current vertex and follows it to a new vertex. The edge to follow is selected randomly with all options having equal probability and each selection is independent of the past movements. Let <span class="math inline">\(X_n\)</span> be the vertex the process is in after step <span class="math inline">\(n\)</span>.</p>
-<div class="subq">
-<p><strong>(a)</strong> Write down the transition matrix <span class="math inline">\(\mathsf P\)</span> of this Markov chain.</p>
-<div class="myanswers">
-<p>The chain can move from a state to any of the other <span class="math inline">\(3\)</span> states, each with probability <span class="math inline">\(1/3\)</span>. So
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-                               \frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-                               \frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-                               \frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> By summing over all relevant paths of length two, calculate the two-step transition probabilities <span class="math inline">\(p_{11}(2)\)</span> and <span class="math inline">\(p_{12}(2)\)</span>. Hence, write down the two-step transition matrix <span class="math inline">\(\mathsf P(2)\)</span>.</p>
-<div class="myanswers">
-<p>The length-2 paths from 1 to 1 are <span class="math inline">\(1 \to k \to 1\)</span> for <span class="math inline">\(k = 2,3,4\)</span>, so
-<span class="math display">\[ p_{11}(2) = p_{12}p_{21} + p_{13}p_{31} + p_{14}p_{41} = \tfrac13 \tfrac13 +  \tfrac13 \tfrac13 + \tfrac13 \tfrac13 = \tfrac13  .   \]</span>
-The length-2 paths from 1 to 2 are <span class="math inline">\(1 \to 3 \to 2\)</span> and <span class="math inline">\(1 \to 4 \to 2\)</span>, so
-<span class="math display">\[ p_{12}(2) = p_{13}p_{32} + p_{14}p_{42} = \tfrac13 \tfrac13 + \tfrac13 \tfrac13 = \tfrac29 . \]</span></p>
-<p>By symmetry, <span class="math inline">\(p_{ii}(2) = p_{11}(2)\)</span> for all <span class="math inline">\(i\)</span>, and <span class="math inline">\(p_{ij}(2) = p_{12}(2)\)</span> for all <span class="math inline">\(i \neq j\)</span>. Therefore
-<span class="math display">\[ \mathsf P(2) = \begin{pmatrix} \frac13 &amp; \frac29 &amp; \frac29 &amp; \frac29 \\
-                               \frac29 &amp; \frac13 &amp; \frac29 &amp; \frac29 \\
-                               \frac29 &amp; \frac29 &amp; \frac13 &amp; \frac29 \\
-                               \frac29 &amp; \frac29 &amp; \frac29 &amp; \frac13 \end{pmatrix} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Check your answer by calculating the matrix square <span class="math inline">\(\mathsf P^2\)</span>.</p>
-<div class="myanswers">
-<p>We can verify that
-<span class="math display">\[ \mathsf P^2 = \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix}=
-\begin{pmatrix} \frac13 &amp; \frac29 &amp; \frac29 &amp; \frac29 \\
-\frac29 &amp; \frac13 &amp; \frac29 &amp; \frac29 \\
-\frac29 &amp; \frac29 &amp; \frac13 &amp; \frac29 \\
-\frac29 &amp; \frac29 &amp; \frac29 &amp; \frac13 \end{pmatrix} , \]</span>
-as above.</p>
-</div>
-</div>
-</div>
-</div>
-<div>
-<div class="figure" style="text-align: center"><span id="fig:testing"></span>
-<img src="math2750_files/figure-html/testing-1.png" alt="A tetrahedron" width="850em" />
-<p class="caption">
-Figure 6.4: A tetrahedron
-</p>
-</div>
-</div>
-</div>
-<div class="videowrap">
-<div class="videowrapper">
-<iframe src="https://www.youtube.com/embed/E3qMZ6gRA0k">
-</iframe>
-</div>
-</div>
-<div class="myq">
-<p><strong>3.</strong> Consider the two-state “broken printer” Markov chain, with state space <span class="math inline">\(\mathcal S = \{0,1\}\)</span>, transition matrix
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 1-\alpha &amp; \alpha \\
-                 \beta &amp; 1-\beta \end{pmatrix} \]</span>
-with <span class="math inline">\(0 &lt; \alpha, \beta &lt; 1\)</span>, and initial distribution <span class="math inline">\(\boldsymbol\lambda = (\lambda_0, \lambda_1)\)</span>. Write <span class="math inline">\(\mu_n =\mathbb P(X_n = 0)\)</span>.</p>
-<div class="subq">
-<p><strong>(a)</strong> By writing <span class="math inline">\(\mu_{n+1}\)</span> in terms of <span class="math inline">\(\mu_n\)</span>, show that we have
-<span class="math display">\[ \mu_{n+1} - \big(1-(\alpha+\beta)\big)\mu_n = \beta . \]</span></p>
-<div class="myanswers">
-<p>Using the law of total probability, we have
-<span class="math display">\[\begin{multline*}
-\mathbb P(X_{n+1} = 0) = \mathbb P(X_n = 0)\,\mathbb P(X_{n+1} = 0 \mid X_n = 0) \\
-+ \mathbb P(X_n = 1)\,\mathbb P(X_{n+1} = 0 \mid X_n = 1) ,
-\end{multline*}\]</span>
-which in terms of <span class="math inline">\((\mu_n)\)</span> is
-<span class="math display">\[ \mu_{n+1} = \mu_n (1-\alpha) + (1 - \mu_n)\beta . \]</span>
-We used here that <span class="math inline">\(\mathbb P(X_n = 1) = 1-\mu_n\)</span>.
-Rearranging this gives the answer.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> By solving this linear difference equation using the initial condition <span class="math inline">\(\mu_0 = \lambda_0\)</span>, or otherwise, show that
-<span class="math display">\[ \mu_n = \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n   . \]</span></p>
-<div class="myanswers">
-<p>The characteristic equation is <span class="math inline">\(\lambda - (1-(\alpha+\beta)) = 0\)</span> with a single root at <span class="math inline">\(\lambda = 1 - (\alpha+\beta)\)</span>. The general solution to the homogeneous equation is, therefore, <span class="math inline">\(A(1-(\alpha+\beta))^n\)</span>.</p>
-<p>For a particular solution, we guess a solution <span class="math inline">\(\mu_n = C\)</span>, and <span class="math inline">\(C - (1-(\alpha+\beta))C = \beta\)</span> gives <span class="math inline">\(C = \beta/(\alpha+\beta)\)</span>. Thus the general solution to the inhomogeneous equation is
-<span class="math display">\[ \mu_n = \frac{\beta}{\alpha+\beta} + A\big(1-(\alpha+\beta)\big)^n .\]</span></p>
-<p>From the initial condition, we get <span class="math inline">\(\lambda_0 = \beta/(\alpha+\beta) + A\)</span>, and therefore <span class="math inline">\(A = \lambda_0 - \beta/(\alpha+\beta)\)</span>. The solution is therefore as given.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> What, therefore, are <span class="math inline">\(\lim_{n\to\infty} \mathbb P(X_n = 0)\)</span> and <span class="math inline">\(\lim_{n\to\infty} \mathbb P(X_n = 1)\)</span>?</p>
-<div class="myanswers">
-<p>Note that <span class="math inline">\(-1 &lt; 1 - (\alpha + \beta) &lt; 1\)</span>, so <span class="math inline">\((1-(\alpha+\beta))^n \to 0\)</span>. Therefore we have
-<span class="math display">\[\begin{align*}
-\lim_{n\to\infty} \mathbb P(X_n = 0) &amp;= \lim_{n\to\infty} \mu_n \\
-&amp;= \lim_{n\to\infty} \left( \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n \right) \\
-&amp;= \frac{\beta}{\alpha+\beta} .
-\end{align*}\]</span>
-Since <span class="math inline">\(\mathbb P(X_n = 1) = 1- \mathbb P(X_n = 0)\)</span>, we have
-<span class="math display">\[ \mathbb P(X_n = 1) \to 1 - \frac{\beta}{\alpha+\beta} = \frac{\alpha}{\alpha+\beta} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(d)</strong> Explain what happens if the Markov chain is started in the distribution
-<span class="math display">\[ \lambda_0 = \frac{\beta}{\alpha+\beta} , \qquad \lambda_1 = \frac{\alpha}{\alpha+\beta}  . \]</span></p>
-<div class="myanswers">
-<p>Substituting in the value of <span class="math inline">\(\lambda_0\)</span> into the equation for <span class="math inline">\(\mu_n\)</span>, the second term cancel, and we have that <span class="math inline">\(\mathbb P(X_n = 0) = \mu_n = \beta/(\alpha+\beta)\)</span> for all times <span class="math inline">\(n\)</span>, and therefor <span class="math inline">\(\mathbb P(X_n = 1) = \alpha/(\alpha+\beta)\)</span> too. This means that the Markov chain remains in the same “stationary distribution” forever.</p>
-</div>
-</div>
-</div>
-<div class="myq">
-<p><strong>4.</strong> Let <span class="math inline">\((X_n)\)</span> be a Markov chain. Show that, for any <span class="math inline">\(m \geq 1\)</span>, we have
-<span class="math display">\[ \mathbb P(X_{n+m} = x_{n+m} \mid X_n = x_n, X_{n-1} = x_{n-1}, \dots, X_0 = x_0)  =  \mathbb P(X_{n+m} = x_{n+m} \mid X_n = x_n) . \]</span></p>
-<div class="myanswers">
-<p>Note that we have a sequence of statements here, for <span class="math inline">\(m = 1, 2, \dots\)</span>. Note also that the case <span class="math inline">\(m = 1\)</span> is the standard Markov property. When we have a sequence of statements and we can easily prove the first one, this is a good sign that a proof by induction is the way to go.</p>
-<p>Before starting, for reasons of space, we adopt notation where we suppress the capital <span class="math inline">\(X\)</span>s, so we want to show that
-<span class="math display">\[ \mathbb P(x_{n+m} \mid x_n, x_{n-1}, \dots, x_0 ) = \mathbb P(x_{n+m} \mid x_n) . \]</span></p>
-<p>We work by induction on <span class="math inline">\(m\)</span>. The base case <span class="math inline">\(m = 1\)</span> is the standard Markov property.</p>
-<p>Assume the inductive hypothesis: that result holds for <span class="math inline">\(m\)</span>. We now need to prove the inductive step: that the result holds for <span class="math inline">\(m+1\)</span>. For <span class="math inline">\(m+1\)</span> we have, by conditioning on the first step <span class="math inline">\(x_{n+1}\)</span>,
-<span class="math display">\[\begin{multline*} \mathbb P(x_{n+m+1} \mid x_n, x_{n-1}, \dots, x_0 ) \\
- = \sum_{x_{n+1}} \mathbb P(x_{n+1} \mid x_n, x_{n-1}, \dots, x_0 )\,\mathbb P(x_{n+m+1} \mid x_{n+1}, x_n, x_{n-1}, \dots, x_0 )     \end{multline*}\]</span>
-By the standard Markov property the first term simplifies to <span class="math inline">\(\mathbb P(x_{n+1} \mid x_n)\)</span>, and by the result for <span class="math inline">\(m\)</span> the second term simplifies to <span class="math inline">\(\mathbb P(x_{n+m+1} \mid x_{n+1})\)</span>. So we have
-<span class="math display">\[ \mathbb P(x_{n+m+1} \mid x_n, x_{n-1}, \dots, x_0 ) = \sum_{x_{n+1}} \mathbb P(x_{n+1} \mid x_n) \mathbb P(x_{n+m+1} \mid x_{n+1}) . \]</span>
-But the right-hand side here is <span class="math inline">\(\mathbb P(x_{n+m+1} \mid x_n)\)</span> written using conditioning on the first step and using the result for <span class="math inline">\(m\)</span>. By induction, we are done.</p>
-</div>
-</div>
-<div class="myq">
-<p><strong>5.</strong> A car insurance company operates a no-claims discount system for existing policy holders. The possible discounts on premiums are <span class="math inline">\(\{0\%,25\%,40\%,50\%\}\)</span>. Following a claim-free year, a policyholder’s discount level increases by one level (or remains at 50% discount). If the policyholder makes one or more claims in a year, the discount level decreases by one level (or remains at 0% discount).</p>
-<p>The insurer believes that the probability of of making at least one claim in a year is <span class="math inline">\(0.1\)</span> if the previous year was claim-free and <span class="math inline">\(0.25\)</span> if the previous year was not claim-free.</p>
-<div class="subq">
-<p><strong>(a)</strong> Explain why we cannot use <span class="math inline">\(\{0\%,25\%,40\%,50\%\}\)</span> as the state space of a Markov chain to model discount levels for policyholders.</p>
-<div class="myanswers">
-<p>The Markov property does not hold for the time-homogeneous process described since the probability of moving to a given state at the next time step is not simply dependent on the current state if <span class="math inline">\(\mathcal S=\{0\%,25\%,40\%,50\%\}\)</span>. For example,
+<div id="jump-holding" class="section level2" number="17.1">
+<h2><span class="header-section-number">17.1</span> Jump chain and holding times</h2>
+<p>In this section, we will start looking at general Markov processes in continuous time and discrete space. All our examples will be time homogeneous, in that the transition probabilities and transition rates will remain constant over time.</p>
+<p>We call these <strong>Markov jump processes</strong>, as we will wait in a state for a random holding time, and then we will suddenly “jump” to another state.</p>
+<p>The idea will be treat two matters separately:</p>
+<ul>
+<li><strong>where we jump too:</strong> This will be studied through the “jump chain”, a discrete time Markov chain that tells us <em>what</em> transitions are made (but not <em>when</em> they are made).</li>
+<li><strong>how long we wait until we jump:</strong> we call these the “holding times”. To preserve the Markov property, these holding times must have an exponential distribution, since this is the only random variable that has the <a href="#memoryless-thm">memoryless property</a>.</li>
+</ul>
+<p>Let us consider a Markov jump process <span class="math inline">\((X(t))\)</span> on a state space <span class="math inline">\(\mathcal S\)</span>. Suppose we are at a state <span class="math inline">\(i \in \mathcal S\)</span>. The <strong>rate</strong> at which we wish to jump to a state <span class="math inline">\(j \neq i\)</span> will be written <span class="math inline">\(q_{ij} \geq 0\)</span>. This means that, after a time with an exponential distribution <span class="math inline">\(\operatorname{Exp}(q_{ij})\)</span>, if the process has not jumped yet, it will jump to state <span class="math inline">\(j\)</span>.</p>
+<p>(We use the convention that if <span class="math inline">\(q_{ij} = 0\)</span> for some <span class="math inline">\(j \neq i\)</span>, this means we will never jump from <span class="math inline">\(i\)</span> to <span class="math inline">\(j\)</span>. If <span class="math inline">\(q_{ij} = 0\)</span> for <em>all</em> <span class="math inline">\(j \neq i\)</span>, then we stay in state <span class="math inline">\(i\)</span> forever.)</p>
+<p>So from state <span class="math inline">\(i\)</span>, there are many other states <span class="math inline">\(j\)</span> we could jump to, each waiting for a time <span class="math inline">\(\operatorname{Exp}(q_{ij})\)</span>. Which of these times will be up first, leading the process to jump to that state? And how long will it be until that first time is up and we move?
+The answer is given by Theorem <a href="S14-poisson-exponential.html#thm:exponential-thm">14.2</a>, which showed us the distribution of the minimum of the <span class="math inline">\(\operatorname{Exp}(q_{ij})\)</span>s is itself exponential, with rate
+<span class="math display">\[ q_i := \sum_{j \neq i} q_{ij} . \]</span>
+Further, and also from Theorem <a href="S14-poisson-exponential.html#thm:exponential-thm">14.2</a>, the probability that we move to some state <span class="math inline">\(j \neq i\)</span> is
+<span class="math display">\[ r_{ij} := \frac{q_{ij}}{\sum_{j \neq i} q_{ij}} = \frac{q_{ij}}{q_i} . \]</span>
+(These last two displayed equations define the quantities <span class="math inline">\(q_i\)</span> and <span class="math inline">\(r_{ij}\)</span>.)</p>
+<p>So, this is the crucial idea: from state <span class="math inline">\(i\)</span>, we wait for a holding time with distribution <span class="math inline">\(\operatorname{Exp}(q_i)\)</span>, then move to another state, choosing state <span class="math inline">\(j\)</span> with probability <span class="math inline">\(r_{ij}\)</span>.</p>
+<p>It will be convenient to write all the transition rates <span class="math inline">\(q_{ij}\)</span> down in a <strong>generator matrix</strong> <span class="math inline">\(\mathsf Q\)</span> defined as follows: the off-diagonal entries are <span class="math inline">\(q_{ij}\)</span>, for <span class="math inline">\(i \neq j\)</span>, and the diagonal entries are
+<span class="math display">\[ q_{ii} = - q_i = -\sum_{j \neq i} q_{ij} . \]</span>
+In particular, the off-diagonal entries are positive (or 0), the diagonal entries are negative (or 0) and each row adds up to 0.</p>
+<p>One convenient way to keep track of the movement of a continuous time Markov jump process will be to look at which states it jumps to, leaving the holding times for later consideration. That is, we can consider the discrete time <strong>jump Markov chain</strong> (or just <strong>jump chain</strong>) <span class="math inline">\((Y_n)\)</span> associated with <span class="math inline">\((X(t))\)</span> given by
+<span class="math inline">\(Y_0 = X(0)\)</span> and
+<span class="math display">\[ Y_n = \text{state of $X(t)$ just after the $n$th jump.} \]</span>
+This is a discrete time Markov chain that starts from the same place <span class="math inline">\(Y_0 = X(0)\)</span> as <span class="math inline">\((X(t))\)</span> does, and has transitions given by <span class="math inline">\(r_{ij} = q_{ij}/q_i\)</span>. (The jump chain cannot move from a state to itself.)</p>
+<p>Once we know where the jump process will move, we then know what the next holding time will be: from state <span class="math inline">\(j\)</span>, the holding time will be <span class="math inline">\(\operatorname{Exp}(q_j)\)</span></p>
+<p>We can some all this up in the following (rather long-winded) formal definition.</p>
+<div class="definition">
+<p><span id="def:CTMC" class="definition"><strong>Definition 17.1  </strong></span> </p>
+<ul>
+<li>Let <span class="math inline">\(\mathcal S\)</span> be a set, and <span class="math inline">\(\boldsymbol\lambda\)</span> a distribution on <span class="math inline">\(\mathcal S\)</span>.</li>
+<li>Let <span class="math inline">\(\mathsf Q = (q_{ij} : i,j \in \mathcal S)\)</span> be a matrix where <span class="math inline">\(q_{ij} \geq 0\)</span> for <span class="math inline">\(i \neq j\)</span> and <span class="math inline">\(\sum_j q_{ij} = 0\)</span>, and write <span class="math inline">\(q_{ii} = -q_i = - \sum_{j \neq i} q_{ij}\)</span>.</li>
+<li>Define <span class="math inline">\(\mathsf R = (r_{ij} : i,j \in \mathcal S)\)</span> as follows: for <span class="math inline">\(i\)</span> such that <span class="math inline">\(q_i \neq 0\)</span>, write <span class="math inline">\(r_{ij} = q_{ij}/q_i\)</span> for <span class="math inline">\(j \neq i\)</span>, and <span class="math inline">\(r_{ii}= 0\)</span>; and for <span class="math inline">\(i\)</span> such that <span class="math inline">\(q_i = 0\)</span>, write <span class="math inline">\(r_{ij} = 0\)</span> for <span class="math inline">\(j \neq i\)</span>, and <span class="math inline">\(r_{ii} = 1\)</span>.</li>
+</ul>
+<p>We wish to define the <strong>Markov jump process</strong> on a state space <span class="math inline">\(\mathcal S\)</span> with generator matrix <span class="math inline">\(\mathsf Q\)</span> and initial distribution <span class="math inline">\(\boldsymbol\lambda\)</span>.</p>
+<ul>
+<li>The <strong>jump chain</strong> <span class="math inline">\((Y_n)\)</span> is the discrete time Markov chain on <span class="math inline">\(\mathcal S\)</span> with initial distribution <span class="math inline">\(\boldsymbol\lambda\)</span> and transition matrix <span class="math inline">\(\mathsf R\)</span>.</li>
+<li>The <strong>holding times</strong> <span class="math inline">\(T_1, T_2, \dots\)</span> have distribution <span class="math inline">\(T_n \sim \operatorname{Exp}(q_{Y_{n-1}})\)</span>, and are conditionally independent given <span class="math inline">\((Y_n)\)</span>.</li>
+<li>The <strong>jump times</strong> are <span class="math inline">\(J_n = T_1 + T_2 + \cdots + T_n\)</span>.</li>
+</ul>
+<p>Then (at last!) the Markov jump process <span class="math inline">\((X(t))\)</span> is defined by
 <span class="math display">\[
-    \mathbb P(X_{n+1}=25\% \mid X_n= 40\% )=\begin{cases} 
-    0.25 &amp; \text{if $X_{n-1}=50\%$}\\
-    0.1 &amp; \text{if $X_{n-1}=25\%$.} \end{cases} \]</span></p>
+    X(t) = \begin{cases} Y_0 &amp; \text{for }t &lt; J_1 \\
+                         Y_n &amp; \text{for }J_n \leq t &lt; J_{n+1} .\end{cases}  \]</span></p>
 </div>
 </div>
-<div class="subq">
-<p><strong>(b)</strong> By considering additional states, show that a Markov chain can be used to model the discount level.</p>
-<div class="myanswers">
-<p>The problem is that the process has a memory of the previous year.
-If we currently have a discount of 0%, we know a claim was made in the year before, so no changes are required. Similarly, at 50% discount, we know that no claim was made in the previous year. The other two states, 25% and 40%, have different behaviour depending on whether or not there was a claim in the previous year.</p>
-<p>So we will split each of these into two states: 25+ will denote a 25% discount with no claim in the previous year, while 25- will denote a 25% discount with a claim in the previous year. We define the state 40+ and 40- similarly. Then we have a Markov chain, since the current state and the number of claims in the previous year completely defines the distribution on future behaviour.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Draw the transition diagram and write down the transition matrix.</p>
-<div class="myanswers">
-<p>The transition diagram is as shown below.</p>
-<div class="figure" style="text-align: center"><span id="fig:fortyplus"></span>
-<img src="math2750_files/figure-html/fortyplus-1.png" alt="Transition diagram for the car insurance Markov chain" width="480" />
+<div id="CTMC-examples" class="section level2" number="17.2">
+<h2><span class="header-section-number">17.2</span> Examples</h2>
+<div class="example">
+<p><span id="exm:three-state" class="example"><strong>Example 17.1  </strong></span>Consider the Markov jump process on a state space <span class="math inline">\(\mathcal S = \{1,2,3\}\)</span> with transition rates as illustrated in the following transition rate diagram. (Note that a transition rate diagram never has arrows from a state to itself.)</p>
+<div class="figure" style="text-align: center"><span id="fig:ctmc1"></span>
+<img src="math2750_files/figure-html/ctmc1-1.png" alt="Transition diagram for a continuous Markov jump process." width="288" />
 <p class="caption">
-Figure 6.5: Transition diagram for the car insurance Markov chain
+Figure 17.1: Transition diagram for a continuous Markov jump process.
 </p>
 </div>
-<p>The transition matrix is given by,
-<span class="math display">\[ \mathsf P = 
-    \begin{matrix}
-    &amp; \begin{matrix} 
-        0 &amp; 25+ &amp; 25- &amp; 40+ &amp; 40- &amp; 50
-      \end{matrix} \\
-    \begin{matrix}
-      0 \\ 25+ \\ 25- \\ 40+ \\ 40- \\ 50
-    \end{matrix}
-    &amp;
-    \begin{pmatrix}
-    0.25 &amp; 0.75 &amp; 0    &amp; 0    &amp; 0   &amp; 0    \\
-      0.1  &amp; 0    &amp; 0    &amp; 0.9  &amp; 0   &amp; 0    \\
-      0.25 &amp; 0    &amp; 0    &amp; 0.75 &amp; 0   &amp; 0    \\
-      0    &amp; 0    &amp; 0.1  &amp; 0    &amp; 0   &amp; 0.9  \\
-      0    &amp; 0    &amp; 0.25 &amp; 0    &amp; 0   &amp; 0.75 \\
-      0    &amp; 0    &amp; 0    &amp; 0    &amp; 0.1 &amp; 0.9 
-    \end{pmatrix}
-    \end{matrix}
-    \]</span></p>
+<p>The generator matrix is
+<span class="math display">\[ \mathsf Q = \begin{pmatrix} -2 &amp; 2 &amp; 0 \\
+ 1 &amp; -3 &amp; 2 \\
+ 0 &amp; 1 &amp; -1 \end{pmatrix} , \]</span>
+where the off-diagonal entries are the rates from the diagram, and the diagonal entries are chosen to make sure the rows add up to 0.</p>
+<p>The transition matrix of the jump chain is
+<span class="math display">\[ \mathsf R = \begin{pmatrix} 0 &amp; 1 &amp; 0 \\
+ \frac13 &amp; 0 &amp; \frac23 \\
+ 0 &amp; 1 &amp; 0 \end{pmatrix} , \]</span>
+where we set the diagonal elements equal to 0, then normalize each row so that it adds up to 1.</p>
+<p>So, for example, starting from state 2, we wait for a holding time <span class="math inline">\(T_1 \sim \operatorname{Exp}(q_2) = \operatorname{Exp}(-q_{22}) = \operatorname{Exp}(3)\)</span>. We then move to state 1 with probability <span class="math inline">\(r_{21} = q_{21}/q_2 = \frac13\)</span> and to state 3 with probability <span class="math inline">\(r_{23} = q_{23}/q_2 = \frac23\)</span>.</p>
+<p>Suppose we move to state 1. Then we stay in state 1 for a time <span class="math inline">\(\operatorname{Exp}(q_1) = \operatorname{Exp}(2)\)</span>, before moving with certainty back to state 2. And so on.</p>
+</div>
+<div class="example">
+<p><span id="exm:ABC" class="example"><strong>Example 17.2  </strong></span>Consider the Markov jump process with state space <span class="math inline">\(\mathcal S = \{A,B,C\}\)</span> and this transition rate diagram.</p>
+<div class="figure" style="text-align: center"><span id="fig:ctmc2"></span>
+<img src="math2750_files/figure-html/ctmc2-1.png" alt="Transition diagram for a continuous Markov jump process with an absorbing state." width="288" />
+<p class="caption">
+Figure 17.2: Transition diagram for a continuous Markov jump process with an absorbing state.
+</p>
+</div>
+<p>The generator matrix is
+<span class="math display">\[ \mathsf Q = \begin{pmatrix} -q_A &amp; q_{AB} &amp; q_{AC} \\
+ q_{BA} &amp; -q_B &amp; q_{BC} \\
+ 0 &amp; 0 &amp; 0\end{pmatrix} , \]</span>
+where <span class="math inline">\(q_A = q_{AB} + q_{AC}\)</span> and <span class="math inline">\(q_B = q_{BA} + q_{BC}\)</span>.
+Here, state C is an absorbing state, so if we ever reach it, we stay there forever. So the jump chain has transition rates
+<span class="math display">\[ \mathsf R = \begin{pmatrix} 0 &amp; q_{AB}/q_A &amp; q_{AC}/q_A \\
+ q_{BA}/q_B &amp; 0 &amp; q_{BC}/q_B \\
+ 0 &amp; 0 &amp; 1 \end{pmatrix} . \]</span></p>
+</div>
+<div class="example">
+<p><span id="exm:PP-CTMC" class="example"><strong>Example 17.3  </strong></span>The Poisson process with rate <span class="math inline">\(\lambda\)</span> has state space <span class="math inline">\(\mathcal S = \mathbb Z_+ = \{0,1,2,\dots\}\)</span>. The transition rates from <span class="math inline">\(i\)</span> to <span class="math inline">\(i+1\)</span> are
+<span class="math inline">\(q_{i,i+1} = \lambda\)</span>, and all other transition rates are 0. So the generator matrix is
+<span class="math display">\[ \mathsf Q = \begin{pmatrix} -\lambda &amp; \lambda &amp; 0 &amp; 0 &amp;  \\
+ 0 &amp; -\lambda &amp; \lambda &amp; 0 &amp;   \\
+0 &amp; 0 &amp; -\lambda &amp; \lambda &amp;   \\ 
+ &amp; &amp; &amp; \ddots &amp; \ddots \\ 
+ \end{pmatrix}.
+\]</span>
+The jump chain is very boring: it starts from 0 and moves with certainty to 1, then with certainty to 2, then to 3, and so on.</p>
 </div>
 </div>
-</div>
-<div class="myq">
-<p><strong>6.</strong> The credit rating of a company can be modelled as a Markov chain. Assume the rating is assessed once per year at the end of the year and possible ratings are A (good), B (fair) and D (in default). The transition matrix is
-<span class="math display">\[\mathsf P=\begin{pmatrix} 0.92&amp;0.05&amp;0.03\\
-0.05&amp;0.85&amp;0.1\\
-0&amp;0&amp;1 \end{pmatrix} . \]</span></p>
-<div class="subq">
-<p><strong>(a)</strong> Calculate the two-step transition probabilities, and hence find the expected number of defaults in the next two years from <span class="math inline">\(100\)</span> companies all rated A at the start of the period.</p>
-<div class="myanswers">
-<p>The matrix of two-step transition probabilities is given by the matrix square
-<span class="math display">\[\mathsf P(2) = \mathsf P^2= \begin{pmatrix} 0.8489&amp;0.0885&amp;0.0626\\
-0.0885&amp;0.7250&amp;0.1865\\
-0&amp;0&amp;1 \end{pmatrix}. \]</span>
-The number of defaults in two years from <span class="math inline">\(100\)</span> A-rated companies is <span class="math inline">\(100 \times p_{\mathrm{AD}}(2) = 100 \times 0.0626 = 6.26\)</span>.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> What is the probability that a company rated A will at some point default without ever having been rated B in the meantime?</p>
-<div class="myanswers">
-<p>Let <span class="math inline">\(\delta\)</span> be the desired probability that an A-rated company will default without having been rated B. We condition on the first step: with probability <span class="math inline">\(0.92\)</span> we remain in state A, and by the Markov property the probability of the given event remains at <span class="math inline">\(\delta\)</span>; with probability <span class="math inline">\(0.05\)</span> we move to state B, and the event fails to occur; and with probability <span class="math inline">\(0.03\)</span> we move to state D and the event occurs immediately. Therefore, we have
-<span class="math display">\[ \delta = 0.92\delta + 0.05\times 0 + 0.03 \times 1 = 0.92\delta + 0.03 ,  \]</span>
-which has solution <span class="math inline">\(\delta = 0.03/(1-0.92) = 0.375\)</span>.</p>
-</div>
-</div>
-<p>A corporate bond portfolio manager follows an investment strategy which means that bonds which fall from A-rated to B-rated are sold and replaced with an A-rated bond. The manager believes this will improve the returns on the portfolio because it will reduce the number of defaults experienced.</p>
-<div class="subq">
-<p><strong>(c)</strong> Calculate the expected number of defaults in the manager’s portfolio over the next two years given there are initially 100 A-rated bonds.</p>
-<div class="myanswers">
-<p>Given that B-rated bonds are replaced by A-rated bonds, we have a new Markov chain with state space <span class="math inline">\(\{\mathrm{A},\mathrm{D}\}\)</span> and transition matrix
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0.92+0.05 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} =  \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} .  \]</span>
-The two-step transition probability is
-<span class="math display">\[ \mathsf P(2) = \mathsf P^2 =  \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} = \begin{pmatrix} 0.9409 &amp; 0.0591 \\ 0 &amp; 1 \end{pmatrix} .  \]</span>
-Thus the number of defaults from <span class="math inline">\(100\)</span> A-rated bonds in two years is <span class="math inline">\(100\times p_{\mathrm{AD}}(2) = 100\times 0.0591 = 5.91\)</span>. The manager was right: this is slightly less than the <span class="math inline">\(6.26\)</span> from part (a).</p>
-</div>
-</div>
+<div id="a-brief-note-on-explosion" class="section level2" number="17.3">
+<h2><span class="header-section-number">17.3</span> A brief note on explosion</h2>
+<p>There is one point we have to be a little careful about with when dealing with continuous time processes with an infinite state space – the potential of “explosion”. <strong>Explosion</strong> is when the process can get arbitrarily large in finite time. Think, for example, of a birth process with birth rates <span class="math inline">\(\lambda_j = \lambda j^2\)</span>. The <span class="math inline">\(n\)</span>th birth is expected to be occur at time
+<span class="math display">\[ \sum_{j=1}^n \frac{1}{\lambda_j} = \frac{1}{\lambda} \sum_{j=1}^n \frac{1}{n^2} . \]</span>
+But this has a finite limit as <span class="math inline">\(n \to \infty\)</span>, meaning we expect to get infinitely many births in a finite amount of time.</p>
+<p>When explosion happens, it can then be rather difficult to define what’s going on. In that birth process, for example, the state space is <span class="math inline">\(\mathcal S = \mathbb Z_+\)</span>; but after some finite time, we have <span class="math inline">\(X(t) &gt; j\)</span> for all <span class="math inline">\(j \in \mathcal S\)</span> – so what state <em>is</em> the process in?</p>
+<p>Although there are often technical fixes that can get around this problem (doing things like creating an “infinity” state, or restarting the process from <span class="math inline">\(X(0)\)</span> again), we will not concern ourselves with them here. We shall normally deal with finite state spaces, where explosion is not a concern. When we do use infinite state space models (such as birth processes, for example), we shall only look at examples that explode with probability 0.</p>
+<div class="mysummary">
+<p><strong>In the next section</strong>, we look at how to find the transition probilities <span class="math inline">\(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\)</span>, which are the equivalents to the <span class="math inline">\(n\)</span>-step transition probabilities in discrete time.</p>
 </div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="S06-examples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="S07-classes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="P08.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="S18-forward-backward.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -203,6 +203,7 @@
 <li class="chapter" data-level="16.1" data-path="S16-counting-processes.html"><a href="S16-counting-processes.html#birth-processes"><i class="fa fa-check"></i><b>16.1</b> Birth processes</a></li>
 <li class="chapter" data-level="16.2" data-path="S16-counting-processes.html"><a href="S16-counting-processes.html#TIPP"><i class="fa fa-check"></i><b>16.2</b> Time inhomogeneous Poisson processes</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="P08.html"><a href="P08.html"><i class="fa fa-check"></i>Problem Sheet 8</a></li>
 <li class="chapter" data-level="" data-path="computing.html"><a href="computing.html"><i class="fa fa-check"></i>Computational worksheets</a>
 <ul>
 <li class="chapter" data-level="" data-path="computing.html"><a href="computing.html#C-about"><i class="fa fa-check"></i>About the computational worksheets</a></li>
@@ -243,13 +244,13 @@
 <p>Let <span class="math inline">\((X(t))\)</span> be a stochastic processes counting some arrivals over time. Consider the number of arrivals in a very small time period of length <span class="math inline">\(\tau\)</span>; that number of arrivals is <span class="math inline">\(X(t+\tau) - X(t)\)</span>. The following (seemingly) weak assumptions seem justified:</p>
 <ul>
 <li>It’s quite likely that there will be no arrivals in the very small time period.</li>
-<li>It is possible there will be an arrival, and that probability will be proportional to the length <span class="math inline">\(\tau\)</span> of the time period.</li>
+<li>It is possible there will be one arrival, and that probability will be roughly proportional to the length <span class="math inline">\(\tau\)</span> of the time period.</li>
 <li>It’s extremely unlikely there will be two or more arrivals in such a short time period.</li>
 </ul>
 <p>To write this down formally in maths, we will consider <span class="math inline">\(\mathbb P(X(t+\tau) - X(t) = j)\)</span> as the length <span class="math inline">\(\tau\)</span> of the time period tends to zero.</p>
-<p>It will be helpful for us to use “little-<span class="math inline">\(o\)</span>” notation. Here <span class="math inline">\(o(\tau)\)</span> means a term that is of “lower order” compared to <span class="math inline">\(\tau\)</span>. Specifically, <span class="math inline">\(o(\tau)\)</span> stands for a function of <span class="math inline">\(\tau\)</span> that tends to <span class="math inline">\(0\)</span> as <span class="math inline">\(\tau \to 0\)</span> even when divided by <span class="math inline">\(\tau\)</span>. That is,
-<span class="math display">\[ f(\tau) = o(\tau) \qquad \iff \qquad \frac{f(\tau)}{\tau} \to 0 \quad \text{as $\tau \to 0$.}  \]</span>
-Then our suggestions above translate to
+<p>It will be helpful for us to use “little-<span class="math inline">\(o\)</span>” notation. Here <span class="math inline">\(o(\tau)\)</span> means a term that is of “lower order” compared to <span class="math inline">\(\tau\)</span>. These are terms like <span class="math inline">\(\tau^2\)</span> or <span class="math inline">\(\tau^3\)</span> that are so tiny that we’re safe to ignore them. Formally, <span class="math inline">\(o(\tau)\)</span> stands for a function of <span class="math inline">\(\tau\)</span> that tends to <span class="math inline">\(0\)</span> as <span class="math inline">\(\tau \to 0\)</span> even when divided by <span class="math inline">\(\tau\)</span>. That is,
+<span class="math display">\[ f(\tau) = o(\tau) \qquad \iff \qquad \frac{f(\tau)}{\tau} \to 0 \quad \text{as $\tau \to 0$.}  \]</span></p>
+<p>Then our suggestions above translate to
 <span class="math display" id="eq:tau">\[\begin{equation} \mathbb P \big(X(t+\tau) - X(t) = j\big) = \begin{cases} 1 - \lambda \tau + o(\tau) &amp; \text{if $j = 0$,} \\
 \lambda\tau + o(\tau) &amp; \text{if $j = 1$,} \\
 o(\tau) &amp; \text{if $j \geq 2$.} \end{cases} \tag{15.1} \end{equation}\]</span>
@@ -273,14 +274,16 @@ as <span class="math inline">\(\tau \to 0\)</span>.</p>
 <p>We have
 <span class="math display">\[\begin{align*}\mathbb P\big( Z(t+\tau) - Z(t) = 0 \big) &amp;= \mathbb P\big( X(t+\tau) - X(t) = 0 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 0 \big) \\ &amp;=\big(1 - \lambda \tau + o(\tau) \big)\big(1 - \mu \tau + o(\tau) \big) \\
 &amp;= 1 - (\lambda + \mu)\tau + o(\tau) , \end{align*}\]</span>
-since <span class="math inline">\(Z\)</span> does not increase provided neither <span class="math inline">\(X\)</span> nor <span class="math inline">\(Y\)</span> increases. We also have
+since <span class="math inline">\(Z\)</span> does not increase provided neither <span class="math inline">\(X\)</span> nor <span class="math inline">\(Y\)</span> increases.</p>
+<p>We also have
 <span class="math display">\[\begin{align*}\mathbb P\big( Z(t+{}&amp;\tau) - Z(t) = 1 \big) \\
 &amp;= \mathbb P\big( X(t+\tau) - X(t) = 1 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 0 \big) \\ &amp;\qquad {}+ \mathbb P\big( X(t+\tau) - X(t) = 0 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 1 \big) \\
 &amp;= \big(\lambda \tau + o(\tau) \big)\big(1 - \mu \tau + o(\tau) \big) + \big(1 - \lambda \tau + o(\tau) \big)\big(\mu \tau + o(\tau) \big) \\
 &amp;= (\lambda + \mu)\tau + o(\tau) , \end{align*}\]</span>
-since <span class="math inline">\(Z\)</span> increases by 1 if either <span class="math inline">\(X\)</span> increases by 1 and <span class="math inline">\(Y\)</span> stays fixed or vice versa. We used here that the probability that <em>both</em> <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> increase is of order <span class="math inline">\(\tau^2 = o(\tau)\)</span>. Finally, since probabilities must add up to 1, we must have
+since <span class="math inline">\(Z\)</span> increases by 1 if either <span class="math inline">\(X\)</span> increases by 1 and <span class="math inline">\(Y\)</span> stays fixed or vice versa. We used here that the probability that <em>both</em> <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> increase is of order <span class="math inline">\(\tau^2 = o(\tau)\)</span>.</p>
+<p>Finally, since probabilities must add up to 1, we must have
 <span class="math display">\[ \mathbb P\big( Z(t+\tau) - Z(t) \geq 2 \big) =  o(\tau) . \]</span></p>
-<p>But what we have written down is precisely the infinitesimals definition of a Poisson process with rate <span class="math inline">\(\lambda + \mu\)</span>.</p>
+<p>But what we have written down is precisely the infinitesimals definition of a Poisson process with rate <span class="math inline">\(\lambda + \mu\)</span>, so we are done.</p>
 </div>
 <div id="forward" class="section level2" number="15.3">
 <h2><span class="header-section-number">15.3</span> Forward equations and proof of equivalence</h2>
@@ -305,8 +308,8 @@ After rearranging to get an increment and sending <span class="math inline">\(\t
 with the initial condition <span class="math inline">\(p_0(0) = 1\)</span>, since we always start at 0.</p>
 <p>In summary, we have derived the following equations:
 <span class="math display">\[\begin{align*}
-   p&#39;_0(t) &amp;= -\lambda p_0(t) &amp; \hspace{-1.5cm} p_0(0) &amp; = 1 ,\\
-   p&#39;_j(t) &amp;= -\lambda p_j(t) + \lambda p_{j-1}(t) &amp; \hspace{-1.5cm} p_j(0) &amp;= 0 \quad \text{for $j \geq 1$} .
+   p&#39;_0(t) &amp;= -\lambda p_0(t) &amp; p_0(0) &amp; = 1 ,\\
+   p&#39;_j(t) &amp;= -\lambda p_j(t) + \lambda p_{j-1}(t) &amp;  p_j(0) &amp;= 0 \quad \text{for $j \geq 1$} .
 \end{align*}\]</span>
 These are called the <strong>Kolmogorov forward equations</strong>.</p>
 <p>We claim that the solution to these equations is the Poisson distribution

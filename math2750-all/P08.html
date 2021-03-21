@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Problem sheet 3 | MATH2750 Introduction to Markov Processes</title>
+  <title>Problem Sheet 8 | MATH2750 Introduction to Markov Processes</title>
   <meta name="description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Problem sheet 3 | MATH2750 Introduction to Markov Processes" />
+  <meta property="og:title" content="Problem Sheet 8 | MATH2750 Introduction to Markov Processes" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://mpaldridge.github.io/math2750/" />
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Problem sheet 3 | MATH2750 Introduction to Markov Processes" />
+  <meta name="twitter:title" content="Problem Sheet 8 | MATH2750 Introduction to Markov Processes" />
   
   <meta name="twitter:description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="S06-examples.html"/>
-<link rel="next" href="S07-classes.html"/>
+<link rel="prev" href="S16-counting-processes.html"/>
+<link rel="next" href="S17-continuous-time.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -242,14 +242,16 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="P03" class="section level1 unnumbered">
-<h1>Problem sheet 3</h1>
+<div id="P08" class="section level1 unnumbered">
+<h1>Problem Sheet 8</h1>
+<!--
 <style>
 .fold-btn { 
   float: right; 
   margin: -12px 0 0 0;
 }
 </style>
+
 <script type="text/javascript">
 $(document).ready(function() {
   $folds = $(".myanswers");
@@ -262,6 +264,7 @@ $(document).ready(function() {
   })
 });
 </script>
+-->
 <!--
 <style>
 .myanswers { 
@@ -270,268 +273,137 @@ display: none !important;
 </style>
 -->
 <div class="mysummary">
-<p>You should attempt all these questions and write up your solutions in advance of your workshop in week 4 (Monday 15 or Tuesday 16 February) where the answers will be discussed.</p>
+<p>You should attempt all these questions and write up your solutions in advance of your workshop in week 9 (Monday 22 or Tuesday 23 March) where the answers will be discussed.</p>
 </div>
 <div class="myq">
-<p><strong>1.</strong> Consider a Markov chain with state space <span class="math inline">\(\mathcal S = \{1,2,3\}\)</span>, and transition matrix partially given by
-<span class="math display">\[ \mathsf P = \begin{pmatrix} ? &amp; 0.3 &amp; 0.3 \\ 0.2 &amp; 0.4 &amp; ? \\ ? &amp; ? &amp; 1 \end{pmatrix} . \]</span></p>
+<p><strong>1.</strong>Let <span class="math inline">\((X(t))\)</span> be a Poisson process with rate <span class="math inline">\(\lambda\)</span>.</p>
 <div class="subq">
-<p><strong>(a)</strong> Replace the four question marks by the appropriate transition probabilities.</p>
+<p><strong>(a)</strong> Fix <span class="math inline">\(n\)</span>. What is the expected time between the <span class="math inline">\(n\)</span>th arrival and the <span class="math inline">\((n+1)\)</span>th arrival?</p>
 <div class="myanswers">
-<p><em>Solution.</em> Rows must add up to 1 and every entry must be non-negative, so the transition matrix is
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0.4 &amp; 0.3 &amp; 0.3 \\ 0.2 &amp; 0.4 &amp; 0.4 \\ 0 &amp; 0 &amp; 1 \end{pmatrix} . \]</span></p>
+<p><em>Solution.</em> The waiting time is <span class="math inline">\(\operatorname{Exp}(\lambda)\)</span> with mean <span class="math inline">\(1/\lambda\)</span>.</p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(b)</strong> Draw a transition diagram for this Markov chain.</p>
+<p><strong>(b)</strong> Fix <span class="math inline">\(t\)</span>. What is the expected time between the previous arrival before <span class="math inline">\(t\)</span> and the next arrival after <span class="math inline">\(t\)</span>?</p>
 <div class="myanswers">
-<p><em>Solution.</em></p>
-<div class="figure" style="text-align: center"><span id="fig:Q31"></span>
-<img src="math2750_files/figure-html/Q31-1.png" alt="Transition diagram for Question 1." width="384" />
-<p class="caption">
-Figure 6.3: Transition diagram for Question 1.
-</p>
-</div>
+<p><em>Solution.</em> The time between the arrivals is <span class="math inline">\(S + T\)</span>, where <span class="math inline">\(S\)</span> is the time backwards from <span class="math inline">\(t\)</span> since the previous arrival, and <span class="math inline">\(T\)</span> is the time forwards from <span class="math inline">\(t\)</span> until thenext arrival. By the memoryless property of the exponential distribution, <span class="math inline">\(T \sim \operatorname{Exp}(\lambda)\)</span>, with mean <span class="math inline">\(1/\lambda\)</span>. What about <span class="math inline">\(S\)</span>? We have
+<span class="math display">\[ \mathbb P(S &gt; s) = \mathbb P\big(\text{no arrivals in }[t-s,t]\big) = \exp{-\lambda s} \frac{(\lambda s)^0}{0!} = \exp{-\lambda s} , \]</span>
+which is itself is the tail probability of another <span class="math inline">\(\operatorname{Exp}(\lambda)\)</span> distribution, so <span class="math inline">\(S \sim \operatorname{Exp}(\lambda)\)</span> with mean <span class="math inline">\(1/\lambda\)</span> too.
+Hence
+<span class="math display">\[ \mathbb E(S + T) = \frac1\lambda + \frac1\lambda = \frac2\lambda .\]</span></p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(c)</strong> Find the matrix <span class="math inline">\(\mathsf P(2)\)</span> of two-step transition probabilities.</p>
+<p><strong>(c)</strong> Your answers to the previous two questions should be different. Explain why one should expect the second answer to be bigger than the first.</p>
 <div class="myanswers">
-<p><em>Solution.</em> <span class="math inline">\({\displaystyle \mathsf P(2) = \mathsf P^2 = \begin{pmatrix} 0.22 &amp; 0.24 &amp; 0.54 \\ 0.16 &amp; 0.22 &amp; 0.62 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}}\)</span></p>
+<p><em>Solution.</em> Imagine the arrivals being placed on the real line – some with big gaps between them, and some with small gaps between them. If we then place the time <span class="math inline">\(t\)</span>, it is more likely to be placed in one of the large gaps than one of the small ones, because each large gap fills up more of the line than a small one. Hence the size of the gap surrounding the given point <span class="math inline">\(t\)</span> is “size-biased”, and is larger than a unfirotmly randomly chosen gap.</p>
 </div>
 </div>
+</div>
+<div class="myq">
+<p><strong>2.</strong> Let <span class="math inline">\(X(t)\)</span> be a Poisson process with rate <span class="math inline">\(\lambda\)</span>, and mark each arrival independently with probability <span class="math inline">\(p\)</span>. Use the infinitesimals definition to show that the marked process is a Poisson process with rate <span class="math inline">\(p\lambda\)</span>.</p>
+<div class="myanswers">
+<p><em>Solution.</em>
+Let <span class="math inline">\(Y(t)\)</span> be the marked process Consider an infinitesimal increment <span class="math inline">\(Y(t + \tau) - Y(t)\)</span> as <span class="math inline">\(\tau \to 0\)</span>. We have one arrival in <span class="math inline">\((Y(t))\)</span> if there was one arrival for <span class="math inline">\((X(t))\)</span> and it was marked – all other possibilities rely on extra arrivals in <span class="math inline">\((X(t))\)</span>, so have lower order probability – giving
+<span class="math display">\[ \mathbb P \big( Y(t + \tau) - Y(t) = 1\big) = p\lambda t + o (\tau) .   \]</span>
+We have no arrivals in <span class="math inline">\((Y(t))\)</span> if there were no arrivals in <span class="math inline">\((X(t))\)</span>, there was one arrival that was unmarked, or lower order terms, giving
+<span class="math display">\[ \mathbb P \big( Y(t + \tau) - Y(t) = 0 \big) = 1 - \lambda t + (1-p)\lambda t + o(\tau) = 1 - p\lambda t + o(\tau)  .   \]</span>
+Larger increments in <span class="math inline">\((Y(t))\)</span> require larger increments in <span class="math inline">\((X(t))\)</span>, so
+<span class="math display">\[ \mathbb P \big( Y(t + \tau) - Y(t) \geq 2 \big) = o(\tau) . \]</span>
+Since we have <span class="math inline">\(Y(0) = 0\)</span> and independent increments, we have written down precisely the infinitesimal increments definition of a Poisson process with rate <span class="math inline">\(p\lambda\)</span>.</p>
+</div>
+</div>
+<div class="myq">
+<p><strong>3.</strong> Let <span class="math inline">\((X(t))\)</span> be a simple birth process with rates <span class="math inline">\(\lambda_j = \lambda j\)</span> starting from <span class="math inline">\(X(0)=1\)</span>. Let <span class="math inline">\(p_j(t) = \mathbb P(X(t) = j)\)</span>.</p>
 <div class="subq">
-<p><strong>(d)</strong> By summing the probabilities of all relevant paths, find the three-step transition probability <span class="math inline">\(p_{13}(3)\)</span>.</p>
+<p><strong>(a)</strong> Write down the Kolmogorov forward equations for <span class="math inline">\(p_j(t)\)</span>. You should have separate equations for <span class="math inline">\(j = 1\)</span> and <span class="math inline">\(j \geq 2\)</span>. Remember to include the initial conditions <span class="math inline">\(p_j(0)\)</span>.</p>
 <div class="myanswers">
-<p><em>Solution.</em> There are seven relevant paths: <span class="math inline">\(1 \to 1 \to 1 \to 3\)</span>, <span class="math inline">\(1 \to 1 \to 2 \to 3\)</span>, <span class="math inline">\(1 \to 1 \to 3 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 1 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 2 \to 3\)</span>, <span class="math inline">\(1 \to 2 \to 3 \to 3\)</span>, and <span class="math inline">\(1 \to 3 \to 3 \to 3\)</span>. So
+<p><em>Solution.</em>
+From Section <a href="S16-counting-processes.html#birth-processes">16.1</a> of the notes, and putting <span class="math inline">\(\lambda_j = \lambda j\)</span>, the forward equations are
 <span class="math display">\[\begin{align*}
-p_{13}(3) &amp;= p_{11}p_{11}p_{11}p_{13} + p_{11}p_{12}p_{23} + p_{11}p_{13}p_{33}  + p_{12} p_{21} p_{13}\\
-&amp; \qquad{}+ p_{12}p_{22}p_{23} + p_{12}p_{23}p_{33} + p_{13}p_{33}p_{33}\\
-&amp; = 0.4 \cdot 0.4 \cdot 0.3 + 0.4\cdot 0.3\cdot 0.4 + 0.4\cdot 0.3 \cdot 1 + 0.3 \cdot 0.2 \cdot 0.3 \\
-&amp; \qquad{}+ 0.3\cdot 0.4 \cdot 0.4 + 0.3 \cdot 0.4 \cdot 1 + 0.3 \cdot 1 \cdot 1\\
-&amp;= 0.702
-\end{align*}\]</span></p>
-</div>
-</div>
-</div>
-<div style="display: flex;">
-<div>
-<div class="myq">
-<p><strong>2.</strong> Consider a Markov chain <span class="math inline">\((X_n)\)</span> which moves between the vertices of
-a tetrahedron.</p>
-<p>At each time step, the process randomly chooses one of the edges connected to the current vertex and follows it to a new vertex. The edge to follow is selected randomly with all options having equal probability and each selection is independent of the past movements. Let <span class="math inline">\(X_n\)</span> be the vertex the process is in after step <span class="math inline">\(n\)</span>.</p>
-<div class="subq">
-<p><strong>(a)</strong> Write down the transition matrix <span class="math inline">\(\mathsf P\)</span> of this Markov chain.</p>
-<div class="myanswers">
-<p>The chain can move from a state to any of the other <span class="math inline">\(3\)</span> states, each with probability <span class="math inline">\(1/3\)</span>. So
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-                               \frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-                               \frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-                               \frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix} . \]</span></p>
+    j &amp;= 1\colon  &amp;  p&#39;_j(t) &amp;= -\lambda  p_1(t) &amp;  p_1(0) &amp;= 1 \\
+    j &amp;\geq 2 \colon   &amp;  p&#39;_j(t) &amp;= -\lambda j p_j(t) + \lambda (j-1)p_{j-1}(t)  &amp;  p_j(0) &amp;= 0
+    \end{align*}\]</span></p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(b)</strong> By summing over all relevant paths of length two, calculate the two-step transition probabilities <span class="math inline">\(p_{11}(2)\)</span> and <span class="math inline">\(p_{12}(2)\)</span>. Hence, write down the two-step transition matrix <span class="math inline">\(\mathsf P(2)\)</span>.</p>
+<p><strong>(b)</strong> Show that <span class="math inline">\(X(t)\)</span> follows a geometric distribution <span class="math inline">\(X(t) \sim \text{Geom} (\mathrm{e}^{-\lambda t})\)</span>. That is, show that
+<span class="math display">\[  p_j(t) = \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-1}\mathrm{e}^{-\lambda t}   \]</span>
+satisfies the forward equation.</p>
 <div class="myanswers">
-<p>The length-2 paths from 1 to 1 are <span class="math inline">\(1 \to k \to 1\)</span> for <span class="math inline">\(k = 2,3,4\)</span>, so
-<span class="math display">\[ p_{11}(2) = p_{12}p_{21} + p_{13}p_{31} + p_{14}p_{41} = \tfrac13 \tfrac13 +  \tfrac13 \tfrac13 + \tfrac13 \tfrac13 = \tfrac13  .   \]</span>
-The length-2 paths from 1 to 2 are <span class="math inline">\(1 \to 3 \to 2\)</span> and <span class="math inline">\(1 \to 4 \to 2\)</span>, so
-<span class="math display">\[ p_{12}(2) = p_{13}p_{32} + p_{14}p_{42} = \tfrac13 \tfrac13 + \tfrac13 \tfrac13 = \tfrac29 . \]</span></p>
-<p>By symmetry, <span class="math inline">\(p_{ii}(2) = p_{11}(2)\)</span> for all <span class="math inline">\(i\)</span>, and <span class="math inline">\(p_{ij}(2) = p_{12}(2)\)</span> for all <span class="math inline">\(i \neq j\)</span>. Therefore
-<span class="math display">\[ \mathsf P(2) = \begin{pmatrix} \frac13 &amp; \frac29 &amp; \frac29 &amp; \frac29 \\
-                               \frac29 &amp; \frac13 &amp; \frac29 &amp; \frac29 \\
-                               \frac29 &amp; \frac29 &amp; \frac13 &amp; \frac29 \\
-                               \frac29 &amp; \frac29 &amp; \frac29 &amp; \frac13 \end{pmatrix} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Check your answer by calculating the matrix square <span class="math inline">\(\mathsf P^2\)</span>.</p>
-<div class="myanswers">
-<p>We can verify that
-<span class="math display">\[ \mathsf P^2 = \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix} \begin{pmatrix} 0 &amp; \frac13 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; 0 &amp; \frac13 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; 0 &amp; \frac13 \\
-\frac13 &amp; \frac13 &amp; \frac13 &amp; 0 \end{pmatrix}=
-\begin{pmatrix} \frac13 &amp; \frac29 &amp; \frac29 &amp; \frac29 \\
-\frac29 &amp; \frac13 &amp; \frac29 &amp; \frac29 \\
-\frac29 &amp; \frac29 &amp; \frac13 &amp; \frac29 \\
-\frac29 &amp; \frac29 &amp; \frac29 &amp; \frac13 \end{pmatrix} , \]</span>
-as above.</p>
-</div>
-</div>
-</div>
-</div>
-<div>
-<div class="figure" style="text-align: center"><span id="fig:testing"></span>
-<img src="math2750_files/figure-html/testing-1.png" alt="A tetrahedron" width="850em" />
-<p class="caption">
-Figure 6.4: A tetrahedron
-</p>
-</div>
-</div>
-</div>
-<div class="videowrap">
-<div class="videowrapper">
-<iframe src="https://www.youtube.com/embed/E3qMZ6gRA0k">
-</iframe>
-</div>
-</div>
-<div class="myq">
-<p><strong>3.</strong> Consider the two-state “broken printer” Markov chain, with state space <span class="math inline">\(\mathcal S = \{0,1\}\)</span>, transition matrix
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 1-\alpha &amp; \alpha \\
-                 \beta &amp; 1-\beta \end{pmatrix} \]</span>
-with <span class="math inline">\(0 &lt; \alpha, \beta &lt; 1\)</span>, and initial distribution <span class="math inline">\(\boldsymbol\lambda = (\lambda_0, \lambda_1)\)</span>. Write <span class="math inline">\(\mu_n =\mathbb P(X_n = 0)\)</span>.</p>
-<div class="subq">
-<p><strong>(a)</strong> By writing <span class="math inline">\(\mu_{n+1}\)</span> in terms of <span class="math inline">\(\mu_n\)</span>, show that we have
-<span class="math display">\[ \mu_{n+1} - \big(1-(\alpha+\beta)\big)\mu_n = \beta . \]</span></p>
-<div class="myanswers">
-<p>Using the law of total probability, we have
-<span class="math display">\[\begin{multline*}
-\mathbb P(X_{n+1} = 0) = \mathbb P(X_n = 0)\,\mathbb P(X_{n+1} = 0 \mid X_n = 0) \\
-+ \mathbb P(X_n = 1)\,\mathbb P(X_{n+1} = 0 \mid X_n = 1) ,
-\end{multline*}\]</span>
-which in terms of <span class="math inline">\((\mu_n)\)</span> is
-<span class="math display">\[ \mu_{n+1} = \mu_n (1-\alpha) + (1 - \mu_n)\beta . \]</span>
-We used here that <span class="math inline">\(\mathbb P(X_n = 1) = 1-\mu_n\)</span>.
-Rearranging this gives the answer.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> By solving this linear difference equation using the initial condition <span class="math inline">\(\mu_0 = \lambda_0\)</span>, or otherwise, show that
-<span class="math display">\[ \mu_n = \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n   . \]</span></p>
-<div class="myanswers">
-<p>The characteristic equation is <span class="math inline">\(\lambda - (1-(\alpha+\beta)) = 0\)</span> with a single root at <span class="math inline">\(\lambda = 1 - (\alpha+\beta)\)</span>. The general solution to the homogeneous equation is, therefore, <span class="math inline">\(A(1-(\alpha+\beta))^n\)</span>.</p>
-<p>For a particular solution, we guess a solution <span class="math inline">\(\mu_n = C\)</span>, and <span class="math inline">\(C - (1-(\alpha+\beta))C = \beta\)</span> gives <span class="math inline">\(C = \beta/(\alpha+\beta)\)</span>. Thus the general solution to the inhomogeneous equation is
-<span class="math display">\[ \mu_n = \frac{\beta}{\alpha+\beta} + A\big(1-(\alpha+\beta)\big)^n .\]</span></p>
-<p>From the initial condition, we get <span class="math inline">\(\lambda_0 = \beta/(\alpha+\beta) + A\)</span>, and therefore <span class="math inline">\(A = \lambda_0 - \beta/(\alpha+\beta)\)</span>. The solution is therefore as given.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> What, therefore, are <span class="math inline">\(\lim_{n\to\infty} \mathbb P(X_n = 0)\)</span> and <span class="math inline">\(\lim_{n\to\infty} \mathbb P(X_n = 1)\)</span>?</p>
-<div class="myanswers">
-<p>Note that <span class="math inline">\(-1 &lt; 1 - (\alpha + \beta) &lt; 1\)</span>, so <span class="math inline">\((1-(\alpha+\beta))^n \to 0\)</span>. Therefore we have
+<p><em>Solution.</em>
+For <span class="math inline">\(j = 1\)</span>, we have <span class="math inline">\(p_1(t) = \mathrm{e}^{-\lambda t}\)</span>. This clearly has <span class="math inline">\(p_1(0) = \mathrm{e}^0 = 1\)</span>, and <span class="math inline">\(p&#39;_1(t) = -\lambda \mathrm{e}^{-\lambda t} = \lambda p_1(t)\)</span>, as required.</p>
+<p>Now consider <span class="math inline">\(j \geq 2\)</span>. We indeed have <span class="math inline">\(p_j(0) = 0\)</span>. By the product rule, the derivative on the left-hand side is
 <span class="math display">\[\begin{align*}
-\lim_{n\to\infty} \mathbb P(X_n = 0) &amp;= \lim_{n\to\infty} \mu_n \\
-&amp;= \lim_{n\to\infty} \left( \frac{\beta}{\alpha+\beta} + \left(\lambda_0 - \frac{\beta}{\alpha+\beta}\right)\big(1-(\alpha+\beta)\big)^n \right) \\
-&amp;= \frac{\beta}{\alpha+\beta} .
-\end{align*}\]</span>
-Since <span class="math inline">\(\mathbb P(X_n = 1) = 1- \mathbb P(X_n = 0)\)</span>, we have
-<span class="math display">\[ \mathbb P(X_n = 1) \to 1 - \frac{\beta}{\alpha+\beta} = \frac{\alpha}{\alpha+\beta} . \]</span></p>
+    p&#39;_j(t) &amp;=  -\lambda \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-1}\mathrm{e}^{-\lambda t} + \lambda \mathrm{e}^{-\lambda t} (j-1) \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} ,    \\
+    &amp;= -\lambda \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} \big(1 - \mathrm{e}^{-\lambda t} -\mathrm{e}^{-\lambda t} (j-1) \big) \\
+    &amp;=- \lambda \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} \big(1 - j \mathrm{e}^{-\lambda t}  \big).
+     \end{align*}\]</span>
+The right-hand side is
+<span class="math display">\[\begin{align*}
+    -\lambda j p_j(t) + {}&amp;\lambda (j-1)p_{j-1}(t) \\
+    &amp;= - \lambda j \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-1}\mathrm{e}^{-\lambda t} + \lambda (j-1) \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} \\
+    &amp;= -\lambda\big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t}\big(j(1 - \mathrm{e}^{-\lambda t}) - (j-1)\big) \\
+    &amp;= - \lambda \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} \big(1 - j \mathrm{e}^{-\lambda t}  \big) .
+    \end{align*}\]</span>
+These are indeed equal.</p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(d)</strong> Explain what happens if the Markov chain is started in the distribution
-<span class="math display">\[ \lambda_0 = \frac{\beta}{\alpha+\beta} , \qquad \lambda_1 = \frac{\alpha}{\alpha+\beta}  . \]</span></p>
+<p><strong>(c)</strong> Hence, calculate <span class="math inline">\(\mathbb E X(t)\)</span>, the expected population size at time <span class="math inline">\(t\)</span>.</p>
 <div class="myanswers">
-<p>Substituting in the value of <span class="math inline">\(\lambda_0\)</span> into the equation for <span class="math inline">\(\mu_n\)</span>, the second term cancel, and we have that <span class="math inline">\(\mathbb P(X_n = 0) = \mu_n = \beta/(\alpha+\beta)\)</span> for all times <span class="math inline">\(n\)</span>, and therefor <span class="math inline">\(\mathbb P(X_n = 1) = \alpha/(\alpha+\beta)\)</span> too. This means that the Markov chain remains in the same “stationary distribution” forever.</p>
+<p><em>Solution.</em>
+The expectation of a <span class="math inline">\(\text{Geom}(\theta)\)</span> random variable is <span class="math inline">\(1/\theta\)</span>, so <span class="math inline">\(\mathbb EX(t) = 1/\mathrm{e}^{-\lambda t} = \mathrm{e}^{\lambda t}\)</span>.</p>
 </div>
 </div>
 </div>
 <div class="myq">
-<p><strong>4.</strong> Let <span class="math inline">\((X_n)\)</span> be a Markov chain. Show that, for any <span class="math inline">\(m \geq 1\)</span>, we have
-<span class="math display">\[ \mathbb P(X_{n+m} = x_{n+m} \mid X_n = x_n, X_{n-1} = x_{n-1}, \dots, X_0 = x_0)  =  \mathbb P(X_{n+m} = x_{n+m} \mid X_n = x_n) . \]</span></p>
-<div class="myanswers">
-<p>Note that we have a sequence of statements here, for <span class="math inline">\(m = 1, 2, \dots\)</span>. Note also that the case <span class="math inline">\(m = 1\)</span> is the standard Markov property. When we have a sequence of statements and we can easily prove the first one, this is a good sign that a proof by induction is the way to go.</p>
-<p>Before starting, for reasons of space, we adopt notation where we suppress the capital <span class="math inline">\(X\)</span>s, so we want to show that
-<span class="math display">\[ \mathbb P(x_{n+m} \mid x_n, x_{n-1}, \dots, x_0 ) = \mathbb P(x_{n+m} \mid x_n) . \]</span></p>
-<p>We work by induction on <span class="math inline">\(m\)</span>. The base case <span class="math inline">\(m = 1\)</span> is the standard Markov property.</p>
-<p>Assume the inductive hypothesis: that result holds for <span class="math inline">\(m\)</span>. We now need to prove the inductive step: that the result holds for <span class="math inline">\(m+1\)</span>. For <span class="math inline">\(m+1\)</span> we have, by conditioning on the first step <span class="math inline">\(x_{n+1}\)</span>,
-<span class="math display">\[\begin{multline*} \mathbb P(x_{n+m+1} \mid x_n, x_{n-1}, \dots, x_0 ) \\
- = \sum_{x_{n+1}} \mathbb P(x_{n+1} \mid x_n, x_{n-1}, \dots, x_0 )\,\mathbb P(x_{n+m+1} \mid x_{n+1}, x_n, x_{n-1}, \dots, x_0 )     \end{multline*}\]</span>
-By the standard Markov property the first term simplifies to <span class="math inline">\(\mathbb P(x_{n+1} \mid x_n)\)</span>, and by the result for <span class="math inline">\(m\)</span> the second term simplifies to <span class="math inline">\(\mathbb P(x_{n+m+1} \mid x_{n+1})\)</span>. So we have
-<span class="math display">\[ \mathbb P(x_{n+m+1} \mid x_n, x_{n-1}, \dots, x_0 ) = \sum_{x_{n+1}} \mathbb P(x_{n+1} \mid x_n) \mathbb P(x_{n+m+1} \mid x_{n+1}) . \]</span>
-But the right-hand side here is <span class="math inline">\(\mathbb P(x_{n+m+1} \mid x_n)\)</span> written using conditioning on the first step and using the result for <span class="math inline">\(m\)</span>. By induction, we are done.</p>
-</div>
-</div>
-<div class="myq">
-<p><strong>5.</strong> A car insurance company operates a no-claims discount system for existing policy holders. The possible discounts on premiums are <span class="math inline">\(\{0\%,25\%,40\%,50\%\}\)</span>. Following a claim-free year, a policyholder’s discount level increases by one level (or remains at 50% discount). If the policyholder makes one or more claims in a year, the discount level decreases by one level (or remains at 0% discount).</p>
-<p>The insurer believes that the probability of of making at least one claim in a year is <span class="math inline">\(0.1\)</span> if the previous year was claim-free and <span class="math inline">\(0.25\)</span> if the previous year was not claim-free.</p>
+<p><strong>4.</strong> Let <span class="math inline">\((X(t))\)</span> be a simple birth process with rates <span class="math inline">\(\lambda_n = \lambda n\)</span> starting from <span class="math inline">\(X(0)=1\)</span>. Let <span class="math inline">\(T_n \sim \operatorname{Exp}(\lambda n)\)</span> be the <span class="math inline">\(n\)</span>th holding time, and let <span class="math inline">\(J_n = T_1 + T_2 +\cdots+T_n\)</span> be the time of the <span class="math inline">\(n\)</span>th birth.</p>
 <div class="subq">
-<p><strong>(a)</strong> Explain why we cannot use <span class="math inline">\(\{0\%,25\%,40\%,50\%\}\)</span> as the state space of a Markov chain to model discount levels for policyholders.</p>
+<p><strong>(a)</strong> Write down <span class="math inline">\(\mathbb E T_n\)</span> and <span class="math inline">\(\operatorname{Var}(T_n)\)</span>.</p>
 <div class="myanswers">
-<p>The Markov property does not hold for the time-homogeneous process described since the probability of moving to a given state at the next time step is not simply dependent on the current state if <span class="math inline">\(\mathcal S=\{0\%,25\%,40\%,50\%\}\)</span>. For example,
-<span class="math display">\[
-    \mathbb P(X_{n+1}=25\% \mid X_n= 40\% )=\begin{cases} 
-    0.25 &amp; \text{if $X_{n-1}=50\%$}\\
-    0.1 &amp; \text{if $X_{n-1}=25\%$.} \end{cases} \]</span></p>
+<p><em>Solution.</em> By standard results about the exponential distribution, <span class="math inline">\(\mathbb E T_n = 1/\lambda n\)</span> and <span class="math inline">\(\operatorname{Var}(T_n) = 1/(\lambda n)^2 = 1/\lambda^2 n^2\)</span>.</p>
 </div>
 </div>
 <div class="subq">
-<p><strong>(b)</strong> By considering additional states, show that a Markov chain can be used to model the discount level.</p>
+<p><strong>(b)</strong> Show that, as <span class="math inline">\(n \to \infty\)</span>, the expectation <span class="math inline">\(\mathbb E J_n\)</span> tends to infinity, but the variance <span class="math inline">\(\operatorname{Var}(J_n)\)</span> is bounded.</p>
 <div class="myanswers">
-<p>The problem is that the process has a memory of the previous year.
-If we currently have a discount of 0%, we know a claim was made in the year before, so no changes are required. Similarly, at 50% discount, we know that no claim was made in the previous year. The other two states, 25% and 40%, have different behaviour depending on whether or not there was a claim in the previous year.</p>
-<p>So we will split each of these into two states: 25+ will denote a 25% discount with no claim in the previous year, while 25- will denote a 25% discount with a claim in the previous year. We define the state 40+ and 40- similarly. Then we have a Markov chain, since the current state and the number of claims in the previous year completely defines the distribution on future behaviour.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Draw the transition diagram and write down the transition matrix.</p>
-<div class="myanswers">
-<p>The transition diagram is as shown below.</p>
-<div class="figure" style="text-align: center"><span id="fig:fortyplus"></span>
-<img src="math2750_files/figure-html/fortyplus-1.png" alt="Transition diagram for the car insurance Markov chain" width="480" />
-<p class="caption">
-Figure 6.5: Transition diagram for the car insurance Markov chain
-</p>
-</div>
-<p>The transition matrix is given by,
-<span class="math display">\[ \mathsf P = 
-    \begin{matrix}
-    &amp; \begin{matrix} 
-        0 &amp; 25+ &amp; 25- &amp; 40+ &amp; 40- &amp; 50
-      \end{matrix} \\
-    \begin{matrix}
-      0 \\ 25+ \\ 25- \\ 40+ \\ 40- \\ 50
-    \end{matrix}
-    &amp;
-    \begin{pmatrix}
-    0.25 &amp; 0.75 &amp; 0    &amp; 0    &amp; 0   &amp; 0    \\
-      0.1  &amp; 0    &amp; 0    &amp; 0.9  &amp; 0   &amp; 0    \\
-      0.25 &amp; 0    &amp; 0    &amp; 0.75 &amp; 0   &amp; 0    \\
-      0    &amp; 0    &amp; 0.1  &amp; 0    &amp; 0   &amp; 0.9  \\
-      0    &amp; 0    &amp; 0.25 &amp; 0    &amp; 0   &amp; 0.75 \\
-      0    &amp; 0    &amp; 0    &amp; 0    &amp; 0.1 &amp; 0.9 
-    \end{pmatrix}
-    \end{matrix}
-    \]</span></p>
+<p><em>Solution.</em> By linearity of expectation,
+<span class="math display">\[ \mathbb E J_n = \sum_{j=1}^n \mathbb E T_j = \sum_{j=1}^n \frac{1}{\lambda j} = \frac{1}{\lambda} \sum_{j=1}^n \frac{1}j . \]</span>
+Since the holding times are independent,
+<span class="math display">\[ \operatorname{Var}(J_n) = \sum_{j=1}^n \operatorname{Var}(T_j) = \sum_{j=1}^n \frac{1}{\lambda^2 j^2} = \frac{1}{\lambda^2} \sum_{j=1}^n \frac{1}{j^2} . \]</span></p>
+<p>The harmonic series <span class="math inline">\(\sum_j 1/j\)</span> diverges, so <span class="math inline">\(\mathbb E J_n\)</span> tends to infinity. The series <span class="math inline">\(\sum_j 1/j^2\)</span>, on the other hand, converges (to <span class="math inline">\(\pi^2/6\)</span>, although you don’t need to know that), so <span class="math inline">\(\operatorname{Var}(J_n)\)</span> is bounded (by <span class="math inline">\(\pi^2/6\lambda^2\)</span>).</p>
 </div>
 </div>
 </div>
 <div class="myq">
-<p><strong>6.</strong> The credit rating of a company can be modelled as a Markov chain. Assume the rating is assessed once per year at the end of the year and possible ratings are A (good), B (fair) and D (in default). The transition matrix is
-<span class="math display">\[\mathsf P=\begin{pmatrix} 0.92&amp;0.05&amp;0.03\\
-0.05&amp;0.85&amp;0.1\\
-0&amp;0&amp;1 \end{pmatrix} . \]</span></p>
+<p><strong>5.</strong> The number of phonecalls my office receives in a three hour period is modelled as a time inhomogeneous Poisson process with rate function
+<span class="math display">\[ \lambda(t) = \begin{cases} 3t &amp; 0 \leq t &lt; 1 \\
+3  &amp; 1 \leq t &lt; 2 \\
+9 - 3t &amp; 2 \leq t \leq 3 \end{cases}. \]</span></p>
 <div class="subq">
-<p><strong>(a)</strong> Calculate the two-step transition probabilities, and hence find the expected number of defaults in the next two years from <span class="math inline">\(100\)</span> companies all rated A at the start of the period.</p>
+<p><strong>(a)</strong> Calculate the probability I receive exactly one phonecall <strong>(i)</strong> in the first hour; <strong>(ii)</strong> in the second hour; <strong>(iii)</strong> in the third hour.</p>
 <div class="myanswers">
-<p>The matrix of two-step transition probabilities is given by the matrix square
-<span class="math display">\[\mathsf P(2) = \mathsf P^2= \begin{pmatrix} 0.8489&amp;0.0885&amp;0.0626\\
-0.0885&amp;0.7250&amp;0.1865\\
-0&amp;0&amp;1 \end{pmatrix}. \]</span>
-The number of defaults in two years from <span class="math inline">\(100\)</span> A-rated companies is <span class="math inline">\(100 \times p_{\mathrm{AD}}(2) = 100 \times 0.0626 = 6.26\)</span>.</p>
+<p><em>Solution.</em> (i) The number of phonecalls in the first hour is Poisson with rate
+<span class="math display">\[ \int_0^1 3t\,\mathrm dt = \left[\tfrac32 t^2 \right]_0^1 = \tfrac32 .  \]</span>
+The probability there is exactly one phonecall in this time is <span class="math inline">\(\frac32 \mathrm{e}^{-3/2} = 0.335\)</span>.</p>
+<ol start="2" style="list-style-type: lower-roman">
+<li><p>The number of phonecalls in the second hour is Poisson with rate <span class="math inline">\(3\)</span>.
+The probability there is exactly one phonecall in this time is <span class="math inline">\(3 \mathrm{e}^{-3} = 0.149\)</span>.</p></li>
+<li><p>The number of phonecalls in the first hour is Poisson with rate
+<span class="math display">\[ \int_2^3 (9-3t)\,\mathrm dt = \left[9t - \tfrac32 t^2 \right]_2^3 = 3 - \tfrac32 = \tfrac32 .  \]</span>
+The probability there is exactly one phonecall in this time is <span class="math inline">\(\frac32 \mathrm{e}^{-3/2} = 0.335\)</span>.</p></li>
+</ol>
 </div>
 </div>
 <div class="subq">
-<p><strong>(b)</strong> What is the probability that a company rated A will at some point default without ever having been rated B in the meantime?</p>
+<p><strong>(b)</strong> Calculate the probability I receive exactly <span class="math inline">\(3\)</span> phonecalls over the three hour period.</p>
 <div class="myanswers">
-<p>Let <span class="math inline">\(\delta\)</span> be the desired probability that an A-rated company will default without having been rated B. We condition on the first step: with probability <span class="math inline">\(0.92\)</span> we remain in state A, and by the Markov property the probability of the given event remains at <span class="math inline">\(\delta\)</span>; with probability <span class="math inline">\(0.05\)</span> we move to state B, and the event fails to occur; and with probability <span class="math inline">\(0.03\)</span> we move to state D and the event occurs immediately. Therefore, we have
-<span class="math display">\[ \delta = 0.92\delta + 0.05\times 0 + 0.03 \times 1 = 0.92\delta + 0.03 ,  \]</span>
-which has solution <span class="math inline">\(\delta = 0.03/(1-0.92) = 0.375\)</span>.</p>
-</div>
-</div>
-<p>A corporate bond portfolio manager follows an investment strategy which means that bonds which fall from A-rated to B-rated are sold and replaced with an A-rated bond. The manager believes this will improve the returns on the portfolio because it will reduce the number of defaults experienced.</p>
-<div class="subq">
-<p><strong>(c)</strong> Calculate the expected number of defaults in the manager’s portfolio over the next two years given there are initially 100 A-rated bonds.</p>
-<div class="myanswers">
-<p>Given that B-rated bonds are replaced by A-rated bonds, we have a new Markov chain with state space <span class="math inline">\(\{\mathrm{A},\mathrm{D}\}\)</span> and transition matrix
-<span class="math display">\[ \mathsf P = \begin{pmatrix} 0.92+0.05 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} =  \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} .  \]</span>
-The two-step transition probability is
-<span class="math display">\[ \mathsf P(2) = \mathsf P^2 =  \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} \begin{pmatrix} 0.97 &amp; 0.03 \\ 0 &amp; 1 \end{pmatrix} = \begin{pmatrix} 0.9409 &amp; 0.0591 \\ 0 &amp; 1 \end{pmatrix} .  \]</span>
-Thus the number of defaults from <span class="math inline">\(100\)</span> A-rated bonds in two years is <span class="math inline">\(100\times p_{\mathrm{AD}}(2) = 100\times 0.0591 = 5.91\)</span>. The manager was right: this is slightly less than the <span class="math inline">\(6.26\)</span> from part (a).</p>
+<p><em>Solution.</em>
+The number of phonecalls over the three hour period is Poisson with rate
+<span class="math display">\[ \int_0^3 \lambda(t)\,\mathrm dt = \tfrac32 + 3 + \tfrac32 = 6 . \]</span>
+The probability there are exactly three calls is
+<span class="math display">\[ \frac{6^3}{3!} \mathrm{e}^{-6} = 36 \mathrm{e}^{-6} = 0.089.     \]</span></p>
 </div>
 </div>
 </div>
@@ -542,8 +414,8 @@ Thus the number of defaults from <span class="math inline">\(100\)</span> A-rate
           </div>
         </div>
       </div>
-<a href="S06-examples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="S07-classes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="S16-counting-processes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="S17-continuous-time.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -113,6 +113,28 @@
 \section*{Schedule}\label{home}}
 \addcontentsline{toc}{section}{Schedule}
 
+\textbf{Week 8} (15--19 March):
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{S15-poisson-infinitesimal}{\textbf{Section 15}: Poisson process in infinitesimal time periods}
+\item
+  \protect\hyperlink{S16-counting-processes}{\textbf{Section 16}: Counting processes}
+\item
+  \protect\hyperlink{P08}{\textbf{Problem Sheet 8}}
+\item
+  \protect\hyperlink{computing}{\textbf{Computational Worksheet 2 / Assessment 2}}: due Thursday 18 March at 1400 (this week)
+\item
+  \protect\hyperlink{A3}{\textbf{Assessment 3}}: due Thursday 25 March (next week)
+\item
+  \textbf{Lecture}: Tuesday at 1400 (Zoom)
+\item
+  \textbf{Workshops} on Problem Sheet 7: Monday or Tuesday (Zoom)
+\item
+  \textbf{Drop-in sessions}: Tuesday or Wednesday (Teams)
+\end{itemize}
+
 \textbf{Week 7} (8--12 March):
 
 \begin{itemize}
@@ -4793,8 +4815,8 @@ This is precisely the CDF for the uniform distribution on \([0,t]\).
 
 \end{myanswers}
 
-\hypertarget{S15-poisson-exponential}{%
-\section{Poisson process in infinitesimal time periods}\label{S15-poisson-exponential}}
+\hypertarget{S15-poisson-infinitesimal}{%
+\section{Poisson process in infinitesimal time periods}\label{S15-poisson-infinitesimal}}
 
 \begin{itemize}
 \tightlist
@@ -4816,15 +4838,16 @@ Let \((X(t))\) be a stochastic processes counting some arrivals over time. Consi
 \item
   It's quite likely that there will be no arrivals in the very small time period.
 \item
-  It is possible there will be an arrival, and that probability will be proportional to the length \(\tau\) of the time period.
+  It is possible there will be one arrival, and that probability will be roughly proportional to the length \(\tau\) of the time period.
 \item
   It's extremely unlikely there will be two or more arrivals in such a short time period.
 \end{itemize}
 
 To write this down formally in maths, we will consider \(\mathbb P(X(t+\tau) - X(t) = j)\) as the length \(\tau\) of the time period tends to zero.
 
-It will be helpful for us to use ``little-\(o\)'' notation. Here \(o(\tau)\) means a term that is of ``lower order'' compared to \(\tau\). Specifically, \(o(\tau)\) stands for a function of \(\tau\) that tends to \(0\) as \(\tau \to 0\) even when divided by \(\tau\). That is,
+It will be helpful for us to use ``little-\(o\)'' notation. Here \(o(\tau)\) means a term that is of ``lower order'' compared to \(\tau\). These are terms like \(\tau^2\) or \(\tau^3\) that are so tiny that we're safe to ignore them. Formally, \(o(\tau)\) stands for a function of \(\tau\) that tends to \(0\) as \(\tau \to 0\) even when divided by \(\tau\). That is,
 \[ f(\tau) = o(\tau) \qquad \iff \qquad \frac{f(\tau)}{\tau} \to 0 \quad \text{as $\tau \to 0$.}  \]
+
 Then our suggestions above translate to
 \begin{equation} \mathbb P \big(X(t+\tau) - X(t) = j\big) = \begin{cases} 1 - \lambda \tau + o(\tau) & \text{if $j = 0$,} \\
 \lambda\tau + o(\tau) & \text{if $j = 1$,} \\
@@ -4865,15 +4888,19 @@ On \protect\hyperlink{P07}{Problem Sheet 7}, Question 3, you proved this from th
 We have
 \begin{align*}\mathbb P\big( Z(t+\tau) - Z(t) = 0 \big) &= \mathbb P\big( X(t+\tau) - X(t) = 0 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 0 \big) \\ &=\big(1 - \lambda \tau + o(\tau) \big)\big(1 - \mu \tau + o(\tau) \big) \\
 &= 1 - (\lambda + \mu)\tau + o(\tau) , \end{align*}
-since \(Z\) does not increase provided neither \(X\) nor \(Y\) increases. We also have
+since \(Z\) does not increase provided neither \(X\) nor \(Y\) increases.
+
+We also have
 \begin{align*}\mathbb P\big( Z(t+{}&\tau) - Z(t) = 1 \big) \\
 &= \mathbb P\big( X(t+\tau) - X(t) = 1 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 0 \big) \\ &\qquad {}+ \mathbb P\big( X(t+\tau) - X(t) = 0 \big) \, \mathbb P\big( Y(t+\tau) - Y(t) = 1 \big) \\
 &= \big(\lambda \tau + o(\tau) \big)\big(1 - \mu \tau + o(\tau) \big) + \big(1 - \lambda \tau + o(\tau) \big)\big(\mu \tau + o(\tau) \big) \\
 &= (\lambda + \mu)\tau + o(\tau) , \end{align*}
-since \(Z\) increases by 1 if either \(X\) increases by 1 and \(Y\) stays fixed or vice versa. We used here that the probability that \emph{both} \(X\) and \(Y\) increase is of order \(\tau^2 = o(\tau)\). Finally, since probabilities must add up to 1, we must have
+since \(Z\) increases by 1 if either \(X\) increases by 1 and \(Y\) stays fixed or vice versa. We used here that the probability that \emph{both} \(X\) and \(Y\) increase is of order \(\tau^2 = o(\tau)\).
+
+Finally, since probabilities must add up to 1, we must have
 \[ \mathbb P\big( Z(t+\tau) - Z(t) \geq 2 \big) =  o(\tau) . \]
 
-But what we have written down is precisely the infinitesimals definition of a Poisson process with rate \(\lambda + \mu\).
+But what we have written down is precisely the infinitesimals definition of a Poisson process with rate \(\lambda + \mu\), so we are done.
 
 \hypertarget{forward}{%
 \subsection{Forward equations and proof of equivalence}\label{forward}}
@@ -4904,8 +4931,8 @@ with the initial condition \(p_0(0) = 1\), since we always start at 0.
 
 In summary, we have derived the following equations:
 \begin{align*}
-   p'_0(t) &= -\lambda p_0(t) & \hspace{-1.5cm} p_0(0) & = 1 ,\\
-   p'_j(t) &= -\lambda p_j(t) + \lambda p_{j-1}(t) & \hspace{-1.5cm} p_j(0) &= 0 \quad \text{for $j \geq 1$} .
+   p'_0(t) &= -\lambda p_0(t) & p_0(0) & = 1 ,\\
+   p'_j(t) &= -\lambda p_j(t) + \lambda p_{j-1}(t) &  p_j(0) &= 0 \quad \text{for $j \geq 1$} .
 \end{align*}
 These are called the \textbf{Kolmogorov forward equations}.
 
@@ -4998,7 +5025,7 @@ We can also give an equivalent definition using infinitesimal time periods, as w
 \end{align*}
 which is exactly the same as the Poisson process, except with \(\lambda\) replaced by \(\lambda_j\).
 
-We can continue as for the Poisson process. Write \(p_j(t) = \mathbb P(X(t) = j)\). Then, for \(j \geq 1\),
+We can continue as for the Poisson process. Write \(p_j(t) = \mathbb P(X(t) = j)\). Then, for \(j \geq 2\),
 \[ p_j(t + \tau) = \big(1 - \lambda_{j}\tau + o(\tau)\big)p_j(t)  + \big(\lambda_{j-1}\tau + o(\tau)\big)p_{j-1}(t) + o(\tau) , \]
 since the two ways to get to \(j\) are either we're already at \(j\) and the \(j\)th arrival doesn't occur, or we're at \(j-1\) and the \((j-1)\)th arrival does occur; other possibilities have \(o(\tau)\) probability. As before, take \(p_j(t)\) over to the left-hand side, divide by \(\tau\) to get
 \[ \frac{p_j(t + \tau) - p_j(t)}{\tau} = -\lambda_j p_j(t) + \lambda_{j-1}p_{j-1}(t) + \frac{o(\tau)}{\tau} , \]
@@ -5013,7 +5040,7 @@ with initial condition \(p_1(0) = 1\), since we start from \(1\).
 In some cases the forward equations can be explicitly solved to give an expression for \(p_j(t) = \mathbb P(X(t) = j)\). We saw the solution for the Poisson process in Lecture 14, and you will find a solution for the simple birth process on \protect\hyperlink{P08}{Problem Sheet 8}.
 
 \hypertarget{TIPP}{%
-\subsection{Time inhomogeneous Poisson processes}\label{TIPP}}
+\subsection{Time inhomogeneous Poisson process}\label{TIPP}}
 
 When we dealt with the Poisson process, the rate of arrivals \(\lambda\) was the same all the time -- so our call centre always received calls at the same rate, or the insurance company always received claims at the same rate. In real life, though, the rate of arrivals might be lower at some times and higher at some other times, so the rate \(\lambda = \lambda(t)\) should perhaps depend on the time \(t\).
 
@@ -5043,10 +5070,10 @@ The difference here is in point 2, where we integrate the rate function \(\lambd
 \begin{example}
 \protect\hypertarget{exm:TIPP-call}{}\label{exm:TIPP-call}
 
-\emph{A call centre notes that, when it opens the phone lines open in the morning, phone calls arrive slowly at first, gradually becoming more common over the first hour. The owners of the centre model this is a time inhomogeneous Poisson process with rate function}
+\emph{A call centre notes that, when it opens the phone lines in the morning, phone calls arrive slowly at first, gradually becoming more common over the first hour. The owners of the centre model this is a time inhomogeneous Poisson process with rate function}
 \[ \lambda(t) = \begin{cases} 20t & 0 \leq t < 1 \\
                               20  & t \geq 1 \end{cases} \]
-\emph{What is the probability they receive no calls in the first 10 minutes?}
+\emph{calls per hour. What is the probability they receive no calls in the first 10 minutes?}
 
 The number of calls in the first 10 minutes, or \(\frac16\) of an hour, is Poisson with rate
 \[ \int_0^{1/6} \lambda(t) \, \mathrm dt = \int_0^{1/6}20t \, \mathrm dt = \left[10t^2\right]_0^{1/6} = \frac{10}{36} = 0.278 . \]
@@ -5068,6 +5095,446 @@ o(\tau) & \text{if $j \geq 2$.} \end{cases}  \end{equation*}
 The only difference here is that we have replaced the rate \(\lambda\) with the ``current rate'' \(\lambda(t)\).
 
 \textbf{In the next section}, we begin to look at the general theory of continuous time Markov jump processes.
+
+\hypertarget{P08}{%
+\section*{Problem Sheet 8}\label{P08}}
+\addcontentsline{toc}{section}{Problem Sheet 8}
+
+\commfalse
+
+You should attempt all these questions and write up your solutions in advance of your workshop in week 9 (Monday 22 or Tuesday 23 March) where the answers will be discussed.
+
+\textbf{1.}Let \((X(t))\) be a Poisson process with rate \(\lambda\).
+
+\textbf{(a)} Fix \(n\). What is the expected time between the \(n\)th arrival and the \((n+1)\)th arrival?
+
+\begin{myanswers}
+\emph{Solution.} The waiting time is \(\operatorname{Exp}(\lambda)\) with mean \(1/\lambda\).
+
+\end{myanswers}
+
+\textbf{(b)} Fix \(t\). What is the expected time between the previous arrival before \(t\) and the next arrival after \(t\)?
+
+\begin{myanswers}
+\emph{Solution.} The time between the arrivals is \(S + T\), where \(S\) is the time backwards from \(t\) since the previous arrival, and \(T\) is the time forwards from \(t\) until thenext arrival. By the memoryless property of the exponential distribution, \(T \sim \operatorname{Exp}(\lambda)\), with mean \(1/\lambda\). What about \(S\)? We have
+\[ \mathbb P(S > s) = \mathbb P\big(\text{no arrivals in }[t-s,t]\big) = \exp{-\lambda s} \frac{(\lambda s)^0}{0!} = \exp{-\lambda s} , \]
+which is itself is the tail probability of another \(\operatorname{Exp}(\lambda)\) distribution, so \(S \sim \operatorname{Exp}(\lambda)\) with mean \(1/\lambda\) too.
+Hence
+\[ \mathbb E(S + T) = \frac1\lambda + \frac1\lambda = \frac2\lambda .\]
+
+\end{myanswers}
+
+\textbf{(c)} Your answers to the previous two questions should be different. Explain why one should expect the second answer to be bigger than the first.
+
+\begin{myanswers}
+\emph{Solution.} Imagine the arrivals being placed on the real line -- some with big gaps between them, and some with small gaps between them. If we then place the time \(t\), it is more likely to be placed in one of the large gaps than one of the small ones, because each large gap fills up more of the line than a small one. Hence the size of the gap surrounding the given point \(t\) is ``size-biased'', and is larger than a unfirotmly randomly chosen gap.
+
+\end{myanswers}
+
+\textbf{2.} Let \(X(t)\) be a Poisson process with rate \(\lambda\), and mark each arrival independently with probability \(p\). Use the infinitesimals definition to show that the marked process is a Poisson process with rate \(p\lambda\).
+
+\begin{myanswers}
+\emph{Solution.}
+Let \(Y(t)\) be the marked process Consider an infinitesimal increment \(Y(t + \tau) - Y(t)\) as \(\tau \to 0\). We have one arrival in \((Y(t))\) if there was one arrival for \((X(t))\) and it was marked -- all other possibilities rely on extra arrivals in \((X(t))\), so have lower order probability -- giving
+\[ \mathbb P \big( Y(t + \tau) - Y(t) = 1\big) = p\lambda t + o (\tau) .   \]
+We have no arrivals in \((Y(t))\) if there were no arrivals in \((X(t))\), there was one arrival that was unmarked, or lower order terms, giving
+\[ \mathbb P \big( Y(t + \tau) - Y(t) = 0 \big) = 1 - \lambda t + (1-p)\lambda t + o(\tau) = 1 - p\lambda t + o(\tau)  .   \]
+Larger increments in \((Y(t))\) require larger increments in \((X(t))\), so
+\[ \mathbb P \big( Y(t + \tau) - Y(t) \geq 2 \big) = o(\tau) . \]
+Since we have \(Y(0) = 0\) and independent increments, we have written down precisely the infinitesimal increments definition of a Poisson process with rate \(p\lambda\).
+
+\end{myanswers}
+
+\textbf{3.} Let \((X(t))\) be a simple birth process with rates \(\lambda_j = \lambda j\) starting from \(X(0)=1\). Let \(p_j(t) = \mathbb P(X(t) = j)\).
+
+\textbf{(a)} Write down the Kolmogorov forward equations for \(p_j(t)\). You should have separate equations for \(j = 1\) and \(j \geq 2\). Remember to include the initial conditions \(p_j(0)\).
+
+\begin{myanswers}
+\emph{Solution.}
+From Section \ref{birth-processes} of the notes, and putting \(\lambda_j = \lambda j\), the forward equations are
+\begin{align*}
+    j &= 1\colon  &  p'_j(t) &= -\lambda  p_1(t) &  p_1(0) &= 1 \\
+    j &\geq 2 \colon   &  p'_j(t) &= -\lambda j p_j(t) + \lambda (j-1)p_{j-1}(t)  &  p_j(0) &= 0
+    \end{align*}
+
+\end{myanswers}
+
+\textbf{(b)} Show that \(X(t)\) follows a geometric distribution \(X(t) \sim \text{Geom} (\mathrm{e}^{-\lambda t})\). That is, show that
+\[  p_j(t) = \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-1}\mathrm{e}^{-\lambda t}   \]
+satisfies the forward equation.
+
+\begin{myanswers}
+\emph{Solution.}
+For \(j = 1\), we have \(p_1(t) = \mathrm{e}^{-\lambda t}\). This clearly has \(p_1(0) = \mathrm{e}^0 = 1\), and \(p'_1(t) = -\lambda \mathrm{e}^{-\lambda t} = \lambda p_1(t)\), as required.
+
+Now consider \(j \geq 2\). We indeed have \(p_j(0) = 0\). By the product rule, the derivative on the left-hand side is
+\begin{align*}
+    p'_j(t) &=  -\lambda \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-1}\mathrm{e}^{-\lambda t} + \lambda \mathrm{e}^{-\lambda t} (j-1) \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} ,    \\
+    &= -\lambda \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} \big(1 - \mathrm{e}^{-\lambda t} -\mathrm{e}^{-\lambda t} (j-1) \big) \\
+    &=- \lambda \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} \big(1 - j \mathrm{e}^{-\lambda t}  \big).
+     \end{align*}
+The right-hand side is
+\begin{align*}
+    -\lambda j p_j(t) + {}&\lambda (j-1)p_{j-1}(t) \\
+    &= - \lambda j \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-1}\mathrm{e}^{-\lambda t} + \lambda (j-1) \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} \\
+    &= -\lambda\big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t}\big(j(1 - \mathrm{e}^{-\lambda t}) - (j-1)\big) \\
+    &= - \lambda \big(1 - \mathrm{e}^{-\lambda t}\big)^{j-2}\mathrm{e}^{-\lambda t} \big(1 - j \mathrm{e}^{-\lambda t}  \big) .
+    \end{align*}
+These are indeed equal.
+
+\end{myanswers}
+
+\textbf{(c)} Hence, calculate \(\mathbb E X(t)\), the expected population size at time \(t\).
+
+\begin{myanswers}
+\emph{Solution.}
+The expectation of a \(\text{Geom}(\theta)\) random variable is \(1/\theta\), so \(\mathbb EX(t) = 1/\mathrm{e}^{-\lambda t} = \mathrm{e}^{\lambda t}\).
+
+\end{myanswers}
+
+\textbf{4.} Let \((X(t))\) be a simple birth process with rates \(\lambda_n = \lambda n\) starting from \(X(0)=1\). Let \(T_n \sim \operatorname{Exp}(\lambda n)\) be the \(n\)th holding time, and let \(J_n = T_1 + T_2 +\cdots+T_n\) be the time of the \(n\)th birth.
+
+\textbf{(a)} Write down \(\mathbb E T_n\) and \(\operatorname{Var}(T_n)\).
+
+\begin{myanswers}
+\emph{Solution.} By standard results about the exponential distribution, \(\mathbb E T_n = 1/\lambda n\) and \(\operatorname{Var}(T_n) = 1/(\lambda n)^2 = 1/\lambda^2 n^2\).
+
+\end{myanswers}
+
+\textbf{(b)} Show that, as \(n \to \infty\), the expectation \(\mathbb E J_n\) tends to infinity, but the variance \(\operatorname{Var}(J_n)\) is bounded.
+
+\begin{myanswers}
+\emph{Solution.} By linearity of expectation,
+\[ \mathbb E J_n = \sum_{j=1}^n \mathbb E T_j = \sum_{j=1}^n \frac{1}{\lambda j} = \frac{1}{\lambda} \sum_{j=1}^n \frac{1}j . \]
+Since the holding times are independent,
+\[ \operatorname{Var}(J_n) = \sum_{j=1}^n \operatorname{Var}(T_j) = \sum_{j=1}^n \frac{1}{\lambda^2 j^2} = \frac{1}{\lambda^2} \sum_{j=1}^n \frac{1}{j^2} . \]
+
+The harmonic series \(\sum_j 1/j\) diverges, so \(\mathbb E J_n\) tends to infinity. The series \(\sum_j 1/j^2\), on the other hand, converges (to \(\pi^2/6\), although you don't need to know that), so \(\operatorname{Var}(J_n)\) is bounded (by \(\pi^2/6\lambda^2\)).
+
+\end{myanswers}
+
+\textbf{5.} The number of phonecalls my office receives in a three hour period is modelled as a time inhomogeneous Poisson process with rate function
+\[ \lambda(t) = \begin{cases} 3t & 0 \leq t < 1 \\
+3  & 1 \leq t < 2 \\
+9 - 3t & 2 \leq t \leq 3 \end{cases}. \]
+
+\textbf{(a)} Calculate the probability I receive exactly one phonecall \textbf{(i)} in the first hour; \textbf{(ii)} in the second hour; \textbf{(iii)} in the third hour.
+
+\begin{myanswers}
+
+\emph{Solution.} (i) The number of phonecalls in the first hour is Poisson with rate
+\[ \int_0^1 3t\,\mathrm dt = \left[\tfrac32 t^2 \right]_0^1 = \tfrac32 .  \]
+The probability there is exactly one phonecall in this time is \(\frac32 \mathrm{e}^{-3/2} = 0.335\).
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\setcounter{enumi}{1}
+\item
+  The number of phonecalls in the second hour is Poisson with rate \(3\).
+  The probability there is exactly one phonecall in this time is \(3 \mathrm{e}^{-3} = 0.149\).
+\item
+  The number of phonecalls in the first hour is Poisson with rate
+  \[ \int_2^3 (9-3t)\,\mathrm dt = \left[9t - \tfrac32 t^2 \right]_2^3 = 3 - \tfrac32 = \tfrac32 .  \]
+  The probability there is exactly one phonecall in this time is \(\frac32 \mathrm{e}^{-3/2} = 0.335\).
+\end{enumerate}
+
+\end{myanswers}
+
+\textbf{(b)} Calculate the probability I receive exactly \(3\) phonecalls over the three hour period.
+
+\begin{myanswers}
+\emph{Solution.}
+The number of phonecalls over the three hour period is Poisson with rate
+\[ \int_0^3 \lambda(t)\,\mathrm dt = \tfrac32 + 3 + \tfrac32 = 6 . \]
+The probability there are exactly three calls is
+\[ \frac{6^3}{3!} \mathrm{e}^{-6} = 36 \mathrm{e}^{-6} = 0.089.     \]
+
+\end{myanswers}
+
+\hypertarget{S17-continuous-time}{%
+\section{Continuous time Markov jump processes}\label{S17-continuous-time}}
+
+\begin{itemize}
+\tightlist
+\item
+  Time homogeneous continuous time Markov jump processes in terms of the jump Markov chain and the holding times
+\item
+  Explosion of Markov jump processes
+\end{itemize}
+
+\hypertarget{jump-holding}{%
+\subsection{Jump chain and holding times}\label{jump-holding}}
+
+In this section, we will start looking at general Markov processes in continuous time and discrete space. All our examples will be time homogeneous, in that the transition probabilities and transition rates will remain constant over time.
+
+We call these \textbf{Markov jump processes}, as we will wait in a state for a random holding time, and then we will suddenly ``jump'' to another state.
+
+The idea will be treat two matters separately:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{where we jump too:} This will be studied through the ``jump chain'', a discrete time Markov chain that tells us \emph{what} transitions are made (but not \emph{when} they are made).
+\item
+  \textbf{how long we wait until we jump:} we call these the ``holding times''. To preserve the Markov property, these holding times must have an exponential distribution, since this is the only random variable that has the \protect\hyperlink{memoryless-thm}{memoryless property}.
+\end{itemize}
+
+Let us consider a Markov jump process \((X(t))\) on a state space \(\mathcal S\). Suppose we are at a state \(i \in \mathcal S\). The \textbf{rate} at which we wish to jump to a state \(j \neq i\) will be written \(q_{ij} \geq 0\). This means that, after a time with an exponential distribution \(\operatorname{Exp}(q_{ij})\), if the process has not jumped yet, it will jump to state \(j\).
+
+(We use the convention that if \(q_{ij} = 0\) for some \(j \neq i\), this means we will never jump from \(i\) to \(j\). If \(q_{ij} = 0\) for \emph{all} \(j \neq i\), then we stay in state \(i\) forever.)
+
+So from state \(i\), there are many other states \(j\) we could jump to, each waiting for a time \(\operatorname{Exp}(q_{ij})\). Which of these times will be up first, leading the process to jump to that state? And how long will it be until that first time is up and we move?
+The answer is given by Theorem \ref{thm:exponential-thm}, which showed us the distribution of the minimum of the \(\operatorname{Exp}(q_{ij})\)s is itself exponential, with rate
+\[ q_i := \sum_{j \neq i} q_{ij} . \]
+Further, and also from Theorem \ref{thm:exponential-thm}, the probability that we move to some state \(j \neq i\) is
+\[ r_{ij} := \frac{q_{ij}}{\sum_{j \neq i} q_{ij}} = \frac{q_{ij}}{q_i} . \]
+(These last two displayed equations define the quantities \(q_i\) and \(r_{ij}\).)
+
+So, this is the crucial idea: from state \(i\), we wait for a holding time with distribution \(\operatorname{Exp}(q_i)\), then move to another state, choosing state \(j\) with probability \(r_{ij}\).
+
+It will be convenient to write all the transition rates \(q_{ij}\) down in a \textbf{generator matrix} \(\mathsf Q\) defined as follows: the off-diagonal entries are \(q_{ij}\), for \(i \neq j\), and the diagonal entries are
+\[ q_{ii} = - q_i = -\sum_{j \neq i} q_{ij} . \]
+In particular, the off-diagonal entries are positive (or 0), the diagonal entries are negative (or 0) and each row adds up to 0.
+
+One convenient way to keep track of the movement of a continuous time Markov jump process will be to look at which states it jumps to, leaving the holding times for later consideration. That is, we can consider the discrete time \textbf{jump Markov chain} (or just \textbf{jump chain}) \((Y_n)\) associated with \((X(t))\) given by
+\(Y_0 = X(0)\) and
+\[ Y_n = \text{state of $X(t)$ just after the $n$th jump.} \]
+This is a discrete time Markov chain that starts from the same place \(Y_0 = X(0)\) as \((X(t))\) does, and has transitions given by \(r_{ij} = q_{ij}/q_i\). (The jump chain cannot move from a state to itself.)
+
+Once we know where the jump process will move, we then know what the next holding time will be: from state \(j\), the holding time will be \(\operatorname{Exp}(q_j)\)
+
+We can some all this up in the following (rather long-winded) formal definition.
+
+\begin{definition}
+\protect\hypertarget{def:CTMC}{}\label{def:CTMC}
+
+~
+
+\begin{itemize}
+\tightlist
+\item
+  Let \(\mathcal S\) be a set, and \(\boldsymbol\lambda\) a distribution on \(\mathcal S\).
+\item
+  Let \(\mathsf Q = (q_{ij} : i,j \in \mathcal S)\) be a matrix where \(q_{ij} \geq 0\) for \(i \neq j\) and \(\sum_j q_{ij} = 0\), and write \(q_{ii} = -q_i = - \sum_{j \neq i} q_{ij}\).
+\item
+  Define \(\mathsf R = (r_{ij} : i,j \in \mathcal S)\) as follows: for \(i\) such that \(q_i \neq 0\), write \(r_{ij} = q_{ij}/q_i\) for \(j \neq i\), and \(r_{ii}= 0\); and for \(i\) such that \(q_i = 0\), write \(r_{ij} = 0\) for \(j \neq i\), and \(r_{ii} = 1\).
+\end{itemize}
+
+We wish to define the \textbf{Markov jump process} on a state space \(\mathcal S\) with generator matrix \(\mathsf Q\) and initial distribution \(\boldsymbol\lambda\).
+
+\begin{itemize}
+\tightlist
+\item
+  The \textbf{jump chain} \((Y_n)\) is the discrete time Markov chain on \(\mathcal S\) with initial distribution \(\boldsymbol\lambda\) and transition matrix \(\mathsf R\).
+\item
+  The \textbf{holding times} \(T_1, T_2, \dots\) have distribution \(T_n \sim \operatorname{Exp}(q_{Y_{n-1}})\), and are conditionally independent given \((Y_n)\).
+\item
+  The \textbf{jump times} are \(J_n = T_1 + T_2 + \cdots + T_n\).
+\end{itemize}
+
+Then (at last!) the Markov jump process \((X(t))\) is defined by
+\[
+    X(t) = \begin{cases} Y_0 & \text{for }t < J_1 \\
+                         Y_n & \text{for }J_n \leq t < J_{n+1} .\end{cases}  \]
+
+\end{definition}
+
+\hypertarget{CTMC-examples}{%
+\subsection{Examples}\label{CTMC-examples}}
+
+\begin{example}
+\protect\hypertarget{exm:three-state}{}\label{exm:three-state}
+
+Consider the Markov jump process on a state space \(\mathcal S = \{1,2,3\}\) with transition rates as illustrated in the following transition rate diagram. (Note that a transition rate diagram never has arrows from a state to itself.)
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/ctmc1-1} 
+
+}
+
+\caption{Transition diagram for a continuous Markov jump process.}\label{fig:ctmc1}
+\end{figure}
+
+The generator matrix is
+\[ \mathsf Q = \begin{pmatrix} -2 & 2 & 0 \\
+ 1 & -3 & 2 \\
+ 0 & 1 & -1 \end{pmatrix} , \]
+where the off-diagonal entries are the rates from the diagram, and the diagonal entries are chosen to make sure the rows add up to 0.
+
+The transition matrix of the jump chain is
+\[ \mathsf R = \begin{pmatrix} 0 & 1 & 0 \\
+ \frac13 & 0 & \frac23 \\
+ 0 & 1 & 0 \end{pmatrix} , \]
+where we set the diagonal elements equal to 0, then normalize each row so that it adds up to 1.
+
+So, for example, starting from state 2, we wait for a holding time \(T_1 \sim \operatorname{Exp}(q_2) = \operatorname{Exp}(-q_{22}) = \operatorname{Exp}(3)\). We then move to state 1 with probability \(r_{21} = q_{21}/q_2 = \frac13\) and to state 3 with probability \(r_{23} = q_{23}/q_2 = \frac23\).
+
+Suppose we move to state 1. Then we stay in state 1 for a time \(\operatorname{Exp}(q_1) = \operatorname{Exp}(2)\), before moving with certainty back to state 2. And so on.
+
+\end{example}
+
+\begin{example}
+\protect\hypertarget{exm:ABC}{}\label{exm:ABC}
+
+Consider the Markov jump process with state space \(\mathcal S = \{A,B,C\}\) and this transition rate diagram.
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/ctmc2-1} 
+
+}
+
+\caption{Transition diagram for a continuous Markov jump process with an absorbing state.}\label{fig:ctmc2}
+\end{figure}
+
+The generator matrix is
+\[ \mathsf Q = \begin{pmatrix} -q_A & q_{AB} & q_{AC} \\
+ q_{BA} & -q_B & q_{BC} \\
+ 0 & 0 & 0\end{pmatrix} , \]
+where \(q_A = q_{AB} + q_{AC}\) and \(q_B = q_{BA} + q_{BC}\).
+Here, state C is an absorbing state, so if we ever reach it, we stay there forever. So the jump chain has transition rates
+\[ \mathsf R = \begin{pmatrix} 0 & q_{AB}/q_A & q_{AC}/q_A \\
+ q_{BA}/q_B & 0 & q_{BC}/q_B \\
+ 0 & 0 & 1 \end{pmatrix} . \]
+
+\end{example}
+
+\begin{example}
+\protect\hypertarget{exm:PP-CTMC}{}\label{exm:PP-CTMC}
+
+The Poisson process with rate \(\lambda\) has state space \(\mathcal S = \mathbb Z_+ = \{0,1,2,\dots\}\). The transition rates from \(i\) to \(i+1\) are
+\(q_{i,i+1} = \lambda\), and all other transition rates are 0. So the generator matrix is
+\[ \mathsf Q = \begin{pmatrix} -\lambda & \lambda & 0 & 0 &  \\
+ 0 & -\lambda & \lambda & 0 &   \\
+0 & 0 & -\lambda & \lambda &   \\ 
+ & & & \ddots & \ddots \\ 
+ \end{pmatrix}.
+\]
+The jump chain is very boring: it starts from 0 and moves with certainty to 1, then with certainty to 2, then to 3, and so on.
+
+\end{example}
+
+\hypertarget{a-brief-note-on-explosion}{%
+\subsection{A brief note on explosion}\label{a-brief-note-on-explosion}}
+
+There is one point we have to be a little careful about with when dealing with continuous time processes with an infinite state space -- the potential of ``explosion''. \textbf{Explosion} is when the process can get arbitrarily large in finite time. Think, for example, of a birth process with birth rates \(\lambda_j = \lambda j^2\). The \(n\)th birth is expected to be occur at time
+\[ \sum_{j=1}^n \frac{1}{\lambda_j} = \frac{1}{\lambda} \sum_{j=1}^n \frac{1}{n^2} . \]
+But this has a finite limit as \(n \to \infty\), meaning we expect to get infinitely many births in a finite amount of time.
+
+When explosion happens, it can then be rather difficult to define what's going on. In that birth process, for example, the state space is \(\mathcal S = \mathbb Z_+\); but after some finite time, we have \(X(t) > j\) for all \(j \in \mathcal S\) -- so what state \emph{is} the process in?
+
+Although there are often technical fixes that can get around this problem (doing things like creating an ``infinity'' state, or restarting the process from \(X(0)\) again), we will not concern ourselves with them here. We shall normally deal with finite state spaces, where explosion is not a concern. When we do use infinite state space models (such as birth processes, for example), we shall only look at examples that explode with probability 0.
+
+\textbf{In the next section}, we look at how to find the transition probilities \(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\), which are the equivalents to the \(n\)-step transition probabilities in discrete time.
+
+\hypertarget{S18-forward-backward}{%
+\section{Forward and backward equations}\label{S18-forward-backward}}
+
+\begin{itemize}
+\tightlist
+\item
+  Markov jump process in infinitesimal time periods
+\item
+  Transition semigroup, Chapman--Kolmogorov equations, and forward and backward equations
+\item
+  Matrix exponential as a solution to the forward and backward equations
+\end{itemize}
+
+\hypertarget{jump-infinitesimal}{%
+\subsection{Transitions in infinitesimal time periods}\label{jump-infinitesimal}}
+
+In the \protect\hyperlink{S17-continuous-time}{last section}, we defined the continuous time Markov jump process with generator matrix \(\mathsf Q\) in terms of the holding times and the jump chain: from state \(i\), we wait for a holding time exponentially distributed with rate \(q_i = -q_{ii}\), then jump to state \(j\) with probability \(r_{ij} = q_{ij}/q_i\).
+
+So what happens starting from state \(i\) in a very small amount of time \(\tau\)? The probability we don't move in the small amount of time \(\tau\) is
+\[ \mathbb P(T_1 > \tau) = \mathrm{e}^{-q_i \tau} = 1 - q_i\tau + o(\tau) , \]
+where we have used the tail probability of the exponential distribution and the standard asymptotic
+\[ \mathrm{e}^x = 1 + x + o(x) \qquad \text{as $x \to 0$.} \]
+The probability that we do move in the small amount of time \(\tau\), and that the move is to state \(j\) is
+\[ \mathbb P(T_1 \leq \tau)r_{ij} = \big(q_i\tau + o(\tau)\big) \frac{q_{ij}}{q_i}  = q_{ij}\tau + o(\tau) . \]
+The probability we make two or more jumps is a lower order term \(o(\tau)\). Thus we have
+\[ \mathbb P\big(X(t+\tau) = j \mid X(t) = i \big) = \begin{cases}
+   1 - q_i\tau + o(\tau) & \text{for } i = j \\
+   q_{ij}\tau + o(\tau) & \text{for } i \neq j. \end{cases} \]
+
+This is an equivalent definition of the Markov jump process.
+
+\hypertarget{semigroup}{%
+\subsection{Transition semigroup and the forward and backward equations}\label{semigroup}}
+
+Let is write \(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\) for the transition probability over a time \(t\). This is the continuous-time equivalent to the \(n\)-step transition probability \(p_{ij}(n)\) we had before in discrete time, but now \(t\) can be any positive real value. It can be convenient to use the matrix form \(\mathsf P(t) = (p_{ij}(t) : i,j \in \mathcal S)\).
+
+In discrete time, we were given \(\mathsf P = \mathsf P(1)\), and it was easy to find \(\mathsf P(n) = \mathsf P^n\) as a matrix power. In continuous time, we are given the generator \(\mathsf Q\), so how can we find \(\mathsf P(t)\) from \(\mathsf Q\)?
+
+First, we consider \(p_{ij}(s+t)\). To get from \(i\) to \(j\) in time \(s + t\), we could first go from \(i\) to some \(k\) in time \(s\), then from that \(k\) to \(j\) in time \(t\), and the intermediate state \(k\) can be any state. So we have
+\[ p_{ij}(s+t) = \sum_{k\in \mathcal S} p_{ik}(s)p_{kj}(t) . \]
+You should recognise this as the \textbf{Chapman--Kolmogorov equations} again. In matrix form, we can write this as
+\[ \mathsf P(s+t) = \mathsf P(s) \mathsf P(t) . \]
+Pure mathematicians sometimes call this equation the ``semigroup property'', so we sometimes call the matrices \((\mathsf P(t) : t \geq 0)\) the \textbf{transition semigroup}.
+
+Second, as in previous examples, we seek a differential equation for \(p_{ij}(t)\) by looking at an infinitesimal increment \(p_{ij}(t+\tau)\).
+
+We can start with the Chapman--Kolmogorov equations. We have
+\begin{align*}
+p_{ij}(t+\tau) &= \sum_k p_{ik}(t)p_{kj}(\tau) \\
+&=p_{ij}(t)(1 - q_j\tau) + \sum_{k \neq j} p_{ik}(t)q_{kj}\tau +  o(\tau) \\
+&= p_{ij}(t) + \sum_k p_{ik}(t)q_{kj}\tau + o(\tau) ,
+\end{align*}
+where we have treated the \(k = j\) term of the sum separately, and taken advantage of the fact that \(q_{jj} = - q_j\).
+
+As we have done many times before, we take a \(p_{ij}(t)\) to the left hand side and divide through by \(\tau\) to get
+\[ \frac{p_{ij}(t + \tau) - p_{ij}(t)}{\tau} = \sum_k p_{ik}(t)q_{kj} + \frac{o(\tau)}{\tau} . \]
+Sending \(\tau\) to 0 gives us the (\textbf{Kolmogorov}) \textbf{forward equation}
+\[ p'_{ij} (t) = \sum_k p_{ik}(t)q_{kj} . \]
+The initial condition is, of course, \(p_{ii}(0) = 1\) and \(p_{ij}(0) = 0\) otherwise.
+
+Writing \(\mathsf P(t) = (p_{ij}(t))\), and recognising the right hand side as a matrix multiplication, we get the convenient matrix form
+\[ \mathsf P'(t) = \mathsf{P}(t) \mathsf{Q}  \qquad \mathsf P(0) = \mathsf I ,\]
+where \(\mathsf I\) is the identity matrix.
+
+Alternatively, we could have started with the Chapman--Kolmogorov equations the other way round as
+\[ p_{ij}(t+\tau) = \sum_k p_{ik}(\tau)p_{kj}(t) , \]
+with the \(\tau\) in the first term rather than the second. Following through the same argument would have given the \textbf{Kolmogorov backward equation}
+\[ \mathsf P'(t) = \mathsf{Q} \mathsf{P}(t)   \qquad \mathsf P(0) = \mathsf I ,\]
+where the \(\mathsf Q\) and \(\mathsf P\) are also the other way round.
+
+The forward and backward equations both define the transition semigroup \((\mathsf P(t))\) in terms of the generator matrix \(\mathsf Q\).
+
+\hypertarget{matrix-exp}{%
+\subsection{Matrix exponential}\label{matrix-exp}}
+
+When the state space \(\mathcal S\) is finite, a crucial role is played for continuous time jump processes by the \textbf{matrix exponential} \(\mathrm{e}^{t\mathsf Q}\). In the discrete time setting, the matrix power \(\mathsf P^n\) (for integers \(n\)) was very important; the matrix exponential allows us to do matrix algebra with the powers being arbitrary real numbers, which is important for continuous time processes.
+
+You may remember that the exponential function is defined by
+\[ \mathrm{e}^x = \exp(x) = \sum_{n=0}^\infty \frac{x^n}{n!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots. \]
+Similarly, we can define the matrix exponential for any square matrix by
+\[ \mathrm{e}^{\mathsf A} = \exp({\mathsf A}) = \sum_{n=0}^\infty \frac{{\mathsf A}^n}{n!} = {\mathsf I} + {\mathsf A} + \tfrac12 \mathsf A^2+ \tfrac16 \mathsf A^3 + \cdots, \]
+where we interpret \(\mathsf A^0 = \mathsf I\) to be the identity matrix. In particular, since a matrix commutes with itself, we have \(\mathsf {A}^n \mathsf A = \mathsf{AA}^n\), so a matrix commutes with its own exponential, meaning that \(\mathsf A \mathrm{e}^{\mathsf A} = \mathrm{e}^{\mathsf A} \mathsf A\).
+
+Some properties of the standard exponential include
+\[ (\mathrm{e}^x\big)^n = \mathrm{e}^{nx} \qquad \frac{\mathrm d}{\mathrm d x} \mathrm{e}^{ax} = a \mathrm{e}^{ax} . \]
+Similarly, we have for the matrix exponential
+\[ (\mathrm{e}^{\mathsf A}\big)^n = \mathrm{e}^{n{\mathsf A}} \qquad \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{t{\mathsf A}} = {\mathsf A} \mathrm{e}^{t{\mathsf A}} = \mathrm{e}^{t{\mathsf A}} {\mathsf A} . \]
+
+From this last expression, we have that
+\[ \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{t{\mathsf Q}} = \mathrm{e}^{t{\mathsf Q}} {\mathsf Q} = {\mathsf Q} \mathrm{e}^{t{\mathsf Q}}  . \]
+Comparing this to the forward equation \(\mathsf P'(t) = \mathsf{P}(t) \mathsf Q\) and backward equation \(\mathsf{P}'(t) = \mathsf Q \mathsf{P}(t)\), we see that we have a solution to the forward and backward equations of \(\mathsf P(t) = \mathrm{e}^{t\mathsf Q}\), which also satisfies the common initial condition \(\mathsf P(0) = \mathrm{e}^{0\mathsf Q} = \mathsf I\).
+
+We also see that we have the semigroup property
+\[ \mathsf P(s+t) = \mathrm{e}^{(s+t)\mathsf Q} = \mathrm{e}^{s \mathsf Q + t \mathsf Q} = \mathrm{e}^{s \mathsf Q}\mathrm{e}^{t \mathsf Q} = \mathsf P(s) \mathsf P(t) . \]
+
+As a formal summary, we have the following.
+
+::: \{.theorem exp-thm\}
+Let \((X(t))\) be a time homogeneous continuous time Markov jump process with generator matrix \(\mathsf Q\). Let \((\mathsf P(t))\) be the transition semigroup, where \(\mathsf P(t) = (p_{ij}(t))\) is defined by \(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\).
+
+Then \((\mathsf P(t))\) is the minimal nonnegative solution to the forward equation
+\[ \mathsf P'(t) = \mathsf P(t) \mathsf Q \qquad \mathsf P(0) = \mathsf I , \]
+and is also the minimal nonnegative solution to the backward equation
+\[ \mathsf P'(t) = \mathsf Q \mathsf P(t) \qquad \mathsf P(0) = \mathsf I . \]
+
+When the state space \(\mathcal S\) is finite, the forward and backward equations both have a unique solution given by the matrix exponential \(\mathsf P(t) = \mathrm{e}^{t \mathsf Q}\).
+:::
 
 \hypertarget{computing}{%
 \section*{Computational worksheets}\label{computing}}
