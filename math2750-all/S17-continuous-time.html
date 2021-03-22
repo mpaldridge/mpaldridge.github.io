@@ -216,6 +216,7 @@
 <li class="chapter" data-level="18.2" data-path="S18-forward-backward.html"><a href="S18-forward-backward.html#semigroup"><i class="fa fa-check"></i><b>18.2</b> Transition semigroup and the forward and backward equations</a></li>
 <li class="chapter" data-level="18.3" data-path="S18-forward-backward.html"><a href="S18-forward-backward.html#matrix-exp"><i class="fa fa-check"></i><b>18.3</b> Matrix exponential</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="P09.html"><a href="P09.html"><i class="fa fa-check"></i>Problem Sheet 9</a></li>
 <li class="chapter" data-level="" data-path="computing.html"><a href="computing.html"><i class="fa fa-check"></i>Computational worksheets</a>
 <ul>
 <li class="chapter" data-level="" data-path="computing.html"><a href="computing.html#C-about"><i class="fa fa-check"></i>About the computational worksheets</a></li>
@@ -252,6 +253,12 @@
 </div>
 <div id="jump-holding" class="section level2" number="17.1">
 <h2><span class="header-section-number">17.1</span> Jump chain and holding times</h2>
+<div class="videowrap">
+<div class="videowrapper">
+<iframe src="https://www.youtube.com/embed/Kh-Yh8VMtVs">
+</iframe>
+</div>
+</div>
 <p>In this section, we will start looking at general Markov processes in continuous time and discrete space. All our examples will be time homogeneous, in that the transition probabilities and transition rates will remain constant over time.</p>
 <p>We call these <strong>Markov jump processes</strong>, as we will wait in a state for a random holding time, and then we will suddenly “jump” to another state.</p>
 <p>The idea will be treat two matters separately:</p>
@@ -259,14 +266,14 @@
 <li><strong>where we jump too:</strong> This will be studied through the “jump chain”, a discrete time Markov chain that tells us <em>what</em> transitions are made (but not <em>when</em> they are made).</li>
 <li><strong>how long we wait until we jump:</strong> we call these the “holding times”. To preserve the Markov property, these holding times must have an exponential distribution, since this is the only random variable that has the <a href="#memoryless-thm">memoryless property</a>.</li>
 </ul>
-<p>Let us consider a Markov jump process <span class="math inline">\((X(t))\)</span> on a state space <span class="math inline">\(\mathcal S\)</span>. Suppose we are at a state <span class="math inline">\(i \in \mathcal S\)</span>. The <strong>rate</strong> at which we wish to jump to a state <span class="math inline">\(j \neq i\)</span> will be written <span class="math inline">\(q_{ij} \geq 0\)</span>. This means that, after a time with an exponential distribution <span class="math inline">\(\operatorname{Exp}(q_{ij})\)</span>, if the process has not jumped yet, it will jump to state <span class="math inline">\(j\)</span>.</p>
-<p>(We use the convention that if <span class="math inline">\(q_{ij} = 0\)</span> for some <span class="math inline">\(j \neq i\)</span>, this means we will never jump from <span class="math inline">\(i\)</span> to <span class="math inline">\(j\)</span>. If <span class="math inline">\(q_{ij} = 0\)</span> for <em>all</em> <span class="math inline">\(j \neq i\)</span>, then we stay in state <span class="math inline">\(i\)</span> forever.)</p>
+<p>Let us consider a Markov jump process <span class="math inline">\((X(t))\)</span> on a state space <span class="math inline">\(\mathcal S\)</span>. Suppose we are at a state <span class="math inline">\(i \in \mathcal S\)</span>. The <strong>transition rate</strong> at which we wish to jump to a state <span class="math inline">\(j \neq i\)</span> will be written <span class="math inline">\(q_{ij} \geq 0\)</span>. This means that, after a time with an exponential distribution <span class="math inline">\(\operatorname{Exp}(q_{ij})\)</span>, if the process has not jumped yet, it will jump to state <span class="math inline">\(j\)</span>.</p>
+<p>(We use the convention that if <span class="math inline">\(q_{ij} = 0\)</span> for some <span class="math inline">\(j \neq i\)</span>, this means we will never jump from <span class="math inline">\(i\)</span> to <span class="math inline">\(j\)</span>. If for some <span class="math inline">\(i\)</span> we have <span class="math inline">\(q_{ij} = 0\)</span> for <em>all</em> <span class="math inline">\(j \neq i\)</span>, then we stay in state <span class="math inline">\(i\)</span> forever, and <span class="math inline">\(i\)</span> is an abaorbing state.)</p>
 <p>So from state <span class="math inline">\(i\)</span>, there are many other states <span class="math inline">\(j\)</span> we could jump to, each waiting for a time <span class="math inline">\(\operatorname{Exp}(q_{ij})\)</span>. Which of these times will be up first, leading the process to jump to that state? And how long will it be until that first time is up and we move?
 The answer is given by Theorem <a href="S14-poisson-exponential.html#thm:exponential-thm">14.2</a>, which showed us the distribution of the minimum of the <span class="math inline">\(\operatorname{Exp}(q_{ij})\)</span>s is itself exponential, with rate
 <span class="math display">\[ q_i := \sum_{j \neq i} q_{ij} . \]</span>
 Further, and also from Theorem <a href="S14-poisson-exponential.html#thm:exponential-thm">14.2</a>, the probability that we move to some state <span class="math inline">\(j \neq i\)</span> is
 <span class="math display">\[ r_{ij} := \frac{q_{ij}}{\sum_{j \neq i} q_{ij}} = \frac{q_{ij}}{q_i} . \]</span>
-(These last two displayed equations define the quantities <span class="math inline">\(q_i\)</span> and <span class="math inline">\(r_{ij}\)</span>.)</p>
+These last two displayed equations define the quantities <span class="math inline">\(q_i\)</span> and <span class="math inline">\(r_{ij}\)</span>. (If <span class="math inline">\(i\)</span> is an absorbing state <span class="math inline">\(i\)</span>, then by convenetion we put <span class="math inline">\(r_{ii} = 1\)</span> and <span class="math inline">\(r_{ij} = 0\)</span> for <span class="math inline">\(j \neq i\)</span>.</p>
 <p>So, this is the crucial idea: from state <span class="math inline">\(i\)</span>, we wait for a holding time with distribution <span class="math inline">\(\operatorname{Exp}(q_i)\)</span>, then move to another state, choosing state <span class="math inline">\(j\)</span> with probability <span class="math inline">\(r_{ij}\)</span>.</p>
 <p>It will be convenient to write all the transition rates <span class="math inline">\(q_{ij}\)</span> down in a <strong>generator matrix</strong> <span class="math inline">\(\mathsf Q\)</span> defined as follows: the off-diagonal entries are <span class="math inline">\(q_{ij}\)</span>, for <span class="math inline">\(i \neq j\)</span>, and the diagonal entries are
 <span class="math display">\[ q_{ii} = - q_i = -\sum_{j \neq i} q_{ij} . \]</span>
@@ -281,7 +288,7 @@ This is a discrete time Markov chain that starts from the same place <span class
 <p><span id="def:CTMC" class="definition"><strong>Definition 17.1  </strong></span> </p>
 <ul>
 <li>Let <span class="math inline">\(\mathcal S\)</span> be a set, and <span class="math inline">\(\boldsymbol\lambda\)</span> a distribution on <span class="math inline">\(\mathcal S\)</span>.</li>
-<li>Let <span class="math inline">\(\mathsf Q = (q_{ij} : i,j \in \mathcal S)\)</span> be a matrix where <span class="math inline">\(q_{ij} \geq 0\)</span> for <span class="math inline">\(i \neq j\)</span> and <span class="math inline">\(\sum_j q_{ij} = 0\)</span>, and write <span class="math inline">\(q_{ii} = -q_i = - \sum_{j \neq i} q_{ij}\)</span>.</li>
+<li>Let <span class="math inline">\(\mathsf Q = (q_{ij} : i,j \in \mathcal S)\)</span> be a matrix where <span class="math inline">\(q_{ij} \geq 0\)</span> for <span class="math inline">\(i \neq j\)</span> and <span class="math inline">\(\sum_j q_{ij} = 0\)</span> for all <span class="math inline">\(i\)</span>, and write <span class="math inline">\(q_i = -q_{ii} = -q_i = \sum_{j \neq i} q_{ij}\)</span>.</li>
 <li>Define <span class="math inline">\(\mathsf R = (r_{ij} : i,j \in \mathcal S)\)</span> as follows: for <span class="math inline">\(i\)</span> such that <span class="math inline">\(q_i \neq 0\)</span>, write <span class="math inline">\(r_{ij} = q_{ij}/q_i\)</span> for <span class="math inline">\(j \neq i\)</span>, and <span class="math inline">\(r_{ii}= 0\)</span>; and for <span class="math inline">\(i\)</span> such that <span class="math inline">\(q_i = 0\)</span>, write <span class="math inline">\(r_{ij} = 0\)</span> for <span class="math inline">\(j \neq i\)</span>, and <span class="math inline">\(r_{ii} = 1\)</span>.</li>
 </ul>
 <p>We wish to define the <strong>Markov jump process</strong> on a state space <span class="math inline">\(\mathcal S\)</span> with generator matrix <span class="math inline">\(\mathsf Q\)</span> and initial distribution <span class="math inline">\(\boldsymbol\lambda\)</span>.</p>
@@ -298,6 +305,12 @@ This is a discrete time Markov chain that starts from the same place <span class
 </div>
 <div id="CTMC-examples" class="section level2" number="17.2">
 <h2><span class="header-section-number">17.2</span> Examples</h2>
+<div class="videowrap">
+<div class="videowrapper">
+<iframe src="https://www.youtube.com/embed/uciafay3WCM">
+</iframe>
+</div>
+</div>
 <div class="example">
 <p><span id="exm:three-state" class="example"><strong>Example 17.1  </strong></span>Consider the Markov jump process on a state space <span class="math inline">\(\mathcal S = \{1,2,3\}\)</span> with transition rates as illustrated in the following transition rate diagram. (Note that a transition rate diagram never has arrows from a state to itself.)</p>
 <div class="figure" style="text-align: center"><span id="fig:ctmc1"></span>
