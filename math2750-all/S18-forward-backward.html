@@ -208,7 +208,7 @@
 <ul>
 <li class="chapter" data-level="17.1" data-path="S17-continuous-time.html"><a href="S17-continuous-time.html#jump-holding"><i class="fa fa-check"></i><b>17.1</b> Jump chain and holding times</a></li>
 <li class="chapter" data-level="17.2" data-path="S17-continuous-time.html"><a href="S17-continuous-time.html#CTMC-examples"><i class="fa fa-check"></i><b>17.2</b> Examples</a></li>
-<li class="chapter" data-level="17.3" data-path="S17-continuous-time.html"><a href="S17-continuous-time.html#a-brief-note-on-explosion"><i class="fa fa-check"></i><b>17.3</b> A brief note on explosion</a></li>
+<li class="chapter" data-level="17.3" data-path="S17-continuous-time.html"><a href="S17-continuous-time.html#explosion"><i class="fa fa-check"></i><b>17.3</b> A brief note on explosion</a></li>
 </ul></li>
 <li class="chapter" data-level="18" data-path="S18-forward-backward.html"><a href="S18-forward-backward.html"><i class="fa fa-check"></i><b>18</b> Forward and backward equations</a>
 <ul>
@@ -217,6 +217,23 @@
 <li class="chapter" data-level="18.3" data-path="S18-forward-backward.html"><a href="S18-forward-backward.html#matrix-exp"><i class="fa fa-check"></i><b>18.3</b> Matrix exponential</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="P09.html"><a href="P09.html"><i class="fa fa-check"></i>Problem Sheet 9</a></li>
+<li class="chapter" data-level="19" data-path="S19-class-hitting.html"><a href="S19-class-hitting.html"><i class="fa fa-check"></i><b>19</b> Class structure and hitting times</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="S19-class-hitting.html"><a href="S19-class-hitting.html#classes-cont"><i class="fa fa-check"></i><b>19.1</b> Communicating classes</a></li>
+<li class="chapter" data-level="19.2" data-path="S19-class-hitting.html"><a href="S19-class-hitting.html#periods2"><i class="fa fa-check"></i><b>19.2</b> A brief note on periodicity</a></li>
+<li class="chapter" data-level="19.3" data-path="S19-class-hitting.html"><a href="S19-class-hitting.html#hitting2"><i class="fa fa-check"></i><b>19.3</b> Hitting probabilities and expected hitting times</a></li>
+<li class="chapter" data-level="19.4" data-path="S19-class-hitting.html"><a href="S19-class-hitting.html#recurrence-transience2"><i class="fa fa-check"></i><b>19.4</b> Recurrence and transience</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="S20-long-term-jump.html"><a href="S20-long-term-jump.html"><i class="fa fa-check"></i><b>20</b> Long-term behaviour of Markov jump procceses</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="S20-long-term-jump.html"><a href="S20-long-term-jump.html#stationary-jump"><i class="fa fa-check"></i><b>20.1</b> Stationary distributions</a></li>
+<li class="chapter" data-level="20.2" data-path="S20-long-term-jump.html"><a href="S20-long-term-jump.html#convergernce-cont"><i class="fa fa-check"></i><b>20.2</b> Convergence to equilibrium</a></li>
+<li class="chapter" data-level="20.3" data-path="S20-long-term-jump.html"><a href="S20-long-term-jump.html#ergodic-cont"><i class="fa fa-check"></i><b>20.3</b> Ergodic theorem</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="P10.html"><a href="P10.html"><i class="fa fa-check"></i>Problem Sheet 10</a></li>
+<li class="chapter" data-level="" data-path="A4.html"><a href="A4.html"><i class="fa fa-check"></i>Assessment 4</a></li>
+<li class="chapter" data-level="21" data-path="S21-queues.html"><a href="S21-queues.html"><i class="fa fa-check"></i><b>21</b> Queues</a></li>
+<li class="chapter" data-level="22" data-path="S22-end.html"><a href="S22-end.html"><i class="fa fa-check"></i><b>22</b> Last things</a></li>
 <li class="chapter" data-level="" data-path="computing.html"><a href="computing.html"><i class="fa fa-check"></i>Computational worksheets</a>
 <ul>
 <li class="chapter" data-level="" data-path="computing.html"><a href="computing.html#C-about"><i class="fa fa-check"></i>About the computational worksheets</a></li>
@@ -275,8 +292,11 @@ The probability we make two or more jumps is a lower order term <span class="mat
 </div>
 <div id="semigroup" class="section level2" number="18.2">
 <h2><span class="header-section-number">18.2</span> Transition semigroup and the forward and backward equations</h2>
-<div class="mysummary">
-<p><em>Video to appear here soon.</em></p>
+<div class="videowrap">
+<div class="videowrapper">
+<iframe src="https://www.youtube.com/embed/McvSHkHF64o">
+</iframe>
+</div>
 </div>
 <p>Let us write <span class="math inline">\(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\)</span> for the transition probability over a time <span class="math inline">\(t\)</span>. This is the continuous-time equivalent to the <span class="math inline">\(n\)</span>-step transition probability <span class="math inline">\(p_{ij}(n)\)</span> we had before in discrete time, but now <span class="math inline">\(t\)</span> can be any positive real value. It can be convenient to use the matrix form <span class="math inline">\(\mathsf P(t) = (p_{ij}(t) : i,j \in \mathcal S)\)</span>.</p>
 <p>In discrete time, we were given a transition matrix <span class="math inline">\(\mathsf P\)</span>, and it was easy to find <span class="math inline">\(\mathsf P(n) = \mathsf P^n\)</span> as a matrix power. In continuous time, we are given the generator matrix <span class="math inline">\(\mathsf Q\)</span>, so how can we find <span class="math inline">\(\mathsf P(t)\)</span> from <span class="math inline">\(\mathsf Q\)</span>?</p>
@@ -310,34 +330,41 @@ where the <span class="math inline">\(\mathsf Q\)</span> and <span class="math i
 </div>
 <div id="matrix-exp" class="section level2" number="18.3">
 <h2><span class="header-section-number">18.3</span> Matrix exponential</h2>
-<div class="mysummary">
-<p><em>Video to appear here soon.</em></p>
+<div class="videowrap">
+<div class="videowrapper">
+<iframe src="https://www.youtube.com/embed/vMq944iDV5s">
+</iframe>
 </div>
-<p>When the state space <span class="math inline">\(\mathcal S\)</span> is finite, a crucial role is played for continuous time jump processes by the <strong>matrix exponential</strong> <span class="math inline">\(\mathrm{e}^{t\mathsf Q}\)</span>. In the discrete time setting, the matrix power <span class="math inline">\(\mathsf P^n\)</span> (for integers <span class="math inline">\(n\)</span>) was very important; the matrix exponential allows us to do matrix algebra with the powers including arbitrary real numbers, which is important for continuous time processes.</p>
-<p>You may remember that the usual exponential function is defined by the Taylor series
+</div>
+<p>In discrete time, when we are given the transition matrix <span class="math inline">\(\mathsf P\)</span>, we could find the <span class="math inline">\(n\)</span>-step transition probabilities <span class="math inline">\(\mathsf P(n)\)</span> using the matrix power <span class="math inline">\(\mathsf P^n\)</span>. (At least when the state space was finite – one has to be careful with what the matrix power means if the state space is infinite.) In continuous time (and finite state space), when we are given the generator matrix <span class="math inline">\(\mathsf Q\)</span>, it will turn out that a similar role is played by the <strong>matrix exponential</strong> <span class="math inline">\(\mathsf P(t) = \mathrm{e}^{t\mathsf Q}\)</span>, which solves the forward and backward equations. In this way, the generator matrix <span class="math inline">\(\mathsf Q\)</span> is a bit like “the logarithm of the transition matrix <span class="math inline">\(\mathsf P\)</span>” – although this is only a metaphor, rather than a careful mathematical statement.</p>
+<p>Let’s be more formal about this. You may remember that the usual exponential function is defined by the Taylor series
 <span class="math display">\[ \mathrm{e}^x = \exp(x) = \sum_{n=0}^\infty \frac{x^n}{n!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots. \]</span>
 Similarly, we can define the matrix exponential for any square matrix by the same series
 <span class="math display">\[ \mathrm{e}^{\mathsf A} = \exp({\mathsf A}) = \sum_{n=0}^\infty \frac{{\mathsf A}^n}{n!} = {\mathsf I} + {\mathsf A} + \tfrac12 \mathsf A^2+ \tfrac16 \mathsf A^3 + \cdots, \]</span>
 where we interpret <span class="math inline">\(\mathsf A^0 = \mathsf I\)</span> to be the identity matrix.</p>
+<p>In the same way that a computer can easily calculate a matrix power <span class="math inline">\(\mathsf P^n\)</span> very quickly, a computer can also calculate matrix powers very quickly and very accurately – see <a href="P09.html#P09">Problem Sheet 9</a> Question 5 for more details about how.</p>
 <p>Since a matrix commutes with itself, we have <span class="math inline">\(\mathsf {A}^n \mathsf A = \mathsf{AA}^n\)</span>, so a matrix commutes with its own exponential, meaning that <span class="math inline">\(\mathsf A \mathrm{e}^{\mathsf A} = \mathrm{e}^{\mathsf A} \mathsf A\)</span>. This will be useful later.</p>
 <p>Some properties of the standard exponential include
-<span class="math display">\[ (\mathrm{e}^x\big)^n = \mathrm{e}^{nx} \qquad \frac{\mathrm d}{\mathrm d x} \mathrm{e}^{ax} = a \mathrm{e}^{ax} . \]</span>
+<span class="math display">\[ (\mathrm{e}^x\big)^n = \mathrm{e}^{nx} \qquad \mathrm{e}^{x+y} = \mathrm{e}^x \mathrm{e}^y \qquad \frac{\mathrm d}{\mathrm d x} \mathrm{e}^{ax} = a \mathrm{e}^{ax} . \]</span>
 Similarly, we have for the matrix exponential
-<span class="math display">\[ (\mathrm{e}^{\mathsf A}\big)^n = \mathrm{e}^{n{\mathsf A}} \qquad \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{t{\mathsf A}} = {\mathsf A} \mathrm{e}^{t{\mathsf A}} = \mathrm{e}^{t{\mathsf A}} {\mathsf A} . \]</span></p>
+<span class="math display">\[ (\mathrm{e}^{\mathsf A}\big)^t = \mathrm{e}^{t{\mathsf A}} \qquad \mathrm{e}^{\mathsf A + \mathsf B} = \mathrm{e}^{\mathsf A} \mathrm{e}^{\mathsf B} \qquad \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{t{\mathsf A}} = {\mathsf A} \mathrm{e}^{t{\mathsf A}} = \mathrm{e}^{t{\mathsf A}} {\mathsf A} . \]</span></p>
 <p>From this last expression, we get that
 <span class="math display">\[ \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{t{\mathsf Q}} = \mathrm{e}^{t{\mathsf Q}} {\mathsf Q} = {\mathsf Q} \mathrm{e}^{t{\mathsf Q}}  . \]</span>
 Comparing this to the forward equation <span class="math inline">\(\mathsf P&#39;(t) = \mathsf{P}(t) \mathsf Q\)</span> and backward equation <span class="math inline">\(\mathsf{P}&#39;(t) = \mathsf Q \mathsf{P}(t)\)</span>, we see that we have a solution to the forward and backward equations of <span class="math inline">\(\mathsf P(t) = \mathrm{e}^{t\mathsf Q}\)</span>, which also satisfies the common initial condition <span class="math inline">\(\mathsf P(0) = \mathrm{e}^{0\mathsf Q} = \mathsf I\)</span>.</p>
 <p>We also see that we have the semigroup property
 <span class="math display">\[ \mathsf P(s+t) = \mathrm{e}^{(s+t)\mathsf Q} = \mathrm{e}^{s \mathsf Q + t \mathsf Q} = \mathrm{e}^{s \mathsf Q}\mathrm{e}^{t \mathsf Q} = \mathsf P(s) \mathsf P(t) . \]</span></p>
 <p>As a formal summary, we have the following.</p>
-<p>::: {.theorem exp-thm}
-Let <span class="math inline">\((X(t))\)</span> be a time homogeneous continuous time Markov jump process with generator matrix <span class="math inline">\(\mathsf Q\)</span>. Let <span class="math inline">\((\mathsf P(t))\)</span> be the transition semigroup, where <span class="math inline">\(\mathsf P(t) = (p_{ij}(t))\)</span> is defined by <span class="math inline">\(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\)</span>.</p>
+<div class="theorem">
+<p><span id="thm:exp-thm" class="theorem"><strong>Theorem 18.1  </strong></span>Let <span class="math inline">\((X(t))\)</span> be a time homogeneous continuous time Markov jump process with generator matrix <span class="math inline">\(\mathsf Q\)</span>. Let <span class="math inline">\((\mathsf P(t))\)</span> be the transition semigroup, where <span class="math inline">\(\mathsf P(t) = (p_{ij}(t))\)</span> is defined by <span class="math inline">\(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\)</span>.</p>
 <p>Then <span class="math inline">\((\mathsf P(t))\)</span> is the minimal nonnegative solution to the forward equation
 <span class="math display">\[ \mathsf P&#39;(t) = \mathsf P(t) \mathsf Q \qquad \mathsf P(0) = \mathsf I , \]</span>
 and is also the minimal nonnegative solution to the backward equation
 <span class="math display">\[ \mathsf P&#39;(t) = \mathsf Q \mathsf P(t) \qquad \mathsf P(0) = \mathsf I . \]</span></p>
-<p>When the state space <span class="math inline">\(\mathcal S\)</span> is finite, the forward and backward equations both have a unique solution given by the matrix exponential <span class="math inline">\(\mathsf P(t) = \mathrm{e}^{t \mathsf Q}\)</span>.
-:::</p>
+<p>When the state space <span class="math inline">\(\mathcal S\)</span> is finite, the forward and backward equations both have a unique solution given by the matrix exponential <span class="math inline">\(\mathsf P(t) = \mathrm{e}^{t \mathsf Q}\)</span>.</p>
+</div>
+<div class="mysummary">
+<p><strong>In the next section</strong>, we develop the theory we already know in discrete time: communicating classes, hitting times, recurrence and transience.</p>
+</div>
 
 </div>
 </div>

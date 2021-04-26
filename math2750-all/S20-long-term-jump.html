@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Problem Sheet 9 | MATH2750 Introduction to Markov Processes</title>
+  <title>Section 20 Long-term behaviour of Markov jump procceses | MATH2750 Introduction to Markov Processes</title>
   <meta name="description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Problem Sheet 9 | MATH2750 Introduction to Markov Processes" />
+  <meta property="og:title" content="Section 20 Long-term behaviour of Markov jump procceses | MATH2750 Introduction to Markov Processes" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://mpaldridge.github.io/math2750/" />
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Problem Sheet 9 | MATH2750 Introduction to Markov Processes" />
+  <meta name="twitter:title" content="Section 20 Long-term behaviour of Markov jump procceses | MATH2750 Introduction to Markov Processes" />
   
   <meta name="twitter:description" content="Lecture notes for the course MATH2750 Introduction to Markov Process at the University of Leeds, 2020–2021" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="S18-forward-backward.html"/>
-<link rel="next" href="S19-class-hitting.html"/>
+<link rel="prev" href="S19-class-hitting.html"/>
+<link rel="next" href="P10.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -260,274 +260,129 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="P09" class="section level1 unnumbered">
-<h1>Problem Sheet 9</h1>
-<!--
-<style>
-.fold-btn { 
-  float: right; 
-  margin: -12px 0 0 0;
-}
-</style>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  $folds = $(".myanswers");
-  $folds.wrapInner("<div class=\"fold-blck\">"); // wrap a div container around content
-  $folds.prepend("<button class=\"fold-btn\">Show solution</button>");  // add a button
-  $(".fold-blck").toggle();  // fold all blocks
-  $(".fold-btn").on("click", function() {  // add onClick event
-    $(this).text($(this).text() === "Hide solution" ? "Show solution" : "Hide solution");  // if the text equals "Fold", change it to "Unfold"or else to "Fold" 
-    $(this).next(".fold-blck").toggle("linear");  // "swing" is the default easing function. This can be further customized in its speed or the overall animation itself.
-  })
-});
-</script>
--->
-<!--
-<style>
-.myanswers { 
-display: none !important;
-}
-</style>
--->
+<div id="S20-long-term-jump" class="section level1" number="20">
+<h1><span class="header-section-number">Section 20</span> Long-term behaviour of Markov jump procceses</h1>
 <div class="mysummary">
-<p>You should attempt all these questions and write up your solutions in advance of your workshop in week 10 (Monday 26 or Tuesday 27 April) where the answers will be discussed.</p>
+<ul>
+<li>Stationary distributions, which solve <span class="math inline">\(\boldsymbol\pi\mathsf Q = \mathbf 0\)</span></li>
+<li>The limit theorem and the ergodic theorem</li>
+</ul>
 </div>
-<div class="myq">
-<p><strong>1.</strong> Consider a Markov jump process with state space <span class="math inline">\(\mathcal S = \{0,1,2,\dots,N\}\)</span> and generator matrix
-<span class="math display">\[ \mathsf Q = \begin{pmatrix} -q_0 &amp; q_{01} &amp; q_{02} &amp; \cdots &amp; q_{0N} \\
-0    &amp; 0      &amp; 0      &amp; \cdots &amp; 0      \\
-0    &amp; 0      &amp; 0      &amp; \cdots &amp; 0      \\
-\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-0    &amp; 0      &amp; 0      &amp; \cdots &amp; 0  \end{pmatrix} . \]</span></p>
-<div class="subq">
-<p><strong>(a)</strong> Draw a transition rate diagram for this jump process.</p>
-<div class="myanswers">
-<p><em>Solution.</em> <!--
-        \begin{tikzpicture}[shorten >=1pt,scale=0.8]
-        \node[state] (0) at (0,0) {$0$};
-        \node[state] (1) at (5,3) {$1$};
-        \node[state] (2) at (5,1) {$2$};
-        \node[state] (d) at (5,-1) {$\vdots$};
-        \node[state] (N) at (5,-3) {$N$};
-        
-        \path[->] (0) edge node [above]{$q_{01}$} (1);
-        \path[->] (0) edge node [above]{$q_{02}$} (2);
-        \path[->] (0) edge node [below]{$q_{0N}$} (N);
-        \end{tikzpicture}
---></p>
+<p>Our goal here is to develop the theory of the long-term behaviour of continuous time Markov jump processes in the same way as we did for discrete time Markov chains.</p>
+<p>In discrete time, we defined <strong>stationary distributions</strong> as solving <span class="math inline">\(\boldsymbol\pi\mathsf P = \boldsymbol\pi\)</span>. We then had the <strong>limit theorem</strong>, which told us about equilibrium distributions and the limit of <span class="math inline">\(\mathbb P(X_n = i)\)</span>, and the <strong>ergodic theorem</strong>, which told us about the long term proportion of time spent in each state. We develop the same results here.</p>
+<div id="stationary-jump" class="section level2" number="20.1">
+<h2><span class="header-section-number">20.1</span> Stationary distributions</h2>
+<div class="videowrap">
+<div class="videowrapper">
+<iframe src="https://www.youtube.com/embed/F6OI3hMKWto">
+</iframe>
 </div>
 </div>
-<p>This process is a “multiple decrement model”: there is one “active state” 0 and a number of “exit states” <span class="math inline">\(1,2,\dots,N\)</span>.</p>
-<div class="subq">
-<p><strong>(b)</strong> What is the probability that the process exits at state <span class="math inline">\(i\)</span>?</p>
-<div class="myanswers">
-<p><em>Solution.</em> The probability of exit at <span class="math inline">\(i\)</span> is <span class="math inline">\(r_{0i} = q_{0i}/q_0\)</span>.</p>
+<p>We start by defining a stationary distribution as before.</p>
+<div class="definition">
+<p><span id="def:statdist2" class="definition"><strong>Definition 20.1  </strong></span>Let <span class="math inline">\((X(t))\)</span> be a Markov jump process on a state space <span class="math inline">\(\mathcal S\)</span> with generator matrix <span class="math inline">\(\mathsf Q\)</span> and transition semigroup <span class="math inline">\((\mathsf P(t))\)</span>.
+Let <span class="math inline">\(\boldsymbol \pi = (\pi_i)\)</span> be a distribution on <span class="math inline">\(\mathcal S\)</span>, in that <span class="math inline">\(\pi_i \geq 0\)</span> for all <span class="math inline">\(i \in \mathcal S\)</span> and <span class="math inline">\(\sum_{i \in \mathcal S} \pi_i = 1\)</span>. We call <span class="math inline">\(\boldsymbol \pi\)</span> a <strong>stationary distribution</strong> if
+<span class="math display">\[ \pi_j = \sum_{i\in \mathcal S} \pi_i p_{ij}(t) \quad \text{for all $j \in \mathcal S$ and $t \geq 0$,} \]</span>
+or, equivalently, if <span class="math inline">\(\boldsymbol \pi = \boldsymbol \pi\mathsf P(t)\)</span> for all <span class="math inline">\(t \geq 0\)</span>.</p>
 </div>
+<p>This initially looks rather awkward: we’re usually given a generator matrix <span class="math inline">\(\mathsf Q\)</span>, and then we might have to first find all the <span class="math inline">\(\mathsf P(t)\)</span>s and then simultaneously solve infinitely many equations. Luckily it’s actually much easier than that: we just have to solve <span class="math inline">\(\boldsymbol\pi \mathsf Q = \mathbf 0\)</span> (where <span class="math inline">\(\mathbf 0\)</span> is the <em>row</em> vector of all zeros).</p>
+<div class="theorem">
+<p><span id="thm:statQ" class="theorem"><strong>Theorem 20.1  </strong></span>Let <span class="math inline">\((X(t))\)</span> be a Markov jump process on a state with generator matrix <span class="math inline">\(\mathsf Q\)</span>. If <span class="math inline">\(\boldsymbol\pi = (\pi_i)\)</span> is a distribution with <span class="math inline">\(\sum_i \pi_i q_{ij} = 0\)</span> for all <span class="math inline">\(j\)</span>, then <span class="math inline">\(\boldsymbol\pi\)</span> is a stationary distribution. In matrix form, this condition is <span class="math inline">\(\boldsymbol\pi \mathsf Q = \mathbf 0\)</span>.</p>
 </div>
-<div class="subq">
-<p><strong>(c)</strong> Give a <span class="math inline">\(95\%\)</span> prediction interval for the amount of time spent in the active state. (Your answer will be in terms of <span class="math inline">\(q_0\)</span>.)</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-The amount of time in the active state is <span class="math inline">\(T_1 \sim \operatorname{Exp}(q_0)\)</span>. The <span class="math inline">\(\alpha\)</span>-upper quantile of this distribution is the <span class="math inline">\(t\)</span> such that <span class="math inline">\(\alpha = \mathrm{e}^{-q_0 t}\)</span> which is <span class="math inline">\(-(\log\alpha)/q_0\)</span>. So the <span class="math inline">\(95\%\)</span> prediction interval is
-<span class="math display">\[ \left[ \frac{-\log0.975}{q_0} , \frac{-\log0.025}{q_0} \right] = \left[ \frac{0.025}{q_0}, \frac{3.69}{q_0} \right] .              \]</span></p>
+<div class="proof">
+<p><span id="unlabeled-div-24" class="proof"><em>Proof</em>. </span>Suppose <span class="math inline">\(\boldsymbol\pi \mathsf Q = \mathbf 0\)</span>. We need to show that <span class="math inline">\(\boldsymbol\pi\mathsf P(t) = \boldsymbol\pi\)</span> for all <span class="math inline">\(t\)</span>. We’ll first show that <span class="math inline">\(\boldsymbol\pi\mathsf P(t)\)</span> is constant, then show that that constant is indeed <span class="math inline">\(\boldsymbol\pi\)</span>.</p>
+<p>First, we can show that <span class="math inline">\(\boldsymbol \pi\mathsf P(t)\)</span> is constant by showing that its derivative is zero. Using the backward equation <span class="math inline">\(\mathsf P&#39;(t) = \mathsf Q \mathsf P(t)\)</span>, we have
+<span class="math display">\[ \frac{\mathrm d}{\mathrm dt}\boldsymbol \pi\mathsf P(t) = \boldsymbol \pi \frac{\mathrm d}{\mathrm dt} \mathsf P(t) = \boldsymbol \pi \mathsf Q \mathsf P(t) = \boldsymbol 0 \mathsf P(t) = \boldsymbol 0, \]</span>
+as desired.</p>
+<p>Second, we can find that constant value by setting <span class="math inline">\(t\)</span> to any value: we pick <span class="math inline">\(t = 0\)</span>. Since <span class="math inline">\(\mathsf P(0) = \mathsf I\)</span>, the identity matrix, we have
+<span class="math display">\[ \boldsymbol \pi\mathsf P(t) = \boldsymbol \pi\mathsf P(0) = \boldsymbol \pi\mathsf I = \boldsymbol \pi \qquad \text{for all $t$.} \]</span></p>
 </div>
-</div>
-</div>
-<div class="myq">
-<p><strong>2.</strong> Consider the Markov jump process <span class="math inline">\((X(t))\)</span> with state space <span class="math inline">\(\mathcal S = \{1,2,3\}\)</span> and generator matrix
-<span class="math display">\[ \mathsf Q = \begin{pmatrix} -3 &amp; 2 &amp; 1 \\ 2 &amp; -6 &amp; 4 \\ 1 &amp; 3 &amp; -4 \end{pmatrix} . \]</span>
-The process begins from the state <span class="math inline">\(X(0) = 1\)</span>.
-Let <span class="math inline">\((Y_n)\)</span> be the associated Markov jump chain.</p>
-<div class="subq">
-<p><strong>(a)</strong> Write down the transition matrix <span class="math inline">\(\mathsf R\)</span> of the jump chain.</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-<span class="math display">\[ \mathsf R = \begin{pmatrix} 0 &amp; \frac23 &amp; \frac13 \\[0.5ex] \frac13 &amp; 0 &amp; \frac23 \\[0.5ex] \frac14 &amp; \frac34 &amp; 0 \end{pmatrix} . \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> What is the expected time of the first jump <span class="math inline">\(J_1\)</span>?</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-The first jump time has the distribution <span class="math inline">\(J_1 = T_1 \sim \operatorname{Exp}(q_1) = \operatorname{Exp}(3)\)</span>, which has expectation <span class="math inline">\(\mathbb E J_1 = \frac13\)</span>.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> What is the probability the first jump is to state 2?</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-The probability the first jump from <span class="math inline">\(1\)</span> is to <span class="math inline">\(2\)</span> is <span class="math inline">\(r_{12} = \frac23\)</span>.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(d)</strong> By conditioning on the first jump, calculate the expected time of the second jump time <span class="math inline">\(J_2 = T_1 + T_2\)</span>.</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-We have
+<p>(Strictly speaking, taking the <span class="math inline">\(\boldsymbol\pi\)</span> outside the derivative in the first step is only formally justified when the state space is finite, but the result is true for general processes.)</p>
+<div class="example">
+<p><span id="exm:stat-cont-ex" class="example"><strong>Example 20.1  </strong></span><em>In Section <a href="S17-continuous-time.html#S17-continuous-time">17</a> we considered the Markov jump process with generator matrix</em>
+<span class="math display">\[ \mathsf Q = \begin{pmatrix} -2 &amp; 2 &amp; 0 \\
+ 1 &amp; -3 &amp; 2 \\
+ 0 &amp; 1 &amp; -1 \end{pmatrix} . \]</span>
+<em>Find the stationary distribution.</em></p>
+<p>We approach this in the same way as we would in the discrete time case.</p>
+<p>First, we write out the equations of
+<span class="math display">\[ \begin{pmatrix} \pi_1 &amp; \pi_2 &amp; \pi_3 \end{pmatrix}\begin{pmatrix} -2 &amp; 2 &amp; 0 \\
+ 1 &amp; -3 &amp; 2 \\
+ 0 &amp; 1 &amp; -1 \end{pmatrix} = \begin{pmatrix} 0 &amp; 0 &amp; 0 \end{pmatrix}    \]</span>
+coordinate by coordinate, to get
 <span class="math display">\[\begin{align*}
-\mathbb E(T_1 + T_2) &amp;= \mathbb ET_1 + \mathbb P(Y_1 = 2) \mathbb E(T_2 \mid Y_1 = 2) \\ &amp;\qquad{}+ \mathbb P(Y_1 = 2) \mathbb E(T_2 \mid Y_1 = 3) \\&amp;= \frac1{q_1} + r_{12} \frac{1}{q_2} + r_{23} \frac{1}{q_3} \\&amp;= \tfrac13 + \tfrac23 \, \tfrac16 + \tfrac13 \, \tfrac14 \\ &amp;= \tfrac{19}{36} = 0.528
-\end{align*}\]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(e)</strong> What is the probability that the second jump is to state 2?</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-In the jump chain, the only length-<span class="math inline">\(2\)</span> path from <span class="math inline">\(1\)</span> to <span class="math inline">\(2\)</span> is <span class="math inline">\(1 \to 3 \to 2\)</span>, with probability <span class="math inline">\(r_{12}^{(2)}=\frac13 \times \frac34 = \frac14\)</span>.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(f)</strong> What is the probability that the third jump is to state 2?</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-In the jump chain, paths of length <span class="math inline">\(3\)</span> from <span class="math inline">\(1\)</span> to <span class="math inline">\(2\)</span> are
-<span class="math display">\[\begin{align*}
-    1 &amp;\to 2 \to 1 \to 2 &amp; \tfrac23 \times \tfrac13 \times \tfrac23 &amp;= \tfrac{16}{108} ,    \\
-    1 &amp;\to 2 \to 3 \to 2 &amp; \tfrac23 \times \tfrac23 \times \tfrac34 &amp;=  \tfrac{36}{108} ,   \\
-    1 &amp;\to 3 \to 1 \to 2 &amp; \tfrac13 \times \tfrac14 \times \tfrac23 &amp;=  \tfrac{6}{108} .
-    \end{align*}\]</span>
-The total probability is <span class="math inline">\(r_{12}^{(3)} = \frac{58}{108} = 0.537\)</span>.</p>
-</div>
-</div>
-</div>
-<div class="myq">
-<p><strong>3.</strong> Consider the Markov jump process on <span class="math inline">\(\mathcal S = \{1,2\}\)</span> with generator matrix
-<span class="math display">\[ \mathsf Q = \begin{pmatrix} -\alpha &amp; \alpha \\ \beta &amp; -\beta \end{pmatrix} , \]</span>
-where <span class="math inline">\(\alpha, \beta &gt; 0\)</span>.</p>
-<div class="subq">
-<p><strong>(a)</strong> Write down the Kolmogorov forward equation for <span class="math inline">\(p_{11}(t)\)</span>, including the initial condition.</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-The forward equation is <span class="math inline">\(p_{11}&#39;(t) = -\alpha p_{11}(t) + \beta p_{12}(t)\)</span>, with initial condition <span class="math inline">\(p_{11}(0) = 1\)</span>.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> Hence, show that
-<span class="math display">\[ p&#39;_{11}(t) + (\alpha + \beta)p_{11}(t) = \beta .  \]</span></p>
-<div class="myanswers">
-<p><em>Solution.</em>
-We have <span class="math inline">\(p_{11}(t) + p_{12}(t) = 1\)</span>, since rows of <span class="math inline">\(\mathsf P\)</span> add to <span class="math inline">\(1\)</span>. Substituting <span class="math inline">\(p_{12}(t) = 1 - p_{11}(t)\)</span> into part (a) and rearranging gives the desired differential equation.</p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> Solve this differential equation to find <span class="math inline">\(p_{11}(t)\)</span>. (You may wish to first find a general solution the homogeneous differential equation by guessing a solution of the form <span class="math inline">\(\mathrm{e}^{\lambda t}\)</span>, then find a particular solution to the inhomogeneous differential equation, and then use the initial condition.)</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-The homogeneous differential equation has solution <span class="math inline">\(A \mathrm e^{-(\alpha + \beta)t}\)</span> (for example, by guessing a solution <span class="math inline">\(\mathrm e^{\lambda t}\)</span>, or other methods you may know from other courses). We can guess a particular solution <span class="math inline">\(p_{11}(t) = C\)</span> and find <span class="math inline">\(C = \beta/(\alpha + \beta)\)</span>. So the general solution of the inhomogeneous differential equation is
-<span class="math display">\[ p_{11}(t) = \frac{\beta}{\alpha+\beta} + A \mathrm e^{-(\alpha + \beta)t} . \]</span>
-Using the initial condition <span class="math inline">\(p_{11}(0) = 1\)</span> gives
-<span class="math display">\[ A = 1-\frac{\beta}{\alpha + \beta} = \frac{\alpha}{\alpha + \beta} . \]</span>
-We end up with the solution
-<span class="math display">\[ p_{11}(t) = \frac{\beta}{\alpha + \beta} + \frac{\alpha}{\alpha + \beta} \mathrm e^{-(\alpha + \beta)t} . \]</span></p>
-</div>
-</div>
-</div>
-<div class="myq">
-<p><strong>4.</strong> We continue with the setup of Question 3.</p>
-<div class="subq">
-<p><strong>(a)</strong> Show that <span class="math inline">\(\mathsf Q^2 = -(\alpha + \beta) \mathsf Q\)</span>.</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-We have
-<span class="math display">\[\begin{align*}
-\mathsf Q^2 &amp;= \begin{pmatrix} -\alpha &amp; \alpha \\ \beta &amp; -\beta \end{pmatrix}\begin{pmatrix} -\alpha &amp; \alpha \\ \beta &amp; -\beta \end{pmatrix} \\ &amp;= \begin{pmatrix} \alpha^2 + \alpha\beta &amp; -\alpha^2 - \alpha\beta \\ -\alpha\beta - \beta^2 &amp; \alpha\beta + \beta^2 \end{pmatrix} \\ &amp;= -(\alpha + \beta) \begin{pmatrix} -\alpha &amp; \alpha \\ \beta &amp; -\beta \end{pmatrix} , 
+    -2\pi_1 + \phantom{2}\pi_2 \phantom{{}+\pi_3} &amp;= 0 \\
+    2\pi_1 - 3\pi_2 + \pi_3 &amp;= 0 \\
+    2\pi_2 - \pi_3 &amp;= 0 .
 \end{align*}\]</span>
-as required.</p>
+We discard one of the equations – I’ll discard the second one, as it’s the most complicated.</p>
+<p>Second, we pick a working variable – I’ll pick <span class="math inline">\(\pi_2\)</span> since it’s in both remaining equations – and solve the equations in terms of the working variable. This gives
+<span class="math display">\[ \pi_1 = \tfrac12 \pi_2 \qquad \pi_3 = 2 \pi_2 . \]</span></p>
+<p>Third, we use the normalising condition
+<span class="math display">\[ \pi_1 + \pi_2 + \pi_3 = \left(\tfrac12 + 1 + 2\right)\pi_2 = \tfrac72 \pi_2 = 1 . \]</span>
+This gives <span class="math inline">\(\pi_2 = \frac27\)</span>. Hence <span class="math inline">\(\pi_1 = \frac17\)</span> and <span class="math inline">\(\pi_3 = \frac47\)</span>. Therefore, the stationary distribution is <span class="math inline">\(\boldsymbol\pi = (\frac17, \frac27, \frac47)\)</span>.</p>
 </div>
+<p>As before, we have a result on the existence and uniqueness of the stationary distribution.</p>
+<div class="theorem">
+<p><span id="thm:statex-cont" class="theorem"><strong>Theorem 20.2  </strong></span>Consider an irreducible Markov jump process with generator matrix <span class="math inline">\(\mathsf Q\)</span>.</p>
+<ul>
+<li>If the Markov jump process is positive recurrent, then a stationary distribution <span class="math inline">\(\boldsymbol \pi\)</span> exists, is unique, and is given by <span class="math inline">\(\pi_i = 1/q_i\mu_{i}\)</span>, where <span class="math inline">\(\mu_{i}\)</span> is the expected return time to state <span class="math inline">\(i\)</span> (unless the state space is a single absorbing state <span class="math inline">\(i\)</span>, in which case <span class="math inline">\(\pi_i = 1\)</span>).</li>
+<li>If the Markov jump process is null recurrent or transient, then no stationary distribution exists.</li>
+</ul>
 </div>
-<div class="subq">
-<p><strong>(b)</strong> Hence, write down <span class="math inline">\(\mathsf Q^n\)</span> for <span class="math inline">\(n \geq 1\)</span> in terms of <span class="math inline">\(\mathsf Q\)</span>.</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-By repeating the above pattern (or, more formally, using induction on <span class="math inline">\(n\)</span>), we see that <span class="math inline">\(\mathsf Q^n = (-(\alpha+\beta))^{n-1} \mathsf Q\)</span>.</p>
+<p>As with the discrete time case, two conditions guarantee existence and uniqueness of the stationary distribution: irreducibility and positive recurrence. Compared to the discrete case, there’s can extra factor of <span class="math inline">\(1/q_i\)</span> in the expression <span class="math inline">\(\pi_i = 1/q_i\mu_{i}\)</span>, representing the expected amount of time spent in state <span class="math inline">\(i\)</span> until jumping.</p>
 </div>
+<div id="convergernce-cont" class="section level2" number="20.2">
+<h2><span class="header-section-number">20.2</span> Convergence to equilibrium</h2>
+<p>The limit theorem tells us about the limit of <span class="math inline">\(\mathbb P(X(t) = j)\)</span> as <span class="math inline">\(t \to \infty\)</span>. (We assume throughout that infinite-state processes are non-explosive – see Subsection <a href="S17-continuous-time.html#explosion">17.3</a>.)</p>
+<p>Recall from the discrete case that sometimes we have a distribution <span class="math inline">\(\mathbf p^*\)</span> such that <span class="math inline">\(\mathbb P(X(t) = j) \to p^*_j\)</span> for any initial distribution <span class="math inline">\(\boldsymbol\lambda\)</span>, and that such a distribution is called an <strong>equilibrium distribution</strong>. There can be at most one equilibrium distribution.</p>
+<div class="theorem">
+<p><span id="thm:limit-cont" class="theorem"><strong>Theorem 20.3  (Limit theorem) </strong></span>Let <span class="math inline">\((X(t))\)</span> be an irreducible and Markov jump process with generator martix <span class="math inline">\(\mathsf Q\)</span>. Then for any initial distribution <span class="math inline">\(\boldsymbol\lambda\)</span>, we have that that <span class="math inline">\(\mathbb P(X(t) = j) \to 1/q_j\mu_j\)</span> as <span class="math inline">\(t \to \infty\)</span> for all <span class="math inline">\(j\)</span>, where <span class="math inline">\(\mu_j\)</span> is the expected return time to state <span class="math inline">\(j\)</span> (unless the state space is a single absorbing state <span class="math inline">\(j\)</span>, in which case <span class="math inline">\(\mathbb P(X(t) = j) \to 1\)</span>).</p>
+<ul>
+<li>Suppose <span class="math inline">\((X(t))\)</span> is positive recurrent. Then there is an equilibrium distribution which is the unique stationary distribution <span class="math inline">\(\boldsymbol\pi\)</span> given by <span class="math inline">\(\pi_j = 1/q_j\mu_j\)</span> (unless the state space is a single absorbing state <span class="math inline">\(j\)</span>, in which case <span class="math inline">\(\pi_j = 1\)</span>), and <span class="math inline">\(\mathbb P(X(t) = j) \to \pi_j\)</span> for all <span class="math inline">\(j\)</span>.</li>
+<li>Suppose <span class="math inline">\((X(t))\)</span> is null recurrent or transient. Then <span class="math inline">\(\mathbb P(X(t) = j) \to 0\)</span> for all <span class="math inline">\(j\)</span>, and there is no equilibrium distribution.</li>
+</ul>
 </div>
-<div class="subq">
-<p><strong>(c)</strong> Show that
-<span class="math display">\[ \mathsf P(t) = \mathrm{e}^{t\mathsf Q} = \sum_{n=0}^\infty \frac{t^n \mathsf Q^n}{n!} = \mathsf I + \frac{\mathsf{Q}}{\alpha + \beta} \big(1 - \mathrm{e}^{-(\alpha+\beta)t} \big) . \]</span>
-(Take care with <span class="math inline">\(n = 0\)</span> term in the sum.)</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-Treating the <span class="math inline">\(n = 0\)</span> term separately, we have
-<span class="math display">\[ \mathsf P(t) = \mathsf I + \sum_{n=1}^\infty \frac{t^n\big(-(\alpha+\beta)\big)^{n-1}\mathsf Q}{n!} = \mathsf I - \frac{\mathsf Q }{\alpha+\beta} \sum_{n=1}^\infty \frac{\big(-(\alpha+\beta)t\big)^{n}}{n!} .     \]</span>
-But the summation here is almost <span class="math inline">\(\mathrm{e}^{-(\alpha + \beta)t}\)</span>, except missing the <span class="math inline">\(n=0\)</span> term – so it’s actually <span class="math inline">\(\mathrm{e}^{-(\alpha + \beta)t} - 1\)</span>. The result follows.</p>
+<p>Note here that the conditions for convergence to an equilibrium distribution are irreducible and positive recurrent – we do not need a periodicity condition here as we did in the discrete time case.</p>
+<p>For the positive recurrent case, if we take the initial distribution to be “starting in state <span class="math inline">\(i\)</span> with certainty”, we see that
+<span class="math display">\[ p_{ij}(t) = \mathbb P\big(X(t) = j \mid X(0) = i\big) \to \pi_j , \]</span>
+and hence <span class="math inline">\(\mathsf P(t)\)</span> has the limiting value
+<span class="math display">\[ \lim_{t \to \infty} \mathsf P(t) = \begin{pmatrix} \pi_1 &amp; \pi_2 &amp; \cdots &amp; \pi_n \\
+\pi_1 &amp; \pi_2 &amp; \cdots &amp; \pi_n \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \\
+\pi_1 &amp; \pi_2 &amp; \cdots &amp; \pi_n \end{pmatrix} , \]</span>
+with each row the same.</p>
 </div>
+<div id="ergodic-cont" class="section level2" number="20.3">
+<h2><span class="header-section-number">20.3</span> Ergodic theorem</h2>
+<p>As in the discrete time case, the ergodic theorem refers to the long run proportion of time spent in each state.</p>
+<p>We write
+<span class="math display">\[ V_j(t) = \int_0^t \mathbb{I}\big[X(s) = j\big]\, \mathrm ds \]</span>
+for the total amount of time spent in state <span class="math inline">\(j\)</span> up to time <span class="math inline">\(t\)</span>.
+Here, the indicator function <span class="math inline">\(\mathbb{I}\big[X(s) = j\big]\)</span> is <span class="math inline">\(1\)</span> when <span class="math inline">\(X(s) = j\)</span> and <span class="math inline">\(0\)</span> otherwise, so the integral is measuring the time we spend at <span class="math inline">\(j\)</span>. So <span class="math inline">\(V_j(t)/t\)</span> is the proportion of time up to time <span class="math inline">\(t\)</span> spent in state <span class="math inline">\(j\)</span>, and we interpret its limiting value (if it exists) to be the long-run proportion of time spent in state <span class="math inline">\(j\)</span>.</p>
+<div class="theorem">
+<p><span id="thm:ergodic2" class="theorem"><strong>Theorem 20.4  (Ergodic theorem) </strong></span>Let <span class="math inline">\((X(t))\)</span> be an irreducible Markov jump process with generator matrix <span class="math inline">\(\mathsf Q\)</span>. Then for any initial distribution <span class="math inline">\(\boldsymbol\lambda\)</span> we have, for that <span class="math inline">\(V_j(t)/t \to 1/q_j\mu_j\)</span> almost surely as <span class="math inline">\(t \to \infty\)</span>, where <span class="math inline">\(\mu_j\)</span> is the expected return time to state <span class="math inline">\(j\)</span> (unless the state space is a single absorbing state <span class="math inline">\(j\)</span>, in which case <span class="math inline">\(V_j(t)/t \to 1\)</span> almost surely).</p>
+<ul>
+<li>Suppose <span class="math inline">\((X(t))\)</span> is positive recurrent. Then there is a unique stationary distribution <span class="math inline">\(\boldsymbol\pi\)</span> given by <span class="math inline">\(\pi_j = 1/q_j\mu_j\)</span> (unless the state space is a single absorbing state <span class="math inline">\(j\)</span>, in which case <span class="math inline">\(\pi_j = 1\)</span>), and <span class="math inline">\(V_j(t)/t \to \pi_j\)</span> almost surely for all <span class="math inline">\(j\)</span>.</li>
+<li>Suppose <span class="math inline">\((X(t))\)</span> is null recurrent or transient. Then <span class="math inline">\(V_j(t)/t \to 0\)</span> almost surely for all <span class="math inline">\(j\)</span>.</li>
+</ul>
 </div>
-<div class="subq">
-<p><strong>(d)</strong> What, therefore, is <span class="math inline">\(p_{11}(t)\)</span>? Check you answer agrees with Question 3(c).</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-We need the <span class="math inline">\((1,1)\)</span> entry of <span class="math inline">\(\mathsf P(t)\)</span>, which is
-<span class="math display">\[ p_{11}(t) = 1 + \frac{-\alpha}{\alpha + \beta} \big(1 - \mathrm{e}^{-(\alpha+\beta)t} \big) = \frac{\beta}{\alpha+\beta} + \frac{\alpha}{\alpha+\beta} \mathrm{e}^{-(\alpha+\beta)t} , \]</span>
-and is indeed the same as 3(c).</p>
+<div class="example">
+<p><span id="exm:ergodic-ex-cont" class="example"><strong>Example 20.2  </strong></span>In the <a href="#stat-cont-ex">previous example</a>, the chain was irreducible and positive recurrent. Hence, by the limit theorem, <span class="math inline">\(\boldsymbol\pi = (\frac17, \frac27, \frac47)\)</span> is the equilibrium distribution for the chain, and by the ergodic theorem, <span class="math inline">\(\boldsymbol\pi\)</span> also describes the long run proportion of time spent in each state.</p>
 </div>
-</div>
-</div>
-<div class="myq">
-<p><strong>5.</strong> Let
-<span class="math display">\[ \mathsf D = \begin{pmatrix} d_1 &amp; 0 &amp; &amp;  \\
-                               0 &amp; d_2 &amp; &amp;  \\
-                                 &amp;  &amp; \ddots &amp; \\
-                                &amp;  &amp; &amp; d_n \end{pmatrix}  \]</span>
-be a diagonal matrix.</p>
-<div class="subq">
-<p><strong>(a)</strong> What is <span class="math inline">\(\mathsf D^2\)</span>?</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-<span class="math display">\[ \mathsf D^2 = \begin{pmatrix} d_1 &amp; 0 &amp; &amp;  \\
-0 &amp; d_2 &amp; &amp;  \\
-&amp;  &amp; \ddots &amp; \\
-&amp;  &amp; &amp; d_n \end{pmatrix}\begin{pmatrix} d_1 &amp; 0 &amp; &amp;  \\
-0 &amp; d_2 &amp; &amp;  \\
-&amp;  &amp; \ddots &amp; \\
-&amp;  &amp; &amp; d_n \end{pmatrix} = \begin{pmatrix} d_1^2 &amp; 0 &amp; &amp;  \\
-0 &amp; d_2^2 &amp; &amp;  \\
-&amp;  &amp; \ddots &amp; \\
-&amp;  &amp; &amp; d_n^2 \end{pmatrix} .         \]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(b)</strong> What is <span class="math inline">\(\mathsf D^n\)</span> for <span class="math inline">\(n \geq 2\)</span>?</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-Repeating the above pattern (or, more formally, using induction) we have
-<span class="math display">\[ \mathsf D^n = \begin{pmatrix} d_1^n &amp; 0 &amp; &amp;  \\
-0 &amp; d_2^n &amp; &amp;  \\
-&amp;  &amp; \ddots &amp; \\
-&amp;  &amp; &amp; d_n^n \end{pmatrix} .\]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(c)</strong> What is <span class="math inline">\(\mathrm{e}^{\mathsf D}\)</span>?</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-We use the definition <span class="math inline">\(\mathrm{e}^{\mathsf D} = \sum_n \mathsf D^n / n!\)</span>. Since all the <span class="math inline">\(\mathsf D^n\)</span>s are diagonal, <span class="math inline">\(\mathrm{e}^{\mathsf D}\)</span> will be diagonal too. The <span class="math inline">\(i\)</span>th diagonal entry will be <span class="math inline">\(\sum_n d_i^n / n! = \mathrm{e}^{d_i}\)</span>. Hence,
-<span class="math display">\[ \mathrm{e}^{\mathsf D}  = \begin{pmatrix} \mathrm{e}^{d_1} &amp; 0 &amp; &amp;  \\
-0 &amp; \mathrm{e}^{d_2} &amp; &amp;  \\
-&amp;  &amp; \ddots &amp; \\
-&amp;  &amp; &amp; \mathrm{e}^{d_n} \end{pmatrix} .\]</span></p>
-</div>
-</div>
-<div class="subq">
-<p><strong>(d)</strong> Explain how you could use eigenvalue methods and diagonalisation to find an explicit formula for the entries of the exponential of a matrix <span class="math inline">\(\mathsf A\)</span>.</p>
-<div class="myanswers">
-<p><em>Solution.</em>
-We can (usually) diagonalise the matrix <span class="math inline">\(\mathsf A = \mathsf P^{-1}\mathsf{DP}\)</span>, where <span class="math inline">\(\mathsf D\)</span> is the diagonal matrix of eigenvalues and <span class="math inline">\(\mathsf P\)</span> is the matrix of eigenvectors. Then we have
-<span class="math display">\[ \mathsf A^n = \mathsf P^{-1}\mathsf{DP}\mathsf P^{-1}\mathsf{DP}\cdots\mathsf P^{-1}\mathsf{DP} = \mathsf P^{-1}\mathsf{D}^n\mathsf{P} ,  \]</span>
-and so <span class="math inline">\(\mathrm{e}^{\mathsf A} = \mathsf P^{-1} \mathrm{e}^{\mathsf D} \mathsf P\)</span>, and <span class="math inline">\(\mathrm{e}^{\mathsf D}\)</span> is easily calculated as in part (c).</p>
-</div>
-</div>
+<div class="mysummary">
+<p><strong>In the next section</strong>, we apply our knowledge of continuous time Markov jump processes to two queuing models.</p>
 </div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="S18-forward-backward.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="S19-class-hitting.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="S19-class-hitting.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="P10.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

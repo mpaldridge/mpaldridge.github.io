@@ -4251,7 +4251,7 @@ This assessment counts as 4\% of your final module grade. You should attempt bot
 
 The deadline for submission is \textbf{Thursday 25 March at 2pm}. Submission will be to Gradescope via Minerva, from Monday 21 March. It would be helpful to start your solution to Question 2 on a new page. If you hand-write your solutions and scan them using your phone, please convert to PDF using a scanning app (I like Microsoft Office Lens or Adobe Scan) rather than submit images.
 
-Late submissions up to Wednesday 31 March at 2pm will still be marked, but the total mark will be reduced by 10\% per day or part-day for which the work is late. Submissions are not permitted after Wednesday 31 March.
+Late submissions up to Thursday 1 April at 2pm will still be marked, but the total mark will be reduced by 10\% per day or part-day for which the work is late. Submissions are not permitted after Thursday 1 April.
 
 Your solutions to this assessment should be your own work. Copying, collaboration or plagiarism are not permitted. Asking others to do your work, including via the internet, is not permitted. Transgressions are considered to be a very serious matter, and will be dealt with according to the University's disciplinary procedures.
 
@@ -5114,7 +5114,7 @@ The only difference here is that we have replaced the rate \(\lambda\) with the 
 \section*{Problem Sheet 8}\label{P08}}
 \addcontentsline{toc}{section}{Problem Sheet 8}
 
-\commfalse
+\commtrue
 
 You should attempt all these questions and write up your solutions in advance of your workshop in week 9 (Monday 22 or Tuesday 23 March) where the answers will be discussed.
 
@@ -5130,8 +5130,8 @@ You should attempt all these questions and write up your solutions in advance of
 \textbf{(b)} Fix \(t\). What is the expected time between the previous arrival before \(t\) and the next arrival after \(t\)?
 
 \begin{myanswers}
-\emph{Solution.} The time between the arrivals is \(S + T\), where \(S\) is the time backwards from \(t\) since the previous arrival, and \(T\) is the time forwards from \(t\) until thenext arrival. By the memoryless property of the exponential distribution, \(T \sim \operatorname{Exp}(\lambda)\), with mean \(1/\lambda\). What about \(S\)? We have
-\[ \mathbb P(S > s) = \mathbb P\big(\text{no arrivals in }[t-s,t]\big) = \exp{-\lambda s} \frac{(\lambda s)^0}{0!} = \exp{-\lambda s} , \]
+\emph{Solution.} The time between the arrivals is \(S + T\), where \(S\) is the time backwards from \(t\) since the previous arrival, and \(T\) is the time forwards from \(t\) until the next arrival. By the memoryless property of the exponential distribution, \(T \sim \operatorname{Exp}(\lambda)\), with mean \(1/\lambda\). What about \(S\)? We have
+\[ \mathbb P(S > s) = \mathbb P\big(\text{no arrivals in }[t-s,t]\big) = \mathrm{e}^{-\lambda s} \frac{(\lambda s)^0}{0!} = \mathrm{e}^{-\lambda s} , \]
 which is itself is the tail probability of another \(\operatorname{Exp}(\lambda)\) distribution, so \(S \sim \operatorname{Exp}(\lambda)\) with mean \(1/\lambda\) too.
 Hence
 \[ \mathbb E(S + T) = \frac1\lambda + \frac1\lambda = \frac2\lambda .\]
@@ -5141,7 +5141,7 @@ Hence
 \textbf{(c)} Your answers to the previous two questions should be different. Explain why one should expect the second answer to be bigger than the first.
 
 \begin{myanswers}
-\emph{Solution.} Imagine the arrivals being placed on the real line -- some with big gaps between them, and some with small gaps between them. If we then place the time \(t\), it is more likely to be placed in one of the large gaps than one of the small ones, because each large gap fills up more of the line than a small one. Hence the size of the gap surrounding the given point \(t\) is ``size-biased'', and is larger than a unfirotmly randomly chosen gap.
+\emph{Solution.} Imagine the arrivals being placed on the real line -- some with big gaps between them, and some with small gaps between them. If we then place the time \(t\), it is more likely to be placed in one of the large gaps than one of the small ones, because each large gap fills up more of the line than a small one. Hence the size of the gap surrounding the given point \(t\) is ``size-biased'', and is larger than a uniformly randomly chosen gap.
 
 \end{myanswers}
 
@@ -5429,8 +5429,8 @@ The jump chain is very boring: it starts from 0 and moves with certainty to 1, t
 
 \end{example}
 
-\hypertarget{a-brief-note-on-explosion}{%
-\subsection{A brief note on explosion}\label{a-brief-note-on-explosion}}
+\hypertarget{explosion}{%
+\subsection{A brief note on explosion}\label{explosion}}
 
 There is one point we have to be a little careful about with when dealing with continuous time processes with an infinite state space -- the potential of ``explosion''. \textbf{Explosion} is when the process can get arbitrarily large in finite time. Think, for example, of a birth process with birth rates \(\lambda_j = \lambda j^2\). The \(n\)th birth is expected to be occur at time
 \[ \sum_{j=1}^n \frac{1}{\lambda_j} = \frac{1}{\lambda} \sum_{j=1}^n \frac{1}{n^2} . \]
@@ -5476,8 +5476,6 @@ This is an equivalent definition of the Markov jump process.
 \hypertarget{semigroup}{%
 \subsection{Transition semigroup and the forward and backward equations}\label{semigroup}}
 
-\emph{Video to appear here soon.}
-
 Let us write \(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\) for the transition probability over a time \(t\). This is the continuous-time equivalent to the \(n\)-step transition probability \(p_{ij}(n)\) we had before in discrete time, but now \(t\) can be any positive real value. It can be convenient to use the matrix form \(\mathsf P(t) = (p_{ij}(t) : i,j \in \mathcal S)\).
 
 In discrete time, we were given a transition matrix \(\mathsf P\), and it was easy to find \(\mathsf P(n) = \mathsf P^n\) as a matrix power. In continuous time, we are given the generator matrix \(\mathsf Q\), so how can we find \(\mathsf P(t)\) from \(\mathsf Q\)?
@@ -5519,22 +5517,22 @@ The forward and backward equations both define the transition semigroup \((\math
 \hypertarget{matrix-exp}{%
 \subsection{Matrix exponential}\label{matrix-exp}}
 
-\emph{Video to appear here soon.}
+In discrete time, when we are given the transition matrix \(\mathsf P\), we could find the \(n\)-step transition probabilities \(\mathsf P(n)\) using the matrix power \(\mathsf P^n\). (At least when the state space was finite -- one has to be careful with what the matrix power means if the state space is infinite.) In continuous time (and finite state space), when we are given the generator matrix \(\mathsf Q\), it will turn out that a similar role is played by the \textbf{matrix exponential} \(\mathsf P(t) = \mathrm{e}^{t\mathsf Q}\), which solves the forward and backward equations. In this way, the generator matrix \(\mathsf Q\) is a bit like ``the logarithm of the transition matrix \(\mathsf P\)'' -- although this is only a metaphor, rather than a careful mathematical statement.
 
-When the state space \(\mathcal S\) is finite, a crucial role is played for continuous time jump processes by the \textbf{matrix exponential} \(\mathrm{e}^{t\mathsf Q}\). In the discrete time setting, the matrix power \(\mathsf P^n\) (for integers \(n\)) was very important; the matrix exponential allows us to do matrix algebra with the powers including arbitrary real numbers, which is important for continuous time processes.
-
-You may remember that the usual exponential function is defined by the Taylor series
+Let's be more formal about this. You may remember that the usual exponential function is defined by the Taylor series
 \[ \mathrm{e}^x = \exp(x) = \sum_{n=0}^\infty \frac{x^n}{n!} = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots. \]
 Similarly, we can define the matrix exponential for any square matrix by the same series
 \[ \mathrm{e}^{\mathsf A} = \exp({\mathsf A}) = \sum_{n=0}^\infty \frac{{\mathsf A}^n}{n!} = {\mathsf I} + {\mathsf A} + \tfrac12 \mathsf A^2+ \tfrac16 \mathsf A^3 + \cdots, \]
 where we interpret \(\mathsf A^0 = \mathsf I\) to be the identity matrix.
 
+In the same way that a computer can easily calculate a matrix power \(\mathsf P^n\) very quickly, a computer can also calculate matrix powers very quickly and very accurately -- see \protect\hyperlink{P09}{Problem Sheet 9} Question 5 for more details about how.
+
 Since a matrix commutes with itself, we have \(\mathsf {A}^n \mathsf A = \mathsf{AA}^n\), so a matrix commutes with its own exponential, meaning that \(\mathsf A \mathrm{e}^{\mathsf A} = \mathrm{e}^{\mathsf A} \mathsf A\). This will be useful later.
 
 Some properties of the standard exponential include
-\[ (\mathrm{e}^x\big)^n = \mathrm{e}^{nx} \qquad \frac{\mathrm d}{\mathrm d x} \mathrm{e}^{ax} = a \mathrm{e}^{ax} . \]
+\[ (\mathrm{e}^x\big)^n = \mathrm{e}^{nx} \qquad \mathrm{e}^{x+y} = \mathrm{e}^x \mathrm{e}^y \qquad \frac{\mathrm d}{\mathrm d x} \mathrm{e}^{ax} = a \mathrm{e}^{ax} . \]
 Similarly, we have for the matrix exponential
-\[ (\mathrm{e}^{\mathsf A}\big)^n = \mathrm{e}^{n{\mathsf A}} \qquad \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{t{\mathsf A}} = {\mathsf A} \mathrm{e}^{t{\mathsf A}} = \mathrm{e}^{t{\mathsf A}} {\mathsf A} . \]
+\[ (\mathrm{e}^{\mathsf A}\big)^t = \mathrm{e}^{t{\mathsf A}} \qquad \mathrm{e}^{\mathsf A + \mathsf B} = \mathrm{e}^{\mathsf A} \mathrm{e}^{\mathsf B} \qquad \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{t{\mathsf A}} = {\mathsf A} \mathrm{e}^{t{\mathsf A}} = \mathrm{e}^{t{\mathsf A}} {\mathsf A} . \]
 
 From this last expression, we get that
 \[ \frac{\mathrm d}{\mathrm d t} \mathrm{e}^{t{\mathsf Q}} = \mathrm{e}^{t{\mathsf Q}} {\mathsf Q} = {\mathsf Q} \mathrm{e}^{t{\mathsf Q}}  . \]
@@ -5545,7 +5543,9 @@ We also see that we have the semigroup property
 
 As a formal summary, we have the following.
 
-::: \{.theorem exp-thm\}
+\begin{theorem}
+\protect\hypertarget{thm:exp-thm}{}\label{thm:exp-thm}
+
 Let \((X(t))\) be a time homogeneous continuous time Markov jump process with generator matrix \(\mathsf Q\). Let \((\mathsf P(t))\) be the transition semigroup, where \(\mathsf P(t) = (p_{ij}(t))\) is defined by \(p_{ij}(t) = \mathbb P(X(t) = j \mid X(0) = i)\).
 
 Then \((\mathsf P(t))\) is the minimal nonnegative solution to the forward equation
@@ -5554,7 +5554,10 @@ and is also the minimal nonnegative solution to the backward equation
 \[ \mathsf P'(t) = \mathsf Q \mathsf P(t) \qquad \mathsf P(0) = \mathsf I . \]
 
 When the state space \(\mathcal S\) is finite, the forward and backward equations both have a unique solution given by the matrix exponential \(\mathsf P(t) = \mathrm{e}^{t \mathsf Q}\).
-:::
+
+\end{theorem}
+
+\textbf{In the next section}, we develop the theory we already know in discrete time: communicating classes, hitting times, recurrence and transience.
 
 \hypertarget{P09}{%
 \section*{Problem Sheet 9}\label{P09}}
@@ -5736,7 +5739,7 @@ and is indeed the same as 3(c).
 
 \end{myanswers}
 
-\textbf{1.} Let
+\textbf{5.} Let
 \[ \mathsf D = \begin{pmatrix} d_1 & 0 & &  \\
                                0 & d_2 & &  \\
                                  &  & \ddots & \\
@@ -5794,6 +5797,585 @@ and so \(\mathrm{e}^{\mathsf A} = \mathsf P^{-1} \mathrm{e}^{\mathsf D} \mathsf 
 
 \end{myanswers}
 
+\hypertarget{S19-class-hitting}{%
+\section{Class structure and hitting times}\label{S19-class-hitting}}
+
+\begin{itemize}
+\tightlist
+\item
+  Communicating classes
+\item
+  Hitting probabilities and expected hitting times
+\item
+  Recurrence and transience
+\end{itemize}
+
+When we studied discrete time Markov chains, we considered matters including communicating classes, periodicity, hitting probabilities and expected hitting times, recurrence and transience, stationary distributions, convergence to equilibrium, and the ergodic theorem. In this section and the next, we develop this theory for continuous time Markov jump processes. Luckily, things will be simpler this time round, as we will often be able to use exactly the same techniques as the discrete time case, often by looking at the discrete time jump chain.
+
+\hypertarget{classes-cont}{%
+\subsection{Communicating classes}\label{classes-cont}}
+
+In discrete time, we said that \(j\) is accessible from \(i\), and wrote \(i \to j\) if \(p_{ij}(n) > 0\) for some \(n\). This allowed us to split the state space into communicating classes. We can do exactly the same in discrete time.
+
+\begin{definition}
+\protect\hypertarget{def:classes2}{}\label{def:classes2}
+
+Let \((X(t))\) be a Markov jump process on a state space \(\mathcal S\) with transition semigroup \((\mathsf P(t))\). We say that a state \(j \in \mathcal S\) is \textbf{accessible from} another state \(i \in \mathcal S\), and write \(i \to j\) if \(p_{ij}(t) > 0\) for some \(t \geq 0\). If \(i \to j\) and \(j \to i\), we say that \(i\) \textbf{communicates with} \(j\) and write \(i \leftrightarrow j\).
+
+The equivalence relation \(\leftrightarrow\) partitions \(\mathcal S\) into equivalence classes, which we call \textbf{communicating classes}.
+
+If all states are in the same class, the jump process is \textbf{irreducible}. A class \(C\) is \textbf{closed} if \(i \to j\) for \(i \in C\) means that \(j \in C\) also. If \(i\) is a closed class \(\{i\}\) be itself, then \(i\) is an \textbf{absorbing state}.
+
+\end{definition}
+
+Recall that each state \(i\) is in exactly one communicating class, and that communicating class is the set of all \(j\) such that \(i \leftrightarrow j\).
+
+If \(p_{ij}(t) > 0\), then this means there is some sequence of jumps that can take us from \(i\) to \(j\). This means that, letting \(\mathsf R = (r_{ij})\) be the transition matrix for the jump chain \((Y_n)\), we have that \(p_{ij}(t) > 0\) for some \(t\) if and only if \(r_{ij}(n) > 0\) for some \(n\). So the communicating classes for a Markov jump process are exactly the same as the communicating classes in its discrete time jump chain.
+
+Further, since \(r_{ij} > 0\) if and only if \(q_{ij} > 0\), we can tell what the communicating classes are directly from the transition rate diagram.
+
+\begin{example}
+\protect\hypertarget{exm:jump-classes}{}\label{exm:jump-classes}
+
+\emph{Write down the communicating classes for the Markov jump process with generator matrix}
+\[ \mathsf Q = \begin{pmatrix} -2 & 2 & 0 \\ 1 & -3 & 2 \\ 0 & 0 & 0 \end{pmatrix}. \]
+
+The transition rate diagram is
+
+\begin{figure}
+
+{\centering \includegraphics{math2750_files/figure-latex/class-cont-1} 
+
+}
+
+\caption{A Markov jump process with three states and two communicating classes.}\label{fig:class-cont}
+\end{figure}
+
+We immediately see that the communicating classes are \(\{1,2\}\), which is not closed, and \(\{3\}\) which is closed, so 3 is an absorbing state. The process is not irreducible.
+
+\end{example}
+
+\hypertarget{periods2}{%
+\subsection{A brief note on periodicity}\label{periods2}}
+
+In discrete time we had to worry about periodic behaviour, especially when considering long-term behaviour like the existence of an equilibrium distribution. However, for a continuous time jump process, it's possible stay in a state for any positive real-number amount of time. Thus (with probability 1) we never see periodic behaviour, and we don't have to worry about this.
+
+This is one way in which continuous time processes are actually more pleasant to deal with than discrete time processes.
+
+\hypertarget{hitting2}{%
+\subsection{Hitting probabilities and expected hitting times}\label{hitting2}}
+
+Recall that the \textbf{hitting probability} \(h_{iA}\) is the probability of reaching some state \(j \in A\) at any point in the future starting from \(i\), and the \textbf{expected hitting time} \(\eta_{iA}\) is the expected amount of time to get there. We found these in discrete time by forming simultaneous equations by conditioning on the first step.
+
+For hitting probabilities, we just care about where we jump to, and not how long we wait. Thus we are free to consider only the jump chain \((Y_n)\) and its transition matrix \(\mathsf R\). Everything works exactly as in discrete time.
+
+\begin{example}
+\protect\hypertarget{exm:hitting-prob-jump}{}\label{exm:hitting-prob-jump}
+
+\emph{Continuing with \protect\hyperlink{jump-classes}{the previous example}, calculate \(h_{21}\), the probability of hitting state 1 starting from 2.}
+
+The jump chain has transition matrix
+\[ \mathsf R = \begin{pmatrix} 0 & 1 & 0 \\[0.3ex] \tfrac13 & 0 & \tfrac23 \\[0.3ex] 0 & 0 & 1 \end{pmatrix} . \]
+
+By conditioning on the first step, we have
+\[ h_{21} = \tfrac13 h_{11} + \tfrac23 h_{31} = \tfrac13 \times 1 + \tfrac23 \times 0 = \tfrac13 , \]
+where \(h_{31} = 0\) since 3 is an absorbing state. Hence, \(h_{21} = \frac13\).
+
+\end{example}
+
+For expected hitting times, we have to more careful, as we will spend a \emph{random} amount of time in the current state before moving on. In particular, the time we spend in state \(i\) is exponential with rate \(q_i = -q_{ii}\), so has expected value \(1/q_i\).
+
+We illustrate the approach with an example.
+
+\begin{example}
+\protect\hypertarget{exm:hitting-time-jump}{}\label{exm:hitting-time-jump}
+
+\emph{Continuing with \protect\hyperlink{jump-classes}{the same example}, find the expected hitting time \(\eta_{13}\).}
+
+We condition on the first step. Starting from 1, we spend an expected time \(1/q_1 = \frac12\) in state 1 before moving on with certainty to state 2, so
+\[ \eta_{13} = \tfrac12 + \eta_{23} . \]
+From state 2, we have a holding time with expectation \(1/q_2 = \frac13\), before moving to 1 with probability \(\frac13\) and 2 with probability \(\frac23\). So
+\[ \eta_{23} = \tfrac13 + \tfrac13 \eta_{12} + \tfrac23 \eta_{23} =  \tfrac13 + \tfrac13 \eta_{12} , \]
+since \(\eta_{33}\) is of course 0.
+Substituting the second equation into the first, we get
+\[ \eta_{13} = \tfrac12 + \tfrac13 + \tfrac13 \eta_{13} , \]
+which rearranges to \(\frac23 \eta_{13} = \frac56\), giving \(\eta_{13} = \frac54\).
+
+\end{example}
+
+We have to be a little bit careful with return times and return probabilities. The return time is now the first time we come back to a state \emph{after having left it}. In particular, if we begin in state \(i\), we first leave at time \(T_1 \sim \operatorname{Exp}(q_i)\), and we are looking for the first return after that.
+
+So, specifically, the definitions of \textbf{return time}, \textbf{return probability}, and \textbf{expected return time} are
+\begin{gather*}
+    M_i = \min \big\{t > T_1 : X(t) = i \big\} , \\
+    m_i = \mathbb P\big(X(t) = i \text{ for some $t > T_1$} \mid X(0) = i \big) = \mathbb P \big( M_i < \infty \mid X(0) = i \big) ,\\
+    \mu_i = \mathbb E\big( M_i \mid X(0) = i \big).
+\end{gather*}
+In particular, if \(q_i = 0\), so \(T_1 = \infty\) and we never leave state \(i\), the return time, return probability and expected return time are not defined. (We will have no use for them.)
+
+By conditioning on the first step, it's clear we have
+\[ m_i = \sum_j r_{ij} h_{ji} = \sum_{j \neq i} \frac{q_{ij}}{q_i} \, h_{ji}, \qquad \mu_i = \frac{1}{q_i} + \sum_j r_{ij} \eta_{ji} = \frac{1}{q_i} \bigg(1 + \sum_{j \neq i} q_{ij} \eta_{ji} \bigg). \]
+
+We see (except for the \(q_i = 0\) case) that the return probability is the same in the jump chain as it is in the original Markov jump process, as was the case for the hitting probability, but for the expected return time we have to remember the random amount of time spent in each state.
+
+\hypertarget{recurrence-transience2}{%
+\subsection{Recurrence and transience}\label{recurrence-transience2}}
+
+In discrete time, we said a state \(i\) was recurrent if the return probability \(m_i = 1\) equalled 1 and transient if the return probability \(m_i < 1\) was strictly less than 1. We take almost the same definition in continuous time -- the difference is that if we never leave a state, because \(q_i = 0\), we should call state \(i\) recurrent.
+
+\begin{definition}
+\protect\hypertarget{def:recurrence-jump}{}\label{def:recurrence-jump}
+
+If a state \(i \in \mathcal S\) has return probability \(m_i = 1\) or has \(q_i = 0\), we say that \(i\) is \textbf{recurrent}. If \(m_i < 1\), we say that \(i\) is \textbf{transient}.
+
+Suppose \(i\) is recurrent. If the expected return time \(\mu_i < \infty\) is finite or \(q_i = 0\), we say that \(i\) is \textbf{positive recurrent}. If the expected return time \(\mu_i = \infty\) is infinite, we say that \(i\) is \textbf{null recurrent}.
+
+\end{definition}
+
+We see that the return probability is totally determined the jump chain, so whether a state is recurrent or transient can be decided exactly as in the discrete case. In particular, in a communicating class either all states are transient or all states are recurrent. As before, finite closed classes are recurrent, and non-closed classes are transient.
+
+\begin{example}
+\protect\hypertarget{exm:return-jumps}{}\label{exm:return-jumps}
+
+Picking up \protect\hyperlink{jump-classes}{our example} again, \(\{1,2\}\) is not closed, so is transient, while the absorbing state 3 is positive recurrent.
+
+\end{example}
+
+\textbf{In the next section}, we look at the long-term behaviour of continuous time Markov jump processes in a similar way to discrete time Markov chains: stationary distributions, convergence to equilibrium, and an ergodic theorem.
+
+\hypertarget{S20-long-term-jump}{%
+\section{Long-term behaviour of Markov jump procceses}\label{S20-long-term-jump}}
+
+\begin{itemize}
+\tightlist
+\item
+  Stationary distributions, which solve \(\boldsymbol\pi\mathsf Q = \mathbf 0\)
+\item
+  The limit theorem and the ergodic theorem
+\end{itemize}
+
+Our goal here is to develop the theory of the long-term behaviour of continuous time Markov jump processes in the same way as we did for discrete time Markov chains.
+
+In discrete time, we defined \textbf{stationary distributions} as solving \(\boldsymbol\pi\mathsf P = \boldsymbol\pi\). We then had the \textbf{limit theorem}, which told us about equilibrium distributions and the limit of \(\mathbb P(X_n = i)\), and the \textbf{ergodic theorem}, which told us about the long term proportion of time spent in each state. We develop the same results here.
+
+\hypertarget{stationary-jump}{%
+\subsection{Stationary distributions}\label{stationary-jump}}
+
+We start by defining a stationary distribution as before.
+
+\begin{definition}
+\protect\hypertarget{def:statdist2}{}\label{def:statdist2}
+
+Let \((X(t))\) be a Markov jump process on a state space \(\mathcal S\) with generator matrix \(\mathsf Q\) and transition semigroup \((\mathsf P(t))\).
+Let \(\boldsymbol \pi = (\pi_i)\) be a distribution on \(\mathcal S\), in that \(\pi_i \geq 0\) for all \(i \in \mathcal S\) and \(\sum_{i \in \mathcal S} \pi_i = 1\). We call \(\boldsymbol \pi\) a \textbf{stationary distribution} if
+\[ \pi_j = \sum_{i\in \mathcal S} \pi_i p_{ij}(t) \quad \text{for all $j \in \mathcal S$ and $t \geq 0$,} \]
+or, equivalently, if \(\boldsymbol \pi = \boldsymbol \pi\mathsf P(t)\) for all \(t \geq 0\).
+
+\end{definition}
+
+This initially looks rather awkward: we're usually given a generator matrix \(\mathsf Q\), and then we might have to first find all the \(\mathsf P(t)\)s and then simultaneously solve infinitely many equations. Luckily it's actually much easier than that: we just have to solve \(\boldsymbol\pi \mathsf Q = \mathbf 0\) (where \(\mathbf 0\) is the \emph{row} vector of all zeros).
+
+\begin{theorem}
+\protect\hypertarget{thm:statQ}{}\label{thm:statQ}
+
+Let \((X(t))\) be a Markov jump process on a state with generator matrix \(\mathsf Q\). If \(\boldsymbol\pi = (\pi_i)\) is a distribution with \(\sum_i \pi_i q_{ij} = 0\) for all \(j\), then \(\boldsymbol\pi\) is a stationary distribution. In matrix form, this condition is \(\boldsymbol\pi \mathsf Q = \mathbf 0\).
+
+\end{theorem}
+
+\begin{proof}
+
+Suppose \(\boldsymbol\pi \mathsf Q = \mathbf 0\). We need to show that \(\boldsymbol\pi\mathsf P(t) = \boldsymbol\pi\) for all \(t\). We'll first show that \(\boldsymbol\pi\mathsf P(t)\) is constant, then show that that constant is indeed \(\boldsymbol\pi\).
+
+First, we can show that \(\boldsymbol \pi\mathsf P(t)\) is constant by showing that its derivative is zero. Using the backward equation \(\mathsf P'(t) = \mathsf Q \mathsf P(t)\), we have
+\[ \frac{\mathrm d}{\mathrm dt}\boldsymbol \pi\mathsf P(t) = \boldsymbol \pi \frac{\mathrm d}{\mathrm dt} \mathsf P(t) = \boldsymbol \pi \mathsf Q \mathsf P(t) = \boldsymbol 0 \mathsf P(t) = \boldsymbol 0, \]
+as desired.
+
+Second, we can find that constant value by setting \(t\) to any value: we pick \(t = 0\). Since \(\mathsf P(0) = \mathsf I\), the identity matrix, we have
+\[ \boldsymbol \pi\mathsf P(t) = \boldsymbol \pi\mathsf P(0) = \boldsymbol \pi\mathsf I = \boldsymbol \pi \qquad \text{for all $t$.} \]
+
+\end{proof}
+
+(Strictly speaking, taking the \(\boldsymbol\pi\) outside the derivative in the first step is only formally justified when the state space is finite, but the result is true for general processes.)
+
+\begin{example}
+\protect\hypertarget{exm:stat-cont-ex}{}\label{exm:stat-cont-ex}
+
+\emph{In Section \ref{S17-continuous-time} we considered the Markov jump process with generator matrix}
+\[ \mathsf Q = \begin{pmatrix} -2 & 2 & 0 \\
+ 1 & -3 & 2 \\
+ 0 & 1 & -1 \end{pmatrix} . \]
+\emph{Find the stationary distribution.}
+
+We approach this in the same way as we would in the discrete time case.
+
+First, we write out the equations of
+\[ \begin{pmatrix} \pi_1 & \pi_2 & \pi_3 \end{pmatrix}\begin{pmatrix} -2 & 2 & 0 \\
+ 1 & -3 & 2 \\
+ 0 & 1 & -1 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 \end{pmatrix}    \]
+coordinate by coordinate, to get
+\begin{align*}
+    -2\pi_1 + \phantom{2}\pi_2 \phantom{{}+\pi_3} &= 0 \\
+    2\pi_1 - 3\pi_2 + \pi_3 &= 0 \\
+    2\pi_2 - \pi_3 &= 0 .
+\end{align*}
+We discard one of the equations -- I'll discard the second one, as it's the most complicated.
+
+Second, we pick a working variable -- I'll pick \(\pi_2\) since it's in both remaining equations -- and solve the equations in terms of the working variable. This gives
+\[ \pi_1 = \tfrac12 \pi_2 \qquad \pi_3 = 2 \pi_2 . \]
+
+Third, we use the normalising condition
+\[ \pi_1 + \pi_2 + \pi_3 = \left(\tfrac12 + 1 + 2\right)\pi_2 = \tfrac72 \pi_2 = 1 . \]
+This gives \(\pi_2 = \frac27\). Hence \(\pi_1 = \frac17\) and \(\pi_3 = \frac47\). Therefore, the stationary distribution is \(\boldsymbol\pi = (\frac17, \frac27, \frac47)\).
+
+\end{example}
+
+As before, we have a result on the existence and uniqueness of the stationary distribution.
+
+\begin{theorem}
+\protect\hypertarget{thm:statex-cont}{}\label{thm:statex-cont}
+
+Consider an irreducible Markov jump process with generator matrix \(\mathsf Q\).
+
+\begin{itemize}
+\tightlist
+\item
+  If the Markov jump process is positive recurrent, then a stationary distribution \(\boldsymbol \pi\) exists, is unique, and is given by \(\pi_i = 1/q_i\mu_{i}\), where \(\mu_{i}\) is the expected return time to state \(i\) (unless the state space is a single absorbing state \(i\), in which case \(\pi_i = 1\)).
+\item
+  If the Markov jump process is null recurrent or transient, then no stationary distribution exists.
+\end{itemize}
+
+\end{theorem}
+
+As with the discrete time case, two conditions guarantee existence and uniqueness of the stationary distribution: irreducibility and positive recurrence. Compared to the discrete case, there's can extra factor of \(1/q_i\) in the expression \(\pi_i = 1/q_i\mu_{i}\), representing the expected amount of time spent in state \(i\) until jumping.
+
+\hypertarget{convergernce-cont}{%
+\subsection{Convergence to equilibrium}\label{convergernce-cont}}
+
+The limit theorem tells us about the limit of \(\mathbb P(X(t) = j)\) as \(t \to \infty\). (We assume throughout that infinite-state processes are non-explosive -- see Subsection \ref{explosion}.)
+
+Recall from the discrete case that sometimes we have a distribution \(\mathbf p^*\) such that \(\mathbb P(X(t) = j) \to p^*_j\) for any initial distribution \(\boldsymbol\lambda\), and that such a distribution is called an \textbf{equilibrium distribution}. There can be at most one equilibrium distribution.
+
+\begin{theorem}[Limit theorem]
+\protect\hypertarget{thm:limit-cont}{}\label{thm:limit-cont}
+
+Let \((X(t))\) be an irreducible and Markov jump process with generator martix \(\mathsf Q\). Then for any initial distribution \(\boldsymbol\lambda\), we have that that \(\mathbb P(X(t) = j) \to 1/q_j\mu_j\) as \(t \to \infty\) for all \(j\), where \(\mu_j\) is the expected return time to state \(j\) (unless the state space is a single absorbing state \(j\), in which case \(\mathbb P(X(t) = j) \to 1\)).
+
+\begin{itemize}
+\tightlist
+\item
+  Suppose \((X(t))\) is positive recurrent. Then there is an equilibrium distribution which is the unique stationary distribution \(\boldsymbol\pi\) given by \(\pi_j = 1/q_j\mu_j\) (unless the state space is a single absorbing state \(j\), in which case \(\pi_j = 1\)), and \(\mathbb P(X(t) = j) \to \pi_j\) for all \(j\).
+\item
+  Suppose \((X(t))\) is null recurrent or transient. Then \(\mathbb P(X(t) = j) \to 0\) for all \(j\), and there is no equilibrium distribution.
+\end{itemize}
+
+\end{theorem}
+
+Note here that the conditions for convergence to an equilibrium distribution are irreducible and positive recurrent -- we do not need a periodicity condition here as we did in the discrete time case.
+
+For the positive recurrent case, if we take the initial distribution to be ``starting in state \(i\) with certainty'', we see that
+\[ p_{ij}(t) = \mathbb P\big(X(t) = j \mid X(0) = i\big) \to \pi_j , \]
+and hence \(\mathsf P(t)\) has the limiting value
+\[ \lim_{t \to \infty} \mathsf P(t) = \begin{pmatrix} \pi_1 & \pi_2 & \cdots & \pi_n \\
+\pi_1 & \pi_2 & \cdots & \pi_n \\
+\vdots & \vdots & \vdots & \vdots \\
+\pi_1 & \pi_2 & \cdots & \pi_n \end{pmatrix} , \]
+with each row the same.
+
+\hypertarget{ergodic-cont}{%
+\subsection{Ergodic theorem}\label{ergodic-cont}}
+
+As in the discrete time case, the ergodic theorem refers to the long run proportion of time spent in each state.
+
+We write
+\[ V_j(t) = \int_0^t \mathbb{I}\big[X(s) = j\big]\, \mathrm ds \]
+for the total amount of time spent in state \(j\) up to time \(t\).
+Here, the indicator function \(\mathbb{I}\big[X(s) = j\big]\) is \(1\) when \(X(s) = j\) and \(0\) otherwise, so the integral is measuring the time we spend at \(j\). So \(V_j(t)/t\) is the proportion of time up to time \(t\) spent in state \(j\), and we interpret its limiting value (if it exists) to be the long-run proportion of time spent in state \(j\).
+
+\begin{theorem}[Ergodic theorem]
+\protect\hypertarget{thm:ergodic2}{}\label{thm:ergodic2}
+
+Let \((X(t))\) be an irreducible Markov jump process with generator matrix \(\mathsf Q\). Then for any initial distribution \(\boldsymbol\lambda\) we have, for that \(V_j(t)/t \to 1/q_j\mu_j\) almost surely as \(t \to \infty\), where \(\mu_j\) is the expected return time to state \(j\) (unless the state space is a single absorbing state \(j\), in which case \(V_j(t)/t \to 1\) almost surely).
+
+\begin{itemize}
+\tightlist
+\item
+  Suppose \((X(t))\) is positive recurrent. Then there is a unique stationary distribution \(\boldsymbol\pi\) given by \(\pi_j = 1/q_j\mu_j\) (unless the state space is a single absorbing state \(j\), in which case \(\pi_j = 1\)), and \(V_j(t)/t \to \pi_j\) almost surely for all \(j\).
+\item
+  Suppose \((X(t))\) is null recurrent or transient. Then \(V_j(t)/t \to 0\) almost surely for all \(j\).
+\end{itemize}
+
+\end{theorem}
+
+\begin{example}
+\protect\hypertarget{exm:ergodic-ex-cont}{}\label{exm:ergodic-ex-cont}
+
+In the \protect\hyperlink{stat-cont-ex}{previous example}, the chain was irreducible and positive recurrent. Hence, by the limit theorem, \(\boldsymbol\pi = (\frac17, \frac27, \frac47)\) is the equilibrium distribution for the chain, and by the ergodic theorem, \(\boldsymbol\pi\) also describes the long run proportion of time spent in each state.
+
+\end{example}
+
+\textbf{In the next section}, we apply our knowledge of continuous time Markov jump processes to two queuing models.
+
+\hypertarget{P10}{%
+\section*{Problem Sheet 10}\label{P10}}
+\addcontentsline{toc}{section}{Problem Sheet 10}
+
+\commfalse
+
+You should attempt all these questions and write up your solutions in advance of your workshop in week 11 (Tuesday 4 or Thursday 6 May) where the answers will be discussed.
+
+\textbf{1.} Consider the Markov jump process on \(\mathcal S = \{1,2,3,4\}\) with generator matrix
+\[ \mathsf Q = \begin{pmatrix} -1 & \frac12 & \frac12 & 0 \\
+                               \frac14 & -\frac12 & 0 & \frac14 \\  
+                               \frac16 & 0 & -\frac13 & \frac16 \\
+                               0 & 0 & 0 & 0  \end{pmatrix} . \]
+
+\textbf{(a)} Draw a transition rate diagram for this process.
+
+\begin{myanswers}
+\emph{Solution.}
+PICTURE
+
+\end{myanswers}
+
+\textbf{(b)} Write down the communicating classes for this process, and state whether they are recurrent or transient.
+
+\begin{myanswers}
+\emph{Solution.}
+The class \(\{1,2,3\}\) is not closed, so is transient. The class \(\{4\}\) is closed, so positive recurrent.
+
+\end{myanswers}
+
+\textbf{(c)} Calculate the hitting probability \(h_{13}\).
+
+\begin{myanswers}
+\emph{Solution.}
+Conditioning on the first step, we have
+\begin{align*}
+h_{13} &= \tfrac12 h_{23} + \tfrac12 h_{33} = \tfrac12 h_{23} + \tfrac12 \\
+h_{23} &= \tfrac12 h_{13} + \tfrac12 h_{43} = \tfrac12 h_{13} ,
+\end{align*}
+since \(h_{33} = 1\) and \(h_{43} = 0\).
+Substituting the second equation into the first gives
+\(h_{13} = \tfrac14 h_{13} + \tfrac12\), and so \(h_{13} = \frac23\).
+
+\end{myanswers}
+
+\textbf{(d)} Calculate the expected hitting time \(\eta_{14}\).
+
+\begin{myanswers}
+\emph{Solution.}
+Conditioning on the first step, we have
+\begin{align*}
+\eta_{14} &= 1 + \tfrac12 \eta_{24} + \tfrac12 \eta_{34} \\
+\eta_{24} &= 2 + \tfrac12 \eta_{14} + \tfrac12 \eta_{44} = 1 + \tfrac12 \eta_{14} \\
+\eta_{34} &= 3 + \tfrac12 \eta_{14} + \tfrac12 \eta_{44} = 1 + \tfrac12 \eta_{14} .
+\end{align*}
+Substituting the second and third equations into the first give \(\eta_{14} = \frac72 + \frac12 \eta_{14}\), so \(\eta_{14} = 7\).
+
+\end{myanswers}
+
+\textbf{2.} Consider a Markov jump process \((X(t))\) on a triangle, with the vertices labelled 1, 2, 3 going clockwise. In a short time period \(\tau\), we move one step clockwise with probability \(\alpha\tau + o(\tau)\), one step anticlockwise with probability \(\beta\tau + o(\tau)\), or stay where we are.
+
+\textbf{(a)} Write down a generator matrix for this Markov jump process, and draw a transition rate diagram.
+
+\begin{myanswers}
+\emph{Solution.}
+\[ \mathsf Q = \begin{pmatrix} -(\alpha + \beta) & \alpha & \beta \\\beta & -(\alpha + \beta) & \alpha \\ \alpha & \beta & -(\alpha + \beta) \end{pmatrix} . \]
+
+\end{myanswers}
+
+\textbf{(b)} What is the probability, starting from state 1, that we hit state 3 before state 2?
+
+\begin{myanswers}
+\emph{Solution.}
+Starting from 1, we next move to 3 with probability \(\beta/(\alpha+\beta)\), and otherwise we next move to 2, so the answer is \(\beta/(\alpha+\beta)\).
+
+\end{myanswers}
+
+\textbf{(c)} What is the expected time \(\eta_{13}\) to hit state 3 starting from state 1.
+
+\begin{myanswers}
+\emph{Solution.}
+Conditioning on the first step, we have
+\begin{align*}
+\eta_{13} &= \frac{1}{\alpha + \beta} + \frac{\alpha}{\alpha + \beta} \eta_{23} + \frac{\beta}{\alpha + \beta} \eta_{33} = \frac{1}{\alpha + \beta} + \frac{\alpha}{\alpha + \beta} \eta_{23} \\
+\eta_{23} &= \frac{1}{\alpha + \beta} + \frac{\alpha}{\alpha + \beta} \eta_{33} + \frac{\beta}{\alpha + \beta} \eta_{13} = \frac{1}{\alpha + \beta} + \frac{\beta}{\alpha + \beta} \eta_{13} ,
+\end{align*}
+since \(\eta_{33} = 0\). Substituting the second equation into the first and solving, we get
+\[ \eta_{13} = \frac{2\alpha+\beta}{\alpha^2 + \alpha\beta + \beta^2} .  \]
+
+\end{myanswers}
+
+\textbf{(d)} Write down the transition matrix \(\mathsf R\) for the jump chain \((Y_n)\).
+
+\begin{myanswers}
+\emph{Solution.}
+\[ \mathsf R = \frac{1}{\alpha+\beta} \begin{pmatrix} 0 & \alpha & \beta \\\beta & 0 & \alpha \\ \alpha & \beta & 0 \end{pmatrix} . \]
+
+\end{myanswers}
+
+\textbf{(e)} What is the probability in the jump chain \((Y_n)\) that, starting from state 1, that we hit state 3 before state 2?
+
+\begin{myanswers}
+\emph{Solution.}
+Hitting probabilities are always the same for a Markov jump process and its jump chain, so this is \(\beta/(\alpha+\beta)\), as in part (b).
+
+\end{myanswers}
+
+\textbf{(f)} What is the expected number of steps in the jump chain \((Y_n)\) to hit state 3 starting from state 1.
+
+\begin{myanswers}
+\emph{Solution.}
+We have similar equations to before, with
+\begin{align*}
+\eta_{13} &= 1 + \frac{\alpha}{\alpha + \beta} \eta_{23} \\
+\eta_{23} &= 1 + \frac{\beta}{\alpha + \beta} \eta_{13} .
+\end{align*}
+We substitute the second into the first and solve to get
+\[ \eta_{13} = \frac{2\alpha^2 + 3\alpha\beta + \beta^2}{\alpha^2 + \alpha\beta + \beta^2} = (\alpha + \beta) \frac{(2\alpha+\beta)}{\alpha^2 + \alpha\beta + \beta^2} .  \]
+This is \((\alpha + \beta)\) times the original answer, reflecting the extra average time we spend in each state in the continuous time process.
+
+\end{myanswers}
+
+\textbf{3.}
+
+\textbf{(a)} Calculate the stationary distribution for a Markov jump process with generator matrix
+\[ \mathsf Q = \begin{pmatrix} -2 & 1 & 1 \\ 1 & -3 & 2 \\ 0 & 2 & -2 \end{pmatrix}.   \]
+
+\begin{myanswers}
+\emph{Solution.}
+First, we write out the equations for \(\boldsymbol\pi \mathsf Q = \mathbf 0\):
+\begin{align*}
+-2 \pi_1 + \phantom{3}\pi_2 \phantom{{}+2\pi_3} &= 0 \\
+\pi_1 - 3\pi_2 + 2\pi_3 &= 0 \\
+\pi_1 + 2\pi_2 - 2\pi_3 &= 0 .
+\end{align*}
+Second, we discard the second equation and choose \(\pi_1\) as the working variable, to get
+\begin{align*}
+\pi_2 \phantom{{}+2\pi_3 }&= 2\pi_1 \\
+-2\pi_2 + 2\pi_3 &= \pi_1 ,
+\end{align*}
+Substituting the second first into the second gives \(\pi_3 = \frac{5}{2}\pi_1\).
+Third, the normalising condition gives
+\[ \pi_1 + 2\pi_1 + \tfrac52 \pi_1 = 1  , \]
+meaning \(\pi_1 = \frac{2}{11}\). We get the solution \(\boldsymbol\pi = (\frac{2}{11}, \frac{4}{11}, \frac{5}{11})\).
+
+\end{myanswers}
+
+\textbf{(b)} Fill in the missing entries of the following generator matrix, and find two stationary distributions for the associated Markov jump process:
+\[ \mathsf Q = \begin{pmatrix} ? & 2 & 0 \\ ? & -3 & 0 \\ ? & ? & 0 \end{pmatrix}.   \]
+
+\begin{myanswers}
+\emph{Solution.}
+Since rows add up to \(0\), and since off-diagonal elements cannot be negative, we have
+\[ \mathsf Q = \begin{pmatrix} -2 & 2 & 0 \\ 3 & -3 & 0 \\ 0 & 0 & 0 \end{pmatrix}.   \]
+
+Since state \(3\) is absorbing, we have that \((0,0,1)\) is a stationary distribution. For another, we seek a stationary distribution on states \(1\) and \(2\). The equations for \(\boldsymbol\pi \mathsf Q = \mathbf 0\) are
+\[ -2\pi_1 + 3 \pi_2 = 0 \qquad 2\pi_2 - 3 \pi_2 = 0 , \]
+with solution \((\frac35, \frac25, 0)\).
+
+\end{myanswers}
+
+\textbf{4.} Consider a Markov jump process \((X(t))\) with state space \(\mathcal S = \{1,2,3,4\}\) and generator matrix
+\[ \mathsf Q = \begin{pmatrix} -2 & 2 & 0 & 0 \\ 1 & -1 & 0 & 0 \\ 1 & 2 & -4 & 1 \\ 0 & 0 & 0 & 0 \end{pmatrix}.   \]
+
+\textbf{(a)} Draw a transition rate diagram for \((X(t))\).
+
+\begin{myanswers}
+\emph{Solution.}
+PICTURE
+
+\end{myanswers}
+
+\textbf{(b)} Write down the communicating classes for \((X(t))\), and state if each one is positive recurrent, null recurrent, or transient. Are there any absorbing states?
+
+\begin{myanswers}
+\emph{Solution.}
+\(\{1,2\}\) is positive recurrent, \(\{3\}\) is transient, \(\{4\}\) is positive recurrent and is an absorbing state.
+
+\end{myanswers}
+
+\textbf{(c)} Calculate the hitting probability \(h_{31}\).
+
+\begin{myanswers}
+\emph{Solution.}
+Conditioning on the first step, we have
+\[ h_{31} = \tfrac14 h_{11} + \tfrac24 h_{21} + \tfrac14 h_{41} .   \]
+Further, it's clear that \(h_{11} = h_{21} = 1\) and \(h_{41} = 0\), and thus we get \(h_{31} = \frac34\).
+
+\end{myanswers}
+
+\textbf{(d)} Does \((X(t))\) have an equilibrium distribution?
+
+\begin{myanswers}
+\emph{Solution.}
+No, because the limiting distribution depends on the initial distribution. For example, starting in \(4\), we have \(\mathbb P(X_n = 4 \mid X_0 = 4) = 1\); but starting in \(1\) we have \(\mathbb P(X_n = 4 \mid X_0 = 1) = 0\).
+
+\end{myanswers}
+
+\textbf{(d)} Conditional on Markov jump process starting from \(X(0) = 3\), calculate the limiting probabilities \(\lim_{n \to \infty} \mathbb P(X(t) = j \mid X(0) = 3)\) for all \(j \in \mathcal S\).
+
+\begin{myanswers}
+\emph{Solution.}
+Starting from 3 we must leave 3 and not return. With probability \(\frac14\) we enter the absorbing state 4, while with probability \(\frac34\) we enter the closed class \(\{1,2,\}\). To know what happens in the latter case, we seek a stationary distribution on \(\{1,2\}\). The equations for \(\boldsymbol\pi \mathsf Q = \mathbf 0\) are
+\[ -2\pi_1 + \pi_2 = 0 \qquad 2\pi_2 - \pi_1 = 0 ,  \]
+with solution \(\boldsymbol\pi = (\frac13, \frac23, 0,0)\). Hence, the limiting probability starting from \(X(0) = 3\) is
+\[ \left( \tfrac34 \pi_1, \tfrac34 \pi_2, 0, \tfrac14 \right) = \left( \tfrac14, \tfrac12 , 0, \tfrac14 \right) . \]
+
+\end{myanswers}
+
+\textbf{5.} Suppose \((X(t))\) is a continuous time Markov jump process with a stationary distribution \(\boldsymbol\phi = (\phi_i)\). Show that \(\boldsymbol\pi = (\pi_i)\), where
+\[ \pi_i = \frac{q_i \phi_i}{\sum_j q_j \phi_j} ,\]
+is a stationary distribution for the discrete time jump chain associated to \(\big(X(t)\big)\).
+
+\begin{myanswers}
+\emph{Solution.}
+The denominator \(\sum_j q_j\phi_j\) is just a normalising constant. We must show that the vector \((q_i\phi_i)\) satisfies \(\boldsymbol\pi\mathsf R = \boldsymbol\pi\). Written in coordinate form, this is
+\begin{align*}
+\sum_i (q_i\phi_i)r_{ij} &= \sum_{i \neq j}q_i\phi_i \frac{q_{ij}}{q_i} \tag{writing $r_{ij}$ in terms of $q_{ij}$} \\
+&= \sum_{i \neq j} \phi_i q_{ij} \\
+&= \sum_i \phi_iq_{ij} + q_j\phi_j \tag{since $q_j = -q_{jj}$} \\
+&= 0 + q_j\phi_j \tag{since $\boldsymbol\phi\mathsf Q = \mathbf 0$} \\
+&= q_j \phi_j ,
+\end{align*}
+as required.
+
+\end{myanswers}
+
+\hypertarget{A4}{%
+\section*{Assessment 4}\label{A4}}
+\addcontentsline{toc}{section}{Assessment 4}
+
+This assessment counts as 4\% of your final module grade. You should attempt both questions. You must show your working, and there are marks for the quality of your mathematical writing.
+
+The deadline for submission is \textbf{Thursday 6 May at 2pm}. Submission will be to Gradescope via Minerva, from Tuesday 4 May. It would be helpful to start your solution to Question 2 on a new page. If you hand-write your solutions and scan them using your phone, please convert to PDF using a scanning app (I like Microsoft Office Lens or Adobe Scan) rather than submit images.
+
+Late submissions up to Thursday 13 May at 2pm will still be marked, but the total mark will be reduced by 10\% per day or part-day for which the work is late. Submissions are not permitted after Thursday 13 May.
+
+Your solutions to this assessment should be your own work. Copying, collaboration or plagiarism are not permitted. Asking others to do your work, including via the internet, is not permitted. Transgressions are considered to be a very serious matter, and will be dealt with according to the University's disciplinary procedures.
+
+\hypertarget{S21-queues}{%
+\section{Queues}\label{S21-queues}}
+
+\begin{itemize}
+\tightlist
+\item
+  The M/M/\(\infty\) infinite server process
+\item
+  The M/M/1 single server queue
+\end{itemize}
+
+\hypertarget{S22-end}{%
+\section{Last things}\label{S22-end}}
+
+\begin{itemize}
+\tightlist
+\item
+  Summary of Part II
+\item
+  Exam preparation
+\end{itemize}
+
 \hypertarget{computing}{%
 \section*{Computational worksheets}\label{computing}}
 \addcontentsline{toc}{section}{Computational worksheets}
@@ -5809,7 +6391,13 @@ and so \(\mathrm{e}^{\mathsf A} = \mathsf P^{-1} \mathrm{e}^{\mathsf D} \mathsf 
     Example report: \href{computing/C1-example.html}{{[}HTML format{]}} \href{computing/C1-example.Rmd}{{[}Rmd format{]}}
   \end{itemize}
 \item
-  \textbf{Computational Worksheet 2 (Assessment 2):} \href{computing/C2.html}{{[}HTML format{]}} \href{computing/C2.Rmd}{{[}Rmd format{]}} This worksheet is assessed, and is due on \emph{Thursday 18 March} at 2pm.
+  \textbf{Computational Worksheet 2 (Assessment 2):} \href{computing/C2.html}{{[}HTML format{]}} \href{computing/C2.Rmd}{{[}Rmd format{]}}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Marks and feedback are available on Minerva and Gradescope respectively. My example report is available on Minerva.
+  \end{itemize}
 \end{itemize}
 
 \hypertarget{C-about}{%
