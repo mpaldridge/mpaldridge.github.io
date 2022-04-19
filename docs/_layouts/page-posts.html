@@ -1,62 +1,53 @@
----
-layout: default
----
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
-
-</article>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    span.s1 {font-kerning: none}
+    span.s2 {-webkit-text-stroke: 0px #000000}
+    span.s3 {font: 14.0px Times; text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    span.s4 {font: 14.0px Times; font-kerning: none}
+    span.s5 {text-decoration: underline ; font-kerning: none; color: #0000e9}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">--- layout: default ---</span></p>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>{{ page.title | escape }}</b></span></h1>
+<p class="p1"><span class="s1">{{ content }}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% if site.paginate %} {% assign posts = paginator.posts %} {% else %} {% assign posts = site.posts %} {% endif %} {%- if posts.size &gt; 0 -%} {%- if page.list_title -%}</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>{{ page.list_title }}</b></span></h2>
+<p class="p1"><span class="s1">{%- endif -%}</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s2"></span><span class="s1">{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} {%- for post in posts -%}</span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{{ post.date | date: date_format }} <a href="file:///Users/mpaldridge/Documents/GitHub/blog/docs/_layouts/%7B%7B%20post.url%20%7C%20relative_url%20%7D%7D"><span class="s3"><b>{{ post.title | escape }} </b></span></a></span><span class="s4"><b><br>
+</b></span><span class="s1">{%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}<span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{%- endfor -%}<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p1"><span class="s1">{% if site.paginate %}</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s2"></span><span class="s1">{%- if paginator.previous_page %}</span></li>
+  <li class="li3"><span class="s2"><a href="file:///Users/mpaldridge/Documents/GitHub/blog/docs/_layouts/%7B%7B%20paginator.previous_page_path%20%7C%20relative_url%20%7D%7D"><span class="s5">{{ paginator.previous_page }}</span></a></span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{%- else %}</span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">â€¢<br>
+</span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{%- endif %}</span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{{ paginator.page }}<br>
+</span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{%- if paginator.next_page %}</span></li>
+  <li class="li3"><span class="s2"><a href="file:///Users/mpaldridge/Documents/GitHub/blog/docs/_layouts/%7B%7B%20paginator.next_page_path%20%7C%20relative_url%20%7D%7D"><span class="s5">{{ paginator.next_page }}</span></a></span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{%- else %}</span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">â€¢<br>
+</span></li>
+  <li class="li1"><span class="s2"></span><span class="s1">{%- endif %}<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p1"><span class="s1">{%- endif %} {%- endif -%}<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>

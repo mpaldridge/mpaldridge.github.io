@@ -1,7 +1,7 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home-noposts
+layout: home
 ---
 
 Hi, I'm Matthew Aldridge. I'm a lecturer at the University of Leeds in the School of Mathematics, in the Statistics department.
