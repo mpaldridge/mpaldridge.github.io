@@ -1,5 +1,5 @@
 ---
-layout: page-posts
+layout: page
 title: Personal
 permalink: /blog/
 ---
