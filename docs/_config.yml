@@ -44,7 +44,7 @@ permalink: /blog/:title:output_ext
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
-  date_format: "%-d %b %Y"
+  date_format: "%-d %B %Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
