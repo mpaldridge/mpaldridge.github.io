@@ -6,7 +6,7 @@ categories: writing
 permalink: /blog/vaccine-scarcity.html
 ---
 
-<iframe style="border: solid 1px #e4edf2;" src="https://www.stitcher.com/embed/73953/86322642" width="220" height="150" frameborder="0" scrolling="no" />
+<iframe style="border: solid 1px #e4edf2;" src="https://www.stitcher.com/embed/73953/86322642" width="220" height="150" frameborder="0" scrolling="no"></iframe>
 
 "The unit cost of these vaccines is not high. It’s maybe too high for the poorest countries on Earth. But a lot of middle-income countries that could easily afford \$20 a shot for people just don’t _have_ them, because that number of vaccines doesn’t exist. And Pfizer are not _refusing_ -- they’re selling at a profit; but this is all that they can make. What we don’t have a policy focus on is: _Why_ is it all that they can make, exactly? […]
 
