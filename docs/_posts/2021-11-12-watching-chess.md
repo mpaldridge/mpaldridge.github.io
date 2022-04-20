@@ -6,10 +6,11 @@ categories: writing
 permalink: /blog/watching-chess.html
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xb8bq9XwmXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 *   This was the first time I’d paid proper attention to chess match for a very long time. It was pretty good fun!
 
-*   There appeared to be four official(-ish?) streams. The [FIDE](https://href.li/?https://www.youtube.com/watch?v=q1XFLBJmd0Y) and [Chess24 "Deep Dive""](https://href.li/?https://www.youtube.com/watch?v=72NwJyRUB5g) streams were of the "two extremely accomplished chess players chatting over Zoom"" variety, and were too dry for me. The most professionally produced, probably the most dumbed-down (although only relatively speaking), and my favourite, was the [Chess24 "Global”="" stream](https://href.li/?https://www.youtube.com/watch?v=P3YZ3ojSBTU); British Grandmaster David Howell was very good in a sort of joint presenter/analyst position. The [Chess.com stream](https://href.li/?https://www.youtube.com/watch?v=h-XmXoVY-6I) was perhaps objectively the best, and had last-time’s challenger Fabiano Caruana as analyst, but the dark set, big leather chairs, usually-all-US line-up, usually-all-male line-up and -- forgive me -- the presenter’s voice made it unbearably bro-y to me.
+*   There appeared to be four official(-ish?) streams. The [FIDE](https://www.youtube.com/watch?v=q1XFLBJmd0Y) and [Chess24 "Deep Dive"](https://www.youtube.com/watch?v=72NwJyRUB5g) streams were of the "two extremely accomplished chess players chatting over Zoom"" variety, and were too dry for me. The most professionally produced, probably the most dumbed-down (although only relatively speaking), and my favourite, was the [Chess24 "Global" stream](https://www.youtube.com/watch?v=P3YZ3ojSBTU); British Grandmaster David Howell was very good in a sort of joint presenter/analyst position. The [Chess.com stream](https://www.youtube.com/watch?v=h-XmXoVY-6I) was perhaps objectively the best, and had last-time’s challenger Fabiano Caruana as analyst, but the dark set, big leather chairs, usually-all-US line-up, usually-all-male line-up and -- forgive me -- the presenter’s voice made it unbearably bro-y to me.
 
 *   Game 6 was the obvious highlight and a tremendously exciting (and long!) game. Games 1-5 were sometimes tense to start with before resolving into fairly dry draws, and Nepomniachtchi made some big errors in many of the later games.
 
