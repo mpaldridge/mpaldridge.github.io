@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: Directions to my office
 permalink: /office/
 ---
 
