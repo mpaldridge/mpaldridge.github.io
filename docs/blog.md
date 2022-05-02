@@ -6,3 +6,5 @@ permalink: /blog/
 
 This page may show some blogposts?
 
+## Blog
+
