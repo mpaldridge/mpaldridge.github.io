@@ -7,7 +7,7 @@ permalink: /blog/precious-farts-in-a-coffee.html
 ---
 
 
-![](assets/img/subtitles.jpg)
+![](../assets/img/subtitles.jpg)
 
 * coffee shops inequality
 * grocery shops inequality
