@@ -2,7 +2,7 @@
 layout: post
 title:  "Yglesias on vaccine scarcity"
 date:   2021-09-15
-categories: writing
+categories: quotes
 permalink: /blog/vaccine-scarcity.html
 ---
 
