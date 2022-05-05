@@ -4,14 +4,20 @@ title: Research
 permalink: /publications/
 ---
 
-Other places to find my work include on the arXiv on the arXiv, on Google Scholar, and on my ORCID page.
+Other places to find my work include [on the arXiv](https://arxiv.org/a/0000-0002-9347-1586.html), on [Google Scholar](https://scholar.google.co.uk/citations?user=UJShxDIAAAAJ), and on [my ORCID page](https://orcid.org/0000-0002-9347-1586).
 
 ## Survey articles
+
+**Pooled testing and its applications in the COVID-19 pandemic**  
+M Aldridge, [D Ellis](https://sites.google.com/view/davidellismath)  
+In *Pandemics: Insurance and Social Protection*, edited by MdC Boado-Penas, J Eisenberg, Ş Şahin‬‬‬; Springer, 2022  
+Extended version: [arXiv:2105.08845](https://arxiv.org/abs/2105.08845)  
+Book chapter: [doi:10.1007/978-3-030-78334-1_11](https://doi.org/10.1007/978-3-030-78334-1_11)
 
 **Group testing: an information theory persepective**  
 M Aldridge, O Johnson, J Scarlett  
 *Foundations and Trends in Communications and Information Theory*, 15:3–4, 196–392  
-Paper/Book/Ebook: doi:10.1561/0100000099  
+Paper/Book/Ebook: <doi:10.1561/0100000099>
 Preprint: arXiv:1902.06002  
 
 ## Preprints
@@ -86,7 +92,7 @@ Preprint: arXiv:1203.5927
 
 **Interference alignment-based sum capacity bounds for random dense Gaussian interference networks**  
 O Johnson, M Aldridge, and R Piechocki  
-*IEEE Transactions on Information Theory*, 57:1, 282–290, 2011
+*IEEE Transactions on Information Theory*, 57:1, 282–290, 2011  
 Paper: doi:10.1109/TIT.2010.2090242  
 Preprint: arXiv:0907.5165  
 
