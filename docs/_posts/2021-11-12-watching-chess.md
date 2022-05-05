@@ -6,9 +6,7 @@ categories: writing
 permalink: /blog/watching-chess.html
 ---
 
-<div class="wrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xb8bq9XwmXQ?color=white&theme=light"></iframe>
-</div>
                                                                                                         
 This was the first time I’d paid proper attention to chess match for a very long time. It was pretty good fun!
 
