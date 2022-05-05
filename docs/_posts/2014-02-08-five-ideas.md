@@ -10,15 +10,12 @@ Last month, the parliamentary science and technology committee released [a repor
 
 We were discussing this on Twitter. Olly asks:
 
-> [@lchilds](https://twitter.com/lchilds) Good question. What *should* be done?
+> [@lchilds](https://twitter.com/lchilds) Good question. What *should* be done?  
 > — Oliver Johnson (@BristolStats1) [February 7, 2014](https://twitter.com/BristolStats1/statuses/431798377664102400)
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 to which Laura responds:
 
-> [@BristolStats1](https://twitter.com/BristolStats1) I have no idea. Does anyone?
-> — Laura Childs (@lchilds) [February 7, 2014](https://twitter.com/lchilds/statuses/431830774765998080)
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/BristolStats1?ref_src=twsrc%5Etfw">@BristolStats1</a> I have no idea. Does anyone?</p>&mdash; Laura Childs (@lchilds) <a href="https://twitter.com/lchilds/status/431830774765998080?ref_src=twsrc%5Etfw">February 7, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 So here's an attempt at a very incomplete answer.
 
@@ -36,6 +33,7 @@ The emphasis here is on ideas that your university/funding body/whatever could i
 
 Two things that would help early-career academics (and particularly women) with partners / children / care duties:
 
+{:start="4"}
 4. As the parliamentary committee suggests ([para. 47](http://www.publications.parliament.uk/pa/cm201314/cmselect/cmsctech/701/70107.htm)), universities and funding bodies should "increase the number of more stable and permanent post-doc positions", even if this means reducing the total number of positions.
 5. As the parliamentary committee also suggests ([para. 48](http://www.publications.parliament.uk/pa/cm201314/cmselect/cmsctech/701/70107.htm)), "research funders should remove from fellowship conditions any requirements for researchers to move institute or country and instead provide funding for shorter visits to other institutes for collaboration purposes".
 
