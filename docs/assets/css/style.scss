@@ -1,0 +1,25 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.2);
+}
+
+blockquote {
+  color: $brand-color;
+  border-left: 4px solid $border-color-01;
+  padding-left: $spacing-unit / 2;
+  @include relative-font-size(1);
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  i, em {
+    font-style: normal;
+  }
+}
