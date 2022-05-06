@@ -6,7 +6,7 @@ permalink: /teaching/
 
 ## Current teaching
 
-### MATH1710 Probability & Statistics I
+### [MATH1710 Probability & Statistics I](https://mpaldridge.github.io/math1710)
 
 I am currently lecturing the module **[MATH1710 Probability and Statistics I](https://mpaldridge.github.io/math1710)** in Semester 1. The main website for this module is [here](https://mpaldridge.github.io/math1710).
 
@@ -17,7 +17,7 @@ I am currently lecturing the module **[MATH1710 Probability and Statistics I](ht
 
 ## Past teaching
 
-### MATH2750 Introduction to Markov Processes
+### [MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750)
 
 From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750)**. The main website for this module was [here](https://mpaldridge.github.io/math2750). This site reasonably accurately represents the module as it is taught in 2021-22.
 
@@ -27,7 +27,7 @@ In 2019-20, I lectured one third of this module, on History of Statistics, with 
 
 ### MA40042 Measure Theory and Integration (Bath)
 
-In 2016-17 at the University of Bath, I lectured one half of this module, on Measure Theory, with Dr Matt Roberts.
+In 2016-17 at the University of Bath, I lectured one half of [MA40042 Measure Theory and Integration](../ma40042/), on Measure Theory, with Dr Matt Roberts. Some material available [here](../ma40042/).
 
 ### MATH30002/MATHM0009 Topics in Discrete Mathematics (Bristol)
 
