@@ -1,10 +1,8 @@
 ---
 layout: page-posts
-title: Personal
+title: Blog
 permalink: /blog/
 ---
 
-This page may show some blogposts?
-
-## Blog
+I'm not sure I post things often enough to properly count think as a blog, but here are somethings I've written:
 
