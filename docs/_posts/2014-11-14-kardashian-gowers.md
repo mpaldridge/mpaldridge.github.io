@@ -2,7 +2,7 @@
 layout: post
 title:  "Kardashian–Gowers"
 date:   2014-11-14
-categories: writing
+categories: quote
 permalink: /blog/kardashian-gowers.html
 ---
 
