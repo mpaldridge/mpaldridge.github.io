@@ -31,4 +31,4 @@ In 2016-17 at the University of Bath, I lectured one half of [MA40042 Measure Th
 
 ### MATH30002/MATHM0009 Topics in Discrete Mathematics (Bristol)
 
-In 2013-14 at the University of Bristol, I lectured one third of this module, on Introduction to Graph Theory, with Dr Jon Bober and Dr Karen Gunderson.
+In 2013-14 at the University of Bristol, I lectured one third of of [MATH30002/MATHM0009 Topics in Discrete Mathematics](../math30002/), on an Introduction to Graph Theory, with Dr Jonathan Bober and Dr Karen Gunderson.
