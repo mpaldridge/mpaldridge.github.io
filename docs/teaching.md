@@ -31,8 +31,10 @@ In 2016-17 at the University of Bath, I lectured one half of [MA40042 Measure Th
 
 ### MATH30002/MATHM0009 Topics in Discrete Mathematics (Bristol)
 
-In 2013-14 at the University of Bristol, I lectured one third of of [MATH30002/MATHM0009 Topics in Discrete Mathematics](./math30002/), on an Introduction to Graph Theory, with Dr Jonathan Bober and Dr Karen Gunderson. Some material available [here](./ma40042/). I belive this module now covers entirely different topics.
+In 2013-14 at the University of Bristol, I lectured one third of of [MATH30002/MATHM0009 Topics in Discrete Mathematics](./math30002/), on an Introduction to Graph Theory, with Dr Jonathan Bober and Dr Karen Gunderson. Some material available [here](./math30002/). I believe this module now covers entirely different topics.
 
 ## Other
 
 ### R Markdown
+
+I have [some notes on using R Markdown and Bookdown](rmarkdown-draft). The intended audience is people (particularly people in the School of Mathematics at the University of Leeds) wanting to write accessible online lecture notes.
