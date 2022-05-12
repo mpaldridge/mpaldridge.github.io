@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MATH30015: History of Statistics lecture notes
+title: MATH3015 History of Statistics lecture notes
 permalink: /teaching/math3015/l12-probability.html
 ---
 
