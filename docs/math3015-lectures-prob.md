@@ -1,7 +1,6 @@
 ---
 layout: page
 title: MATH30015: History of Statistics lecture notes
-use_math: true
 permalink: /teaching/math3015/l12-probability.html
 ---
 
@@ -206,54 +205,4 @@ Pascal’s triangle was in fact know long before Fermat and Pascal – Indian ma
 *	Ian Stewart, *Do Dice Play God? The mathematics of uncertainty*, Profile Books, 2019.
 *	[The Fermat--Pascal correspondence [PDF]](https://www.york.ac.uk/depts/maths/histstat/pascal.pdf)
 
-
-## Lecture 2: Probability II
-
-
-The law of large numbers 
-
-Classical probability (see the last lecture) was all very well for a simple problem with a small number of equally likely outcomes. But often, in the real world, the outcomes are not equally likely. How, then, can we calculate probabilities for events in this more difficult case?
-It became appreciated that if one can repeat an experiment many times, then the proportion of times the favourable outcome occurs is very close to its probability. So if a dice were tossed 600 times, the number of occasions a 6 appears will be very close to 100. Further, the larger the number of repeated experiments, the more accurate the probability becomes. Cardano (see the last lecture) was certainly aware of this.
- An important breakthrough came from Jacob Bernoulli (Switzerland, 1654–1705). Jacob Bernoulli was one of the members of the Bernoulli family of mathematicians. Jacob was crucial in the development of the calculus of variations, and, by calculating compound interest, discovered the number e (later named after Leonhard Euler). Jacob’s son Johann Bernoulli was an early proponent of infinitesimal calculus, while Johann’s son Daniel Bernoulli was a very prominent physicist and mathematician, best known for his work in fluid mechanics.
-Jacob Bernoulli wrote Ars Conjectandi (‘The Art of Conjecturing’, or, more loosely, ‘How to Guess Well’) in the 1680s, although it wasn’t published until after his death. Perhaps the most important result was his ‘golden theorem’, which showed that the long run proportion of times an event occurs is very close to the probability. 
-The result is this: Suppose an experiment is repeated n times, and has a probability p of success each time. Let Y count the number of successes. Then the proportion of successes Y/n is very close to p when n is large. More precisely,
-P(|Y/n-p|>ε)→0     "as " n→∞.
-We would now call Y a binomial random variable, and would recognise Bernoulli’s golden theorem as (a special case of) the law of large numbers. As a reminder, the weak law of large numbers says this: Let X1, X2, … be a sequence of independent and identically distributed random variables with finite expectation EX= μ, and write X ̅_n=(∑_(i=1)^n▒X_i )/n for the sample mean; then
-P(|X ̅_n-μ|>ε)→0     "as " n→∞.
-Perhaps the first formal proof of the law of large numbers in most of its generality was by Pafnuty Chebychev (Russia, 1821–1894) using the result we call Chebychev’s inequality. Chebyshev was known for his work in probability as well as his results concerning prime numbers in number theory. Chebyshev’s inequality (conjectured by his friend and colleague Irénée-Jules Bienaymé) is the result that, for a random variable X with mean μ and variance σ^2, we have
-P(|X-μ|>ε)≤σ^2/ϵ^2 .
-Applying this to the sample mean X ̅_n, which has mean μ and variance σ^2/n, we get that
-P(|X-μ|>ε)≤σ^2/〖nϵ〗^2 .
-Provided the random variables have finite variance, the term on the right-hand side tends to 0, thus proving the result.
-
-The central limit theorem
-
-Bernoulli’s law of large numbers says that the proportion of successes in a large number trials is close to the probability – but it’s not exactly the probability, so probabilists where then interested in what the typical size of the deviation from the probability.
- An important breakthrough here was made by Abraham de Moivre (France, 1667–1754). De Moivre was among the first people to formalise ideas in probability such as expectation, independence, and conditional probability. He is also well known for de Moivre’s formula 
-(cos⁡x+"i"  sin⁡x )^n=cos⁡nx+"i"  sin⁡nx,
-which later led to Euler’s formula e^("i" x)=cos⁡x+"i"  sin⁡x, of which it is an easy consequence.
-De Moivre showed that the number of success from n fair trials with p = 1/2, was not only n/2 on average, but was in fact described well by the normal distribution with mean n/2 and variance n/4. This was a special case of what we now know as the central limit theorem, that for IID random variables with finite mean and variance, we have
-(∑_(i=1)^n▒X_i -nμ)/√(nσ^2 )→"N" (0,1)      "in distribution".
-If the Xi are Bernoulli trials with probability 1/2, then then we get back de Moivre’s result.
-De Moivre’s result was, in many ways, far ahead of its time, and got relatively little attention in his own lifetime. It was rescued from obscurity by Pierre-Simon Laplace (France, 1749–1827). Laplace was a polymath, famed for his work in probability, for introducing calculus to the study of classical mechanics, and most of all for his pioneering work in mathematical physics. Laplace extended de Moivre’s central limit theorem for binomial trials with p = 1/2 to those with any value of p. In particular, he introduced the use of the characteristic function Φ_X (t)= E"e" ^("i" tX) to the problem.  Normal distributions are precisely those where the log of this characteristic function is quadratic in t. The most common modern proof of the central limit theorem uses a Taylor expansion of the log of the characteristic equation – a quadratic approximation to the log characteristic function gives the normal approximation of the central limit theorem.
-It took a long time for the central limit theorem to be formally proved in a form we would understand today – we could perhaps attribute such a proof to the Russian mathematician Aleksandr Lyapunov in 1901.
-
-Probability as pure mathematics
-
-Probability has continued to progress in the twentieth century. One of the most important was the formalisation of probability as following strict mathematical rules – these are sometimes known as the axioms of probability. The axiomisation of probability in the most common form used today was due to Andrey Kolmogorov (Russia, 1902–1987). Kolmogorov was perhaps the most important probabilist of the twentieth century, but also did important work in mathematical physics and crucial foundational work in areas we might now consider to be computer science. (Kolmogorov was also my PhD supervisor’s PhD supervisor’s PhD supervisor’s PhD supervisor, or my academic great-great-grandfather.) 
-Kolmogorov’s axioms go as follows. We have a sample space Ω which represents the set of all possible outcomes. Then a probability measure P is a function that takes subsets A of Ω (called ‘events’) and assigns them a probability P(A), that obeys the following rules:
-	P(A) is always a number between 0 and 1.
-	P(Ω)=1; that is, the probability of observing an outcome from the sample space is 1.
-	If A_1,A_2,A_2,… are a countably infinite sequence of disjoint events (that is, where at most one of the events happens at a time), then we have the ‘or’ addition rule:
-P(⋃_(n=1)^∞▒A_n )=∑_(n=1)^∞▒P (A_n ).
-Perhaps surprisingly, using just these three axioms, we can prove all the other rules that we know about probability, including the ‘and’ multiplication rule (for independent events) and the ‘not’ rule that P("not " A)=1-P(A).
-There have been many other developments in recent probability that we don’t have space for here, particularly those inspired by applications in statistical physics and in finance.
-
-Recommended reading
-
-	WJ Adams, The Life and Times of the Central Limit Theorem, second edition, American Mathematical Society, 2009.
-	FN David, Games, Gods and Gambling: A history of probability and statistical ideas, Dover Publications, 1962.
-	S Gerovitch, The man who invented modern probability theory, Nautilus, 4, 2013. http://nautil.us/issue/4/the-unlikely/the-man-who-invented-modern-probability 
-	LE Maistrov, Probability Theory: A historical sketch, Academic Press, 1974.
-	E Seneta, A tricentenary history of the law of large numbers, Bernoulli, 19:4, 1088–1121, 2013.
 
