@@ -53,72 +53,65 @@ A tempting solution is to enumerate the number of possible continuations to the 
 <table>
 <thead>
   <tr>
-    <th colspan="4"><span style="font-weight:bold">**Alice wins**</span></th>
-    <th colspan="2"><span style="font-weight:bold">**Bob wins**</span></th>
+    <th style="text-align: center" colspan="4">Alice wins</th>
+    <th style="text-align: center" colspan="2">Bob wins</th>
+  </tr>
+  <tr>
+    <td style="text-align: center">10&ndash;6</td>
+    <td style="text-align: center">10&ndash;7</td>
+    <td style="text-align: center">10&ndash;8</td>
+    <td style="text-align: center">10&ndash;9</td>
+    <td style="text-align: center">9&ndash;10</td>
+    <td style="text-align: center">8&ndash;10</td>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td><span style="font-weight:bold">**10--6**</span></td>
-    <td><span style="font-weight:bold">**10--7**</span></td>
-    <td><span style="font-weight:bold">**10--8**</span></td>
-    <td><span style="font-weight:bold">**10--9**</span></td>
-    <td><span style="font-weight:bold">**9--10**</span></td>
-    <td><span style="font-weight:bold">**8--10**</span></td>
+    <td style="text-align: center">AA</td>
+    <td style="text-align: center">ABA</td>
+    <td style="text-align: center">ABBA</td>
+    <td style="text-align: center">ABBBA</td>
+    <td style="text-align: center">ABBBB</td>
+    <td style="text-align: center">BBBB</td>
   </tr>
   <tr>
-    <td>AA</td>
-    <td>ABA</td>
-    <td>ABBA</td>
-    <td>ABBBA</td>
-    <td>ABBBB</td>
-    <td>BBBB</td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center">BAB</td>
+    <td style="text-align: center">BABA</td>
+    <td style="text-align: center">BABBA</td>
+    <td style="text-align: center">BABBB</td>
+    <td style="text-align: center"></td>
   </tr>
   <tr>
-    <td></td>
-    <td>BAB</td>
-    <td>BABA</td>
-    <td>BABBA</td>
-    <td>BABBB</td>
-    <td></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center">BBAA</td>
+    <td style="text-align: center">BBABA</td>
+    <td style="text-align: center">BBABB</td>
+    <td style="text-align: center"></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td>BBAA</td>
-    <td>BBABA</td>
-    <td>BBABB</td>
-    <td></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center">BBBAA</td>
+    <td style="text-align: center">BBBAB</td>
+    <td style="text-align: center"></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>BBBAA</td>
-    <td>BBBAB</td>
-    <td></td>
+    <td style="text-align: center">1</td>
+    <td style="text-align: center">2</td>
+    <td style="text-align: center">3</td>
+    <td style="text-align: center">4</td>
+    <td style="text-align: center">4</td>
+    <td style="text-align: center">1</td>
   </tr>
   <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>4</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td colspan="4">10</td>
-    <td colspan="2">5</td>
+    <td style="text-align: center" colspan="4">10</td>
+    <td style="text-align: center" colspan="2">5</td>
   </tr>
 </tbody>
 </table>
-
-Test table:
-
-| Head one | Head two |
-|:--------:|:--------:|
-| Content  | here     |
-| Some     | more     |
 
 This would suggest that Alice should take the stakes in the ratio $10 : 5 = 2 : 1$. But this is incorrect. The error is that these 15 outcomes are not equally likely: the shorter games are more likely than the longer games. For example, the outcome AA has probability $\frac12 \times \frac12 = \frac14$, where the outcome BBBB has probability $\frac12 \times \frac12 \times \frac12 \times \frac12 = \frac{1}{16}$.
 
