@@ -6,7 +6,12 @@ permalink: /teaching/math3015/l12-probability.html
 
 *Lectures notes for Lectures 1 and 2 of the ["History of Statistics" section of the module MATH3015 History of Mathematics](./), as lectured in 2019--20.*
 
-## Lecture 1: Probability I
+#### Contents
+
+* [**Lecture 1:** History of Probability 1](#lecture-1-history-of-probability-1)
+* [**Lecture 2:** History of Probability 2](#lecture-2-history-of-probability-2)
+
+## Lecture 1: History of Probability 1
 
 ### When did "probability" begin?
 
@@ -40,15 +45,15 @@ Cardano also knew that, if a single event had odds of $r : n – r$, then the od
 
 ### The problem of the points
 
-Many authors track down the genesis of mathematical probability to the solution of the *problem of the points*. The problem is this: two players bet the same amount of money on a game of chance – perhaps tossing a coin – where the first to score a certain number of points is the winner and takes all the money. But suppose the game is interrupted before it’s finished: how should the stakes be divided?
+Many authors track down the genesis of mathematical probability to the solution of the *problem of the points*. The problem is this: two players bet the same amount of money on a game of chance -- perhaps tossing a coin -- where the first player to score a certain number of points is the winner and takes all the money. But suppose the game is interrupted before it’s finished: how should the stakes be divided?
 
 For an example, suppose Alice and Bob are playing a first-to-10 game which is interrupted with Alice 8--6 ahead. What proportion of the money should Alice take?
 
-This problem was discussed in a famous series of letters between [**Pierre de Fermat** (France, 1607–1665)](https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/) and [**Blaise Pascal** (France, 1623–1662)](https://mathshistory.st-andrews.ac.uk/Biographies/Pascal/). Fermat was an amateur mathematician, but a very important one for his work in analysis, geometry and, most of all, number theory. He is perhaps best-known for his conjecture that became known as "Fermat’s last theorem".
+This problem was discussed in a famous series of letters between [**Pierre de Fermat** (France, 1607–1665)](https://mathshistory.st-andrews.ac.uk/Biographies/Fermat/) and [**Blaise Pascal** (France, 1623–1662)](https://mathshistory.st-andrews.ac.uk/Biographies/Pascal/). Fermat was an amateur mathematician, but a very important one for his work in analysis, geometry and, most of all, number theory, where is perhaps best-known for his conjecture that became known as "Fermat’s last theorem". Pascal was a polymath: a philosopher, a theologian, a mathematician, a physicist.
 
-Fermat and Pascal realised that what matters is not how many points Alice and Bob each have, but how many points they require win: that is, 8--6 up in a first-to-10 game is just as big an advantage as 98--96 up in a first-to-100 game. In both cases, Alice requires $a = 2$ points, while Bob requires $b = 4$. Fermat and Pascal also agreed that the money should be divided in proportion to their respective odds of winning the game -- now, we would say that each player gets their "expected winnings". The difficulty was how to calculate those odds.
+Fermat and Pascal realised that what matters is not how many points Alice and Bob already have, but how many points they require win: that is, 8--6 up in a first-to-10 game is just as big an advantage as 98--96 up in a first-to-100 game. In both cases, Alice requires $a = 2$ points to win, while Bob requires $b = 4$ points to win. Fermat and Pascal also agreed that the money should be divided in proportion to their respective odds of winning the game -- now, we would say that each player gets their "expected winnings". The difficulty was how to calculate those odds.
 
-A tempting solution is to enumerate the number of possible continuations to the fame, then take the odds by counting the number of outcomes where Alice wins and where Bob wins. In our example, we would have the following. (Here, for example, ABA means a continuation where Alice wins the next round, then Bob, then Alice, leading to Alice winning 10–7.)
+A tempting solution is to enumerate the number of possible continuations to the fame, then take the odds by counting the number of outcomes where Alice wins and where Bob wins. In our example, we would have the following. (Here, for example, ABA means a continuation where Alice wins the next round, then Bob, then Alice, leading to Alice winning 10--7.)
 
 <table>
 <thead>
@@ -113,96 +118,108 @@ A tempting solution is to enumerate the number of possible continuations to the 
 </tbody>
 </table>
 
-This would suggest that Alice should take the stakes in the ratio $10 : 5 = 2 : 1$. But this is incorrect. The error is that these 15 outcomes are not equally likely: the shorter games are more likely than the longer games. For example, the outcome AA has probability $\frac12 \times \frac12 = \frac14$, where the outcome BBBB has probability $\frac12 \times \frac12 \times \frac12 \times \frac12 = \frac{1}{16}$.
+This would suggest that the players should share the stakes in the ratio $10 : 5$; that is, Alice takes 67p out of every £1. But this calculation is incorrect. The error is that these 15 outcomes are not equally likely: the shorter games are more likely than the longer games. For example, the outcome AA has probability $\frac12 \times \frac12 = \frac14$, where the outcome BBBB has probability $\frac12 \times \frac12 \times \frac12 \times \frac12 = \frac{1}{16}$.
 
-The solution is to look at taking the game out to the maximum number of steps. In a first-to-n game, this means playing -- or pretending to play-- the full $2n - 1$ rounds. From the interruption with $a$ and $b$ points required, that means $a + b - 1$ more rounds. Because these are all the same length, they will be equally likely.
+The solution is to look at taking the game out to the maximum number of steps. In a first-to-n game, this means playing -- or pretending to play-- the full $2n - 1$ rounds, even if the winner is known before all $2n - 1$ rounds are up. From the interruption of the game with $a$ and $b$ points required, that means playing (or pretending to play) $a + b - 1$ more rounds. The key point is that because these continuations are the same length, they are now equally likely.
 
 In our example, we pretend to play a full 5 more rounds.
 
 <table>
 <thead>
   <tr>
-    <th colspan="4"><span style="font-weight:bold">**Alice wins**</span></th>
-    <th colspan="2"><span style="font-weight:bold">**Bob wins**</span></th>
+    <th style="text-align: center" colspan="4">Alice wins</th>
+    <th style="text-align: center" colspan="2">Bob wins</th>
+  </tr>
+  <tr>
+    <th style="text-align: center">10&ndash;6</th>
+    <th style="text-align: center"><strong>10&ndash;7</strong></th>
+    <th style="text-align: center"><strong>10&ndash;8</strong></th>
+    <th style="text-align: center"><strong>10&ndash;9</strong></th>
+    <th style="text-align: center"><strong>9&ndash;10</strong></th>
+    <th style="text-align: center"><strong>8&ndash;10</strong></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td><span style="font-weight:bold">**10--6**</span></td>
-    <td><span style="font-weight:bold">**10--7**</span></td>
-    <td><span style="font-weight:bold">**10--8**</span></td>
-    <td><span style="font-weight:bold">**10--9**</span></td>
-    <td><span style="font-weight:bold">**9--10**</span></td>
-    <td><span style="font-weight:bold">**8--10**</span></td>
+    <td style="text-align: center">AA</td>
+    <td style="text-align: center">ABA</td>
+    <td style="text-align: center">ABBA</td>
+    <td style="text-align: center">ABBBA</td>
+    <td style="text-align: center">ABBBB</td>
+    <td style="text-align: center">BBBB</td>
   </tr>
   <tr>
-    <td>AA</td>
-    <td>ABA</td>
-    <td>ABBA</td>
-    <td>ABBBA</td>
-    <td>ABBBB</td>
-    <td>BBBB</td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center">BAA</td>
+    <td style="text-align: center">BABA</td>
+    <td style="text-align: center">BABBA</td>
+    <td style="text-align: center">BABBB</td>
+    <td style="text-align: center"></td>
   </tr>
   <tr>
-    <td></td>
-    <td>BAB</td>
-    <td>BABA</td>
-    <td>BABBA</td>
-    <td>BABBB</td>
-    <td></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center">BBAA</td>
+    <td style="text-align: center">BBABA</td>
+    <td style="text-align: center">BBABB</td>
+    <td style="text-align: center"></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td>BBAA</td>
-    <td>BBABA</td>
-    <td>BBABB</td>
-    <td></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center"></td>
+    <td style="text-align: center">BBBAA</td>
+    <td style="text-align: center">BBBAB</td>
+    <td style="text-align: center"></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>BBBAA</td>
-    <td>BBBAB</td>
-    <td></td>
+    <td style="text-align: center">1</td>
+    <td style="text-align: center">2</td>
+    <td style="text-align: center">3</td>
+    <td style="text-align: center">4</td>
+    <td style="text-align: center">4</td>
+    <td style="text-align: center">1</td>
   </tr>
   <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>4</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td colspan="4">10</td>
-    <td colspan="2">5</td>
+    <td style="text-align: center" colspan="4">10</td>
+    <td style="text-align: center" colspan="2">5</td>
   </tr>
 </tbody>
 </table>
 
-Thus Alice and Bob should in fact share the stakes in the ratio $26 : 6 = 13 : 3$.
+Thus Alice and Bob should in fact share the stakes in the ratio $26 : 6$; that is, Alice takes 81p out of every £1.
 
-The numbers in the penultimate row here are the number of ways Alice can win $k = 5, 4, 3, 2, 1, 0$ rounds out of the $n = 5$ total rounds. These numbers are what we now call *binomial coefficients*. Pascal found a recurrence equation for these numbers, which in modern notation for the binomial coefficient is
-$$ \binom{n+1}{k} = \binom{n}{k} + \binom{n}{k-1} .$$
-This allows the numbers to be computed quickly using what has become known as Pascal’s triangle. (Note the 1, 5, 10, 10, 5, 1 on the fifth row, as featured in the enumeration of results between Alice and Bob.)
+The numbers in the penultimate row here are the number of ways Bob can win $k = 0, 1, 2, 3, 4, 5$ rounds (or Alice can win $n - k = 5, 4, 3, 2, 1, 0$ rounds) out of the $n = 5$ total rounds. These numbers are what we now call *binomial coefficients*. Pascal found a recurrence equation for these numbers, which in modern notation for the binomial coefficient is
+$$ \binom{n+1}{k+1} = \binom{n}{k} + \binom{n}{k+1} .$$
+This allows the numbers to be computed quickly using what has become known as [***Pascal’s triangle***](https://en.wikipedia.org/wiki/Pascal%27s_triangle), where each number $\binom{n+1}{k+1}$ is the sum of the two numbers $\binom{n}{k}$ and $\binom{n}{k+1}$ above it. (Note the 1, 5, 10, 10, 5, 1 on the fifth row, as featured in the enumeration of results between Alice and Bob.)
 
-![](math3015-pascal.png) 
+```
+               1
+             1   1
+           1   2   1
+         1   3   3   1
+       1   4   5   3   1
+     1   5  10  10   5   1
+   1   6  15  20  15   6   1
+ 1   7  21  35  35  21   7   1
+```
 
-Pascal’s triangle was in fact know long before Fermat and Pascal – Indian mathematicians were aware of it at least 1000 years earlier, while Persian and Chinese recordings also predate Pascal's.
+"Pascal's triangle" was in fact know long before Fermat and Pascal -- Indian mathematicians were aware of it at least 1000 years earlier, while Persian and Chinese recordings also predate Pascal's.
 
 
 
 
 ### Recommended reading
 
-*	FN David, *Games, Gods and Gambling: A history of probability and statistical ideas*, Dover Publications, 1962.
+*	FN David, [*Games, Gods and Gambling: A history of probability and statistical ideas*](https://leeds.primo.exlibrisgroup.com/permalink/44LEE_INST/13rlbcs/alma991011810039705181), Dover Publications, 1962.
 *	K Devlin, *The Unfinished Game: Pascal, Fermat, and the seventeenth-century letter that made the world modern*, Basic Books, 2008.
-*	A Hald, *A History of Probability and Statistics and Their Applications Before 1750*, Wiley–Interscience, 1990.
-*	LE Maistrov, *Probability Theory: A historical sketch*, Academic Press, 1974.
-*	O Ore, *Cardano: The gambling scholar*, Princeton University Press, 1953.
+*	A Hald, [*A History of Probability and Statistics and Their Applications Before 1750*](https://leeds.primo.exlibrisgroup.com/permalink/44LEE_INST/13rlbcs/alma991015280459705181), Wiley–Interscience, 1990.
+*	LE Maistrov, [*Probability Theory: A historical sketch*](https://leeds.primo.exlibrisgroup.com/permalink/44LEE_INST/13rlbcs/alma991013099789705181), Academic Press, 1974.
+*	O Ore, [*Cardano: The gambling scholar*](https://leeds.primo.exlibrisgroup.com/permalink/44LEE_INST/13rlbcs/alma991015441939705181), Princeton University Press, 1953.
 *	Ian Stewart, *Do Dice Play God? The mathematics of uncertainty*, Profile Books, 2019.
 *	[The Fermat--Pascal correspondence [PDF]](https://www.york.ac.uk/depts/maths/histstat/pascal.pdf)
+
+
+## Lecture 2: History of Probability 2
 
 
