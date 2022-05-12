@@ -57,12 +57,12 @@ A tempting solution is to enumerate the number of possible continuations to the 
     <th style="text-align: center" colspan="2">Bob wins</th>
   </tr>
   <tr>
-    <td style="text-align: center">10&ndash;6</td>
-    <td style="text-align: center">10&ndash;7</td>
-    <td style="text-align: center">10&ndash;8</td>
-    <td style="text-align: center">10&ndash;9</td>
-    <td style="text-align: center">9&ndash;10</td>
-    <td style="text-align: center">8&ndash;10</td>
+    <th style="text-align: center">10&ndash;6</td>
+    <th style="text-align: center">10&ndash;7</td>
+    <th style="text-align: center">10&ndash;8</td>
+    <th style="text-align: center">10&ndash;9</td>
+    <th style="text-align: center">9&ndash;10</td>
+    <th style="text-align: center">8&ndash;10</td>
   </tr>
 </thead>
 <tbody>
