@@ -199,7 +199,7 @@ Pascal’s triangle was in fact know long before Fermat and Pascal – Indian ma
 
 *	FN David, *Games, Gods and Gambling: A history of probability and statistical ideas*, Dover Publications, 1962.
 *	K Devlin, *The Unfinished Game: Pascal, Fermat, and the seventeenth-century letter that made the world modern*, Basic Books, 2008.
-*	A Hald, *History of Probability and Statistics and Their Applications Before 1750*, Wiley–Interscience, 1990.
+*	A Hald, *A History of Probability and Statistics and Their Applications Before 1750*, Wiley–Interscience, 1990.
 *	LE Maistrov, *Probability Theory: A historical sketch*, Academic Press, 1974.
 *	O Ore, *Cardano: The gambling scholar*, Princeton University Press, 1953.
 *	Ian Stewart, *Do Dice Play God? The mathematics of uncertainty*, Profile Books, 2019.
