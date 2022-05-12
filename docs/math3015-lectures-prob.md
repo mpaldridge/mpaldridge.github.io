@@ -113,6 +113,13 @@ A tempting solution is to enumerate the number of possible continuations to the 
 </tbody>
 </table>
 
+Test table:
+
+| Head one | Head two |
+|:--------:|:--------:|
+| Content  | here     |
+| Some     | more     |
+
 This would suggest that Alice should take the stakes in the ratio $10 : 5 = 2 : 1$. But this is incorrect. The error is that these 15 outcomes are not equally likely: the shorter games are more likely than the longer games. For example, the outcome AA has probability $\frac12 \times \frac12 = \frac14$, where the outcome BBBB has probability $\frac12 \times \frac12 \times \frac12 \times \frac12 = \frac{1}{16}$.
 
 The solution is to look at taking the game out to the maximum number of steps. In a first-to-n game, this means playing -- or pretending to play-- the full $2n - 1$ rounds. From the interruption with $a$ and $b$ points required, that means $a + b - 1$ more rounds. Because these are all the same length, they will be equally likely.
