@@ -32,7 +32,7 @@ One wonders why probability took so long to appear as a serious mathematical sub
 
 ### Classical probability
 
-As probability did become understood and recorded in writing, it was in the form of what we now call *classical* or *enumerative probability*. Here, we have a finite number n of equally likely outcomes. If out of these $n$ outcomes $r$ are favourable and the other $s$ are unfavourable, the favourable outcome was said to have odds of $r : s$ in favour of its outcome. Today, we would say the probability of a favourable outcome is $r / n$. Thus calculating the odds (or probability) of a favourable outcome requires one to count (or enumerate) the number of ways that outcome could occur. For example, rolling a dice has $n = 6$ possible outcomes. If one needs to roll $5$ or more, there are $r = 2$ favourable outcomes and $s = 4$ unfavourable outcomes, for odds in favour of $2 : 4$, or a probability of $2 / 6$.
+As probability did become understood and recorded in writing, it was in the form of what we now call *classical* or *enumerative probability*. Here, we have a finite number $n$ of equally likely outcomes. If out of these $n$ outcomes $r$ are favourable and the other $s$ are unfavourable, the favourable outcome was said to have odds of $r : s$ in favour of its outcome. Today, we would say the probability of a favourable outcome is $r / n$. Thus calculating the odds (or probability) of a favourable outcome requires one to count (or enumerate) the number of ways that outcome could occur. For example, rolling a dice has $n = 6$ possible outcomes. If one needs to roll $5$ or more, there are $r = 2$ favourable outcomes and $s = 4$ unfavourable outcomes, for odds in favour of $2 : 4$, or a probability of $2 / 6$.
 
 One of the first people to write systematically about probability was [**Gerolamo Cardano** (Italy, 1501–1576)](https://mathshistory.st-andrews.ac.uk/Biographies/Cardan/). Cardano is best known for publishing a method to find the roots of a cubic equation (and his long feud with Niccolò Fontana Tartaglia over who got there first). We are more interested in his book *Liber de ludo aleae* ("Book on Games of Chance"), which shows his knowledge of general ideas of probability, as well as his keenness for cheating. As regards enumerative probability, he writes:
 
@@ -191,7 +191,11 @@ In our example, we pretend to play a full 5 more rounds.
 Thus Alice and Bob should in fact share the stakes in the ratio $26 : 6$; that is, Alice takes 81p out of every £1.
 
 The numbers in the penultimate row here are the number of ways Bob can win $k = 0, 1, 2, 3, 4, 5$ rounds (or Alice can win $n - k = 5, 4, 3, 2, 1, 0$ rounds) out of the $n = 5$ total rounds. These numbers are what we now call *binomial coefficients*. Pascal found a recurrence equation for these numbers, which in modern notation for the binomial coefficient is
-$$ \binom{n+1}{k+1} = \binom{n}{k} + \binom{n}{k+1} .$$
+
+$$
+\binom{n+1}{k+1} = \binom{n}{k} + \binom{n}{k+1} .
+$$
+
 This allows the numbers to be computed quickly using what has become known as [***Pascal’s triangle***](https://en.wikipedia.org/wiki/Pascal%27s_triangle), where each number $\binom{n+1}{k+1}$ is the sum of the two numbers $\binom{n}{k}$ and $\binom{n}{k+1}$ above it. (Note the 1, 5, 10, 10, 5, 1 on the fifth row, as featured in the enumeration of results between Alice and Bob.)
 
 ```
