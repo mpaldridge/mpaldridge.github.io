@@ -57,7 +57,7 @@ A tempting solution is to enumerate the number of possible continuations to the 
     <th style="text-align: center" colspan="2">Bob wins</th>
   </tr>
   <tr>
-    <th style="text-align: center"><strong>10&ndash;6</strong></th>
+    <th style="text-align: center">10&ndash;6</th>
     <th style="text-align: center"><strong>10&ndash;7</strong></th>
     <th style="text-align: center"><strong>10&ndash;8</strong></th>
     <th style="text-align: center"><strong>10&ndash;9</strong></th>
@@ -76,7 +76,7 @@ A tempting solution is to enumerate the number of possible continuations to the 
   </tr>
   <tr>
     <td style="text-align: center"></td>
-    <td style="text-align: center">BAB</td>
+    <td style="text-align: center">BAA</td>
     <td style="text-align: center">BABA</td>
     <td style="text-align: center">BABBA</td>
     <td style="text-align: center">BABBB</td>
