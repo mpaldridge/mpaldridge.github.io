@@ -46,7 +46,7 @@ Cardano also knew that, if a single event had odds of $$r : n – r$$, then the 
 
 ### The problem of the points
 
-Many authors track down the genesis of mathematical probability to the solution of the *problem of the points*. The problem is this: two players bet the same amount of money on a game of chance -- perhaps tossing a coin -- where the first player to score a certain number of points is the winner and takes all the money. But suppose the game is interrupted before it’s finished: how should the stakes be divided?
+Many authors track down the genesis of mathematical probability to the solution of the [***problem of the points***](https://en.wikipedia.org/wiki/Problem_of_points). The problem is this: two players bet the same amount of money on a game of chance -- perhaps tossing a coin -- where the first player to score a certain number of points is the winner and takes all the money. But suppose the game is interrupted before it’s finished: how should the stakes be divided?
 
 For an example, suppose Alice and Bob are playing a first-to-10 game which is interrupted with Alice 8--6 ahead. What proportion of the money should Alice take?
 
@@ -238,13 +238,13 @@ In our example, we pretend to play a full 5 more rounds. In the outcome AAAAA, f
 
 Thus Alice and Bob should in fact share the stakes in the ratio $$26 : 6$$; that is, Alice takes 81p out of every £1.
 
-The numbers in the penultimate row here are the number of ways Bob can win $$k = 0, 1, 2, 3, 4, 5$$ rounds (or Alice can win $$n - k = 5, 4, 3, 2, 1, 0$$ rounds) out of the $n = 5$ total rounds. These numbers are what we now call *binomial coefficients*. Pascal found a recurrence equation for these numbers, which in modern notation for the binomial coefficient is
+The numbers in the penultimate row here are the number of ways Bob can win $$k = 0, 1, 2, 3, 4, 5$$ rounds (or Alice can win $$n - k = 5, 4, 3, 2, 1, 0$$ rounds) out of the $$n = 5$$ total rounds. These numbers are what we now call *binomial coefficients*. Pascal found a recurrence equation for these numbers, which in modern notation for the binomial coefficient is
 
 $$
 \binom{n+1}{k+1} = \binom{n}{k} + \binom{n}{k+1} 
 $$
 
-This allows the numbers to be computed quickly using what has become known as [***Pascal’s triangle***](https://en.wikipedia.org/wiki/Pascal%27s_triangle), where each number $\binom{n+1}{k+1}$ is the sum of the two numbers $\binom{n}{k}$ and $\binom{n}{k+1}$ above it. (Note the 1, 5, 10, 10, 5, 1 on the fifth row, as featured in the enumeration of results between Alice and Bob.)
+This allows the numbers to be computed quickly using what has become known as [***Pascal’s triangle***](https://en.wikipedia.org/wiki/Pascal%27s_triangle), where each number $$\binom{n+1}{k+1}$$ is the sum of the two numbers $$\binom{n}{k}$$ and $$\binom{n}{k+1}$$ above it. (Note the 1, 5, 10, 10, 5, 1 on the fifth row, as featured in the enumeration of results between Alice and Bob.)
 
 ```
                1
@@ -262,12 +262,15 @@ This allows the numbers to be computed quickly using what has become known as [*
 
 ### Recommended reading
 
+(Books with links are available in the University of Leeds library.)
+
 *	FN David, [*Games, Gods and Gambling: A history of probability and statistical ideas*](https://leeds.primo.exlibrisgroup.com/permalink/44LEE_INST/13rlbcs/alma991011810039705181), Dover Publications, 1962.
 *	K Devlin, *The Unfinished Game: Pascal, Fermat, and the seventeenth-century letter that made the world modern*, Basic Books, 2008.
 *	A Hald, [*A History of Probability and Statistics and Their Applications Before 1750*](https://leeds.primo.exlibrisgroup.com/permalink/44LEE_INST/13rlbcs/alma991015280459705181), Wiley–Interscience, 1990.
 *	LE Maistrov, [*Probability Theory: A historical sketch*](https://leeds.primo.exlibrisgroup.com/permalink/44LEE_INST/13rlbcs/alma991013099789705181), Academic Press, 1974.
 *	O Ore, [*Cardano: The gambling scholar*](https://leeds.primo.exlibrisgroup.com/permalink/44LEE_INST/13rlbcs/alma991015441939705181), Princeton University Press, 1953.
 *	Ian Stewart, *Do Dice Play God? The mathematics of uncertainty*, Profile Books, 2019.
+
 *	[The Fermat--Pascal correspondence [PDF]](https://www.york.ac.uk/depts/maths/histstat/pascal.pdf)
 
 
