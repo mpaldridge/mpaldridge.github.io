@@ -282,7 +282,7 @@ Classical probability was all very well for a simple problem with a small number
 
 It became appreciated that if one can repeat an experiment many times, then the proportion of times the favourable outcome occurs is very close to its probability. So if a dice is tossed 600 times, the number of occasions a 6 appears will be very close to 100. Further, the larger the number of repeated experiments, the more accurate the probability becomes. Cardano (see the last lecture) was certainly aware of this.
 
-An important breakthrough came from [**Jacob Bernoulli** (Switzerland, 1654–1705)](). Jacob Bernoulli was one of the members of the Bernoulli family of mathematicians. Jacob was crucial in the development of the calculus of variations, and, by calculating compound interest, discovered the number e (later named after Leonhard Euler). Jacob’s son Johann Bernoulli was an early proponent of infinitesimal calculus, while Johann’s son Daniel Bernoulli was a very prominent physicist and mathematician, best known for his work in fluid mechanics.
+An important breakthrough came from [**Jacob Bernoulli** (Switzerland, 1654–1705)](https://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob/). Jacob Bernoulli was one of the members of the Bernoulli family of mathematicians. Jacob was crucial in the development of the calculus of variations, and, by calculating compound interest, discovered the number e (later named after Leonhard Euler). Jacob’s son Johann Bernoulli was an early proponent of infinitesimal calculus, while Johann’s son Daniel Bernoulli was a very prominent physicist and mathematician, best known for his work in fluid mechanics.
 
 Jacob Bernoulli wrote *Ars Conjectandi* ("The Art of Conjecturing", or, more loosely, "How to Guess Well") in the 1680s, although it wasn’t published until after his death. Perhaps the most important result was his "golden theorem", which showed that the long run proportion of times an event occurs is very close to the probability. 
 
@@ -292,13 +292,13 @@ $$
 \mathbb{P}\left(\left|\frac{Y}{n} - p \right| > \epsilon\right) \to 0 \qquad \text{as } n \to \infty .
 $$
 
-We would now call $$Y$$ a binomial random variable, and would recognise Bernoulli’s golden theorem as (a special case of) the [***law of large numbers***](). As a reminder, the weak law of large numbers says this: Let $$X_1, X_2, \dots$$ be a sequence of independent and identically distributed random variables with finite expectation $$\mathbb X= \mu$$, and write $$\overline X_n = (\sum_{i = 1}^n X_i) / n$$ for the sample mean; then
+We would now call $$Y$$ a binomial random variable, and would recognise Bernoulli’s golden theorem as (a special case of) the [***law of large numbers***](https://en.wikipedia.org/wiki/Law_of_large_numbers). As a reminder, the weak law of large numbers says this: Let $$X_1, X_2, \dots$$ be a sequence of independent and identically distributed random variables with finite expectation $$\mathbb X= \mu$$, and write $$\overline X_n = (\sum_{i = 1}^n X_i) / n$$ for the sample mean; then
 
 $$
 \mathbb{P}\big(|\overline X_n - \mu| > \epsilon \big) \to 0  \qquad \text{as } n \to \infty .
 $$
 
-Perhaps the first formal proof of the law of large numbers in most of its generality was by [**Pafnuty Chebychev** (Russia, 1821–1894)]() using the result we call $=Chebychev’s inequality. Chebyshev was known for his work in probability as well as his results concerning prime numbers in number theory. *Chebyshev’s inequality* (conjectured by his friend and colleague Irénée-Jules Bienaymé) is the result that, for a random variable $$X$$ with mean $$\mu$$ and variance $$\sigma^2$$, we have
+Perhaps the first formal proof of the law of large numbers in most of its generality was by [**Pafnuty Chebychev** (Russia, 1821–1894)](https://mathshistory.st-andrews.ac.uk/Biographies/Chebyshev/) using the result we call Chebychev’s inequality. Chebyshev was known for his work in probability as well as his results concerning prime numbers in number theory. *Chebyshev’s inequality* (conjectured by his friend and colleague Irénée-Jules Bienaymé) is the result that, for a random variable $$X$$ with mean $$\mu$$ and variance $$\sigma^2$$, we have
 
 $$
 \mathbb{P} \big(|X - \mu| > \epsilon\big) \leq \frac{\sigma^2}{\epsilon^2} .
@@ -316,7 +316,7 @@ Provided the random variables have finite variance, the term on the right-hand s
 
 Bernoulli’s law of large numbers says that the proportion of successes in a large number trials is close to the probability -- but it’s unlikely to be *exactly* the probability, so probabilists where then interested in what the typical size of the deviation from the probability is.
 
-An important breakthrough here was made by [**Abraham de Moivre** (France, 1667–1754)](). De Moivre was among the first people to formalise ideas in probability such as expectation, independence, and conditional probability. He is also well known for *de Moivre’s formula*
+An important breakthrough here was made by [**Abraham de Moivre** (France, 1667–1754)](https://mathshistory.st-andrews.ac.uk/Biographies/De_Moivre/). De Moivre was among the first people to formalise ideas in probability such as expectation, independence, and conditional probability. He is also well known for *de Moivre’s formula*
 
 $$
 (\cos ⁡x + \mathrm i \sin ⁡x)^n = \cos ⁡nx + \mathrm i \sin⁡ nx ,
@@ -324,7 +324,7 @@ $$
 
 which later led to Euler’s formula $$\mathrm e^{\mathrm i x} = \cos ⁡x + \mathrm i \sin ⁡x$$, of which it is an easy consequence.
 
-De Moivre showed that the number of success from $$n$$ fair trials with $$p = 1/2$$, was not only $$n/2$$ on average, but was in fact described well by the normal distribution with mean $$n/2$$ and variance $$n/4$$. This was a special case of what we now know as the [***central limit theorem***](). The central limit theorem says that for IID random variables $$X_1, X_2, \dots$$ with expectation $$\mu$$ and variance $$\sigma^2$$, we have $$\sum_{i=1}^n X_i \approx \mathrm{N}(n\mu, n\sigma^2)$, or, more precisely, that
+De Moivre showed that the number of success from $$n$$ fair trials with $$p = 1/2$$, was not only $$n/2$$ on average, but was in fact described well by the normal distribution with mean $$n/2$$ and variance $$n/4$$. This was a special case of what we now know as the [***central limit theorem***](https://en.wikipedia.org/wiki/Central_limit_theorem). The central limit theorem says that for IID random variables $$X_1, X_2, \dots$$ with expectation $$\mu$$ and variance $$\sigma^2$$, we have $$\sum_{i=1}^n X_i \approx \mathrm{N}(n\mu, n\sigma^2)$$, or, more precisely, that
 
 $$
 \frac{\sum_{i=1}^n X_i - n\mu}{\sqrt{n\sigma^2}} \to \mathrm N(0,1) \qquad \text{in distribution as } n \to \infty .
@@ -332,22 +332,22 @@ $$
 
 If the $$X_i$$ are Bernoulli trials with probability $$\frac12$$, then then we get back de Moivre’s result.
 
-De Moivre’s result was, in many ways, far ahead of its time, and got relatively little attention in his own lifetime. It was rescued from obscurity by [**Pierre-Simon Laplace** (France, 1749–1827)](). Laplace was a polymath, famed for his work in probability, for introducing calculus to the study of classical mechanics, and most of all for his pioneering work in mathematical physics. Laplace extended de Moivre’s central limit theorem for binomial trials with $$p = \frac12$$ to those with any value of $$p$$. In particular, he introduced the use of the characteristic function $$\Phi_X(t) = \mathbb E \mathrm e^{\mathrm itX}$$ to the problem.  Normal distributions are precisely those where the log of this characteristic function is quadratic in $$t$$. The most common modern proof of the central limit theorem uses a Taylor expansion of the logarithm of the characteristic equation. A first-order (linear) Taylor approximation of the log-characteristic function gives an alternative proof of the law of large numbers, while a second-order (quadratic Taylor approximation to the log characteristic function gives the normal approximation of the central limit theorem.
+De Moivre’s result was, in many ways, far ahead of its time, and got relatively little attention in his own lifetime. It was rescued from obscurity by [**Pierre-Simon Laplace** (France, 1749–1827)](https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/). Laplace was a polymath, famed for his work in probability, for introducing calculus to the study of classical mechanics, and most of all for his pioneering work in mathematical physics. Laplace extended de Moivre’s central limit theorem for binomial trials with $$p = \frac12$$ to those with any value of $$p$$. In particular, he introduced the use of the characteristic function $$\Phi_X(t) = \mathbb E \mathrm e^{\mathrm itX}$$ to the problem.  Normal distributions are precisely those where the log of this characteristic function is quadratic in $$t$$. The most common modern proof of the central limit theorem uses a Taylor expansion of the logarithm of the characteristic equation. A first-order (linear) Taylor approximation of the log-characteristic function gives an alternative proof of the law of large numbers, while a second-order (quadratic) Taylor approximation to the log characteristic function gives the normal approximation of the central limit theorem.
 
 It took a long time for the central limit theorem to be formally proved in a form we would understand today – we could perhaps attribute such a proof to the Russian mathematician Aleksandr Lyapunov in 1901.
 
 ### Probability as pure mathematics
 
-Probability has continued to progress in the twentieth century. One of the most important was the formalisation of probability as following strict mathematical rules – these are sometimes known as the *axioms* of probability. The axiomisation of probability in the most common form used today was due to [**Andrey Kolmogorov** (Russia, 1902–1987)](). Kolmogorov was perhaps the most important probabilist of the twentieth century, but also did important work in mathematical physics and crucial foundational work in areas we might now consider to be computer science. (Kolmogorov was also [my]() PhD supervisor’s PhD supervisor’s PhD supervisor’s PhD supervisor, or my academic great-great-grandfather.) 
+Probability has continued to progress in the twentieth century. One of the most important was the formalisation of probability as following strict mathematical rules – these are sometimes known as the *axioms* of probability. The axiomisation of probability in the most common form used today was due to [**Andrey Kolmogorov** (Russia, 1902–1987)](https://mathshistory.st-andrews.ac.uk/Biographies/Kolmogorov/). Kolmogorov was perhaps the most important probabilist of the twentieth century, but also did important work in mathematical physics and crucial foundational work in areas we might now consider to be computer science. (Kolmogorov was also [my](https://genealogy.math.ndsu.nodak.edu/id.php?id=193274) [PhD supervisor](https://genealogy.math.ndsu.nodak.edu/id.php?id=53569)’s PhD supervisor’s PhD supervisor’s PhD supervisor, or my academic great-great-grandfather.) 
 
 Kolmogorov’s axioms go as follows. We have a sample space $$\Omega$$ which represents the set of all possible outcomes. Then a *probability measure* $$\mathbb P$$ is a function that takes subsets $$A$$ of $$\Omega$$ (called *events*) and assigns them a probability $$\mathbb P(A)$$, that obeys the following rules:
 
-1. $\mathbb P(A)$$ is always a number between 0 and 1.
+1. $$\mathbb P(A)$$ is always a number between 0 and 1.
 2. $$\mathbb P(\Omega)=1$$; that is, the probability of observing an outcome from the sample space is 1.
 3. If $$A_1, A_2, \dots$$ are a countably infinite sequence of disjoint events (that is, where at most one of the events happens at a time), then we have the "or" addition rule:
 
 $$
-\mathbb P\left( \cup_{i=1}^\infty A_i \right) = \sum_{i=1}^\infty \mathbb P(A_i) .
+\mathbb P\left( \bigcup_{i=1}^\infty A_i \right) = \sum_{i=1}^\infty \mathbb P(A_i) .
 $$
 
 Perhaps surprisingly, using just these three axioms, we can prove all the other rules that we know about probability, such as the "not" rule that $$\mathbb P(\text{not } A)=1-\mathbb P(A)$$ and the "or" rule for general events $$\mathbb P(A \cup B) = \mathbb P(A) + \mathbb P(B) - \mathbb P(A \cap B)$$.
