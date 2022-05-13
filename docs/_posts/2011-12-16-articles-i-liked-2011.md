@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magazine Articles I Liked in 2014"
+title:  "Magazine Articles I Liked in 2011"
 date:   2011-12-16
 categories: lists
 permalink: /blog/articles-i-liked-2011.html
