@@ -9,8 +9,8 @@ use_math: true
 
 #### Contents
 
-* [**Lecture 1:** History of Probability 1](#lecture-1-history-of-probability-1)
-* [**Lecture 2:** History of Probability 2](#lecture-2-history-of-probability-2)
+* [**Lecture 1:** History of Probability 1](#lecture-1-history-of-probability-1) until 1700
+* [**Lecture 2:** History of Probability 2](#lecture-2-history-of-probability-2) since 1700
 
 ## Lecture 1: History of Probability 1
 
@@ -298,13 +298,15 @@ $$
 \mathbb{P}\big(|\overline X_n - \mu| > \epsilon \big) \to 0  \qquad \text{as } n \to \infty .
 $$
 
-Perhaps the first formal proof of the law of large numbers in most of its generality was by [**Pafnuty Chebychev** (Russia, 1821–1894)](https://mathshistory.st-andrews.ac.uk/Biographies/Chebyshev/) using the result we call Chebychev’s inequality. Chebyshev was known for his work in probability as well as his results concerning prime numbers in number theory. *Chebyshev’s inequality* (conjectured by his friend and colleague Irénée-Jules Bienaymé) is the result that, for a random variable $$X$$ with mean $$\mu$$ and variance $$\sigma^2$$, we have
+If we let $$X_i = 1$$ denote experiment $$i$$ being a success and $$X_i = 0$$ denote experiment $$i$$ being a failure, then we recover Bernoulli's golden theorem.
+
+Perhaps the first formal proof of the law of large numbers in most of its generality was by [**Pafnuty Chebychev** (Russia, 1821–1894)](https://mathshistory.st-andrews.ac.uk/Biographies/Chebyshev/) using the result we call Chebychev’s inequality. Chebyshev was known for his work in probability as well as his results concerning prime numbers in number theory. *Chebyshev’s inequality* (conjectured by his friend and colleague Irénée-Jules Bienaymé) is the result that, for a random variable $$X$$ with expectation $$\mu$$ and variance $$\sigma^2$$, the probability that $$X$$ is far away from its expectation is bounded by
 
 $$
 \mathbb{P} \big(|X - \mu| > \epsilon\big) \leq \frac{\sigma^2}{\epsilon^2} .
 $$
 
-Applying this to the sample mean $$\overline X_n$$, which has mean $$\mu$$ and variance $$\sigma^2/n$$, we get that
+Applying this to the sample mean $$\overline X_n$$, which has expectation $$\mu$$ and variance $$\sigma^2/n$$, we get that
 
 $$
 \mathbb{P} \big(|\overline X_n - \mu| > \epsilon\big) \leq \frac{\sigma^2}{n\epsilon^2} .
@@ -324,7 +326,7 @@ $$
 
 which later led to Euler’s formula $$\mathrm e^{\mathrm i x} = \cos ⁡x + \mathrm i \sin ⁡x$$, of which it is an easy consequence.
 
-De Moivre showed that the number of success from $$n$$ fair trials with $$p = 1/2$$, was not only $$n/2$$ on average, but was in fact described well by the normal distribution with mean $$n/2$$ and variance $$n/4$$. This was a special case of what we now know as the [***central limit theorem***](https://en.wikipedia.org/wiki/Central_limit_theorem). The central limit theorem says that for IID random variables $$X_1, X_2, \dots$$ with expectation $$\mu$$ and variance $$\sigma^2$$, we have $$\sum_{i=1}^n X_i \approx \mathrm{N}(n\mu, n\sigma^2)$$, or, more precisely, that
+De Moivre showed that the number of success from $$n$$ fair trials with $$p = 1/2$$, was not only $$n/2$$ on average, but was in fact described well by the normal distribution with expectation $$n/2$$ and variance $$n/4$$. This was a special case of what we now know as the [***central limit theorem***](https://en.wikipedia.org/wiki/Central_limit_theorem). The central limit theorem says that for IID random variables $$X_1, X_2, \dots$$ with expectation $$\mu$$ and variance $$\sigma^2$$, we have $$\sum_{i=1}^n X_i \approx \mathrm{N}(n\mu, n\sigma^2)$$, or, more precisely, that
 
 $$
 \frac{\sum_{i=1}^n X_i - n\mu}{\sqrt{n\sigma^2}} \to \mathrm N(0,1) \qquad \text{in distribution as } n \to \infty .
@@ -338,7 +340,7 @@ It took a long time for the central limit theorem to be formally proved in a for
 
 ### Probability as pure mathematics
 
-Probability has continued to progress in the twentieth century. One of the most important was the formalisation of probability as following strict mathematical rules – these are sometimes known as the *axioms* of probability. The axiomisation of probability in the most common form used today was due to [**Andrey Kolmogorov** (Russia, 1902–1987)](https://mathshistory.st-andrews.ac.uk/Biographies/Kolmogorov/). Kolmogorov was perhaps the most important probabilist of the twentieth century, but also did important work in mathematical physics and crucial foundational work in areas we might now consider to be computer science. (Kolmogorov was also [my](https://genealogy.math.ndsu.nodak.edu/id.php?id=193274) [PhD supervisor](https://genealogy.math.ndsu.nodak.edu/id.php?id=53569)’s PhD supervisor’s PhD supervisor’s PhD supervisor, or my academic great-great-grandfather.) 
+Probability has continued to progress in the twentieth century. One of the most important was the formalisation of probability as following strict mathematical rules – these are sometimes known as the *axioms* of probability. The axiomisation of probability in the most common form used today was due to [**Andrey Nikolaevich Kolmogorov** (Russia, 1902–1987)](https://mathshistory.st-andrews.ac.uk/Biographies/Kolmogorov/) in 1933. Kolmogorov was perhaps the most important probabilist of the twentieth century, but also did important work in mathematical physics and crucial foundational work in areas we might now consider to be computer science. (Kolmogorov was also [my](https://genealogy.math.ndsu.nodak.edu/id.php?id=193274) [PhD supervisor](https://genealogy.math.ndsu.nodak.edu/id.php?id=53569)’s PhD supervisor’s PhD supervisor’s PhD supervisor, or my academic great-great-grandfather.) 
 
 Kolmogorov’s axioms go as follows. We have a sample space $$\Omega$$ which represents the set of all possible outcomes. Then a *probability measure* $$\mathbb P$$ is a function that takes subsets $$A$$ of $$\Omega$$ (called *events*) and assigns them a probability $$\mathbb P(A)$$, that obeys the following rules:
 
@@ -351,6 +353,8 @@ $$
 $$
 
 Perhaps surprisingly, using just these three axioms, we can prove all the other rules that we know about probability, such as the "not" rule that $$\mathbb P(\text{not } A)=1-\mathbb P(A)$$ and the "or" rule for general events $$\mathbb P(A \cup B) = \mathbb P(A) + \mathbb P(B) - \mathbb P(A \cap B)$$.
+
+This marked the point from when probability theory could now be considered a proper branch of mathematics – just as legitimate as geometry or number theory – and not just a past-time that can be useful to help gamblers calculate their odds. I always find it surprising that the axioms of probability are less than 90 years old!
 
 There have been many other developments in recent probability that we don’t have space for here, particularly those inspired by applications in statistical physics and in finance.
 
