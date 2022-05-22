@@ -105,7 +105,7 @@ Monty Python's **Life of Brian** (Terry Jones, 1979)
 **The Grand Budapest Hotel** (Wes Anderson, 2014)  
 **Carol** (Todd Haynes, 2015)  
 **Tower** (Keith Maitland, 2016)  
-**Lady Bird** (Great Gerwig, 2017)  
+**Lady Bird** (Greta Gerwig, 2017)  
 &star; **Phantom Thread** (Paul Thomas Anderson, 2017)  
 **For Sama** / من أجل سما‎ (Waad Al-Kateab & Edward Watts, 2019)  
 **Quo vadis, Aida?** (Jasmila Žbanić, 2020)  
@@ -183,7 +183,7 @@ dfdf
 **Mad Men** (AMC, 2007–15)  
 **O.J.: Made in America** (ESPN, 2016)  
 &star; **Fleabag** (BBC, 2016–19)  
-**"Blink"**: *Doctor Who* episode (BBC, 2007)  
+**"Blink"**: *Doctor Who* episode, series 3 (BBC, 2007)  
 
 
 11. ★ Spiral (1)
