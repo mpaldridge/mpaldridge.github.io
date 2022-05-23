@@ -32,7 +32,6 @@
 **The Big Heat** (Fritz Lang, 1953)  
 **The Lady Vanishes** (Alfred Hitchcock, 1938)  
 **Notorious** (Alfred Hitchcock, 1946)  
-
 **Strangers on a Train** (Alfred Hitchcok, 1951)  
 &star; **Rear Window** (Alfred Hitchcock, 1954)  
 **To Catch a Thief** (Afred Hitchcock, 1955)  
@@ -58,7 +57,6 @@
 &star; **2001: A Space Odyssey** (Stanley Kubrick, 1968)  
 **Army of Shadows** / *L'Armée des ombres* (Jean-Pierre Melville, 1969)  
 **Repulsion** (Roman Polanski, 1965)  
-
 **Chinatown** (Roman Polanski, 1974)  
 **The Godfather** (Francis Ford Coppola, 1972)  
 **The Conversation** (Fracis Ford Coppola, 1974)  
@@ -84,7 +82,6 @@ Monty Python's **Life of Brian** (Terry Jones, 1979)
 &star; **Before Sunset** (Richard Linklater, 2004)  
 &star; **Memento** (Christopher Nolan, 2000)  
 **Amélie** / *Le Fabuleux Destin d'Amélie Poulain* (Jean-Pierre Jeunet, 2001)  
-
 **Mulholland Drive** (David Lynch)  
 **Gosford Park** (Robert Altman, 2001)  
 **Hero** / 英雄 (Zhang Yimou, 2002)  
@@ -107,7 +104,7 @@ Monty Python's **Life of Brian** (Terry Jones, 1979)
 **Tower** (Keith Maitland, 2016)  
 **Lady Bird** (Greta Gerwig, 2017)  
 &star; **Phantom Thread** (Paul Thomas Anderson, 2017)  
-**For Sama** / من أجل سما‎ (Waad Al-Kateab & Edward Watts, 2019)  
+**For Sama** / من أجل سما (Waad Al-Kateab & Edward Watts, 2019)  
 **Quo vadis, Aida?** (Jasmila Žbanić, 2020)  
 &star; **Petite Maman** (Céline Sciamma, 2021)  
 
@@ -202,8 +199,8 @@ dfdf
 24. The Staircase
 25. The Day Today
 
-Taskmaster
-Russian Doll
-Get Back
-The Night Manager
+Taskmaster  
+Russian Doll  
+Get Back  
+The Night Manager  
 Page 8 trilogy
