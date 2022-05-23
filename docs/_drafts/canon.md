@@ -8,7 +8,7 @@
 ## 100 films
 
 **Nosferatu** / *Nosferatu, eine Symphonie des Grauens* (FW Murnau, 1922)  
-**The Passion of Joan of Arc** / *La Passion de Jeanne d'Arc* / *Jeanne d'Arc's Lidelse og Død* (Carl Th. Dreyer, 1928)  
+**The Passion of Joan of Arc** / *La Passion de Jeanne d'Arc* / *Jeanne d'Arcs Lidelse og Død* (Carl Th. Dreyer, 1928)  
 &star; **Man with a Movie Camera** / Человек с киноаппаратом (Dziga Vertov, 1929) [I like the soundtrack by The Cinematic Orchestra]  
 **It Happened One Night** (Frank Capra, 1934)  
 &star; **The Wizard of Oz** (Victor Fleming, 1939)   
