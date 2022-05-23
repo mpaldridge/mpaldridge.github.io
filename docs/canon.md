@@ -1,7 +1,7 @@
 # The canon
 
 * [100 films](#100-films)
-* 100 albums
+* [100 albums](#100-albums)
 * [50 books](#50-books)
 * [25 TV shows](#25-tv-shows)
 
@@ -19,7 +19,7 @@
 **The Lady Eve** (Preston Sturges, 1941)  
 **Citizen Kane** (Orson Wells, 1941)  
 **Casablanca** (Michael Curtiz, 1942)  
-&star; **Rome, Open City** / *Roma città aperta* (Roberto Rosselini, 1945)  
+**Rome, Open City** / *Roma città aperta* (Roberto Rosselini, 1945)  
 **Black Narcissus** (Michael Powell & Emeric Pressburger, 1947)  
 **Bicycle Thieves** / *Ladri di biciclette* (Vittorio De Sica, 1948)  
 **Obsession** (Edward Dmytryk, 1949)  
@@ -42,7 +42,7 @@
 &star; **Sweet Smell of Success** (Alexander Mackendrick, 1957)  
 **Hiroshima mon amour** (Alain Resnais, 1959)  
 **Eyes Without a Face** / *Les Yeux sans visage* (Georges Franju, 1960)  
-**La Dolce Vita** (Federico Fellini, 1960)  
+&star; **La Dolce Vita** (Federico Fellini, 1960)  
 &star; **Breathless** / *À bout de souffle* (Jean-Luc Godard, 1960)  
 **L'Avventura** (Michelangelo Antonioni, 1960)  
 **Jules & Jim** / *Jules et Jim* (François Truffaut, 1962)  
@@ -92,7 +92,7 @@ Monty Python's **Life of Brian** (Terry Jones, 1979)
 **Dancer in the Dark** (Lars von Trier, 2000)   
 **Melancholia** (Lars von Trier, 2011)  
 **Pan's Labyrinth** / *El laberinto del fauno* (Guillermo del Toro, 2006)  
-**Zodiac** (David Fincher, 2007)  
+**Zodiac** (David Fincher, 2007) [the director's cut, given a choice, although there's hardly any difference]  
 **In the Loop** (Armando Iannucci, 2009)  
 **Dogtooth** / Κυνόδοντας (Yorgos Lanthimos, 2009)  
 **Four Lions** (Christopher Morris, 2010)  
@@ -110,7 +110,7 @@ Monty Python's **Life of Brian** (Terry Jones, 1979)
 
 ## 100 albums
 
-dfdf
+*To follow*
 
 ## 50 books
 
@@ -169,6 +169,8 @@ dfdf
 
 ## 25 TV shows
 
+*In progress*
+
 **Fawlty Towers** (BBC, 1975--79)  
 **The Snowman** (Channel 4, 1982)  
 **Blackadder**: *Blackadder II*, *Blackadder the Third*, *Blackadder Goes Forth* (BBC, 1986--89)  
@@ -184,6 +186,8 @@ dfdf
 **O.J.: Made in America** (ESPN, 2016)  
 **"San Junipero"**: *Black Mirror* episode, season 3 (Netflix, 2016)  
 &star; **Fleabag** (BBC, 2016--19)  
+
+
 16. Sports Night
 17. Killing Eve (1)
 18. Brass Eye
