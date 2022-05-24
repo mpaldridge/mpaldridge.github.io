@@ -172,7 +172,7 @@ Róisín Murphy – Ruby Blue
 Imogen Heap – Speak for Yourself  
 Pati Yang – Silent Treatment  
 ☆ PJ Harvey – Stories from the City, Stories from the Sea  
-☆ PJ Harvey – Let England Shak  
+☆ PJ Harvey – Let England Shake  
 ☆ Sufjan Stevens – Illinois  
 Sufjan Stevens – Songs for Christmas  
 Hot Chip – The Warning  
