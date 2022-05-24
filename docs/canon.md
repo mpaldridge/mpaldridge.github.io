@@ -73,7 +73,7 @@
 ☆ **Do the Right Thing** (Spike Lee, 1989)  
 **Daughters of the Dust** (Julie Dash, 1991)  
 **Reservoir Dogs** (Quentin Tarentino, 1992)  
-**Leon** *aka* The Professional (Luc Besson, 1994) [must be the 133-minute "director's cut"]  
+**Leon** *aka* The Professional (Luc Besson, 1994) [must be the 133-minute director's cut]  
 **Twelve Monkeys** (Terry Gilliam, 1995)  
 **Run Lola Run** / *Lola rennt* (Tom Tykwer, 1998)  
 **All About My Mother** / *Todo sobre mi madre* (Pedro Almodóvar, 1999)  
@@ -110,7 +110,106 @@
 
 ## 100 albums
 
-*To follow*
+Julie London – Julie Is Her Name  
+Ella Fitzgerald and Louis Armostrong – Ella and Louis  
+Cannonball Adderley – Somethin’ Else  
+☆ Nina Simone – Little Girl Blue  
+Nina Simone – Pastel Blues  
+The Beatles – Revolver  
+☆ The Beatles – Abbey Road  
+Dusty Springfield – Dusty in Memphis  
+Scott Walker – Scott 4  
+George Harrison – All Things Must Pass  
+Serge Gainsbourg – Histoire de Melody Nelson  
+Joni Mitchell – Blue  
+Elton John – Madman Across the Water  
+Bob Dylan – Highway 61 Revisited  
+☆ Bob Dylan – Blood on the Tracks (original New York test pressing)  
+Bob Dylan – Desire  
+David Bowie – The Rise and Fall of Ziggy Stardust and the Spiders from Mars  
+Mike Oldfield – Tubular Bells  
+Paul McCartney and Wings – Band on the Run  
+Fleetwood Mac – Rumors  
+Talking Heads – Remain in Light  
+☆ Kate Bush – Never For Ever  
+☆ Kate Bush – Hounds of Love  
+☆ Kate Bush – 50 Words for Snow  
+The Smith – Strangeways, Here We Come  
+Pixies – Doolittle  
+Massive Attack – Blue Lines  
+☆ Portishead – Dummy  
+DJ Shadow – Endtroducing.....  
+Elliott Smith – Either/Or  
+☆ Tori Amos – Boys for Pele  
+Tori Amos – From the Choirgirl Hotel  
+Beck – Mutations  
+UNKLE – Psyence Fiction  
+Emiliana Torrini – Love in the Time of Science  
+☆ Björk – Homogenic  
+☆ Björk – Vespertine  
+Lamb – Fear of Fours  
+Lamb – What Sound  
+Goldfrapp – Felt Mountain  
+Gorillaz – Gorillaz  
+Jay-Z – The Blueprint  
+Ian Brown – Music of the Spheres  
+Radiohead – OK Computer  
+☆ Radiohead – Kid A  
+Radiohead – Amnesiac  
+Radiohead – Hail to the Thief  
+☆ Radiohead – In Rainbows  
+Frou Frou – Details  
+The Flaming Lips – Yoshimi Battles the Pink Robots  
+The Knife – Deep Cuts  
+Moloko – Statues  
+Blur – Think Tank  
+Four Tet – Rounds  
+Oi Va Voi – Laughter Through Tears  
+Madvillain – Madvillainy  
+Émilie Simon – Émilie Simon  
+Émilie Simon – Végétal  
+Róisín Murphy – Ruby Blue  
+Imogen Heap – Speak for Yourself  
+Pati Yang – Silent Treatment  
+☆ PJ Harvey – Stories from the City, Stories from the Sea  
+☆ PJ Harvey – Let England Shak  
+☆ Sufjan Stevens – Illinois  
+Sufjan Stevens – Songs for Christmas  
+Hot Chip – The Warning  
+Clipse – Hell Hath No Fury  
+Feist – The Reminder  
+Daft Punk – Alive 2007  
+Burial – Untrue  
+The Dø – A Mouthful  
+☆ Camille – Le Fil  
+Camille – Ilo Veyou  
+Bloc Party – Intimacy  
+Fever Ray – Fever Ray  
+Röyksopp – Junior  
+Bat for Lashes – Two Suns  
+Phoenix – Wolfgang Amadeus Phoenix  
+Dirty Projectors – Bitte Orca  
+La Roux – La Roux  
+The xx – xx  
+☆ Bonobo – Black Sands  
+CocoRosie – Grey Oceans  
+☆ Metronomy – The English Riviera  
+Slow Club – Paradise  
+☆ Kanye West – My Beautiful Dark Twisted Fantasy  
+Kanye West – Yeezus  
+Fiona Apple – The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do  
+Kendrick Lamar – Good Kid, mAAd City  
+☆ Atoms for Peace – Amok  
+Thom Yorke – The Eraser  
+Thom Yorke – Tomorrow’s Modern Boxes  
+Thom Yorke – Anima  
+Arctic Monkeys – AM  
+FKA twigs – LP1  
+Run the Jewels – Run the Jewels 2  
+Bon Iver – 22, A Million  
+Vampire Weekend – Father of the Bride  
+Haim – Women in Music Pt. III  
+The Smile – A Light for Attracting Attention  
 
 ## 50 books
 
