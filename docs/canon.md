@@ -113,7 +113,7 @@ List are chronological, except when they're not. A ☆ marks the best of the bes
 ## 100 albums
 
 Julie London – Julie Is Her Name  
-Ella Fitzgerald and Louis Armostrong – Ella and Louis  
+Ella Fitzgerald and Louis Armstrong – Ella and Louis  
 Cannonball Adderley – Somethin’ Else  
 ☆ Nina Simone – Little Girl Blue  
 Nina Simone – Pastel Blues  
