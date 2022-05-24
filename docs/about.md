@@ -8,7 +8,7 @@ permalink: /me/
 
 * **Email:** My email address is <m.aldridge@leeds.ac.uk>.
 
-* **In person:** My office is PRD 9.320 in the Physics Research Deck. My office is quite difficult to find: [here is a set of instructions](../office)
+* **In person:** My office is PRD 9.320 in the Physics Research Deck. My office is quite difficult to find: [here is a set of instructions](../office.html)
 
 * **Post:** My postal address is: School of Mathematics, University of Leeds, Leeds, LS2 9JT
 

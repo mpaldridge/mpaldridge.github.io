@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Directions to my office
-permalink: /office/
+permalink: /office.html
 ---
 
 My office is **PRD 9.320** which is the maths area on the 9th floor of the **Physics Research Deck** (PRD). My office is quite difficult to find, so here are some directions:
