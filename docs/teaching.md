@@ -27,11 +27,11 @@ In 2019-20, I lectured one third of [MATH3015 History of Mathematics](./math3015
 
 ### MA40042 Measure Theory and Integration (Bath)
 
-In 2016-17 at the University of Bath, I lectured one half of [MA40042 Measure Theory and Integration](./ma40042/), on Measure Theory, with Dr Matt Roberts. Some material is available [here](./ma40042/). I don't know if this module exists.
+In 2016-17 at the University of Bath, I lectured one half of [MA40042 Measure Theory and Integration](./ma40042/), on Measure Theory, with Dr Matt Roberts. Some material is available [here](./ma40042/). I don't know if this module still exists.
 
 ### MATH30002/MATHM0009 Topics in Discrete Mathematics (Bristol)
 
-In 2013-14 at the University of Bristol, I lectured one third of of [MATH30002/MATHM0009 Topics in Discrete Mathematics](./math30002/), on an Introduction to Graph Theory, with Dr Jonathan Bober and Dr Karen Gunderson. Some material is available [here](./math30002/). I believe this module now covers entirely different topics.
+In 2013-14 at the University of Bristol, I lectured one third of of [MATH30002/MATHM0009 Topics in Discrete Mathematics](./math30002/), on an Introduction to Graph Theory, with Dr Jonathan Bober and Dr Karen Gunderson. Some material is available [here](./math30002/). If this module still exists then it now covers entirely different topics.
 
 ## Other
 
