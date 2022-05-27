@@ -114,7 +114,7 @@ List are chronological, except when they're not. A ☆ marks the best of the bes
 
 Julie London – Julie Is Her Name  
 Ella Fitzgerald and Louis Armstrong – Ella and Louis  
-Cannonball Adderley – Somethin’ Else  
+Miles Davis – Kind of Blue
 ☆ Nina Simone – Little Girl Blue  
 Nina Simone – Pastel Blues  
 The Beatles – Revolver  
