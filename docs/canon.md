@@ -36,7 +36,7 @@ List are chronological, except when they're not. A ☆ marks the best of the bes
 **Notorious** (Alfred Hitchcock)  
 **Strangers on a Train** (Alfred Hitchcock)  
 ☆ **Rear Window** (Alfred Hitchcock)  
-**To Catch a Thief** (Afred Hitchcock)  
+**To Catch a Thief** (Alfred Hitchcock)  
 ☆ **Vertigo** (Alfred Hitchcock)  
 **Psycho** (Alfred Hitchcock)  
 ☆ **The Birds** (Alfred Hitchcock)  
