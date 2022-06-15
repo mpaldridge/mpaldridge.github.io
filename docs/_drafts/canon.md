@@ -136,7 +136,7 @@ Talking Heads – Remain in Light
 ☆ Kate Bush – Never For Ever  
 ☆ Kate Bush – Hounds of Love  
 ☆ Kate Bush – 50 Words for Snow  
-The Smith – Strangeways, Here We Come  
+The Smiths – Strangeways, Here We Come  
 Pixies – Doolittle  
 Massive Attack – Blue Lines  
 ☆ Portishead – Dummy  
