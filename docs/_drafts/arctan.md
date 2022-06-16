@@ -45,5 +45,39 @@ PICTURE 4
 So the angles $\arctan 1$, $\arctan 2$, and $\arctan 3$ together make up a half turn of $\pi$ radians. So we have proved that 
 $$ \arctan 1 + \arctan 2 + \arctan 3 = \pi . $$
 
+### Interlude
+
+Before going further, it will be convenient to slightly rewrite our formula. First, we know that
+$$\arctan 1 = \frac{\pi}{4} , $$
+because that is half the right-angle in a corner of a square. 
+
+PICTURE 5
+
+We also know that, for any $x$,
+$$ \arctan x  + \arctan \frac{1}{x} = \frac{\pi}{2} , $$
+because the tan of the two different angles in a triangle are
+$$ \frac{\text{opposite}}{\text{adjacent}} = x \qquad \text{and} \qquad \frac{\text{adjacent}}{\text{opposite}} = \frac{1}{x} $$
+respectively, and these angles add up to $\pi/2$ (because, together with the right angle of $\pi/2$, all three angles in the traingle add to $\pi$).
+
+PICTURE 6
+
+Using these, we can rewrite our formula as
+$$ \arctan \frac{1}{2} + \arctan \frac{1}{3} = \frac{\pi}{4} . $$
+
 ### 2. Can I give an alternative proof?
+
+For our alternative proof we will use complex numbers. A complex number $z = a + b\mathrm{i}$ can be represented on a diagram of the complex plane as $a$ units across to the right and $b$ units up. The angle this makes at the origin is called the "argument" $\operatorname{Arg}(z)$ of the complex number.
+
+PICTURE 7
+
+But we can also interpret the point $z$ as the corner of a right-angled triangle. Then the argument has it's tan equal to the opposite length $b$ of the adjacent length $a$.
+
+PICTURE 8
+
+So we have
+$$ \arctan \frac{b}{a} = \operatorname{Arg}(a + b\mathrm{i}) . $$
+So the two terms in our (rewritten) formula can be expressed as
+$$ \arctan \frac{1}{2} = \operatorname{Arg}(2 + \mathrm{i}) \qquad \arctan \frac{1}{3} = \operatorname{Arg}(3 + \mathrm{i}) .$$
+
+There's another useful facts about arguments of complex numbers: if you multiple together two complex numbers, their arguments add up; that is, $\operatorname{Arg}(z_1z_2) = \operatorname{Arg}(z_1)\operatorname{Arg}(z_2)$ (possibly up to gaining a factor of $2\pi$, if you end up goin all the way around that circle.
 
