@@ -123,6 +123,7 @@ Dusty Springfield – Dusty in Memphis
 Scott Walker – Scott 4  
 George Harrison – All Things Must Pass  
 Serge Gainsbourg – Histoire de Melody Nelson  
+Paul and Linda McCartney – Ram  
 Joni Mitchell – Blue  
 Elton John – Madman Across the Water  
 Bob Dylan – Highway 61 Revisited  
@@ -195,6 +196,8 @@ La Roux – La Roux
 The xx – xx  
 ☆ Bonobo – Black Sands  
 CocoRosie – Grey Oceans  
+Thom Yorke – The Eraser  
+Thom Yorke – Tomorrow’s Modern Boxes  
 ☆ Metronomy – The English Riviera  
 Slow Club – Paradise  
 ☆ Kanye West – My Beautiful Dark Twisted Fantasy  
@@ -202,9 +205,6 @@ Kanye West – Yeezus
 Fiona Apple – The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do  
 Kendrick Lamar – Good Kid, mAAd City  
 ☆ Atoms for Peace – Amok  
-Thom Yorke – The Eraser  
-Thom Yorke – Tomorrow’s Modern Boxes  
-Thom Yorke – Anima  
 Arctic Monkeys – AM  
 FKA twigs – LP1  
 Run the Jewels – Run the Jewels 2  
