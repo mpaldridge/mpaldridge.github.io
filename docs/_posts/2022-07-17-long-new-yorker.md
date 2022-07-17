@@ -27,11 +27,11 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 **[The Climate of Man—I](https://www.newyorker.com/magazine/2005/04/25/the-climate-of-man-i), [II](https://www.newyorker.com/magazine/2005/05/02/the-climate-of-man-ii) and [III](https://www.newyorker.com/magazine/2005/05/09/the-climate-of-man-iii) by Elizabeth Kolbert** (2005, three parts, 28k words). On climate change. Expanded into the book ["Field Notes from a Catastrophe"](https://en.wikipedia.org/wiki/Field_Notes_from_a_Catastrophe).
 
-**Three Stories: ["Chance,"](https://www.newyorker.com/magazine/2004/06/14/chance) ["Soon,"](https://www.newyorker.com/magazine/2004/06/14/soon-2) and ["Silence"](https://www.newyorker.com/magazine/2004/06/14/silence-4) by Alice Munro** (2004, 31k words). Three interconnected short stories, which became the basis for the film "Julieta". Collected in the book ["Runaway"](https://en.wikipedia.org/wiki/Runaway_(book)).
+**Three Stories: ["Chance,"](https://www.newyorker.com/magazine/2004/06/14/chance) ["Soon,"](https://www.newyorker.com/magazine/2004/06/14/soon-2) and ["Silence"](https://www.newyorker.com/magazine/2004/06/14/silence-4) by Alice Munro** (2004, 31k words). Three interconnected short stories, which became the basis for the film "Julieta". Collected in the book ["Runaway"](https://en.wikipedia.org/wiki/Runaway_(boo).
 
-**[The Man Behind Bin Laden](https://www.newyorker.com/magazine/2002/09/16/the-man-behind-bin-laden) by Lawrence Wright** (2002, 22k). On the first anniversary of 9/11, a profile of Ayman al-Zawahiri, Al Qaeda's number two. This material was used in the book ["The Looming Tower"](https://en.wikipedia.org/wiki/The_Looming_Tower) and the article was republished in the collection "The Terror Years".
+**[The Man Behind Bin Laden](https://www.newyorker.com/magazine/2002/09/16/the-man-behind-bin-laden) by Lawrence Wright** (2002, 22k words). On the first anniversary of 9/11, a profile of Ayman al-Zawahiri, Al Qaeda's number two. This material was used in the book ["The Looming Tower"](https://en.wikipedia.org/wiki/The_Looming_Tower) and the article was republished in the collection "The Terror Years".
 
-**[Eight Years](https://www.newyorker.com/magazine/2000/10/16/eight-years) by Joe Klein** (2001, 24k). Looking back on the Clinton presidency.
+**[Eight Years](https://www.newyorker.com/magazine/2000/10/16/eight-years) by Joe Klein** (2001, 24k words). Looking back on the Clinton presidency.
 
 **[Nelson and Annabelle](https://www.newyorker.com/magazine/2000/10/02/nelson-and-annabelle) by John Updike** (2000, two parts, 27k words). An epilogue to the author's "Rabbit Angstrom" tetralogy. Excerpted from the novella ["Rabbit Remembered"](https://en.wikipedia.org/wiki/Rabbit_Remembered) collected in the book "Licks of Love".
 
@@ -61,7 +61,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 Three articles under the rubric **Journals**: **[From the Late Forties and Fifties](https://www.newyorker.com/magazine/1990/08/06/i-from-the-late-forties-and-the-fifties)** (1990, two parts, 44k words),  **[From the Sixties](https://www.newyorker.com/magazine/1991/01/21/from-the-sixties-i)** (1991, two parts, 42k words), and **[From the Seventies and Early Eighties](https://www.newyorker.com/magazine/1991/08/12/from-the-seventies-and-early-eighties-i)** (1991, two parts, 38k words) **by John Cheever**. Diaries of the short story writer. Book: "The Journals of John Cheever".
 
-**[The Johnson Years: A Congressman Goes to War](https://www.newyorker.com/magazine/1989/11/06/the-johnson-years-a-congressman-goes-to-war)** (1989, 22k words), **[The Johnson Years: Buying and Selling](https://www.newyorker.com/magazine/1989/12/18/the-johnson-years-buying-and-selling)** (1989, 19k words), and **[The Johnson Years: The Old and the New](https://www.newyorker.com/magazine/1990/01/15/the-johnson-years-the-old-and-the-new-i-the-opponent)** (1990, four parts, 120k) **by Robert A. Caro**. On Lyndon Johnson from 1941 to 1948. Excerpted from the book ["Means of Ascent"](https://en.wikipedia.org/wiki/The_Years_of_Lyndon_Johnson#Book_Two:_Means_of_Ascent_(1990)).
+**[The Johnson Years: A Congressman Goes to War](https://www.newyorker.com/magazine/1989/11/06/the-johnson-years-a-congressman-goes-to-war)** (1989, 22k words), **[The Johnson Years: Buying and Selling](https://www.newyorker.com/magazine/1989/12/18/the-johnson-years-buying-and-selling)** (1989, 19k words), and **[The Johnson Years: The Old and the New](https://www.newyorker.com/magazine/1990/01/15/the-johnson-years-the-old-and-the-new-i-the-opponent)** (1990, four parts, 120k words) **by Robert A. Caro**. On Lyndon Johnson from 1941 to 1948. Excerpted from the book ["Means of Ascent"](https://en.wikipedia.org/wiki/The_Years_of_Lyndon_Johnson#Book_Two:_Means_of_Ascent_(1990)).
 
 <!-- **[The Trick of It](https://www.newyorker.com/magazine/1989/08/14/the-trick-of-it) by Michael Frayn** (1989, 29k words). Fiction. [Book of the same title](https://en.wikipedia.org/wiki/The_Trick_of_It). -->
 
@@ -76,11 +76,11 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[A Secular Faith](https://www.newyorker.com/magazine/1984/10/08/i-a-secular-faith) by Daneil J Kevles** (1984, four parts, 87k words). On the history of eugenics. Book: "In the Name of Eugenics".
 
-**[Weapons and Hope](https://www.newyorker.com/magazine/1984/02/06/weapons-and-hope-i-questions) by Freeman Dyson** (1984, four parts, 91k). On nuclear weapons and avoiding nuclear war. Book of the same title.
+**[Weapons and Hope](https://www.newyorker.com/magazine/1984/02/06/weapons-and-hope-i-questions) by Freeman Dyson** (1984, four parts, 91k words). On nuclear weapons and avoiding nuclear war. Book of the same title.
 
 **[A Sporty Game](https://www.newyorker.com/magazine/1982/06/14/a-sporty-game-i-betting-the-company) by John Newhouse** (1982, four parts, 101k words). On the business of manufacturing airliners. Book: "The Sporty Game".
 
-**[The Fate of the Earth](https://www.newyorker.com/magazine/1982/02/01/the-fate-of-the-earth-a-republic-of-insects-and-grass) by Jonathan Schell** (1982, three parts, 80k). On the consequences of nuclear war. [Book of the same title](https://en.wikipedia.org/wiki/The_Fate_of_the_Earth).
+**[The Fate of the Earth](https://www.newyorker.com/magazine/1982/02/01/the-fate-of-the-earth-a-republic-of-insects-and-grass) by Jonathan Schell** (1982, three parts, 80k words). On the consequences of nuclear war. [Book of the same title](https://en.wikipedia.org/wiki/The_Fate_of_the_Earth).
 
 **[Harlem](https://www.newyorker.com/magazine/1981/06/29/harlem-i-the-journey-uptown) by Jervis Anderson** (1981, four parts, 83k words). A history of Black Americans in Harlem, New York, to 1950. Book: "This Was Harlem".
 
