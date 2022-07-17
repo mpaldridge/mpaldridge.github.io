@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Longest <i>New Yorker</i> articles"
+title:  "Longest New Yorker articles"
 date:   2022-07-17
 categories: lists
 permalink: /blog/long-new-yorker.html
@@ -23,7 +23,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 **[Travels in Siberia—I](https://www.newyorker.com/magazine/2009/08/03/travels-in-siberia-i) and [II](https://www.newyorker.com/magazine/2009/08/10/travels-in-siberia-ii) by Ian Frazier** (2009, two parts, 25k words). On a journey across Siberia. Part of the book of the same title.
 
-*Abusing the list to mention some of my favourite articles that are long but not long enough to make this list:* [The White Darkness](https://www.newyorker.com/magazine/2018/02/12/the-white-darkness) by David Grann (2018, 21k words) on a polar explorer, [The Future is Texas](https://www.newyorker.com/magazine/2017/07/10/americas-future-is-texas) by Lawrence Wright (2017, 19k words) on Texas politics, [Five Hostages](https://www.newyorker.com/magazine/2015/07/06/five-hostages) by Lawrence Wright (2015, 20k words) on a civilian hostage rescue project, [The Transition](https://www.newyorker.com/magazine/2012/04/02/the-transition) by Robert A. Caro (2012, 16k words) on the day J.F.K. was assasinated, [The Mark of a Masterpiece](https://www.newyorker.com/magazine/2010/07/12/the-mark-of-a-masterpiece) by David Grann (2010, 16k words) on art authentication via fingerprints, [The Pink Panthers](https://www.newyorker.com/magazine/2010/04/12/the-pink-panthers) by David Samuels (2010, 16k words) on a gang of jewel thieves, [The Hunted](https://www.newyorker.com/magazine/2010/04/05/the-hunted) by Jeffrey Goldberg (2010, 17k words) (see [update](https://www.theatlantic.com/books/archive/2022/07/where-the-crawdads-sing-delia-mark-owens-zambia-murder/670479/)), [Eight Days](https://www.newyorker.com/magazine/2009/09/21/eight-days) by James B. Stewart (2009, 18k words) on the collapse of Lehman Brothers, and [Trial by Fire](https://www.newyorker.com/magazine/2009/09/07/trial-by-fire) by David Grann (2009, 16k words) on a possible wrongful state execution.
+*Abusing the list to mention some of my favourite articles that are long but not long enough to make this list:* [The White Darkness](https://www.newyorker.com/magazine/2018/02/12/the-white-darkness) by David Grann (2018, 21k words) on a polar explorer, [The Future is Texas](https://www.newyorker.com/magazine/2017/07/10/americas-future-is-texas) by Lawrence Wright (2017, 19k words) on Texas politics, [Five Hostages](https://www.newyorker.com/magazine/2015/07/06/five-hostages) by Lawrence Wright (2015, 20k words) on a civilian hostage rescue project, [The Transition](https://www.newyorker.com/magazine/2012/04/02/the-transition) by Robert A. Caro (2012, 16k words) on the day J.F.K. was assasinated, [The Mark of a Masterpiece](https://www.newyorker.com/magazine/2010/07/12/the-mark-of-a-masterpiece) by David Grann (2010, 16k words) on an art authenticator, [The Pink Panthers](https://www.newyorker.com/magazine/2010/04/12/the-pink-panthers) by David Samuels (2010, 16k words) on a gang of jewel thieves, [The Hunted](https://www.newyorker.com/magazine/2010/04/05/the-hunted) by Jeffrey Goldberg (2010, 17k words) (see [update](https://www.theatlantic.com/books/archive/2022/07/where-the-crawdads-sing-delia-mark-owens-zambia-murder/670479/)), [Eight Days](https://www.newyorker.com/magazine/2009/09/21/eight-days) by James B. Stewart (2009, 18k words) on the collapse of Lehman Brothers, and [Trial by Fire](https://www.newyorker.com/magazine/2009/09/07/trial-by-fire) by David Grann (2009, 16k words) on a possible wrongful state execution.
 
 **[The Climate of Man—I](https://www.newyorker.com/magazine/2005/04/25/the-climate-of-man-i), [II](https://www.newyorker.com/magazine/2005/05/02/the-climate-of-man-ii) and [III](https://www.newyorker.com/magazine/2005/05/09/the-climate-of-man-iii) by Elizabeth Kolbert** (2005, three parts, 28k words). On climate change. Expanded into the book ["Field Notes from a Catastrophe"](https://en.wikipedia.org/wiki/Field_Notes_from_a_Catastrophe).
 
@@ -40,7 +40,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 ## Tina Brown editorship (1992–98)
 
-**[The Love of a Good Woman](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro** (1996, 22k words). Short story. Collected in the [book of the same title](https://en.wikipedia.org/wiki/The_Love_of_a_Good_Woman).
+<!-- **[The Love of a Good Woman](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro** (1996, 22k words). Short story. Collected in the [book of the same title](https://en.wikipedia.org/wiki/The_Love_of_a_Good_Woman). -->
 
 **[Oswald in the U.S.S.R.](https://www.newyorker.com/magazine/1995/04/10/oswald-in-the-ussr) by Norman Mailer** (1995, 34k words). On the background of Lee Harvey Oswald, assassin of John F. Kennedy. Exceprted from the book ["Oswald's Tale"](https://en.wikipedia.org/wiki/Oswald%27s_Tale).
 
@@ -59,12 +59,33 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 **Serving the President: [The Truman Years](https://www.newyorker.com/magazine/1991/03/25/serving-the-president-i-the-truman-years)** (two parts, 50k words) **and [The Vietnam Years](https://www.newyorker.com/magazine/1991/05/06/serving-the-president-i-the-vietnam-years)** (three parts, 73k words) **by Clark Clifford with Richard Holbrooke** (1991). Memoirs of a Democratic political insider. Excerpted form the book "Counsel to the President".
 
-Three articles under the rubric **Journals**: **[From the Late Forties and Fifties]()** (1990, two parts, 44k words),  **[From the Sixties]()** (1991, two parts, 42k words), and **[From the Seventies and Early Eighties]()** (1991, two parts, 38k words) **by John Cheever**. Diaries of the short story writer. Book: "The Journals of John Cheever".
+Three articles under the rubric **Journals**: **[From the Late Forties and Fifties](https://www.newyorker.com/magazine/1990/08/06/i-from-the-late-forties-and-the-fifties)** (1990, two parts, 44k words),  **[From the Sixties](https://www.newyorker.com/magazine/1991/01/21/from-the-sixties-i)** (1991, two parts, 42k words), and **[From the Seventies and Early Eighties](https://www.newyorker.com/magazine/1991/08/12/from-the-seventies-and-early-eighties-i)** (1991, two parts, 38k words) **by John Cheever**. Diaries of the short story writer. Book: "The Journals of John Cheever".
 
-**[The Johnson Years: A Congressman Goes to War](https://www.newyorker.com/magazine/1989/11/06/the-johnson-years-a-congressman-goes-to-war)** (1989, 22k words), **[The Johnson Years: Buying and Selling](https://www.newyorker.com/magazine/1989/12/18/the-johnson-years-buying-and-selling)** (1989, 19k words), and **[The Johnson Years: The Old and the New](https://www.newyorker.com/magazine/1990/01/15/the-johnson-years-the-old-and-the-new-i-the-opponent)** (1990, four parts, 120k) **by Robert A. Caro**. On Lyndon Johnson from 1941 to 1948. Excerpted from the book ["Means of Ascent"]().
+**[The Johnson Years: A Congressman Goes to War](https://www.newyorker.com/magazine/1989/11/06/the-johnson-years-a-congressman-goes-to-war)** (1989, 22k words), **[The Johnson Years: Buying and Selling](https://www.newyorker.com/magazine/1989/12/18/the-johnson-years-buying-and-selling)** (1989, 19k words), and **[The Johnson Years: The Old and the New](https://www.newyorker.com/magazine/1990/01/15/the-johnson-years-the-old-and-the-new-i-the-opponent)** (1990, four parts, 120k) **by Robert A. Caro**. On Lyndon Johnson from 1941 to 1948. Excerpted from the book ["Means of Ascent"](https://en.wikipedia.org/wiki/The_Years_of_Lyndon_Johnson#Book_Two:_Means_of_Ascent_(1990)).
 
+<!-- **[The Trick of It](https://www.newyorker.com/magazine/1989/08/14/the-trick-of-it) by Michael Frayn** (1989, 29k words). Fiction. [Book of the same title](https://en.wikipedia.org/wiki/The_Trick_of_It). -->
 
-
-
+**[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On US Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
 
 *I didn't count* John McPhee's "Annals of the Former World" series on the geology of the United States: [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, ??k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). 
+
+
+## William Shawn editorship (1951–87)
+
+**[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
+
+**[A Secular Faith](https://www.newyorker.com/magazine/1984/10/08/i-a-secular-faith) by Daneil J Kevles** (1984, four parts, 87k words). On the history of eugenics. Book: "In the Name of Eugenics".
+
+**[Weapons and Hope](https://www.newyorker.com/magazine/1984/02/06/weapons-and-hope-i-questions) by Freeman Dyson** (1984, four parts, 91k). On nuclear weapons and avoiding nuclear war. Book of the same title.
+
+**[A Sporty Game](https://www.newyorker.com/magazine/1982/06/14/a-sporty-game-i-betting-the-company) by John Newhouse** (1982, four parts, 101k words). On the business of manufacturing airliners. Book: "The Sporty Game".
+
+**[The Fate of the Earth](https://www.newyorker.com/magazine/1982/02/01/the-fate-of-the-earth-a-republic-of-insects-and-grass) by Jonathan Schell** (1982, three parts, 80k). On the consequences of nuclear war. [Book of the same title](https://en.wikipedia.org/wiki/The_Fate_of_the_Earth).
+
+**[Harlem](https://www.newyorker.com/magazine/1981/06/29/harlem-i-the-journey-uptown) by Jervis Anderson** (1981, four parts, 83k words). A history of Black Americans in Harlem, New York, to 1950. Book: "This Was Harlem".
+
+**[The Patient](https://www.newyorker.com/magazine/1981/05/25/the-patient) by Susan Sheehan** (1981, four parts, 101k words). On a sometime-patient of a psychiatric hospital. Book: ["Is There No Place on Earth for Me?"](https://en.wikipedia.org/wiki/Is_There_No_Place_on_Earth_for_Me%3F).
+
+
+
+
