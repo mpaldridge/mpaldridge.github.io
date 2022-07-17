@@ -8,13 +8,12 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When was the last time the magazine ran an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*(Programming notes: Articles have got shorter over time, so the word count needed to get on this list has reduced as we get nearer to now. The list back to 1980 is, I hope, pretty complete; before then it is likely extremely incomplete, and should be seen as a taster of some long articles rather than a complete list. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine; I hope these might be often accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision. Sorry for making such a boring list.)*
+*(Programming notes: Articles have got shorter over time, so the word count needed to get on this list reduces as we get nearer to now. The list back to 1981 is, I hope, pretty complete; before then it is likely extremely incomplete, and should be seen as a taster of some long articles rather than a complete list. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine; I hope these might often be accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.)*
 
-## Remnick editorship (1998–)
 
-*Articles over 22k words:*
+## David Remnick editorship (1998–)
 
-**[The Plague Year](https://www.newyorker.com/magazine/2021/01/04/the-plague-year) by Lawrence Wright** (2021, 29k words) On the coronavirus pandemic. Expanded into a book of the same title.
+**[The Plague Year](https://www.newyorker.com/magazine/2021/01/04/the-plague-year) by Lawrence Wright** (2021, 29k words) On the coronavirus pandemic. Expanded into the book of the same title.
 
 **[Man Without a Country](https://www.newyorker.com/magazine/2017/08/21/julian-assange-a-man-without-a-country) by Raffi Khatchadourian** (2017, 22k words) A profile of Julian Assange.
 
@@ -26,3 +25,34 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 *Me abusing the list to mention some of my favourite articles that are long but not long enough to make this list:* [The White Darkness](https://www.newyorker.com/magazine/2018/02/12/the-white-darkness) by David Grann (2018, 21k words) on a polar explorer, [The Future is Texas](https://www.newyorker.com/magazine/2017/07/10/americas-future-is-texas) by Lawrence Wright (2017, 19k words) on Texas politics, [Five Hostages](https://www.newyorker.com/magazine/2015/07/06/five-hostages) by Lawrence Wright (2015, 20k words) on a civilian hostage rescue project, [The Transition](https://www.newyorker.com/magazine/2012/04/02/the-transition) by Robert A. Caro (2012, 16k words) on the day J.F.K. was assasinated, [The Mark of a Masterpiece](https://www.newyorker.com/magazine/2010/07/12/the-mark-of-a-masterpiece) by David Grann (2010, 16k words) on art authentication via fingerprints, [The Pink Panthers](https://www.newyorker.com/magazine/2010/04/12/the-pink-panthers) by David Samuels (2010, 16k words) on a gang of jewel thieves, [The Hunted](https://www.newyorker.com/magazine/2010/04/05/the-hunted) by Jeffrey Goldberg (2010, 17k words) (see [update](https://www.theatlantic.com/books/archive/2022/07/where-the-crawdads-sing-delia-mark-owens-zambia-murder/670479/)), [Eight Days](https://www.newyorker.com/magazine/2009/09/21/eight-days) by James B. Stewart (2009, 18k words) on the collapse of Lehman Brothers, and [Trial by Fire](https://www.newyorker.com/magazine/2009/09/07/trial-by-fire) by David Grann (2009, 16k words) on a possible wrongful state execution.
 
+**[The Climate of Man—I](https://www.newyorker.com/magazine/2005/04/25/the-climate-of-man-i), [II](https://www.newyorker.com/magazine/2005/05/02/the-climate-of-man-ii) and [III](https://www.newyorker.com/magazine/2005/05/09/the-climate-of-man-iii) by Elizabeth Kolbert** (2005, three parts, 28k words) On climate change. Expanded into the book ["Field Notes from a Catastrophe"](https://en.wikipedia.org/wiki/Field_Notes_from_a_Catastrophe).
+
+**Three Stories: ["Chance,"](https://www.newyorker.com/magazine/2004/06/14/chance) ["Soon,"](https://www.newyorker.com/magazine/2004/06/14/soon-2) and ["Silence"](https://www.newyorker.com/magazine/2004/06/14/silence-4) by Alice Munro** (2004, 31k words) Three interconnected short stories, which became the basis for the film "Julieta". Collected in the book ["Runaway"](https://en.wikipedia.org/wiki/Runaway_(book)).
+
+**[The Man Behind Bin Laden](https://www.newyorker.com/magazine/2002/09/16/the-man-behind-bin-laden) by Lawrence Wright** (2002, 22k) On the first anniversary of 9/11, a profile of Ayman al-Zawahiri, Al Qaeda's number two. This material was used in the book ["The Looming Tower"](https://en.wikipedia.org/wiki/The_Looming_Tower) and the article was republished in the collection "The Terror Years".
+
+**[Eight Years](https://www.newyorker.com/magazine/2000/10/16/eight-years) by Joe Klein** (2001, 24k) Looking back on the Clinton presidency.
+
+**[Nelson and Annabelle](https://www.newyorker.com/magazine/2000/10/02/nelson-and-annabelle) by John Updike** (2000, two parts, 27k words) An epilogue to the author's "Rabbit Angstrom" tetralogy. Excerpted from the novella ["Rabbit Remembered"](https://en.wikipedia.org/wiki/Rabbit_Remembered) collected in the book "Licks of Love".
+
+**[Overwhelming Force](https://www.newyorker.com/magazine/2000/05/22/overwhelming-force-2) by Seymour M. Hersh** (2000, 25k words) On an alleged U.S. war crime during the Gulf War.
+
+
+## Tina Brown editorship (1992–98)
+
+**[Oswald in the U.S.S.R.](https://www.newyorker.com/magazine/1995/04/10/oswald-in-the-ussr) by Norman Mailer** (1996, 34k words) On the background of Lee Harvey Oswald, assassin of John F. Kennedy. Exceprted from the book ["Oswald's Tale"](https://en.wikipedia.org/wiki/Oswald%27s_Tale).
+
+**[Hillary the Pol](https://www.newyorker.com/magazine/1994/05/30/hillary-the-pol) by Connie Bruck** (1994, 32k words) On Hillary Clinton as First Lady and healthcare reformer.
+
+**[The Truth of El Mozote](https://www.newyorker.com/magazine/1993/12/06/the-truth-of-el-mozote) by Mark Danner** (1993, 41k words) On a massacre in El Salvador and its cover-up. Book: "The Massacre at El Mozote".
+
+**[The Silent Woman](https://www.newyorker.com/magazine/1993/08/23/the-silent-woman-i-ii-iii) by Janet Malcolm** (1992, 58k words) On the biographical legacy of Sylvia Plath
+
+**[Remembering Satan—I](https://www.newyorker.com/magazine/1993/05/17/remembering-satan-part-i) and [II](https://www.newyorker.com/magazine/1993/05/24/remembering-satan-part-ii) by Lawrence Wright** (1992, two parts, 34k words) On an accusation of satantic ritual abuse. Book of the same title.
+
+**[A Lost Childhood](https://www.newyorker.com/magazine/1993/01/11/a-lost-childhood) and [A Lost Motherhood](https://www.newyorker.com/magazine/1993/01/18/a-lost-motherhood) by Susan Sheehan** (1992, two parts, 47k words) On a young mother in foster care. Book: "Life for Me Ain't Been No Crystal Stair".
+
+
+## Robert Gottlieb editorship (1987–92)
+
+**Serving the President: [The Truman Years](https://www.newyorker.com/magazine/1991/03/25/serving-the-president-i-the-truman-years)** (two parts, 50k words) **and [The Vietnam Years](https://www.newyorker.com/magazine/1991/05/06/serving-the-president-i-the-vietnam-years)** (three parts, 73k words) **by Clark Clifford with Richard Holbrooke** (1991) Memoirs of a Democratic political insider. Excerpted form the book "Counsel to the President".
