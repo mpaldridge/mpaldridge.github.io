@@ -40,7 +40,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 <!-- **[The Love of a Good Woman](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro** (1996, 22k words). Short story. Collected in the [book of the same title](https://en.wikipedia.org/wiki/The_Love_of_a_Good_Woman). -->
 
-**[Oswald in the U.S.S.R.](https://www.newyorker.com/magazine/1995/04/10/oswald-in-the-ussr) by Norman Mailer** (1995, 34k words). On the background of Lee Harvey Oswald, assassin of John F. Kennedy. Exceprted from the book ["Oswald's Tale"](https://en.wikipedia.org/wiki/Oswald%27s_Tale).
+**[Oswald in the U.S.S.R.](https://www.newyorker.com/magazine/1995/04/10/oswald-in-the-ussr) by Norman Mailer** (1995, 34k words). On the background of Lee Harvey Oswald, assassin of John F. Kennedy. Excerpted from the book ["Oswald's Tale"](https://en.wikipedia.org/wiki/Oswald%27s_Tale).
 
 **[Hillary the Pol](https://www.newyorker.com/magazine/1994/05/30/hillary-the-pol) by Connie Bruck** (1994, 32k words). On Hillary Clinton as First Lady and healthcare reformer.
 
