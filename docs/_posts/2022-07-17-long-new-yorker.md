@@ -25,7 +25,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 **[The Climate of Man—I](https://www.newyorker.com/magazine/2005/04/25/the-climate-of-man-i), [II](https://www.newyorker.com/magazine/2005/05/02/the-climate-of-man-ii) and [III](https://www.newyorker.com/magazine/2005/05/09/the-climate-of-man-iii) by Elizabeth Kolbert** (2005, three parts, 28k words). On climate change. Expanded into the book ["Field Notes from a Catastrophe"](https://en.wikipedia.org/wiki/Field_Notes_from_a_Catastrophe).
 
-**Three Stories: ["Chance,"](https://www.newyorker.com/magazine/2004/06/14/chance) ["Soon,"](https://www.newyorker.com/magazine/2004/06/14/soon-2) and ["Silence"](https://www.newyorker.com/magazine/2004/06/14/silence-4) by Alice Munro** (2004, 31k words). Three interconnected short stories, which became the basis for the film "Julieta". Collected in the book ["Runaway"](https://en.wikipedia.org/wiki/Runaway_(boo).
+**Three Stories: ["Chance,"](https://www.newyorker.com/magazine/2004/06/14/chance) ["Soon,"](https://www.newyorker.com/magazine/2004/06/14/soon-2) and ["Silence"](https://www.newyorker.com/magazine/2004/06/14/silence-4) by Alice Munro** (2004, 31k words). Three interconnected short stories, which became the basis for the film "Julieta". Collected in the book ["Runaway"](https://en.wikipedia.org/wiki/Runaway_(book)).
 
 **[The Man Behind Bin Laden](https://www.newyorker.com/magazine/2002/09/16/the-man-behind-bin-laden) by Lawrence Wright** (2002, 22k words). On the first anniversary of 9/11, a profile of Ayman al-Zawahiri, Al Qaeda's number two. This material was used in the book ["The Looming Tower"](https://en.wikipedia.org/wiki/The_Looming_Tower) and the article was republished in the collection "The Terror Years".
 
