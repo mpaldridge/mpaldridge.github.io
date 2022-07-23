@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Longest New Yorker articles"
+title:  "Longest New Yorker articles, 1980 to now"
 date:   2022-07-17
 categories: lists
 permalink: /blog/long-new-yorker.html
@@ -8,7 +8,7 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When was the last time the magazine ran an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*Programming notes: Articles have got shorter over time, so the word count needed to get on this list reduces as we get nearer to now. The list back to 1981 is, I hope, pretty complete; before then it is likely extremely incomplete, and should be seen as a taster of some long articles rather than a complete list. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
+*Programming notes: Articles have got shorter over time, so the word count needed to get on this list reduces as we get nearer to now. The list goes back to 1980. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
 
 
 ## David Remnick editorship (1998–)
@@ -63,10 +63,10 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 <!-- **[The Trick of It](https://www.newyorker.com/magazine/1989/08/14/the-trick-of-it) by Michael Frayn** (1989, 29k words). Fiction. [Book of the same title](https://en.wikipedia.org/wiki/The_Trick_of_It). -->
 
-**[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On US Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
+**[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On U.S. Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
 
 
-## William Shawn editorship (1951–87)
+## William Shawn editorship from 1980 (1980–87)
 
 **[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
 
@@ -85,9 +85,11 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 ## Bonus: Some articles I didn't count
 
-**Some of my favourite post-2009 articles that are long but not long enough to make this list:** [The White Darkness](https://www.newyorker.com/magazine/2018/02/12/the-white-darkness) by David Grann (2018, 21k words) on a polar explorer, [The Future is Texas](https://www.newyorker.com/magazine/2017/07/10/americas-future-is-texas) by Lawrence Wright (2017, 19k words) on Texas politics, [Five Hostages](https://www.newyorker.com/magazine/2015/07/06/five-hostages) by Lawrence Wright (2015, 20k words) on a civilian hostage rescue project, [The Transition](https://www.newyorker.com/magazine/2012/04/02/the-transition) by Robert A. Caro (2012, 16k words) on the day J.F.K. was assasinated, [The Mark of a Masterpiece](https://www.newyorker.com/magazine/2010/07/12/the-mark-of-a-masterpiece) by David Grann (2010, 16k words) on an art authenticator, [The Pink Panthers](https://www.newyorker.com/magazine/2010/04/12/the-pink-panthers) by David Samuels (2010, 16k words) on a gang of jewel thieves, [The Hunted](https://www.newyorker.com/magazine/2010/04/05/the-hunted) by Jeffrey Goldberg (2010, 17k words) (see [update](https://www.theatlantic.com/books/archive/2022/07/where-the-crawdads-sing-delia-mark-owens-zambia-murder/670479/)), [Eight Days](https://www.newyorker.com/magazine/2009/09/21/eight-days) by James B. Stewart (2009, 18k words) on the collapse of Lehman Brothers, and [Trial by Fire](https://www.newyorker.com/magazine/2009/09/07/trial-by-fire) by David Grann (2009, 16k words) on a possible wrongful state execution.
+Some of my favourite **post-2009 articles** that are pretty long but not long enough to make this list: [The White Darkness](https://www.newyorker.com/magazine/2018/02/12/the-white-darkness) by David Grann (2018, 21k words) on a polar explorer (book of the same title), [The Future is Texas](https://www.newyorker.com/magazine/2017/07/10/americas-future-is-texas) by Lawrence Wright (2017, 19k words) on Texas politics (book: "God Save Texas"), [Five Hostages](https://www.newyorker.com/magazine/2015/07/06/five-hostages) by Lawrence Wright (2015, 20k words) on a civilian hostage rescue project (collected in "The Terror Years"), [The Transition](https://www.newyorker.com/magazine/2012/04/02/the-transition) by Robert A. Caro (2012, 16k words) on the day J.F.K. was assasinated (book: the passage of power), [The Mark of a Masterpiece](https://www.newyorker.com/magazine/2010/07/12/the-mark-of-a-masterpiece) by David Grann (2010, 16k words) on an art authenticator, [The Pink Panthers](https://www.newyorker.com/magazine/2010/04/12/the-pink-panthers) by David Samuels (2010, 16k words) on a gang of jewel thieves, [The Hunted](https://www.newyorker.com/magazine/2010/04/05/the-hunted) by Jeffrey Goldberg (2010, 17k words) on a killing in a wildlife conservation reserve, [Eight Days](https://www.newyorker.com/magazine/2009/09/21/eight-days) by James B. Stewart (2009, 18k words) on the collapse of Lehman Brothers, and [Trial by Fire](https://www.newyorker.com/magazine/2009/09/07/trial-by-fire) by David Grann (2009, 16k words) on a possible wrongful state execution (collected in "The Devil and Sherlock Holmes").
 
-John McPhee's **"Annals of the Former World"** series on the geology of the United States – [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, ??k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words) – would be the longest article on this list if it counted.
+I didn't count John McPhee's **"Annals of the Former World"** series on the geology of the United States – [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, ??k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). (Four individual books of the same titles, then collected together as "Annals of the Former World".)
 
-
+Some long **fiction**: The Trick of It Nov 1980: The Laughter of Akiva / The Cannibal Galaxy, Cynthia Ozick (32k)
+Mar 1984: “Nonie” / The Runaway Soul, Harold Brodkey (33k)
+Mar 1984: “The Unberable Lightness of Being”, Milan Kundera (34k)
 
