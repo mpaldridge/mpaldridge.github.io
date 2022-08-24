@@ -5,7 +5,7 @@
 * [50 books](#50-books)
 * [25 TV shows](#25-tv-shows)
 
-List are chronological, except when they're not. A ☆ marks the best of the best.
+Lists are chronological, except when they're not. A ☆ marks the best of the best.
 
 ## 100 films
 
