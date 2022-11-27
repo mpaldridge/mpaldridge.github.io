@@ -9,7 +9,7 @@ use_math: true
 
 ## Introduction
 
-There has recently been a big breakthrough on a result called the union-closed conjecture, thanks to a new paper by Justin Gilmer, and some follow up work by others. It was interesting to me because it used information theory ideas on a non-information-theoretic problem, and also because the breakthrough was surprisingly straightforward for such a famous unsolved problem.
+There has recently been a big breakthrough on a result called the union-closed conjecture, thanks to a new paper by Justin Gilmer and some follow-up work by others. It was interesting to me because it used information theory ideas on a non-information-theoretic problem, and also because the breakthrough was surprisingly straightforward for such a famous unsolved problem.
 
 We work with a finite base set $[n] = \lbrace 1,2,\dots, n\rbrace$. A family $\mathcal F$ of subsets of $[n]$ is called **union-closed** if for any sets $A$ and $B$ in $\mathcal F$ their union $A \cup B$ is in $\mathcal F$ also.
 
