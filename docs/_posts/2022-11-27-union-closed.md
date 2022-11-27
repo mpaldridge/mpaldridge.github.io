@@ -37,7 +37,7 @@ First, let's see how Theorem 2 proves Conjecture 1 with $\alpha = \psi$. Let $\m
 
 $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) > H(A) = \log{\lvert\mathcal F\rvert} . $$
 
-But on the other hand, since $\mathcal F$ is union-closed, then the distribution of $A \cup B$ is also a distribution on $\mathcal F$ (although maybe not uniform), so we have
+But on the other hand, since $\mathcal F$ is union-closed, it follows that the distribution of $A \cup B$ is also a distribution on $\mathcal F$ (although maybe not uniform), so we have
 
 $$ H(A \cup B) \leq \log{\lvert\mathcal F\rvert} . $$
 
