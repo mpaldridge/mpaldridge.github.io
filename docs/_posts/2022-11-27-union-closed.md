@@ -63,7 +63,7 @@ Lemma 3 seems to be rather fiddly to prove. Chase and Lovett show that it follow
 
 $$ h\big((1-p)^2\big) \geq \frac{1}{1-\psi} (1-p)h(p) , \qquad (*) $$
 
-but leave $(*)$ to a computer verification. Alweiss, Huang and Sellke have the same lemma; I'm not totally clear on the extent to which they rely on computer verification. (The inequality $(*)$ seems pretty innocuous, but I've just interupted writing this for 20 minutes to try and prove it and made no progress, so...)
+but leave $(\ast)$ to a computer verification. Alweiss, Huang and Sellke have the same lemma; I'm not totally clear on the extent to which they rely on computer verification. (The inequality $(\ast)$ seems pretty innocuous, but I've just interupted writing this for 20 minutes to try and prove it and made no progress, so...)
 
 OK, so the proof of Theorem 2. We start by writing
 
@@ -71,34 +71,44 @@ $$ H(A \cup B) = \sum_{i=1}^n H\big((A \cup B)_i \mid (A \cup B)_{< i} \big) \ge
 
 where the equality is the chain rule and the inequality is the data processing inequality. Let's look at one of the terms from the sum on the right. We have, by definition,
 
-$$ H(A_i \cup B_i \mid A_{< i}, B_{< i} ) \sum_{a,b} p(a)\,p(b)\,H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) , $$
+$$ H(A_i \cup B_i \mid A_{< i}, B_{< i} ) = \mathbb E_{a,b} H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) , $$
 
-where $p(a) = \mathbb P(A_{<i} = a)$ and $p(b) = \mathbb P(B_{<i} = b)$. If we let $q_a = \mathbb P(i \in A \mid A_{<i} = a)$ and $q_b = \mathbb P(i \in B \mid B_{<i} = b)$, then
+where $\mathbb E_{a,b}$ is an expectation over $A_{<i}$ and $B_{<i}$. If we let $p_a = \mathbb P(i \in A \mid A_{<i} = a)$ and $p_b = \mathbb P(i \in B \mid B_{<i} = b)$, then
 
-$$ H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) = h\big((1-q_a)(1-q_b)\big) , $$
+$$ H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) = h\big((1-p_a)(1-p_b)\big) , $$
 
 because $A_i \cup B_i$ is 0 if and only if $i$ is in neither $A$ not $B$. But, by Lemma 3,
 
-$$ h\big((1-q_a)(1-q_b)\big) \geq \frac{1}{2(1-\psi)} \big((1-q_b)h(q_a) + (1-q_a)h(q_b) \big) . $$
+$$ h\big((1-p_a)(1-p_b)\big) \geq \frac{1}{2(1-\psi)} \big((1-p_b)h(p_a) + (1-p_a)h(p_b) \big) . $$
 
 So
 
 $$ \begin{align*}
 H(A_i \cup B_i \mid A_{< i}, B_{< i} )
-&= \sum_{a,b} p(a)\,p(b)\,H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) \\
-&\geq \sum_{a,b} p(a)\,p(b)\, \frac{1}{2(1-\psi)} \big((1-q_b)h(q_a) + (1-q_a)h(q_b) \big) \\
-&= \frac{1}{2(1-\psi)} \left( \sum_a p(a) h(q_a) \sum_b p(b) (1 - q_b) +  \sum_a p(b) h(q_b) \sum_a p(a) (1 - q_a) \right) \\
-&= \frac{1}{2(1-\psi)} \left( \sum_a p(a) h(q_a) \mathbb P(i \not\in B) +  \sum_a p(b) h(q_b) \mathbb P(i \not\in A) \right) \\
-&\geq \frac{1-p}{2(1-\psi)} \left( \sum_a p(a) h(q_a) +  \sum_a p(b) h(q_b) \right) \\
-&= \frac{1-p}{2(1-\psi)}   \left( H(A_i \mid A_{<i}) +  H(B_i \mid B_{<i}) \right) \\
-&=  \frac{1-p}{1-\psi}  H(A_i \mid A_{<i}) .
-\end{align*} $$
+&= \mathbb E_{a,b} H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) \\
+&\geq \mathbb E_{a,b} \frac{1}{2(1-\psi)} \big((1-q_b)h(q_a) + (1-q_a)h(q_b) \big) \\
+&= \frac{1}{2(1-\psi)} \left( \mathbb E_a h(q_a) \mathbb E_b (1 - q_b) +  \mathbb E_b h(q_b) \mathbb E_a (1 - q_a) \right) \end{align*} $$
 
-Here, we .....  Hence
+Now, $\mathbb E_b (1 - q_b)$ is exactly the probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also, 
+
+$$ \mathbb E_a h(q_a) = \mathbb E_a H(A_i \mid A_{<i} = a) = H(A_i \mid A__{<i}) $$.
+
+So we have
+
+$$ \begin{align*}
+H(A_i \cup B_i \mid A_{< i}, B_{< i} )
+&\geq \frac{1-p}{2(1-\psi)} \big( H(A_i \mid A__{<i}) + H(A_i \mid A__{<i}) \big) \\
+&= \frac{1-p}{1-\psi} H(A_i \mid A__{<i}) , \end{align*} $$
+
+since $A$ and $B$ are identically distributed.
+
+Finally, putting this all together,
 
 $$ \begin{align*}
 H(A \cup B) &\geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} )) \\
 &\geq \sum_{i=1}^n \frac{1-p}{1-\psi}  H(A_i \mid A_{<i}) \\
-&= H(A) , \end{align*}
+&= \frac{1-p}{1-\psi}  \sum_{i=1}^n  H(A_i \mid A_{<i}) \\
+&= \frac{1-p}{1-\psi} H(A) , \end{align*} $$
+
 where the last step is the chain rule again.
 
