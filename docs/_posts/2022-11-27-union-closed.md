@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[DRAFT] The union-closed conjecture"
+title:  "The union-closed conjecture"
 date:   2022-10-13
 categories: writing
 permalink: /blog/union-closed.html
@@ -25,7 +25,7 @@ The purpose of this blogpost is to try to explain the argument. I find [Chase an
 
 ## The result
 
-The key of Gilmer's approach is to take $A$ and $B$ are *random* subsets of $[n]$, independent and identically distributed according to some distribution, then to look for a lower bound on the entropy $H(A \cup B)$ in terms of $H(A)$. Specifically, Chase and Lovett show:
+The key of Gilmer's approach is to take $A$ and $B$ as *random* subsets of $[n]$, independent and identically distributed according to some distribution, then to look for a lower bound on the entropy $H(A \cup B)$ in terms of $H(A)$. Specifically, Chase and Lovett show:
 
 **Theorem 2.** *Let $A$ and $B$ be IID subsets of $[n]$ drawn according to some distribution with $\mathbb P(i \in A) \leq p$. Then*
 
@@ -33,7 +33,7 @@ $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) , $$
 
 *where $\psi = (3 - \sqrt{5})/2$.*
 
-First, let's see how Theorem 2 proves Conjecture 1 with $\alpha = \psi$. Let $\mathcal F$ be a union-closed family, and let $A$ and $B$ be drawn independently uniformaly at random from $\mathcal F$. Now, *if* $\mathbb P(i \in A) \leq p$ for some $p < \psi$ for all $i$ -- that is, *if* there is no $i$ at least $\psi \lvert\mathcal F\rvert$ of the sets in $\mathcal F$ -- then we can apply Theorem 2. This gives
+First, let's see how Theorem 2 proves Conjecture 1 with $\alpha = \psi$. Let $\mathcal F$ be a union-closed family, and let $A$ and $B$ be drawn independently uniformaly at random from $\mathcal F$. Now assume, seeking a contradition, that $\mathbb P(i \in A) \leq p$ for all $i$ for some $p < \psi$; that is, assume there is no $i$ at least $\psi \lvert\mathcal F\rvert$ of the sets in $\mathcal F$. Then we can apply Theorem 2. This gives
 
 $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) > H(A) = \log{\lvert\mathcal F\rvert} . $$
 
@@ -43,7 +43,7 @@ $$ H(A \cup B) \leq \log{\lvert\mathcal F\rvert} . $$
 
 This is a contradition -- so our assumption that $\mathbb P(i \in A) < \psi$ for all $i$ must have been wrong, and there must be some $i$ in at least $\psi\lvert\mathcal F\rvert$ of the sets in $\mathcal F$.
 
-Let us note that it will require some new ideas to push past $\alpha = \psi$. If the distribution is "pick each $i$ independently with probabiltiy $p$", then when $p > \psi$, we have that $H(A \cup B) = h\big((1-p)^2\big)$ is actually smaller than $H(A) = h(p)$, so this argument won't work in its current form.
+Let us note that it will require some new ideas to push past $\alpha = \psi$. If the distribution is "pick each $i$ independently with probabiltiy $p$", then when $p > \psi$, we have that $H(A \cup B) = n\,h\big((1-p)^2\big)$ is actually smaller than $H(A) = n\,h(p)$, so this argument won't work in its current form.
 
 It remains to prove Theorem 2.
 
@@ -63,7 +63,7 @@ Lemma 3 seems to be rather fiddly to prove. Chase and Lovett show that it follow
 
 $$ h\big((1-p)^2\big) \geq \frac{1-p}{1-\psi} h(p) , \qquad (*) $$
 
-but leave $(\ast)$ to a computer verification. Alweiss, Huang and Sellke have the same lemma; I'm not totally clear on the extent to which they rely on computer verification. (I would like to see a a proper information-theoretic proof of the inequality $(\ast)$. It seems pretty innocuous at first look -- even at second look -- but I've just interupted writing this for 20 minutes to try and prove it and made no progress, so...)
+but leave $(\ast)$ to a computer verification. (Alweiss, Huang and Sellke have the same lemma; it looks like they use computer verificiation too, except that Chase and Lovett say that Alweiss, Huang and Sellke have an actual proof, so I'm a bit confused. I would like to see a a proper information-theoretic proof of the inequality $(\ast)$. It seems pretty innocuous at first look -- even at second look -- but I've just interupted writing this for 20 minutes to try and prove it and made no progress, so...)
 
 Here's a graph of
 
@@ -80,9 +80,10 @@ It is convenient to adopt some notation. Let $A_i$ be 1 if $i \in A$ and 0 other
 
 We start by writing
 
-$$ H(A \cup B) = \sum_{i=1}^n H\big((A \cup B)_i \mid (A \cup B)_{< i} \big) \geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} ) , $$
+$$ \begin{align*} H(A \cup B) &= \sum_{i=1}^n H\big((A \cup B)_i \mid (A \cup B)_{< i} \big) \\
+& \geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} ) , \end{align*} $$
 
-where the equality is the chain rule and the inequality is the data processing inequality. Let's look at one of the terms from the sum on the right. We have, by definition,
+where the equality on the first line is the chain rule and the inequality on the second line is the data processing inequality. Let's look at one of the terms from the sum. We have, by definition,
 
 $$ H(A_i \cup B_i \mid A_{< i}, B_{< i} ) = \mathbb E_{a,b}\, H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) , $$
 
@@ -100,17 +101,17 @@ $$ \begin{align*}
 H(A_i \cup B_i \mid A_{< i}, B_{< i} )
 &= \mathbb E_{a,b} \,H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) \\
 &\geq \mathbb E_{a,b} \frac{1}{2(1-\psi)} \big((1-q_b)h(q_a) + (1-q_a)h(q_b) \big) \\
-&= \frac{1}{2(1-\psi)} \left( \mathbb E_a h(q_a) \mathbb E_b (1 - q_b) +  \mathbb E_b h(q_b) \mathbb E_a (1 - q_a) \right) \end{align*} $$
+&= \frac{1}{2(1-\psi)} \left( \mathbb E_a \,h(q_a) \mathbb E_b (1 - q_b) +  \mathbb E_b \,h(q_b) \mathbb E_a (1 - q_a) \right) \end{align*} $$
 
-Now, $\mathbb E_b (1 - q_b)$ is exactly the marginal probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also, 
+Now, $\mathbb E_b (1 - q_b)$ is exactly the marginal probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also 
 
-$$ \mathbb E_a h(q_a) = \mathbb E_a H(A_i \mid A_{<i} = a) = H(A_i \mid A_{<i}) . $$
+$$ \mathbb E_a \,h(q_a) = \mathbb E_a \,H(A_i \mid A_{<i} = a) = H(A_i \mid A_{<i}) . $$
 
 So we have
 
 $$ \begin{align*}
 H(A_i \cup B_i \mid A_{< i}, B_{< i} )
-&\geq \frac{1-p}{2(1-\psi)} \big( H(A_i \mid A_{<i}) + H(A_i \mid A_{<i}) \big) \\
+&\geq \frac{1-p}{2(1-\psi)} \big( H(A_i \mid A_{<i}) + H(B_i \mid B_{<i}) \big) \\
 &= \frac{1-p}{1-\psi} H(A_i \mid A_{<i}) , \end{align*} $$
 
 since $A$ and $B$ are identically distributed.
