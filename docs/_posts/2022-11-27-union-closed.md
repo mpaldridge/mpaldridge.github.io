@@ -63,6 +63,14 @@ $$ h\big((1-p)^2\big) \geq \frac{1-p}{1-\psi} h(p) , \qquad (*) $$
 
 but leave $(\ast)$ to a computer verification. Alweiss, Huang and Sellke have the same lemma; I'm not totally clear on the extent to which they rely on computer verification. (The inequality $(\ast)$ seems pretty innocuous at first look -- even at second look -- but I've just interupted writing this for 20 minutes to try and prove it and made no progress, so...)
 
+Here's a graph of
+
+$$ h\big((1-p)^2\big) - \frac{1-p}{1-\psi} h(p) $$
+
+-- that is, the difference between the two sides of $(\ast)$ -- which should be enough to convince you
+
+![](../assets/img/entropy.png){:style="display:block; margin-left:auto; margin-right:auto; width: 480px"}
+
 ## Proof
 
 OK, so the proof of Theorem 2. 
@@ -92,15 +100,15 @@ H(A_i \cup B_i \mid A_{< i}, B_{< i} )
 &\geq \mathbb E_{a,b} \frac{1}{2(1-\psi)} \big((1-q_b)h(q_a) + (1-q_a)h(q_b) \big) \\
 &= \frac{1}{2(1-\psi)} \left( \mathbb E_a h(q_a) \mathbb E_b (1 - q_b) +  \mathbb E_b h(q_b) \mathbb E_a (1 - q_a) \right) \end{align*} $$
 
-Now, $\mathbb E_b (1 - q_b)$ is exactly the probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also, 
+Now, $\mathbb E_b (1 - q_b)$ is exactly the marginal probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also, 
 
-$$ \mathbb E_a h(q_a) = \mathbb E_a H(A_i \mid A_{<i} = a) = H(A_i \mid A_{<i}) $$.
+$$ \mathbb E_a h(q_a) = \mathbb E_a H(A_i \mid A_{<i} = a) = H(A_i \mid A_{<i}) . $$
 
 So we have
 
 $$ \begin{align*}
 H(A_i \cup B_i \mid A_{< i}, B_{< i} )
-&\geq \frac{1-p}{2(1-\psi)} \big( H(A_i \mid A__{<i}) + H(A_i \mid A_{<i}) \big) \\
+&\geq \frac{1-p}{2(1-\psi)} \big( H(A_i \mid A_{<i}) + H(A_i \mid A_{<i}) \big) \\
 &= \frac{1-p}{1-\psi} H(A_i \mid A__{<i}) , \end{align*} $$
 
 since $A$ and $B$ are identically distributed.
@@ -113,5 +121,5 @@ H(A \cup B) &\geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} )) \\
 &= \frac{1-p}{1-\psi}  \sum_{i=1}^n  H(A_i \mid A_{<i}) \\
 &= \frac{1-p}{1-\psi} H(A) , \end{align*} $$
 
-where the last step is the chain rule again.
+where the last step is the chain rule again. QED.
 
