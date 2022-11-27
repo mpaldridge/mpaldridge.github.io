@@ -95,7 +95,7 @@ where $\mathbb E_{a,b}$ is an expectation over $A_{<i}$ and $B_{<i}$. If we let 
 
 $$ H\big((A \cup B)_i \mid A_{< i} = a, B_{< i} = b\big) = h\big((1-p_a)(1-p_b)\big) , $$
 
-because $A_i \cup B_i$ is 0 if and only if $i$ is in neither $A$ nor $B$, and these are independent. But then, by Lemma 3,
+because $(A \cup B)_i$ is 0 if and only if $i$ is in neither $A$ nor $B$, and these are independent. But then, by Lemma 3,
 
 $$ h\big((1-p_a)(1-p_b)\big) \geq \frac{1}{2(1-\psi)} \big((1-p_b)h(p_a) + (1-p_a)h(p_b) \big) . $$
 
