@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "General wellbeing authorities"
+title:  "[DRAFT] General wellbeing authorities"
 date:   2020-08-24
 categories: writing
 permalink: /blog/thesaurus-plagiarism.html
