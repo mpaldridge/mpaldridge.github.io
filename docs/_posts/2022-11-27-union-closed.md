@@ -21,7 +21,7 @@ Frankl's **union-closed conjecture** is Conjecture 1 with $\alpha = \frac12$. No
 
 Until a few days ago, the union-closed conjecture had been proved in a few special cases, but the best general value of $\alpha$ for Conjecture 1 was roughly $1/\log{\lvert\mathcal F\rvert}$. (See [this survey paper of Bruhn and Schaudt from 2015](https://doi.org/10.1007/s00373-014-1515-0) for more.) Then on 16 November, [Justin Gilmer posted a paper on the arXiv](https://arxiv.org/abs/2211.09055) that proves Conjecture 1 with a constant value of $\alpha$. Gilmer's paper gives $\alpha = 0.01$, but this wasn't optimised, and it looked like the argument ought to be able to be pushed to $\alpha = \psi = (3 - \sqrt{5})/2 \approx 0.38$. Sure enough, once the word had got around, on 21 November, [Alweiss, Huang and Sellke](https://arxiv.org/abs/2211.11731), [Chase and Lovett](https://arxiv.org/abs/2211.11689), and [Sawin](https://arxiv.org/abs/2211.11504) all posted improvments on Gilmer's method to reach $\alpha = \psi$.
 
-The purpose of this blogpost is to try to explain the argument. I find [Chase and Lovett](https://arxiv.org/abs/2211.11689) the easiest paper to read, so this is based on that.
+The purpose of this blogpost is to try to explain the argument. This will require some -- but not very much! -- knowledge of information theory. I find [Chase and Lovett](https://arxiv.org/abs/2211.11689) the easiest paper to read, so this is based on that.
 
 ## The result
 
@@ -124,5 +124,5 @@ H(A \cup B) &\geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} )) \\
 &= \frac{1-p}{1-\psi}  \sum_{i=1}^n  H(A_i \mid A_{<i}) \\
 &= \frac{1-p}{1-\psi} H(A) , \end{align*} $$
 
-where the last step is the chain rule again. QED.
+where the last step is the chain rule again. Thus Lemma 2 is proved.
 
