@@ -27,7 +27,7 @@ The purpose of this blogpost is to try to explain the argument to myself. This w
 
 The key of Gilmer's approach is to take $A$ and $B$ as *random* subsets of $[n]$, independent and identically distributed according to some distribution, then to look for a lower bound on the entropy $H(A \cup B)$ in terms of $H(A)$. Specifically, Chase and Lovett show the following (with similar or identical results in the other two papers).
 
-**Theorem 2.** *Let $A$ and $B$ be IID subsets of $[n]$ drawn according to some distribution with $\mathbb P(i \in A) \leq p$. Then*
+**Theorem 2.** *Let $A$ and $B$ be IID subsets of $[n]$ drawn according to some distribution with $\mathbb P(i \in A) \leq p$ for all $i \in [n]$. Then*
 
 $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) , $$
 
