@@ -20,7 +20,7 @@ Until a few days ago, the union-closed conjecture had been proved in a few speci
 
 The purpose of this blogpost is to try to explain the argument. I find [Chase and Lovett](https://arxiv.org/abs/2211.11689) the easiest paper to read, so this is based on that. The key of Gilmer's approach is to look for a lower bound on the entropy $H(A \cup B)$ in terms of $H(A)$, where $A$ and $B$ are *random* subsets of $[n]$, independent and identically distributed according to some distribution. Specifically, Chase and Lovett show
 
-**Theorem 2.** *Let $A$ and $B$ be IID subsets of [n] drawn according to some distribution with $\mathbb P(i \in A) \leq p$. Then*
+**Theorem 2.** *Let $A$ and $B$ be IID subsets of $[n]$ drawn according to some distribution with $\mathbb P(i \in A) \leq p$. Then*
 
 $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) , $$
 
