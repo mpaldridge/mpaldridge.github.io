@@ -9,7 +9,7 @@ use_math: true
 
 ## Introduction
 
-There has recently been a big breakthrough on a result called the union-closed conjecture. It was interesting to me because it used information theory ideas on a non-information-theoretic problem, and also because the breakthrough was surprisingly straightforward for such a famous unsolved problem.
+There has recently been a big breakthrough on a result called the union-closed conjecture, thanks to a new paper by Justin Gilmer, and some follow up work by others. It was interesting to me because it used information theory ideas on a non-information-theoretic problem, and also because the breakthrough was surprisingly straightforward for such a famous unsolved problem.
 
 We work with a finite base set $[n] = \lbrace 1,2,\dots, n\rbrace$. A family $\mathcal F$ of subsets of $[n]$ is called **union-closed** if for any sets $A$ and $B$ in $\mathcal F$ their union $A \cup B$ is in $\mathcal F$ also.
 
@@ -19,9 +19,9 @@ Then consider the following conjecture:
 
 Frankl's **union-closed conjecture** is Conjecture 1 with $\alpha = \frac12$. Note that this is the best possible: take, for example, $\mathcal F$ to be the powerset of $[n]$, or $\mathcal F = \lbrace\varnothing, \lbrace 1 \rbrace \rbrace$.
 
-Until a few days ago, the union-closed conjecture had been proved in a few special cases, but the best general value of $\alpha$ for Conjecture 1 was roughly $1/\log{\lvert\mathcal F\rvert}$. (See [this survey paper of Bruhn and Schaudt from 2015](https://doi.org/10.1007/s00373-014-1515-0) for more.) Then on 16 November, [Justin Gilmer posted a paper on the arXiv](https://arxiv.org/abs/2211.09055) that proves Conjecture 1 with a constant value of $\alpha$. Gilmer's paper gives $\alpha = 0.01$, but this wasn't optimised, and it looked like the argument ought to be able to be pushed to $\alpha = \psi = (3 - \sqrt{5})/2 \approx 0.38$. Sure enough, once the word had got around, on 21 November, [Alweiss, Huang and Sellke](https://arxiv.org/abs/2211.11731), [Chase and Lovett](https://arxiv.org/abs/2211.11689), and [Sawin](https://arxiv.org/abs/2211.11504) all posted improvments on Gilmer's method to reach $\alpha = \psi$.
+Until a few days ago, the union-closed conjecture had been proved in a few special cases, but the best general value of $\alpha$ for Conjecture 1 was roughly $1/\log{\lvert\mathcal F\rvert}$. (See [this survey paper of Bruhn and Schaudt from 2015](https://doi.org/10.1007/s00373-014-1515-0) for more.) Then on 16 November, [Gilmer posted a paper on the arXiv](https://arxiv.org/abs/2211.09055) that proves Conjecture 1 with a constant value of $\alpha$. Gilmer gave $\alpha = 0.01$, but this wasn't optimised, and it looked like the argument ought to be able to be pushed to $\alpha = \psi = (3 - \sqrt{5})/2 \approx 0.38$. Sure enough, once the word had got around, on 21 November, [Alweiss, Huang and Sellke](https://arxiv.org/abs/2211.11731), [Chase and Lovett](https://arxiv.org/abs/2211.11689), and [Sawin](https://arxiv.org/abs/2211.11504) all posted improvments on Gilmer's method to reach $\alpha = \psi$.
 
-The purpose of this blogpost is to try to explain the argument. This will require some -- but not very much! -- knowledge of information theory. I find [Chase and Lovett](https://arxiv.org/abs/2211.11689) the easiest paper to read, so this is based on that.
+The purpose of this blogpost is to try to explain the argument to myself. This will require some -- but not very much! -- knowledge of information theory. I found [Chase and Lovett](https://arxiv.org/abs/2211.11689) the easiest paper to read, so this is based on that.
 
 ## The result
 
@@ -63,7 +63,11 @@ Lemma 3 seems to be rather fiddly to prove. Chase and Lovett show that it follow
 
 $$ h\big((1-p)^2\big) \geq \frac{1-p}{1-\psi} h(p) , \qquad (*) $$
 
-Chase and Lovett leave $(\ast)$ to a computer verification, although claim in a footnote that Alweiss, Huang and Sellke have a rigorous proof. Buthe paper of Alweiss, Huang and Sellke, which has the same lemma, seems to use computer verificiation too. Sawin has something that looks more like a rigorous proof (it's rather involved and I haven't read it all), although it seems to involve checking the roots of certain equations aren't in certain intervals, which was presumably computer-aided too. I would like to see a a proper information-theoretic proof of the inequality $(\ast)$. (It seems pretty innocuous at first look -- even at second look -- but I've just interupted writing this to try and prove it made zero progress.)
+Chase and Lovett leave $(\ast)$ to a computer verification, although claim that Alweiss, Huang and Sellke have a rigorous proof in a "forthcoming paper". The paper of Alweiss, Huang and Sellke, which has the same lemma, seems to use computer verificiation too, although they say it can be made rigorous using interval arithmetic. Sawin has something that looks more like a rigorous proof by calculating the derivative of the ratio of the two sides of $(\ast)$ -- it's rather involved and I haven't read it all, although it seems to involve checking the roots of certain equations aren't in certain intervals, which was presumably computer-aided too. I would like to see a a proper information-theoretic proof of the inequality $(\ast)$. (It seems pretty innocuous at first look -- and if you rewrite it as 
+
+$$ h(q^2) = \frac{q}{\phi} h(q) $$
+
+where $\phi = 1 - \psi = (\sqrt{5} - 1)/2$ is the golden ratio reciprocal, it looks more innocuous still -- but I've just interupted writing this post to have a go and have made zero progress.)
 
 Here's a graph of
 
