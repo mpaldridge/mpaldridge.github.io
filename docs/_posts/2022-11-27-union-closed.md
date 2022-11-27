@@ -33,7 +33,7 @@ $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) , $$
 
 *where $\psi = (3 - \sqrt{5})/2$.*
 
-First, let's see how Theorem 2 proves Conjecture 1 with $\alpha = \psi$. Let $\mathcal F$ be a union-closed family, and let $A$ and $B$ be drawn independently uniformaly at random from $\mathcal F$. Now assume, seeking a contradiction, that $\mathbb P(i \in A) \leq p$ for all $i$ for some $p < \psi$; that is, assume there is no $i$ in at least $\psi \lvert\mathcal F\rvert$ of the sets in $\mathcal F$. Then we can apply Theorem 2. This gives
+First, let's see how Theorem 2 proves Conjecture 1 with $\alpha = \psi$. Let $\mathcal F$ be a union-closed family, and let $A$ and $B$ be drawn independently uniformly at random from $\mathcal F$. Now assume, seeking a contradiction, that $\mathbb P(i \in A) \leq p$ for all $i$ for some $p < \psi$; that is, assume there is no $i$ in at least $\psi \lvert\mathcal F\rvert$ of the sets in $\mathcal F$. Then we can apply Theorem 2. This gives
 
 $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) > H(A) = \log{\lvert\mathcal F\rvert} . $$
 
