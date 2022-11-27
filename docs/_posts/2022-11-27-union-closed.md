@@ -43,6 +43,8 @@ $$ H(A \cup B) \leq \log{\lvert\mathcal F\rvert} . $$
 
 This is a contradition -- so our assumption that $\mathbb P(i \in A) < \psi$ for all $i$ must have been wrong, and there must be some $i$ in at least $\psi\lvert\mathcal F\rvert$ of the sets in $\mathcal F$.
 
+Let us note that it will require some new ideas to push past $\alpha = \psi$. If the distribution is "pick each $i$ independently with probabiltiy $p$", then when $p > \psi$, we have that $H(A \cup B) = h\big((1-p)^2\big)$ is actually smaller than $H(A) = h(p)$, so this argument won't work in its current form.
+
 It remains to prove Theorem 2.
 
 ## A lemma
@@ -61,24 +63,24 @@ Lemma 3 seems to be rather fiddly to prove. Chase and Lovett show that it follow
 
 $$ h\big((1-p)^2\big) \geq \frac{1-p}{1-\psi} h(p) , \qquad (*) $$
 
-but leave $(\ast)$ to a computer verification. Alweiss, Huang and Sellke have the same lemma; I'm not totally clear on the extent to which they rely on computer verification. (The inequality $(\ast)$ seems pretty innocuous at first look -- even at second look -- but I've just interupted writing this for 20 minutes to try and prove it and made no progress, so...)
+but leave $(\ast)$ to a computer verification. Alweiss, Huang and Sellke have the same lemma; I'm not totally clear on the extent to which they rely on computer verification. (I would like to see a a proper information-theoretic proof of the inequality $(\ast)$. It seems pretty innocuous at first look -- even at second look -- but I've just interupted writing this for 20 minutes to try and prove it and made no progress, so...)
 
 Here's a graph of
 
 $$ h\big((1-p)^2\big) - \frac{1-p}{1-\psi} h(p) $$
 
--- that is, the difference between the two sides of $(\ast)$ -- which should be enough to convince you
+-- that is, the difference between the two sides of $(\ast)$ -- which should be enough to convince you. The red line is at $p = \psi$.
 
-![](../assets/img/entropy.png){:style="display:block; margin-left:auto; margin-right:auto; width: 480px"}
+![](../assets/img/entropy.png){:style="display:block; margin-left:auto; margin-right:auto; width: 600px"}
 
 ## Proof
 
 OK, so the proof of Theorem 2. 
-It is convenient to adopt some notation. Let $A_i$ be 1 if $i \in A$ and 0 otherwise; let $A_{< i} = (A_1, A_2, \dots, A_{i-1})$, and let $A_i \cup B_i = (A\cup B)_i = \max\{A_i, B_i\}$.
+It is convenient to adopt some notation. Let $A_i$ be 1 if $i \in A$ and 0 otherwise, let $A_{< i} = (A_1, A_2, \dots, A_{i-1})$, and let $A_i \cup B_i = (A\cup B)_i = \max\lbrace A_i, B_i\rbrace$.
 
 We start by writing
 
-$$ H(A \cup B) = \sum_{i=1}^n H\big((A \cup B)_i \mid (A \cup B)_{< i} \big) \geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} )) , $$
+$$ H(A \cup B) = \sum_{i=1}^n H\big((A \cup B)_i \mid (A \cup B)_{< i} \big) \geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} ) , $$
 
 where the equality is the chain rule and the inequality is the data processing inequality. Let's look at one of the terms from the sum on the right. We have, by definition,
 
@@ -109,7 +111,7 @@ So we have
 $$ \begin{align*}
 H(A_i \cup B_i \mid A_{< i}, B_{< i} )
 &\geq \frac{1-p}{2(1-\psi)} \big( H(A_i \mid A_{<i}) + H(A_i \mid A_{<i}) \big) \\
-&= \frac{1-p}{1-\psi} H(A_i \mid A__{<i}) , \end{align*} $$
+&= \frac{1-p}{1-\psi} H(A_i \mid A_{<i}) , \end{align*} $$
 
 since $A$ and $B$ are identically distributed.
 
