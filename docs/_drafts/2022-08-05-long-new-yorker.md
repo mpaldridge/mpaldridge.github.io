@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Longest New Yorker articles, 1980 to now"
+title:  "Longest New Yorker articles, 1980–present"
 date:   2022-08-05
 categories: lists
 permalink: /blog/long-new-yorker.html
@@ -8,7 +8,7 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When did the magazine last run an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1980. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
+*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1980, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
 
 
 ## David Remnick editorship (1998–)
