@@ -80,32 +80,32 @@ $$ h\big((1-p)^2\big) - \frac{1-p}{1-\psi} h(p) $$
 ## Proof
 
 OK, so the proof of Theorem 2. 
-It is convenient to adopt some notation. Let $A_i$ be 1 if $i \in A$ and 0 otherwise, let $A_{< i} = (A_1, A_2, \dots, A_{i-1})$, and let $A_i \cup B_i = (A\cup B)_i = \max\lbrace A_i, B_i\rbrace$.
+It is convenient to adopt some notation. Let $A_i$ be 1 if $i \in A$ and 0 otherwise, and let $A_{< i} = (A_1, A_2, \dots, A_{i-1})$.
 
 We start by writing
 
 $$ \begin{align*} H(A \cup B) &= \sum_{i=1}^n H\big((A \cup B)_i \mid (A \cup B)_{< i} \big) \\
-& \geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} ) , \end{align*} $$
+& \geq \sum_{i=1}^n H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big) , \end{align*} $$
 
 where the equality on the first line is the chain rule and the inequality on the second line is the data processing inequality. Let's look at one of the terms from the sum. We have, by definition,
 
-$$ H(A_i \cup B_i \mid A_{< i}, B_{< i} ) = \mathbb E_{a,b}\, H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) , $$
+$$ H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big) = \mathbb E_{a,b}\, H\big((A \cup B)_i \mid A_{< i} = a, B_{< i} = b\big) , $$
 
 where $\mathbb E_{a,b}$ is an expectation over $A_{<i}$ and $B_{<i}$. If we let $p_a = \mathbb P(i \in A \mid A_{<i} = a)$ and $p_b = \mathbb P(i \in B \mid B_{<i} = b)$, then
 
-$$ H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) = h\big((1-p_a)(1-p_b)\big) , $$
+$$ H\big((A \cup B)_i \mid A_{< i} = a, B_{< i} = b\big) = h\big((1-p_a)(1-p_b)\big) , $$
 
-because $A_i \cup B_i$ is 0 if and only if $i$ is in neither $A$ nor $B$, and these are independent. But, by Lemma 3,
+because $A_i \cup B_i$ is 0 if and only if $i$ is in neither $A$ nor $B$, and these are independent. But then, by Lemma 3,
 
 $$ h\big((1-p_a)(1-p_b)\big) \geq \frac{1}{2(1-\psi)} \big((1-p_b)h(p_a) + (1-p_a)h(p_b) \big) . $$
 
 So
 
 $$ \begin{align*}
-H(A_i \cup B_i \mid A_{< i}, B_{< i} )
+H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big)
 &= \mathbb E_{a,b} \,H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) \\
 &\geq \mathbb E_{a,b} \frac{1}{2(1-\psi)} \big((1-q_b)h(q_a) + (1-q_a)h(q_b) \big) \\
-&= \frac{1}{2(1-\psi)} \left( \mathbb E_a \,h(q_a) \mathbb E_b (1 - q_b) +  \mathbb E_b \,h(q_b) \mathbb E_a (1 - q_a) \right) \end{align*} $$
+&= \frac{1}{2(1-\psi)} \Big( \mathbb E_a \,h(q_a) \,\mathbb E_b (1 - q_b) +  \mathbb E_b \,h(q_b) \, \mathbb E_a (1 - q_a) \Big) \end{align*} $$
 
 Now, $\mathbb E_b (1 - q_b)$ is exactly the marginal probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also 
 
@@ -114,7 +114,7 @@ $$ \mathbb E_a \,h(q_a) = \mathbb E_a \,H(A_i \mid A_{<i} = a) = H(A_i \mid A_{<
 So we have
 
 $$ \begin{align*}
-H(A_i \cup B_i \mid A_{< i}, B_{< i} )
+H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big)
 &\geq \frac{1-p}{2(1-\psi)} \big( H(A_i \mid A_{<i}) + H(B_i \mid B_{<i}) \big) \\
 &= \frac{1-p}{1-\psi} H(A_i \mid A_{<i}) , \end{align*} $$
 
@@ -123,10 +123,10 @@ since $A$ and $B$ are identically distributed.
 Finally, putting this all together,
 
 $$ \begin{align*}
-H(A \cup B) &\geq \sum_{i=1}^n H(A_i \cup B_i \mid A_{< i}, B_{< i} )) \\
+H(A \cup B) &\geq \sum_{i=1}^n H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big) \\
 &\geq \sum_{i=1}^n \frac{1-p}{1-\psi}  H(A_i \mid A_{<i}) \\
 &= \frac{1-p}{1-\psi}  \sum_{i=1}^n  H(A_i \mid A_{<i}) \\
 &= \frac{1-p}{1-\psi} H(A) , \end{align*} $$
 
-where the last step is the chain rule again. Thus Lemma 2 is proved.
+where the last step is the chain rule again. Thus Theorem 2 is proved.
 
