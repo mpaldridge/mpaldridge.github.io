@@ -61,6 +61,6 @@ $$ h\big((1-p)(1-q) \geq \frac{1}{2(1-\psi)} \big((1-q)h(p) + (1-p)h(q) \big) , 
 
 Lemma 3 seems to be rather fiddly to prove. Chase and Lovett show that it follows from the one-variable version
 
-$$ h\big((1-p)^2\big) \geq \frac{1}{1-\psi} \big((1-p)h(p)\big) , \qquad (*) $$
+$$ h\big((1-p)^2\big) \geq \frac{1}{1-\psi} (1-p)h(p) , \qquad (*) $$
 
 but leave proof of $(*)$ to a computer verification. Alweiss, Huang and Sellke have the same lemma; I'm not totally clear on the extent to which it relies on computer verification.
