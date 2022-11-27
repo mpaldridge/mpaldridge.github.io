@@ -103,7 +103,7 @@ So
 
 $$ \begin{align*}
 H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big)
-&= \mathbb E_{a,b} \,H(A_i \cup B_i \mid A_{< i} = a, B_{< i} = b) \\
+&= \mathbb E_{a,b} \,H\big((A \cup B)_i \mid A_{< i} = a, B_{< i} = b) \\
 &\geq \mathbb E_{a,b} \frac{1}{2(1-\psi)} \big((1-q_b)h(q_a) + (1-q_a)h(q_b) \big) \\
 &= \frac{1}{2(1-\psi)} \Big( \mathbb E_a \,h(q_a) \,\mathbb E_b (1 - q_b) +  \mathbb E_b \,h(q_b) \, \mathbb E_a (1 - q_a) \Big) \end{align*} $$
 
