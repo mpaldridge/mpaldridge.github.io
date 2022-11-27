@@ -63,13 +63,13 @@ Lemma 3 seems to be rather fiddly to prove. Chase and Lovett show that it follow
 
 $$ h\big((1-p)^2\big) \geq \frac{1-p}{1-\psi} h(p) , \qquad (*) $$
 
-but leave $(\ast)$ to a computer verification. (Alweiss, Huang and Sellke have the same lemma; it looks like they use computer verificiation too, except that Chase and Lovett say that Alweiss, Huang and Sellke have an actual proof, so I'm a bit confused. I would like to see a a proper information-theoretic proof of the inequality $(\ast)$. It seems pretty innocuous at first look -- even at second look -- but I've just interupted writing this for 20 minutes to try and prove it and made no progress, so...)
+Chase and Lovett leave $(\ast)$ to a computer verification, although claim in a footnote that Alweiss, Huang and Sellke have a rigorous proof. Buthe paper of Alweiss, Huang and Sellke, which has the same lemma, seems to use computer verificiation too. Sawin has something that looks more like a rigorous proof (it's rather involved and I haven't read it all), although it seems to involve checking the roots of certain equations aren't in certain intervals, which was presumably computer-aided too. I would like to see a a proper information-theoretic proof of the inequality $(\ast)$. (It seems pretty innocuous at first look -- even at second look -- but I've just interupted writing this to try and prove it made zero progress.)
 
 Here's a graph of
 
 $$ h\big((1-p)^2\big) - \frac{1-p}{1-\psi} h(p) $$
 
--- that is, the difference between the two sides of $(\ast)$ -- which should be enough to convince you. The red line is at $p = \psi$.
+-- that is, the difference between the two sides of $(\ast)$ -- which may be enough to convince you. The red line is at $p = \psi$.
 
 ![](../assets/img/entropy.png){:style="display:block; margin-left:auto; margin-right:auto; width: 600px"}
 
