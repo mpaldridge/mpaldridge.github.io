@@ -53,7 +53,7 @@ There's an important technical lemma in this work. That's this:
 
 **Lemma 3.** *For $0\leq p,q \leq 1$, we have*
 
-$$ h\big((1-p)(1-q) \geq \frac{1}{2(1-psi)} \big((1-q)h(p) + (1-p)h(q) \big) , $$
+$$ h\big((1-p)(1-q) \geq \frac{1}{2(1-\psi)} \big((1-q)h(p) + (1-p)h(q) \big) , $$
 
 *where $h(p) = -p\log p + (1-p)\log(1-p)$ is the binary entropy and $\psi = (3 - \sqrt{5})/2$.*
 
