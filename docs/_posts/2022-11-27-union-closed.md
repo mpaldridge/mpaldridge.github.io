@@ -12,7 +12,7 @@ We work with a finite base set $[n] = \{1,2,\dots, n\}$. A family $\mathcal F$ o
 
 Then consider the following conjecture:
 
-**Conjecture 1.** *Let $\mathcal F$ be a union-closed family of subsets of $[n]$. Then there exists an $i \in [n]$ in at least $\alpha |\mathcal F|$ of the sets in $\mathcal F$.*
+**Conjecture 1.** *Let $\mathcal F$ be a union-closed family of subsets of $[n]$. Then there exists an $i \in [n]$ in at least $\alpha \lvert\mathcal F\rvert$ of the sets in $\mathcal F$.*
 
 Frankl's **union-closed conjecture** is Conjecture 1 with $\alpha = \frac12$. Note that this is the best possible: take, for example, $\mathcal F$ to be the powerset of $[n]$, or $\mathcal F = \{\varnothing, \{1\}\}$.
 
@@ -20,7 +20,7 @@ Until a few days ago, the union-closed conjecture had been proved in a few speci
 
 The purpose of this blogpost is to try to explain the argument. I find [Chase and Lovett](https://arxiv.org/abs/2211.11689) the easiest paper to read, so this is based on that. The key of Gilmer's approach is to look for a lower bound on the entropy $H(A \cup B)$ in terms of $H(A)$, where $A$ and $B$ are *random* subsets of $[n]$, independent and identically distributed according to some distribution. Specifically, Chase and Lovett show
 
-**Theorem 2.** *Let $A$ and $B$ be IID subsets of [n] drawn according to some distribution with $\mathbbb P(i \in A) \leq p$. Then*
+**Theorem 2.** *Let $A$ and $B$ be IID subsets of [n] drawn according to some distribution with $\mathbb P(i \in A) \leq p$. Then*
 
 $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) , $$
 
