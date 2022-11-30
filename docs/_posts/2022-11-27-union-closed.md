@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The union-closed conjecture"
-date:   2022-10-13
+date:   2022-11-27
 categories: writing
 permalink: /blog/union-closed.html
 use_math: true
