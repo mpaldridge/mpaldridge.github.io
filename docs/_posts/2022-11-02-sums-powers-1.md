@@ -155,10 +155,10 @@ $$ \frac{1}{k!} \sum_{x=1}^n x^{\underline{k}} = \sum_{x=1}^n \frac{x^{\underlin
 
 and the right-hand side becomes
 
-$$ \frac{1}{k!}\\, \frac{1}{k+1}\,(n+1)^{\underline{k+1}} = \frac{1}{(k+1)!} \, (n+1)^{\underline{k+1}} =\sum_{x=1}^n \binom{x}{k} . $$
+$$ \frac{1}{k!} \, \frac{1}{k+1}\,(n+1)^{\underline{k+1}} = \frac{1}{(k+1)!} \, (n+1)^{\underline{k+1}} =\binom{x+1}{k+1} . $$
 
 Thus we get
 
-$$ \sum_{x=1}^n \binom{x}{k} = \sum_{x=1}^n \binom{x}{k} , $$
+$$ \sum_{x=1}^n \binom{x}{k} = \binom{x+1}{k+1} , $$
 
 which is known as the ["hockeystick identity"](https://en.wikipedia.org/wiki/Hockey-stick_identity).
