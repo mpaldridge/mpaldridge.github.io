@@ -100,21 +100,39 @@ which is correct. For $k = 2$, it's quick to check that $x^2 = x^{\underline{2}}
 
 $$ \begin{align}
 \sum_{x=1}^n x^2 &= \sum_{x=1}^n x^{\underline{2}} + \sum_{x=1}^n x^{\underline{1}} \\
-  &= \frac13 \, (n+1)^{underline{3}} + \frac12 \, (n+1)^{underline{2}} \\
+  &= \frac13 \, (n+1)^{\underline{3}} + \frac12 \, (n+1)^{\underline{2}} \\
   &= \frac{1}{6}\, (n+1)\,n\,\big(2(n-1) + 3\big) \\
   &= \frac{1}{6}\, (n+1)\,n\,(2n+1) ,
 \end{align} $$
 
 which is correct also.
 
-The general result for writing a power in terms of a falling factorial uses the [Stirling numbers of the second kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind). The Stirling number $\genfrac{\{}{\}}{0pt}{}{k}{l}$ is the number of ways of partitioning $k$ objects into $l$ disjoint sets. They can be efficiently computed using the recurrence
+The general result for writing a power in terms of a falling factorial uses the [Stirling numbers of the second kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind). The Stirling number $\genfrac\{\}{0pt}{}{k}{l}$ is the number of ways of partitioning $k$ objects into $l$ disjoint sets. They can be efficiently computed using the recurrence
 
 $$ \genfrac{\{}{\}}{0pt}{}{k+1}{l} = l\genfrac{\{}{\}}{0pt}{}{k}{l} + \genfrac{\{}{\}}{0pt}{}{k}{l-1} , $$
 
-which is like the recurrence for the binomial coefficients, except with an extra $l$ in fron of the first term. This recurrence holds because to partition $k+1$ objects into $l$ sets, we either partition the first $k$ objects into $l$ sets then add the $(k+1)$th item into one of those $l$ sets, or we partition the frist $k$ objects into $l-1$ sets and put the $(k+1)$th object on its own.
+which is like the recurrence for the binomial coefficients, except with an extra $l$ in fron of the first term. This recurrence holds because to partition $k+1$ objects into $l$ sets, we either partition the first $k$ objects into $l$ sets then add the $(k+1)$th item into one of those $l$ sets, or we partition the first $k$ objects into $l-1$ sets and put the $(k+1)$th object on its own.
 
 The result we are interested in, then, is 
 
 $$ x^k = \sum_{l=1}^k \genfrac{\{}{\}}{0pt}{}{k}{l} x^{\underline{l}} . $$
 
-*Concrete Mathematics* (Section 6.1) proves this by induction, but it surely deserves a double-counting proof instead.
+*Concrete Mathematics* (Section 6.1) proves this by induction, but it surely deserves a double-counting proof instead. The left-hand side is the number of ways of of choosing $k$ objects from $x$ with replacement. Alternatively, we can count them up by "repeat pattern". By repeat pattern, I mean a record of which objects have been chosen when -- it will be clearest to show by some examples. Suppose we have three balls -- red, green, blue -- and are picking three with replacement. The left column is how we pick them, and the right column is the repeat pattern.
+
+$$ \begin{align}
+&\text{red}, \text{green}, \text{blue} & &\{1\}, \{2\}, \{3\} \\
+&\text{red}, \text{red}, \text{red} & &\{1,2,3\} \\
+&\text{green}, \text{blue}, \text{green} & &\{1,3\}, \{2\}
+\end{align} $$
+
+A repeat pattern is a partition of the $k$ positions. And if we see $l$ distinct objects, the partition is into $l$ sets; there are then $x^{\underline{l}}$ ways to "fill in" the repeat pattern with $l$ distinct objects. Thus the right-hand side is counting up all the ways of choosing $k$ objects from $x$ with replacement, first summing over the number $l$ of distinct obejcts seen, then counting over each of the $\genfrac{\{}{\}}{0pt}{}{k}{l}$ repeat patterns for $l$ distinct objects.
+
+Equipped with this result, we then have
+
+$$ \begin{align}
+\sum_{x=1}^n x^k &= \sum_{x=1}^n \sum_{l=1}^k \genfrac{\{}{\}}{0pt}{}{k}{l} x^{\underline{l}} \\
+  &= \sum_{l=1}^k \genfrac{\{}{\}}{0pt}{}{k}{l} \sum_{x=1}^n x^{\underline{l}} \\
+  &= \sum_{l=1}^k \frac{1}{l+1} \genfrac{\{}{\}}{0pt}{}{k}{l} \sum_{x=1}^n x^{\underline{l+1}} .
+\end{align} $$
+
+I think that's the best way to write down the pattern for sums of powers.
