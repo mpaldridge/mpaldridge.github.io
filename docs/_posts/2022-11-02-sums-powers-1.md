@@ -86,7 +86,7 @@ $$ n^{\underline{k}} = k \sum_{x=0}^{n-1} x^{\underline{k-1}} . $$
 
 The left-hand side simply counts the number of ways of sampling $k$ objects from a population of $n$ objects without replacement. We need to explain how the right-hand side counts the same thing.
 
-To do this, let's consider the $n$ objects being the numbers $1, 2, \dots, n$. We will count the ways of sampling $k$ of these without replacement by counting separately based on the maximum number in the sample. If this maximum number is $x + 1$, say, then there are $k x^{\underline{k-1}}$ ways to do this. That's because $k-1$ of the objects must be from $1, 2, \dots, x$ chosen with replacement, and then there are $k$ spaces in that list to slot in the item $x+1$. The possible values of $x+1$ are from $1$ to $n$, and summing up all these gives the result above.
+To do this, let's consider the $n$ objects being the numbers $1, 2, \dots, n$. We will count the ways of sampling $k$ of these without replacement by counting separately based on the maximum number in the sample. If this maximum number is $x + 1$, say, then there are $k x^{\underline{k-1}}$ ways to do this. That's because $k-1$ of the objects must be from $1, 2, \dots, x$ chosen without replacement, and then there are $k$ spaces in that list to slot in the item $x+1$. The possible values of $x+1$ are from $1$ to $n$, and summing up all these gives the result above.
 
 ## Back to powers
 
@@ -101,11 +101,21 @@ which is correct. For $k = 2$, it's quick to check that $x^2 = x^{\underline{2}}
 $$ \begin{align}
 \sum_{x=1}^n x^2 &= \sum_{x=1}^n x^{\underline{2}} + \sum_{x=1}^n x^{\underline{1}} \\
   &= \frac13 \, (n+1)^{\underline{3}} + \frac12 \, (n+1)^{\underline{2}} \\
-  &= \frac{1}{6}\, (n+1)\,n\,\big(2(n-1) + 3\big) \\
-  &= \frac{1}{6}\, (n+1)\,n\,(2n+1) ,
+  &= \frac{1}{3}\, (n+1)\,n\,\big((n-1) + \tfrac32 \big) \\
+  &= \frac{1}{3}\, (n+1)\,n\,(n+\tfrac12) ,
 \end{align} $$
 
-which is correct also.
+which is correct also. For $k = 3$, we have $x^3 = x^{\underline{3}} + 3 x^{\underline{2}} + x^{\underline{1}}$, so
+
+$$ \begin{align}
+\sum_{x=1}^n x^3 &= \sum_{x=1}^n x^{\underline{3}} + 3\sum_{x=1}^n x^{\underline{2}} + \sum_{x=1}^n x^{\underline{1}} \\
+  &= \frac14 \, (n+1)^{\underline{4}} + \frac33 \, (n+1)^{\underline{3}} + \frac12 \, (n+1)^{\underline{2}} \\
+  &= \frac{1}{4}\, (n+1)\,n\,\big((n-1)(n-2) + 4(n-1) + 2 \big) \\
+  &= \frac{1}{4}\, (n+1)\,n\,(n^2 +n) \\
+  &= \frac{1}{4}\, (n+1)^2\,n^2
+\end{align} $$
+
+and so on.
 
 The general result for writing a power in terms of a falling factorial uses the [Stirling numbers of the second kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind). The Stirling number $\genfrac{\lbrace}{\rbrace}{0pt}{}{k}{l}$ is the number of ways of partitioning $k$ objects into $l$ disjoint sets. They can be efficiently computed using the recurrence
 
