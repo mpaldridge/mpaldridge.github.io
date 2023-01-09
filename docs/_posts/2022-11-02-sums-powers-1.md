@@ -57,7 +57,7 @@ This is the number of ways of picking $k$ objects from a set of $x$ objects *wit
 So we could look instead at the sums of these falling factorials instead of powers, to see if the formulas are any nicer. And they are! We have
 
 $$ \begin{align}
-\sum_{x=1}^n x &= \frac{1}{n}\,(n+1)\, n \\
+\sum_{x=1}^n x &= \frac{1}{2}\,(n+1)\, n \\
 \sum_{x=1}^n x(x-1) &= \frac{1}{3}\,(n+1)\, n \, (n-1) \\
 \sum_{x=1}^n x(x-1)(x-2) &= \frac{1}{4}\,(n+1)\, n \, (n-1)(n-2) \\
 \sum_{x=1}^n x(x-1)(x-2)(x-3) &= \frac{1}{5}\,(n+1)\, n \, (n-1)(n-2)(n-3) \\
@@ -125,7 +125,7 @@ $$ \begin{align}
 &\text{green}, \text{blue}, \text{green} & &\{1,3\}, \{2\}
 \end{align} $$
 
-A repeat pattern is a partition of the $k$ positions. And if we see $l$ distinct objects, the partition is into $l$ sets; there are then $x^{\underline{l}}$ ways to "fill in" the repeat pattern with $l$ distinct objects. Thus the right-hand side is counting up all the ways of choosing $k$ objects from $x$ with replacement, first summing over the number $l$ of distinct obejcts seen, then counting over each of the $\genfrac{\{}{\}}{0pt}{}{k}{l}$ repeat patterns for $l$ distinct objects.
+A repeat pattern is a partition of the $k$ positions. And if we see $l$ distinct objects, the partition is into $l$ sets; there are then $x^{\underline{l}}$ ways to "fill in" the repeat pattern with $l$ distinct objects. Thus the right-hand side is counting up all the ways of choosing $k$ objects from $x$ with replacement, first summing over the number $l$ of distinct obejcts seen, then counting over each of the $\genfrac{\{\lbrace}{\rbrace}{0pt}{}{k}{l}$ repeat patterns for $l$ distinct objects.
 
 Equipped with this result, we then have
 
