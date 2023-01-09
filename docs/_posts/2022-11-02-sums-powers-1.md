@@ -34,7 +34,7 @@ I say "and so on", but it isn't clear exactly how this is going to continue. I f
 
 * $S_k(n)$ is a polynomial of degree $k+1$.
 * The leading term of this polynomial is $\frac{1}{k+1} n^{k+1}$.
-* $S_k(n)$ is symmetric about $-\frac12$, in that $S_k(n) = (-1)^k S_k(- (n + 1_)$.
+* $S_k(n)$ is symmetric about $-\frac12$, in that $S_k(n) = (-1)^k S_k(- (n + 1))$.
 * $(n + \frac12)$ is a factor of $S_k(n)$ when $n$ is odd.
 * $n$ and $(n+1)$ are factors of $S_k(n)$, and are factors of with multiplicity (at least) two when $n \geq 3$ is odd.
 
@@ -107,7 +107,7 @@ $$ \begin{align}
 
 which is correct also.
 
-The general result for writing a power in terms of a falling factorial uses the [Stirling numbers of the second kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind). The Stirling number $\genfrac\{\}{0pt}{}{k}{l}$ is the number of ways of partitioning $k$ objects into $l$ disjoint sets. They can be efficiently computed using the recurrence
+The general result for writing a power in terms of a falling factorial uses the [Stirling numbers of the second kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind). The Stirling number $\genfrac{\lbrace}{\rbrace}{0pt}{}{k}{l}$ is the number of ways of partitioning $k$ objects into $l$ disjoint sets. They can be efficiently computed using the recurrence
 
 $$ \genfrac{\{}{\}}{0pt}{}{k+1}{l} = l\genfrac{\{}{\}}{0pt}{}{k}{l} + \genfrac{\{}{\}}{0pt}{}{k}{l-1} , $$
 
@@ -136,3 +136,29 @@ $$ \begin{align}
 \end{align} $$
 
 I think that's the best way to write down the pattern for sums of powers.
+
+## Postscript: binomial coefficients
+
+I mentioned this formula.
+
+$$ \sum_{x=1}^n x^{\underline{k}} = \frac{1}{k+1}\,(n+1)^{\underline{k+1}} . $$
+
+on Twitter, and commented that, while it's not exactly *obscure*, it doesn't seem as well known as I'd expect. (For example, I've only found it on one single page on Wikipedia, hidden two-thirds of the way down the [Stirling number](https://en.wikipedia.org/wiki/Stirling_number#Example) page.)
+
+But [Olly pointed out](https://twitter.com/BristOliver/status/1587880445185867778) that it's related to a slightly better known result with the binomial coefficient $\binom{x}{k}$. The binomial coefficient can be written as
+
+$$ \binom{x}{k} = \frac{x^{\underline{k}}}{k!} . $$
+
+So if we divid both sides of our result by $k!$, then the left-hand side becomes
+
+$$ \frac{1}{k!} \sum_{x=1}^n x^{\underline{k}} = \sum_{x=1}^n \frac{x^{\underline{k}}}{k!} = \sum_{x=1}^n \binom{x}{k} , $$
+
+and the right-hand side becomes
+
+$$ \frac{1}{k!}\\, \frac{1}{k+1}\,(n+1)^{\underline{k+1}} = \frac{1}{(k+1)!} \, (n+1)^{\underline{k+1}} =\sum_{x=1}^n \binom{x}{k} . $$
+
+Thus we get
+
+$$ \sum_{x=1}^n \binom{x}{k} = \sum_{x=1}^n \binom{x}{k} , $$
+
+which is known as the ["hockeystick identity"](https://en.wikipedia.org/wiki/Hockey-stick_identity).
