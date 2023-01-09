@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sums of powers I: With and without replacement"
+title:  "Sums of powers I: with and without replacement"
 date:   2022-11-02
 categories: writing
 permalink: /blog/sums-powers-1.html
@@ -75,3 +75,46 @@ $$ \sum_{x=0}^{n-1} x^{\underline{k}} = \frac{1}{k+1}\,n^{\underline{k+1}} , $$
 it's clear that this is a sort of "discrete equivalent" to the integration of polynomials
 
 $$ \int_{0}^n x^k \, \mathrm{d}x = \frac{1}{k+1} \, n^{k+1} . $$
+
+## Proof
+
+One way to prove this result is to develop the theory of "discrete derivatives" and "discrete integrals" -- see Section 2.6 of *Concrete Mathematics* by Graham, Knuth and Patashnik for some nice coverage of this idea.
+
+But here, let's give a simple "double counting" proof instead. It will be convenient to prove the result in the form
+
+$$ n^{\underline{k}} = k \sum_{x=0}^{n-1} x^{\underline{k-1}} . $$
+
+The left-hand side simply counts the number of ways of sampling $k$ objects from a population of $n$ objects without replacement. We need to explain how the right-hand side counts the same thing.
+
+To do this, let's consider the $n$ objects being the numbers $1, 2, \dots, n$. We will count the ways of sampling $k$ of these without replacement by counting separately based on the maximum number in the sample. If this maximum number is $x + 1$, say, then there are $k x^{\underline{k-1}}$ ways to do this. That's because $k-1$ of the objects must be from $1, 2, \dots, x$ chosen with replacement, and then there are $k$ spaces in that list to slot in the item $x+1$. The possible values of $x+1$ are from $1$ to $n$, and summing up all these gives the result above.
+
+## Back to powers
+
+I think this way of looking things is an argument that the falling factorial is the "correct" way to look at this. But we still need the sum of powers. So perhaps the best way to do that is to write the powers in terms of the falling factorials, then use the "nice" falling factorial formula.
+
+For example, for $k = 1$, we already know that $x = x^1 = x^{\underline{1}}$. So
+
+$$ \sum_{x=1}^n x = \sum_{x=1}^n x^{\underline{1}} = \frac12 \, (n+1)^{\underline{2}} = \frac12\, (n+1)\, n , $$
+
+which is correct. For $k = 2$, it's quick to check that $x^2 = x^{\underline{2}} + x^{\underline{1}}$. So
+
+$$ \begin{align}
+\sum_{x=1}^n x^2 &= \sum_{x=1}^n x^{\underline{2}} + \sum_{x=1}^n x^{\underline{1}} \\
+  &= \frac13 \, (n+1)^{underline{3}} + \frac12 \, (n+1)^{underline{2}} \\
+  &= \frac{1}{6}\, (n+1)\,n\,\big(2(n-1) + 3\big) \\
+  &= \frac{1}{6}\, (n+1)\,n\,(2n+1) ,
+\end{align} $$
+
+which is correct also.
+
+The general result for writing a power in terms of a falling factorial uses the [Stirling numbers of the second kind](https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind). The Stirling number $\genfrac{\{}{\}}{0pt}{}{k}{l}$ is the number of ways of partitioning $k$ objects into $l$ disjoint sets. They can be efficiently computed using the recurrence
+
+$$ \genfrac{\{}{\}}{0pt}{}{k+1}{l} = l\genfrac{\{}{\}}{0pt}{}{k}{l} + \genfrac{\{}{\}}{0pt}{}{k}{l-1} , $$
+
+which is like the recurrence for the binomial coefficients, except with an extra $l$ in fron of the first term. This recurrence holds because to partition $k+1$ objects into $l$ sets, we either partition the first $k$ objects into $l$ sets then add the $(k+1)$th item into one of those $l$ sets, or we partition the frist $k$ objects into $l-1$ sets and put the $(k+1)$th object on its own.
+
+The result we are interested in, then, is 
+
+$$ x^k = \sum_{l=1}^k \genfrac{\{}{\}}{0pt}{}{k}{l} x^{\underline{l}} . $$
+
+*Concrete Mathematics* (Section 6.1) proves this by induction, but it surely deserves a double-counting proof instead.
