@@ -125,7 +125,7 @@ $$ \begin{align}
 &\text{green}, \text{blue}, \text{green} & &\{1,3\}, \{2\}
 \end{align} $$
 
-A repeat pattern is a partition of the $k$ positions. And if we see $l$ distinct objects, the partition is into $l$ sets; there are then $x^{\underline{l}}$ ways to "fill in" the repeat pattern with $l$ distinct objects. Thus the right-hand side is counting up all the ways of choosing $k$ objects from $x$ with replacement, first summing over the number $l$ of distinct obejcts seen, then counting over each of the $\genfrac{\{\lbrace}{\rbrace}{0pt}{}{k}{l}$ repeat patterns for $l$ distinct objects.
+A repeat pattern is a partition of the $k$ positions. And if we see $l$ distinct objects, the partition is into $l$ sets; there are then $x^{\underline{l}}$ ways to "fill in" the repeat pattern with $l$ distinct objects. Thus the right-hand side is counting up all the ways of choosing $k$ objects from $x$ with replacement, first summing over the number $l$ of distinct obejcts seen, then counting over each of the $\genfrac{\lbrace}{\rbrace}{0pt}{}{k}{l}$ repeat patterns for $l$ distinct objects.
 
 Equipped with this result, we then have
 
