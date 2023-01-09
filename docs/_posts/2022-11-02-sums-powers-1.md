@@ -30,15 +30,15 @@ S_5(n) = \sum_{x=1}^m x^5  &= \frac{1}{6}\,(n+1)^2 \,n^2\, (n^2 + n - \tfrac12) 
 
 and so on.
 
-I say "and so on", but it isn't clear exactly how this is going to continue. I find this sort of frustrating, because it looks like it's about to fall into an easy-to-understand pattern, but it doesn't quite fit. We can observe some properties:
+I say "and so on", but it isn't clear exactly how this is going to continue. I find this sort of frustrating, because it looks like it's about to fall into an easy-to-understand pattern, but it never quite fits. We can observe some properties:
 
 * $S_k(n)$ is a polynomial of degree $k+1$.
 * The leading term of this polynomial is $\frac{1}{k+1} n^{k+1}$.
-* $S_k(n)$ is symmetric about $-\frac12$, in that $S_k(n) = (-1)^k S_k(- n - 1)$.
-* $(n _ \frac12)$ is a factor of $S_k(n)$ when $n$ is odd.
+* $S_k(n)$ is symmetric about $-\frac12$, in that $S_k(n) = (-1)^k S_k(- (n + 1_)$.
+* $(n + \frac12)$ is a factor of $S_k(n)$ when $n$ is odd.
 * $n$ and $(n+1)$ are factors of $S_k(n)$, and are factors of with multiplicity (at least) two when $n \geq 3$ is odd.
 
-(It looks as if all the roots of $S_k(n)$ might be real, but that fails for $k=7$.) But these properties aren't enough to be able to just write down what the next formulas will be.
+(It might look as if all the roots of $S_k(n)$ are going to be real, but that fails for $k=7$.) But these properties aren't quite enough to be able to just write down what the next formulas will be.
 
 ## Sampling without replacement
 
@@ -132,7 +132,7 @@ Equipped with this result, we then have
 $$ \begin{align}
 \sum_{x=1}^n x^k &= \sum_{x=1}^n \sum_{l=1}^k \genfrac{\{}{\}}{0pt}{}{k}{l} x^{\underline{l}} \\
   &= \sum_{l=1}^k \genfrac{\{}{\}}{0pt}{}{k}{l} \sum_{x=1}^n x^{\underline{l}} \\
-  &= \sum_{l=1}^k \frac{1}{l+1} \genfrac{\{}{\}}{0pt}{}{k}{l} \sum_{x=1}^n x^{\underline{l+1}} .
+  &= \sum_{l=1}^k \frac{1}{l+1} \genfrac{\{}{\}}{0pt}{}{k}{l} n^{\underline{l+1}} .
 \end{align} $$
 
 I think that's the best way to write down the pattern for sums of powers.
