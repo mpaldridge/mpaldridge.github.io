@@ -76,7 +76,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[Harlem](https://www.newyorker.com/magazine/1981/06/29/harlem-i-the-journey-uptown) by Jervis Anderson** (1981, four parts, 83k words). A history of Black Americans in Harlem, New York, to 1950. Book: "This Was Harlem".
 
-**[The Patient](https://www.newyorker.com/magazine/1981/05/25/the-patient) by Susan Sheehan** (1981, four parts, 101k words). On a sometime-patient of a psychiatric hospital. Book: ["Is There No Place on Earth for Me?"](https://en.wikipedia.org/wiki/Is_There_No_Place_on_Earth_for_Me%3F).
+**[The Patient](https://www.newyorker.com/magazine/1981/05/25/the-patient) by Susan Sheehan** (1981, four parts, 106k words). On a sometime-patient of a psychiatric hospital. Book: ["Is There No Place on Earth for Me?"](https://en.wikipedia.org/wiki/Is_There_No_Place_on_Earth_for_Me%3F).
 
 
 ## Bonus: Some articles I didn't count
