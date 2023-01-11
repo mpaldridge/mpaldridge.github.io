@@ -118,7 +118,7 @@ $$ \begin{align}
  \big((x-1) + B\big)^{k+1} &= \big(x + (B-1) \big)^{k+1} \\
    &= x^{k+1} + (k+1)(B - 1)^1 x^k + \binom{k+1}{2} (B-1)^2 x^{k-1} + \binom{k+1}{3} (B-1)^3 x^{k-2} + \cdots . \end{align}$$
 
-Now the first term in both of these, $x^{k+1}$, is the same. And since the Bernoulli numbers were defined by $(B-1)^k = B^k$ for $k \geq 2$, that means the third, fourth and all later terms are the same too. So all is left are the second terms
+Now the first term in both of these, $x^{k+1}$, is the same. And since the Bernoulli numbers were defined by $(B-1)^k = B^k$ for $k \geq 2$, that means the third, fourth and all later terms are the same too. So all that's left are the second terms,
 
 $$ \big(x+B\big)^{k+1} - \big((x-1) + B\big)^{k+1}
   = (k+1)B^1 x^k - (k+1)(B^1 - 1) x^k = (k+1)x^k .$$
