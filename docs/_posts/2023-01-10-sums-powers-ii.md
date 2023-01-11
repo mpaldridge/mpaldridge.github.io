@@ -98,8 +98,8 @@ If we wanted to avoid the "Bernoulli numbers as powers of $B$" formalism, we cou
 
 $$ \begin{align}
 \sum_{x=0}^n x^k &= \frac{1}{k+1}\, \big((n+B)^{k+1} - B^{k+1} \big) \\
-  &= \frac{1}{k+1}\, \big( \sum_{l=0}^{k+1} \binom{k+1}{l} B_{k+1-l} n^l - B^{k+1} \big) \\
-  &= \frac{1}{k+1}\, \big( \sum_{l=1}^{k+1} \binom{k+1}{l} B_{k+1-l} n^l \big) .
+  &= \frac{1}{k+1}\, \left( \sum_{l=0}^{k+1} \binom{k+1}{l} B_{k+1-l} n^l - B_{k+1} \right) \\
+  &= \frac{1}{k+1}\, \sum_{l=1}^{k+1} \binom{k+1}{l} B_{k+1-l} n^l .
  \end{align} $$
  
  But am I going to be able remember that? I doubt it -- but I can remember $\frac{1}{k+1} ((n+B)^{k+1} - B^{k+1})$.
@@ -116,24 +116,24 @@ $$ \begin{align}
  
  $$ \begin{align}
  \big((x-1) + B\big)^{k+1} &= \big(x + (B-1) \big)^{k+1} \\
-   &= x^{k+1} + (k+1)(B - 1)^1 x^k + \binom{k+1}{2} (B-1)^2 x^{k-1} + \binom{k+1}{3} (B-1)^3 x^{k-2} + \cdots . $$
+   &= x^{k+1} + (k+1)(B - 1)^1 x^k + \binom{k+1}{2} (B-1)^2 x^{k-1} + \binom{k+1}{3} (B-1)^3 x^{k-2} + \cdots . \end{align}$$
 
-Now the first term in both of these, x^{k+1}, is the same. And since the Bernoulli numbers were defined by $(B-1)^k = B^k$ for $k \geq 2$, that means the third, fourth and all later terms are the same too. So all is left are the second terms
+Now the first term in both of these, $x^{k+1}$, is the same. And since the Bernoulli numbers were defined by $(B-1)^k = B^k$ for $k \geq 2$, that means the third, fourth and all later terms are the same too. So all is left are the second terms
 
 $$ \big(x+B\big)^{k+1} - \big((x-1) + B\big)^{k+1}
   = (k+1)B^1 x^k - (k+1)(B^1 - 1) x^k = (k+1)x^k .$$
 
 Now we sum up all the differences. So what is
 
-$$ \sum_{x=1}^n \big(x+B\big)^{k+1} - \big((x-1) + B\big)^{k+1}  ? $$
+$$ \sum_{x=1}^n \Big(\big(x+B\big)^{k+1} - \big((x-1) + B\big)^{k+1}\Big)  ? $$
 
 On one hand, by the above, its
 
-$$ \sum_{x=1}^n \big(x+B\big)^{k+1} - \big((x-1) + B\big)^{k+1} = \sim_{x=1}^n (k+1)x^k = (k+1) \sum_{x=0}^n x^k .$$
+$$ \sum_{x=1}^n \Big(\big(x+B\big)^{k+1} - \big((x-1) + B\big)^{k+1}\Big) = \sum_{x=1}^n (k+1)x^k = (k+1) \sum_{x=0}^n x^k .$$
 
-But, on the other hand, a sum of differences like this will obviously "telescope" to
+But, on the other hand, a sum of differences like this will "telescope" to
 
-$$ \sum_{x=1}^n \big(x+B\big)^{k+1} - \big((x-1) + B\big)^{k+1} = \big(n+B\big)^{k+1} - B^{k+1} .$$
+$$ \sum_{x=1}^n \Big(\big(x+B\big)^{k+1} - \big((x-1) + B\big)^{k+1}\Big) = \big(n+B\big)^{k+1} - B^{k+1} .$$
 
 Hence we have
 
