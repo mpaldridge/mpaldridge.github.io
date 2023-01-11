@@ -29,13 +29,13 @@ However, I recently read a delightful exposition of a way to get the sums of pow
 As a reminder, the formulas for the sums, written out as polynomials are
 
 $$ \begin{align}
-\sum_{x=0}^n x^0 &=	\frac{1}{1} \, \big(n \big)	\\
-\sum_{x=0}^n x   &=	\frac{1}{2} \, \big(n^2 + \tfrac{2}{2} n \big)	\\
-\sum_{x=0}^n x^2 &=	\frac{1}{3} \, \big(n^3 + \tfrac{3}{2} n^2 + \tfrac{ 3}{6} n \big)	\\
-\sum_{x=0}^n x^3 &=	\frac{1}{4} \, \big(n^4 + \tfrac{4}{2} n^3 + \tfrac{ 6}{6} n^2 + 0n \big)	\\
-\sum_{x=0}^n x^4 &=	\frac{1}{5} \, \big(n^5 + \tfrac{5}{2} n^4 + \tfrac{10}{6} n^3 + 0n^2 - \tfrac{ 5}{30} n \big)	\\
-\sum_{x=0}^n x^5 &=	\frac{1}{6} \, \big(n^6 + \tfrac{6}{2} n^5 + \tfrac{15}{6} n^4 + 0n^3 - \tfrac{15}{30} n^2 + 0n \big)	\\
-\sum_{x=0}^n x^6 &=	\frac{1}{7} \, \big(n^7 + \tfrac{7}{2} n^6 + \tfrac{21}{6} n^5 + 0n^4 - \tfrac{35}{30} n^3 + 0n^2 + \tfrac{7}{42}n \big)
+\sum_{x=1}^n x^0 &=	\frac{1}{1} \, \big(n \big)	\\
+\sum_{x=1}^n x   &=	\frac{1}{2} \, \big(n^2 + \tfrac{2}{2} n \big)	\\
+\sum_{x=1}^n x^2 &=	\frac{1}{3} \, \big(n^3 + \tfrac{3}{2} n^2 + \tfrac{ 3}{6} n \big)	\\
+\sum_{x=1}^n x^3 &=	\frac{1}{4} \, \big(n^4 + \tfrac{4}{2} n^3 + \tfrac{ 6}{6} n^2 + 0n \big)	\\
+\sum_{x=1}^n x^4 &=	\frac{1}{5} \, \big(n^5 + \tfrac{5}{2} n^4 + \tfrac{10}{6} n^3 + 0n^2 - \tfrac{ 5}{30} n \big)	\\
+\sum_{x=1}^n x^5 &=	\frac{1}{6} \, \big(n^6 + \tfrac{6}{2} n^5 + \tfrac{15}{6} n^4 + 0n^3 - \tfrac{15}{30} n^2 + 0n \big)	\\
+\sum_{x=1}^n x^6 &=	\frac{1}{7} \, \big(n^7 + \tfrac{7}{2} n^6 + \tfrac{21}{6} n^5 + 0n^4 - \tfrac{35}{30} n^3 + 0n^2 + \tfrac{7}{42}n \big)
 \end{align} $$
 
 (These are sometimes called *Faulhaber polynomials*, after the German mathematician [Johann Faulhaber](https://en.wikipedia.org/wiki/Johann_Faulhaber) who first found the rule for them in 1530 or so.) You might be able to see a pattern starting to arise here -- I've put some of the fractions not in their simplest form, but in a form that suggests some of the emerging patterns.
@@ -49,7 +49,7 @@ B^0 &= 1 & B^1 &= \frac{1}{2} & B^2 &= \frac{1}{6} & B^3 &= 0 \\
 B^4 &= -\frac{1}{30} & B^5 &= 0 & B^6 &= \frac{1}{42} & B^7 &= 0\ \dots.
 \end{align} $$
 
-I was vaguely aware that the Bernoulli numbers were involved somewhere here, but I've never really liked the Bernoulli numbers, as they were defined through some baffling formula I could never remember, whose relationship to the sums of powers was totally opaque. But the exposition of Conway and Guy (not, I don't think, orginal to them) makes everything so much clearer.
+I was vaguely aware that the Bernoulli numbers were involved somewhere here, but I've never really liked the Bernoulli numbers, as they were defined through [some baffling formula](https://mathworld.wolfram.com/BernoulliNumber.html) I could never remember, whose relationship to the sums of powers was totally opaque. But the exposition of Conway and Guy (not, I don't think, orginal to them) makes everything so much clearer.
 
 You'll have noticed that I wrote the sequence of Bernoulli numbers as $B^0, B^1, B^2, \dots$, rather than the more usual notation for a sequence $b_0, B_1, B_2, \dots$. This is because it's often very convenience to write equations *as if* the Bernoulli numbers were powers of some object $B$. They are, of course, *not* powers of any number $B$, so we must take care to interpret our equations properly: we must first expand any brackets to get a "polynomial", and then treat that "polynomial" as an equation in the Bernoulli numbers.
 
