@@ -29,7 +29,7 @@ However, I recently read a delightful exposition of a way to get the sums of pow
 As a reminder, the formulas for the sums, written out as polynomials are
 
 $$ \begin{align}
-\sum_{x=0}^n x   &=	\frac{1}{1} \, \big(n \big)	\\
+\sum_{x=0}^n x^0 &=	\frac{1}{1} \, \big(n \big)	\\
 \sum_{x=0}^n x   &=	\frac{1}{2} \, \big(n^2 + \tfrac{2}{2} n \big)	\\
 \sum_{x=0}^n x^2 &=	\frac{1}{3} \, \big(n^3 + \tfrac{3}{2} n^2 + \tfrac{ 3}{6} n \big)	\\
 \sum_{x=0}^n x^3 &=	\frac{1}{4} \, \big(n^4 + \tfrac{4}{2} n^3 + \tfrac{ 6}{6} n^2 + 0n \big)	\\
