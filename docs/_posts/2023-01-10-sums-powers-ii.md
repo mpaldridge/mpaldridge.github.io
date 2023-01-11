@@ -29,12 +29,12 @@ However, I recently read a delightful exposition of a way to get the sums of pow
 As a reminder, the formulas for the sums, written out as polynomials are
 
 $$ \begin{align}
-\sum_{x=0}^n x   &=	\frac{1}{2}\, \big(n^2+n \big)	\\
-\sum_{x=0}^n x^2 &=	1/6(2n^3+3n^2+n)	\\
-\sum_{x=0}^n x^3 &=	1/4(n^4+2n^3+n^2)	\\
-\sum_{x=0}^n x^4 &=	1/(30)(6n^5+15n^4+10n^3-n)	\\
-\sum_{x=0}^n x^5 &=	\frac{1}{6}\, \big(\phantom{n^7+\tfrac72}n^6 + 3n^5 + \tfrac52n^4 \phantom{-\tfrac{7}{6} n^3} - \tfrac12n^2 \phantom{+ \tfrac12 n}\big)	\\
-\sum_{x=0}^n x^6 &=	\frac{1}{7}\, \big(n^7+\tfrac72 n^6+\tfrac72 n^5 \phantom{+\tfrac72 n^4} -\tfrac{7}{6} n^3\phantom{+\tfrac72 n^4} + \phantom{\tfrac12}n\big)
+\sum_{x=0}^n x   &=	\frac{1}{2} \, \big(n^2 + \tfrac{2}{2} n \big)	\\
+\sum_{x=0}^n x^2 &=	\frac{1}{3} \, \big(n^3 + \tfrac{3}{2} n^2 + \tfrac{ 3}{6} n \big)	\\
+\sum_{x=0}^n x^3 &=	\frac{1}{4} \, \big(n^4 + \tfrac{4}{2} n^3 + \tfrac{ 6}{6} n^2 + 0n \big)	\\
+\sum_{x=0}^n x^4 &=	\frac{1}{5} \, \big(n^5 + \tfrac{5}{2} n^4 + \tfrac{10}{6} n^3 + 0n^2 - \tfrac{ 5}{30} n \big)	\\
+\sum_{x=0}^n x^5 &=	\frac{1}{6} \, \big(n^6 + \tfrac{6}{2} n^5 + \tfrac{15}{6} n^4 + 0n^3 - \tfrac{15}{30} n^2 + 0n \big)	\\
+\sum_{x=0}^n x^6 &=	\frac{1}{7} \, \big(n^7 + \tfrac{7}{2} n^6 + \tfrac{21}{6} n^5 + 0n^4 - \tfrac{35}{30} n^3 + 0n^2 + \tfrac{7}{42}n \big)
 \end{align} $$
 
 
