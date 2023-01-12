@@ -15,7 +15,7 @@ $$ \sum_{x = 1}^n x^k = 1^k + 2^k + \cdots + n^k . $$
 
 I argued that the more natural way to think about this was instead through the falling factorial $x^{\underline{k}} = x(x-1)\cdots(x-k+1)$; the power corresponds to sampling with replacement, and the falling factorial sampling without replacement. We then have the natural formula
 
-$$ \sum_{x=1}^n x^{\underline{k}} = \frac{1}{k+1} \, (n+1)^{\underline{k}} . $$
+$$ \sum_{x=1}^n x^{\underline{k}} = \frac{1}{k+1} \, (n+1)^{\underline{k+1}} . $$
 
 If you want to get the powers result back, we can do so with Stirling numbers: it's
 
