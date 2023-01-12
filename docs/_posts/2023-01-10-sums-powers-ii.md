@@ -51,13 +51,13 @@ B^4 &= -\frac{1}{30} & B^5 &= 0 & B^6 &= \frac{1}{42} & B^7 &= 0\ \dots.
 
 I was vaguely aware that the Bernoulli numbers were involved somewhere here, but I've never really liked the Bernoulli numbers, as they were defined through [some baffling formula](https://mathworld.wolfram.com/BernoulliNumber.html) I could never remember, whose relationship to the sums of powers was totally opaque. But the exposition of Conway and Guy (not, I don't think, orginal to them) makes everything so much clearer.
 
-You'll have noticed that I wrote the sequence of Bernoulli numbers as $B^0, B^1, B^2, \dots$, rather than the more usual notation for a sequence $b_0, B_1, B_2, \dots$. This is because it's often very convenience to write equations *as if* the Bernoulli numbers were powers of some object $B$. They are, of course, *not* powers of any number $B$, so we must take care to interpret our equations properly: we must first expand any brackets to get a "polynomial", and then treat that "polynomial" as an equation in the Bernoulli numbers.
+You'll have noticed that I wrote the sequence of Bernoulli numbers as $B^0, B^1, B^2, \dots$, rather than the more usual notation for a sequence $B_0, B_1, B_2, \dots$. This is because it's often convenient to write equations *as if* the Bernoulli numbers were powers of some object $B$. They are, of course, *not* powers of any number $B$, so we must take care to interpret our equations properly: we must first expand any brackets to get a "polynomial", and then treat that "polynomial" as an equation in the Bernoulli numbers.
 
 Let's define the Bernoulli numbers and see our first example of this "power" notation together.
 
 **Definition.** *The Bernoulli numbers $(B^k)$ are defined first by $B^0 = 1$ (as one would expect for a "power"), and then by satisfying the equation $(B-1)^k = B^k$ for $k \geq 2$.*
 
-What a simple and easy-to-remember equation! Let's see what it means. The first case is
+What a simple and easy-to-remember equation! Let's see what it means. The first case is the $k = 2$ equation,
 
 $$(B-1)^2 = B^2 . $$
 
@@ -65,15 +65,15 @@ We must first expand out the brackets on the left-hand side, to get
 
 $$ B^2 - 2B^1 + 1 = B^2 . $$
 
-We see that the $B^2$s cancel, so we get $-2B^1 + 1 = 0$, and hence $B^1 = \frac12$.
+We can now treat this as a legitimate equation about $B^2$ and $B^1$ -- here, the $B^2$s cancel, so we get $-2B^1 + 1 = 0$, and hence $B^1 = \frac12$.
 
-Now that we know $B^1$, we can use the $k = 2$ equation. We have
+Now that we know $B^1 = \frac12$, we can use the $k = 3$ equation. We have
 
 $$(B-1)^3 = B^3 \quad \Longrightarrow \quad B^3 - 3B^2 + 3B^1 - 1 = B^3 . $$
 
 The $B^3$s cancel, and substituting in $B^1 = \frac12$, we can solve this to get $B^2 = \frac16$.
 
-We can keep going like this. You might like to check that the equation $(B-1)^4 = B^4$, after expansion, cancelling the $B^4$s, and using $B^1 = \frac12$, $B^2 = \frac16$ does indeed give $B^3 = 0$. And so on.
+We can keep going like this. You might like to check that the equation $(B-1)^4 = B^4$, after expanding, cancelling the $B^4$s, and using $B^1 = \frac12$, $B^2 = \frac16$, does indeed give $B^3 = 0$. And so on.
 
 ## Faulhaber's formula
 
@@ -86,8 +86,8 @@ Remember, still, that the term $(n+B)^{k+1}$ must be interpreted by expanding it
 Let's just test this works with $k = 2$, say. Whe then have
 
 $$ \begin{align}
-\sum_{x=0}^n x^2 = \frac{1}{3}\, \big((n+B)^{3} - B^{3} \big) \\
-  &= \frac{1}{3}\, \big( n^3 + 3B^1n^2 + 3B^2n + B^3 - B^3 \big) \\
+\sum_{x=0}^n x^2 &= \frac{1}{3}\, \big((n+B)^{3} - B^{3} \big) \\
+  &= \frac{1}{3}\, \big( (n^3 + 3B^1n^2 + 3B^2n + B^3) - B^3 \big) \\
   &= \frac{1}{3}\, \big( n^3 + 3B^1n^2 + 3B^2n \big) \\
   &= \frac{1}{3}\, \big( n^3 + 3 \times \tfrac12 n^2 + 3 \times \tfrac16 n \big) ,
 \end{align} $$
@@ -102,7 +102,7 @@ $$ \begin{align}
   &= \frac{1}{k+1}\, \sum_{l=1}^{k+1} \binom{k+1}{l} B_{k+1-l} n^l .
  \end{align} $$
  
- But am I going to be able remember that? I doubt it -- but I can remember $\frac{1}{k+1} ((n+B)^{k+1} - B^{k+1})$.
+ But am I going to be able remember that? I doubt it -- but I can remember $\int_0^n (x+B)^k\, \mathrm{d}x$.
  
  All that remains is to actually prove this formula. The key is to look at a difference
  
