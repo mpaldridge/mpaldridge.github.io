@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Longest New Yorker articles, 1977–present"
+title:  "Longest New Yorker articles, 1976–present"
 date:   2022-08-05
 categories: lists
 permalink: /blog/long-new-yorker.html
@@ -8,7 +8,7 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When did the magazine last run an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1977, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any articles, but I've surely failed. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
+*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1976, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any articles, but I've surely failed. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
 
 
 ## David Remnick editorship (1998–)
@@ -62,7 +62,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 **[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On U.S. Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
 
 
-## William Shawn editorship from 1977 (1977–87)
+## William Shawn editorship from 1976 (1976–87)
 
 **[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
 
@@ -80,7 +80,9 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[A Prison and a Prisoner](https://www.newyorker.com/magazine/1977/10/24/a-prison-and-a-prisoner-i-maximum-security) by Susan Sheehan** (1977, three parts, 85k words). On a prisoner and the New York state prison system. Book of the same title.
 
-**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 79k). On the Yukon region of Alaska. Part of the book of the same .
+**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 79k words). On the Yukon region of Alaska. Part of the book of the same title.
+
+**[Mahatma Gandhi and His Apostles](https://www.newyorker.com/magazine/1976/05/10/mahatma-gandhi-and-his-apostles-i-subtler-and-more-lasting-shapes) by Ved Mehta** (1976, three parts, 90k words). On the Indian leader and those who followed him. Book of the same title.
 
 
 ## Bonus: Some articles I didn't count
@@ -115,4 +117,5 @@ Some long **fiction**:
 * [The Unbearable Lightness of Being](https://www.newyorker.com/magazine/1984/03/19/the-unbearable-lightness-of-being) by Milan Kundera (1984, 34k words, excerpt from the book of the same title);
 * [The Laughter of Akiva](https://www.newyorker.com/magazine/1980/11/10/the-laughter-of-akiva) by Cynthia Ozick (1980, 32k words, reworked as "The Cannibal Galaxy");
 * [So Long, See You Tomorrow](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 37k words, book of the same title);
-* [The Ghost Writer](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title).
+* [The Ghost Writer](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title);
+* [Largely an Oral History of My Mother](https://www.newyorker.com/magazine/1976/04/26/largely-an-oral-history-of-my-mother) by Harold Brodkey (1976, 34k words, collected in "Stories in an Almost Classical Mode").
