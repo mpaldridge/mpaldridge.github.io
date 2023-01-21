@@ -62,7 +62,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 **[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On U.S. Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
 
 
-## William Shawn editorship from 1980 (1980–87)
+## William Shawn editorship from 1979 (1979–87)
 
 **[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
 
