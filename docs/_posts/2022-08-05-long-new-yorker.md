@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Longest New Yorker articles, 1978–present"
+title:  "Longest New Yorker articles, 1977–present"
 date:   2022-08-05
 categories: lists
 permalink: /blog/long-new-yorker.html
@@ -8,7 +8,7 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When did the magazine last run an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1978, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
+*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1977, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any articles, but I've surely failed. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
 
 
 ## David Remnick editorship (1998–)
@@ -62,7 +62,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 **[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On U.S. Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
 
 
-## William Shawn editorship from 1978 (1978–87)
+## William Shawn editorship from 1977 (1977–87)
 
 **[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
 
@@ -78,10 +78,14 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[The Patient](https://www.newyorker.com/magazine/1981/05/25/the-patient) by Susan Sheehan** (1981, four parts, 106k words). On a sometime-patient of a psychiatric hospital. Book: ["Is There No Place on Earth for Me?"](https://en.wikipedia.org/wiki/Is_There_No_Place_on_Earth_for_Me%3F).
 
+**[A Prison and a Prisoner](https://www.newyorker.com/magazine/1977/10/24/a-prison-and-a-prisoner-i-maximum-security) by Susan Sheehan** (1977, three parts, 85k words). On a prisoner and the New York state prison system. Book of the same title.
+
+**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 79k). On the Yukon region of Alaska. Part of the book of the same .
+
 
 ## Bonus: Some articles I didn't count
 
-Some of my own favourite **post-2009 articles** that are pretty long but not long enough to make this list:
+Some of my own favourite **post-2009 articles** (that's when I started reading the magazine) that are pretty long but not long enough to make this list:
 * [The White Darkness](https://www.newyorker.com/magazine/2018/02/12/the-white-darkness) by David Grann (2018, 21k words) on a polar explorer (book of the same title);
 * [The Future is Texas](https://www.newyorker.com/magazine/2017/07/10/americas-future-is-texas) by Lawrence Wright (2017, 19k words) on Texas politics (book: "God Save Texas");
 * [Five Hostages](https://www.newyorker.com/magazine/2015/07/06/five-hostages) by Lawrence Wright (2015, 20k words) on a civilian hostage rescue project (collected in "The Terror Years");
