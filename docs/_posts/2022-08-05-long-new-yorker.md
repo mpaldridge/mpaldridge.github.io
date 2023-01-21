@@ -66,7 +66,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
 
-**[A Secular Faith](https://www.newyorker.com/magazine/1984/10/08/i-a-secular-faith) by Daneil J Kevles** (1984, four parts, 87k words). On the history of eugenics. Book: "In the Name of Eugenics".
+**[A Secular Faith](https://www.newyorker.com/magazine/1984/10/08/i-a-secular-faith) by Daniel J. Kevles** (1984, four parts, 87k words). On the history of eugenics. Book: "In the Name of Eugenics".
 
 **[Weapons and Hope](https://www.newyorker.com/magazine/1984/02/06/weapons-and-hope-i-questions) by Freeman Dyson** (1984, four parts, 91k words). On nuclear weapons and avoiding nuclear war. Book of the same title.
 
