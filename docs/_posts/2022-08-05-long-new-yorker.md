@@ -106,6 +106,6 @@ Some long **fiction**:
 * [The Trick of It](https://www.newyorker.com/magazine/1989/08/14/the-trick-of-it) by Michael Frayn (1989, 29k words, book of the same title);
 * [Nonie](https://www.newyorker.com/magazine/1984/03/05/nonie) by Harold Brodkey (1984, 33k words, book: "The Runaway Soul");
 * [The Unbearable Lightness of Being](https://www.newyorker.com/magazine/1984/03/19/the-unbearable-lightness-of-being) by Milan Kundera (1984, 34k words, excerpt from the book of the same title);
-* [The Laughter of Akiva](https://www.newyorker.com/magazine/1980/11/10/the-laughter-of-akiva) by Cynthia Ozick (1980, 32k words, reworked as "The Cannibal Galaxy").
-* [So Long, See You Tomorrow](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 37k words, book of the same title)
-* [The Ghost Writer](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title)
+* [The Laughter of Akiva](https://www.newyorker.com/magazine/1980/11/10/the-laughter-of-akiva) by Cynthia Ozick (1980, 32k words, reworked as "The Cannibal Galaxy");
+* [So Long, See You Tomorrow](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 37k words, book of the same title);
+* [The Ghost Writer](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title).
