@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Longest New Yorker articles, 1980–present"
+title:  "Longest New Yorker articles, 1979–present"
 date:   2022-08-05
 categories: lists
 permalink: /blog/long-new-yorker.html
@@ -8,7 +8,7 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When did the magazine last run an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1980, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
+*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1979, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
 
 
 ## David Remnick editorship (1998–)
@@ -107,4 +107,5 @@ Some long **fiction**:
 * [Nonie](https://www.newyorker.com/magazine/1984/03/05/nonie) by Harold Brodkey (1984, 33k words, book: "The Runaway Soul");
 * [The Unbearable Lightness of Being](https://www.newyorker.com/magazine/1984/03/19/the-unbearable-lightness-of-being) by Milan Kundera (1984, 34k words, excerpt from the book of the same title);
 * [The Laughter of Akiva](https://www.newyorker.com/magazine/1980/11/10/the-laughter-of-akiva) by Cynthia Ozick (1980, 32k words, reworked as "The Cannibal Galaxy").
-
+* [So Long, See You Tomorrow](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 37k words, book of the same title)
+* [The Ghost Writer](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title)
