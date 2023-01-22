@@ -108,7 +108,7 @@ Some *New Yorker* **"classics"** not long enough to make the list:
 
 I didn't count John McPhee's **"Annals of the Former World"** series on the geology of the United States: [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, 45k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). (Four individual books of the same titles, then collected together as "Annals of the Former World".)
 
-I didn't count Ved Mehta's immense autobiographical series, known, in it's book form, as **"Continents of Exile"** (1972–93, 13 articles, 23 parts, roughly 425k words, books: "Daddyji," "Mamaji," "Vedi," "The Ledge Between the Streams," "Sound-Shadows of the New World," "The Stolen Light," "Up at Oxford").
+I didn't count Ved Mehta's immense autobiographical series, known, in its book form, as **"Continents of Exile"** (1972–93, 13 articles, 23 parts, roughly 425k words, books: "Daddyji," "Mamaji," "Vedi," "The Ledge Between the Streams," "Sound-Shadows of the New World," "The Stolen Light," "Up at Oxford").
 
 Some long **fiction**:
 * [The Love of a Good Woman](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 22k words, collected in the book of the same title);
