@@ -80,9 +80,11 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[A Prison and a Prisoner](https://www.newyorker.com/magazine/1977/10/24/a-prison-and-a-prisoner-i-maximum-security) by Susan Sheehan** (1977, three parts, 85k words). On a prisoner and the New York state prison system. Book of the same title.
 
-**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 79k words). On the Yukon region of Alaska. Part of the book of the same title.
+<!--**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 79k words). On the Yukon region of Alaska. Part of the book of the same title.-->
 
 **[Mahatma Gandhi and His Apostles](https://www.newyorker.com/magazine/1976/05/10/mahatma-gandhi-and-his-apostles-i-subtler-and-more-lasting-shapes) by Ved Mehta** (1976, three parts, 90k words). On the Indian leader and those who followed him. Book of the same title.
+
+**[The Time of Illusion](https://www.newyorker.com/magazine/1975/06/02/the-time-of-illusion) by Jonathan Schell** (1975, six parts, 125k words). Reflections on the Nixon years. Book of the same title.
 
 
 ## Bonus: Some articles I didn't count
