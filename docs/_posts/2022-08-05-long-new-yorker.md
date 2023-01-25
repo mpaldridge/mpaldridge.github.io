@@ -86,6 +86,8 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[The Time of Illusion](https://www.newyorker.com/magazine/1975/06/02/the-time-of-illusion) by Jonathan Schell** (1975, six parts, 125k words). Reflections on the Nixon years. Book of the same title.
 
+**[The Power Broker](https://www.newyorker.com/magazine/1974/08/12/the-power-broker-iii-how-things-get-done) by Robert A. Caro** (1974, four parts, 80k words). On the New York urban planner Robert Moses. [Book of the same title.](https://en.wikipedia.org/wiki/The_Power_Broker)
+
 
 ## Bonus: Some articles I didn't count
 
@@ -122,3 +124,4 @@ Some long **fiction**:
 * [So Long, See You Tomorrow](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 37k words, book of the same title);
 * [The Ghost Writer](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title);
 * [Largely an Oral History of My Mother](https://www.newyorker.com/magazine/1976/04/26/largely-an-oral-history-of-my-mother) by Harold Brodkey (1976, 34k words, collected in "Stories in an Almost Classical Mode").
+* [Long Distance](https://www.newyorker.com/magazine/1974/04/15/long-distance-2) by Penelope Mortimer (1974, two parts, 51k words, book of the same title).
