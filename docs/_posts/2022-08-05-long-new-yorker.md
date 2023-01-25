@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Longest New Yorker articles, 1975–present"
+title:  "Longest New Yorker articles, 1974–present"
 date:   2022-08-05
 categories: lists
 permalink: /blog/long-new-yorker.html
@@ -8,7 +8,7 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When did the magazine last run an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1975, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any articles, but I've surely failed. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
+*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1974, because that's the point when I got bored. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any articles, but I've surely failed. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
 
 
 ## David Remnick editorship (1998–)
@@ -62,7 +62,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 **[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On U.S. Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
 
 
-## William Shawn editorship from 1975 (1975–87)
+## William Shawn editorship from 1974 (1974–87)
 
 **[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
 
@@ -80,13 +80,13 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[A Prison and a Prisoner](https://www.newyorker.com/magazine/1977/10/24/a-prison-and-a-prisoner-i-maximum-security) by Susan Sheehan** (1977, three parts, 85k words). On a prisoner and the New York state prison system. Book of the same title.
 
-<!--**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 79k words). On the Yukon region of Alaska. Part of the book of the same title.-->
+**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 78k words). On the Yukon region of Alaska. Part of the book of the same title.
 
 **[Mahatma Gandhi and His Apostles](https://www.newyorker.com/magazine/1976/05/10/mahatma-gandhi-and-his-apostles-i-subtler-and-more-lasting-shapes) by Ved Mehta** (1976, three parts, 90k words). On the Indian leader and those who followed him. Book of the same title.
 
 **[The Time of Illusion](https://www.newyorker.com/magazine/1975/06/02/the-time-of-illusion) by Jonathan Schell** (1975, six parts, 125k words). Reflections on the Nixon years. Book of the same title.
 
-**[The Power Broker](https://www.newyorker.com/magazine/1974/08/12/the-power-broker-iii-how-things-get-done) by Robert A. Caro** (1974, four parts, 80k words). On the New York urban planner Robert Moses. [Book of the same title.](https://en.wikipedia.org/wiki/The_Power_Broker)
+**[The Power Broker](https://www.newyorker.com/magazine/1974/08/12/the-power-broker-iii-how-things-get-done) by Robert A. Caro** (1974, four parts, 79k words). On the New York urban planner Robert Moses. [Book of the same title.](https://en.wikipedia.org/wiki/The_Power_Broker)
 
 
 ## Bonus: Some articles I didn't count
@@ -108,12 +108,12 @@ Some *New Yorker* **"classics"** not long enough to make the list:
 * [Great Plains](https://www.newyorker.com/magazine/1989/02/20/i-great-plains) by Ian Frazier (1989, three parts, 62k words, book of the same title);
 * [Trouble in the Archives](https://www.newyorker.com/magazine/1983/12/05/trouble-in-the-archives-i) by Janet Malcolm (1983, two parts, 45k words, book: "In the Freud Archives");
 * [Within the Context of No Context](https://www.newyorker.com/magazine/1980/11/17/within-the-context-of-no-context) by George W. S. Trow (1980, 22k words, book of same title);
-* [The Snow Leopard](https://www.newyorker.com/magazine/1978/03/27/i-the-snow-leopard) by Peter Matthiessen (1978, two parts, 34k words, book of the same title);
-* [Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee (1977, four parts, 79k words, part of the book of the same title).
+* [The Snow Leopard](https://www.newyorker.com/magazine/1978/03/27/i-the-snow-leopard) by Peter Matthiessen (1978, two parts, 34k words, book of the same title).
+<!-- * [Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee (1977, four parts, 79k words, part of the book of the same title).-->
 
 I didn't count John McPhee's **"Annals of the Former World"** series on the geology of the United States: [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, 45k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). (Four individual books of the same titles, then collected together as "Annals of the Former World".)
 
-I didn't count Ved Mehta's immense autobiographical series, known, in its book form, as **"Continents of Exile"** (1972–93, 13 articles, 23 parts, roughly 425k words, books: "Daddyji," "Mamaji," "Vedi," "The Ledge Between the Streams," "Sound-Shadows of the New World," "The Stolen Light," "Up at Oxford").
+I didn't count Ved Mehta's immense autobiographical series, known, in its book form, as **"Continents of Exile"** (1972–93, 13 articles, 23 parts, must be nearly half a million words?, books: "Daddyji," "Mamaji," "Vedi," "The Ledge Between the Streams," "Sound-Shadows of the New World," "The Stolen Light," "Up at Oxford").
 
 Some long **fiction**:
 * [The Love of a Good Woman](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 22k words, collected in the book of the same title);
