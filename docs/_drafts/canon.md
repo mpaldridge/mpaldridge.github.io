@@ -215,6 +215,7 @@ The Smile – A Light for Attracting Attention
 
 ## 50 books
 
+**Alice's Adventures in Wonderland** by Lewis Carroll  
 ☆ **Metamorphosis** by Franz Kafka  
 ☆ **The Great Gatsby** by F Scott Fitzgerald  
 **The Sun Also Rises** aka *Fiesta* by Ernest Hemingway  
@@ -239,7 +240,6 @@ The Smile – A Light for Attracting Attention
 **The Road** by Cormac McCarthy  
 **Sum**: *Forty Tales from the Afterlives* by David Eagleman  
 **How Should a Person Be?** by Shiela Heti  
-**The Tiger’s Wife** by Téa Obreht  
 
 ☆ **Homage to Catalonia** by George Orwell  
 ☆ **The Gastronomical Me** by MFK Fisher  
