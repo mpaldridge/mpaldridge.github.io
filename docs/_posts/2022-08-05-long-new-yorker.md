@@ -31,7 +31,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 **[Eight Years](https://www.newyorker.com/magazine/2000/10/16/eight-years) by Joe Klein** (2001, 24k words). Looking back on the Clinton presidency.
 
-**[Nelson and Annabelle](https://www.newyorker.com/magazine/2000/10/02/nelson-and-annabelle) by John Updike** (2000, two parts, 27k words). An epilogue to the author's "Rabbit Angstrom" tetralogy. Excerpted from the novella ["Rabbit Remembered"](https://en.wikipedia.org/wiki/Rabbit_Remembered) collected in the book "Licks of Love".
+**["Nelson and Annabelle"](https://www.newyorker.com/magazine/2000/10/02/nelson-and-annabelle) by John Updike** (2000, two parts, 27k words). An epilogue to the author's "Rabbit Angstrom" tetralogy. Excerpted from the novella ["Rabbit Remembered"](https://en.wikipedia.org/wiki/Rabbit_Remembered) collected in the book "Licks of Love".
 
 **[Overwhelming Force](https://www.newyorker.com/magazine/2000/05/22/overwhelming-force-2) by Seymour M. Hersh** (2000, 25k words). On an alleged U.S. war crime during the Gulf War.
 
@@ -128,17 +128,20 @@ Some *New Yorker* **"classics"** not long enough to make the list:
 * [Vietnam](https://www.newyorker.com/magazine/1972/07/01/vietnam-i-fire-in-the-lake) by Frances FitzGerald (1972, five parts, 53k, book: "Fire in the Lake");
 * [Raising Kane](https://www.newyorker.com/magazine/1971/02/20/raising-kane-i) by Pauline Kael (1971, two parts, 46k, book: "The Citizen Kane Book").
 
-I didn't count John McPhee's **"Annals of the Former World"** series on the geology of the United States: [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, 45k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). (Four individual books of the same titles, then collected together as "Annals of the Former World".)
+I didn't count John McPhee's **Annals of the Former World** series on the geology of the United States: [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, 45k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). (Four individual books of the same titles, then collected together as "Annals of the Former World".)
 
 I didn't count Ved Mehta's immense autobiographical series, known, in its book form, as **"Continents of Exile"** (1972–93, 13 articles, 23 parts, must be nearly half a million words?, books: "Daddyji," "Mamaji," "Vedi," "The Ledge Between the Streams," "Sound-Shadows of the New World," "The Stolen Light," "Up at Oxford").
 
-Some long **fiction**:
-* [The Love of a Good Woman](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 22k words, collected in the book of the same title);
-* [The Trick of It](https://www.newyorker.com/magazine/1989/08/14/the-trick-of-it) by Michael Frayn (1989, 29k words, book of the same title);
-* [Nonie](https://www.newyorker.com/magazine/1984/03/05/nonie) by Harold Brodkey (1984, 33k words, book: "The Runaway Soul");
-* [The Unbearable Lightness of Being](https://www.newyorker.com/magazine/1984/03/19/the-unbearable-lightness-of-being) by Milan Kundera (1984, 34k words, excerpt from the book of the same title);
-* [The Laughter of Akiva](https://www.newyorker.com/magazine/1980/11/10/the-laughter-of-akiva) by Cynthia Ozick (1980, 32k words, reworked as "The Cannibal Galaxy");
-* [So Long, See You Tomorrow](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 37k words, book of the same title);
-* [The Ghost Writer](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title);
-* [Largely an Oral History of My Mother](https://www.newyorker.com/magazine/1976/04/26/largely-an-oral-history-of-my-mother) by Harold Brodkey (1976, 34k words, collected in "Stories in an Almost Classical Mode").
-* [Long Distance](https://www.newyorker.com/magazine/1974/04/15/long-distance-2) by Penelope Mortimer (1974, two parts, 51k words, book of the same title).
+Some long **fiction** (again, highly incomplete before 1970):
+* ["The Love of a Good Woman"](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 22k words, collected in the book of the same title);
+* ["The Trick of It"](https://www.newyorker.com/magazine/1989/08/14/the-trick-of-it) by Michael Frayn (1989, 29k words, book of the same title);
+* ["Nonie"](https://www.newyorker.com/magazine/1984/03/05/nonie) by Harold Brodkey (1984, 33k words, book: "The Runaway Soul");
+* ["The Unbearable Lightness of Being"](https://www.newyorker.com/magazine/1984/03/19/the-unbearable-lightness-of-being) by Milan Kundera (1984, 34k words, excerpt from the book of the same title);
+* ["The Laughter of Akiva"](https://www.newyorker.com/magazine/1980/11/10/the-laughter-of-akiva) by Cynthia Ozick (1980, 32k words, reworked as "The Cannibal Galaxy");
+* ["So Long, See You Tomorrow"](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 37k words, book of the same title);
+* ["The Ghost Writer"](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title);
+* ["Largely an Oral History of My Mother"](https://www.newyorker.com/magazine/1976/04/26/largely-an-oral-history-of-my-mother) by Harold Brodkey (1976, 34k words, collected in "Stories in an Almost Classical Mode");
+* ["Long Distance"](https://www.newyorker.com/magazine/1974/04/15/long-distance-2) by Penelope Mortimer (1974, two parts, 51k words, book of the same title);
+* ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 31k words, book of the same title).
+
+The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, about 1250 lines, book of the same title).
