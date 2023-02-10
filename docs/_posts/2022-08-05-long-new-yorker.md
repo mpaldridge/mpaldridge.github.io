@@ -88,7 +88,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[The Power Broker](https://www.newyorker.com/magazine/1974/08/12/the-power-broker-iii-how-things-get-done) by Robert A. Caro** (1974, four parts, 79k words). On the New York urban planner Robert Moses. Excerpt from the [book of the same title](https://en.wikipedia.org/wiki/The_Power_Broker).
 
-**The Megamachine by Lewis Mumford** (1970, four parts, 84k words) by Lewis Mumford. Essay on science and technological process. Excerpt from the book ["The Myth of the Machine: The Pentagon of Power"](https://en.wikipedia.org/wiki/The_Myth_of_the_Machine#Volume_II,_The_Pentagon_of_Power).
+**[The Megamachine](https://www.newyorker.com/magazine/1970/10/10/reflections-i-the-megamachine) by Lewis Mumford** (1970, four parts, 84k words) by Lewis Mumford. Essay on science and technological process. Excerpt from the book ["The Myth of the Machine: The Pentagon of Power"](https://en.wikipedia.org/wiki/The_Myth_of_the_Machine#Volume_II,_The_Pentagon_of_Power).
 
 ## Pre-1970
 
