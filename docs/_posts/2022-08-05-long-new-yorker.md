@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Longest New Yorker articles, 1970–present"
+title:  "Longest New Yorker articles"
 date:   2022-08-05
 categories: lists
 permalink: /blog/long-new-yorker.html
@@ -8,7 +8,7 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When did the magazine last run an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. The list goes back to 1970, because the magazine didn't have a proper table of contents before then. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any articles, but I've surely failed. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
+*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any post-1970 articles, but I've surely failed; no attempt at completeness before 1970 has been made. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
 
 
 ## David Remnick editorship (1998–)
@@ -90,6 +90,20 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **The Megamachine by Lewis Mumford** (1970, four parts, 84k words) by Lewis Mumford. Essay on science and technological process. Excerpt from the book ["The Myth of the Machine: The Pentagon of Power"](https://en.wikipedia.org/wiki/The_Myth_of_the_Machine#Volume_II,_The_Pentagon_of_Power).
 
+## Pre-1970
+
+*Before 1970,* The New Yorker *didn't have a a proper Table of Contents, which means finding long articles quickly is prohibitively difficult. I did happen to come across the following long articles, but I make absolutely no claims of completeness for this list.*
+
+**[In Cold Blood: I—The Last to See Them Alice](https://www.newyorker.com/magazine/1965/09/25/in-cold-blood-the-last-to-see-them-alive), [II—Persons Unknown](https://www.newyorker.com/magazine/1965/10/02/in-cold-blood-persons-unknown), [III—Answers](https://www.newyorker.com/magazine/1965/10/09/in-cold-blood-answers-iii), and [IV—the Corner](https://www.newyorker.com/magazine/1965/10/16/in-cold-blood-the-corner)** (1965, four parts, 110k words) by Truman Capote. On the murder of a family in rural Kansas. [Book of the same title.](https://en.wikipedia.org/wiki/In_Cold_Blood)
+
+**[Eichmann in Jerusalem—I](https://www.newyorker.com/magazine/1963/02/16/eichmann-in-jerusalem-i), [II](https://www.newyorker.com/magazine/a-reporter-at-large/02/23/eichmann-in-jerusalem-ii), [III](https://www.newyorker.com/magazine/1963/03/02/iii-eichmann-in-jerusalem), [IV](https://www.newyorker.com/magazine/1963/03/09/eichmann-in-jerusalem-iv), and [V](https://www.newyorker.com/magazine/1963/03/16/eichmann-in-jerusalem-v)** (1963, five parts, 86k words) by Hannah Arendt. On the trial, in Israel, of the Nazi Adolf Eichmann. [Book of the same title.](https://en.wikipedia.org/wiki/Eichmann_in_Jerusalem)
+
+**[The Super-American State](https://www.newyorker.com/magazine/1961/03/11/the-super-american-state-wheeling-and-dealing)** (1961, seven parts, 98k words) by John Bainbridge. On Texas. Book: "The Super-Americans".
+
+**[Conversation with Max](https://www.newyorker.com/magazine/1960/02/06/conversation-with-max-compare-me)** (1960, seven parts, 97k words) by S. N. Behrman. Profile of the writer Max Beerbohm. Book of the same title.
+
+**[No. 1512](https://www.newyorker.com/magazine/1952/05/24/no-1512)**  (1952, five parts, 76k words) by Lillian Ross. On the making of the film "The Red Badge of Courage". Book: "Picture".
+
 
 ## Bonus: Some articles I didn't count
 
@@ -112,7 +126,7 @@ Some *New Yorker* **"classics"** not long enough to make the list:
 * [Within the Context of No Context](https://www.newyorker.com/magazine/1980/11/17/within-the-context-of-no-context) by George W. S. Trow (1980, 22k words, book of same title);
 * [The Snow Leopard](https://www.newyorker.com/magazine/1978/03/27/i-the-snow-leopard) by Peter Matthiessen (1978, two parts, 34k words, book of the same title);
 * [Vietnam](https://www.newyorker.com/magazine/1972/07/01/vietnam-i-fire-in-the-lake) by Frances FitzGerald (1972, five parts, 53k, book: "Fire in the Lake");
-* [Raising Kane I](https://www.newyorker.com/magazine/1971/02/20/raising-kane-i) and [II](https://www.newyorker.com/magazine/1971/02/27/raising-kane-ii) by Pauline Kael (1971, two parts, 46k, book: "The Citizen Kane Book").
+* [Raising Kane](https://www.newyorker.com/magazine/1971/02/20/raising-kane-i) by Pauline Kael (1971, two parts, 46k, book: "The Citizen Kane Book").
 
 I didn't count John McPhee's **"Annals of the Former World"** series on the geology of the United States: [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, 45k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). (Four individual books of the same titles, then collected together as "Annals of the Former World".)
 
