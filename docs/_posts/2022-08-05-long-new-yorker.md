@@ -126,7 +126,11 @@ Some *New Yorker* **"classics"** not long enough to make the list:
 * [Within the Context of No Context](https://www.newyorker.com/magazine/1980/11/17/within-the-context-of-no-context) by George W. S. Trow (1980, 22k words, book of same title);
 * [The Snow Leopard](https://www.newyorker.com/magazine/1978/03/27/i-the-snow-leopard) by Peter Matthiessen (1978, two parts, 34k words, book of the same title);
 * [Vietnam](https://www.newyorker.com/magazine/1972/07/01/vietnam-i-fire-in-the-lake) by Frances FitzGerald (1972, five parts, 53k, book: "Fire in the Lake");
-* [Raising Kane](https://www.newyorker.com/magazine/1971/02/20/raising-kane-i) by Pauline Kael (1971, two parts, 46k, book: "The Citizen Kane Book").
+* [Raising Kane](https://www.newyorker.com/magazine/1971/02/20/raising-kane-i) by Pauline Kael (1971, two parts, 46k, book: "The Citizen Kane Book");
+* [Joe Gould’s Secret—I](https://www.newyorker.com/magazine/1964/09/19/i-joe-goulds-secret) and [II](https://www.newyorker.com/magazine/1964/09/26/joe-goulds-secret-ii) by Joseph Mitchell (1964, two parts, 39k words, book of the same title);
+* [Silent Spring—I](https://www.newyorker.com/magazine/1962/06/16/silent-spring-part-1), [II](https://www.newyorker.com/magazine/1962/06/23/silent-spring-part-2), and [III](https://www.newyorker.com/magazine/1962/06/30/silent-spring-part-3) by Rachel Carson (1962, three parts, 52k words, book of the same title);
+* [Letter from a Region in My Mind](https://www.newyorker.com/magazine/1962/11/17/letter-from-a-region-in-my-mind) by James Baldwin (1962, 22k words, book: “The Fire Next Time”);
+* [Hiroshima](https://www.newyorker.com/magazine/1946/08/31/hiroshima) by John Hersey (1946, 30k words, book of the same title).
 
 I didn't count John McPhee's **Annals of the Former World** series on the geology of the United States: [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, 45k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). (Four individual books of the same titles, then collected together as "Annals of the Former World".)
 
@@ -142,6 +146,7 @@ Some long **fiction** (again, highly incomplete before 1970):
 * ["The Ghost Writer"](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title);
 * ["Largely an Oral History of My Mother"](https://www.newyorker.com/magazine/1976/04/26/largely-an-oral-history-of-my-mother) by Harold Brodkey (1976, 34k words, collected in "Stories in an Almost Classical Mode");
 * ["Long Distance"](https://www.newyorker.com/magazine/1974/04/15/long-distance-2) by Penelope Mortimer (1974, two parts, 51k words, book of the same title);
+* ["The Luzhin Defense](https://www.newyorker.com/magazine/1964/05/09/the-luzhin-defense-part-i) by Vladimir Nabokov (1965, two parts, 55k words, book of the same title);
 * ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 31k words, book of the same title).
 
 The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, about 1250 lines, book of the same title).
