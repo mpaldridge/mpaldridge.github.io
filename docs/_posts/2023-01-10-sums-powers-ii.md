@@ -7,9 +7,9 @@ permalink: /blog/sums-powers-2.html
 use_math: true
 ---
 
-*Previously: [Sums of powers I: with and without replacement](/sums-powers-1.html)*
+*Previously: [Sums of powers I: with and without replacement](sums-powers-1.html)*
 
-[Last year I wrote about](/sums-powers-1.html) formulas for the sum of powers
+[Last year I wrote about](sums-powers-1.html) formulas for the sum of powers
 
 $$ \sum_{x = 1}^n x^k = 1^k + 2^k + \cdots + n^k . $$
 
