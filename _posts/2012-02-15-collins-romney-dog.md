@@ -123,7 +123,7 @@ But since we haven’t gotten that sort of input, I kind of feel free to bring i
 
 **54:** Really, if you want to make voters irritated, better to go back to the dog on the car roof. Nobody likes thinking about that dog. ([Who Doesn't Love a List](http://www.nytimes.com/2012/03/24/opinion/collins-who-doesnt-love-a-list.html), 23/3/12)
 
-**53:** If Romney couldn’t even take a clear stand on Rush Limbaugh’s Slutgate, why would he say anything that forthright unless it was a total error? This is why we can’t get **the dog-on-the-car-roof** story straightened out. ([The Bad News is Good News](http://www.nytimes.com/2012/03/10/opinion/collins-the-bad-news-is-good-news.html), 9/3/12)
+**53:** If Romney couldn’t even take a clear stand on Rush Limbaugh’s Slutgate, why would he say anything that forthright unless it was a total error? This is why we can’t get the dog-on-the-car-roof story straightened out. ([The Bad News is Good News](http://www.nytimes.com/2012/03/10/opinion/collins-the-bad-news-is-good-news.html), 9/3/12)
 
 **52:** I don’t know if I’ve ever mentioned this, but Mitt Romney once drove to Canada with the family Irish setter on the roof of the car. Seamus, the dog-on-the-roof, has become a kind of political icon. [...] The story took place in 1983, when the Romney family made a 12-hour pilgrimage from Boston to a vacation home in Canada. Romney, his wife, Ann, and their five sons were in the station wagon. Seamus was in a crate, or kennel, on the roof.
 At some point — possibly in response to the excitement about being passed by tractor-trailers while floating like a furry maraschino cherry on top of the car, Seamus developed diarrhea. And Romney, who had designated all the acceptable rest stops before beginning the trip, was forced to make an unscheduled trip to a gas station. Where he kept the family in the car while he hosed down the station wagon and the dog, then returned to the highway. [...] Elect Mitt Romney and he will take the nation on the road to the future. Some of us will be stuck on the roof. [...] I’ve made a kind of game of trying to mention Seamus every time I write about Mitt Romney. [...]
@@ -311,7 +311,7 @@ family dog strapped to the roof of the car.
 **17:** Match Republican presidential hopefuls with their 2010 achievements.
 [...]  
 5. Mitt Romney [...]  
-C) Continued to fail to explain why he  
+C) Continued to fail to explain why he 
 drove to Canada with the family dog strapped to the roof of the car.
 [...]  
 (The End-of-the-Year Quiz, 31/12/10)
