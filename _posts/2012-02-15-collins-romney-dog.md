@@ -75,7 +75,7 @@ What follows is a list of every time that Collins has mentioned the Romney/dog s
 **71:** 1. Shortly before the Republican convention opened, a new book quoted Mitt Romney as comparing the Tea Party to: [...]  
 B) A dog on a car roof.  
 [...]  
-4.\ Besides the usual assortment of mayors, governors, beleaguered workers, successful immigrants and former Republicans, the Democratic convention also featured a speech by a:  
+4. Besides the usual assortment of mayors, governors, beleaguered workers, successful immigrants and former Republicans, the Democratic convention also featured a speech by a:  
 A) Dog who claimed to be a descendant of Romney’s beleaguered Irish setter. [...]  
 ([Convention Pop Quiz](http://www.nytimes.com/2012/09/08/opinion/collins-convention-pop-quiz.html), 7/9/12)
 
