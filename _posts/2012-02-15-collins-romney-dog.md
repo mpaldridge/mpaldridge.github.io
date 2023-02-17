@@ -27,17 +27,17 @@ In case you don't know the story, Collins lays out the details in her first ment
 > the setter's incontinence came running down the back windshield,
 > Romney abandoned his itinerary and drove to the closest gas station,
 > where he got a hose and sprayed both dog and station wagon clean.  
-> (Haunted by Seamus, 4/8/07)
+> ([Haunted by Seamus](https://www.nytimes.com/2007/08/04/opinion/04collins.html), 4/8/07)
 
 As she later explained,
 
 > I’ve made a kind of game of trying to mention Seamus every time I write about Mitt Romney. This is because the Republican primary campaign has been an extremely long and depressing slog, and we need all the diversion we can get.  
 > ([Dogging Mitt Romney](http://www.nytimes.com/2012/03/08/opinion/collins-dogging-mitt-romney.html), 7/3/12)
 
-In 2022 -- 15 years after she first mentioned the story, and 10 years after I started this list -- various *Times* writers were invited to consider their biggest mistakes. Collins's answer, worryingly, suggests an awareness of this very list:
+In 2022 -- 15 years after she first mentioned the story, and 10 years after I started this list -- various *Times* writers were invited to consider something they had been wrong about. Collins's answer, worryingly, suggests an awareness of this very list:
 
 > When Romney was running for president, I tried to see how many times I could find a way to mention that the candidate once drove to Canada with a dog named Seamus strapped to the roof of his car. The result was sort of epic. People wound up counting and I used the story more than 80 times. Which was … kind of a lot.  
-> (I Was Wrong About Mitt Romney (and His Dog), 21/7/22)
+> ([I Was Wrong About Mitt Romney (and His Dog)](https://www.nytimes.com/2022/07/21/opinion/gail-collins-mitt-romney.html), 21/7/22)
 
 What follows is a list of every time I can find that Collins has mentioned the Romney/dog story.
 
