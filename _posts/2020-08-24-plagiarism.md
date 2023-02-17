@@ -12,7 +12,7 @@ The other day, I was reading a draft of one of my students' MSc dissertations, t
 
 It's not that it's *unclear*, exactly -- but it doesn't really sound like a human being talking, somehow. Perhaps the student's written English wasn't that great, but I also wondered if they might have plagiarised it from somewhere. A Google search for the whole section didn't bring up any hits, so instead I Googled smaller segments to see if I got anything. I started with the odd phrase "general wellbeing authorities" -- but [that gets 3000 hits on Google](https://google.com/search?q=%22general+wellbeing+authorities%22), which is no good for tracking down any copying.
 
-But looking further at those Google hits, there seemed to be a lot of news sites I've never heard of and skeevy-looking journals. And checking further still, they all seem to be written in the same uncanny-valley English as my students work. For example, the first Google link is [a news story from the site "25 Hour News"](https://25hournews.com/news/coronavirus-trump-sticks-by-discredited-hydroxychloroquine-2819) that starts like this:
+But looking further at those Google hits, there seemed to be a lot of news sites I've never heard of and skeevy-looking journals. And checking further still, they all seem to be written in the same uncanny-valley English as my student's work. For example, the first Google link is [a news story from the site "25 Hour News"](https://25hournews.com/news/coronavirus-trump-sticks-by-discredited-hydroxychloroquine-2819) that starts like this:
 
 > **Coronavirus: Trump Sticks By Discredited Hydroxychloroquine**
 >
@@ -28,7 +28,7 @@ So it turns out that my student's paragraph...
 
 > The basic idea of pooled testing is that it allows public health officials to test small groups – called pools – of people using only one test. This means you can test more people faster, using fewer tests and for less money.
 
-We can see where the substitutions have been made: "basic idea" becomes "fundamental thought", "groups" becomes "gatherings", "money" becomes "cash" -- and my student's weird phrase "general wellbeing authorities" was originally "public health officials". It's not like any of these new phrases are *wrong*, exactly, but each of them is just a bit *off*, and putting enough of them together results in a sort of almost-gibberish.
+We can see where the substitutions have been made: "basic idea" becomes "fundamental thought", "allows" becomes "permits", "groups" becomes "gatherings", "money" becomes "cash" -- and my student's weird phrase "general wellbeing authorities" was originally "public health officials". It's not like any of these new phrases are *wrong*, exactly, but each of them is just a bit *off*, and putting enough of them together results in a sort of almost-gibberish.
 
 Because the substitution is (mostly) on a word-by-word basis, it doesn't take into account the context, so sometimes we end up seeing a synonym for the wrong sense of a word, which ends up being genuinely nonsensical. For example, the Conversation article's sentence...
 
@@ -73,7 +73,9 @@ Scammy automated news website for advertising clicks is one thing -- but I'm sur
 
 (And if you’re writing an article about food safety, you probably shouldn’t start referring to it as “sustenance wellbeing” instead halfway through.)
 
-Anyway, in conclusion: Anyone who‘s ever used the phrase “general wellbeing authorities” is a plagiarist*, and not a very good one.
+I later learned that "general wellbeing authorities" is an example of what is known as a "tortured phrase". A tortured phrase is the result of performing thesaurus-substitution to a commonly used piece of technical jargon that, because of substituting word-at-a-time without context, leaves something nonsensical that no human would ever write. [This *Nature* article](https://www.nature.com/articles/d41586-021-02134-0) gives a short overview of some research that works on spotting thesaurus-plagiarised articles by finding common tortured phrases in them. The article also gives some excellent examples, like "irregular esteem" (from "random value") and "profound neural organisation" (from "deep neural network").
+
+Anyway, in conclusion: Anyone who‘s ever used the phrase “general wellbeing authorities” is a plagiarist*, and not a very good one. 
 
 (*except me, here)
 
