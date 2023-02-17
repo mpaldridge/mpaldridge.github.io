@@ -34,7 +34,7 @@ As she later explained,
 > I’ve made a kind of game of trying to mention Seamus every time I write about Mitt Romney. This is because the Republican primary campaign has been an extremely long and depressing slog, and we need all the diversion we can get.  
 > ([Dogging Mitt Romney](http://www.nytimes.com/2012/03/08/opinion/collins-dogging-mitt-romney.html), 7/3/12)
 
-In 2022 -- 15 years after she first mentioned the story, and 10 years after I started this list -- various *Times* writers were invited to consider something they had been wrong about. Collins's answer, worryingly, suggests an awareness of this very list:
+In 2022 -- 15 years after she first mentioned the story, and 10 years after I started keeping track -- various *Times* writers were invited to consider something they had been wrong about. Collins's answer, worryingly, suggests an awareness of this very list:
 
 > When Romney was running for president, I tried to see how many times I could find a way to mention that the candidate once drove to Canada with a dog named Seamus strapped to the roof of his car. The result was sort of epic. People wound up counting and I used the story more than 80 times. Which was … kind of a lot.  
 > ([I Was Wrong About Mitt Romney (and His Dog)](https://www.nytimes.com/2022/07/21/opinion/gail-collins-mitt-romney.html), 21/7/22)
