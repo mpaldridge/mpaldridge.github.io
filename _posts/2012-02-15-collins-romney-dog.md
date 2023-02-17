@@ -8,7 +8,7 @@ permalink: /blog/collins-romney-dog.html
 
 *Last updated: 1 May 2016*
 
-**Mitt Romney** is the a former Governor of Massachusetts, a former Presidential candidate for the Republican party, and is a US senator for Utah.
+**Mitt Romney** is a former Governor of Massachusetts, a former Presidential candidate for the Republican party, and a current US senator for Utah.
 
 **Gail Collins** is a journalist who writes an op-ed column for the _New York Times_.
 
@@ -43,7 +43,7 @@ What follows is a list of every time I can findthat Collins has mentioned the Ro
 
 *(Have I missed any Collins/Romney/dog mentions?  Contact me on Twitter: I'm [@mpaldridge](https://twitter.com/mpaldridge).  Also, for the avoidance of doubt, I think it's a funny bit, and this list is made from admiration, not criticism.  Some dates might be off by one day, as print/web publication dates are different. Dates are in UK format, sorry.)*
 
-**Current Tally:** 86 (76 op-ed columns, 10 blog "conversations" with other writers)  
+**Current Tally:** 86 (76 op-ed columns, 10 "conversations" with other writers)  
 **Last updated:** April 2017 (Thanks, Bober!)
 
 *Bret:* Gail, you know how you now regret giving Mitt Romney (and his dog Seamus) such a hard time, considering what the party came up with next? I bet Haley is the one Republican you’d more or less be all right with as president.  
@@ -92,7 +92,7 @@ Romney has to do better. Otherwise, we’ll go back to discussing the time he dr
 
 The only time anybody in the White House ever quoted me in public was when I was writing about Mitt Romney’s dog. (The Polar Bear in the Room, conversation with Bret Stephens, 6/6/17)
 
-**86:** I used to think I’d be happy with anyone who didn’t drive to Canada with the family dog strapped to the roof. ([Have These Been the Best Two Weeks of Trump’s First 100 Days?](https://www.nytimes.com/2017/04/18/opinion/have-these-been-the-best-two-weeks-of-trumps-first-100-days.html), blog conversation with Matt Labash, 18/4/17)
+**86:** I used to think I’d be happy with anyone who didn’t drive to Canada with the family dog strapped to the roof. ([Have These Been the Best Two Weeks of Trump’s First 100 Days?](https://www.nytimes.com/2017/04/18/opinion/have-these-been-the-best-two-weeks-of-trumps-first-100-days.html), conversation with Matt Labash, 18/4/17)
 
 **85:** And, of course, [Mitt Romney is] the guy who once drove to Canada with the family Irish setter strapped to the roof of the car. The worst part was his excuse — not “too many kids in the back seat” but “my dog loves fresh air.” Somewhere, the spirit of Seamus is laughing. ([For Mitt Romney, Dinner and a Kiss-Off](https://www.nytimes.com/2016/12/15/opinion/for-mitt-romney-dinner-and-a-kiss-off.html), 15/12/16)
 
@@ -114,15 +114,15 @@ D) Keep the family dog tied to the car roof.
 
 **81:** Mitt Romney is back. Don’t leap to any conclusions. After all, there are a lot of different ways to be back. You can be back as in “back running for president.” Or just back as in “back in the public eye.” Or back driving to Canada with a dog strapped to the car roof. ([Mitt! Again! What?](http://www.nytimes.com/2014/06/19/opinion/gail-collins-romney-and-the-2016-contenders-huddle.html), 18/6/14)
 
-**80:** You’ve completely ignored Hillary, who I remember talking with great enthusiasm about her dog. His name was – or I guess still is – Seamus, the same as the Romneys’ Irish setter who got carted to Canada on the roof of the car. ([Pet Theories](http://opinionator.blogs.nytimes.com/2014/01/08/pet-theories/), blog conversation with David Brooks, 8/1/14)
+**80:** You’ve completely ignored Hillary, who I remember talking with great enthusiasm about her dog. His name was – or I guess still is – Seamus, the same as the Romneys’ Irish setter who got carted to Canada on the roof of the car. ([Pet Theories](http://opinionator.blogs.nytimes.com/2014/01/08/pet-theories/), conversation with David Brooks, 8/1/14)
 
-Don't you miss that election? Back then, we had Mitt Romney's dog on the car roof. (Missing The Bad Old Days, 9/11/2013)
+Don't you miss that election? Back then, we had Mitt Romney's dog on the car roof. (Missing The Bad Old Days, 9/11/13)
 
 Let's try to come up with some positive thoughts about the recent political fortunes of the Obama White House:  
 Nobody in the administration has been caught driving to Canada with Bo the dog strapped to the car roof.  
-(On the Plus Side..., 16/5/2013)
+(On the Plus Side..., 16/5/13)
 
-I miss the presidential election and making fun of Mitt Romney's dog. (ASequester for Dummies, 23/2/13)
+I miss the presidential election and making fun of Mitt Romney's dog. (Sequester for Dummies, 23/2/13)
 
 **79:** Supporters hope that the discovery will lead to a reconsideration of Romney’s entire life  [...] They plan to open a theme park that will focus on the positive side of the man known to history only as a politician who once attempted to drive to Canada with his dog strapped to the roof of his car. ([My Kingdom for a Corpse](http://www.nytimes.com/2013/02/07/opinion/collins-my-kingdom-for-a-corpse.html), 6/2/13)
 
@@ -169,13 +169,13 @@ C) keeping dogs off the car roof.” [...]
 **64:** You may remember the cringe-inducing moment in 2007 when [Mitt Romney] started bragging about his prowess as an outdoorsman. [...] Inquiring minds checked the hunting licenses in all the places that Mitt had at some point called home and determined that he’d never applied for one. “I’ve always been a rodent and rabbit hunter,” he amended. “Small varmints, if you will.” [...] But until he dropped out of the race, varmint hunting was the dog on the roof of Romney’s 2008 campaign.  ([Running on Empty](http://www.nytimes.com/2012/06/16/opinion/collins-running-on-empty.html), 15/6/12)
 
 **63:** _David Brooks:_ Gail, people are always asking me who is going to win the election. [...]  
-_Gail Collins:_ Wow, almost nobody asks me who’s going to win. Mostly people just want to talk about the dog on the roof of Romney’s car. ([The Presidential Cage Match](http://opinionator.blogs.nytimes.com/2012/05/30/the-presidential-cage-match/), blog conversation with David Brooks, 30/5/12)
+_Gail Collins:_ Wow, almost nobody asks me who’s going to win. Mostly people just want to talk about the dog on the roof of Romney’s car. ([The Presidential Cage Match](http://opinionator.blogs.nytimes.com/2012/05/30/the-presidential-cage-match/), conversation with David Brooks, 30/5/12)
 
 **62:** I kind of like the logjam. I am seeing Mitt, in lumberjack garb, in the middle of a river full of downed trees and the occasional committee chairman. Perhaps the Romney boys are along, singing family songs. Maybe the dog is strapped to a fallen sycamore.   ([Deciphering Mitt-Speak on Schools](http://www.nytimes.com/2012/05/26/opinion/collins-deciphering-mitt-speak-on-schools.html), 25/5/12)
 
 **61:** Our subject for today is: Presidential nominating conventions — why are they still around? Other possible subjects were: [...] The new sensation of dancing dogs on TV talent shows and how many of them do you think were ever made to ride on the roof of a car?   ([It's Their Party](http://www.nytimes.com/2012/05/19/opinion/collins-its-their-party.html), 16/5/12)
 
-**60:** [Mitt Romney] is a guy who is not capable of taking responsibility for his past actions. I’m not just talking about the fact that he can’t bring himself to say it wasn’t a good idea to drive to Canada with the family dog on the roof of his car. ([Playing Left, Right — or Center](http://opinionator.blogs.nytimes.com/2012/05/16/playing-left-right-or-center/), blog conversation with David Brooks, 16/5/12)
+**60:** [Mitt Romney] is a guy who is not capable of taking responsibility for his past actions. I’m not just talking about the fact that he can’t bring himself to say it wasn’t a good idea to drive to Canada with the family dog on the roof of his car. ([Playing Left, Right — or Center](http://opinionator.blogs.nytimes.com/2012/05/16/playing-left-right-or-center/), conversation with David Brooks, 16/5/12)
 
 **59:** Perhaps you may remember that Romney once drove to Canada with the family Irish setter stuck in a cage on the station wagon roof. When he was originally asked about it, he claimed the dog “loves fresh air.”
 This was more than four years ago. What would have happened if Romney had just said: “Boy, in retrospect that really does sound like a bad idea. But you have to remember that we had five boys under the age of 14. It was like living in a vortex; we did all kinds of stupid stuff.”
@@ -201,7 +201,7 @@ This is a real person. A person who once drove to Canada with the family dog tie
 
 **51:** _David Brooks:_ I feel for Mitt Romney. Think of it. There he was a few years ago sitting on the front porch of his fourth summer home innocently wondering why the trees of New England are so unpleasantly tall, and he turns to his buddies, who own Nascar teams, hotel chains, political parties and various small emirates, and he asks them if it would be a good idea if he ran for president.
 They point out that a presidential campaign would allow him to recite obscure verses of patriotic songs all across America, so he agrees to do it.  
-_Gail Collins:_ All the while knowing that he would eventually have to explain why he once drove to Canada with the family dog strapped to the roof of the car... ([Super Pac! Super Bad!](http://opinionator.blogs.nytimes.com/2012/03/03/super-pac-super-bad/) 3/3/12, blog conversation with David Brooks)
+_Gail Collins:_ All the while knowing that he would eventually have to explain why he once drove to Canada with the family dog strapped to the roof of the car... ([Super Pac! Super Bad!](http://opinionator.blogs.nytimes.com/2012/03/03/super-pac-super-bad/) 3/3/12, conversation with David Brooks)
 
 **50:** Romney has already ruled out the payroll tax cap. Also, he once drove to Canada with his dog tied to the roof of the car. End of story.  ([A Big Day's Coming](http://www.nytimes.com/2012/03/01/opinion/collins-a-big-days-coming.html), 29/2/12)
 
@@ -279,7 +279,7 @@ was too cheap to hire a dog-sitter. Maybe.
 **35:** _David Brooks:_ That gives us a chance to talk about Romney and his
 weaknesses, which are glaring.  
 _Gail Collins:_ Dog on the roof of the car. Dog on the roof of the car.
-(The Not-Romneys, 30/11/11, blog conversation with David Brooks)
+(The Not-Romneys, 30/11/11, conversation with David Brooks)
 
 **34:** I guess now there’s no chance anybody will ask Romney about the day he
 drove to Canada with the family dog strapped to the roof of the car.
@@ -331,7 +331,7 @@ into this story?
 (The Curse of the Mitt, 30/9/11)
 
 **26:** I was wondering where I could fit in the dog on the roof.
-(Is This Man the G.O.P.’s Best Bet for 2012?, 28/9/11, blog conversation with David Brooks)
+(Is This Man the G.O.P.’s Best Bet for 2012?, 28/9/11, conversation with David Brooks)
 
 **25:** I don’t want to believe I live in a country that would seriously
 consider bestowing the nation’s highest office on a man who once drove
@@ -358,7 +358,7 @@ pioneered the Obama health care reform plan in Massachusetts and now
 denies it? That he’s ardently anti-abortion after having run for
 governor vowing endlessly to protect abortion rights? That he drove to
 Canada with the family dog strapped on the roof of his car?
-(And the G.O.P. Candidates Are …, 10/5/11, blog conversation with David Brooks)
+(And the G.O.P. Candidates Are …, 10/5/11, conversation with David Brooks)
 
 **20:** Match the Republican presidential hopefuls: [...]  
 2) Mitt Romney [...]  
@@ -429,7 +429,7 @@ Canada with the family dog strapped to the car roof.
 **10:** I have to admit there’s something about Mitt that I find really
 creepy, even when I’m not dwelling on that time he drove to Canada
 with the family dog strapped on the roof.
-(The Good, the Bad, the Ugly, 1/7/09, blog conversation with David Brooks)
+(The Good, the Bad, the Ugly, 1/7/09, conversation with David Brooks)
 
 **9:** Unlike Joe Lieberman, Palin is a member of the same party as the
 presidential candidate. And unlike Mitt Romney, she has never gone on
@@ -457,7 +457,7 @@ station-wagon roof.
 **5:** Do you miss the primaries yet? Personally, I was happiest when the
 field was crowded and, if all else failed, you could always whip up
 something about Dennis Kucinich or Mitt Romney’s dog.
-(Primary Days of Yore, 5/6/08, blog conversation with David Brooks)
+(Primary Days of Yore, 5/6/08, conversation with David Brooks)
 
 **4:** I’m going to have to get through the rest of the year without ever
 again referring to the fact that Romney once drove to Canada with the
