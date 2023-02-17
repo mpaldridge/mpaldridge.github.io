@@ -12,7 +12,7 @@ permalink: /blog/collins-romney-dog.html
 
 **Gail Collins** is a journalist who writes an op-ed column for the _New York Times_.
 
-Gail Collins likes to mention the fact that Mitt Romney once drove to Canada with the family dog strapped to the roof of the car. In fact, she has mentioned this fact over 80 times in print.
+Gail Collins likes to mention the fact that Mitt Romney once drove to Canada with the family dog strapped to the roof of the car. In fact, she has mentioned this fact over 80 times in the *Times*.
 
 In case you don't know the story, Collins lays out the details in her first mention of the Romney/dog story, back in August 2007:
 
@@ -34,26 +34,95 @@ As she later explained,
 > I’ve made a kind of game of trying to mention Seamus every time I write about Mitt Romney. This is because the Republican primary campaign has been an extremely long and depressing slog, and we need all the diversion we can get.  
 > ([Dogging Mitt Romney](http://www.nytimes.com/2012/03/08/opinion/collins-dogging-mitt-romney.html), 7/3/12)
 
+In 2022 -- 15 years after she first mentioned the story, and 10 years after I started this list -- various *Times* writers were invited to consider their biggest mistakes. Gail Collins's answer, worryingly, suggests an awareness of this very list:
+
+> When Romney was running for president, I tried to see how many times I could find a way to mention that the candidate once drove to Canada with a dog named Seamus strapped to the roof of his car. The result was sort of epic. People wound up counting and I used the story more than 80 times. Which was … kind of a lot.  
+> (I Was Wrong About Mitt Romney (and His Dog), 21/7/22)
+
 What follows is a list of every time I can findthat Collins has mentioned the Romney/dog story.  It's a lot.
 
-(Have I missed any Collins/Romney/dog mentions?  Contact me on Twitter: I'm [@mpaldridge](https://twitter.com/mpaldridge).)
+*(Have I missed any Collins/Romney/dog mentions?  Contact me on Twitter: I'm [@mpaldridge](https://twitter.com/mpaldridge).  Also, for the avoidance of doubt, I think it's a funny bit, and this list is made from admiration, not criticism.  Some dates might be off by one day, as print/web publication dates are different. Dates are in UK format, sorry.)*
 
 **Current Tally:** 86 (76 op-ed columns, 10 blog "conversations" with other writers)  
-**Last updated:** 1 May 2016 (Thanks, Bober!)
+**Last updated:** April 2017 (Thanks, Bober!)
 
-**86: NEW** I used to think I’d be happy with anyone who didn’t drive to Canada with the family dog strapped to the roof. ([Have These Been the Best Two Weeks of Trump’s First 100 Days?](https://www.nytimes.com/2017/04/18/opinion/have-these-been-the-best-two-weeks-of-trumps-first-100-days.html), blog conversation with Matt Labash, 15/4/17)
+*Bret:* Gail, you know how you now regret giving Mitt Romney (and his dog Seamus) such a hard time, considering what the party came up with next? I bet Haley is the one Republican you’d more or less be all right with as president.  
+*Gail:* Hmm. Does she have any pet-transportation stories?  
+(Politicians Everywhere All at Once, conversation with Bret Stephens, 6/2/23)
 
-**85: NEW** And, of course, [Mitt Romney is] the guy who once drove to Canada with the family Irish setter strapped to the roof of the car. The worst part was his excuse — not “too many kids in the back seat” but “my dog loves fresh air.” Somewhere, the spirit of Seamus is laughing. ([For Mitt Romney, Dinner and a Kiss-Off](https://www.nytimes.com/2016/12/15/opinion/for-mitt-romney-dinner-and-a-kiss-off.html), 15/12/16)
+I’ve already publicly apologized for my anti-Romney crusade. Although I’ve still got a plastic dog-on-the-roof-of-a-car someone sent me when I was, um, obsessing on his animal transport policy. Keeping it by my desk. (Is There Anything That Will Make the 'Former Guy' Go Away?, conversation with Bret Stephens, 3/10/22)
+
+The story about the dog on the roof came from a Boston Globe profile in which his son told a reporter about the time their pet pooped from his perch and messed up the car’s rear window. It was supposed to be an example of Romney’s sense of organization. Got that car and dog hosed down at a nearby service station. I’d probably have stopped mentioning it if Romney, when asked about the story, had said something like: "Yeah, it was back when my sons were little — nobody could possibly drive from Massachusetts to Canada with five boys and an Irish setter hopping around the back. And you know, he was in a really safe crate." But no, he just bristled and retorted, "The dog likes fresh air." (I Was Wrong About Mitt Romney (and His Dog), 21/7/22)
+
+Hey, a whole lot of us owe Mitt an apology for one thing or the other. Still sorry about making fun of you for putting your dog Seamus on the roof of your car, Senator. (Putin Is Spinning the Globe Faster and Faster, conversation with Bret Stephens, 28/2/22)
+
+Yeah, I’ve certainly gotten over that dog on the roof of [Mitt Romney's] car. (Joe Biden Is as Puzzled by the Senate as You Are, conversation with Bret Stephens, 21/6/21)
+
+But there was also a pet angle that allowed me to revisit the saga of Mitt Romney driving with a dog on the car roof. (Just When You Thought Politics Couldn’t Unravel Any Further, conversation with Bret Stephens, 22/2/21)
+
+So if you were a dog, would you rather belong to Ted Cruz or Mitt Romney? Yes, you have to choose. Perhaps you remember that many, many years ago, Romney drove to Canada for a family vacation with his Irish setter Seamus on the roof of his car. I mentioned this fact about two million times when Romney ran for president, mainly to break up the tedium of a very boring campaign. (Ted Cruz Is Going to the Dogs, 19/2/21)
+
+1. President Biden met with Republican moderates to try to negotiate a relief package. Looking around the room, he said, "I feel like ..."  
+[...]  
+C. "I finally understand how Mitt Romney's dog felt attached to the roof of that car."  
+(Pandemic Politics: Take the Quiz, 4/2/21)
+
+Romney ran for governor of Massachusetts on a pro-choice platform, then ran for president as “proud to be pro-life.” His explanation that he did not formerly understand what an embryo was is one of my favorite Mitt stories. Second only to the time he drove to Canada with the family dog strapped to the roof of the car.  Now, when Mitt voted to convict Trump I swore I’d never bring up the dog again. But a person has the right to change her mind, right? (The Republican Irritation Olympics, 23/9/20)
+
+When history looks back on Mitt Romney, this should be the moment that gets remembered. Not the uninspiring presidential race or political flip-flops. Not even the time he drove to Canada with a dog on the roof of the car. (Think Trump’s Learned a Lesson? Hahahaha, 5/2/20)
+
+7. When Mitt Romney called the Ukraine story "troubling," Trump called Romney ...  
+[...]  
+C. "A well-known dog abuser."  
+(Thanksgiving Day Quiz, 28/11/19)
+
+**N/A:** *Bret:* I’m specifically thinking of [...] (your favorite dog lover) Mitt Romney of Utah. (There Is Nothing This Man Can’t Wreck, conversation with Bret Stephens that doesn't count because only Stephens brought it up, 29/10/19)
+
+Romney is the senator from Utah, a job he could keep if he got caught torturing puppies. This was not meant to remind you of the time he drove to Canada with the family Irish setter in a crate on the station wagon’s roof. Time editor Anand Giridharadas already took care of that when he tweeted, "Mitt, it is time to strap the dog of courage onto the car of your constitutional obligations." (Trump Tanks, Republicans Dither, 2/10/19)
+
+Deeply, deeply cynical as I am about Mitt Romney, I would never argue that he wouldn’t be 10 times better a president. And while it’s true I once made fun of Romney’s dog, we have to remember that we now have the first president ever who has never had a pet in his entire life. (Is 2019 Over Yet?, conversation with Bret Stephens, 15/1/19)
+
+And thanks to voters in Utah, there will be new opportunities to discuss the fact that once, long ago, Senator-elect Mitt Romney drove to Canada on a family vacation with the dog strapped to the roof of his car. (Trump Is a Really Happy Loser, 7/11/18)
+
+*Gail:* If you mention Mitt Romney I get to bring up his dog.  
+*Bret:* Let’s just leave the dog on the car roof, shall we?  
+(Donald Trump, Live and Unfiltered!, conversation with Bret Stephens, 1/5/18)
+
+Romney has to do better. Otherwise, we’ll go back to discussing the time he drove to Canada with the family dog strapped to the car roof. (A New Mitt or the Same Old Weenie?, 25/4/18)
+
+The only time anybody in the White House ever quoted me in public was when I was writing about Mitt Romney’s dog. (The Polar Bear in the Room, conversation with Bret Stephens, 6/6/17)
+
+**86:** I used to think I’d be happy with anyone who didn’t drive to Canada with the family dog strapped to the roof. ([Have These Been the Best Two Weeks of Trump’s First 100 Days?](https://www.nytimes.com/2017/04/18/opinion/have-these-been-the-best-two-weeks-of-trumps-first-100-days.html), blog conversation with Matt Labash, 18/4/17)
+
+**85:** And, of course, [Mitt Romney is] the guy who once drove to Canada with the family Irish setter strapped to the roof of the car. The worst part was his excuse — not “too many kids in the back seat” but “my dog loves fresh air.” Somewhere, the spirit of Seamus is laughing. ([For Mitt Romney, Dinner and a Kiss-Off](https://www.nytimes.com/2016/12/15/opinion/for-mitt-romney-dinner-and-a-kiss-off.html), 15/12/16)
 
 **84:** I used to enjoy occasionally pointing out that Mitt Romney had once driven his family to Canada with Seamus the Irish setter strapped to the roof of the car. A campaign consultant told me that the Seamus story elicited stronger reactions from focus groups than any other aspect of the 2012 campaign. ([And Now, Presidential Dog Days](http://www.nytimes.com/2016/09/24/opinion/and-now-presidential-dog-days.html), 23/9/16)
+
+Pop quiz -- Hillary Clinton's next headache will be:  
+[...]  
+Revelation that during long family car trips, Clinton's dog Seamus was kept in the trunk.  
+(Happy Birthday, Hillary, 24/10/15)
 
 **83:** The future holds no chances to point out that Romney once drove to Canada with the family Irish setter strapped to the roof of the station wagon. ([Mitt Quits. Again. Probably.](http://www.nytimes.com/2015/01/31/opinion/gail-collins-mitt-quits-again-probably.html) 30/1/15)
 
 **82:** So many old friends popping up this month — Mitt Romney and now Rick Perry. The man who drove to Canada with the family dog strapped to the car roof** and the man who claims he shot a coyote while jogging. ([Texas Is Sending You a Present](http://www.nytimes.com/2015/01/17/opinion/gail-collins-texas-is-sending-you-a-present.html), 16/1/15)
 
+2) This year, a professor at the University of North Carolina published a study of Mitt Romney's 2012 presidential campaign in which he determined that by the end of the race it took 22 staffers to:  
+[...]  
+D) Keep the family dog tied to the car roof.  
+(First Pop Quiz of 2015, 1/1/2015)
+
 **81:** Mitt Romney is back. Don’t leap to any conclusions. After all, there are a lot of different ways to be back. You can be back as in “back running for president.” Or just back as in “back in the public eye.” Or back driving to Canada with a dog strapped to the car roof. ([Mitt! Again! What?](http://www.nytimes.com/2014/06/19/opinion/gail-collins-romney-and-the-2016-contenders-huddle.html), 18/6/14)
 
 **80:** You’ve completely ignored Hillary, who I remember talking with great enthusiasm about her dog. His name was – or I guess still is – Seamus, the same as the Romneys’ Irish setter who got carted to Canada on the roof of the car. ([Pet Theories](http://opinionator.blogs.nytimes.com/2014/01/08/pet-theories/), blog conversation with David Brooks, 8/1/14)
+
+Don't you miss that election? Back then, we had Mitt Romney's dog on the car roof. (Missing The Bad Old Days, 9/11/2013)
+
+Let's try to come up with some positive thoughts about the recent political fortunes of the Obama White House:  
+Nobody in the administration has been caught driving to Canada with Bo the dog strapped to the car roof.  
+(On the Plus Side..., 16/5/2013)
+
+I miss the presidential election and making fun of Mitt Romney's dog. (ASequester for Dummies, 23/2/13)
 
 **79:** Supporters hope that the discovery will lead to a reconsideration of Romney’s entire life  [...] They plan to open a theme park that will focus on the positive side of the man known to history only as a politician who once attempted to drive to Canada with his dog strapped to the roof of his car. ([My Kingdom for a Corpse](http://www.nytimes.com/2013/02/07/opinion/collins-my-kingdom-for-a-corpse.html), 6/2/13)
 
