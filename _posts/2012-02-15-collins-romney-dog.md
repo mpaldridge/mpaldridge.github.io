@@ -12,7 +12,7 @@ permalink: /blog/collins-romney-dog.html
 
 **Gail Collins** is a journalist who writes an op-ed column for the _New York Times_.
 
-Gail Collins likes to mention the fact that Mitt Romney once drove to Canada with the family dog strapped to the roof of the car. In fact, she has mentioned this fact over 100 times in the *Times*.
+Gail Collins likes to mention the fact that Mitt Romney once drove to Canada with the family dog strapped to the roof of the car. In fact, she has mentioned this story over 100 times in the *Times*.
 
 In case you don't know the story, Collins lays out the details in her first mention of the Romney/dog story, back in August 2007:
 
