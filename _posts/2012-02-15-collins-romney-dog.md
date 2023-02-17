@@ -14,7 +14,7 @@ permalink: /blog/collins-romney-dog.html
 
 Gail Collins likes to mention the fact that Mitt Romney once drove to Canada with the family dog strapped to the roof of the car. In fact, she has mentioned this story over 100 times in the *Times*.
 
-In case you don't know the story, Collins lays out the details in her first mention of the Romney/dog story, back in August 2007:
+In case you don't know the hisstory, Collins lays out the details in her first mention of the Romney/dog incident, back in August 2007:
 
 > Every time I see [Mitt Romney], all I can think about is Seamus the dog.
 > Seamus, in case you missed the story, was the Romneys' Irish setter
