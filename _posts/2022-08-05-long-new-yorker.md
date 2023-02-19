@@ -94,15 +94,15 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 *Before 1970,* The New Yorker *didn't have a a proper Table of Contents, which means finding long articles quickly is prohibitively difficult. I did happen to come across the following long articles, but I make absolutely no claims of completeness for this list.*
 
-**[In Cold Blood: I—The Last to See Them Alice](https://www.newyorker.com/magazine/1965/09/25/in-cold-blood-the-last-to-see-them-alive), [II—Persons Unknown](https://www.newyorker.com/magazine/1965/10/02/in-cold-blood-persons-unknown), [III—Answers](https://www.newyorker.com/magazine/1965/10/09/in-cold-blood-answers-iii), and [IV—the Corner](https://www.newyorker.com/magazine/1965/10/16/in-cold-blood-the-corner)** (1965, four parts, 110k words) by Truman Capote. On the murder of a family in rural Kansas. [Book of the same title.](https://en.wikipedia.org/wiki/In_Cold_Blood)
+**[In Cold Blood: I—The Last to See Them Alice](https://www.newyorker.com/magazine/1965/09/25/in-cold-blood-the-last-to-see-them-alive), [II—Persons Unknown](https://www.newyorker.com/magazine/1965/10/02/in-cold-blood-persons-unknown), [III—Answers](https://www.newyorker.com/magazine/1965/10/09/in-cold-blood-answers-iii), and [IV—the Corner](https://www.newyorker.com/magazine/1965/10/16/in-cold-blood-the-corner) by Truman Capote** (1965, four parts, 110k words). On the murder of a family in rural Kansas. [Book of the same title.](https://en.wikipedia.org/wiki/In_Cold_Blood)
 
-**[Eichmann in Jerusalem—I](https://www.newyorker.com/magazine/1963/02/16/eichmann-in-jerusalem-i), [II](https://www.newyorker.com/magazine/a-reporter-at-large/02/23/eichmann-in-jerusalem-ii), [III](https://www.newyorker.com/magazine/1963/03/02/iii-eichmann-in-jerusalem), [IV](https://www.newyorker.com/magazine/1963/03/09/eichmann-in-jerusalem-iv), and [V](https://www.newyorker.com/magazine/1963/03/16/eichmann-in-jerusalem-v)** (1963, five parts, 86k words) by Hannah Arendt. On the trial, in Israel, of the Nazi Adolf Eichmann. [Book of the same title.](https://en.wikipedia.org/wiki/Eichmann_in_Jerusalem)
+**[Eichmann in Jerusalem—I](https://www.newyorker.com/magazine/1963/02/16/eichmann-in-jerusalem-i), [II](https://www.newyorker.com/magazine/a-reporter-at-large/02/23/eichmann-in-jerusalem-ii), [III](https://www.newyorker.com/magazine/1963/03/02/iii-eichmann-in-jerusalem), [IV](https://www.newyorker.com/magazine/1963/03/09/eichmann-in-jerusalem-iv), and [V](https://www.newyorker.com/magazine/1963/03/16/eichmann-in-jerusalem-v) by Hannah Arendt** (1963, five parts, 86k words). On the trial, in Israel, of the Nazi Adolf Eichmann. [Book of the same title.](https://en.wikipedia.org/wiki/Eichmann_in_Jerusalem)
 
-**[The Super-American State](https://www.newyorker.com/magazine/1961/03/11/the-super-american-state-wheeling-and-dealing)** (1961, seven parts, 98k words) by John Bainbridge. On Texas. Book: "The Super-Americans".
+**[The Super-American State](https://www.newyorker.com/magazine/1961/03/11/the-super-american-state-wheeling-and-dealing) by John Bainbridge** (1961, seven parts, 98k words). On Texas. Book: "The Super-Americans".
 
-**[Conversation with Max](https://www.newyorker.com/magazine/1960/02/06/conversation-with-max-compare-me)** (1960, seven parts, 97k words) by S. N. Behrman. Profile of the writer Max Beerbohm. Book of the same title.
+**[Conversation with Max](https://www.newyorker.com/magazine/1960/02/06/conversation-with-max-compare-me) by S. N. Behrman** (1960, seven parts, 97k words). Profile of the writer Max Beerbohm. Book of the same title.
 
-**[No. 1512](https://www.newyorker.com/magazine/1952/05/24/no-1512)**  (1952, five parts, 76k words) by Lillian Ross. On the making of the film "The Red Badge of Courage". Book: "Picture".
+**[No. 1512](https://www.newyorker.com/magazine/1952/05/24/no-1512) by Lillian Ross** (1952, five parts, 76k words). On the making of the film "The Red Badge of Courage". Book: "Picture".
 
 
 ## Bonus: Some articles I didn't count
@@ -119,24 +119,24 @@ Some of my own favourite **post-2009 articles** (that's when I started reading t
 * [Trial by Fire](https://www.newyorker.com/magazine/2009/09/07/trial-by-fire) by David Grann (2009, 16k words) on a possible wrongful state execution (collected in "The Devil and Sherlock Holmes").
 
 Some *New Yorker* **"classics"** not long enough to make the list:
-* [The End of Nature](https://www.newyorker.com/magazine/1989/09/11/the-end-of-nature) by Bill McKibben (1989, 29k words, book of the same title);
-* [The Journalist and the Murderer](https://www.newyorker.com/magazine/1989/03/13/the-journalist-and-the-murderer-i) by Janet Malcolm (1989, two parts, 39k words, book of the same title);
-* [Great Plains](https://www.newyorker.com/magazine/1989/02/20/i-great-plains) by Ian Frazier (1989, three parts, 62k words, book of the same title);
-* [Trouble in the Archives](https://www.newyorker.com/magazine/1983/12/05/trouble-in-the-archives-i) by Janet Malcolm (1983, two parts, 45k words, book: "In the Freud Archives");
-* [Within the Context of No Context](https://www.newyorker.com/magazine/1980/11/17/within-the-context-of-no-context) by George W. S. Trow (1980, 22k words, book of same title);
-* [The Snow Leopard](https://www.newyorker.com/magazine/1978/03/27/i-the-snow-leopard) by Peter Matthiessen (1978, two parts, 34k words, book of the same title);
-* [Vietnam](https://www.newyorker.com/magazine/1972/07/01/vietnam-i-fire-in-the-lake) by Frances FitzGerald (1972, five parts, 53k, book: "Fire in the Lake");
-* [Raising Kane](https://www.newyorker.com/magazine/1971/02/20/raising-kane-i) by Pauline Kael (1971, two parts, 46k, book: "The Citizen Kane Book");
-* [Joe Gould’s Secret—I](https://www.newyorker.com/magazine/1964/09/19/i-joe-goulds-secret) and [II](https://www.newyorker.com/magazine/1964/09/26/joe-goulds-secret-ii) by Joseph Mitchell (1964, two parts, 39k words, book of the same title);
-* [Silent Spring—I](https://www.newyorker.com/magazine/1962/06/16/silent-spring-part-1), [II](https://www.newyorker.com/magazine/1962/06/23/silent-spring-part-2), and [III](https://www.newyorker.com/magazine/1962/06/30/silent-spring-part-3) by Rachel Carson (1962, three parts, 52k words, book of the same title);
-* [Letter from a Region in My Mind](https://www.newyorker.com/magazine/1962/11/17/letter-from-a-region-in-my-mind) by James Baldwin (1962, 22k words, book: “The Fire Next Time”);
-* [Hiroshima](https://www.newyorker.com/magazine/1946/08/31/hiroshima) by John Hersey (1946, 30k words, book of the same title).
+* [The End of Nature](https://www.newyorker.com/magazine/1989/09/11/the-end-of-nature) by Bill McKibben (1989, 29k words) on the consequences of global warming (book of the same title);
+* [The Journalist and the Murderer](https://www.newyorker.com/magazine/1989/03/13/the-journalist-and-the-murderer-i) by Janet Malcolm (1989, two parts, 39k words) on a murder case and the journalist who wrote about it (book of the same title);
+* [Great Plains](https://www.newyorker.com/magazine/1989/02/20/i-great-plains) by Ian Frazier (1989, three parts, 62k words) on the area of the central US (book of the same title);
+* [Trouble in the Archives](https://www.newyorker.com/magazine/1983/12/05/trouble-in-the-archives-i) by Janet Malcolm (1983, two parts, 45k words) on a dispute among Freud scholars (book: "In the Freud Archives");
+* [Within the Context of No Context](https://www.newyorker.com/magazine/1980/11/17/within-the-context-of-no-context) by George W. S. Trow (1980, 22k words) reflections on contemporary culture (book of same title);
+* [The Snow Leopard](https://www.newyorker.com/magazine/1978/03/27/i-the-snow-leopard) by Peter Matthiessen (1978, two parts, 34k words) on a journey through nepal (book of the same title);
+* [Vietnam](https://www.newyorker.com/magazine/1972/07/01/vietnam-i-fire-in-the-lake) by Frances FitzGerald (1972, five parts, 53k) on this history and culture of Vietnam up to the Vietnam war (book: "Fire in the Lake");
+* [Raising Kane—I](https://www.newyorker.com/magazine/1971/02/20/raising-kane-i) and [II](https://www.newyorker.com/magazine/1971/02/27/raising-kane-ii) by Pauline Kael (1971, two parts, 46k) on the making of "Citizen Kane" (book: "The Citizen Kane Book");
+* [Joe Gould’s Secret—I](https://www.newyorker.com/magazine/1964/09/19/i-joe-goulds-secret) and [II](https://www.newyorker.com/magazine/1964/09/26/joe-goulds-secret-ii) by Joseph Mitchell (1964, two parts, 39k words) on a New York City eccentric (book of the same title);
+* [Silent Spring—I](https://www.newyorker.com/magazine/1962/06/16/silent-spring-part-1), [II](https://www.newyorker.com/magazine/1962/06/23/silent-spring-part-2), and [III](https://www.newyorker.com/magazine/1962/06/30/silent-spring-part-3) by Rachel Carson (1962, three parts, 52k words) on the environmental effects of pesticides (book of the same title);
+* [Letter from a Region in My Mind](https://www.newyorker.com/magazine/1962/11/17/letter-from-a-region-in-my-mind) by James Baldwin (1962, 22k words) reflections of race and religion (book: “The Fire Next Time”);
+* [Hiroshima](https://www.newyorker.com/magazine/1946/08/31/hiroshima) by John Hersey (1946, 30k words) report from the dropping of the atomic bomb (book of the same title).
 
 I didn't count John McPhee's **Annals of the Former World** series on the geology of the United States: [Basin and Range](https://www.newyorker.com/magazine/1980/10/20/i-basin-and-range) (1980, two parts, 45k words), [In Suspect Terrain](https://www.newyorker.com/magazine/1982/09/13/i-in-suspect-terrain) (1982, three parts, 48k words), [Rising from the Plains](https://www.newyorker.com/magazine/1986/02/24/rising-from-the-plains) (1986, three parts, 53k words), and [Assembling California](https://www.newyorker.com/magazine/1992/09/07/assembling-california-part-i) (1992, three parts, 69k words). (Four individual books of the same titles, then collected together as "Annals of the Former World".)
 
 I didn't count Ved Mehta's immense autobiographical series, known, in its book form, as **"Continents of Exile"** (1972–93, 13 articles, 23 parts, must be nearly half a million words?, books: "Daddyji," "Mamaji," "Vedi," "The Ledge Between the Streams," "Sound-Shadows of the New World," "The Stolen Light," "Up at Oxford").
 
-I didn’t count any of **Elizabeth Drew**’s series of political dispatches, starting with [the 1974 run under the rubric A Reporter in Washington D.C.](https://www.newyorker.com/magazine/1974/03/11/a-reporter-in-washington-d-c-i-autumn-notes) (two articles, five parts, 138k, book: "Washington Journal"), through to Clinton’s election in 1992. (Other books: "American Journal," "Portrait of an Election," "Campaign Journal," "Election Journal".)
+I didn’t count any of **Elizabeth Drew**’s series of political dispatches, starting with [the 1974 run under the rubric A Reporter in Washington D.C.]on the downfall of Nixon (https://www.newyorker.com/magazine/1974/03/11/a-reporter-in-washington-d-c-i-autumn-notes) (two articles, five parts, 138k, book: "Washington Journal"), through to Clinton’s election in 1992. (Other books: "American Journal," "Portrait of an Election," "Campaign Journal," "Election Journal".)
 
 Some long **fiction** (again, highly incomplete before 1970):
 * ["The Love of a Good Woman"](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 22k words, collected in the book of the same title);
