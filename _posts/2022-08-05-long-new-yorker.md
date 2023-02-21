@@ -136,7 +136,7 @@ I didn't count John McPhee's **Annals of the Former World** series on the geolog
 
 I didn't count Ved Mehta's immense autobiographical series, known, in its book form, as **"Continents of Exile"** (1972–93, 13 articles, 23 parts, must be nearly half a million words?, books: "Daddyji," "Mamaji," "Vedi," "The Ledge Between the Streams," "Sound-Shadows of the New World," "The Stolen Light," "Up at Oxford").
 
-I didn’t count any of **Elizabeth Drew**’s series of political dispatches, starting with [the 1974 run under the rubric A Reporter in Washington D.C.]on the downfall of Nixon (https://www.newyorker.com/magazine/1974/03/11/a-reporter-in-washington-d-c-i-autumn-notes) (two articles, five parts, 138k, book: "Washington Journal"), through to Clinton’s election in 1992. (Other books: "American Journal," "Portrait of an Election," "Campaign Journal," "Election Journal".)
+I didn’t count any of **Elizabeth Drew**’s series of political dispatches, starting with [the 1974 run under the rubric A Reporter in Washington D.C.](https://www.newyorker.com/magazine/1974/03/11/a-reporter-in-washington-d-c-i-autumn-notes) on the downfall of Nixon  (two articles, five parts, 138k, book: "Washington Journal"), through to Clinton’s election in 1992. (Other books: "American Journal," "Portrait of an Election," "Campaign Journal," "Election Journal".)
 
 Some long **fiction** (again, highly incomplete before 1970):
 * ["The Love of a Good Woman"](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 22k words, collected in the book of the same title);
