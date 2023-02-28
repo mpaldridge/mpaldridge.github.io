@@ -27,7 +27,7 @@ That's all very well, but it's not a particularly helpful answer -- it's quite a
 
 Here's a second way to solve the problem, which elegantly uses some of the symmetry of the situation to its benefit.
 
-The question asks: What's the probability that the number of heads my friend gets is equal to the number of heads I get? But I'm just as likely to get $k$ heads from my coin tosses as I am to get $k$ tails. So the answer to that question is the same as the answer to this: What's the probability that the number of heads my friend gets is equal to the number of *tails* I get? But if I get $k$ tails, then I get get $n - k$ heads, and together with my friend's $k$ heads, we've got exactly $n$ heads together from our $2n$ coin tosses. So the answer is the same as to this third question: What's the probability that, out of $2n$ coin tosses, we get exactly $n$ heads?
+The question asks: What's the probability that the number of heads my friend gets is equal to the number of heads I get? But I'm just as likely to get $k$ heads from my coin tosses as I am to get $k$ tails. So the answer to that question is the same as the answer to this: What's the probability that the number of heads my friend gets is equal to the number of *tails* I get? But if I get $k$ tails, then I get $n - k$ heads, and together with my friend's $k$ heads, we've got exactly $n$ heads together from our $2n$ coin tosses. So the answer is the same as to this third question: What's the probability that, out of $2n$ coin tosses, we get exactly $n$ heads?
 
 Well, that one's easy: it's
 
@@ -87,4 +87,4 @@ Approximating the probability in the same way as before gives the answer
 
 $$ \mathbb P(Z = 0) \approx \mathbb P(-\frac12 \leq W \leq \frac12) \approx \frac{1}{\sqrt{2\pi \,\frac{35}{6}n}} = \frac{1}{\sqrt{\pi \,\frac{35}{3}n}} . $$
 
-And that's our answer! (Approximately, for large $n$.) Now, $\sqrt{pi \, \frac{35}{3}}$ is $6.054$, so Berry was pretty close.
+And that's our answer! (Approximately, for large $n$.) Now, $\sqrt{\pi \, \frac{35}{3}}$ is $6.054$, so Berry was pretty close.
