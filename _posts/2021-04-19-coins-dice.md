@@ -43,7 +43,7 @@ so our answer is roughly
 
 $$ \frac{\binom{2n}{n}}{2^{2n}}  \approx \frac{1}{\sqrt{\pi n}} = \frac{1}{1.77 \sqrt{n}} . $$
 
-So if we both 100 coins, the exact answer is 5.63% (or 5.64% under our approximation).
+So if we each toss 100 coins, the exact answer is 5.63% (or 5.64% under our approximation).
 
 ## Coins 3
 
@@ -57,13 +57,13 @@ We get the same number of heads if $Z = 0$, so we want to know $\mathbb P(Z = 0)
 
 $$ \begin{align*}
 \mathbb P(Z = 0) &\approx \mathbb P \left(-\tfrac12 \leq W \leq \tfrac12 \right) \\
-  &= \int_{-1/2}^{1/2} \frac{1}{\sqrt{2\pi n/2} \exp \left( -\frac{w^2}{2n/2} \right) \, \mathrm{d}w \\
-  &= \int_{-1/2}^{1/2} \frac{1}{\sqrt{\pi n} \exp \left( -\frac{w^2}{n} \right) \, \mathrm{d}w
+  &= \int_{-1/2}^{1/2} \frac{1}{\sqrt{2\pi n/2}} \exp \left( -\frac{w^2}{2n/2} \right) \, \mathrm{d}w \\
+  &= \int_{-1/2}^{1/2} \frac{1}{\sqrt{\pi n}} \exp \left( -\frac{w^2}{n} \right) \, \mathrm{d}w
 \end{align*} $$
 
 Now, that integrand will be roughly constant between $-\frac12$ and $\frac12$, so the value of the integral will be roughly the width of the integral $1$, times the value at 0, which is
 
-$$\mathbb P(Z = 0) \approx 1 \times \frac{1}{\sqrt{\pi n} \exp \left( -\frac{0^2}{n} \right) = \frac{1}{\sqrt{\pi n} . $$
+$$\mathbb P(Z = 0) \approx 1 \times \frac{1}{\sqrt{\pi n}} \exp \left( -\frac{0^2}{n} \right) = \frac{1}{\sqrt{\pi n}} . $$
 
 We recover the same approximate answer we had before.
 
