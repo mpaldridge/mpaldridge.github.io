@@ -13,7 +13,7 @@ Consider this maths problem:
 
 *My friend and I each toss $n$ fair coins. What is the probability we each get the same number of heads?*
 
-Here's one way to solve this. First lets look at my friend's coin tosses. There are $2^n$ possible sequences of heads-or-tails from $n$ coin tosses, and, of those, $\binom{n}{k}$ end up with $k$ heads, the probability my friend gets $k$ heads is $\binom{n}{k}/2^n$. What's the probability I also get $k$ heads? That's $\binom{n}{k}/2^n$ too, so the probability we both get $k$ heads is
+Here's one way to solve this. First lets look at my friend's coin tosses. There are $2^n$ possible sequences of heads-or-tails from $n$ coin tosses, and, of those, $\binom{n}{k}$ end up with $k$ heads. So the probability my friend gets $k$ heads is $\binom{n}{k}/2^n$. What about the probability I also get $k$ heads? That's $\binom{n}{k}/2^n$ too. So the probability we both get $k$ heads is
 
 $$ \left( \frac{\binom{n}{k}}{2^n} \right)^2 = \frac{\binom{n}{k}^2}{2^{2n}} . $$
 
@@ -43,7 +43,7 @@ so our answer is roughly
 
 $$ \frac{\binom{2n}{n}}{2^{2n}}  \approx \frac{1}{\sqrt{\pi n}} = \frac{1}{1.77 \sqrt{n}} . $$
 
-So if we each toss 100 coins, the exact answer is 5.63% (or 5.64% under our approximation).
+So if we each toss 100 coins, the probability we get the same number of heads as each other is exactly 5.63% (or 5.64% under our approximation).
 
 ## Coins 3
 
@@ -53,15 +53,15 @@ Strictly speaking, the number of heads my friend gets, call it $X$, follows a bi
 
 $$W \sim \text{N}\left(\tfrac{n}{2} - \tfrac{n}{2}, \tfrac{n}{4} + \tfrac{n}{4}\right) = \text{N}\left(0, \tfrac{n}{2}\right) . $$
 
-We get the same number of heads if $Z = 0$, so we want to know $\mathbb P(Z = 0)$. Since $Z$ is discrete but $W$ is continuous, we should use the approximation
+We get the same number of heads if $Z = 0$, so we want to know $\mathbb P(Z = 0)$. Since $Z$ is discrete but $W$ is continuous, we should use a "continuity correction" and the approximation
 
 $$ \begin{align*}
 \mathbb P(Z = 0) &\approx \mathbb P \left(-\tfrac12 \leq W \leq \tfrac12 \right) \\
   &= \int_{-1/2}^{1/2} \frac{1}{\sqrt{2\pi n/2}} \exp \left( -\frac{w^2}{2n/2} \right) \, \mathrm{d}w \\
-  &= \int_{-1/2}^{1/2} \frac{1}{\sqrt{\pi n}} \exp \left( -\frac{w^2}{n} \right) \, \mathrm{d}w
+  &= \int_{-1/2}^{1/2} \frac{1}{\sqrt{\pi n}} \exp \left( -\frac{w^2}{n} \right) \, \mathrm{d}w .
 \end{align*} $$
 
-Now, that integrand will be roughly constant between $-\frac12$ and $\frac12$, so the value of the integral will be roughly the width of the integral $1$, times the value at 0, which is
+Now, that integrand will be roughly constant between $-\frac12$ and $\frac12$, so the value of the integral will be roughly the width of the interval times the value of the integrand at $0$, which gives
 
 $$\mathbb P(Z = 0) \approx 1 \times \frac{1}{\sqrt{\pi n}} \exp \left( -\frac{0^2}{n} \right) = \frac{1}{\sqrt{\pi n}} . $$
 
@@ -81,10 +81,10 @@ Can we use the symmetry technique from answer 2? If we say that the opposite of 
 
 But our normal approximation method will still work fine. The score of one dice roll has variance $\frac{6^2 - 1}{12} = \frac{35}{12}$. So the difference between our total dice scores is roughly
 
-$$ Z = X - Y \approx W \sim \text{N} \left(0, 2 \, \tfrac{35}{12}n \right) = \text{N} \left(0, \tfrac{35}{6}n \right) . $$
+$$ Z = X - Y \approx W \sim \text{N} \left(0, 2 \times \tfrac{35}{12}n \right) = \text{N} \left(0, \tfrac{35}{6}n \right) . $$
 
 Approximating the probability in the same way as before gives the answer
 
-$$ \mathbb P(Z = 0) \approx \mathbb P(-\frac12 \leq W \leq \frac12) \approx \frac{1}{\sqrt{2\pi \,\frac{35}{6}n}} = \frac{1}{\sqrt{\pi \,\frac{35}{3}n}} . $$
+$$ \mathbb P(Z = 0) \approx \mathbb P(-\frac12 \leq W \leq \frac12) \approx \frac{1}{\sqrt{2\pi \,\frac{35}{6}n}} = \frac{1}{\sqrt{\frac{35}{3}\pi n}} . $$
 
-And that's our answer! (Approximately, for large $n$.) Now, $\sqrt{\pi \, \frac{35}{3}}$ is $6.054$, so Berry was pretty close.
+And that's our answer! (Approximately, for large $n$.) Now, $\sqrt{\frac{35}{3} \pi}$ is $6.054$, so Berry was pretty close.
