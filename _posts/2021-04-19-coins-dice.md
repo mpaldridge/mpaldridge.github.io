@@ -95,7 +95,7 @@ The coin tossing problem above is related to an curious probability error in Dav
 
 In the section "6 November, Year of the Depend Adult Undergarment", Wallace -- or, rather, the narrator -- writes about a tennis meet:
 
-> But so a normal meet between two junior teams is the best out of nine matches, whereas this mammoth annual early-November thing between E.T.A. and P.W.T.A. will try to be the best out of 108. A 54-match-all conclusion is extremely unlikely -- odds being 1 in 2^27^ -- and has never happened in nine years.
+> But so a normal meet between two junior teams is the best out of nine matches, whereas this mammoth annual early-November thing between E.T.A. and P.W.T.A. will try to be the best out of 108. A 54-match-all conclusion is extremely unlikely -- odds being 1 in $2^{27}$ -- and has never happened in nine years.
 
 Now, by the arguments we've seen above, we know that the probability of a 54-match-all conclusion is in fact
 
@@ -104,3 +104,5 @@ $$ \frac{\binom{108}{54}}{2^{108}} = 7.66\% \quad \text{or approximately} \quad 
 This is roughly 1 in 13 -- a small-ish, but not super-rare, probability -- not 1 in $2^{27} = 134\,217\,728$. (In comparison, 1 in $2^{27}$ is $0.000\,000\,745\%$.)
 
 It's not clear how Wallace (or his narrator) made this error: we can see that the probability given is $2^{-n/2}$ with $n = 54$, but that doesn't really solve the mystery.
+
+**Postscript to the postscript:** David Foster Wallace also wrote a nonfiction book about mathematics, called *Everything and More: A History of ∞*. I haven't read it, but I enjoyed the review of it by Jim Holt. You can read [the entire review here, if you have a *New Yorker* subscription](https://archives.newyorker.com/newyorker/2003-11-03/flipbook/084/), or there's [an only-slightly-shortened version at LitHub](https://lithub.com/on-david-foster-wallace-georg-cantor-and-infinity/).
