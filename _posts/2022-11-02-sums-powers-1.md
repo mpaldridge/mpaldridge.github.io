@@ -14,17 +14,17 @@ $$ S_k(n) = \sum_{x = 1}^n x^k = 1^k + 2^k + \cdots + n^k . $$
 Most mathematicians you ask will know that
 
 $$ \begin{align}
-S_1(n) = \sum_{x=1}^m x &= \frac12\, (n+1)\,n \\
-S_2(n) = \sum_{x=1}^m x^2 &= \frac13\, (n+1)(n+\tfrac12)\,n \\
-S_3(n) = \sum_{x=1}^m x^3 &= \frac14\, (n+1)^2 \,n^2 ,
+S_1(n) = \sum_{x=1}^n x &= \frac12\, (n+1)\,n \\
+S_2(n) = \sum_{x=1}^n x^2 &= \frac13\, (n+1)(n+\tfrac12)\,n \\
+S_3(n) = \sum_{x=1}^n x^3 &= \frac14\, (n+1)^2 \,n^2 ,
 \end{align} $$
 
 and you can [look up more](https://mathworld.wolfram.com/FaulhabersFormula.html):
 
 $$ \begin{align}
-S_4(n) = \sum_{x=1}^m x^4  &= \frac{1}{5}\, (n+1)(n+\tfrac12)\,n\,(n^2+n-\tfrac13) \\
+S_4(n) = \sum_{x=1}^n x^4  &= \frac{1}{5}\, (n+1)(n+\tfrac12)\,n\,(n^2+n-\tfrac13) \\
   &= \frac15\, (n+1.264)(n+1)(n+ \tfrac12)\,n\,(n-0.264) \\
-S_5(n) = \sum_{x=1}^m x^5  &= \frac{1}{6}\,(n+1)^2 \,n^2\, (n^2 + n - \tfrac12) \\
+S_5(n) = \sum_{x=1}^n x^5  &= \frac{1}{6}\,(n+1)^2 \,n^2\, (n^2 + n - \tfrac12) \\
   &= \frac16\,(n+1.366)(n+1)^2\,n^2\,(n-0.366) ,
 \end{align} $$
 
