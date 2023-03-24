@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notes from a session on AI and teaching"
-date:   2023-03-29
+date:   2023-03-23
 categories: writing
 permalink: /blog/ai-teaching.html
 ---
