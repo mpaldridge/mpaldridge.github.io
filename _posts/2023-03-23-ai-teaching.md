@@ -7,7 +7,7 @@ permalink: /blog/ai-teaching.html
 ---
 
 {:refdef: style="text-align: center;"}
-![../assets/ai-math.png](){: width="640" }
+![](../assets/img/ai-math.png){: width="640" }
 {: refdef}
 
 This morning, I went to a two-hour session at the university with the slightly cumbersome title [Assessment Matters: Artificial Intelligence and Assessment – Challenges and Opportunities](https://teachingexcellence.leeds.ac.uk/events/assessment-matters-artificial-intelligence-and-assessment-challenges-and-opportunities/). Four speakers gave 10-to-15-minute talks on aspects of AI and teaching, the organiser made some comments, and we had some smaller-group discussion time. (I also had a very useful chat with a maths colleague on the walk back.) What follows is a slightly neatened-up version of the notes I made; a mixture of the thoughts of the speakers, other attendees, and myself.
