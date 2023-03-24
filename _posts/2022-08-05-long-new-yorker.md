@@ -88,13 +88,13 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[The Power Broker](https://www.newyorker.com/magazine/1974/08/12/the-power-broker-iii-how-things-get-done) by Robert A. Caro** (1974, four parts, 79k words). On the New York urban planner Robert Moses. Excerpt from the [book of the same title](https://en.wikipedia.org/wiki/The_Power_Broker).
 
-**[The Megamachine](https://www.newyorker.com/magazine/1970/10/10/reflections-i-the-megamachine) by Lewis Mumford** (1970, four parts, 84k words) by Lewis Mumford. Essay on science and technological process. Excerpt from the book ["The Myth of the Machine: The Pentagon of Power"](https://en.wikipedia.org/wiki/The_Myth_of_the_Machine#Volume_II,_The_Pentagon_of_Power).
+**[The Megamachine](https://www.newyorker.com/magazine/1970/10/10/reflections-i-the-megamachine) by Lewis Mumford** (1970, four parts, 84k words). Essay on science and technological process. Excerpt from the book ["The Myth of the Machine: The Pentagon of Power"](https://en.wikipedia.org/wiki/The_Myth_of_the_Machine#Volume_II,_The_Pentagon_of_Power).
 
 ## Pre-1970
 
 *Before 1970,* The New Yorker *didn't have a a proper Table of Contents, which means finding long articles quickly is prohibitively difficult. I did happen to come across the following long articles, but I make absolutely no claims of completeness for this list.*
 
-**[In Cold Blood: I—The Last to See Them Alice](https://www.newyorker.com/magazine/1965/09/25/in-cold-blood-the-last-to-see-them-alive), [II—Persons Unknown](https://www.newyorker.com/magazine/1965/10/02/in-cold-blood-persons-unknown), [III—Answers](https://www.newyorker.com/magazine/1965/10/09/in-cold-blood-answers-iii), and [IV—the Corner](https://www.newyorker.com/magazine/1965/10/16/in-cold-blood-the-corner) by Truman Capote** (1965, four parts, 110k words). On the murder of a family in rural Kansas. [Book of the same title.](https://en.wikipedia.org/wiki/In_Cold_Blood)
+**[In Cold Blood: I—The Last to See Them Alive](https://www.newyorker.com/magazine/1965/09/25/in-cold-blood-the-last-to-see-them-alive), [II—Persons Unknown](https://www.newyorker.com/magazine/1965/10/02/in-cold-blood-persons-unknown), [III—Answers](https://www.newyorker.com/magazine/1965/10/09/in-cold-blood-answers-iii), and [IV—the Corner](https://www.newyorker.com/magazine/1965/10/16/in-cold-blood-the-corner) by Truman Capote** (1965, four parts, 110k words). On the murder of a family in rural Kansas. [Book of the same title.](https://en.wikipedia.org/wiki/In_Cold_Blood)
 
 **[Eichmann in Jerusalem—I](https://www.newyorker.com/magazine/1963/02/16/eichmann-in-jerusalem-i), [II](https://www.newyorker.com/magazine/a-reporter-at-large/02/23/eichmann-in-jerusalem-ii), [III](https://www.newyorker.com/magazine/1963/03/02/iii-eichmann-in-jerusalem), [IV](https://www.newyorker.com/magazine/1963/03/09/eichmann-in-jerusalem-iv), and [V](https://www.newyorker.com/magazine/1963/03/16/eichmann-in-jerusalem-v) by Hannah Arendt** (1963, five parts, 86k words). On the trial, in Israel, of the Nazi Adolf Eichmann. [Book of the same title.](https://en.wikipedia.org/wiki/Eichmann_in_Jerusalem)
 
@@ -151,4 +151,4 @@ Some long **fiction** (again, highly incomplete before 1970):
 * ["The Luzhin Defense](https://www.newyorker.com/magazine/1964/05/09/the-luzhin-defense-part-i) by Vladimir Nabokov (1965, two parts, 55k words, book of the same title);
 * ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 31k words, book of the same title).
 
-The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, about 1250 lines, book of the same title).
+The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, 1250 lines, book of the same title).
