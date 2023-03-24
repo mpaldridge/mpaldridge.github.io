@@ -34,3 +34,5 @@ This was a university-wide event, but on the walk back, a maths colleague and I 
 * We like in-person proctored exams.
 
 _**Previously:** [ChatGPT takes MATH1710](chatgpt.html)_
+
+*[Picture: DALL-E, "A fun cartoon of a cute anthropomorphic computer trying to answer a difficult math exam."]*
