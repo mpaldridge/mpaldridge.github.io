@@ -31,9 +31,11 @@ This morning, I went to a two-hour session at the university with the slightly c
 This was a university-wide event, but on the walk back, a maths colleague and I had some more maths-centric discussion:
 * We found it helpful to think of these new AIs as a third level of AI. Level 1 is the calculator; Level 2 is computer-algebra systems, like [Wolfram Alpha](https://www.wolframalpha.com/); Level 3 is the new AIs, like ChatGPT. It may be helpful to think about how we use (and don't use) those other proto-AIs when decided what to change now.
 * We are used to a certain amount of "useful hypocrisy" when it comes to "Level 1 and 2 AIs". If I need to know what 19×23 is, I type it into a calculator (or RStudio, or Google), but we expect schoolchildren to learn how to do this; if I need to know the integral of sin<sup>2</sup>*x* from 0 to π/4, I use Wolfram Alpha. but we expect our students to learn it. The justification is: Yes, the computer can solve *this* problem, but eventually you'll want to solve problems the computer can't solve, and unless you've had practice on easier problems, you won't be able to do this.
-* My colleague: "It's all very well to teach students to be adept users of AIs, as an important workplace skill; but, as a maths department, we also want to teach students the skills to make better AIs in the future." (Although I would note that we no longer need humans to teach computers to play chess -- the computers now teach themselves.)
+* My colleague: "It's all very well to teach students to be adept users of AIs, as an important workplace skill; but, as a maths department, we also want to teach students the deeper skills needed to make better AIs in the future." (Although I would note that we no longer need humans to teach computers to play chess -- the computers now teach themselves.)
 * We like in-person proctored exams.
 
 _**Previously:** [ChatGPT takes MATH1710](chatgpt.html)_
+
+*See also: ["ChatGPT and assessments in the Mathematical Sciences"](http://talmo.uk/blog/feb2023/chatgpt.html) by Michael Grove*
 
 *[Picture: DALL-E, "A fun cartoon of a cute anthropomorphic computer trying to answer a difficult math exam."]*
