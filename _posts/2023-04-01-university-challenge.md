@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Is University Challenge biased towards or against Oxbridge?"
-date:   2023-03-23
+date:   2023-04-01
 categories: writing
 permalink: /blog/university-challenge.html
 ---
