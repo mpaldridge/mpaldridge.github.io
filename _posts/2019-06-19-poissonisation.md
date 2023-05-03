@@ -17,9 +17,9 @@ Recall that a Poisson$(n)$ random variable $N$ has distribution
 
 $$ \mathbb P(N = x) = \mathrm{e}^{-n} \frac{n^x}{x!} . $$
 
-This has mean $n$ and standard deviation $\sqrt{n}$; so the random number $N$ is typically close to $n$ when $n$ is large – probablys somewhere between $n - 2\sqrt{n}$ and $n+\sqrt{n}$. The picture below shows the Poisson(1750) distribution (grey curve) compared to the exact value of 1750 (red line).
+This has mean $n$ and standard deviation $\sqrt{n}$; so the random number $N$ is typically close to $n$ when $n$ is large – probablys somewhere between $n - 2\sqrt{n}$ and $n+2\sqrt{n}$ or so. The picture below shows the Poisson(1750) distribution (grey curve) compared to the exact value of 1750 (red line).
 
-![](../assets/img/coupon-1.png)
+![](../assets/img/coupon-2.png)
 
 One way to think about Poissonization is that instead of solving the problem with *exactly* $n$ objects, we instead get a (weighted) average of the answer for numbers of objects *around* $n$. So as long as $n$ is large and the answer is a fairly smooth function of $n$, we ought to have a fairly accurate approximation.
 
@@ -33,7 +33,7 @@ This has all got a bit abstract. Let’s take a concrete example.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/Soccermatics?ref_src=twsrc%5Etfw">@Soccermatics</a> A World Cup 2019 Panini sticker album has 480 card spots. How big is the chance of getting at least one copy of each card when buying 350 random packages with 5 cards each (i.e. 1750 cards)? How many cards should I buy to reach a 90%+ chance? <a href="https://t.co/Mrt2Ea0pqN">https://t.co/Mrt2Ea0pqN</a></p>&mdash; 🇺🇦 OddsMover 🇺🇦 (@OddsMover) <a href="https://twitter.com/OddsMover/status/1137266334000177152?ref_src=twsrc%5Etfw">June 8, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-So we want to collect $m = 480$ unique stickers. If we buy $n$ (for example $n = 1750$, but we’d like an answer for any $n$), what’s the probability we get a full set of $m$ cards?
+So we want to collect $m = 480$ unique stickers. If we buy $n$ total stickers (for example $n = 1750$), what’s the probability we get a full set of $m$ unique stickers?
 
 This is known in probility theory as the [coupon collector problem](https://en.wikipedia.org/wiki/Coupon_collector%27s_problem). A famous (and fairly straightforward) result is that the average number stickers we need to buy to get a full set is
 
@@ -41,7 +41,7 @@ $$ \frac{m}{m} + \frac{m}{m-1} + \frac{m}{m-2} + \cdots + \frac{m}{2} + \frac{m}
 
 For $m = 480$ this is 3241 cards, or 548 packs of 5. A very rough approximation to this number is $m \log m = 2963$, while a much better approximation is $m \log m + \gamma m = m \log m + 0.577m = 3240$.
 
-But that wasn’t the question asked here: the question was given a number $n$ of stickers, what’s the *probability* we get a full set. This is rather difficult to solve exactly – but Poissonization will make our job much easier. If rather than buying exactly $n$ cards we instead by a Poisson$(n)$ random number of cards, then we will have Poisson$(n/m)$ copies of each sticker. The probability any particular sticker has been collected at least once is
+But that wasn’t the question asked here: the question was given a number $n$ of stickers, what’s the *probability* we get a full set. This is rather difficult to solve exactly – but Poissonization will make our job much easier. If rather than buying exactly $n$ cards we instead buy a Poisson$(n)$ random number of cards, then we will have Poisson$(n/m)$ copies of each sticker. The probability any particular sticker has been collected at least once is
 
 $$ \mathbb P\big (\mathrm{Po}(\tfrac nm) \geq 1 \big) = 1 - \mathbb P\big (\mathrm{Po}(\tfrac nm)= 0 \big) = 1 - \mathrm{e}^{-n/m} . $$
 
@@ -67,7 +67,7 @@ cards, or 809 packs.
 
 We saw earlier that the average number of stickers needed is roughly $m \log m$, or more accurately $m \log m + 0.577m$. Let’s say we take $n = m \log m + cm$ stickers for some value $c$. What’s the probability we get a full set, as a function of $c$?
 
-With the expressions above, we have
+With our approximation above, and taking $n = m \log m + cm$, we have
 
 $$ \begin{align}
 \mathbb P(\text{full set}) &= (1 - \mathrm{e}^{-n/m})^{m} \\
