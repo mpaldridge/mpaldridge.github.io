@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Longest LRB articles (coauthored with ChatGPT)"
-date:   2024-03-29
+date:   2023-03-29
 categories: writing
 permalink: /blog/long-lrb.html
 ---
