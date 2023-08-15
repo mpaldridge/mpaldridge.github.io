@@ -8,6 +8,8 @@ permalink: /blog/numbered-list.html
 
 *[Last updated: 1 September 2021]*
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/2560px-Tsunami_by_hokusai_19th_century.jpg)
+
 1. [72 ways to talk about Carly Rae Jepsen](https://www.popjustice.com/briefing/72-ways-to-talk-about-carly-rae-jepsen/)
 2. [Thirteen Ways of Looking at a Blackbird](https://www.poetryfoundation.org/poems/45236/thirteen-ways-of-looking-at-a-blackbird)
 3. [Forty-one False Starts](https://www.newyorker.com/magazine/1994/07/11/forty-one-false-starts)
@@ -25,6 +27,6 @@ permalink: /blog/numbered-list.html
 15. [32 Statements About Writing Poetry](https://claudiaputnam.com/2012/12/04/advice-from-a-master/)
 16. [24 Pieces of Life Advice from Werner Herzog](https://kottke.org/15/01/24-pieces-of-life-advice-from-werner-herzog)
 17. [55 Ways White People Say ‘White People’ Without Actually Saying ‘White People’](https://www.theroot.com/55-ways-white-people-say-white-people-without-actuall-1845706752)
-18. [Thirty-six Views of Mount Fuji](https://www.theroot.com/55-ways-white-people-say-white-people-without-actuall-1845706752)
+18. [Thirty-six Views of Mount Fuji](https://en.wikipedia.org/wiki/Thirty-six_Views_of_Mount_Fuji#Original_thirty-six)
 
-19. ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/2560px-Tsunami_by_hokusai_19th_century.jpg)
+
