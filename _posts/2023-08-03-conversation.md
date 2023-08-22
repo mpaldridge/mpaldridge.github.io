@@ -6,7 +6,7 @@ categories: notmaths
 permalink: /blog/conversation.html
 ---
 
-As I was walking home from work this evening, some guy was trying to engage random pedestrians in conversations. They were all ignoring him and walking straight past. But as I prepare to the same, I think I hear him say: "Excuse me! Excuse me! What does Roger Penrose study?"
+As I was walking home from work this evening, some guy was trying to engage random pedestrians in conversations. They were all ignoring him and walking straight past. But as I prepare to do the same, I think I hear him say: "Excuse me! Excuse me! What does Roger Penrose study?"
 
 I'm taken aback. I stop and take my earphones out. "I'm sorry, what was that?"
 
@@ -29,3 +29,9 @@ I'm taken aback. I stop and take my earphones out. "I'm sorry, what was that?"
 "Well, there you go! There you go!" The guy cannot believe his luck!
 
 Anyway, it turns out he wants to talk – at some length – about Penrose's argument, in *The Emperor's New Mind*, that the entropy of the universe is roughly 10<sup>123</sup>, and that this means the existence of our universe is extremely unlikely, and, eventutally, winding around to trying to convince me to convert to Islam. I thank him for his time but politely decline. But, still, this must surely be the best return he's got on the "What does Roger Penrose study?" opener that he's got all day.
+
+![](../assets/img/penrose.png)
+
+I'm reminded this is not the first time a stranger has wanted to talk to me about Roger Penrose and the mathematical contents of his book.
+
+Once, on arriving in America, I was taking a taxi to my hotel. "What are you visiting for?" the cabdriver asks. "I'm here for a conference at the university," I say. "What subject?" he asks. I always feel a bit awkward when I have to answer: "Mathematics." The cabdriver is not deterred. "Great!" he says. "I've been been reading *The Emperor's New Mind*, but I'm a bit confused about the definition of a Turing machine. I wonder if you might help explain it to me?"
