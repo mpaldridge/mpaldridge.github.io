@@ -30,7 +30,7 @@ layout: default
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
       <li>
-        <span class="post-meta">{{ post.date | date: date_format }}
+        <span class="post-meta">{{ post.date | date: date_format }} 
         {%- if post.modified_date -%}
           (Updated {{ post.modified_date | date: date_format }})
         {%- endif -%}
