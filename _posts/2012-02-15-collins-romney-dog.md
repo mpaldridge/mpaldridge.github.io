@@ -2,7 +2,7 @@
 layout: post
 title:  "An Attempt to Compile a Complete List of Every Time Gail Collins Has Mentioned That Mitt Romney Once Drove to Canada with the Family Dog Strapped to the Roof of the Car"
 date:   2012-02-15
-date_modified: 2023-02-17
+modified_date: 2023-02-17
 categories: writing
 permalink: /blog/collins-romney-dog.html
 ---
