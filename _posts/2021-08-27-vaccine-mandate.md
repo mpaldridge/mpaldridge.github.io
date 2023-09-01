@@ -2,6 +2,7 @@
 layout: post
 title:  "Universities should mandate the Covid vaccine"
 date:   2021-08-27
+modified_date: 2022-04-14
 categories: writing
 permalink: /blog/vaccine-mandate.html
 ---
@@ -36,14 +37,14 @@ It’s so obvious that it’s “wrong” that the UCU doesn’t even need to ex
 
 Meanwhile, my own university next semester is going to be in the [absurd position](https://www.vox.com/2021/7/28/22594637/vaccine-mandates-covid-19-masks-delta-variants) of mandating masks – super-annoying to wear, sometimes you forget and leave it at home, and which we think are probably a little bit effective – and not mandating vaccination – one-off inconvenience, literally in your bloodstream, and which we’re sure is incredibly, almost miraculously, effective. 
 
----
+## Update (April 2022)
 
-**Update (April 2021):** So, in the end, my University, like all UK universities, did not institute a vaccine mandate. (And to whatever extent there was a mask mandate, it was entirely unpoliced and almost universally flouted.) And yet: things went basically OK, I think? Cases among students this year were very much lower than last year (although cases among *staff* were higher -- it was suggested to me that these were likely parents of unvaccinated teenagers, and that this, not University students themselves, was the main way cases were circulating in the University).
+So, in the end, my University, like all UK universities, did not institute a vaccine mandate. (And to whatever extent there was a mask mandate, it was entirely unpoliced and almost universally flouted.) And yet: things went sort of OK, I think? Cases among students this year were very much lower than last year (although cases among *staff* were higher -- it was suggested to me that these were likely parents of unvaccinated teenagers, and that this, not University students themselves, was the main way cases were circulating in the University).
 
 I can think of two arguments for what happened here. One argument is that although university students are largely in under-vaccinated age cohorts, they are very considerably more vaccinated than the non-university-attending members of their cohort, and also the University's on-campus vaccine drive was a success, so I was far too pessimistic about vaccination levels in the absence of a mandate. Further, any unvaccinated (and many vaccinated) 18-to-21-year-olds would by now have got Covid, so would have immunity (or extra immunity) that way. So a mandate would have been a lot of fuss for a very marginal gain in immunity levels, so would have probably been more bother than its benefit.
 
-The second argument is that we managed to keep Covid numbers relatively low at the University only by cancelling (or, rather, moving online) huge amounts of in-person teaching -- everything except very small groups -- and, in response, student performance was far, far lower than previous years. Indeed, in my own module, failures rates were pretty disastrous. To call this "things went basically OK" is ridiculous. If only we'd listened to me and had a vaccine mandate, we could have done all this teaching in person again, and all the students who did basically no work all year and had terrible academic outcomes would have done much better.
+The second argument is that we managed to keep Covid numbers relatively low at the University only by cancelling (or, rather, moving online) huge amounts of in-person teaching -- everything except very small groups -- and, in response, student performance was far, far lower than previous years. Indeed, in my own module, failures rates were pretty disastrous. To call this "things went sort of OK" is ridiculous. If only we'd listened to me and had a vaccine mandate, we could have done all this teaching in person again, and all the students who did basically no work all year and had terrible academic outcomes would have done much better.
 
-Although the second argument is the "I was actually correct all along" one, I think that I actually find the first argument, the "I was wrong actually" one, more persuasive.
+I'm genuinely not sure whether I find the second argument ("I was actually correct all along") or the first argument ("I was wrong actually") more persuasive.
 
 (Also, apparently the outbreak at heavily-vaccinated Rice University that I mentioned above was [a bunch of false positives based on a testing error](https://www.nytimes.com/2021/08/23/education/rice-university-covid-testing.html).)
