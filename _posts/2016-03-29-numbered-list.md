@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "A Numbered List of Numbered Lists"
+title:  "A numbered list of numbered lists"
 date:   2016-03-29
+modified_date: 2021-09-01
 categories: notmaths
 permalink: /blog/numbered-list.html
 ---
-
-*[Last updated: 1 September 2021]*
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/2560px-Tsunami_by_hokusai_19th_century.jpg)
 
