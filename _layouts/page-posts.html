@@ -34,9 +34,6 @@ layout: default
         {%- if post.modified_date -%}
           (Updated {{ post.modified_date | date: date_format }})
         {%- endif -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
         </span>
         <h6>
           <a class="post-link" href="{{ post.url | relative_url }}">
