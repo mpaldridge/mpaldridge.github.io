@@ -31,9 +31,9 @@ layout: default
       {%- for post in posts -%}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }} 
-        {%- if post.modified_date -%}
+        {% if post.modified_date %}
           (Updated {{ post.modified_date | date: date_format }})
-        {%- endif -%}
+        {% endif %}
         </span>
         <h6>
           <a class="post-link" href="{{ post.url | relative_url }}">
