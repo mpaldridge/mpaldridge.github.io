@@ -31,7 +31,7 @@ layout: default
       {%- for post in posts -%}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}
-        {%- if page.modified_date -%}
+        {%- if post.modified_date -%}
           (Updated {{ post.modified_date | date: date_format }})
         {%- endif -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
