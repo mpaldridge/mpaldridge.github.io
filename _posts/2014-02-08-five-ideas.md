@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Five ideas on the under-representation of women in academic careers in the sciences"
+title:  "Five ideas"
 date:   2014-02-08
 categories: writing
 permalink: /blog/five-ideas.html
