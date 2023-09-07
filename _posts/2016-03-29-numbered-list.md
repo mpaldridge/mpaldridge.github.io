@@ -26,6 +26,7 @@ permalink: /blog/numbered-list.html
 15. [32 Statements About Writing Poetry](https://claudiaputnam.com/2012/12/04/advice-from-a-master/)
 16. [24 Pieces of Life Advice from Werner Herzog](https://kottke.org/15/01/24-pieces-of-life-advice-from-werner-herzog)
 17. [55 Ways White People Say ‘White People’ Without Actually Saying ‘White People’](https://www.theroot.com/55-ways-white-people-say-white-people-without-actuall-1845706752)
-18. [Thirty-six Views of Mount Fuji](https://en.wikipedia.org/wiki/Thirty-six_Views_of_Mount_Fuji#Original_thirty-six)
+18. [64 Reasons to Celebrate Paul McCartney](https://www.ian-leslie.com/p/64-reasons-to-celebrate-paul-mccartney)
+19. [Thirty-six Views of Mount Fuji](https://en.wikipedia.org/wiki/Thirty-six_Views_of_Mount_Fuji#Original_thirty-six)
 
 
