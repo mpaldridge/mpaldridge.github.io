@@ -8,7 +8,7 @@ permalink: /blog/guardian-breaks.html
 
 Recently – some time Monday morning, I think – the Guardian changed the linespacing in stories on its website. This gif compares the old linespacing (nicer looking, more generous) with the new linespacing (tighter, more cramped).
 
-![](https://github.com/mpaldridge/guardian-breaks/blob/main/demo.gif)
+![](https://raw.githubusercontent.com/mpaldridge/guardian-breaks/main/demo.gif)
 
 I think the new, tighter line spacing is just ugly. (At least on desktop – it's more defensible on mobile.) But even if one likes the tighter spacing, one has to be disappointed at just how half-assedly they've done it. Look at the "drop cap" – that big capital O as the first letter of the story. In the old version, the drop cap is exactly the same height as four lines of text, and the fifth line snuggles in just below it. In the new version, the drop cap has stayed the same size, which is now kind of four-and-a-bit lines high, with an ugly gap below it until the sixth line starts. If you're going to change the line spacing (and I think you shouldn't!) at least be bothered to change the drop-cap size to match!
 
