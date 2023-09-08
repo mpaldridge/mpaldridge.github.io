@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Fixing the Guardian's line spacing"
-date:   2023-08-03
+date:   2023-08-04
 categories: notmaths
 permalink: /blog/guardian-breaks.html
 ---
 
-Recently – some time Monday morning, I think – the Guardian changed the linespacing in stories on its website. The older linespacing – nicer looking, more generous – is on the left, while the new linespacing – tighter, more cramped – is on the right.
+Recently – some time Monday morning, I think – the Guardian changed the linespacing in stories on its website. This gif compares the old linespacing (nicer looking, more generous) with the new linespacing (tighter, more cramped).
 
 ![](https://github.com/mpaldridge/guardian-breaks/blob/main/demo.gif)
 
