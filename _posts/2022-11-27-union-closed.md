@@ -2,7 +2,8 @@
 layout: post
 title:  "The union-closed conjecture"
 date:   2022-11-27
-categories: writing
+modified_date: 2023-06-22
+categories: maths
 permalink: /blog/union-closed.html
 use_math: true
 ---
@@ -33,7 +34,7 @@ $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) , $$
 
 *where $\psi = (3 - \sqrt{5})/2$.*
 
-First, let's see how Theorem 2 proves Conjecture 1 with $\alpha = \psi$. Let $\mathcal F$ be a union-closed family, and let $A$ and $B$ be drawn independently uniformly at random from $\mathcal F$. Now assume, seeking a contradiction, that $\mathbb P(i \in A) \leq p$ for all $i$ for some $p < \psi$; that is, assume there is no $i$ in at least $\psi \lvert\mathcal F\rvert$ of the sets in $\mathcal F$. Then we can apply Theorem 2. This gives
+First, let's see how Theorem 2 proves Conjecture 1 with $\alpha = \psi$. Let $\mathcal F$ be a union-closed family, and let $A$ and $B$ be sets drawn independently uniformly at random from $\mathcal F$. Now assume, seeking a contradiction, that $\mathbb P(i \in A) \leq p$ for all $i$ for some $p < \psi$; that is, assume there is no $i$ in at least $\psi \lvert\mathcal F\rvert$ of the sets in $\mathcal F$. Then we can apply Theorem 2. This gives
 
 $$ H(A \cup B) \geq \frac{1-p}{1-\psi} \, H(A) > H(A) = \log{\lvert\mathcal F\rvert} . $$
 
@@ -41,9 +42,9 @@ But on the other hand, since $\mathcal F$ is union-closed, it follows that the d
 
 $$ H(A \cup B) \leq \log{\lvert\mathcal F\rvert} . $$
 
-This is a contradiction -- so our assumption that $\mathbb P(i \in A) < \psi$ for all $i$ must have been wrong, and there must be some $i$ in at least $\psi\lvert\mathcal F\rvert$ of the sets in $\mathcal F$.
+These two equations are a contradiction -- so our assumption that $\mathbb P(i \in A) < \psi$ for all $i$ must have been wrong, and there must be some $i$ in at least $\psi\lvert\mathcal F\rvert$ of the sets in $\mathcal F$.
 
-Let us note that it will require some new ideas to push past $\alpha = \psi$. If the distribution is "pick each $i$ independently with probabiltiy $p$", then when $p > \psi$, we have that $H(A \cup B) = n\,h\big((1-p)^2\big)$ is actually smaller than $H(A) = n\,h(p)$, so this argument won't work in its current form.
+Let us note that it will require some new ideas to push past $\alpha = \psi$. Note that $\psi$ is the number in $(0,1)$ satisfying $(1-\psi)^2 = \psi$, so $H((1-\psi)^2) = H(\psi)$. If the distribution of $A$ and $B$ is "pick each $i$ independently with probabiltiy $p$", for some $p > \psi$, then we have that $H(A \cup B) = n\,h\big((1-p)^2\big)$ is actually smaller than $H(A) = n\,h(p)$, so this argument won't work in its current form.
 
 It remains to prove Theorem 2.
 
@@ -57,7 +58,7 @@ $$ h\big((1-p)(1-q)\big) \geq \frac{1}{2(1-\psi)} \big((1-q)h(p) + (1-p)h(q) \bi
 
 *where $h(p) = -p\log p + (1-p)\log(1-p)$ is the binary entropy and $\psi = (3 - \sqrt{5})/2$.*
 
-(Note that there is equality at $p = q = \psi$, as $(1-\psi)^2 = \psi$.)
+(Note that there is equality at $p = q = \psi$.)
 
 Lemma 3 seems to be rather fiddly to prove. Chase and Lovett show that it follows from the one-variable version
 
@@ -65,9 +66,9 @@ $$ h\big((1-p)^2\big) \geq \frac{1-p}{1-\psi} h(p) , \qquad (*) $$
 
 Chase and Lovett leave $(\ast)$ to a computer verification, although claim that Alweiss, Huang and Sellke have a rigorous proof in a "forthcoming paper". The paper of Alweiss, Huang and Sellke, which has the same lemma, seems to use computer verificiation too, although they say it can be made rigorous using interval arithmetic. Sawin has something that looks more like a rigorous proof by calculating the derivative of the ratio of the two sides of $(\ast)$; it's rather involved and I haven't read it all, although it seems to involve checking the roots of certain equations aren't in certain intervals, which was presumably computer-aided too. I would like to see a a proper information-theoretic proof of the inequality $(\ast)$. (It seems pretty innocuous at first look -- and if you rewrite it as 
 
-$$ h(q^2) = \frac{q}{\phi} h(q) $$
+$$ h(x^2) \geq\phi x h(x) $$
 
-where $\phi = 1 - \psi = (\sqrt{5} - 1)/2$ is the golden ratio reciprocal, it looks more innocuous still -- but I've just interupted writing this post to have a go and have made zero progress.)
+where $\phi = 1/(1 - \psi) = (1+\sqrt{5})/2 = 1.618$ is the golden ratio, it looks more innocuous still -- but it seems to resist any obvious method of attack.)
 
 Here's a graph of
 
@@ -104,17 +105,18 @@ So
 $$ \begin{align*}
 H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big)
 &= \mathbb E_{a,b} \,H\big((A \cup B)_i \mid A_{< i} = a, B_{< i} = b) \\
-&\geq \mathbb E_{a,b} \frac{1}{2(1-\psi)} \big((1-q_b)h(q_a) + (1-q_a)h(q_b) \big) \\
-&= \frac{1}{2(1-\psi)} \Big( \mathbb E_a \,h(q_a) \,\mathbb E_b (1 - q_b) +  \mathbb E_b \,h(q_b) \, \mathbb E_a (1 - q_a) \Big) \end{align*} $$
+&\geq \mathbb E_{a,b} \frac{1}{2(1-\psi)} \big((1-p_b)h(p_a) + (1-p_a)h(p_b) \big) \\
+&= \frac{1}{2(1-\psi)} \Big( \mathbb \mathbb E_b (1 - p_b)\,E_a \,h(p_a)  +  \mathbb  \mathbb E_a (1 - p_a) \, E_b \,h(p_b) \Big) \end{align*} $$
 
-Now, $\mathbb E_b (1 - q_b)$ is exactly the marginal probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also 
+Now, $\mathbb E_b (1 - p_b)$ is exactly the marginal probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also 
 
-$$ \mathbb E_a \,h(q_a) = \mathbb E_a \,H(A_i \mid A_{<i} = a) = H(A_i \mid A_{<i}) . $$
+$$ \mathbb E_a \,h(p_a) = \mathbb E_a \,H(A_i \mid A_{<i} = a) = H(A_i \mid A_{<i}) . $$
 
 So we have
 
 $$ \begin{align*}
 H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big)
+&\geq \frac{1}{2(1-\psi)} \big( (1-p)H(A_i \mid A_{<i}) + (1-p)H(B_i \mid B_{<i}) \big) \\
 &\geq \frac{1-p}{2(1-\psi)} \big( H(A_i \mid A_{<i}) + H(B_i \mid B_{<i}) \big) \\
 &= \frac{1-p}{1-\psi} H(A_i \mid A_{<i}) , \end{align*} $$
 
@@ -129,4 +131,14 @@ H(A \cup B) &\geq \sum_{i=1}^n H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big) \\
 &= \frac{1-p}{1-\psi} H(A) , \end{align*} $$
 
 where the last step is the chain rule again. Thus Theorem 2 is proved.
+
+
+## Later updates
+
+* [Pebody](https://arxiv.org/abs/2211.13139) also proved the same result, on 23 November, two days after the other three. A couple of the steps in the main lemma say "To be proved", but it seems less computer-aided than the others.
+* In the paper of Chase and Lovett, they show that $\alpha = \psi$ is in fact tight for "almost union-closed" families, where at least $(1-\epsilon)|\mathcal F|^2$ of the pairs $A, B$ have $A \cup B$ are in $\mathcal F$. ([Gil Kalai points out](https://gilkalai.wordpress.com/2022/11/30/a-nice-example-related-to-the-frankl-conjecture/) that this is different to saying that at least $(1-\epsilon)|\mathcal F \cup \mathcal F|$ of the unions $A \cup B$ are in $\mathca F$.)
+* There's an interesting discussion of the information theory of the main lemma [on MathOverflow here](https://mathoverflow.net/questions/435893/a-variational-estimate-related-to-the-union-closed-set-conjecture/435977#435977).
+* [Sawin's paper](https://arxiv.org/abs/2211.11504) also gave a sketch of how the result might be pushed a little beyond $\psi$ by making $A$ and $B$ not independent (which isn't required for the proof to work). In December, [Yu](https://arxiv.org/abs/2212.00658) and then [Cambie](https://arxiv.org/abs/2212.12500) filled in the details, and got $\alpha = 0.3823...$ (compared to $\psi = 0.3819...$).
+* In June 2023, [Liu](https://arxiv.org/abs/2306.08824) developed Sawin's improvement a bit further, and computed $\alpha = 0.3827...$.
+* I had somehow missed this earlier, but [Boppana](https://arxiv.org/abs/2301.09664) gives a delightfully short proof of the main lemma, in the form $f(x) := h(x^2) - \phi x h(x) \geq 0$. In fact, he proved it in 1985, in a different context. It's simple to calculate the third derivative $f'''$, and to see has at most two roots in $[0,1]$. So $f$ itself has at most five roots -- these are the double root at $0$, the double root at $\phi$ and the root at $1$. So $f$ has the same sign on the whole of $[0,1]$, and it's clear that this sign is positive. (I haven't looked at this close enough to work out why going via the third derivative works, when going via the first a second presumably doesn't.)
 
