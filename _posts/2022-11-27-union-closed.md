@@ -106,7 +106,7 @@ $$ \begin{align*}
 H\big((A \cup B)_i \mid A_{< i}, B_{< i} \big)
 &= \mathbb E_{a,b} \,H\big((A \cup B)_i \mid A_{< i} = a, B_{< i} = b) \\
 &\geq \mathbb E_{a,b} \frac{1}{2(1-\psi)} \big((1-p_b)h(p_a) + (1-p_a)h(p_b) \big) \\
-&= \frac{1}{2(1-\psi)} \Big( \mathbb \mathbb E_b (1 - p_b)\,E_a \,h(p_a)  +  \mathbb  \mathbb E_a (1 - p_a) \, E_b \,h(p_b) \Big) \end{align*} $$
+&= \frac{1}{2(1-\psi)} \Big( \mathbb E_b (1 - p_b)\,\mathbb E_a \,h(p_a)  +   \mathbb E_a (1 - p_a) \, \mathbb E_b \,h(p_b) \Big) \end{align*} $$
 
 Now, $\mathbb E_b (1 - p_b)$ is exactly the marginal probability that $i$ is not in $B$, which is at most $1-p$, by hypothesis. Also 
 
@@ -136,8 +136,8 @@ where the last step is the chain rule again. Thus Theorem 2 is proved.
 ## Later updates
 
 * [Pebody](https://arxiv.org/abs/2211.13139) also proved the same result, on 23 November, two days after the other three. A couple of the steps in the main lemma say "To be proved", but it seems less computer-aided than the others.
-* In the paper of Chase and Lovett, they show that $\alpha = \psi$ is in fact tight for "almost union-closed" families, where at least $(1-\epsilon)|\mathcal F|^2$ of the pairs $A, B$ have $A \cup B$ are in $\mathcal F$. ([Gil Kalai points out](https://gilkalai.wordpress.com/2022/11/30/a-nice-example-related-to-the-frankl-conjecture/) that this is different to saying that at least $(1-\epsilon)|\mathcal F \cup \mathcal F|$ of the unions $A \cup B$ are in $\mathcal F$.)
+* In the paper of Chase and Lovett, they show that $\alpha = \psi$ is in fact tight for "almost union-closed" families, where at least $(1-\epsilon)\lvert\mathcal F\rvert^2$ of the pairs $A, B$ have $A \cup B$ are in $\mathcal F$. ([Gil Kalai points out](https://gilkalai.wordpress.com/2022/11/30/a-nice-example-related-to-the-frankl-conjecture/) that this is different to saying that at least $(1-\epsilon)\lvert\mathcal F \cup \mathcal F\rvert$ of the unions $A \cup B$ are in $\mathcal F$.)
 * [Sawin's paper](https://arxiv.org/abs/2211.11504) also gave a sketch of how the result might be pushed a little beyond $\psi$ by making $A$ and $B$ not independent (which isn't required for the proof to work). In December, [Yu](https://arxiv.org/abs/2212.00658) and then [Cambie](https://arxiv.org/abs/2212.12500) filled in the details, and got $\alpha = 0.3823...$ (compared to $\psi = 0.3819...$).
 * In June 2023, [Liu](https://arxiv.org/abs/2306.08824) developed Sawin's improvement a bit further, and computed $\alpha = 0.3827...$.
-* I had somehow missed this earlier, but [Boppana](https://arxiv.org/abs/2301.09664) gives a delightfully short proof of the main lemma, in the form $f(x) := h(x^2) - \phi x h(x) \geq 0$. In fact, he proved it in 1985, in a different context. It's simple to calculate the third derivative $f'''$, and to see has at most two roots in $[0,1]$. So $f$ itself has at most five roots -- these are the double root at $0$, the double root at $\phi$ and the root at $1$. So $f$ has the same sign on the whole of $[0,1]$, and it's clear that this sign is positive. (I haven't looked at this close enough to work out why going via the third derivative works, when going via the first a second presumably doesn't.)
+* I had somehow missed this earlier, but [Boppana](https://arxiv.org/abs/2301.09664) gives a delightfully short proof of the main lemma, in the form $f(x) := h(x^2) - \phi x h(x) \geq 0$. In fact, he proved it in 1985, in a different context. It's simple to calculate the third derivative $f'''$, and to see has at most two roots in $[0,1]$. So $f$ itself has at most five roots -- these are the double root at $0$, the double root at $\phi$ and the root at $1$. So $f$ has the same sign on the whole of $[0,1]$, and it's clear that this sign is positive. (I haven't thought this close enough to work out why going via the third derivative works, when going via the first or second presumably doesn't.)
 
