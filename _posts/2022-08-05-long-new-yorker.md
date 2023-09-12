@@ -151,6 +151,6 @@ Some long **fiction** (again, highly incomplete before 1970):
 * ["Long Distance"](https://www.newyorker.com/magazine/1974/04/15/long-distance-2) by Penelope Mortimer (1974, two parts, 51k words, book of the same title);
 * ["The Luzhin Defense](https://www.newyorker.com/magazine/1964/05/09/the-luzhin-defense-part-i) by Vladimir Nabokov (1965, two parts, 55k words, book of the same title);
 * ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 31k words, book of the same title);
-* *["The Ponder Heart"](https://www.newyorker.com/magazine/1953/12/05/the-ponder-heart) by Eudora Welty (1953, 27k words, book of the same title).
+* ["The Ponder Heart"](https://www.newyorker.com/magazine/1953/12/05/the-ponder-heart) by Eudora Welty (1953, 27k words, book of the same title).
 
 The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, 1250 lines, book of the same title).
