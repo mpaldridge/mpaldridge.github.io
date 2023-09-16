@@ -6,8 +6,6 @@ categories: notmaths
 permalink: /blog/perfect-second-mentionds.html
 ---
 
-Perfect second mentions
-
 ![](../assets/img/second-kebab.png)
 
 Here are two things I enjoy:
@@ -29,7 +27,7 @@ But in an exciting collision of my interests, whoever writes the subheads for th
 * [“this former store-cupboard favourite”](https://www.theguardian.com/food/2023/jan/04/how-to-make-the-perfect-carrot-and-coriander-soup-recipe-felicity-cloake)
 * [“this French showstopper”](https://www.theguardian.com/food/2022/dec/18/how-to-make-the-perfect-chocolate-roulade-recipe-felicity-cloake)
 * [“the north Indian spicy aubergine mash that can never be anything less than delicious”](https://www.theguardian.com/food/2022/sep/28/how-to-make-the-perfect-baingan-bharta-aubergine-dip-recipe-felicity-cloake)
-* [“this thrifty Tuscan soup”](https://www.theguardian.com/food/2022/aug/24/how-to-make-the-perfect-pappa-al-pomodoro-tuscan-tomato-and-bread-soup-recipe), not to be confused with [“this traditional, thrifty, Tuscan soup”](https://www.theguardian.com/food/2022/oct/12/how-to-make-the-perfect-ribollita-soup-recipe-felicity-cloake)
+* [“this thrifty Tuscan soup”](https://www.theguardian.com/food/2022/aug/24/how-to-make-the-perfect-pappa-al-pomodoro-tuscan-tomato-and-bread-soup-recipe); not to be confused with [“this traditional, thrifty, Tuscan soup”](https://www.theguardian.com/food/2022/oct/12/how-to-make-the-perfect-ribollita-soup-recipe-felicity-cloake)
 * [“the robustly spiced kebab shop rotisserie favourite”](https://www.theguardian.com/food/2022/aug/17/how-to-make-the-perfect-chicken-shawarma-recipe-felicity-cloake)
 * [“this berry jelly”](https://www.theguardian.com/food/2022/jul/27/how-to-make-the-perfect-raspberry-jelly-felicity-cloake)
 * [“this Swedish teatime treat”](https://www.theguardian.com/food/2022/apr/13/how-to-make-the-perfect-cardamom-buns-recipe-felicity-cloake)
@@ -79,7 +77,7 @@ But in an exciting collision of my interests, whoever writes the subheads for th
 * [“this classic sweet and sour Sicilian vegetable dish”](https://www.theguardian.com/lifeandstyle/2015/jul/29/how-to-cook-perfect-caponata-felicity-cloake)
 * [“this American Super Bowl classic”](https://www.theguardian.com/lifeandstyle/2015/jul/08/how-to-cook-perfect-buffalo-wings-recipe)
 * [“this dense, fudgy, butterscotch treat”](https://www.theguardian.com/lifeandstyle/2015/jun/24/how-make-perfect-blondies-felicity-cloake)
-* [“this gently jiggling French fancy”](https://www.theguardian.com/lifeandstyle/wordofmouth/2015/may/07/how-to-cook-perfect-creme-caramel-recipe), not to be confused with [“this wobbly French dessert”](https://www.theguardian.com/lifeandstyle/wordofmouth/2013/aug/29/how-to-cook-perfect-cherry-clafoutis)
+* [“this gently jiggling French fancy”](https://www.theguardian.com/lifeandstyle/wordofmouth/2015/may/07/how-to-cook-perfect-creme-caramel-recipe); not to be confused with [“this wobbly French dessert”](https://www.theguardian.com/lifeandstyle/wordofmouth/2013/aug/29/how-to-cook-perfect-cherry-clafoutis)
 * [“this feast-day favourite”](https://www.theguardian.com/lifeandstyle/2015/mar/26/how-to-cook-the-perfect-sinmel-cake)
 * [“these light and lacy confections”](https://www.theguardian.com/lifeandstyle/wordofmouth/2014/oct/09/how-to-bake-perfect-florentines-recipe)
 * [“this student staple”](https://www.theguardian.com/lifeandstyle/wordofmouth/2013/oct/17/how-to-make-perfect-nachos)
@@ -95,4 +93,4 @@ But in an exciting collision of my interests, whoever writes the subheads for th
 * [“this mainstay of the American barbecue canon”](https://www.theguardian.com/lifeandstyle/wordofmouth/2011/jun/30/how-cook-perfect-barbecue-ribs)
 * [“this classic of the picnic basket”](https://www.theguardian.com/lifeandstyle/wordofmouth/2011/may/26/how-to-cook-perfect-quiche-lorraine)
 
-Bonus not-technically-a-second-mention: [“splaying the tuber”](https://www.theguardian.com/lifeandstyle/wordofmouth/2010/mar/15/best-mashed-potato-method).
+Bonus technically-not-quite-a-second-mention: [“splaying the tuber”](https://www.theguardian.com/lifeandstyle/wordofmouth/2010/mar/15/best-mashed-potato-method).
