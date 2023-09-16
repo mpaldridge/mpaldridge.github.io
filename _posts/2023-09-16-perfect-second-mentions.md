@@ -10,7 +10,7 @@ permalink: /blog/perfect-second-mentionds.html
 
 Here are two things I enjoy:
 
-First is Felicity Cloake’s [“How to cook the perfect…”](https://www.theguardian.com/food/series/how-to-cook-the-perfect----) series in the *Guardian*. Cloake goes through multiple different recipes for something, rigorously testing them out and selecting the best bits from each, doing the sort of research and refinement that one senses most recipe book writers don’t actually bother to do. Plus, it’s matched with genuine sense of fun and a bouncy prose style that often evades the American science-nerd food-hack bros with which the series shares some superficial similarities.
+First is Felicity Cloake’s [“How to cook the perfect…”](https://www.theguardian.com/food/series/how-to-cook-the-perfect----) series in the *Guardian*. Cloake goes through multiple different recipes for something, rigorously testing them out and selecting the best bits from each, doing the sort of research and refinement that one suspects most recipe book writers don’t actually bother to do. Plus, it’s matched with genuine sense of fun and a bouncy prose style that typically evades the American science-nerd food-hack bros with whom the series shares some superficial similarities.
 
 Second is the journalistic concept of the “elegant variation” or the “second mention”. This is when, after introducing some person, place or object, the writer the later replaces the straightforward noun by a more complicated description. Take [this example](https://www.independent.co.uk/travel/news-and-advice/venice-tourist-tax-fees-italy-overtourism-b2409844.html) from the *Independent* a few days ago:
 
