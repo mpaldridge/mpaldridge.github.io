@@ -20,14 +20,17 @@ M Aldridge, [O Johnson](https://people.maths.bris.ac.uk/~maotj/), [J Scarlett](h
 Paper/Book/Ebook: [doi:10.1561/0100000099](https://doi.org/10.1561/0100000099)  
 Preprint: [arXiv:1902.06002](https://arxiv.org/abs/1902.06002)  
 
-## Preprints
+## Papers
+
+**Small error algorithms for tropical group testing**  
+V Paligadu, O Johnson, M Aldridge  
+2023  
+Preprint: [arXiv:2309.07264](https://arxiv.org/abs/2309.07264)
 
 **Conservative two-stage group testing in the linear regime**  
 M Aldridge  
-Submitted, 2022  
+2022  
 Preprint: [arXiv:2005.06617](https://arxiv.org/abs/2005.06617)
-
-## Published papers
 
 **Pooled testing to isolate infected individuals**  
 M Aldridge  
