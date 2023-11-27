@@ -58,7 +58,7 @@ These expressions $\mathbb EX$ and $\mathbb EX(X-1)$ are the first two cases of 
 
 $$ \mathbb EX^{\underline{k}} = \mathbb EX(X-1)\cdots(X-k+1) , $$
 
-The falling moments are the expectations of the falling factorials $X^{\underline{k}} = X(X-1)\cdots(X-k+1)$, compared to the usual moments being the expectation of the powers X^k = XX\cdots X$. I discussed the falling factorial in my [earlier blogpost on sums of powers](sums-powers-1.html).
+The falling moments are the expectations of the falling factorials $X^{\underline{k}} = X(X-1)\cdots(X-k+1)$, compared to the usual moments being the expectation of the powers $X^k = XX\cdots X$. I discussed the falling factorial in my [earlier blogpost on sums of powers](sums-powers-1.html).
 
 Here, I want to argue that the falling moments are, for discrete random variables, more natural objects than the usual plain vanilla moments. For a start, the famous distributions often have very pleasant formulas for the falling moments:
 
@@ -84,7 +84,7 @@ $$ p(x) = \frac{\binom{M}{x} \binom{N-M}{n-x}}{\binom{N}{n}} . $$
 
 The falling moments are
 
-${\displaystyle \mathbb EX^{\underline{k}} = \frac{M^{\underline{k}}}{N^{\underline{k}}} n^{\underline{k}} }$
+$$\mathbb EX^{\underline{k}} = \frac{M^{\underline{k}}}{N^{\underline{k}}} n^{\underline{k}} .$$
 
 * **Discrete uniform distribution** on $\{0,1,\dots,n\}$: The PMF is $p(x) = 1/(n+1)$. The falling moments are
 
@@ -153,7 +153,7 @@ The two conventions are:
 * **Convention 1:**
   * The geometric distribution is the number of trials up to and including the first success.
   * The negative binomial distribution is the number of trials up and including the $n$th success.
- * **Convention 2:**
+* **Convention 2:**
   * The geometric distribution is the number of failures before the first success.
   * The negative binomial distribution is the number of failures before $n$th success.
 
@@ -167,22 +167,22 @@ $$ \mathbb EX^k = k! \, \lambda^{-k} \qquad M(t) = {\displaystyle \frac{1}{1+ \l
 
 Compare this with the falling moments and FMGF of the geometric under Convention 1:
 
-$$ \mathbb EX^{\underline k} = k!\, \frac{1}{1-p} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = ${\displaystyle \frac{1+t}{1+ \left(\frac{1-p}{p}\right)t}} , $$
+$$ \mathbb EX^{\underline k} = k!\, \frac{1}{1-p} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \frac{1+t}{1+ \left(\frac{1-p}{p}\right)t} , $$
 
 and under Convention 2:
 
-$$ \mathbb EX^{\underline k} = k! left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = ${\displaystyle \frac{1}{1+ \left(\frac{1-p}{p}\right)t}} .$$
+$$ \mathbb EX^{\underline k} = k! \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \frac{1}{1+ \left(\frac{1-p}{p}\right)t} .$$
 
 Similarly, the Gamma distribution is the "continuous equivalent" to the negative binomial. The moments and MGF of the Gamma$(n, \lambda)$ are
 
-$$ \mathbb EX^k = n^{\overline k} \, \lambda^{-k} \qquad M(t) = {\displaystyle \left(\frac{1}{1+ \lambda^{-1} t}\right)^n} . $$
+$$ \mathbb EX^k = n^{\overline k} \, \lambda^{-k} \qquad M(t) = \left(\frac{1}{1+ \lambda^{-1} t}\right)^n} . $$
 
 Compare this with the falling moments and FMGF of the geometric under Convention 1:
 
-$$ \mathbb EX^{\underline k} = n^{\overline k}\, \left(\frac{1}{1-p}\right)^n \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = ${\displaystyle \left(\frac{1+t}{1+ \left(\frac{1-p}{p}\right)t}\right)^n} , $$
+$$ \mathbb EX^{\underline k} = n^{\overline k}\, \left(\frac{1}{1-p}\right)^n \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(\frac{1+t}{1+ \left(\frac{1-p}{p}\right)t}\right)^n , $$
 
 and under Convention 2:
 
-$$ \mathbb EX^{\underline k} = n^{\overline k} left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = ${\displaystyle \frac{1}{1+ \left(\frac{1-p}{p}\right)t}} .$$
+$$ \mathbb EX^{\underline k} = n^{\overline k} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \frac{1}{1+ \left(\frac{1-p}{p}\right)t} .$$
 
 It's hard to argue anything other than that Convention 2 is the more natural here, with $(1-p)/p$ playing the role of $\lambda^{-1}$. Do I need to change my mind about this?
