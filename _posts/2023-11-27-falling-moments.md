@@ -159,7 +159,7 @@ The two conventions are:
 
 I've always been a strong Convention 1-er. It seems more pleasant for the expectation of the geometric being $1/p$ (Convention 1) rather than $(1-p)/p$ (Convention 2); like, "the average number of dice rolls to get a six is 6" seems nicer than "the average number of non-six dice rolls before getting a six is 5". I'm sure I told my students that when I'm made King of the Universe I'll force everyone to move to Convention 1.
 
-But writing this blogpost has kind of changed my mind.
+But writing this blogpost makes me wonder if I should change my mind.
 
 The exponential is the "continuous equivalent" to the geometric. The moments and MGF of the exponential are
 
@@ -185,4 +185,4 @@ and under Convention 2:
 
 $$ \mathbb EX^{\underline k} = n^{\overline k} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(\frac{1}{1+ \left(\frac{1-p}{p}t\right)}\right) .$$
 
-It's hard to argue anything other than that Convention 2 is the more natural here, with $(1-p)/p$ playing the role of $\lambda^{-1}$. Do I need to change my mind about this?
+It's hard to argue anything other than that Convention 2 is the more natural here, with $(1-p)/p$ playing the role of $\lambda^{-1}$. Do I need to change to being Convention 2-er now?
