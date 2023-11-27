@@ -175,7 +175,7 @@ $$ \mathbb EX^{\underline k} = k! \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = 
 
 Similarly, the Gamma distribution is the "continuous equivalent" to the negative binomial. The moments and MGF of the Gamma$(n, \lambda)$ are
 
-$$ \mathbb EX^k = n^{\overline k} \, \lambda^{-k} \qquad M(t) = \left(\frac{1}{1+ \lambda^{-1} t}\right)^n} . $$
+$$ \mathbb EX^k = n^{\overline k} \, \lambda^{-k} \qquad M(t) = \left(\frac{1}{1+ \lambda^{-1} t}\right)^n . $$
 
 Compare this with the falling moments and FMGF of the geometric under Convention 1:
 
@@ -183,6 +183,6 @@ $$ \mathbb EX^{\underline k} = n^{\overline k}\, \left(\frac{1}{1-p}\right)^n \l
 
 and under Convention 2:
 
-$$ \mathbb EX^{\underline k} = n^{\overline k} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \frac{1}{1+ \left(\frac{1-p}{p}\right)t} .$$
+$$ \mathbb EX^{\underline k} = n^{\overline k} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(\frac{1}{1+ \left(\frac{1-p}{p}\right)}\right) .$$
 
 It's hard to argue anything other than that Convention 2 is the more natural here, with $(1-p)/p$ playing the role of $\lambda^{-1}$. Do I need to change my mind about this?
