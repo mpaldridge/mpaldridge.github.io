@@ -136,8 +136,8 @@ Now, this FMGF is not a new invention. A widely used conveninent function is the
 |:-:|:-:|:-:|
 | Bernoulli | $(1-p) + pt$ | $1 + pt$ |
 | Binomial | $\big((1-p) + pt)^n$ | $(1 + pt)^n$ |
-| Geometric | ${\displaystyle \left(\frac{1}{p} - \frac{1-p}{p}\,t\right)^{-1}$ | ${\displaystyle \left(1 - \frac{1-p}{p}\,t\right)^{-1}$ | 
-| Negative binomial | ${\displaystyle \left(\frac{1}{p} - \frac{1-p}{p}\,t\right)^{-n}$ | ${\displaystyle \left(1 - \frac{1-p}{p}\,t\right)^{-1}$ |
+| Geometric | ${\displaystyle \left(\frac{1}{p} - \frac{1-p}{p}\,t\right)^{-1}}$ | ${\displaystyle \left(1 - \frac{1-p}{p}\,t\right)^{-1}}$ | 
+| Negative binomial | ${\displaystyle \left(\frac{1}{p} - \frac{1-p}{p}\,t\right)^{-n}}$ | ${\displaystyle \left(1 - \frac{1-p}{p}\,t\right)^{-1}}$ |
 | Poisson | $\mathrm{e}^{\lambda (t-1)}$ | $\mathrm{e}^{\lambda t}$ | 
 
 Of course, these contain exactly the same information, but I think I'll argue that the FMGFs are slightly more pleasant than the PGFs. (The discrete uniform ones are "fine but not great" either way.)
@@ -171,11 +171,11 @@ $$ \mathbb EX^{\underline k} = k!\, \frac{1}{1-p} \left(\frac{1-p}{p}\right)^k \
 
 and under Convention 2:
 
-$$ \mathbb EX^{\underline k} = k! \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(1 - \frac{1-p}{p}\,\right)^{-1} . $$
+$$ \mathbb EX^{\underline k} = k! \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(1 - \frac{1-p}{p}\,t\right)^{-1} . $$
 
 Similarly, the Gamma distribution is the "continuous equivalent" to the negative binomial. The moments and MGF of the Gamma$(n, \lambda)$ are
 
-$$ \mathbb EX^k = n^{\overline k} \, \lambda^{-k} \qquad M(t) = \left(\frac{1}{1+ \lambda^{-1} t}\right)^n . $$
+$$ \mathbb EX^k = n^{\overline k} \, \lambda^{-k} \qquad M(t) = {\displaystyle \big(1 - \lambda^{-1} t\big)^{-n}} . $$
 
 Compare this with the falling moments and FMGF of the geometric under Convention 1:
 
@@ -183,7 +183,7 @@ $$ \mathbb EX^{\underline k} = n^{\overline k}\, \left(\frac{1}{1-p}\right)^n \l
 
 and under Convention 2:
 
-$$ \mathbb EX^{\underline k} = n^{\overline k} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \Phi(t) = \left(1 - \frac{1-p}{p}\,\right)^{-n} .$$
+$$ \mathbb EX^{\underline k} = n^{\overline k} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(1 - \frac{1-p}{p}\,t\right)^{-n} .$$
 
 It's hard to argue anything other than that Convention 2 is the more natural here, with $(1-p)/p$ playing the role of $\lambda^{-1}$. Do I need to change to being Convention 2-er now?
 
@@ -193,6 +193,6 @@ A famous result called the "Poisson approximation to the binomial" -- and someti
 
 You can just [prove this "by hand"](https://mpaldridge.github.io/math1710/L12-poisson.html#poisson-approx). A nicer way is to show that the PGF of $X_n$ tends to the PGF of $Y$, or that the MGF of $X_n$ tends to the MGF of $Y$. But I think this is more elegant still (although not, of course, in anyway *different*) with the FMGF: we have
 
-$$ \Phi_{X_n}(t) = \left(1 + \frac{\lambda t}{n} \right)^n \to \mathrm{e}^{\lambda t} = \Phi_Y(t) , \]
+$$ \Phi_{X_n}(t) = \left(1 + \frac{\lambda t}{n} \right)^n \to \mathrm{e}^{\lambda t} = \Phi_Y(t) , $$
 
 as an immediate, almost trivial, application of perhaps the most famous limit in mathematics. Score another one for the falling moment generating function!
