@@ -196,3 +196,5 @@ You can just [prove this "by hand"](https://mpaldridge.github.io/math1710/L12-po
 $$ \Phi_{X_n}(t) = \left(1 + \frac{\lambda t}{n} \right)^n \to \mathrm{e}^{\lambda t} = \Phi_Y(t) , $$
 
 as an immediate, almost trivial, application of perhaps the most famous limit in mathematics. Score another one for the falling moment generating function!
+
+***Update:** It turns out I hadn't run out of things to say about this! See [my follow-up post, "Falling and thinning".](falling-thinning.html)*
