@@ -9,11 +9,11 @@ use_math: true
 
 ## Recap
 
-This post is a follow-up to my earlier post on the *falling moment generating function*
+This post is a follow-up to [my earlier post](falling-moments.html) on the *falling moment generating function*
 
 $$ \Phi_X(t) = \mathbb E(1+t)^X = \sum_{k=0}^\infty \mathbb EX^{\underline{k}} \, \frac{t^k}{k!} . $$
 
-I argued that the FMGF is a natural discrete equivalent to the moment generating function (MGF) $M_X(t) = \mathbb E\mathrm{e}^{tX}$. I also argued that although it is very similar to the probability generating function (PGF) $G_X(t) = \mathbb Et^X$, since $\Phi_X(t) = G_X(1+t)$, it seems to give slightly more pleasant expressions for the common distributions and a slightly simpler proof of the "law of small numbers".
+[I argued](falling-moments.html) that the FMGF is a natural discrete equivalent to the moment generating function (MGF) $M_X(t) = \mathbb E\mathrm{e}^{tX}$. I also argued that although it is very similar to the probability generating function (PGF) $G_X(t) = \mathbb Et^X$, since $\Phi_X(t) = G_X(1+t)$, it seems to give slightly more pleasant expressions for the common distributions and a slightly simpler proof of the "law of small numbers".
 
 After that blogpost, [Oliver Johnson](https://twitter.com/orbit_silver/status/1729435474005983309) pointed out an even better argument for the FMGF, based on the idea of "thinning". (Olly is the author of the [Substack "Logging the World"](https://bristoliver.substack.com) and the [book "Numbercrunch"](https://www.amazon.co.uk/dp/1788708334/), and was my PhD supervisor back in the day.)
 
