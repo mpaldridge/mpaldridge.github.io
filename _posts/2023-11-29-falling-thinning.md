@@ -21,13 +21,13 @@ After that blogpost, [Oliver Johnson](https://twitter.com/orbit_silver/status/17
 
 All the "GFs" work well with adding up independent random variables – to find the GF of the independent sum $X + Y$, we just multiply the GF for $X$ and the GF for $Y$. So with the FMGF, for example, we have have $\Phi_{X+Y}(t) = \Phi_X(t)\,\Phi_Y(t)$, because
 
-$$ \mathbb E(1+t)^{X+Y} = \mathbb E(1+t)^X \, \mathbb E(1+t)Y . $$
+$$ \mathbb E(1+t)^{X+Y} = \mathbb E(1+t)^X \, \mathbb E(1+t)^Y . $$
 
 The MGF works particularly well with *scaling* random variables. By scaling, I just mean multiplying by a constant, so going from $X$ to $aX$. We have $M_{aX}(t) = M_X(at)$, since
 
 $$ \mathbb E \mathrm{e}^{t(aX)} = \mathbb E \mathrm{e}^{(at)X} . $$
 
-But, while scaling is a natural operation for continuous random variables, it doesn't really make sense for discrete random variables. (From now on, when I say "discrete", I'll specifically mean random variables that take values in the non-negative integers $\{0,1,2,3,\dots\}$.) Scaling a continuous random variable that takes values in $\mathbb R$ by a factor of $a = 0.7$ gives you another continuous random variable that takes values in $\mathbb R$; Scaling a continuous random variable that takes values in $\mathbb R$ by a factor of $a = 0.7$ gives you another continuous random variable that takes values in $\mathbb R$; but scaling a discrete random variable that takes values in $\{0,1,2,3,\dots\}$ by a factor of $a = 0.7$ gives you a random variable that takes values in $\{0, 0.7, 1.4, 2.1,\dots \}$, which is not really a comparable thing.
+But, while scaling is a natural operation for continuous random variables, it doesn't really make sense for discrete random variables. (From now on, when I say "discrete", I'll specifically mean random variables that take values in the non-negative integers $\lbrace 0,1,2,3,\dots\rbrace$.) Scaling a continuous random variable that takes values in $\mathbb R$ by a factor of $a = 0.7$ gives you another continuous random variable that takes values in $\mathbb R$; but scaling a discrete random variable that takes values in $\lbrace 0,1,2,3,\dots\rbrace$ by a factor of $a = 0.7$ gives you a random variable that takes values in $\lbrace 0,0.7,1.4,2.1,\dots\rbrace$, which is not really a comparable thing.
 
 Instead, for discrete random variables, a more natural operation is *thinning*. To *thin* a discrete random variable $X$ by a constant $a \in [0,1]$, we can think of $X$ objects as *trying* to arrive, but each one only making it with probability $a$ and getting lost with probability $1-a$. Formally, if we write $a\circ X$ for the $a$-thinning of $X$, we have
 
@@ -49,6 +49,8 @@ $$ \begin{align*}
 where we used the fact that, conditional on $X$, the thinning $a \circ X$ is Binomial$(x,a)$, which has FMGF $(1+at)^X$.
 
 So we see that the way the FMGF behaves under thinning, $\Phi_{a\circ X}(t) = \Phi_X(at)$ is exactly the way that the MGF behaves under scaling, $M_{aX}(t) = M_X(at)$. (This would not work nearly as well for the PGF, which has the very awkward expression $G_{a\circ X}(t) = G_X(at - a + 1)$.)
+
+Comparing coefficients of $t^k$ in $\Phi_{a\circ X}(t) = \Phi_X(at)$ (or, more formally, by differentiating $k$ times and taking $t = 0$), we learn how thinning changes the falling moments: specifically, we get $\mathbb E(a \circ X)^{\underline{k}} = a^k \, \mathbb EX^{\underline{k}}$. This is the discrete equivalent of how scaling changes the moments: $\mathbb E(aX)^k = a^k \, \mathbb EX^k$.
 
 ## Large numbers
 
