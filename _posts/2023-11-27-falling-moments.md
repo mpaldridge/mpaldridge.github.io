@@ -136,8 +136,8 @@ Now, this FMGF is not a new invention. A widely used conveninent function is the
 |:-:|:-:|:-:|
 | Bernoulli | $(1-p) + pt$ | $1 + pt$ |
 | Binomial | $\big((1-p) + pt)^n$ | $(1 + pt)^n$ |
-| Geometric | ${\displaystyle \frac{1}{\frac{1}{p}+ \left(\frac{1-p}{p}\right)t}}$ | ${\displaystyle \frac{1}{1+ \left(\frac{1-p}{p}\right)t}}$ | 
-| Negative binomial | ${\displaystyle \left(\frac{1}{\frac{1}{p} + \left(\frac{1-p}{p}\right)t}\right)^n}$ | ${\displaystyle \left(\frac{1}{1+ \left(\frac{1-p}{p}\right)t}\right)^n}$ |
+| Geometric | ${\displaystyle \left(\frac{1}{p} - \frac{1-p}{p}\,t\right)^{-1}$ | ${\displaystyle \left(1 - \frac{1-p}{p}\,t\right)^{-1}$ | 
+| Negative binomial | ${\displaystyle \left(\frac{1}{p} - \frac{1-p}{p}\,t\right)^{-n}$ | ${\displaystyle \left(1 - \frac{1-p}{p}\,t\right)^{-1}$ |
 | Poisson | $\mathrm{e}^{\lambda (t-1)}$ | $\mathrm{e}^{\lambda t}$ | 
 
 Of course, these contain exactly the same information, but I think I'll argue that the FMGFs are slightly more pleasant than the PGFs. (The discrete uniform ones are "fine but not great" either way.)
@@ -155,7 +155,7 @@ The two conventions are:
   * The negative binomial distribution is the number of trials up and including the $n$th success.
 * **Convention 2:**
   * The geometric distribution is the number of failures before the first success.
-  * The negative binomial distribution is the number of failures before $n$th success.
+  * The negative binomial distribution is the number of failures before the $n$th success.
 
 I've always been a strong Convention 1-er. It seems more pleasant for the expectation of the geometric being $1/p$ (Convention 1) rather than $(1-p)/p$ (Convention 2); like, "the average number of dice rolls to get a six is 6" seems nicer than "the average number of non-six dice rolls before getting a six is 5". I'm sure I told my students that when I'm made King of the Universe I'll force everyone to move to Convention 1.
 
@@ -163,15 +163,15 @@ But writing this blogpost makes me wonder if I should change my mind.
 
 The exponential is the "continuous equivalent" to the geometric. The moments and MGF of the exponential are
 
-$$ \mathbb EX^k = k! \, \lambda^{-k} \qquad M(t) = {\displaystyle \frac{1}{1+ \lambda^{-1} t}} . $$
+$$ \mathbb EX^k = k! \, \lambda^{-k} \qquad M(t) = {\displaystyle \big(1 - \lambda^{-1} t\big)^{-1}} . $$
 
 Compare this with the falling moments and FMGF of the geometric under Convention 1:
 
-$$ \mathbb EX^{\underline k} = k!\, \frac{1}{1-p} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \frac{1+t}{1+ \left(\frac{1-p}{p}\right)t} , $$
+$$ \mathbb EX^{\underline k} = k!\, \frac{1}{1-p} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(\frac{1}{p} - \frac{1-p}{p}\,t\right)^{-1} , $$
 
 and under Convention 2:
 
-$$ \mathbb EX^{\underline k} = k! \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \frac{1}{1+ \left(\frac{1-p}{p}\right)t} .$$
+$$ \mathbb EX^{\underline k} = k! \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(1 - \frac{1-p}{p}\,\right)^{-1} . $$
 
 Similarly, the Gamma distribution is the "continuous equivalent" to the negative binomial. The moments and MGF of the Gamma$(n, \lambda)$ are
 
@@ -179,10 +179,20 @@ $$ \mathbb EX^k = n^{\overline k} \, \lambda^{-k} \qquad M(t) = \left(\frac{1}{1
 
 Compare this with the falling moments and FMGF of the geometric under Convention 1:
 
-$$ \mathbb EX^{\underline k} = n^{\overline k}\, \left(\frac{1}{1-p}\right)^n \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(\frac{1+t}{1+ \left(\frac{1-p}{p}\right)t}\right)^n , $$
+$$ \mathbb EX^{\underline k} = n^{\overline k}\, \left(\frac{1}{1-p}\right)^n \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(\frac{1}{p} - \frac{1-p}{p}\,t\right)^{-n} , $$
 
 and under Convention 2:
 
-$$ \mathbb EX^{\underline k} = n^{\overline k} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \left(\frac{1}{1+ \left(\frac{1-p}{p}\right)t}\right)^n .$$
+$$ \mathbb EX^{\underline k} = n^{\overline k} \left(\frac{1-p}{p}\right)^k \qquad \Phi(t) = \Phi(t) = \left(1 - \frac{1-p}{p}\,\right)^{-n} .$$
 
 It's hard to argue anything other than that Convention 2 is the more natural here, with $(1-p)/p$ playing the role of $\lambda^{-1}$. Do I need to change to being Convention 2-er now?
+
+## The law of small numbers
+
+A famous result called the "Poisson approximation to the binomial" -- and sometimes, slightly cheekily, the "law of small numbers" -- is the following. It says that if $X_n \sim \text{Bin}(n, \lambda/n)$, then, as $n \to \infty$ that tends towards a Poisson distribution with rate $\lambda$, in the sense that, if $Y \sim \text{Po}(\lambda)$, we have $\mathbb P(X_n = x) \to \mathbb P(Y = x)$ as $n \to \infty$ for all $x$.
+
+You can just [prove this "by hand"](https://mpaldridge.github.io/math1710/L12-poisson.html#poisson-approx). A nicer way is to show that the PGF of $X_n$ tends to the PGF of $Y$, or that the MGF of $X_n$ tends to the MGF of $Y$. But I think this is more elegant still (although not, of course, in anyway *different*) with the FMGF: we have
+
+$$ \Phi_{X_n}(t) = \left(1 + \frac{\lambda t}{n} \right)^n \to \mathrm{e}^{\lambda t} = \Phi_Y(t) , \]
+
+as an immediate, almost trivial, application of perhaps the most famous limit in mathematics. Score another one for the falling moment generating function!
