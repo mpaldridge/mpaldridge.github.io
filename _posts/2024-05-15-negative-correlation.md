@@ -63,7 +63,7 @@ $$ 0 = 3 \sigma^2 + 6\rho\sigma^2 , $$
 
 which gives $\rho = -\tfrac12$. So the pieces of the stick all have a negative correlation of $-\tfrac12$; or rather, each pair of pieces of the stick has a negative correlation $-\tfrac12$.
 
-You can do exactly the same construction with $n$ parts of the stick for any $n$: let $Z_i$ be uniform on $[0,1]$ (or indeed any positive distribution) and set $X_i = Z_i / \sum_{j=1}^n Z_j$. The same calculation becomes
+You can do exactly the same construction with $n$ parts of the stick for any $n$: let all the $Z_i$ be identically distributied uniform on $[0,1]$ (or indeed any positive distribution) and set $X_i = Z_i / \sum_{j=1}^n Z_j$. The same calculation becomes
 
 $$ 0 = n \sigma^2 + n(n-1) \rho \sigma^2 ,$$
 
