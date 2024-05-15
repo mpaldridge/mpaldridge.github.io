@@ -88,7 +88,7 @@ So the student speaker was basically right – it’s not really worth trying to
 
 The proof here is essentially the same as the argument previously.
 
-*Proof.* Without loss of generality we can scale each $X_i$ by multiplying by $1/\sqrt{Var(X_i)}$. This keeps the correlations the same, but makes all the variances equal 1.
+*Proof.* Without loss of generality we can scale each $X_i$ by multiplying by $1/\sqrt{\operatorname{Var}(X_i)}$. This keeps the correlations the same, but makes all the variances equal 1.
 
 Then we use
 
