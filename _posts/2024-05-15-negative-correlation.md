@@ -57,13 +57,13 @@ $$  \operatorname{Var}(X_1 + X_2 + X_3) = \sum_{i=1}^3 \sigma^2+ 2 \sum_{i < j} 
 
 (where, in the last term, the $2 \times 3 = 6$ is because there are three pairs of variables: $(1,2)$, $(2,3)$ and $(3,1)$).
 
-But — and here’s the big trick! — I also know what $\operatorname{Var}(X_1 + X_2 + X_3)$. That’s because the example is fixed so that $X_1 + X_2 + X_3 = 1$, and the variance of “the number one” is 0, because it’s always the same. So we now have
+But — and here’s the big trick! — I also know what $\operatorname{Var}(X_1 + X_2 + X_3)$ is. That’s because the example is fixed so that $X_1 + X_2 + X_3 = 1$, and the variance of “the number one” is 0, because it’s always the same. So we now have
 
 $$ 0 = 3 \sigma^2 + 6\rho\sigma^2 , $$
 
-which gives $\rho = -\tfrac12$. So the pieces of the stick all have a negative correlation of $-\tfrac12$; or rather, each pair of pieces of the stick has a negative correlation $-\tfrac12$.
+which gives $\rho = -\tfrac12$. So the pieces of the stick all have a negative correlation of $-\tfrac12$; or rather, each pair of pieces of the stick has a negative correlation $-\tfrac12$. And we worked it out without any awkward calculation of variance of covariances.
 
-You can do exactly the same construction with $n$ parts of the stick for any $n$: let all the $Z_i$ be identically distributied uniform on $[0,1]$ (or indeed any positive distribution) and set $X_i = Z_i / \sum_{j=1}^n Z_j$. The same calculation becomes
+You can do exactly the same construction with $n$ parts of the stick for any $n$: let all the $Z_i$ be identically distributed uniform on $[0,1]$ (or indeed any positive distribution) and set $X_i = Z_i / \sum_{j=1}^n Z_j$. The same calculation becomes
 
 $$ 0 = n \sigma^2 + n(n-1) \rho \sigma^2 ,$$
 
