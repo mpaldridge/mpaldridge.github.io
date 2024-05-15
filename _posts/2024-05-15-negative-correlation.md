@@ -23,7 +23,7 @@ One student speaker then talked about a technique called “antithetic pairs”.
 
 $$ \operatorname{Var} \left( \frac{X_1 + X_2}{2} \right) = (1 + \rho) \frac{\sigma^2}{2} , $$
 
-where $\rho$ is the correlation. So, the speaker pointed out, if we can induce a negative correlation, $\rho < 0$, then this will be even more accurate than the independent case. (I covered a similar idea in [this blogpost](/correlation.html).)
+where $\rho$ is the correlation. So, the speaker pointed out, if we can induce a negative correlation, $\rho < 0$, then this will be even more accurate than the independent case. (I covered a similar idea in [this blogpost](correlation.html).)
 
 I was thinking of asking whether this could be extended to antithetic triples or quadruples – but the speaker had predicted this. She said it’s much harder to induce negative correlation between three variables – she might even have said it’s impossible.
 
