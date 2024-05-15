@@ -96,7 +96,7 @@ $$  \operatorname{Var} \left(\sum_{i=1}^n  X_i \right) = \sum_{i=1}^n  \operator
 
 The right-hand side of $(*)$ is
 
-$$ n + 2\sum_{i<j} \rho_{ij} = n + n(n-1)\bar\rho , $$
+$$ \sum_{i=1}^n 1 + 2\sum_{i<j} \rho_{ij} = n + n(n-1)\bar\rho , $$
 
 by the definition of $\bar\rho$. Meanwhile, the left-hand side of $(*)$ is a variance, so must be non-negative. Hence, we have
 
