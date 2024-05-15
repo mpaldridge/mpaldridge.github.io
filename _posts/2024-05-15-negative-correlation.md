@@ -19,7 +19,7 @@ $$ \operatorname{Var} \left( \frac{X_1 + X_2}{2} \right) = \frac{1}{2^2} \big(\o
 
 so the variance is halved by combining the two estimates.
 
-The student speaker then talked about a technique called “antithetic pairs”. If $X_1$ and $X_2$ are identically distributed but *not* independent, we have
+One student speaker then talked about a technique called “antithetic pairs”. If $X_1$ and $X_2$ are identically distributed but *not* independent, we have
 
 $$ \operatorname{Var} \left( \frac{X_1 + X_2}{2} \right) = (1 + \rho) \frac{\sigma^2}{2} , $$
 
