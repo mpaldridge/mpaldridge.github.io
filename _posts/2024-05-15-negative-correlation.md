@@ -15,7 +15,7 @@ $$ \operatorname{Var}(X_1) = \operatorname{Var}(X_2) = \sigma^2 , $$
 
 then
 
-$$ \operatorname{Var} \left( \frac{X_1 + X_2}{2} \right) = \frac{1}{2^2} \big(\operatorname{Var}(X_1) +\operatorname{Var}(X_1) \big) = \frac{\sigma^2}{2} , $$
+$$ \operatorname{Var} \left( \frac{X_1 + X_2}{2} \right) = \frac{1}{2^2} \big(\operatorname{Var}(X_1) +\operatorname{Var}(X_2) \big) = \frac{\sigma^2}{2} , $$
 
 so the variance is halved by combining the two estimates.
 
@@ -37,9 +37,9 @@ so, in particular, $X_1 + X_2 + X_3 = 1$ make up “the whole stick”.
 
 I said it seemed this $X_1$, $X_2$, $X_3$ must be pairwise negatively correlated. However, I also had to admit that I couldn’t manage to calculate the correlation
 
-$$ \rho_{ij} = \frac{\operatorname{Cov}(X_i,X_j)}{\sqrt{\operatorname{Var}(X_1)\,\operatorname{Var}(X_2)} , $$
+$$ \rho_{ij} = \frac{\operatorname{Cov}(X_i,X_j)}{\sqrt{\operatorname{Var}(X_1)\,\operatorname{Var}(X_2)}} , $$
 
-because the variance and covariance seem rather tricky.
+because the variance and covariance seem rather tricky to work out.
 
 But, later in the day, I realised there’s a cunning – can I say amusing? – way to work out the correlations “by the back door”, without calculating the variance and covariance at all.
 
@@ -51,9 +51,9 @@ In the $n = 3$ case, this becomes
 
 $$  \operatorname{Var}(X_1 + X_2 + X_3) = \sum_{i=1}^3 \sigma_i^2+ 2 \sum_{i < j}  \rho_{ij}\sigma_i\sigma_j , $$
 
-where I’m writing $\sigma_i^2 = \operatorname{Var}(X_i)$. Now, I haven’t worked out what the variances $\sigma_i^2$ are; but I do know, by symmetry, that they’re all the same. Let’s just call that $\sigma^2$. Similarly, I know all the correlations $\rho_{ij}$ are the sam; let’s call them $\rho$. So we have
+where I’m writing $\sigma_i^2 = \operatorname{Var}(X_i)$ and $\rho_{ij} = \operatorname{Corr}(X_i, X_j)$. Now, I haven’t worked out what the variances $\sigma_i^2$ are; but I do know, by symmetry, that they’re all the same. Let’s just call that $\sigma^2$. Similarly, I know all the correlations $\rho_{ij}$ are the same; let’s call them $\rho$. So we have
 
-$$  \operatorname{Var}(X_1 + X_2 + X_3) = \sum_{i=1}^3 \sigma^2+ 2 \sum_{i < j}  \rho\sigma^2 = 3\sigma^2 + 6\rho\sigma^2  $$
+$$  \operatorname{Var}(X_1 + X_2 + X_3) = \sum_{i=1}^3 \sigma^2+ 2 \sum_{i < j}  \rho\sigma\sigma = 3\sigma^2 + 6\rho\sigma^2  $$
 
 (where, in the last term, the $2 \times 3 = 6$ is because there are three pairs of variables: $(1,2)$, $(2,3)$ and $(3,1)$).
 
@@ -61,9 +61,9 @@ But — and here’s the big trick! — I also know what $\operatorname{Var}(X_1
 
 $$ 0 = 3 \sigma^2 + 6\rho\sigma^2 , $$
 
-which gives $\rho = -\tfrac12$. So the pieces of the stick all have a negative correlation of $-\tfrac12$.
+which gives $\rho = -\tfrac12$. So the pieces of the stick all have a negative correlation of $-\tfrac12$; or rather, each pair of pieces of the stick has a negative correlation $-\tfrac12$.
 
-You can do exactly the same construction with $n$ parts of the stick for any $n$: let $Z_i$ be uniform on $[0,1]$ and set $X_i = Z_i / \sum_{j=1}^n Z_j$. The same calculation becomes
+You can do exactly the same construction with $n$ parts of the stick for any $n$: let $Z_i$ be uniform on $[0,1]$ (or indeed any positive distribution) and set $X_i = Z_i / \sum_{j=1}^n Z_j$. The same calculation becomes
 
 $$ 0 = n \sigma^2 + n(n-1) \rho \sigma^2 ,$$
 
@@ -88,7 +88,7 @@ So the student speaker was basically right – it’s not really worth trying to
 
 The proof here is essentially the same as the argument previously.
 
-*Proof.* Without loss of generality we can scale each $X_i$ by multiplying by $1/\sqrt{Var(X_i)}$. This keeps the correlations the same, but means all the variances equal 1.
+*Proof.* Without loss of generality we can scale each $X_i$ by multiplying by $1/\sqrt{Var(X_i)}$. This keeps the correlations the same, but makes all the variances equal 1.
 
 Then we use
 
@@ -96,9 +96,9 @@ $$  \operatorname{Var} \left(\sum_{i=1}^n  X_i \right) = \sum_{i=1}^n  \operator
 
 The right-hand side of $(*)$ is
 
-$$ n + 2\sum_{i<j} \rho_{ij} = n + n(n-1)\bar\rho . $$
+$$ n + 2\sum_{i<j} \rho_{ij} = n + n(n-1)\bar\rho , $$
 
-Meanwhile, the left-hand side of $(*)$ is a variance, so must be non-negative. Hence, we have
+by the definition of $\bar\rho$. Meanwhile, the left-hand side of $(*)$ is a variance, so must be non-negative. Hence, we have
 
 $$ 0 \leq n + n(n-1)\bar\rho , $$
 
