@@ -72,7 +72,7 @@ since there are $\binom{n}{2} = \frac{n(n-1)}{2}$ pairs of variables, and from t
 
 ## A theorem
 
-This raises the question: Is $\rho = -1\(n-1)$ the best possible result? That is, is it the case that with $n$ random variables, at least one of the correlations has to be at least $-1/(n-1)$?
+This raises the question: Is $\rho = -1/(n-1)$ the best possible result? That is, is it the case that with $n$ random variables, at least one of the correlations has to be at least $-1/(n-1)$?
 
 The answer to that question is yes!
 
