@@ -18,13 +18,13 @@ I should say what I believe people think this statistic proves. I believe that w
 
 My first complaint is that the crossover age, by itself, has nothing to say about this. Consider a pretend country, maybe not that dissimilar to our own, where the Red party does a bit better with young people and the Blue party does a bit better with old people.
 
-![](..assets/img/cross1.png)
+![](../assets/img/cross1-1.png)
 
 Here, the crossover age is 50. Below 50, the Red party is more popular; above 50 the Blue party is more popular.
 
 Now suppose age becomes a much more important factor in voting. Younger people become more Red-voting and older people more Blue-voting. In the graph, that means the lines get steeper. What does this do to the crossover age?
 
-![](..assets/img/cross2.png)
+![](../assets/img/cross2-1.png)
 
 (The thin faded lines are the old lines from the previous figure, the thick dark lines are the new ones.)
 
@@ -32,7 +32,7 @@ What has happened to the crossover age? Nothing! It's stayed at 50. Age has beco
 
 So what could affect the crossover age? Well, suppose that the Red party becomes more popular. Not more popular with any particular age group -- just uniformly more popular over the whole age range. In otherwords, the lines don't change steepness; just the red line moves up and the blue line moves down. What happens now?
 
-![](..assets/img/cross3.png)
+![](../assets/img/cross3-1.png)
 
 The crossover age has increased from 50 to 65! Just a change in overall popularity is sufficient to change the crossover age.
 
@@ -40,11 +40,11 @@ In other words, the phenomenon of the crossover age increasing can be entirely e
 
 My second complaint is a bit more complicated. Consider the two countries show below. In the Left country, there's a steep age gradient: as you get older, you become dramatically more likely to vote Blue. In the Right country, there's a shallow age gradient: as you get older, you only become slightly more likely to vote Blue.
 
-![](..assets/img/cross4.png)
+![](../assets/img/cross4-1.png)
 
 We know that Red party becoming more popular across the board is all we need to increase the crossover age. So what will happen in these two countries as that happens?
 
-![](..assets/img/cross5.png)
+![](../assets/img/cross5-1.png)
 
 In the Left country, with the steep age gradient, the crossover age has only increased about 9 years. But in the Right country, with the shallow age gradient, the crossover age has increased by 20 years.
 
