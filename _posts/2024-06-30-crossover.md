@@ -10,7 +10,7 @@ There's an election statistic going around that annoys me. It's some version of 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The Conservative-Labour crossover age is now 71 years old according to Deltapoll data.<br><br>71! <a href="https://t.co/RFgoGcNTay">pic.twitter.com/RFgoGcNTay</a></p>&mdash; Matthew Price (@MatthewPrice01) <a href="https://twitter.com/MatthewPrice01/status/1802947402434740341?ref_src=twsrc%5Etfw">June 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Commentators are commenting that the "crossover age" -- that is, the age at which people become more likely to vote Conservative than Labour -- has risen a lot this year compared to previous elections.
+Commentators are noticing that the "crossover age" -- that is, the age at which people become more likely to vote Conservative than Labour -- has risen a lot this year compared to previous elections.
 
 I have two complaints about this statistic. First, it doesn't prove what people think it proves. Second, it proves *the exact opposite* to what people think it proves.
 
