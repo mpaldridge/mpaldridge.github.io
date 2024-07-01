@@ -30,7 +30,7 @@ Now suppose age becomes a much more important factor in voting. Younger people b
 
 What has happened to the crossover age? Nothing! It's stayed at 50. Age has become much more important as a vote predictor, but the crossover age has not budged a single year.
 
-So what could affect the crossover age? Well, suppose that the Red party becomes more popular. Not more popular with any particular age group -- just uniformly more popular over the whole age range. In otherwords, the lines don't change steepness; just the red line moves up and the blue line moves down. What happens now?
+So what could affect the crossover age? Well, suppose that the Red party becomes more popular. Not more popular with any particular age group -- just uniformly more popular over the whole age range. In other words, the lines don't change steepness; just the red line moves up and the blue line moves down. What happens now?
 
 ![](../assets/img/cross3-1.png)
 
@@ -42,7 +42,7 @@ My second complaint is a bit more complicated. Consider the two countries show b
 
 ![](../assets/img/cross4-1.png)
 
-We know that Red party becoming more popular across the board is all we need to increase the crossover age. So what will happen in these two countries as that happens?
+We now know that all we need for the crossover age to increase is for the Red party to become more popular across the board. So let's suppose the Red party goes up by 10 points across all age ranges and the Blue party down by 10 points across all ranges, the same in both countries. What will happen in to the crossover ages?
 
 ![](../assets/img/cross5-1.png)
 
