@@ -32,7 +32,7 @@ From 2021–22 to 2023–24, I lectured the module **[MATH1710 Probability and S
 
 ### [MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750/)
 
-From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750/)**. The main website for this module was [here](https://mpaldridge.github.io/math2750/). This site closely represents the module as it is currently taught.
+From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750/)**. The main website for this module was [here](https://mpaldridge.github.io/math2750/). This site closely, but not perfectly, represents the module as it is currently taught.
 
 ### MATH3015 History of Mathematics
 
