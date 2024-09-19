@@ -24,7 +24,8 @@ Preprint: [arXiv:1902.06002](https://arxiv.org/abs/1902.06002)
 
 **Small error algorithms for tropical group testing**  
 V Paligadu, O Johnson, M Aldridge  
-2023  
+*IEEE Transactions on Information Theory*, 70:10, 7232-7250, 2024   
+Paper: [doi:10.1109/TIT.2024.3445271](https://doi.org/10.1109/TIT.2024.3445271)  
 Preprint: [arXiv:2309.07264](https://arxiv.org/abs/2309.07264)
 
 **Conservative two-stage group testing in the linear regime**  
