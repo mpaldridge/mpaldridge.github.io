@@ -6,13 +6,13 @@ permalink: /teaching/
 
 ## Current teaching
 
-### MATH5825M Independent Learning and Skills Project
+### MATH5835M Statistical Computing
 
 In 2024–25, Semester 1, I am the module leader for **MATH5835M Statistical Computing**. More to appear soon.
 
-### OMAT5203 Statistical Computing
+### OMAT5203M Statistical Computing
 
-I am designing the module OMAT5203 Statistical Computing for the online programme [MSc Data Science (Statistics)](https://www.coursera.org/degrees/msc-data-science-ul), which runs on the [Coursera](https://www.coursera.org/degrees/msc-data-science-ul) platform. It will run for the first time in early 2025.
+I am designing the module OMAT5203M Statistical Computing for the online programme [MSc Data Science (Statistics)](https://www.coursera.org/degrees/msc-data-science-ul), which runs on the [Coursera](https://www.coursera.org/degrees/msc-data-science-ul) platform. It will run for the first time in early 2025.
 
 ### MATH5825M Independent Learning and Skills Project
 
@@ -28,11 +28,11 @@ In 2024–25, Semester 2, I am the module leader for MATH5825M Independent Learn
 
 ### [MATH1710 Probability & Statistics I](https://mpaldridge.github.io/math1710/)
 
-From 2021–22 to 2023–24, I lectured the module **[MATH1710 Probability and Statistics I](https://mpaldridge.github.io/math1710/)**. The main website for this module was [here](https://mpaldridge.github.io/math1710/). This site is quite similar, but not identical, to how the first half of the current MATH1700 Probability and Statistics is taught.
+From 2021–22 to 2023–24, I lectured the module **[MATH1710 Probability and Statistics I](https://mpaldridge.github.io/math1710/)**. The main website for this module was [here](https://mpaldridge.github.io/math1710/). This material is quite similar, but not identical, to how the first half of the current MATH1700 Probability and Statistics is taught.
 
 ### [MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750/)
 
-From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750/)**. The main website for this module was [here](https://mpaldridge.github.io/math2750/). This site closely, but not perfectly, represents the module as it is currently taught.
+From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750/)**. The main website for this module was [here](https://mpaldridge.github.io/math2750/). This site very closely, but not quite perfectly, represents the module as it is currently taught.
 
 ### MATH3015 History of Mathematics
 
