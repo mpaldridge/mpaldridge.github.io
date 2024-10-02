@@ -8,9 +8,10 @@ Hi, I'm **Matthew Aldridge**. I'm a lecturer at the [University of Leeds](https:
 
 I study probability, information theory, combinatorics, statistics and related things. I’m particularly interested in group testing, a problem that models testing a large population for a blood disease that also has applications in communications, computer science, genetics and has been used during the Covid pandemic. I’m also interested in ways of coping with interference in large multiuser communications networks. I'm also also interested in "discrete probability equivalents" of concepts from continuous probability.
 
-I currently have two **PhD projects** advertised:]
+I currently have two **PhD projects** advertised:
 * [Pooled testing to prevent the next pandemic](https://phd.leeds.ac.uk/project/1997-pooled-testing-to-prevent-the-next-pandemic)
 * [Genuinely discrete discrete probability](https://phd.leeds.ac.uk/project/1998-genuinely-discrete-discrete-probability)
+  
 See those pages for details of how to apply.
 
 My **ORCID** is [0000-0002-9347-1586](https://orcid.org/0000-0002-9347-1586).
