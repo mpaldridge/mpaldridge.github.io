@@ -6,9 +6,9 @@ permalink: /teaching/
 
 ## Current teaching
 
-### MATH5835M Statistical Computing
+### [MATH5835M Statistical Computing](../math5835/)
 
-In 2024–25, Semester 1, I am the module leader for **MATH5835M Statistical Computing**. More to appear soon.
+In 2024–25, Semester 1, I am the module leader for **MATH5835M Statistical Computing**. [The main module webpage is here.](../math5835/)
 
 ### OMAT5203M Statistical Computing
 
@@ -26,13 +26,13 @@ In 2024–25, Semester 2, I am the module leader for MATH5825M Independent Learn
 
 ## Past teaching
 
-### [MATH1710 Probability & Statistics I](https://mpaldridge.github.io/math1710/)
+### [MATH1710 Probability & Statistics I](../math1710/)
 
-From 2021–22 to 2023–24, I lectured the module **[MATH1710 Probability and Statistics I](https://mpaldridge.github.io/math1710/)**. The main website for this module was [here](https://mpaldridge.github.io/math1710/). This material is quite similar, but not identical, to how the first half of the current MATH1700 Probability and Statistics is taught.
+From 2021–22 to 2023–24, I lectured the module **[MATH1710 Probability and Statistics I](./math1710/)**. The main website for this module was [here](https://mpaldridge.github.io/math1710/). This material is similar, but not identical, to how the first half of the current MATH1700 Probability and Statistics is taught.
 
-### [MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750/)
+### [MATH2750 Introduction to Markov Processes](../math2750/)
 
-From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](https://mpaldridge.github.io/math2750/)**. The main website for this module was [here](https://mpaldridge.github.io/math2750/). This site very closely, but not quite perfectly, represents the module as it is currently taught.
+From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](./math2750/)**. The main website for this module was [here](https://mpaldridge.github.io/math2750/). This site very closely, but not quite perfectly, represents the module as it is currently taught.
 
 ### MATH3015 History of Mathematics
 
