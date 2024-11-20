@@ -40,7 +40,7 @@ Paper: [doi:10.1109/CISS50987.2021.9400313](https://doi.org/10.1109/CISS50987.20
 Preprint: [arXiv:2107.09633](https://arxiv.org/abs/2107.09633)  
 Talk: [YouTube](https://www.youtube.com/watch?v=m-3e6OdBYZg)
 
-**On the All-or-Nothing Behavior of Bernoulli Group Testing**  
+**On the all-or-nothing behavior of Bernoulli group testing**  
 [LV Truong](https://sites.google.com/site/truongvinhlan), M Aldridge, J Scarlett  
 *IEEE Journal on Selected Areas in Information Theory*, 1:3, 669--680, 2020  
 Paper: [doi:10.1109/JSAIT.2020.3039790](https://doi.org/10.1109/JSAIT.2020.3039790)  
@@ -127,7 +127,7 @@ Preprint: [arXiv:1002.0235](https://arxiv.org/abs/1002.0235)
 
 ## PhD thesis
 
-**Interference Mitigation in Large Random Wireless Networks**  
+**Interference mitigation in large random wireless networks**  
 M Aldridge  
 PhD thesis, University of Bristol, 2011  
 Online version: [arXiv:1109.1255](https://arxiv.org/abs/1109.1255)
