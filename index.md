@@ -21,4 +21,4 @@ You might be looking for:
 * My email address: **<m.aldridge@leeds.ac.uk>**
 * **[MATH5835M Statistical Computing](./math5835)**, a module I'm lecturing in Semester 1 of 2024--25
 * My **survey papers on group testing**: ["Pooled testing and its applications in the COVID-19 pandemic"](https://arxiv.org/abs/2105.08845) (with David Ellis) and ["Group testing: an information theory perspective" \[book/ebook/paper](https://doi.org/10.1561/0100000099), [arXiv preprint](https://arxiv.org/abs/1902.06002)] (with Oliver Johnson and Jonathan Scarlett)
-* My **office**: PRD 9.321 in the Physics Research Deck; [here are some directions](./office.html)
+* My office, which is 9.10n in the "Maths Research Deck" area at staircase 1 of the EC Stoner building
