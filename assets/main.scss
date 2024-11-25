@@ -32,6 +32,6 @@ blockquote {
 }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2)); !important
-  width:         calc(45% - (#{$spacing-unit} / 2)); !important
+  width: -webkit-calc(45% - (#{$spacing-unit} / 2)); 
+  width:         calc(45% - (#{$spacing-unit} / 2)); 
 }
