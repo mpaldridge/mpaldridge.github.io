@@ -14,7 +14,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 ## David Remnick editorship (1998–)
 
-**[Sisterhood](https://www.newyorker.com/magazine/2025/02/17/the-nuns-trying-to-save-the-women-on-texas-death-row)** (2025, 22k words). On nuns who work with prisoners on death row.
+**[Sisterhood](https://www.newyorker.com/magazine/2025/02/17/the-nuns-trying-to-save-the-women-on-texas-death-row) by Lawrence Wright** (2025, 22k words). On nuns who work with prisoners on death row (100th anniversary issue).
 
 **[The Plague Year](https://www.newyorker.com/magazine/2021/01/04/the-plague-year) by Lawrence Wright** (2021, 30k words). On the coronavirus pandemic. Expanded into the book of the same title.
 
