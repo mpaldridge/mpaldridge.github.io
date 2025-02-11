@@ -2,6 +2,7 @@
 layout: post
 title:  "Longest New Yorker articles"
 date:   2022-08-05
+modified_date: 2025-02-11
 categories: lists
 permalink: /blog/long-new-yorker.html
 ---
@@ -13,17 +14,19 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 
 ## David Remnick editorship (1998–)
 
-**[The Plague Year](https://www.newyorker.com/magazine/2021/01/04/the-plague-year) by Lawrence Wright** (2021, 29k words). On the coronavirus pandemic. Expanded into the book of the same title.
+**[Sisterhood](https://www.newyorker.com/magazine/2025/02/17/the-nuns-trying-to-save-the-women-on-texas-death-row)** (2025, 22k words). On nuns who work with prisoners on death row.
+
+**[The Plague Year](https://www.newyorker.com/magazine/2021/01/04/the-plague-year) by Lawrence Wright** (2021, 30k words). On the coronavirus pandemic. Expanded into the book of the same title.
 
 **[Man Without a Country](https://www.newyorker.com/magazine/2017/08/21/julian-assange-a-man-without-a-country) by Raffi Khatchadourian** (2017, 22k words). A profile of Julian Assange.
 
-**[The Apostate](https://www.newyorker.com/magazine/2011/02/14/the-apostate-lawrence-wright) by Lawrence Wright** (2011, 24k words). On Paul Haggis and his departure from the Church of Scientology. Became part of the book ["Going Clear"](https://en.wikipedia.org/wiki/Going_Clear_(book)).
+**[The Apostate](https://www.newyorker.com/magazine/2011/02/14/the-apostate-lawrence-wright) by Lawrence Wright** (2011, 24k words). On the director Paul Haggis and his departure from the Church of Scientology. Became part of the book ["Going Clear"](https://en.wikipedia.org/wiki/Going_Clear_(book)).
 
-**[Iphigenia in Forest Hills](https://www.newyorker.com/magazine/2010/05/03/iphigenia-in-forest-hills) by Janet Malcolm** (2010, 24k words). On a murder trial. Book of the same title.
+**[Iphigenia in Forest Hills](https://www.newyorker.com/magazine/2010/05/03/iphigenia-in-forest-hills) by Janet Malcolm** (2010, 25k words). On a murder trial. Book of the same title.
 
 **[Travels in Siberia—I](https://www.newyorker.com/magazine/2009/08/03/travels-in-siberia-i) and [II](https://www.newyorker.com/magazine/2009/08/10/travels-in-siberia-ii) by Ian Frazier** (2009, two parts, 25k words). On a journey across Siberia. Part of the book of the same title.
 
-**[The Climate of Man—I](https://www.newyorker.com/magazine/2005/04/25/the-climate-of-man-i), [II](https://www.newyorker.com/magazine/2005/05/02/the-climate-of-man-ii) and [III](https://www.newyorker.com/magazine/2005/05/09/the-climate-of-man-iii) by Elizabeth Kolbert** (2005, three parts, 28k words). On climate change. Expanded into the book ["Field Notes from a Catastrophe"](https://en.wikipedia.org/wiki/Field_Notes_from_a_Catastrophe).
+**[The Climate of Man—I](https://www.newyorker.com/magazine/2005/04/25/the-climate-of-man-i), [II](https://www.newyorker.com/magazine/2005/05/02/the-climate-of-man-ii) and [III](https://www.newyorker.com/magazine/2005/05/09/the-climate-of-man-iii) by Elizabeth Kolbert** (2005, three parts, 29k words). On climate change. Expanded into the book ["Field Notes from a Catastrophe"](https://en.wikipedia.org/wiki/Field_Notes_from_a_Catastrophe).
 
 **Three Stories: ["Chance,"](https://www.newyorker.com/magazine/2004/06/14/chance) ["Soon,"](https://www.newyorker.com/magazine/2004/06/14/soon-2) and ["Silence"](https://www.newyorker.com/magazine/2004/06/14/silence-4) by Alice Munro** (2004, 31k words). Three interconnected short stories, which became the basis for the film "Julieta". Collected in the book ["Runaway"](https://en.wikipedia.org/wiki/Runaway_(book)).
 
@@ -108,14 +111,16 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 ## Bonus: Some articles I didn't count
 
 Some of my own favourite **post-2009 articles** (that's when I started reading the magazine) that are pretty long but not long enough to make this list:
+* [Blood Relatives](https://www.newyorker.com/magazine/2024/08/05/did-the-uks-most-infamous-family-massacre-end-in-a-wrongful-conviction) by Heidi Blake (2024, 16k words) on a multiple murder in the U.K. and a possible wrongful conviction;
+* [The Prisoner of Echo Special](https://www.newyorker.com/magazine/2019/04/22/guantanamos-darkest-secret) by Ben Taub (2019, 19k words) on the Guantánamo prisoner Mohamedou Salahi;
 * [The White Darkness](https://www.newyorker.com/magazine/2018/02/12/the-white-darkness) by David Grann (2018, 21k words) on a polar explorer (book of the same title);
-* [The Future is Texas](https://www.newyorker.com/magazine/2017/07/10/americas-future-is-texas) by Lawrence Wright (2017, 19k words) on Texas politics (book: "God Save Texas");
-* [Five Hostages](https://www.newyorker.com/magazine/2015/07/06/five-hostages) by Lawrence Wright (2015, 20k words) on a civilian hostage rescue project (collected in "The Terror Years");
+* [The Future is Texas](https://www.newyorker.com/magazine/2017/07/10/americas-future-is-texas) by Lawrence Wright (2017, 19k words) on Texas state politics (book: "God Save Texas");
+* [Five Hostages](https://www.newyorker.com/magazine/2015/07/06/five-hostages) by Lawrence Wright (2015, 21k words) on a civilian hostage rescue project (collected in "The Terror Years");
 * [The Transition](https://www.newyorker.com/magazine/2012/04/02/the-transition) by Robert A. Caro (2012, 16k words) on the day J.F.K. was assasinated (excerpt from "The Passage of Power");
 * [The Mark of a Masterpiece](https://www.newyorker.com/magazine/2010/07/12/the-mark-of-a-masterpiece) by David Grann (2010, 16k words) on an art authenticator;
 * [The Pink Panthers](https://www.newyorker.com/magazine/2010/04/12/the-pink-panthers) by David Samuels (2010, 16k words) on a gang of jewel thieves;
-* [The Hunted](https://www.newyorker.com/magazine/2010/04/05/the-hunted) by Jeffrey Goldberg (2010, 17k words) on a killing in a wildlife conservation reserve;
-* [Eight Days](https://www.newyorker.com/magazine/2009/09/21/eight-days) by James B. Stewart (2009, 18k words) on the collapse of Lehman Brothers;
+* [The Hunted](https://www.newyorker.com/magazine/2010/04/05/the-hunted) by Jeffrey Goldberg (2010, 16k words) on a killing in a wildlife conservation reserve;
+* [Eight Days](https://www.newyorker.com/magazine/2009/09/21/eight-days) by James B. Stewart (2009, 18k words) on the collapse of Lehman Brothers and the start of the financial crisis;
 * [Trial by Fire](https://www.newyorker.com/magazine/2009/09/07/trial-by-fire) by David Grann (2009, 16k words) on a possible wrongful state execution (collected in "The Devil and Sherlock Holmes").
 
 Some *New Yorker* **"classics"** not long enough to make the list:
@@ -153,4 +158,4 @@ Some long **fiction** (again, highly incomplete before 1970):
 * ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 31k words, book of the same title);
 * ["The Ponder Heart"](https://www.newyorker.com/magazine/1953/12/05/the-ponder-heart) by Eudora Welty (1953, 27k words, book of the same title).
 
-The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, 1250 lines, book of the same title).
+The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, 1250 lines, book of the same title). This technically ran as a "Profile", in which case the next-longest I know of (without looking very hard) is ["Falling"](https://www.newyorker.com/magazine/1967/02/11/falling-2) by James Dickey (1967, 180 lines, books: "Poems 1957--67" and "The Whole Motion").
