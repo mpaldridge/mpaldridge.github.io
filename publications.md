@@ -10,7 +10,7 @@ Other places to find my work, which might be more up to date, include [the arXiv
 
 **Pooled testing and its applications in the COVID-19 pandemic**  
 M Aldridge, [D Ellis](https://sites.google.com/view/davidellismath)  
-In: *Pandemics: Insurance and Social Protection*, edited by MdC Boado-Penas, J Eisenberg, Ş Şahin‬‬‬; Springer, 2022  
+In: *Pandemics: Insurance and Social Protection*, edited by MdC Boado-Penas, J Eisenberg, Ş Şahin, Springer, 2022  
 Extended version: [arXiv:2105.08845](https://arxiv.org/abs/2105.08845)  
 Book chapter: [doi:10.1007/978-3-030-78334-1_11](https://doi.org/10.1007/978-3-030-78334-1_11)
 
@@ -77,7 +77,7 @@ Paper: [doi:10.1109/ISIT.2017.8007097](https://doi.org/10.1109/ISIT.2017.8007097
 Preprint: [arXiv:1705.02708](https://arxiv.org/abs/1705.02708)
 
 **Almost separable matrices**  
-M Aldridge, L Baldassini, [K Gunderson](https://server.math.umanitoba.ca/~kgunderson/)  
+M Aldridge, L Baldassini, [K Gunderson](https://home.cc.umanitoba.ca/~umjohan1/)  
 *Journal of Combinatorial Optimization*, 33:1, 215–236, 2017  
 Paper: [doi:10.1007/s10878-015-9951-1](https://doi.org/10.1007/s10878-015-9951-1)  
 Preprint: [arXiv:1410.1826](https://arxiv.org/abs/1410.1826)
