@@ -22,6 +22,11 @@ Preprint: [arXiv:1902.06002](https://arxiv.org/abs/1902.06002)
 
 ## Papers
 
+**The law of thin processes: a law of large numbers for point processes**  
+M Aldridge  
+2025  
+Preprint: [arXiv:2502.14839](https://arxiv.org/abs/2502.14839)
+
 **Small error algorithms for tropical group testing**  
 V Paligadu, O Johnson, M Aldridge  
 *IEEE Transactions on Information Theory*, 70:10, 7232-7250, 2024   
