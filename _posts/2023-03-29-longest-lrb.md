@@ -34,7 +34,7 @@ Anyway, if I’ve done it right – and if ChatGPT’s done it right – this s
 * [**Criminal Justice**](https://www.lrb.co.uk/the-paper/v15/n12/ronan-bennett/criminal-justice) by Ronan Bennett (1993, 24k words). On the case of the Guildford Four.
 * [**The Contingency of Language**](https://www.lrb.co.uk/the-paper/v08/n07/richard-rorty/the-contingency-of-language), [**The Contingency of Selfhood**](https://www.lrb.co.uk/the-paper/v08/n08/richard-rorty/the-contingency-of-selfhood), and [**The Contingency of Community**](https://www.lrb.co.uk/the-paper/v08/n13/richard-rorty/the-contingency-of-community) by Richard Rorty (1986, 25k words). I don’t really understand what this is about, but it’s something philosophical. Part of the book *Contingency, Irony, Solidarity*.
 
-I didn’t count [Alan Bennett](https://www.lrb.co.uk/contributors/alan-bennett)’s series of annual diaries (36 articles, 1984–present, 200k words, books: Writing Home, Untold Stories, Keep On Keeping On, House Arrest)
+I didn’t count [Alan Bennett](https://www.lrb.co.uk/contributors/alan-bennett)’s series of annual diaries (36 articles, 1984–present, 200k words, books: *Writing Home*, *Untold Stories*, *Keep On Keeping On*, *House Arrest*)
 
 I didn’t count [Jenny Diski](https://www.lrb.co.uk/contributors/jenny-diski)’s memoir series about cancer, Doris Lessing, and other things (17 articles, 2014-16, 80k words, book: *In Gratitude*).
 
