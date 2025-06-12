@@ -37,6 +37,14 @@ $$ \operatorname{Cov}(R, B) = rb \big(\operatorname{Var}(X) - \mathbb EX\big) ,$
 
 hence proving that the answer given to the question is correct.
 
-I wrote this down here because, although it’s a pretty straightforward result, I’d never seen it before, and it seems like the sort of thing I ought to have known.
+This term $\operatorname{Var}(X) - \mathbb EX$ that appears in the covariance is positive when $X$ is overdispersed and negative when $X$ is underdispersed, so it is, in a sense, measuring "how much dispersion" there is. So we could call it the *dispersion*, and write $\operatorname{Disp}(X) = \operatorname{Var}(X) - \mathbb EX$. With this notation in hand, we now get a very pretty triplet of results (which you might again want to try to prove):
+
+$$ \begin{align}
+\operatorname{Disp}(R) &= r^2 \Disp(X) \\
+\operatorname{Disp}(B) &= b^2 \Disp(X) \\
+\operatorname{Cov}(R, B) &= rb \Disp(X) .
+\end{align} $$
+
+Anyway, I wrote this down here because, although it’s a pretty straightforward result, I’d never seen it before, and it seems like the sort of thing I ought to have known.
 
 One last thing. We saw that a Poisson number of balls led to the number of red and blue balls being independent, while an equidispersed number of balls led to the number of red and blue balls being uncorrelated. Of course, independent implies uncorrelated, but uncorrelated does not imply independent. So while there are lots of examples of $X$ such that $R$ and $B$ are uncorrelated, we don’t know that $R$ and $B$ will necessarily be independent too. For your follow-up exercise: Show that, in fact, $R$ and $B$ are independent if *and only if* $X$ had a Poisson distribution.
