@@ -40,9 +40,9 @@ hence proving that the answer given to the question is correct.
 This term $\operatorname{Var}(X) - \mathbb EX$ that appears in the covariance is positive when $X$ is overdispersed and negative when $X$ is underdispersed, so it is, in a sense, measuring "how much dispersion" there is. So we could call it the *dispersion*, and write $\operatorname{Disp}(X) = \operatorname{Var}(X) - \mathbb EX$. With this notation in hand, we now get a very pretty triplet of results (which you might again want to try to prove):
 
 $$ \begin{align}
-\operatorname{Disp}(R) &= r^2 \Disp(X) \\
-\operatorname{Disp}(B) &= b^2 \Disp(X) \\
-\operatorname{Cov}(R, B) &= rb \Disp(X) .
+\operatorname{Disp}(R) &= r^2 \operatorname{Disp}(X) \\
+\operatorname{Disp}(B) &= b^2 \operatorname{Disp}(X) \\
+\operatorname{Cov}(R, B) &= rb \operatorname{Disp}(X) .
 \end{align} $$
 
 Anyway, I wrote this down here because, although it’s a pretty straightforward result, I’d never seen it before, and it seems like the sort of thing I ought to have known.
