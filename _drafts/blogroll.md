@@ -6,9 +6,9 @@ categories: notmaths
 permalink: /blog/blogroll.html
 ---
 
-Back in The Olden Days, each blog would have a "a blogroll": sidebar down the edge with links to other blogs the blogger liked. So, aside from not being a proper sidebar, here's my blogroll: a list of things from my RSS reader (I still use an RSS reader!) that I like or recommend or both.
+Back in The Olden Days, each blog would have a "a blogroll": a sidebar down the edge with links to other blogs the blogger liked. So, aside from not being a proper sidebar, here's my blogroll: a list of things from my RSS reader (I still use an RSS reader!) that I like or recommend or both.
 
-## Old-school blogs (high volume)
+### Old-school blogs (high volume)
 
 * **[Art History News](https://www.arthistorynews.com)** (Adam Busiakiewicz & Bendor Grosvenor)
 * **[Daring Fireball](https://daringfireball.net)** (John Gruber) *tech, mainly Apple*
@@ -19,7 +19,7 @@ Back in The Olden Days, each blog would have a "a blogroll": sidebar down the ed
 * **[Statistical Modeling, Causal Inference, and Social Science](https://statmodeling.stat.columbia.edu)** (Andrew Gelman & others) *stats and other things*
 * **[Terence Eden's Blog](https://shkspr.mobi/blog/)** *tech and other things*
 
-## Old school blogs (low volume)
+### Old-school blogs (low volume)
 
 * **[Anil Dash](https://www.anildash.com)** *tech, Prince, and other things*
 * **[Fritinancy](https://fritinancy.substack.com)** (Nancy Friedman) *words*
@@ -37,7 +37,7 @@ Back in The Olden Days, each blog would have a "a blogroll": sidebar down the ed
 * **[v buckenham](https://blog.vbuckenham.com)** *coding and other things*
 * **[Wordy Bird](https://susanorlean.substack.com)** (Susan Orlean) *the journalist*
 
-## Newsletters
+### Newsletters
 
 * **[The Bluestocking](https://helenlewis.substack.com)** (Helen Lewis) *the journalist*
 * **[Caroline Is Writing](https://www.carolinecrampton.com/tag/blog/)** (Caroline Crampton) *the writer*
@@ -56,19 +56,17 @@ Back in The Olden Days, each blog would have a "a blogroll": sidebar down the ed
 * **[Wondercabinet](https://lawrenceweschler.substack.com)** (Lawrence Weschler) *the journalist/writer*
 * **[Young Vulgarian](https://youngvulgarian.substack.com)** (Marie Le Conte) *the journalist*
 
-## UK Politics & politics adjacent
+### UK politics & politics-adjacent
 
-Odds and Ends of History
-Martin Robbins: Value of
-Sam Dimitriu
-David Allen Green / Law and Policy / The Empty City
-London Centric
-A Lawyer Writes
-Comment is Freed
-Guardian: Marina Hyde
-Iain Dale
-Joxley Writes
-Not All Doom
+* **[Comment is Freed](https://samf.substack.com)** (Sam Freedman & Lawrence Freedman) *policy*
+* **[Joxley Writes](https://www.joxleywrites.jmoxley.co.uk)** (John Oxley) *sensibly Toryism*
+* **[A Lawyer Writes](https://rozenberg.substack.com)** (Joshua Rozenberg) *law*
+* **[London Centric](https://www.londoncentric.media)** (Jim Waterson & others) *reporting on London*
+* **[Not All Doom](https://arthursnell.substack.com)** (Arthur Snell) *foreign policy*
+* **[Notes of Growth](https://www.samdumitriu.com)** (Sam Dumitriu) *progress/abundance from the centre-right*
+* **[Odds and Ends of History](https://takes.jamesomalley.co.uk)** (James O'Malley) *progress/abundance from the centre-left*
+* **[Value of Nothing](https://martinrobbins.substack.com)** (Martin Robbins) *progress/abundance from the centre*
+* **[The Law and Policy Blog](https://davidallengreen.com)** (David Allen Green) *law*
 
 US politics & politics-adjacent
 Garbage Day
