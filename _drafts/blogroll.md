@@ -60,7 +60,7 @@ Back in The Olden Days, each blog would have a "a blogroll": a sidebar down the 
 ### UK politics & politics-adjacent
 
 * **[Comment is Freed](https://samf.substack.com)** (Sam Freedman & Lawrence Freedman) *policy*
-* **[Joxley Writes](https://www.joxleywrites.jmoxley.co.uk)** (John Oxley) *sensibly Toryism*
+* **[Joxley Writes](https://www.joxleywrites.jmoxley.co.uk)** (John Oxley) *sensible Toryism*
 * **[A Lawyer Writes](https://rozenberg.substack.com)** (Joshua Rozenberg) *law*
 * **[London Centric](https://www.londoncentric.media)** (Jim Waterson & others) *reporting on London*
 * **[Not All Doom](https://arthursnell.substack.com)** (Arthur Snell) *foreign policy*
