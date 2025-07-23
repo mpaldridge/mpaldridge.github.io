@@ -33,6 +33,7 @@ Back in The Olden Days, each blog would have a "a blogroll": a sidebar down the 
 * **[The Rest Is Noise](https://www.therestisnoise.com)** (Alex Ross) *classical music*
 * **[Strong Language](https://stronglang.wordpress.com)** (various) *swearing*
 * **[Three-Toed Sloth](http://bactra.org/weblog/)** (Cosma Shalizi) *stats, books, and other things*
+* **[Tom Scott's Weekly Newsletter](https://www.tomscott.com/newsletter/)** *YouTube links*
 * **[trefethendotnet](https://trefethen.net)** (Nick Trefethen) *maths and other things*
 * **[v buckenham](https://blog.vbuckenham.com)** *coding and other things*
 * **[Wordy Bird](https://susanorlean.substack.com)** (Susan Orlean) *the journalist*
@@ -68,19 +69,20 @@ Back in The Olden Days, each blog would have a "a blogroll": a sidebar down the 
 * **[Value of Nothing](https://martinrobbins.substack.com)** (Martin Robbins) *progress/abundance from the centre*
 * **[The Law and Policy Blog](https://davidallengreen.com)** (David Allen Green) *law*
 
-US politics & politics-adjacent
-Garbage Day
-American Crisis
-NYT: Ezra Klein
-Silver Bulletin
-Slow Boring
+### US politics & politics-adjacent
 
-Nerds / science / tech / rationalists / etc
+* **[American Crisis](https://margaretsullivan.substack.com)** (Margaret Sullivan) *media criticism*
+* **[Silver Bulletin](https://www.natesilver.net)** (Nate Silver) *political polling, sports, and other things*
+* **[Slow Boring](https://www.slowboring.com)** (Matthew Yglesias) *liberal, although increasingly centrist*
+
+### Nerds / science / tech / rationalists / etc
+
 Sam Enright
 Samstack
 Astral Codex Ten
 Citation Needed
 Dynomight
+Garbage Day
 Guardian Techscape
 Tim Harford
 Social Warming
