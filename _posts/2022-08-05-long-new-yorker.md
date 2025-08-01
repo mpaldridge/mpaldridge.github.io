@@ -12,7 +12,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 *Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any post-1970 articles, but I've surely failed; no attempt at completeness before 1970 has been made. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
 
 
-## David Remnick editorship (1998–)
+### David Remnick editorship (1998–)
 
 **[Sisterhood](https://www.newyorker.com/magazine/2025/02/17/the-nuns-trying-to-save-the-women-on-texas-death-row) by Lawrence Wright** (2025, 22k words). On nuns who work with prisoners on death row (100th anniversary issue).
 
@@ -39,7 +39,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 **[Overwhelming Force](https://www.newyorker.com/magazine/2000/05/22/overwhelming-force-2) by Seymour M. Hersh** (2000, 25k words). On an alleged U.S. war crime during the Gulf War.
 
 
-## Tina Brown editorship (1992–98)
+### Tina Brown editorship (1992–98)
 
 **[Oswald in the U.S.S.R.](https://www.newyorker.com/magazine/1995/04/10/oswald-in-the-ussr) by Norman Mailer** (1995, 34k words). On the background of Lee Harvey Oswald, assassin of John F. Kennedy. Excerpted from the book ["Oswald's Tale"](https://en.wikipedia.org/wiki/Oswald%27s_Tale).
 
@@ -54,7 +54,7 @@ Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.
 **[A Lost Childhood](https://www.newyorker.com/magazine/1993/01/11/a-lost-childhood) and [A Lost Motherhood](https://www.newyorker.com/magazine/1993/01/18/a-lost-motherhood) by Susan Sheehan** (1992, two parts, 47k words). On a young mother in foster care. Book: "Life for Me Ain't Been No Crystal Stair".
 
 
-## Robert Gottlieb editorship (1987–92)
+### Robert Gottlieb editorship (1987–92)
 
 **Serving the President: [The Truman Years](https://www.newyorker.com/magazine/1991/03/25/serving-the-president-i-the-truman-years)** (two parts, 50k words) **and [The Vietnam Years](https://www.newyorker.com/magazine/1991/05/06/serving-the-president-i-the-vietnam-years)** (three parts, 73k words) **by Clark Clifford with Richard Holbrooke** (1991). Memoirs of a Democratic political insider. Excerpted form the book "Counsel to the President".
 
@@ -65,7 +65,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 **[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On U.S. Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
 
 
-## William Shawn editorship from 1970 (1970–87)
+### William Shawn editorship from 1970 (1970–87)
 
 **[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
 
@@ -93,7 +93,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[The Megamachine](https://www.newyorker.com/magazine/1970/10/10/reflections-i-the-megamachine) by Lewis Mumford** (1970, four parts, 84k words). Essay on science and technological process. Excerpt from the book ["The Myth of the Machine: The Pentagon of Power"](https://en.wikipedia.org/wiki/The_Myth_of_the_Machine#Volume_II,_The_Pentagon_of_Power).
 
-## Pre-1970
+### Pre-1970
 
 *Before 1970,* The New Yorker *didn't have a a proper Table of Contents, which means finding long articles quickly is prohibitively difficult. I did happen to come across the following long articles, but I make absolutely no claims of completeness for this list.*
 
@@ -110,7 +110,7 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 ## Bonus: Some articles I didn't count
 
-Some of my own favourite **post-2009 articles** (that's when I started reading the magazine) that are pretty long but not long enough to make this list:
+Some of my own favourite **post-2009 articles** (that's when I started reading the magazine) that are pretty long but not quite long enough to make this list:
 * [Blood Relatives](https://www.newyorker.com/magazine/2024/08/05/did-the-uks-most-infamous-family-massacre-end-in-a-wrongful-conviction) by Heidi Blake (2024, 16k words) on a multiple murder in the U.K. and a possible wrongful conviction;
 * [The Prisoner of Echo Special](https://www.newyorker.com/magazine/2019/04/22/guantanamos-darkest-secret) by Ben Taub (2019, 19k words) on the Guantánamo prisoner Mohamedou Salahi;
 * [The White Darkness](https://www.newyorker.com/magazine/2018/02/12/the-white-darkness) by David Grann (2018, 21k words) on a polar explorer (book of the same title);
@@ -142,7 +142,7 @@ I didn't count John McPhee's **Annals of the Former World** series on the geolog
 
 I didn't count Ved Mehta's immense autobiographical series, known, in its book form, as **"Continents of Exile"** (1972–93, 13 articles, 23 parts, must be nearly half a million words?, books: "Daddyji," "Mamaji," "Vedi," "The Ledge Between the Streams," "Sound-Shadows of the New World," "The Stolen Light," "Up at Oxford").
 
-I didn’t count any of **Elizabeth Drew**’s series of political dispatches, starting with [the 1974 run under the rubric A Reporter in Washington D.C.](https://www.newyorker.com/magazine/1974/03/11/a-reporter-in-washington-d-c-i-autumn-notes) on the downfall of Nixon  (two articles, five parts, 138k, book: "Washington Journal"), through to Clinton’s election in 1992. (Other books: "American Journal," "Portrait of an Election," "Campaign Journal," "Election Journal".)
+I didn’t count any of **Elizabeth Drew**’s series of political dispatches, starting with the 1974 run under the rubric [A Reporter in Washington D.C.](https://www.newyorker.com/magazine/1974/03/11/a-reporter-in-washington-d-c-i-autumn-notes) on the downfall of Nixon (two articles, five parts, 138k, book: "Washington Journal"), through to Clinton’s election in 1992. (Other books: "American Journal," "Portrait of an Election," "Campaign Journal," "Election Journal".)
 
 Some long **fiction** (again, highly incomplete before 1970):
 * ["The Love of a Good Woman"](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 22k words, collected in the book of the same title);
@@ -159,4 +159,4 @@ Some long **fiction** (again, highly incomplete before 1970):
 * ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 31k words, book of the same title);
 * ["The Ponder Heart"](https://www.newyorker.com/magazine/1953/12/05/the-ponder-heart) by Eudora Welty (1953, 27k words, book of the same title).
 
-The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, 1250 lines, book of the same title). This technically ran as a "Profile", in which case the next-longest poem I know of (without looking very hard) is ["Falling"](https://www.newyorker.com/magazine/1967/02/11/falling-2) by James Dickey (1967, 180 lines, books: "Falling, May Day Sermon, and other poems" and "The Whole Motion").
+The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, 1250 lines, book of the same title). This technically ran as a "Profile", in which case the next-longest poems I know of (without looking very hard) are many of the parts of ["Endpoint"](https://www.newyorker.com/magazine/2009/03/16/endpoint) by John Updike (2009, 280 lines, book of the same title) or ["Falling"](https://www.newyorker.com/magazine/1967/02/11/falling-2) by James Dickey (1967, 180 lines, book: "Falling, May Day Sermon, and other poems").
