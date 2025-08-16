@@ -159,7 +159,7 @@ But [Olly pointed out](https://twitter.com/BristOliver/status/158788044518586777
 
 $$ \binom{x}{k} = \frac{x^{\underline{k}}}{k!} . $$
 
-So if we divid both sides of our result by $k!$, then the left-hand side becomes
+So if we divide both sides of our result by $k!$, then the left-hand side becomes
 
 $$ \frac{1}{k!} \sum_{x=1}^n x^{\underline{k}} = \sum_{x=1}^n \frac{x^{\underline{k}}}{k!} = \sum_{x=1}^n \binom{x}{k} , $$
 
