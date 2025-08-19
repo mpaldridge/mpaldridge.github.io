@@ -23,11 +23,15 @@ blockquote {
   letter-spacing: 0;
 }
 
+@mixin relative-font-size($ratio) {
+  font-size: #{$ratio}rem;
+}
+
 .post-content h2 {
-   @include relative-font-size(0.5);
+   @include relative-font-size(1.5);
 
     @media screen and (min-width: $on-large) {
-    @include relative-font-size(0.75);
+    @include relative-font-size(1.75);
   }
 }
 
