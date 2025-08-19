@@ -23,7 +23,7 @@ blockquote {
   letter-spacing: 0;
 }
 
-h2 {
+.post-content h2 {
    @include relative-font-size(0.5);
 
     @media screen and (min-width: $on-large) {
@@ -31,7 +31,7 @@ h2 {
   }
 }
 
-h3 {
+.post-content h3 {
   @include relative-font-size(1.2);
 
   @media screen and (min-width: $on-large) {
