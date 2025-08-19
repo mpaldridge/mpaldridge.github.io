@@ -28,18 +28,18 @@ blockquote {
 }
 
 .post-content h2 {
-   @include relative-font-size(1.5);
+   @include relative-font-size(1.4);
 
     @media screen and (min-width: $on-large) {
-    @include relative-font-size(1.75);
+    @include relative-font-size(1.65);
   }
 }
 
 .post-content h3 {
-  @include relative-font-size(1.2);
+  @include relative-font-size(1.1);
 
   @media screen and (min-width: $on-large) {
-    @include relative-font-size(1.5);
+    @include relative-font-size(1.4);
   }
 }
 
