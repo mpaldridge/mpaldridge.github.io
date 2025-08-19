@@ -17,6 +17,22 @@ blockquote {
   letter-spacing: 0;
 }
 
+h2 {
+   @include relative-font-size(1.5);
+
+    @media screen and (min-width: $on-large) {
+    @include relative-font-size(1.75);
+  }
+}
+
+h3 {
+  @include relative-font-size(1.2);
+
+  @media screen and (min-width: $on-large) {
+    @include relative-font-size(1.5);
+  }
+}
+
 .post-list > li {
     margin-bottom: 20px;
 }
