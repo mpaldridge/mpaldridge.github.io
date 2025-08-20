@@ -14,7 +14,7 @@ Back in The Olden Days, each blog would have a "a blogroll": a sidebar down the 
 * **[Daring Fireball](https://daringfireball.net)** (John Gruber) *tech, mainly Apple*
 * **[Futility Closet](https://www.futilitycloset.com)** (Greg Ross) *curiosities*
 * **[kottke.org](https://kottke.org)** (Jason Kottke) *the original and best linkblog*
-* **[Marginal Revolution](https://marginalrevolution.com)** (Tyler Cowen & Alex Tabarrok) *economica and other things*
+* **[Marginal Revolution](https://marginalrevolution.com)** (Tyler Cowen & Alex Tabarrok) *economics and other things*
 * **[mollyyoung.tumblr.com](https://mollyyoung.tumblr.com)** *the writer*
 * **[Statistical Modeling, Causal Inference, and Social Science](https://statmodeling.stat.columbia.edu)** (Andrew Gelman & others) *stats and other things*
 * **[Terence Eden's Blog](https://shkspr.mobi/blog/)** *tech and other things*
@@ -39,6 +39,8 @@ Back in The Olden Days, each blog would have a "a blogroll": a sidebar down the 
 * **[Wordy Bird](https://susanorlean.substack.com)** (Susan Orlean) *the journalist*
 
 ### Newsletters
+
+("Newsletter" here meaning the average post/letter is lots of small things; probably mostly links)
 
 * **[The Bluestocking](https://helenlewis.substack.com)** (Helen Lewis) *the journalist*
 * **[Caroline Is Writing](https://www.carolinecrampton.com/tag/blog/)** (Caroline Crampton) *the writer*
@@ -73,7 +75,7 @@ Back in The Olden Days, each blog would have a "a blogroll": a sidebar down the 
 
 * **[American Crisis](https://margaretsullivan.substack.com)** (Margaret Sullivan) *media criticism*
 * **[Silver Bulletin](https://www.natesilver.net)** (Nate Silver) *political polling, sports, and other things*
-* **[Slow Boring](https://www.slowboring.com)** (Matthew Yglesias) *liberal, although increasingly centrist*
+* **[Slow Boring](https://www.slowboring.com)** (Matthew Yglesias) *liberal, increasingly centrist*
 
 ### Nerds / science / tech / rationalists / etc
 
@@ -95,7 +97,8 @@ The Fitzwilliam
 In the Sight of the Unwise
 Normielisation
 
-Essayists not in any other category
+### Essayists not in any other category
+
 Catherine Lacey
 Cartoons Hate Her
 Chris Arnade Walks the World
@@ -114,7 +117,8 @@ Honest Broker
 Finite Jest
 Terra Nullius (right category?)
 
-Maths
+### Maths
+
 The Aperiodical
 Peter Cameron
 Combinatorics and More
@@ -124,14 +128,16 @@ Terry Tao’s What’s New
 Shtetl-Optimized
 Logging the World
 
-Cycling
+### Cycling
+
 11:01 Cappuccino
 Cillian Kelly The Backp
 Cycling Mole
 Daniel Benson’s Cycling
 Ned. Road. Words
 
-BlueSky bots
+### BlueSky/Twitter bots that I think are secretly blogs in disguide
+
 Daily Spurious Correlation
 Second Mentions / tw
 No Context Grand Designs / tw
