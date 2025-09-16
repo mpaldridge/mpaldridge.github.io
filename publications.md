@@ -22,6 +22,11 @@ Preprint: [arXiv:1902.06002](https://arxiv.org/abs/1902.06002)
 
 ## Papers
 
+**Discrete weakly stable distributions**  
+M Aldridge  
+2025  
+Preprint: [arXiv:2509.12070](https://arxiv.org/abs/2509.12070)
+
 **The law of thin processes: a law of large numbers for point processes**  
 M Aldridge  
 2025  
