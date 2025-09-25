@@ -22,7 +22,7 @@ Preprint: [arXiv:1902.06002](https://arxiv.org/abs/1902.06002)
 
 ## Papers
 
-**Discrete weakly stable distributions**  
+**Discrete broadly stable distributions**  
 M Aldridge  
 2025  
 Preprint: [arXiv:2509.12070](https://arxiv.org/abs/2509.12070)
