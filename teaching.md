@@ -8,21 +8,22 @@ permalink: /teaching/
 
 ### [MATH5835M Statistical Computing](../math5835/)
 
-In 2024–25, Semester 1, I am the module leader for **MATH5835M Statistical Computing**. [The main module webpage is here.](../math5835/)
+In 2025–26, Semester 1, (as in 2024–25) I am the module leader for **MATH5835M Statistical Computing**. [The main module webpage is here.](../math5835/)
 
 ### OMAT5203M Statistical Computing
 
-I am designing the module OMAT5203M Statistical Computing for the online programme [MSc Data Science (Statistics)](https://www.coursera.org/degrees/msc-data-science-ul), which runs on the [Coursera](https://www.coursera.org/degrees/msc-data-science-ul) platform. It will run for the first time in early 2025.
+I designed the module OMAT5203M Statistical Computing for the online programme [MSc Data Science (Statistics)](https://www.coursera.org/degrees/msc-data-science-ul), which runs on the [Coursera](https://www.coursera.org/degrees/msc-data-science-ul) platform. It ran for the first time in July–August 2025 (I was the module assistant) and will run every January–February and July–August.
 
 ### MATH5825M Independent Learning and Skills Project
 
-In 2024–25, Semester 2, I am the module leader for MATH5825M Independent Learning and Skills Project. Material for this module is on Minerva.
+In 2025–26, Semester 2, (as in 2023–24 and 2024–25) I am the module leader for MATH5825M Independent Learning and Skills Project (parts of which are cotaught with MATH5747M Learning Skills Through Case Studies). Material for this module is on Minerva.
 
 ### Other things
 
-* MATH2900 Maths at Work: I advise a project on "Statistics in the media".
-* MATH3001 Project in Mathematics: I advise a project on "Data compression"
-* MATH5971M/MATH5872M Dissertation in Statisitcs / Data Science and Analytics: I advise various projects, including "Statistics, politics, law, and gerrymandering", "Pooled testing for Covid-19", and "MRP: Multilevel regression with post-stratification".
+* MATH2900 Maths at Work: I used to advise a project on "Statistics in the media".
+* MATH3001 Project in Mathematics: I advise a project on "Data compression".
+* MATH5003M/5004M Assignment in Mathemics: I offer projects on "Arctan formulas" and "Recent progress on the union-closed sets conjecture". I have previously advised projects on the mathematics of gambling, and others.
+* MATH5971M/MATH5872M Dissertation in Statisitcs / Data Science and Analytics: I offer projects on "Statistics, politics, law, and gerrymandering", "Pooled testing for Covid-19", and "MRP: Multilevel regression with post-stratification". I have previously advised projects on belief propogation, projects shared with industry, and others.
 
 ## Past teaching
 
@@ -32,7 +33,7 @@ From 2021–22 to 2023–24, I lectured the module **[MATH1710 Probability and S
 
 ### [MATH2750 Introduction to Markov Processes](../math2750/)
 
-From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](../math2750/)**. The main website for this module was [here](https://mpaldridge.github.io/math2750/). This site very closely, but not quite perfectly, represents the module as it is currently taught.
+From 2018-19 to 2020-21, I lectured the module **[MATH2750 Introduction to Markov Processes](../math2750/)**. The main website for this module was [here](https://mpaldridge.github.io/math2750/). This site very closely, but not quite perfectly, represents MATH2702 Stochastic Processes as it is currently taught.
 
 ### MATH3015 History of Mathematics
 
