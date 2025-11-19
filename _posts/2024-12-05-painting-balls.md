@@ -2,10 +2,13 @@
 layout: post
 title:  "Painting balls"
 date:   2024-12-05
+modified_date: 2025-11-19
 categories: maths
 permalink: /blog/painting-balls.html
 use_math: true
 ---
+
+**Update:** *Readers might be interested to know that I've written up the contents of this blogpost as a [more formal academic article](https://arxiv.org/abs/2511.14740), which also gives answers to the exercises posed below.*
 
 Let $X$ be a random number of balls. For each ball, paint it red with probability $r$ and paint it blue with probability $b$. Let $R$ be the number of red balls and $B$ be the number of blue balls. Are $R$ and $B$ positively correlated or negatively correlated – or independent?
 
