@@ -22,10 +22,16 @@ Preprint: [arXiv:1902.06002](https://arxiv.org/abs/1902.06002)
 
 ## Papers
 
+**Marking and re-marking**  
+M Aldridge  
+2025  
+Preprint: [arXiv:2511.14740](https://arxiv.org/abs/2511.14740)
+
 **Discrete broadly stable distributions**  
 M Aldridge  
 2025  
-Preprint: [arXiv:2509.12070](https://arxiv.org/abs/2509.12070)
+Preprint: [arXiv:2509.12070](https://arxiv.org/abs/2509.12070)  
+See also [this preprint by FW Townes](https://arxiv.org/abs/2509.05497) for some similar results
 
 **The law of thin processes: a law of large numbers for point processes**  
 M Aldridge  
