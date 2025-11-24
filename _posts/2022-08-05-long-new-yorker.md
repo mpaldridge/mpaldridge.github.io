@@ -157,6 +157,8 @@ Some long **fiction** (again, highly incomplete before 1970):
 * ["The Luzhin Defense"](https://www.newyorker.com/magazine/1964/05/09/the-luzhin-defense-part-i) by Vladimir Nabokov (1965, two parts, 55k words, book of the same title);
 * ["The Evening of the Holiday"](https://www.newyorker.com/magazine/1965/04/17/the-evening-of-the-holiday) by Shirley Hazzard (1965, 31k words, book of the same title)
 * ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 31k words, book of the same title);
+* ["Seymour: An Introduction"](https://www.newyorker.com/magazine/1959/06/06/seymour-an-introduction) by J. D. Salinger (1959, 30k words, collected in "Raise High the Roof Beam, Carpenters and Seymour: An Introduction")
+* ["Zooey"](https://www.newyorker.com/magazine/1957/05/04/zooey) by J. D. Salinger (1957, 40k words, collected in "Franny and Zooey")
 * ["The Ponder Heart"](https://www.newyorker.com/magazine/1953/12/05/the-ponder-heart) by Eudora Welty (1953, 27k words, book of the same title).
 
 The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, 1250 lines, book of the same title). This technically ran as a "Profile", in which case the next-longest poems I know of (without looking very hard) are many of the parts of ["Endpoint"](https://www.newyorker.com/magazine/2009/03/16/endpoint) by John Updike (2009, 280 lines, book of the same title) or ["Falling"](https://www.newyorker.com/magazine/1967/02/11/falling-2) by James Dickey (1967, 180 lines, book: "Falling, May Day Sermon, and other poems").
