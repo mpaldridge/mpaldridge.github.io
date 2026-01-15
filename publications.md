@@ -24,7 +24,7 @@ Preprint: [arXiv:1902.06002](https://arxiv.org/abs/1902.06002)
 
 **The law of thin processes: a law of large numbers for point processes**  
 M Aldridge  
-*Statistics & Probabilty Letters*, 232, 110653, 2026  
+*Statistics & Probability Letters*, 232, 110653, 2026  
 Paper: [doi:10.1016/j.spl.2026.110653](https://doi.org/10.1016/j.spl.2026.110653)  
 Preprint: [arXiv:2502.14839](https://arxiv.org/abs/2502.14839)
 
