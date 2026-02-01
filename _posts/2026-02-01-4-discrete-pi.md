@@ -70,7 +70,7 @@ Further, just by looking at the two sequences, we can tell that we have sort-of-
 | $x = 3 \bmod 8$ | $\operatorname{dcos}(x) = -2^{(x-1)/2}$ | $\operatorname{dsin}(x) = 2^{(x-1)/2}$ |
 | $x = 4 \bmod 8$ | $\operatorname{dcos}(x) = -2^{x/2}$ | $\operatorname{dsin}(x) = 0$ |
 | $x = 5 \bmod 8$ | $\operatorname{dcos}(x) = -2^{(x-1)/2}$ | $\operatorname{dsin}(x) = -2^{(x-1)/2}$ |
-| $x = 6 \bmod 8$ | $\operatorname{dcos}(x) = 0$ | $\operatorname{dsin}(x) = 2^{x/2}$ |
+| $x = 6 \bmod 8$ | $\operatorname{dcos}(x) = 0$ | $\operatorname{dsin}(x) = -2^{x/2}$ |
 | $x = 7 \bmod 8$ | $\operatorname{dcos}(x) = 2^{x/2}$ | $\operatorname{dsin}(x) = -2^{(x-1)/2}$ |
 
 These look very reminiscent of how the usual cos and sin behave: we have periodic zeros, with the functions alternately positive and negative in the intervals between those zeros. More specifically, we have for the usual trigonometric functions:
