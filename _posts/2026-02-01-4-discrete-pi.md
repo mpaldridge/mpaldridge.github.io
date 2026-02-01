@@ -7,13 +7,6 @@ permalink: /blog/4pi.html
 use_math: true
 ---
 
----
-title: "4 is discrete pi"
-author: "MATH5003/5004"
-date: "2026-02-01"
-output: html_document
----
-
 ## Recap
 
 [In my last blogpost](2e.html), I looked for a discrete version of the exponential function
@@ -49,11 +42,11 @@ For the moment, let's stick to non-negative integer $x = 0, 1, 2, \dots$. The di
 
 $$ 1, 1, 0, -2, -4, -4, 0, 8, 16, 16, 0, -32, -64, -64, 0, 128, 256, 256, \dots $$
 
-and the discrete sin series is [A009545](https://oeis.org/A009545)
+and the discrete sin sequence is [A009545](https://oeis.org/A009545)
 
 $$ 0, 1, 2, 2, 0, -4, -8, -8, 0, 16, 32, 32, 0, -64, -128, -128, 0, 256, \dots $$
 
-Pleasingly, we can see the sequences a related by the difference operator:
+Pleasingly, we can see the sequences are related by the difference operator:
 
 $$ \begin{align}
 \Delta \operatorname{dcos}(x) &= - \operatorname{dsin}(x) \\
@@ -88,7 +81,7 @@ These look very reminiscent of how the usual cos and sin behave: we have periodi
 
 and for our discrete equivalents:
 
--   dsin has zeros at $0, 4, 8, \dots, = 0, 4, 2\times 4, 3 \times 4, \dots$
+-   dsin has zeros at $0, 4, 8, 12, \dots, = 0, 4, 2\times 4, 3 \times 4, \dots$
 -   dcos has zeros at $2, 6, 10, \dots = \frac{4}{2}, \frac{3 \times 4}{2}, \frac{5 \times 4}{2}, \dots$
 -   dcos and dsin both have sort-of-periodic behaviour with "period" $8 = 2\times 4$
 
