@@ -135,7 +135,7 @@ where the last step is the chain rule again. Thus Theorem 2 is proved.
 
 ## Later updates
 
-* [Pebody](https://arxiv.org/abs/2211.13139) also proved the same result, on 23 November, two days after the other three. A couple of the steps in the main lemma say "To be proved", but it seems perhaps a bit less computer-aided than the others.
+* [Pebody](https://arxiv.org/abs/2211.13139) also proved the same result, on 23 November, two days after the other three. A couple of the steps in the main lemma say "To be proved".
 * In the paper of Chase and Lovett, they show that $\alpha = \psi$ is in fact tight for "almost union-closed" families, where at least $(1-\epsilon)\lvert\mathcal F\rvert^2$ of the pairs $A, B$ have their union $A \cup B$ in $\mathcal F$. ([Gil Kalai points out](https://gilkalai.wordpress.com/2022/11/30/a-nice-example-related-to-the-frankl-conjecture/) that this is different to saying that at least $(1-\epsilon)\lvert\mathcal F \cup \mathcal F\rvert$ of the unions $A \cup B$ are in $\mathcal F$.)
 * [Sawin's paper](https://arxiv.org/abs/2211.11504) also gave a sketch of how the result might be pushed a little beyond $\psi$ by making $A$ and $B$ not independent (which isn't required for the proof to work). In December, [Yu](https://arxiv.org/abs/2212.00658) and then [Cambie](https://arxiv.org/abs/2212.12500) filled in the details, and got $\alpha = 0.3823...$ (compared to $\psi = 0.3819...$).
 * In June 2023, [Liu](https://arxiv.org/abs/2306.08824) developed Sawin's improvement a bit further, and computed $\alpha = 0.3827...$.
