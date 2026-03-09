@@ -43,7 +43,7 @@ We can now even up the unequal gaps in the pattern to leave:
  * * | | * * * | * | *
 ```
 
-In total we have a pattern of $n + k - 1 = 11$ symbols: $n - 1 = 4$ bars and $k = 7$ stars. Any such pattern of $n + k - 1$ symbols -- $k$ stars and $n - 1$ bars -- corresponds to a multiset. So the number of multisets is the numbers of ways to places $k$ stars among $n - k + 1$ positions, which is $\binom{n-k+1}{k}$.
+In total we have a pattern of $n + k - 1 = 11$ symbols: $n - 1 = 4$ bars and $k = 7$ stars. Any such pattern of $n + k - 1$ symbols ($k$ stars and $n - 1$ bars) corresponds to a multiset. So the number of multisets is the numbers of ways to places $k$ stars among $n - k + 1$ positions, which is $\binom{n-k+1}{k}$.
 
 The fact that both normal sets and multisets are both counted by the binomial coefficient (in slightly different ways) is very convenient, this mathematician would probably say. You only have to learn one thing! Whenever you are dealing with multisets, you can just switch immediately to binomial coefficients, and use all the useful facts you already know about the binomial coefficient to help with your maths problem.
 
@@ -59,7 +59,7 @@ $$ {\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg)} $$
 
 -- like the binomial coefficient, but with double brackets. If it's good enough for Prof Stanley, it's good enough for me.
 
-In speech, the binomial coefficient $\binom{n}{k}$ is said as "$n$ choose $k$". Stanley proposes that $\kern-0.2em\tbinom{n}{k}\kern-0.2em\big)$ should be "$n$ multichoose $k$", which I also like.
+In speech, the binomial coefficient $\binom{n}{k}$ is said as "$n$ choose $k$". Stanley proposes that $\big(\kern-0.2em\tbinom{n}{k}\kern-0.2em\big)$ should be "$n$ multichoose $k$", which I also like.
 
 ### 2. Algebraic definition
 
@@ -95,7 +95,7 @@ To decide what the multiset coefficient equivalent of this is, we'll have to thi
 
 Here, the left-hand side $\binom{n}{k}$ is, of course, just the number of ways of choosing $k$ items from $n$ items. Suppose one of the objects is "special" somehow; then we can count separately the number of sets that don't include the special item and those that do include the special item. If the special item isn't included, then we need to pick all $k$ items from the $n-1$ non-special items, which can be done in $\binom{n-1}{k}$ ways. If the special item is included, then we only need $k-1$ more of the $n-1$ non-special items, which can be done in $\binom{n-1}{k-1}$ ways. Adding these two together gives the right-hand side.
 
-Almost the same argument works with the multiset coefficient. If the special item isn't included, then we need to pick all $k$ items from the $n-1$ non-special items, which can be done in $\kern-0.2em\tbinom{n-1}{k}\kern-0.2em\big)$ ways. If the special item is included, then we only need $k-1$ more items -- but there are still $n$ choices, not $n-1$, because we're allowed to pick yet more of the special item, so this gives $\kern-0.2em\tbinom{n}{k-1}\kern-0.2em\big)$.
+Almost the same argument works with the multiset coefficient. If the special item isn't included, then we need to pick all $k$ items from the $n-1$ non-special items, which can be done in $\big(\kern-0.2em\tbinom{n-1}{k}\kern-0.2em\big)$ ways. If the special item is included, then we only need $k-1$ more items -- but there are still $n$ choices, not $n-1$, because we're allowed to pick yet more of the special item, so this gives $\big(\kern-0.2em\tbinom{n}{k-1}\kern-0.2em\big)$.
 
 The multiset coefficient version of Pascal's formula is therefore
 
@@ -149,7 +149,7 @@ and imagine multiplying out
 
 $$ (1-x)^{-n} = (1 + x + x^2 + \cdots)\cdots (1 + x + x^2 + \cdots) .$$
 
-To get a term $x^k$, you need to have picked an "$x$" $k$ times, but that could be multiple $x$'s from the same bracket by picking an $x^2$ or $x^3$ and so on. So we are choosing with multiplicities, giving $\kern-0.2em\tbinom{n}{k}\kern-0.2em\big)$ ways.
+To get a term $x^k$, you need to have picked an "$x$" $k$ times, but that could be multiple $x$'s from the same bracket by picking an $x^2$ or $x^3$ and so on. So we are choosing with multiplicities, giving $\big(\kern-0.2em\tbinom{n}{k}\kern-0.2em\big)$ ways.
 
 ### 7. Maximum item
 
