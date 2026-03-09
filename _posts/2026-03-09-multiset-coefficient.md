@@ -161,7 +161,7 @@ known as the ["hockeystick identity"](https://en.wikipedia.org/wiki/Hockey-stick
 
 This identity comes from counting the $k$-subsets of $\{1, 2, \dots, n\}$ based on their maximum item. If the maximum item is $m$, then you need to choose the remaining $k -1$ items from the $m-1$ items that are smaller than $m$.
 
-For multisets, the argument is almost the same, but you can pick more "joint-maximum" items that are equal to $m$ if you want. So you need to choose the remaining $k-1$ items from the $m$ items that are smaller that *or equal to* $m$. Hence we get
+For multisets, the argument is almost the same, but you can pick more "joint-maximum" items that are equal to $m$ if you want. So you need to choose the remaining $k-1$ items from the $m$ items that are smaller than *or equal to* $m$. Hence we get
 
 $$ \sum_{m=0}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$
 
@@ -215,13 +215,13 @@ So to gather everything together, here are the results we've discussed:
 
 | **Binomial coefficient** | **Multiset coefficient** |
 |:----------------------------------:|:----------------------------------:|
-| $$ \binom{n}{k} = \frac{n^{\underline{k}}}{k!} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \frac{n^{\overline{k}}}{k!}  $$ |
-| $$ \binom{n}{k} = \binom{n}{n-k} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{k+1}{n-1}\kern-0.4em\bigg) $$ |
-| $$ \binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n-1}{k}\kern-0.4em\bigg) + \bigg(\kern-0.4em\dbinom{n}{k-1}\kern-0.4em\bigg) $$ |
-| $$ k\binom{n}{k} = n \binom{n-1}{k-1} $$ | $$ k\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = n \bigg(\kern-0.4em\dbinom{n+1}{k-1}\kern-0.4em\bigg) $$ |
-| $$ \binom{k}{j} \binom{n}{k} = \binom{n}{j}\binom{n-j}{k-j} $$ | $$ \binom{k}{j} \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{n+j}{k-j}\kern-0.4em\bigg) $$ |
-| $$ \sum_{k=0}^n \binom{n}{k} x^k = (1 + x)^n $$ | $$ \sum_{k=0}^\infty \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) x^k = (1 - x)^{-n} $$ |
-| $$ \sum_{m=0}^n \binom{m-1}{k-1} = \binom{n}{k} $$ | $$ \sum_{m=0}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$ |
-| $$ \binom{n+m}{k} = \sum_{j=0}^k \binom{n}{j} \binom{m}{k-j} $$ | $$ \bigg(\kern-0.4em\dbinom{n+m}{k}\kern-0.4em\bigg) = \sum_{j=0}^k \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{m}{k-j}\kern-0.4em\bigg) $$ |
+| $$ \dbinom{n}{k} = \dfrac{n^{\underline{k}}}{k!} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \frac{n^{\overline{k}}}{k!}  $$ |
+| $$ \dbinom{n}{k} = \dbinom{n}{n-k} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{k+1}{n-1}\kern-0.4em\bigg) $$ |
+| $$ \dbinom{n}{k} = \dbinom{n-1}{k} + \dbinom{n-1}{k-1} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n-1}{k}\kern-0.4em\bigg) + \bigg(\kern-0.4em\dbinom{n}{k-1}\kern-0.4em\bigg) $$ |
+| $$ k\dbinom{n}{k} = n \dbinom{n-1}{k-1} $$ | $$ k\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = n \bigg(\kern-0.4em\dbinom{n+1}{k-1}\kern-0.4em\bigg) $$ |
+| $$ \dbinom{k}{j} \dbinom{n}{k} = \dbinom{n}{j}\dbinom{n-j}{k-j} $$ | $$ \dbinom{k}{j} \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{n+j}{k-j}\kern-0.4em\bigg) $$ |
+| $$ \displaystyle\sum_{k=0}^n \binom{n}{k} x^k = (1 + x)^n $$ | $$ \displaystyle\sum_{k=0}^\infty \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) x^k = (1 - x)^{-n} $$ |
+| $$ \displaystyle\sum_{m=0}^n \binom{m-1}{k-1} = \dbinom{n}{k} $$ | $$ \displaystyle\sum_{m=0}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$ |
+| $$ \dbinom{n+m}{k} = \displaystyle\sum_{j=0}^k \dbinom{n}{j} \dbinom{m}{k-j} $$ | $$ \bigg(\kern-0.4em\dbinom{n+m}{k}\kern-0.4em\bigg) = \displaystyle\sum_{j=0}^k \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{m}{k-j}\kern-0.4em\bigg) $$ |
 
 And remember: the second column is no less important than the first column! Justice for the multiset coefficient!
