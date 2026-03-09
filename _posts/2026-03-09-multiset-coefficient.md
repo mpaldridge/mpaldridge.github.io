@@ -7,9 +7,6 @@ permalink: /blog/multiset-coefficient.html
 use_math: true
 ---
 
-$$ \newcommand{\multi}[2]{\bigg(\kern-0.4em\dbinom{#1}{#2}\kern-0.4em\bigg)}
-\newcommand{\tmulti}[2]{\big(\kern-0.2em\tbinom{#1}{#2}\kern-0.2em\big)} $$
-
 **Being the second in a series of blogposts quite unnecessarily scolding the reader about the binomial coefficient** (Previously: ["Don’t write the binomial coefficient as n! / k! (n-k)!"](binomial.html))
 
 The binomial coefficient
@@ -58,11 +55,11 @@ To do this, I'm going to start by giving the multiset coefficient its own notati
 
 There does not seem to be a universally recognised notation for the multiset coefficient, but Richard Stanley (author of the legendary *Enumerative Combinatorics* textbook, which deals with this sort of thing) suggests
 
-$$ \multi{n}{k}$$
+$$ {\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg)} $$
 
 -- like the binomial coefficient, but with double brackets. If it's good enough for Prof Stanley, it's good enough for me.
 
-In speech, the binomial coefficient $\binom{n}{k}$ is said as "$n$ choose $k$". Stanley proposes that $\tmulti{n}{k}$ should be "$n$ multichoose $k$", which I also like.
+In speech, the binomial coefficient $\binom{n}{k}$ is said as "$n$ choose $k$". Stanley proposes that $\kern-0.2em\tbinom{n}{k}\kern-0.2em\big)$ should be "$n$ multichoose $k$", which I also like.
 
 ### 2. Algebraic definition
 
@@ -74,7 +71,7 @@ The argument here is that the "falling factorial" $n^{\underline{k}} = n(n-1)\cd
 
 The equivalent expression for the multiset coefficient is
 
-$$ \multi{n}{k} = \frac{n^{\overline{k}}}{k!} = \frac{n(n+1)\cdots(n+k-1)}{k!} . $$
+$$ {\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg)} = \frac{n^{\overline{k}}}{k!} = \frac{n(n+1)\cdots(n+k-1)}{k!} . $$
 
 Again, this can be justified by the numerator -- here a "rising factorial" $n^{\overline{k}} = n(n+1)\cdots(n+k-1)$ -- being the count of the multisets where the order matters, and the denominator $k!$ allowing for the different orderings.
 
@@ -98,11 +95,11 @@ To decide what the multiset coefficient equivalent of this is, we'll have to thi
 
 Here, the left-hand side $\binom{n}{k}$ is, of course, just the number of ways of choosing $k$ items from $n$ items. Suppose one of the objects is "special" somehow; then we can count separately the number of sets that don't include the special item and those that do include the special item. If the special item isn't included, then we need to pick all $k$ items from the $n-1$ non-special items, which can be done in $\binom{n-1}{k}$ ways. If the special item is included, then we only need $k-1$ more of the $n-1$ non-special items, which can be done in $\binom{n-1}{k-1}$ ways. Adding these two together gives the right-hand side.
 
-Almost the same argument works with the multiset coefficient. If the special item isn't included, then we need to pick all $k$ items from the $n-1$ non-special items, which can be done in $\tmulti{n-1}{k}$ ways. If the special item is included, then we only need $k-1$ more items -- but there are still $n$ choices, not $n-1$, because we're allowed to pick yet more of the special item, so this gives $\tmulti{n}{k-1}$.
+Almost the same argument works with the multiset coefficient. If the special item isn't included, then we need to pick all $k$ items from the $n-1$ non-special items, which can be done in $\kern-0.2em\tbinom{n-1}{k}\kern-0.2em\big)$ ways. If the special item is included, then we only need $k-1$ more items -- but there are still $n$ choices, not $n-1$, because we're allowed to pick yet more of the special item, so this gives $\kern-0.2em\tbinom{n}{k-1}\kern-0.2em\big)$.
 
 The multiset coefficient version of Pascal's formula is therefore
 
-$$ \multi{n}{k} = \multi{n-1}{k} + \multi{n}{k-1} . $$
+$$ {\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg)} = {\bigg(\kern-0.4em\dbinom{n-1}{k}\kern-0.4em\bigg)} + {\bigg(\kern-0.4em\dbinom{n}{k-1}\kern-0.4em\bigg)} . $$
 
 ### 4. A boss
 
@@ -114,7 +111,7 @@ This counts the number of ways of picking a board of $k$ people from an office o
 
 A similar argument works for the multiset coefficient. We can place $k$ flags on $n$ poles, then pick one of them top be the "boss-flag". Alternatively, we can pick one of $n$ poles to put the boss-flag on. We then need $k-1$ more flags to be put in $n + 1$ locations: the $n-1$ empty poles, above the boss-flag, or below the boss-flag. The new identity is, then:
 
-$$ k\multi{n}{k} = n \multi{n+1}{k-1} . $$
+$$ k{\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg)} = n {\bigg(\kern-0.4em\dbinom{n+1}{k-1}\kern-0.4em\bigg)} . $$
 
 ### 5. Many bosses
 
@@ -124,7 +121,7 @@ $$ \binom{k}{j} \binom{n}{k} = \binom{n}{j}\binom{n-j}{k-j} . $$
 
 The multiset version of this is also similar. We can put up $k$ flags on $n$ poles, then pick $j$ of them to be boss-flags. In this second step, we can only pick each hoisted flag at most once to be a boss-flag, so that gives a binomial, not multiset, coefficient on the left-hand side. As before, if we pick the $j$ boss-flags first, this creates $n+j$ spaces for the remaining flags, since each boss flag divides a location in two. We get:
 
-$$ \binom{k}{j} \multi{n}{k} = \multi{n}{j} \multi{n+j}{k-j} . $$
+$$ \binom{k}{j} {\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg)} = {\bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg)} {\bigg(\kern-0.4em\dbinom{n+j}{k-j}\kern-0.4em\bigg)} . $$
 
 I'm not sure whether I should be fully satisfied with this one or not: it feels a bit of a compromise for one of the coefficients in this expression to be a rogue binomial coefficient, rather than all four terms being multiset coefficients. But I can't think of anything better -- can you? (Alternatively, is there an "opposite" identity with three binomial coefficients and one multiset coefficient?)
 
@@ -136,7 +133,7 @@ $$ \sum_{k=0}^n \binom{n}{k} x^k = (1 + x)^n . $$
 
 The generating function of the multiset coefficients is
 
-$$ \sum_{k=0}^\infty \multi{n}{k} x^k = (1 - x)^{-n} . $$
+$$ \sum_{k=0}^\infty {\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg)} x^k = (1 - x)^{-n} . $$
 
 To see the first of these, imagine multiplying out the brackets of
 
@@ -152,7 +149,7 @@ and imagine multiplying out
 
 $$ (1-x)^{-n} = (1 + x + x^2 + \cdots)\cdots (1 + x + x^2 + \cdots) .$$
 
-To get a term $x^k$, you need to have picked an "$x$" $k$ times, but that could be multiple $x$'s from the same bracket by picking an $x^2$ or $x^3$ and so on. So we are choosing with multiplicities, giving $\tmulti{n}{k}$ ways.
+To get a term $x^k$, you need to have picked an "$x$" $k$ times, but that could be multiple $x$'s from the same bracket by picking an $x^2$ or $x^3$ and so on. So we are choosing with multiplicities, giving $\kern-0.2em\tbinom{n}{k}\kern-0.2em\big)$ ways.
 
 ### 7. Maximum item
 
@@ -166,7 +163,7 @@ This identity comes from counting the $k$-subsets of $\{1, 2, \dots, n\}$ based 
 
 For multisets, the argument is almost the same, but you can pick more "joint-maximum" items that are equal to $m$ if you want. So you need to choose the remaining $k-1$ items from the $m$ items that are smaller that *or equal to* $m$. Hence we get
 
-$$ \sum_{m=0}^n \multi{m}{k-1} = \multi{n}{k} $$
+$$ \sum_{m=0}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$
 
 (where all the summands are nonzero).
 
@@ -180,7 +177,7 @@ Suppose the office has $n+m$ employees: $n$ women and $m$ men. Again, we want to
 
 Exactly the same argument works for multisets, so we have the same result:
 
-$$ \multi{n+m}{k} = \sum_{j=0}^k \multi{n}{j} \multi{m}{k-j} . $$
+$$ \bigg(\kern-0.4em\dbinom{n+m}{k}\kern-0.4em\bigg) = \sum_{j=0}^k \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{m}{k-j}\kern-0.4em\bigg) . $$
 
 ### 10. Symmetry
 
@@ -202,13 +199,13 @@ What if we now swap the roles of the stars and the bars -- so now the stars are 
 
 Since these are both counting the same patterns of stars and bars, we get
 
-$$ \multi{n}{k} = \multi{k+1}{n-1} . $$
+$$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{k+1}{n-1}\kern-0.4em\bigg) . $$
 
 (This argument sets up an explicit bijection between $k$-submultisets of an $n$-set and $(n-1)$-submultisets of a $(k+1)$-set. I admit I'd never thought about this bijection before. I'd like to know more about its properties.)
 
 It's not totally clear this is the right multiset generalisation of the binomial coefficient symmetry relation -- in particular, the swapping over of top and bottom (the $k$ now appears on the top of the multiset coefficient on the right-hand side of the equation) seems a bit weird. But I think it does work: if you do *the forbidden thing I've told you not to do* and convert the multiset coefficient to a binomial coefficient, apply the symmetry relation, then convert back, you get
 
-$$ \multi{n}{k} = \binom{n+k-1}{k} = \binom{n+k-1}{n-1} = \binom{(k+1) + (n-1) - 1}{n-1} = \multi{k+1}{n-1} , $$
+$$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \binom{n+k-1}{k} = \binom{n+k-1}{n-1} = \binom{(k+1) + (n-1) - 1}{n-1} = \bigg(\kern-0.4em\dbinom{k+1}{n-1}\kern-0.4em\bigg) , $$
 
 which is what we claimed, although don't tell anyone I did this.
 
@@ -218,13 +215,13 @@ So to gather everything together, here are the results we've discussed:
 
 | **Binomial coefficient** | **Multiset coefficient** |
 |:----------------------------------:|:----------------------------------:|
-| $$ \binom{n}{k} = \frac{n^{\underline{k}}}{k!} $$ | $$ \multi{n}{k} = \frac{n^{\overline{k}}}{k!}  $$ |
-| $$ \binom{n}{k} = \binom{n}{n-k} $$ | $$ \multi{n}{k} = \multi{k+1}{n-1} . $$ |
-| $$ \binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1} $$ | $$ \multi{n}{k} = \multi{n-1}{k} + \multi{n}{k-1} $$ |
-| $$ k\binom{n}{k} = n \binom{n-1}{k-1} $$ | $$ k\multi{n}{k} = n \multi{n+1}{k-1} $$ |
-| $$ \binom{k}{j} \binom{n}{k} = \binom{n}{j}\binom{n-j}{k-j} $$ | $$ \binom{k}{j} \multi{n}{k} = \multi{n}{j} \multi{n+j}{k-j} $$ |
-| $$ \sum_{k=0}^n \binom{n}{k} x^k = (1 + x)^n $$ | $$ \sum_{k=0}^\infty \multi{n}{k} x^k = (1 - x)^{-n} $$ |
-| $$ \sum_{m=0}^n \binom{m-1}{k-1} = \binom{n}{k} $$ | $$ \sum_{m=0}^n \multi{m}{k-1} = \multi{n}{k} $$ |
-| $$ \binom{n+m}{k} = \sum_{j=0}^k \binom{n}{j} \binom{m}{k-j} $$ | $$ \multi{n+m}{k} = \sum_{j=0}^k \multi{n}{j} \multi{m}{k-j} $$ |
+| $$ \binom{n}{k} = \frac{n^{\underline{k}}}{k!} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \frac{n^{\overline{k}}}{k!}  $$ |
+| $$ \binom{n}{k} = \binom{n}{n-k} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{k+1}{n-1}\kern-0.4em\bigg) $$ |
+| $$ \binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n-1}{k}\kern-0.4em\bigg) + \bigg(\kern-0.4em\dbinom{n}{k-1}\kern-0.4em\bigg) $$ |
+| $$ k\binom{n}{k} = n \binom{n-1}{k-1} $$ | $$ k\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = n \bigg(\kern-0.4em\dbinom{n+1}{k-1}\kern-0.4em\bigg) $$ |
+| $$ \binom{k}{j} \binom{n}{k} = \binom{n}{j}\binom{n-j}{k-j} $$ | $$ \binom{k}{j} \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{n+j}{k-j}\kern-0.4em\bigg) $$ |
+| $$ \sum_{k=0}^n \binom{n}{k} x^k = (1 + x)^n $$ | $$ \sum_{k=0}^\infty \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) x^k = (1 - x)^{-n} $$ |
+| $$ \sum_{m=0}^n \binom{m-1}{k-1} = \binom{n}{k} $$ | $$ \sum_{m=0}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$ |
+| $$ \binom{n+m}{k} = \sum_{j=0}^k \binom{n}{j} \binom{m}{k-j} $$ | $$ \bigg(\kern-0.4em\dbinom{n+m}{k}\kern-0.4em\bigg) = \sum_{j=0}^k \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{m}{k-j}\kern-0.4em\bigg) $$ |
 
 And remember: the second column is no less important than the first column! Justice for the multiset coefficient!
