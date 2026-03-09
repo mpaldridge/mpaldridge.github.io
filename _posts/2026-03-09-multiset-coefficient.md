@@ -213,7 +213,7 @@ which is what we claimed, although don't tell anyone I did this.
 
 So to gather everything together, here are the results we've discussed:
 
-| **Binomial coefficient** | **Multiset coefficient** |
+| Binomial coefficient | Multiset coefficient |
 |:----------------------------------:|:----------------------------------:|
 | $$ \dbinom{n}{k} = \dfrac{n^{\underline{k}}}{k!} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \frac{n^{\overline{k}}}{k!}  $$ |
 | $$ \dbinom{n}{k} = \dbinom{n}{n-k} $$ | $$ \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{k+1}{n-1}\kern-0.4em\bigg) $$ |
