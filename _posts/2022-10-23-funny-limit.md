@@ -133,7 +133,7 @@ $$ n! = \int_{0}^\infty x^n \,\mathrm{e}^{-x} \, \mathrm{d} x . $$
 
 Now, I think it's perfectly possible for a standard mortal mathematician to notice that the integrand here, $x^n \,\mathrm{e}^{-x}$ looks quite a lot like (a scaled version of) the probability density function of a normal distribution with mean $n$ and variance $n$. Why might one notice this? I can think of at least three reasons.
 
-First, you can just draw a picture. In red is (a scaled version) of $x^{100} \, \mathrm{e}^{-x}$ in blue and the PDF of a normal $\mathrm{N}(100, 100)$ random variable in red. Very similar!
+First, you can just draw a picture. In blue is (a scaled version) of $x^{100} \, \mathrm{e}^{-x}$ and in red is the PDF of a normal $\mathrm{N}(100, 100)$ random variable. Very similar!
 
 ![](../assets/img/normal-gamma.png)
 
