@@ -82,7 +82,7 @@ So, how did I come across this limit?
 
 The first place I saw this limit was thinking about approximations for the birthday problem. Here, there are $n$ (probably 365) days of the year and $m$ people in a room, presumed to have birthdays chosen uniformly at random from the $n$ days. What is the probability that at least two people share a birthday?
 
-One way to approach this is by ["Poissonisation"](), a technique I wrote about in [this blogpost]() a while ago. The idea is that rather than having exactly $m$ people in the room, we instead assume there is a random number of people, where that random number follows a Poisson distribution with mean $m$. Then the number of people with any given birthday is Poisson with mean $m/n$. We have no shared birthday if each day of the year has only 0 or 1 birthday; so
+One way to approach this is by ["Poissonisation"](poissonisation.html), a technique I wrote about in [this blogpost](poissonisation.html) a while ago. The idea is that rather than having exactly $m$ people in the room, we instead assume there is a random number of people, where that random number follows a Poisson distribution with mean $m$. Then the number of people with any given birthday is Poisson with mean $m/n$. We have no shared birthday if each day of the year has only 0 or 1 birthday; so
 
 $$ \begin{align*}
 \mathbb{P}(\text{no birthday repeats})
