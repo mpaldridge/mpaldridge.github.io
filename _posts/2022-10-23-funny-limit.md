@@ -123,7 +123,7 @@ It's quite easy to show that $n!$ is asymptotically equivalent to $C \sqrt{n} \,
 
 $$ J_n = \int_{0}^{\pi/2} (\cos \theta)^n \, \mathrm{d}\theta $$
 
-for some reason -- or rather the ratio of consecutive values of $J_n$. If you messed about with this ratio in one way you could work out that the value was 1 and if you messed about with it in some other way you could get the value $2\pi/C^2$, and hence $C = \sqrt{2\pi}$. But this method was totally impossible to remember, and even impossibler to motivate. Like, how is some standard mortal mathematician meant to know that considering the ratio of weird trigonometric integrals is magically going to solve the problem?!
+for some reason -- or rather the limit of the ratio of consecutive values of $J_n$. If you messed about with this limit-ratio in one way you could work out that the value was 1 and if you messed about with it in some other way you could get the value $2\pi/C^2$, and hence $C = \sqrt{2\pi}$. But this method was totally impossible to remember, and even impossibler to motivate. Like, how is some standard mortal mathematician meant to know that considering the ratio of weird trigonometric integrals is magically going to solve the problem?!
 
 But the other day I saw, from [this expository note by Keith Conrad (PDF)](https://kconrad.math.uconn.edu/blurbs/analysis/stirling.pdf), a beautiful and much more intuitive way to prove Stirling's formula.
 
