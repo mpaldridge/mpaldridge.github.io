@@ -19,7 +19,7 @@ Importantly, each object can appear at most once: you can't choose the same play
 
 But sometimes we are interested in choosing $k$ objects from a set of $n$ objects where each object can appear multiple times. How many boxes of $k$ chocolates can be made from a range of $n$ varieties? In how many ways can $k$ small balls be placed into $n$ large boxes? In how many ways can $k$ identical tasks be assigned to $n$ workers?
 
-How can we count these? If you ask a mathematician, they will probably tell you that these can still be counted using the binomial coefficient, just slightly differently. The number of sets with multiplicity -- called *multisets* -- is the slightly different binomial coefficient $\binom{n+k-1}{k}$, with $n-k+1$, rather than just $n$, on the top.
+How can we count these? If you ask a mathematician, they will probably tell you that these can still be counted using the binomial coefficient, just slightly differently. The number of sets with multiplicity -- called *multisets* -- is the slightly different binomial coefficient $\binom{n+k-1}{k}$, with $n+k-1$, rather than just $n$, on the top.
 
 There's a famously elegant method to show that this binomial coefficient counts the number of multisets, called the "stars and bars" construction. Think of the "$k$ balls into $n$ boxes" application. Let's take $n = 5$ boxes and $k = 7$ balls. We can picture the $n = 5$ boxes by drawing $n - 1 = 4$ bars:
 
@@ -155,15 +155,15 @@ To get a term $x^k$, you need to have picked an "$x$" $k$ times, but that could 
 
 Another binomial coefficient identity is this:
 
-$$ \sum_{m=0}^n \binom{m-1}{k-1} = \binom{n}{k} , $$
+$$ \sum_{m=1}^n \binom{m-1}{k-1} = \binom{n}{k} , $$
 
-known as the ["hockeystick identity"](https://en.wikipedia.org/wiki/Hockey-stick_identity), due to the shape the relevant coefficients draw on Pascal's triangle. (Some people prefer to write the lower limit in the sum as $m = k$, since the summands for $m = 0, 1, \dots, k -1$ are all 0.)
+known as the ["hockeystick identity"](https://en.wikipedia.org/wiki/Hockey-stick_identity), due to the shape the relevant coefficients draw on Pascal's triangle. (Some people prefer to write the lower limit in the sum as $m = k$, since the summands for $m = 1, 2, \dots, k - 1$ are all 0.)
 
-This identity comes from counting the $k$-subsets of $\{1, 2, \dots, n\}$ based on their maximum item. If the maximum item is $m$, then you need to choose the remaining $k -1$ items from the $m-1$ items that are smaller than $m$.
+This identity comes from counting the $k$-subsets of $\{1, 2, \dots, n\}$ based on their maximum item. If the maximum item is $m$, then you need to choose the remaining $k - 1$ items from the $m-1$ items that are smaller than $m$.
 
 For multisets, the argument is almost the same, but you can pick more "joint-maximum" items that are equal to $m$ if you want. So you need to choose the remaining $k-1$ items from the $m$ items that are smaller than *or equal to* $m$. Hence we get
 
-$$ \sum_{m=0}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$
+$$ \sum_{m=1}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$
 
 (where all the summands are nonzero).
 
@@ -221,7 +221,7 @@ So to gather everything together, here are the results we've discussed:
 | $$ k\dbinom{n}{k} = n \dbinom{n-1}{k-1} $$ | $$ k\bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = n \bigg(\kern-0.4em\dbinom{n+1}{k-1}\kern-0.4em\bigg) $$ |
 | $$ \dbinom{k}{j} \dbinom{n}{k} = \dbinom{n}{j}\dbinom{n-j}{k-j} $$ | $$ \dbinom{k}{j} \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{n+j}{k-j}\kern-0.4em\bigg) $$ |
 | $$ \displaystyle\sum_{k=0}^n \binom{n}{k} x^k = (1 + x)^n $$ | $$ \displaystyle\sum_{k=0}^\infty \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) x^k = (1 - x)^{-n} $$ |
-| $$ \displaystyle\sum_{m=0}^n \binom{m-1}{k-1} = \dbinom{n}{k} $$ | $$ \displaystyle\sum_{m=0}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$ |
+| $$ \displaystyle\sum_{m=1}^n \binom{m-1}{k-1} = \dbinom{n}{k} $$ | $$ \displaystyle\sum_{m=1}^n \bigg(\kern-0.4em\dbinom{m}{k-1}\kern-0.4em\bigg) = \bigg(\kern-0.4em\dbinom{n}{k}\kern-0.4em\bigg) $$ |
 | $$ \dbinom{n+m}{k} = \displaystyle\sum_{j=0}^k \dbinom{n}{j} \dbinom{m}{k-j} $$ | $$ \bigg(\kern-0.4em\dbinom{n+m}{k}\kern-0.4em\bigg) = \displaystyle\sum_{j=0}^k \bigg(\kern-0.4em\dbinom{n}{j}\kern-0.4em\bigg) \bigg(\kern-0.4em\dbinom{m}{k-j}\kern-0.4em\bigg) $$ |
 
 And remember: the second column is no less important than the first column! Justice for the multiset coefficient!
