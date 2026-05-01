@@ -3,6 +3,10 @@
 
   {%- include head.html -%}
 
+  {% if page.gallery %}
+  <link href="../assets/lightbox3.css" rel="stylesheet" />
+  {% endif %}
+  
   {% if page.use_math %}
   {% include mathjax_support.html %}
   {% endif %}
@@ -18,6 +22,10 @@
     </main>
 
     {%- include footer.html -%}
+
+    {% if page.gallery %}
+    <script src="../assets/lightbox3.esm.js"></script>
+    {% endif %}
 
   </body>
 
