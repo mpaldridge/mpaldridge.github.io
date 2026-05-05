@@ -1,0 +1,5 @@
+<a href="{{ include.folder | prepend: '/assets/photos/' }}/{{ include.filename }}.jpg"
+   data-lightbox="gallery"
+   data-caption="{{ include.caption }}">
+  <img src="{{ include.folder | prepend: '/assets/photos/' }}/thumbs/{{ include.filename }}.jpg">
+</a>
