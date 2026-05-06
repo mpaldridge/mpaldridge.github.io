@@ -7,7 +7,7 @@ categories: notmaths
 permalink: /blog/numbered-list.html
 ---
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/2560px-Tsunami_by_hokusai_19th_century.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1280px-Tsunami_by_hokusai_19th_century.jpg)
 
 1. [72 ways to talk about Carly Rae Jepsen](https://www.popjustice.com/briefing/72-ways-to-talk-about-carly-rae-jepsen/)
 2. [Thirteen Ways of Looking at a Blackbird](https://www.poetryfoundation.org/poems/45236/thirteen-ways-of-looking-at-a-blackbird)
