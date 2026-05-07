@@ -2,7 +2,7 @@
 layout: post
 title:  "A numbered list of numbered lists"
 date:   2016-03-29
-modified_date: 2021-09-01
+modified_date: 2026-05-07
 categories: notmaths
 permalink: /blog/numbered-list.html
 ---
@@ -27,6 +27,7 @@ permalink: /blog/numbered-list.html
 16. [24 Pieces of Life Advice from Werner Herzog](https://kottke.org/15/01/24-pieces-of-life-advice-from-werner-herzog)
 17. [55 Ways White People Say ‘White People’ Without Actually Saying ‘White People’](https://www.theroot.com/55-ways-white-people-say-white-people-without-actuall-1845706752)
 18. [64 Reasons to Celebrate Paul McCartney](https://www.ian-leslie.com/p/64-reasons-to-celebrate-paul-mccartney)
-19. [Thirty-six Views of Mount Fuji](https://en.wikipedia.org/wiki/Thirty-six_Views_of_Mount_Fuji#Original_thirty-six)
+19. [Lines, ranked](https://www.mcsweeneys.net/articles/lines-ranked)
+20. [Thirty-six Views of Mount Fuji](https://en.wikipedia.org/wiki/Thirty-six_Views_of_Mount_Fuji#Original_thirty-six)
 
 
