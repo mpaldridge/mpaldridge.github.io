@@ -10,7 +10,7 @@ Other places to find my work, which might be more up to date, include [the arXiv
 
 **Group testing: an information theory perspective**  
 M Aldridge, [O Johnson](https://people.maths.bris.ac.uk/~maotj/), [J Scarlett](https://www.comp.nus.edu.sg/~scarlett/)  
-Second edition: *Foundations and Trends in Communications and Information Theory* ,23:1–2, 1–221, 2026, [doi:10.1108/FTCIT-11-2025-0150](https://doi.org/10.1108/FTCIT-11-2025-0150)  
+Second edition: *Foundations and Trends in Communications and Information Theory*, 23:1–2, 1–221, 2026, [doi:10.1108/FTCIT-11-2025-0150](https://doi.org/10.1108/FTCIT-11-2025-0150)  
 First edition: *Foundations and Trends in Communications and Information Theory*, 15:3–4, 196–392, 2019, [doi:10.1561/0100000099](https://doi.org/10.1561/0100000099)  
 arXiv version, based on second edition: [arXiv:1902.06002](https://arxiv.org/abs/1902.06002)  
 
