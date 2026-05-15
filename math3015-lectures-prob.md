@@ -42,7 +42,7 @@ Here, the "circuit" refers to the set of possible outcomes -- what we now would 
 
 Cardano counted and published the number of ways of getting different outcomes from rolling two or three dice – for example, with two dice, there is one way of rolling 2 (1 and 1), but six ways of rolling 7 (1 and 6, 2 and 5, 3 and 4, 4 and 3, 5 and 2, 6 and 1). Such enumerations of dice outcomes were known at least 500 years earlier, and were also published by [**Galileo Galilei** (Italy, 1564–1642)](https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/), the famous astronomer, physicist, engineer, philosopher, mathematician and polymath. 
 
-Cardano also knew that, if a single event had odds of $r : n – r$, then the odds of it occurring $m$ times in a row are $r^m : n^m – r^m$. In modern notation, we would say if the event has probability $p = r/n$, then the probability of getting $m$ consecutive occurrences of it is $p^m = r^m/n^m$. (We also now know that is important for the events to be independent for this formula to hold.)
+Cardano also knew that, if a single event had odds of $r : n - r$, then the odds of it occurring $m$ times in a row are $r^m : n^m - r^m$. In modern notation, we would say if the event has probability $p = r/n$, then the probability of getting $m$ consecutive occurrences of it is $p^m = r^m/n^m$. (We also now know that is important for the events to be independent for this formula to hold.)
 
 ### The problem of the points
 
