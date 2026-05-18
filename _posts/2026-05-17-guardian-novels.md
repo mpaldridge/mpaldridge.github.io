@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Guardian 100 best novel (stats and errors)"
+title:  "Guardian 100 best novels (stats and errors)"
 date:   2026-05-17
 categories: maths, notmaths
 permalink: /blog/guardian-novels.html
