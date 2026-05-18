@@ -170,7 +170,7 @@ Now, the Guardian’s method is already pretty tame – 21 points for being on a
 
 One book, Love in the Time of Cholera by Gabriel García Márquez, would enter the top 100. There are no huge moves, although A Farewell to Arms by Ernest Hemingway and The Vegetarian by Han Kang would each rise eight places.
 
-## Normiest and least-normie voters
+## Weirdest and least-weird ballots
 
 The voter who was most representative of the electoral college as a whole was Eimear McBride, narrowly beating Siri Hustvedt – at least by one way of measuring representative-ness that I can’t be bothered to get into right now. McBride voted for five out of the top six on the final list; her full ballot was as follows:  
 
