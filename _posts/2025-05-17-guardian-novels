@@ -1,0 +1,216 @@
+---
+layout: post
+title:  "Guardian 100 best novel (stats and errors)"
+date:   2025-05-17
+categories: maths, notmaths
+permalink: /blog/guardian-novels.html
+---
+
+![](../assets/img/guardian-100.jpg)
+
+I have been enjoying reading through (and arguing with!) the Guardian's [100 best novels list](https://www.theguardian.com/books/ng-interactive/2026/may/12/the-100-best-novels-of-all-time). You can see the whole top 100 at that link, but the top 10 is this:
+
+1. Middlemarch by George Eliot
+2. Beloved by Toni Morrison
+3. Ulysses by James Joyce
+4. To the Lighthouse by Virginia Woolf
+5. In Search of Lost Time by Marcel Proust
+6. Anna Karenina by Leo Tolstoy
+7. War and Peace by Leo Tolstoy
+6. Jane Eyre by Charlotte Brontë
+9. The Great Gatsby by F Scott Fitzgerald
+10. Pride and Prejudice by Jane Austen
+
+On [that page](https://www.theguardian.com/books/ng-interactive/2026/may/12/the-100-best-novels-of-all-time), you can also click through to see all the voters and which 10 books each of them voted for. So I thought it would be fun to do a bit of statistical messing around with the votes and see what I could find out. With a bit of rootling around you can find [this file](https://interactive.guim.co.uk/atoms/2026/03/2026-best-100-books-testing/best-100-books/v/1778864974/app.js), and then – in my case, with help from GPT – you can extract all the voting data. (To save anyone else the effort, you can find that voting data in a much more pleasant CSV file [here, on my Github](https://github.com/mpaldridge/guardian-100-novels/).)
+
+## Scoring system
+
+The first task I set myself was to work out how the raw votes were used to compile the top 100. The Guardian doesn’t say exactly how this was done, but in [this article](https://www.theguardian.com/books/2026/may/12/tell-us-what-are-your-top-three-novels-of-all-time) we get a hint: “We scored the titles according to how often they were voted for, and then added a weighting based on individual rankings.”
+
+I tried a mixture of guesswork and machine optimisation, but I could never get a system that *exactly* matched the Guardian’s top 10. In particular, no matter what I tried, My Ántonia by Willa Cather, which is #100 on the Guardian list, kept coming out somewhere around the mid-70s, messing everything up. I now think this is an error – see more on that below – but if I ignore that one book, I can get a match on the rest.
+
+So it looks to me that the scoring method is this:
+
+* A book gets 20 points for being mentioned on a list at all.
+* The book then gets extra points for how high it is on the list: 1 extra point for tenth, 2 extra points for ninth, and so on, up to 10 extra points for first.
+* So overall, the scores are 21 for tenth, 22 for ninth, up to 30 for ninth.
+
+The scoring method might not *exactly* be this – you can probably change the 20 a bit and still get equivalent results. (And of course you can scale the scores by some constant factor without changing anything.) But I’m fairly sure the true scoring method must be pretty close to this.
+
+This method does give a few tied results, which, if my scoring hunch is correct, the Guardian must have decided some way to break. It doesn’t make much difference, though: the first tie is that Blood Meridian by Cormac McCarthy, Crime and Punishment by Fyodor Dostoevsky, and Jude the Obscure by Thomas Hardy are all joint 68th. Also, A Portrait of the Artist as a Young Man misses out on the top 100 on the tie-breaker alone: it’s joint 98th along with three other books that made it onto the list.
+
+## Errors
+
+I think the Guardian has made two errors in compiling the votes into the top 100.
+
+This first is **My Ántonia**. That got four votes; under my scoring – which I think is their scoring too – this gives it 100 points, enough to put it joint 75th, alongside The Bluest Eye by Toni Morrison, Dracula by Bram Stoker, and The Rainbow by DH Lawrence. But in the Guardian’s list it’s #100, the last book to make it onto the list. My suspicion is is that Tahmima Anam's tenth-place vote for My Ántonia somehow got ignored. That vote gave the book 20 points for being included, plus 1 point for being tenth; without it, the book's score goes down from 100 to 79, which moves it down from joint-75th to joint-97th, consistent with its ranking of 100.
+
+The second problem is the book by Albert Camus called **L’Étranger** in French. Its title has been translated as both The Stranger (more common in the US) and The Outsider (more common in the UK). “The Stranger” received two votes, for 51 points, and “The Outsider” also received two votes, for 52 points. Individually, neither of these are enough to get on the list – but, merged together, 103 points for The Stranger/Outsider is enough to catapult it up to 71st place, between Jude the Obscure by Thomas Hardy and Kindred by Octavia E Butler.
+
+## Bubbling under
+
+The first fun thing I wanted to with the data was to see which books had just missed out on the top 100. Assuming my scoring system is correct, they are these:
+
+* Missing out on the top 100 only by the Guardian’s tie-break:
+    * A Portrait of the Artist as a Young Man by James Joyce
+* Joint 103rd:
+    * Love in the Time of Cholera by Gabriel García Márquez
+    * The Years by Annie Ernaux
+    * The Lord of the Rings by J.R.R. Tolkien
+    * To Kill a Mockingbird by Harper Lee
+    * Light in August by William Faulkner
+* Joint 108th
+    * The Mirror and the Light by Hilary Mantel
+    * Robinson Crusoe by Daniel Defoe
+    * The Name of the Rose by Umberto Eco
+    * The Summer Book by Tove Jansson
+* Joint 112th:
+    * Barchester Towers by Anthony Trollope
+    * A Dance to the Music of Time by Anthony Powell
+    * Drive Your Plow Over the Bones of the Dead by Olga Tokarczuk
+    * The Blue Flower by Penelope Fitzgerald
+* Joint 116th:
+    * How to Be Both by Ali Smith
+    * Money by Martin Amis
+* 118th:
+    * American Pastoral by Philip Roth
+* Joint 119th:
+    * Huckleberry Finn by Mark Twain
+    * The Grapes of Wrath by John Steinbeck
+    * Sense and Sensibility by Jane Austen
+    * The House of Mirth by Edith Wharton
+
+## Best novelists
+
+Another fun one: who are the best novelists? To make this list, I just added up the scores from all each author’s books. Virginia Woolf now jumps over George Eliot to claim the top spot.
+
+The top 10 authors, together with their scores, and their books (most popular first) that received at least two votes, are these:
+
+1. Virginia Woolf (1687): To the Lighthouse, Mrs Dalloway, Orlando, The Waves, Jacob’s Room, A Room of One’s Own
+2. George Eliot (1669): Middlemarch, Daniel Deronda
+3. Jane Austen (1650): Pride and Prejudice, Emma, Persuasion, Mansfield Park, Sense and Sensibility
+4. Toni Morrison (1501): Beloved, Song of Solomon, The Bluest Eye, Sula
+5. Leo Tolstoy (1319): Anna Karenina, War and Peace
+6. Charles Dickens (1149): Bleak House, David Copperfield, Great Expectations, Our Mutual Friend
+7. James Joyce (1075): Ulysses, A Portrait of the Artist as a Young Man
+8. Marcel Proust (741): In Search of Lost Time
+9. Henry James (731): The Portrait of a Lady, The Golden Bowl, The Turn of the Screw, The Ambassadors
+10. Vladimir Nabokov (697): Lolita, Pale Fire, Pnin
+
+Many authors had enough points to make it onto the top 100 list, if only their voters had been able to converge on which book to choose. The top 10 novelists of those not represented in the top 100 novels are these:
+
+* John Steinbeck (178): The Grapes of Wrath, Cannery Row, East of Eden
+* Don DeLillo (170): Underworld
+* Saul Bellow (158): Herzog, The Adventures of Augie March
+* Anthony Trollope (130): Barchester Towers
+* Angela Carter (129): Nights at the Circus, Wise Children
+* Iris Murdoch (129): five books with one vote each
+* Penelope Fitzgerald (127): The Blue Flower, The Beginning of Spring
+* Evelyn Waugh (121): A Handful of Dust
+* Abdulrazak Gurnah (120): Afterlives, Paradise
+* John Updike (119): the Rabbit omnibus got a vote, as did three of its constituent parts
+
+Plus Albert Camus (157: The Outside/Stranger, The Plague), who should have been on the list already anyway.
+
+## Alternative scoring methods
+
+The scoring method adopted here isn’t the only way to convert votes to a ranking. I thought it might be interesting to see how other ways of scoring would change the results.
+
+The main axis along which to compare scoring methods is what I shall call “aggressiveness”. An aggressive scoring method gives big rewards for being at the top of someone’s list and very little credit for being down towards the nine/ten area; while a non-aggressive scoring method gives a big reward for being on someone's list at all, but only a very small extra reward for being high on that list. It seemed to make sense to look at the two extremes of this axis.
+
+### Aggressive scoring
+
+The maximally aggressive method is simply to rank on the number of #1 votes – how many people said this was their favourite novel. If two books are tied on #1 votes, you then look at #2 votes, and so on.
+
+Under this method, the top 10 changes to this:
+
+1. Middlemarch by George Eliot (19 #1s, no change)
+2. Ulysses by James Joyce (13 #1s, up 1)
+3. Anna Karenina by Leo Tolstoy (7 #1s, up 3)
+4. Beloved by Toni Morrison (7 #1s, down 2)
+5. War and Peace by Leo Tolstoy (7 #1s, up 2)
+6. In Search of Lost Time by Marcel Proust (6 #1s, down 1)
+7. Wuthering Heights by Emily Brontë (6 #1s, up 13)
+8. To the Lighthouse by Virginia Woolf (5 #1s, down 4)
+9. Don Quixote by Miguel de Cervantes (5 #1s, up 17)
+10. Moby-Dick by Herman Melville (4 #1s, up 5)
+
+Some of the big risers up the list on this method include:
+
+* Jacob's Room by Virginia Woolf (29th, up 61)
+* Catch-22 by Joseph Heller (39th, up 58)
+* The Road by Cormac McCarthy (47th, up 51)
+* Life and Fate by Vasily Grossman (43rd, up 48)
+* Invisible Cities by Italo Calvino (46th, up 47)
+
+Many books that had two total votes, one of which was #1 vote, failed to make the original top 100 but would make the aggressively scored 100. These include:  
+
+* NW by Zadie Smith
+* The Enigma of Arrival by V. S. Naipaul
+* The Years by Annie Ernaux
+* Cannery Row by John Steinbeck
+* The Lord of the Rings by J.R.R. Tolkien
+
+### Gentle scoring
+
+We could also look at minimally aggressive scoring. Here, we just rank on total number of votes. Given a tie, we then look at total number of votes if participants were invited to list only 9 books, and so on.
+
+Now, the Guardian’s method is already pretty tame – 21 points for being on a list at all, with only a maximum of 9 more based on position – so this doesn’t change the list very much at all. But, for the record the top 10 would be this:
+
+1. Middlemarch by George Eliot (56 votes, no change)
+2. Beloved by Toni Morrison (43 votes, no change)
+3. Ulysses by James Joyce (36 votes, no change)
+4. To the Lighthouse by Virginia Woolf (31 votes, no change)
+5. In Search of Lost Time by Marcel Proust (27 votes, no change)
+6. Anna Karenina by Leo Tolstoy (26 votes, no change)
+7. Jane Eyre by Charlotte Brontë (21 votes, up 1)
+8. War and Peace by Leo Tolstoy (20 votes, down 1)
+9. The Great Gatsby by F Scott Fitzgerald (20 votes, up 3)
+10. Pride and Prejudice by Jane Austen (20 votes, down 1)
+
+One book, Love in the Time of Cholera by Gabriel García Márquez, would enter the top 100. There are no huge moves, although A Farewell to Arms by Ernest Hemingway and The Vegetarian by Han Kang would each rise eight places.
+
+## Normiest and least-normie voters
+
+The voter who was most representative of the electoral college as a whole was Eimear McBride, narrowly beating Siri Hustvedt – at least by one way of measuring representative-ness that I can’t be bothered to get into right now. McBride voted for five out of the top six on the final list; her full ballot was as follows:  
+
+1. Ulysses by James Joyce (#3)
+2. Crime and Punishment by Fyodor Dostoevsky (#69)
+3. Middlemarch by George Eliot (#1)
+4. In Search of Lost Time by Marcel Proust (#5)
+5. Wuthering Heights by Emily Brontë (#20)
+6. The Magic Mountain by Thomas Mann (#42)
+7. To the Lighthouse by Virginia Woolf (#4)
+8. Anna Karenina by Leo Tolstoy (#6)
+9. Nineteen Eighty-Four by George Orwell (#16)
+10. Moby-Dick by Herman Melville (#15) 
+
+The most idiosyncratic voter was Nikesh Shukla, who voted for only one book in the final top 100. His ballot was as follows:  
+
+1. The Buddha of Suburbia by Hanif Kureishi (#173)
+2. NW by Zadie Smith (#132)
+3. Family Life by Akhil Sharma (#303, only vote)
+4. Sag Harbor by Colson Whitehead (#337, only vote)
+5. Their Eyes Were Watching God by Zora Neale Hurston (#39)
+6. Watchmen by Alan Moore (#403, only vote)
+7. Station Eleven by Emily St. John Mandel (#214)
+8. Problems by Jade Sharma (#497, only vote)
+9. Breath by Tim Winton (#557, only vote)
+10. Exit West by Mohsin Hamid (#614, only vote)
+
+## My ballot
+
+No one asked, but my votes would be:
+
+1. The Great Gatsby by F Scott Fitzgerald (#11)
+2. One Hundred Years of Solitude by Gabriel García Márquez (#17)
+3. Nineteen Eighty-Four by George Orwell (#16)
+4. The Metamorphosis by Franz Kafka (#48)
+5. The Outsider/Stranger by Albert Camus (should have been #71)
+6. The Unbearable Lightness of Being by Milan Kundera (#490)
+7. Alice’s Adventures in Wonderland by Lewis Carroll (#199)
+8. A Clockwork Orange by Anthony Burgess (no votes)
+9. The Sun Also Rises by Ernest Hemingway (#226)
+10. The Road by Cormac McCarthy (#98)
+
+I declined Chronicle of a Death Foretold and The Old Man and the Sea, which I might slightly prefer to their heftier siblings, on the grounds that they are more novellas than novels. But then broke that rule to allow The Metamorphosis. And is Alice in Wonderland really a *novel* exactly, anyway? Perhaps not. Although if it is, why couldn’t I have counted Charlie and the Chocolate Factory too…
