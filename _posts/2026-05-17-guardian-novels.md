@@ -70,16 +70,24 @@ The first fun thing I wanted to with the data was to see which books had just mi
     * A Dance to the Music of Time by Anthony Powell
     * Drive Your Plow Over the Bones of the Dead by Olga Tokarczuk
     * The Blue Flower by Penelope Fitzgerald
-* Joint 116th:
+    * Alice's Adventures in Wonderland by Lewis Carroll (credit to [Steffan Rayburn-Maarup](https://bsky.app/profile/rayburnmaarup.bsky.social/post/3mmby3qgkhk22), who noticed that one of these votes appeared under the title "Alice in Wonderland")
+* Joint 117th:
     * How to Be Both by Ali Smith
     * Money by Martin Amis
-* 118th:
+    * A Month in the Country by JL Carr ([Rayburn-Maarup](https://bsky.app/profile/rayburnmaarup.bsky.social/post/3mmby3qgkhk22) again – the author's name was inconsistent in the data)
+* 120th:
     * American Pastoral by Philip Roth
-* Joint 119th:
+* Joint 121st:
     * Huckleberry Finn by Mark Twain
     * The Grapes of Wrath by John Steinbeck
     * Sense and Sensibility by Jane Austen
     * The House of Mirth by Edith Wharton
+* Joint 125th:
+    * Infinite Jest by David Foster Wallace
+    * The Tale of Genji	by Murasaki Shikibu
+    * Villette by Charlotte Brontë
+
+[Rayburn-Maarup](https://bsky.app/profile/rayburnmaarup.bsky.social/post/3mmby3qgkhk22) notes that if the vote two votes for A Wizard of Earthsea (the first novel in the Earthsea cycle) were merged with the vote for "Earthsea" (which I would assume is a vote for the cycle of novels as a whole), that would be joint 103rd too.
 
 ## Best novelists
 
@@ -169,7 +177,7 @@ Now, the Guardian’s method is already pretty tame – 21 points for being on a
 9. The Great Gatsby by F Scott Fitzgerald (20 votes, up 3)
 10. Pride and Prejudice by Jane Austen (20 votes, down 1)
 
-One book, Love in the Time of Cholera by Gabriel García Márquez, would enter the top 100. There are no huge moves, although A Farewell to Arms by Ernest Hemingway and The Vegetarian by Han Kang would each rise eight places.
+One book, Love in the Time of Cholera by Gabriel García Márquez, would enter the top 100. There are no huge moves, although maybe A Farewell to Arms by Ernest Hemingway and The Vegetarian by Han Kang would rise a few spots.
 
 ## Weirdest and least-weird ballots
 
@@ -211,7 +219,7 @@ No one asked, but my votes would be:
 4. The Metamorphosis by Franz Kafka (#48)
 5. The Outsider/Stranger by Albert Camus (should have been #71)
 6. The Unbearable Lightness of Being by Milan Kundera (#490)
-7. Alice’s Adventures in Wonderland by Lewis Carroll (#199)
+7. Alice’s Adventures in Wonderland by Lewis Carroll (#112)
 8. A Clockwork Orange by Anthony Burgess (no votes)
 9. The Sun Also Rises by Ernest Hemingway (#226)
 10. The Road by Cormac McCarthy (#98)
