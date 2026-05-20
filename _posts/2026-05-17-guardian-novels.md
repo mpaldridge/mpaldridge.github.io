@@ -199,7 +199,7 @@ The most idiosyncratic voter was Nussaibah Younis – only one of the books on h
 9. A Long Way Down by Nick Hornby (only vote)
 10. We All Want Impossible Things by Catherine Newman (only vote)
 
-(This is a correction – I earlier awarded this to Nikesh Shukla, who was actually the fifth-weirdest.)
+(This is a correction – I earlier awarded this to Nikesh Shukla, who was actually had the fifth-weirdest ballot.)
 
 ## My ballot
 
