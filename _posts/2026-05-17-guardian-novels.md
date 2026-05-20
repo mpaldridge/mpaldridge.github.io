@@ -143,7 +143,7 @@ Some of the big risers up the list on this method include:
 * Life and Fate by Vasily Grossman (43rd, up 48)
 * Invisible Cities by Italo Calvino (46th, up 47)
 
-Many books that had two total votes, one of which was #1 vote, failed to make the original top 100 but would make the aggressively scored 100. These include:  
+Many books that had two or three total votes, one of which was #1 vote, failed to make the original top 100 but would make the aggressively scored 100. These include:  
 
 * NW by Zadie Smith
 * The Enigma of Arrival by V. S. Naipaul
