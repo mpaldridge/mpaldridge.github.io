@@ -2,6 +2,7 @@
 layout: post
 title:  "Guardian 100 best novels (stats and errors)"
 date:   2026-05-17
+modified_date: 2026-05-20
 categories: maths, notmaths
 permalink: /blog/guardian-novels.html
 ---
@@ -185,18 +186,20 @@ The voter who was most representative of the electoral college as a whole was Ei
 9. Nineteen Eighty-Four by George Orwell (#16)
 10. Moby-Dick by Herman Melville (#15) 
 
-The most idiosyncratic voter was Nikesh Shukla, who voted for only one book in the final top 100. His ballot was as follows:  
+The most idiosyncratic voter was Nussaibah Younis – only one of the books on her ballot was votes for by someone else, and even that book only once.  Her ballot was as follows:  
 
-1. The Buddha of Suburbia by Hanif Kureishi (#173)
-2. NW by Zadie Smith (#132)
-3. Family Life by Akhil Sharma (#303, only vote)
-4. Sag Harbor by Colson Whitehead (#337, only vote)
-5. Their Eyes Were Watching God by Zora Neale Hurston (#39)
-6. Watchmen by Alan Moore (#403, only vote)
-7. Station Eleven by Emily St. John Mandel (#214)
-8. Problems by Jade Sharma (#497, only vote)
-9. Breath by Tim Winton (#557, only vote)
-10. Exit West by Mohsin Hamid (#614, only vote)
+1. The Song of Achilles by Madeline Miller (only vote)
+2. Detransition, Baby by Torrey Peters (only vote)
+3. The Trees by Percival L. Everett (only vote)
+4. The Sellout by Paul Beatty (#201)
+5. Vernon Subutex 1 by Virginie Despentes (only vote)
+6. Love Me Tender by Constance Debré (only vote)
+7. Big Swiss by Jen Beagin (only vote)
+8. Mammoth by Eva Baltasar (only vote)
+9. A Long Way Down by Nick Hornby (only vote)
+10. We All Want Impossible Things by Catherine Newman (only vote)
+
+(This is a correction – I earlier awarded this to Nikesh Shukla, who was actually the fifth-weirdest.)
 
 ## My ballot
 
