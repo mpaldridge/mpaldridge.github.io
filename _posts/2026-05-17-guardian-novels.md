@@ -186,7 +186,7 @@ The voter who was most representative of the electoral college as a whole was Ei
 9. Nineteen Eighty-Four by George Orwell (#16)
 10. Moby-Dick by Herman Melville (#15) 
 
-The most idiosyncratic voter was Nussaibah Younis – only one of the books on her ballot was votes for by someone else, and even that book only once.  Her ballot was as follows:  
+The most idiosyncratic voter was Nussaibah Younis – only one of the books on her ballot was voted for by someone else, and even that book only once.  Her ballot was as follows:  
 
 1. The Song of Achilles by Madeline Miller (only vote)
 2. Detransition, Baby by Torrey Peters (only vote)
