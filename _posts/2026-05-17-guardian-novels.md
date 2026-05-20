@@ -27,7 +27,7 @@ On [that page](https://www.theguardian.com/books/ng-interactive/2026/may/12/the-
 
 The first task I set myself was to work out how the raw votes were used to compile the top 100. The Guardian doesn’t say exactly how this was done, but in [this article](https://www.theguardian.com/books/2026/may/12/tell-us-what-are-your-top-three-novels-of-all-time) we get a hint: “We scored the titles according to how often they were voted for, and then added a weighting based on individual rankings.”
 
-I tried a mixture of guesswork and machine optimisation, but I could never get a system that *exactly* matched the Guardian’s top 10. In particular, no matter what I tried, My Ántonia by Willa Cather, which is #100 on the Guardian list, kept coming out somewhere around the mid-70s, messing everything up. I now think this is an error – see more on that below – but if I ignore that one book, I can get a match on the rest.
+I tried a mixture of guesswork and machine optimisation, but I could never get a system that *exactly* matched the Guardian’s top 100. In particular, no matter what I tried, My Ántonia by Willa Cather, which is #100 on the Guardian list, kept coming out somewhere around the mid-70s, messing everything up. I now think this is an error – see more on that below – but if I ignore that one book, I can get a match on the rest.
 
 So it looks to me that the scoring method is this:
 
@@ -110,7 +110,7 @@ Many authors had enough points to make it onto the top 100 list, if only their v
 * Abdulrazak Gurnah (120): Afterlives, Paradise
 * John Updike (119): the Rabbit omnibus got a vote, as did three of its constituent parts
 
-Plus Albert Camus (157: The Outside/Stranger, The Plague), who should have been on the list already anyway.
+Plus Albert Camus (157: The Outsider/Stranger, The Plague), who should have been on the list already anyway.
 
 ## Alternative scoring methods
 
