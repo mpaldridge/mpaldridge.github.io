@@ -34,7 +34,7 @@ So it looks to me that the scoring method is this:
 
 * A book gets 20 points for being mentioned on a list at all.
 * The book then gets extra points for how high it is on the list: 1 extra point for tenth, 2 extra points for ninth, and so on, up to 10 extra points for first.
-* So overall, the scores are 21 for tenth, 22 for ninth, up to 30 for ninth.
+* So overall, the scores are 21 for tenth, 22 for ninth, up to 30 for first.
 
 The scoring method might not *exactly* be this – you can probably change the 20 a bit and still get equivalent results. (And of course you can scale the scores by some constant factor without changing anything.) But I’m fairly sure the true scoring method must be pretty close to this.
 
