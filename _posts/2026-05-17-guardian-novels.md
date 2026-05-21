@@ -87,7 +87,7 @@ The first fun thing I wanted to with the data was to see which books had just mi
     * The Tale of Genji	by Murasaki Shikibu
     * Villette by Charlotte Brontë
 
-[Steffen Rayburn-Maarup](https://bsky.app/profile/rayburnmaarup.bsky.social/post/3mmby3qgkhk22) also notes that if the vote two votes for A Wizard of Earthsea by Ursula K Le Guin (the first novel in the Earthsea cycle) were merged with the vote for "Earthsea" (which I would assume is a vote for the cycle of novels as a whole), that would be joint 103rd too.
+[Steffen Rayburn-Maarup](https://bsky.app/profile/rayburnmaarup.bsky.social/post/3mmby3qgkhk22) also notes that if the two votes for A Wizard of Earthsea by Ursula K Le Guin (the first novel in the Earthsea cycle) were merged with the vote for "Earthsea" (which I would assume is a vote for the cycle of novels as a whole), that would be joint 103rd too.
 
 ## Best novelists
 
