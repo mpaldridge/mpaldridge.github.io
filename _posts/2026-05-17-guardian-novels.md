@@ -48,7 +48,7 @@ This first is **My Ántonia**. That got four votes; under my scoring – which I
 
 The second problem is the book by Albert Camus called **L’Étranger** in French. Its title has been translated as both The Stranger (more common in the US) and The Outsider (more common in the UK). “The Stranger” received two votes, for 51 points, and “The Outsider” also received two votes, for 52 points. Individually, neither of these are enough to get on the list – but, merged together, 103 points for The Stranger/Outsider is enough to catapult it up to 71st place, between Jude the Obscure by Thomas Hardy and Kindred by Octavia E Butler.
 
-**Update:** *[The Guardian's corrections and clarifications column](https://www.theguardian.com/news/2026/may/23/corrections-and-clarifications) has noted these mistakes (I don't know whether indirectly from this post?), but they aren't changing the list:*
+**Update:** *[The Guardian's corrections and clarifications column](https://www.theguardian.com/news/2026/may/23/corrections-and-clarifications) has acknowledged these mistakes (I don't know whether indirectly from this post?), but they aren't changing the list:*
 
 > A production error meant Albert Camus’s The Outsider was omitted from our top 100 novels list; its intended placing was 71. Also, My Ántonia should have been 78, not 100 [...] The rankings remain as first published but with the errata acknowledged here.
 
