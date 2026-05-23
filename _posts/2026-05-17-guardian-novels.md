@@ -2,7 +2,7 @@
 layout: post
 title:  "Guardian 100 best novels (stats and errors)"
 date:   2026-05-17
-modified_date: 2026-05-20
+modified_date: 2026-05-23
 categories: maths, notmaths
 permalink: /blog/guardian-novels.html
 ---
@@ -47,6 +47,10 @@ I think the Guardian has made two errors in compiling the votes into the top 100
 This first is **My Ántonia**. That got four votes; under my scoring – which I think is their scoring too – this gives it 100 points, enough to put it joint 75th, alongside The Bluest Eye by Toni Morrison, Dracula by Bram Stoker, and The Rainbow by DH Lawrence. But in the Guardian’s list it’s #100, the last book to make it onto the list. My suspicion is is that Tahmima Anam's tenth-place vote for My Ántonia somehow got ignored. That vote gave the book 20 points for being included, plus 1 point for being tenth; without it, the book's score goes down from 100 to 79, which moves it down from joint-75th to joint-97th, consistent with its ranking of 100.
 
 The second problem is the book by Albert Camus called **L’Étranger** in French. Its title has been translated as both The Stranger (more common in the US) and The Outsider (more common in the UK). “The Stranger” received two votes, for 51 points, and “The Outsider” also received two votes, for 52 points. Individually, neither of these are enough to get on the list – but, merged together, 103 points for The Stranger/Outsider is enough to catapult it up to 71st place, between Jude the Obscure by Thomas Hardy and Kindred by Octavia E Butler.
+
+**Update:** *[The Guardian's corrections and clarifications column](https://www.theguardian.com/news/2026/may/23/corrections-and-clarifications) has noted these mistakes (I don't know whether indirectly from this post?), but they aren't changing the list:*
+
+> A production error meant Albert Camus’s The Outsider was omitted from our top 100 novels list; its intended placing was 71. Also, My Ántonia should have been 78, not 100 [...] The rankings remain as first published but with the errata acknowledged here.
 
 ## Bubbling under
 
