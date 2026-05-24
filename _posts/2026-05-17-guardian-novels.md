@@ -54,7 +54,7 @@ The second problem is the book by Albert Camus called **L’Étranger** in Frenc
 
 ## Bubbling under
 
-The first fun thing I wanted to with the data was to see which books had just missed out on the top 100. Assuming my scoring system is correct, they are these:
+The first fun thing I wanted to with the data was to see which books were just outside the top 100. The following are all the books that received three votes and that missed out only on placings within voters' lists:
 
 * Missing out on the top 100 only by the Guardian’s tie-break:
     * A Portrait of the Artist as a Young Man by James Joyce
@@ -90,6 +90,17 @@ The first fun thing I wanted to with the data was to see which books had just mi
     * Infinite Jest by David Foster Wallace
     * The Tale of Genji	by Murasaki Shikibu
     * Villette by Charlotte Brontë
+* 128th:
+    * Herzog by Saul Bellow
+* 129th:
+    * Septology by Jon Fosse
+* Joint 130th:
+    * The Catcher in the Rye by J. D. Salinger
+    * Underworld by Don DeLillo
+* 132nd
+    * The Death of the Heart by Elizabeth Bowen
+
+The Death of the Heart got three tenth-place votes. The highest ranked book to get two votes was NW by Zadie Smith, with one first-place and one second-place vote.
 
 [Steffen Rayburn-Maarup](https://bsky.app/profile/rayburnmaarup.bsky.social/post/3mmby3qgkhk22) also notes that if the two votes for A Wizard of Earthsea by Ursula K Le Guin (the first novel in the Earthsea cycle) were merged with the vote for "Earthsea" (which I would assume is a vote for the cycle of novels as a whole), that would be joint 103rd too.
 
