@@ -2,7 +2,7 @@
 layout: post
 title:  "Guardian 100 best novels (stats and errors)"
 date:   2026-05-17
-modified_date: 2026-05-23
+modified_date: 2026-05-26
 categories: maths, notmaths
 permalink: /blog/guardian-novels.html
 ---
@@ -51,6 +51,8 @@ The second problem is the book by Albert Camus called **L’Étranger** in Frenc
 **Update:** *[The Guardian's corrections and clarifications column](https://www.theguardian.com/news/2026/may/23/corrections-and-clarifications) has acknowledged these mistakes (I don't know whether indirectly from this post?), but they aren't changing the list:*
 
 > A production error meant Albert Camus’s The Outsider was omitted from our top 100 novels list; its intended placing was 71. Also, My Ántonia should have been 78, not 100 [...] The rankings remain as first published but with the errata acknowledged here.
+
+**Update to the update:** *Actually the Guardian* has *decided to update the ranking to correct the errors. The Outsider is now 71st; My Ántonia is now 78th (behind The Bluest Eye and Dracula but ahead of The Rainbow, for whatever tie-breakery reasons). The Go-Between by LP Hartley is shunted out of the top 100. I haven't changed anything else in this blogpost to take this into account, because I can't be bothered, but I suppose various rankings I mention are going to be out by a couple of places here and there.*
 
 ## Bubbling under
 
