@@ -25,7 +25,7 @@ We start off with $n+1$ exponential alarm clocks $Y_0, Y_1, \dots, Y_n$. Eventua
 
 At this point, we can take advantage of the memoryless property of the exponential distribution. So, after this first ring, the remaining $n$ alarm clocks can reset themselves to $n$ new exponential distributions $Z_1, \dots, Z_n$. For the ratio of the last alarm clock time to the first alarm clock time to be at most 2, all these new alarm clocks must ring before another $Y^*$ seconds are up.
 
-So in order to “succeed”, the $n$ new reset alarm clocks $Z_1, \dots, Z_n$ must be shorter than the shortest of the $n+1$ original alarm clocks; that is, shorter than all $n+1$ of those original alarm clocks $Y_0, Y_1, \dots, Y_n$. In other words, of the $2n + 1$ alarm clocks,
+So in order to “succeed”, the $n$ new reset alarm clocks $Z_1, \dots, Z_n$ must all be shorter than the shortest of the $n+1$ original alarm clocks; that is, shorter than all $n+1$ of those original alarm clocks $Y_0, Y_1, \dots, Y_n$. In other words, of the $2n + 1$ alarm clocks,
 
 $$ Y_0, Y_1, \dots, Y_n, Z_1, \dots, Z_n $$
 
