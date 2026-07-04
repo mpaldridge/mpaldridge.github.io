@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Some of my favourite things American"
-date:   2026-05-17
-modified_date: 2026-05-26
+date:   2026-07-04
 categories: notmaths
 permalink: /blog/favourite-american.html
 ---
