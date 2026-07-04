@@ -8,6 +8,7 @@ permalink: /blog/favourite-american.html
 
 ![](../assets/img/nighthawks.jpg)
 
+
 * “A Change Is Gonna Come”
 * the Apollo program
 * Barbara Stanwyck
