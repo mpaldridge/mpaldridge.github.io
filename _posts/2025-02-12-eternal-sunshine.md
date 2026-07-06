@@ -29,4 +29,6 @@ Various other thoughts on this rewatch (or, Random thoughts for a-few-days-befor
 
 I don't know whether I was worried that I would cry at the film or that I wouldn't. (Is it worse to appear embarrassingly vulnerable in public, or is it worse if a piece of art that has been very important to you no longer has the same emotional punch it once did?) But, for the record, my cry count was 3: "Row, row, row your boat," as mentioned above; the ending, of course; and, most of all, the scene towards the end in the beachhouse – the key scene of the whole film.
 
+{% include youtube.html id="HrGZsdczSBs" title="Eternal Sunshine - Row" %}
+
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/HrGZsdczSBs?si=za7K4ythFJ5veSFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
