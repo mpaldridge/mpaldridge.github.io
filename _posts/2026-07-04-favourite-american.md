@@ -6,7 +6,7 @@ categories: notmaths
 permalink: /blog/favourite-american.html
 ---
 
-![](../assets/img/nighthawks.jpg)
+[![](../assets/img/nighthawks.jpg)](https://en.wikipedia.org/wiki/File:Nighthawks_by_Edward_Hopper_1942.jpg)
 
 * “A Change Is Gonna Come”
 * "A Perfect Day for Bananafish"
@@ -30,7 +30,7 @@ permalink: /blog/favourite-american.html
 * the LaTeX typesetting system
 * the MacBook Pro, circa 2013
 * *The New Yorker*
-* [*Nighthawks*](https://en.wikipedia.org/wiki/File:Nighthawks_by_Edward_Hopper_1942.jpg)
+* *Nighthawks*
 * Nina Simone
 * the old Penn station
 * “One Art”
@@ -49,4 +49,4 @@ permalink: /blog/favourite-american.html
 
 Happy 250th! Sorry for spelling "favourite" with a U.
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/wEBlaMOmKV4?si=LiGp5QDsaCnnMY98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+{% include youtube.html id="wEBlaMOmKV4" title="Sam Cooke - A Change Is Gonna Come" %}
