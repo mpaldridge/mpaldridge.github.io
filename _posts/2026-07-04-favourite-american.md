@@ -8,8 +8,8 @@ permalink: /blog/favourite-american.html
 
 ![](../assets/img/nighthawks.jpg)
 
-
 * “A Change Is Gonna Come”
+* "A Perfect Day for Bananafish"
 * the Apollo program
 * Barbara Stanwyck
 * Bob Dylan
@@ -29,12 +29,12 @@ permalink: /blog/favourite-american.html
 * kottke.org
 * the LaTeX typesetting system
 * the MacBook Pro, circa 2013
+* *The New Yorker*
 * [*Nighthawks*](https://en.wikipedia.org/wiki/File:Nighthawks_by_Edward_Hopper_1942.jpg)
+* Nina Simone
+* the old Penn station
 * “One Art”
 * *Partita for 8 Voices*
-* the old Penn station
-* *The New Yorker*
-* Nina Simone
 * “Pine Barrens” (*Sopranos* episode)
 * Richard Avedon’s photographs
 * RSS feeds
