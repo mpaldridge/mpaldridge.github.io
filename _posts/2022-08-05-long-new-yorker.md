@@ -69,23 +69,23 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[The Asbestos Industry on Trial](https://www.newyorker.com/magazine/1985/06/10/the-asbestos-industry-on-trial-i-a-failure-to-warn) by Paul Brodeur** (1985, four parts, 123k words) On the health dangers of asbestos and its legal ramifications. Book: "Outrageous Misconduct".
 
-**[A Secular Faith](https://www.newyorker.com/magazine/1984/10/08/i-a-secular-faith) by Daniel J. Kevles** (1984, four parts, 87k words). On the history of eugenics. Book: "In the Name of Eugenics".
+**[A Secular Faith](https://www.newyorker.com/magazine/1984/10/08/i-a-secular-faith) by Daniel J. Kevles** (1984, four parts, 90k words). On the history of eugenics. Book: "In the Name of Eugenics".
 
-**[Weapons and Hope](https://www.newyorker.com/magazine/1984/02/06/weapons-and-hope-i-questions) by Freeman Dyson** (1984, four parts, 91k words). On nuclear weapons and avoiding nuclear war. Book of the same title.
+**[Weapons and Hope](https://www.newyorker.com/magazine/1984/02/06/weapons-and-hope-i-questions) by Freeman Dyson** (1984, four parts, 97k words). On nuclear weapons and avoiding nuclear war. Book of the same title.
 
-**[A Sporty Game](https://www.newyorker.com/magazine/1982/06/14/a-sporty-game-i-betting-the-company) by John Newhouse** (1982, four parts, 101k words). On the business of manufacturing airliners. Book: "The Sporty Game".
+**[A Sporty Game](https://www.newyorker.com/magazine/1982/06/14/a-sporty-game-i-betting-the-company) by John Newhouse** (1982, four parts, 103k words). On the business of manufacturing airliners. Book: "The Sporty Game".
 
-**[The Fate of the Earth](https://www.newyorker.com/magazine/1982/02/01/the-fate-of-the-earth-a-republic-of-insects-and-grass) by Jonathan Schell** (1982, three parts, 80k words). On the consequences of nuclear war. [Book of the same title](https://en.wikipedia.org/wiki/The_Fate_of_the_Earth).
+**[The Fate of the Earth](https://www.newyorker.com/magazine/1982/02/01/the-fate-of-the-earth-a-republic-of-insects-and-grass) by Jonathan Schell** (1982, three parts, 87k words). On the consequences of nuclear war. [Book of the same title](https://en.wikipedia.org/wiki/The_Fate_of_the_Earth).
 
-**[Harlem](https://www.newyorker.com/magazine/1981/06/29/harlem-i-the-journey-uptown) by Jervis Anderson** (1981, four parts, 83k words). A history of Black Americans in Harlem, New York, to 1950. Book: "This Was Harlem".
+**[Harlem](https://www.newyorker.com/magazine/1981/06/29/harlem-i-the-journey-uptown) by Jervis Anderson** (1981, four parts, 93k words). A history of Black Americans in Harlem, New York, to 1950. Book: "This Was Harlem".
 
-**[The Patient](https://www.newyorker.com/magazine/1981/05/25/the-patient) by Susan Sheehan** (1981, four parts, 106k words). On a sometime-patient of a psychiatric hospital. Book: ["Is There No Place on Earth for Me?"](https://en.wikipedia.org/wiki/Is_There_No_Place_on_Earth_for_Me%3F).
+**[The Patient](https://www.newyorker.com/magazine/1981/05/25/the-patient) by Susan Sheehan** (1981, four parts, 111k words). On a sometime-patient of a psychiatric hospital. Book: ["Is There No Place on Earth for Me?"](https://en.wikipedia.org/wiki/Is_There_No_Place_on_Earth_for_Me%3F).
 
-**[A Prison and a Prisoner](https://www.newyorker.com/magazine/1977/10/24/a-prison-and-a-prisoner-i-maximum-security) by Susan Sheehan** (1977, three parts, 85k words). On a prisoner and the New York state prison system. Book of the same title.
+**[A Prison and a Prisoner](https://www.newyorker.com/magazine/1977/10/24/a-prison-and-a-prisoner-i-maximum-security) by Susan Sheehan** (1977, three parts, 100k words). On a prisoner and the New York state prison system. Book of the same title.
 
 **[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 78k words). On the Yukon region of Alaska. Part of the book of the same title.
 
-**[Mahatma Gandhi and His Apostles](https://www.newyorker.com/magazine/1976/05/10/mahatma-gandhi-and-his-apostles-i-subtler-and-more-lasting-shapes) by Ved Mehta** (1976, three parts, 90k words). On the Indian leader and those who followed him. Book of the same title.
+**[Mahatma Gandhi and His Apostles](https://www.newyorker.com/magazine/1976/05/10/mahatma-gandhi-and-his-apostles-i-subtler-and-more-lasting-shapes) by Ved Mehta** (1976, three parts, 99k words). On the Indian leader and those who followed him. Book of the same title.
 
 **[The Time of Illusion](https://www.newyorker.com/magazine/1975/06/02/the-time-of-illusion) by Jonathan Schell** (1975, six parts, 125k words). Reflections on the Nixon years. Book of the same title.
 
