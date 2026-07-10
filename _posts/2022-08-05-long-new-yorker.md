@@ -9,60 +9,60 @@ permalink: /blog/long-new-yorker.html
 
 Last year, *The New Yorker* published ["The Plague Year"](https://www.newyorker.com/magazine/2021/01/04/the-plague-year), a very long piece by Lawrence Wright about the U.S. response to the coronavirus pandemic. Which made me wonder: Is this the longest *New Yorker* article since I started reading the magazine in 2009? When did the magazine last run an article this long? What are some other long articles from the magazine? The answers are: Yes, 2004, and the following list.
 
-*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. Word counts for properly digitised articles are given to the nearest thousand words; word counts for other articles are roughly estimated from the page count in the magazine – I hope these might often be accurate to within 10%. I've tried not to miss any post-1970 articles, but I've surely failed; no attempt at completeness before 1970 has been made. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision.*
+*Programming notes: Articles have got shorter over time, so the word count needed to get on this list increases as we get further into the past. Word counts are from the "copyCount" variable in the webpage (rounded to the nearest 1000); I'm not certain how accurate this is. I've tried not to miss any post-1970 articles, but I've surely failed; no attempt at completeness before 1970 has been made. Sometimes the distinction between "an article" and "a series of articles" is unclear, so I made a knee-jerk decision. I made this list before the magazine digitised its archive in 2025, and have only made very small efforts at correcting or updating this list since then.*
 
 
 ### David Remnick editorship (1998–)
 
 **[Sisterhood](https://www.newyorker.com/magazine/2025/02/17/the-nuns-trying-to-save-the-women-on-texas-death-row) by Lawrence Wright** (2025, 22k words). On nuns who work with prisoners on death row (100th anniversary issue).
 
-**[The Plague Year](https://www.newyorker.com/magazine/2021/01/04/the-plague-year) by Lawrence Wright** (2021, 30k words). On the coronavirus pandemic. Expanded into the book of the same title.
+**[The Plague Year](https://www.newyorker.com/magazine/2021/01/04/the-plague-year) by Lawrence Wright** (2021, 31k words). On the coronavirus pandemic. Expanded into the book of the same title.
 
 **[Man Without a Country](https://www.newyorker.com/magazine/2017/08/21/julian-assange-a-man-without-a-country) by Raffi Khatchadourian** (2017, 22k words). A profile of Julian Assange.
 
-**[The Apostate](https://www.newyorker.com/magazine/2011/02/14/the-apostate-lawrence-wright) by Lawrence Wright** (2011, 24k words). On the director Paul Haggis and his departure from the Church of Scientology. Became part of the book ["Going Clear"](https://en.wikipedia.org/wiki/Going_Clear_(book)).
+**[The Apostate](https://www.newyorker.com/magazine/2011/02/14/the-apostate-lawrence-wright) by Lawrence Wright** (2011, 25k words). On the director Paul Haggis and his departure from the Church of Scientology. Became part of the book ["Going Clear"](https://en.wikipedia.org/wiki/Going_Clear_(book)).
 
-**[Iphigenia in Forest Hills](https://www.newyorker.com/magazine/2010/05/03/iphigenia-in-forest-hills) by Janet Malcolm** (2010, 25k words). On a murder trial. Book of the same title.
+**[Iphigenia in Forest Hills](https://www.newyorker.com/magazine/2010/05/03/iphigenia-in-forest-hills) by Janet Malcolm** (2010, 26k words). On a murder trial. Book of the same title.
 
 **[Travels in Siberia—I](https://www.newyorker.com/magazine/2009/08/03/travels-in-siberia-i) and [II](https://www.newyorker.com/magazine/2009/08/10/travels-in-siberia-ii) by Ian Frazier** (2009, two parts, 25k words). On a journey across Siberia. Part of the book of the same title.
 
-**[The Climate of Man—I](https://www.newyorker.com/magazine/2005/04/25/the-climate-of-man-i), [II](https://www.newyorker.com/magazine/2005/05/02/the-climate-of-man-ii) and [III](https://www.newyorker.com/magazine/2005/05/09/the-climate-of-man-iii) by Elizabeth Kolbert** (2005, three parts, 29k words). On climate change. Expanded into the book ["Field Notes from a Catastrophe"](https://en.wikipedia.org/wiki/Field_Notes_from_a_Catastrophe).
+**[The Climate of Man—I](https://www.newyorker.com/magazine/2005/04/25/the-climate-of-man-i), [II](https://www.newyorker.com/magazine/2005/05/02/the-climate-of-man-ii) and [III](https://www.newyorker.com/magazine/2005/05/09/the-climate-of-man-iii) by Elizabeth Kolbert** (2005, three parts, 30k words). On climate change. Expanded into the book ["Field Notes from a Catastrophe"](https://en.wikipedia.org/wiki/Field_Notes_from_a_Catastrophe).
 
-**Three Stories: ["Chance,"](https://www.newyorker.com/magazine/2004/06/14/chance) ["Soon,"](https://www.newyorker.com/magazine/2004/06/14/soon-2) and ["Silence"](https://www.newyorker.com/magazine/2004/06/14/silence-4) by Alice Munro** (2004, 31k words). Three interconnected short stories, which became the basis for the film "Julieta". Collected in the book ["Runaway"](https://en.wikipedia.org/wiki/Runaway_(book)).
+**Three Stories: ["Chance,"](https://www.newyorker.com/magazine/2004/06/14/chance) ["Soon,"](https://www.newyorker.com/magazine/2004/06/14/soon-2) and ["Silence"](https://www.newyorker.com/magazine/2004/06/14/silence-4) by Alice Munro** (2004, 32k words). Three interconnected short stories, which became the basis for the film "Julieta". Collected in the book ["Runaway"](https://en.wikipedia.org/wiki/Runaway_(book)).
 
 **[The Man Behind Bin Laden](https://www.newyorker.com/magazine/2002/09/16/the-man-behind-bin-laden) by Lawrence Wright** (2002, 22k words). On the first anniversary of 9/11, a profile of Ayman al-Zawahiri, Al Qaeda's number two. This material was used in the book ["The Looming Tower"](https://en.wikipedia.org/wiki/The_Looming_Tower) and the article was republished in the collection "The Terror Years".
 
-**[Eight Years](https://www.newyorker.com/magazine/2000/10/16/eight-years) by Joe Klein** (2001, 24k words). Looking back on the Clinton presidency.
+**[Eight Years](https://www.newyorker.com/magazine/2000/10/16/eight-years) by Joe Klein** (2001, 22k words). Looking back on the Clinton presidency.
 
-**["Nelson and Annabelle"](https://www.newyorker.com/magazine/2000/10/02/nelson-and-annabelle) by John Updike** (2000, two parts, 27k words). An epilogue to the author's "Rabbit Angstrom" tetralogy. Excerpted from the novella ["Rabbit Remembered"](https://en.wikipedia.org/wiki/Rabbit_Remembered) collected in the book "Licks of Love".
+**["Nelson and Annabelle"](https://www.newyorker.com/magazine/2000/10/02/nelson-and-annabelle) by John Updike** (2000, two parts, 26k words). An epilogue to the author's "Rabbit Angstrom" tetralogy. Excerpted from the novella ["Rabbit Remembered"](https://en.wikipedia.org/wiki/Rabbit_Remembered) collected in the book "Licks of Love".
 
 **[Overwhelming Force](https://www.newyorker.com/magazine/2000/05/22/overwhelming-force-2) by Seymour M. Hersh** (2000, 25k words). On an alleged U.S. war crime during the Gulf War.
 
 
 ### Tina Brown editorship (1992–98)
 
-**[Oswald in the U.S.S.R.](https://www.newyorker.com/magazine/1995/04/10/oswald-in-the-ussr) by Norman Mailer** (1995, 34k words). On the background of Lee Harvey Oswald, assassin of John F. Kennedy. Excerpted from the book ["Oswald's Tale"](https://en.wikipedia.org/wiki/Oswald%27s_Tale).
+**[Oswald in the U.S.S.R.](https://www.newyorker.com/magazine/1995/04/10/oswald-in-the-ussr) by Norman Mailer** (1995, 33k words). On the background of Lee Harvey Oswald, assassin of John F. Kennedy. Excerpted from the book ["Oswald's Tale"](https://en.wikipedia.org/wiki/Oswald%27s_Tale).
 
 **[Hillary the Pol](https://www.newyorker.com/magazine/1994/05/30/hillary-the-pol) by Connie Bruck** (1994, 32k words). On Hillary Clinton as First Lady and healthcare reformer.
 
-**[The Truth of El Mozote](https://www.newyorker.com/magazine/1993/12/06/the-truth-of-el-mozote) by Mark Danner** (1993, 41k words). On a massacre in El Salvador and its cover-up. Book: "The Massacre at El Mozote".
+**[The Truth of El Mozote](https://www.newyorker.com/magazine/1993/12/06/the-truth-of-el-mozote) by Mark Danner** (1993, 40k words). On a massacre in El Salvador and its cover-up. Book: "The Massacre at El Mozote".
 
-**[The Silent Woman](https://www.newyorker.com/magazine/1993/08/23/the-silent-woman-i-ii-iii) by Janet Malcolm** (1992, 58k words). On the biographical legacy of Sylvia Plath. Book of the same title.
+**[The Silent Woman](https://www.newyorker.com/magazine/1993/08/23/the-silent-woman-i-ii-iii) by Janet Malcolm** (1992, 63k words). On the biographical legacy of Sylvia Plath. Book of the same title.
 
-**[Remembering Satan—I](https://www.newyorker.com/magazine/1993/05/17/remembering-satan-part-i) and [II](https://www.newyorker.com/magazine/1993/05/24/remembering-satan-part-ii) by Lawrence Wright** (1992, two parts, 34k words). On an accusation of satantic ritual abuse. Book of the same title.
+**[Remembering Satan—I](https://www.newyorker.com/magazine/1993/05/17/remembering-satan-part-i) and [II](https://www.newyorker.com/magazine/1993/05/24/remembering-satan-part-ii) by Lawrence Wright** (1992, two parts, 35k words). On an accusation of satantic ritual abuse. Book of the same title.
 
-**[A Lost Childhood](https://www.newyorker.com/magazine/1993/01/11/a-lost-childhood) and [A Lost Motherhood](https://www.newyorker.com/magazine/1993/01/18/a-lost-motherhood) by Susan Sheehan** (1992, two parts, 47k words). On a young mother in foster care. Book: "Life for Me Ain't Been No Crystal Stair".
+**[A Lost Childhood](https://www.newyorker.com/magazine/1993/01/11/a-lost-childhood) and [A Lost Motherhood](https://www.newyorker.com/magazine/1993/01/18/a-lost-motherhood) by Susan Sheehan** (1992, two parts, 45k words). On a young mother in foster care. Book: "Life for Me Ain't Been No Crystal Stair".
 
 
 ### Robert Gottlieb editorship (1987–92)
 
-**Serving the President: [The Truman Years](https://www.newyorker.com/magazine/1991/03/25/serving-the-president-i-the-truman-years)** (two parts, 50k words) **and [The Vietnam Years](https://www.newyorker.com/magazine/1991/05/06/serving-the-president-i-the-vietnam-years)** (three parts, 73k words) **by Clark Clifford with Richard Holbrooke** (1991). Memoirs of a Democratic political insider. Excerpted form the book "Counsel to the President".
+**Serving the President: [The Truman Years](https://www.newyorker.com/magazine/1991/03/25/serving-the-president-i-the-truman-years)** (two parts, 52k words) **and [The Vietnam Years](https://www.newyorker.com/magazine/1991/05/06/serving-the-president-i-the-vietnam-years)** (three parts, 78k words) **by Clark Clifford with Richard Holbrooke** (1991). Memoirs of a Democratic political insider. Excerpted form the book "Counsel to the President".
 
-Three articles under the rubric **Journals**: **[From the Late Forties and Fifties](https://www.newyorker.com/magazine/1990/08/06/i-from-the-late-forties-and-the-fifties)** (1990, two parts, 44k words),  **[From the Sixties](https://www.newyorker.com/magazine/1991/01/21/from-the-sixties-i)** (1991, two parts, 42k words), and **[From the Seventies and Early Eighties](https://www.newyorker.com/magazine/1991/08/12/from-the-seventies-and-early-eighties-i)** (1991, two parts, 38k words) **by John Cheever**. Diaries of the short story writer. Book: "The Journals of John Cheever".
+Three articles under the rubric **Journals**: **[From the Late Forties and Fifties](https://www.newyorker.com/magazine/1990/08/06/i-from-the-late-forties-and-the-fifties)** (1990, two parts, 46k words),  **[From the Sixties](https://www.newyorker.com/magazine/1991/01/21/from-the-sixties-i)** (1991, two parts, 49k words), and **[From the Seventies and Early Eighties](https://www.newyorker.com/magazine/1991/08/12/from-the-seventies-and-early-eighties-i)** (1991, two parts, 41k words) **by John Cheever**. Diaries of the short story writer. Book: "The Journals of John Cheever".
 
-**[The Johnson Years: A Congressman Goes to War](https://www.newyorker.com/magazine/1989/11/06/the-johnson-years-a-congressman-goes-to-war)** (1989, 22k words), **[The Johnson Years: Buying and Selling](https://www.newyorker.com/magazine/1989/12/18/the-johnson-years-buying-and-selling)** (1989, 19k words), and **[The Johnson Years: The Old and the New](https://www.newyorker.com/magazine/1990/01/15/the-johnson-years-the-old-and-the-new-i-the-opponent)** (1990, four parts, 120k words) **by Robert A. Caro**. On Lyndon Johnson from 1941 to 1948. Excerpted from the book ["Means of Ascent"](https://en.wikipedia.org/wiki/The_Years_of_Lyndon_Johnson#Book_Two:_Means_of_Ascent_(1990)).
+**[The Johnson Years: A Congressman Goes to War](https://www.newyorker.com/magazine/1989/11/06/the-johnson-years-a-congressman-goes-to-war)** (1989, 23k words), **[The Johnson Years: Buying and Selling](https://www.newyorker.com/magazine/1989/12/18/the-johnson-years-buying-and-selling)** (1989, 21k words), and **[The Johnson Years: The Old and the New](https://www.newyorker.com/magazine/1990/01/15/the-johnson-years-the-old-and-the-new-i-the-opponent)** (1990, four parts, 131k words) **by Robert A. Caro**. On Lyndon Johnson from 1941 to 1948. Excerpted from the book ["Means of Ascent"](https://en.wikipedia.org/wiki/The_Years_of_Lyndon_Johnson#Book_Two:_Means_of_Ascent_(1990)).
 
-**[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 80k words). On U.S. Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
+**[An American Soldier in Vietnam](https://www.newyorker.com/magazine/1988/06/20/an-american-soldier-in-vietnam-i-the-rooster-and-the-tiger) by Neil Sheehan** (1988, four parts, 82k words). On U.S. Army Lt. Col. John Paul Vann and the Vietnam war. Excerpted from the book ["A Bright Shining Lie"](https://en.wikipedia.org/wiki/A_Bright_Shining_Lie).
 
 
 ### William Shawn editorship from 1970 (1970–87)
