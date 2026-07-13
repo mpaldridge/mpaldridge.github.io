@@ -83,15 +83,15 @@ Three articles under the rubric **Journals**: **[From the Late Forties and Fifti
 
 **[A Prison and a Prisoner](https://www.newyorker.com/magazine/1977/10/24/a-prison-and-a-prisoner-i-maximum-security) by Susan Sheehan** (1977, three parts, 100k words). On a prisoner and the New York state prison system. Book of the same title.
 
-**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 78k words). On the Yukon region of Alaska. Part of the book of the same title.
+**[Coming into the Country](https://www.newyorker.com/magazine/1977/06/20/coming-into-the-countryi) by John McPhee** (1977, four parts, 92k words). On the Yukon region of Alaska. Part of the book of the same title.
 
 **[Mahatma Gandhi and His Apostles](https://www.newyorker.com/magazine/1976/05/10/mahatma-gandhi-and-his-apostles-i-subtler-and-more-lasting-shapes) by Ved Mehta** (1976, three parts, 99k words). On the Indian leader and those who followed him. Book of the same title.
 
-**[The Time of Illusion](https://www.newyorker.com/magazine/1975/06/02/the-time-of-illusion) by Jonathan Schell** (1975, six parts, 125k words). Reflections on the Nixon years. Book of the same title.
+**[The Time of Illusion](https://www.newyorker.com/magazine/1975/06/02/the-time-of-illusion) by Jonathan Schell** (1975, six parts, 135k words). Reflections on the Nixon years. Book of the same title.
 
-**[The Power Broker](https://www.newyorker.com/magazine/1974/08/12/the-power-broker-iii-how-things-get-done) by Robert A. Caro** (1974, four parts, 79k words). On the New York urban planner Robert Moses. Excerpt from the [book of the same title](https://en.wikipedia.org/wiki/The_Power_Broker).
+**[The Power Broker](https://www.newyorker.com/magazine/1974/08/12/the-power-broker-iii-how-things-get-done) by Robert A. Caro** (1974, four parts, 83k words). On the New York urban planner Robert Moses. Excerpt from the [book of the same title](https://en.wikipedia.org/wiki/The_Power_Broker).
 
-**[The Megamachine](https://www.newyorker.com/magazine/1970/10/10/reflections-i-the-megamachine) by Lewis Mumford** (1970, four parts, 84k words). Essay on science and technological process. Excerpt from the book ["The Myth of the Machine: The Pentagon of Power"](https://en.wikipedia.org/wiki/The_Myth_of_the_Machine#Volume_II,_The_Pentagon_of_Power).
+**[The Megamachine](https://www.newyorker.com/magazine/1970/10/10/reflections-i-the-megamachine) by Lewis Mumford** (1970, four parts, 92k words). Essay on science and technological process. Excerpt from the book ["The Myth of the Machine: The Pentagon of Power"](https://en.wikipedia.org/wiki/The_Myth_of_the_Machine#Volume_II,_The_Pentagon_of_Power).
 
 ### Pre-1970
 
