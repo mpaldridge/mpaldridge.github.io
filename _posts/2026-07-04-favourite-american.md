@@ -45,6 +45,7 @@ permalink: /blog/favourite-american.html
 * Tiger Woods’s shot at the 16th hole of the 2005 Masters
 * the view of Manhattan from the Staten Island ferry at dusk
 * *The West Wing*, seasons 1–4
+* xkcd
 * “We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights…”
 
 Happy 250th! Sorry for spelling "favourite" with a U.
