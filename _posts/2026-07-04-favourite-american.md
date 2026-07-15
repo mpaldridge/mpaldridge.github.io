@@ -18,6 +18,7 @@ permalink: /blog/favourite-american.html
 * *Different Trains*
 * *Do The Right Thing*
 * Dwight Garner’s book reviews
+* Edward Hopper's *Nighthawks*
 * eggs Benedict
 * Ernest Hemingway’s novels and short stories
 * Francis Ford Coppola’s run of films in the 1970s
@@ -30,7 +31,6 @@ permalink: /blog/favourite-american.html
 * the LaTeX typesetting system
 * the MacBook Pro, circa 2013
 * *The New Yorker*
-* *Nighthawks*
 * Nina Simone
 * the old Penn station
 * “One Art”
