@@ -37,7 +37,7 @@ We see that which strategy is best depends whether $\delta$ is above or below a 
 
 **Feige's conjecture**, [posed by Uriel Feige in 2005](https://epubs.siam.org/doi/10.1137/S0097539704447304), is that you can't do better than these:
 
-$$ \mathbb P(S \geq n + \delta) \leq \max \big\{ A(n, \delta), C(n, \delta) \big\} \approx \max \left\{\approx 1 - \mathrm{e}^{-1}, \frac{1}{1+\delta} \right\} . $$
+$$ \mathbb P(S \geq n + \delta) \leq \max \big\{ A(n, \delta), C(n, \delta) \big\} \approx \max \left\{1 - \mathrm{e}^{-1}, \frac{1}{1+\delta} \right\} . $$
 
 I first heard of this problem about a year ago, and spent a couple hours thinking about it that afternoon, and occasionally think about it if I'm bored in a seminar or standing in a queue. All in all, I've thought about this problem for maybe half a day -- and made no progress at all. I did learn that the following progress had been made:
 
@@ -56,7 +56,7 @@ $$ D(n, \delta) = 1 - \delta B(n, \delta) = 1 - \delta \left(\frac{1}{1 + \frac{
 
 then
 
-$$ \mathbb P(S \geq n + \delta) \leq \max \big\{ A(n, \delta), D(n, \delta) \big\} \approx \max \left\{\approx 1 - \mathrm{e}^{-1}, 1 - \delta \mathrm{e}^{-\delta} \right\} . $$
+$$ \mathbb P(S \geq n + \delta) \leq \max \big\{ A(n, \delta), D(n, \delta) \big\} \approx \max \left\{1 - \mathrm{e}^{-1}, 1 - \delta \mathrm{e}^{-\delta} \right\} . $$
 
 ![](../assets/img/feige-proved.png)
 
