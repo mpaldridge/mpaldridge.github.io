@@ -13,7 +13,7 @@ Let $X_1, X_2, \dots, X_n$ be independent random variables, each with mean at mo
 
 It's easy to get the sum to $n$: we just let each of the random variables equal 1 with certainty. But to push the sum above $n$ to $n + \delta$ requires taking some risks. After thinking about this for a while, the following three strategies seem like they might be in the running to be the best way.
 
-**Strategy A** is *"Everyone takes a big risk, and we hope one of them comes good."* We let all the $X_i$s be $n + \delta$ with probability $1/(n + \delta)$ and 0 otherwise. (This choice of probability makes the means exactly 1.) This will succeed in getting the sum up to $n + \delta$ as long as at least one of the random variable hits its "jackpot" value $n + \delta$ and fails if all of them hit the 0. The probability this happens is
+**Strategy A** is *"Everyone takes a big risk, and we hope one of them comes good."* We let all the $X_i$s be $n + \delta$ with probability $1/(n + \delta)$ and 0 otherwise. (This choice of probability makes the means exactly 1.) This will succeed in getting the sum up to $n + \delta$ as long as at least one of the random variables hits its "jackpot" value $n + \delta$ and fails if all of them hit the 0. The probability this happens is
 
 $$ A(n, \delta) = 1 - \left(1 - \frac{1}{n+\delta}\right)^n \approx 1 - \mathrm{e}^{-1} . $$
 
