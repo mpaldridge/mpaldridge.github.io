@@ -145,20 +145,20 @@ I didn't count Ved Mehta's immense autobiographical series, known, in its book f
 I didn’t count any of **Elizabeth Drew**’s series of political dispatches, starting with the 1974 run under the rubric [A Reporter in Washington D.C.](https://www.newyorker.com/magazine/1974/03/11/a-reporter-in-washington-d-c-i-autumn-notes) on the downfall of Nixon (two articles, five parts, 138k, book: "Washington Journal"), through to Clinton’s election in 1992. (Other books: "American Journal," "Portrait of an Election," "Campaign Journal," "Election Journal".)
 
 Some long **fiction** (again, highly incomplete before 1970):
-* ["The Love of a Good Woman"](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 22k words, collected in the book of the same title);
-* ["The Trick of It"](https://www.newyorker.com/magazine/1989/08/14/the-trick-of-it) by Michael Frayn (1989, 29k words, book of the same title);
-* ["Nonie"](https://www.newyorker.com/magazine/1984/03/05/nonie) by Harold Brodkey (1984, 33k words, book: "The Runaway Soul");
+* ["The Love of a Good Woman"](https://www.newyorker.com/magazine/1996/12/23/the-love-of-a-good-woman) by Alice Munro (1996, 25k words, collected in the book of the same title);
+* ["The Trick of It"](https://www.newyorker.com/magazine/1989/08/14/the-trick-of-it) by Michael Frayn (1989, 32k words, book of the same title);
+* ["Nonie"](https://www.newyorker.com/magazine/1984/03/05/nonie) by Harold Brodkey (1984, 35k words, book: "The Runaway Soul");
 * ["The Unbearable Lightness of Being"](https://www.newyorker.com/magazine/1984/03/19/the-unbearable-lightness-of-being) by Milan Kundera (1984, 34k words, excerpt from the book of the same title);
-* ["The Laughter of Akiva"](https://www.newyorker.com/magazine/1980/11/10/the-laughter-of-akiva) by Cynthia Ozick (1980, 32k words, reworked as "The Cannibal Galaxy");
-* ["So Long, See You Tomorrow"](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 37k words, book of the same title);
-* ["The Ghost Writer"](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 45k words, book of the same title);
-* ["Largely an Oral History of My Mother"](https://www.newyorker.com/magazine/1976/04/26/largely-an-oral-history-of-my-mother) by Harold Brodkey (1976, 34k words, collected in "Stories in an Almost Classical Mode");
-* ["Long Distance"](https://www.newyorker.com/magazine/1974/04/15/long-distance-2) by Penelope Mortimer (1974, two parts, 51k words, book of the same title);
-* ["The Luzhin Defense"](https://www.newyorker.com/magazine/1964/05/09/the-luzhin-defense-part-i) by Vladimir Nabokov (1965, two parts, 55k words, book of the same title);
-* ["The Evening of the Holiday"](https://www.newyorker.com/magazine/1965/04/17/the-evening-of-the-holiday) by Shirley Hazzard (1965, 31k words, book of the same title)
-* ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 31k words, book of the same title);
+* ["The Laughter of Akiva"](https://www.newyorker.com/magazine/1980/11/10/the-laughter-of-akiva) by Cynthia Ozick (1980, 35k words, reworked as "The Cannibal Galaxy");
+* ["So Long, See You Tomorrow"](https://www.newyorker.com/magazine/1979/10/01/so-long-see-you-tomorrow) by William Maxwell (1979, two parts, 42k words, book of the same title);
+* ["The Ghost Writer"](https://www.newyorker.com/magazine/1979/06/25/the-ghost-writer) by Philip Roth (1979, two parts, 44k words, book of the same title);
+* ["Largely an Oral History of My Mother"](https://www.newyorker.com/magazine/1976/04/26/largely-an-oral-history-of-my-mother) by Harold Brodkey (1976, 38k words, collected in "Stories in an Almost Classical Mode");
+* ["Long Distance"](https://www.newyorker.com/magazine/1974/04/15/long-distance-2) by Penelope Mortimer (1974, two parts, 59k words, book of the same title);
+* ["The Luzhin Defense"](https://www.newyorker.com/magazine/1964/05/09/the-luzhin-defense-part-i) by Vladimir Nabokov (1965, two parts, 63k words, book of the same title);
+* ["The Evening of the Holiday"](https://www.newyorker.com/magazine/1965/04/17/the-evening-of-the-holiday) by Shirley Hazzard (1965, 35k words, book of the same title)
+* ["The Prime of Miss Jean Brodie"](https://www.newyorker.com/magazine/1961/10/14/the-prime-of-miss-jean-brodie) by Muriel Spark (1961, 35k words, book of the same title);
 * ["Seymour: An Introduction"](https://www.newyorker.com/magazine/1959/06/06/seymour-an-introduction) by J. D. Salinger (1959, 30k words, collected in "Raise High the Roof Beam, Carpenters and Seymour: An Introduction")
 * ["Zooey"](https://www.newyorker.com/magazine/1957/05/04/zooey) by J. D. Salinger (1957, 40k words, collected in "Franny and Zooey")
-* ["The Ponder Heart"](https://www.newyorker.com/magazine/1953/12/05/the-ponder-heart) by Eudora Welty (1953, 27k words, book of the same title).
+* ["The Ponder Heart"](https://www.newyorker.com/magazine/1953/12/05/the-ponder-heart) by Eudora Welty (1953, 33k words, book of the same title).
 
 The longest **poem** I found was John Betjeman's autobiographical poem ["Summoned by Bells"](https://www.newyorker.com/magazine/1960/08/27/summoned-by-bells) (1960, 1250 lines, book of the same title). This technically ran as a "Profile", in which case the next-longest poems I know of (without looking very hard) are many of the parts of ["Endpoint"](https://www.newyorker.com/magazine/2009/03/16/endpoint) by John Updike (2009, 280 lines, book of the same title) or ["Falling"](https://www.newyorker.com/magazine/1967/02/11/falling-2) by James Dickey (1967, 180 lines, book: "Falling, May Day Sermon, and other poems").
