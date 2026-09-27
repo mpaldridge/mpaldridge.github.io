@@ -6,9 +6,9 @@ permalink: /teaching/
 
 ## Current teaching
 
-### [MATH5835M Statistical Computing](../math5835/)
+### [MATH5702M Statistical Computing](../math5702/)
 
-In 2025–26, Semester 1, (as in 2024–25) I am the module leader for **MATH5835M Statistical Computing**. [The main module webpage is here.](../math5835/)
+In 2026–27, Semester 1, (as in 2024–25 and 2025–26) I am the module leader for **MATH5702M Statistical Computing**. [The main module webpage is here.](../math5702/) (The module was previously coded as MATH5835M.)
 
 ### OMAT5203M Statistical Computing
 
