@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The birth process is negative binomial"
-date:   2027-11-20
+date:   2026-11-20
 categories: maths
 permalink: /blog/birth-process.html
 use_math: true
@@ -9,7 +9,7 @@ use_math: true
 
 ## What is the birth process?
 
-The **birth process** a random process that works like this. We think of there being $n$ individuals to start with. Each individual gives birth at rate $\lambda$: that is, the time until an individual gives birth is exponentially distributed with rate $\lambda$, so mean time $1/ \lambda$. This is true not just of the $n$ original individuals – if they’ve given birth already, they just start up another $\text{Exp}(\lambda)$ time until their next birth – but also of any of the new births: they also give birth themselves at rate $\lambda$. We keep track of the times when new individuals are born: this collection of times is the birth process.
+The **birth process** is a random process that works like this. We think of there being $n$ individuals to start with. Each individual gives birth at rate $\lambda$: that is, the time until an individual gives birth is exponentially distributed with rate $\lambda$, so mean time $1/ \lambda$. This is true not just of the $n$ original individuals – if they’ve given birth already, they just start up another $\text{Exp}(\lambda)$ time until their next birth – but also of any of the new births: they also give birth themselves at rate $\lambda$. We keep track of the times when new individuals are born: this collection of times represents the birth process.
 
 Two useful facts about the exponential distribution:
 
@@ -25,11 +25,11 @@ This gives us the standard way to “build” a birth process up to time $M$ in 
 
 I’m a bit embarrassed to say that I only recently learned the following facts about the birth process:
 
-* The total number of births up to time $M$ is has a negative binomial distribution.
+* The total number of births up to time $M$ has a negative binomial distribution.
 * The total number of births in _any_ interval has a negative binomial distribution.
 * The total numbers of births in two or more disjoint intervals have a negative multinomial distribution.
 
-The purpose of this blogpost is to try and give a simple argument that demonstrates why this is the case while trying to minimise complexity and maximise intuition. (This was originally going to a reply to [this Math.SE question](https://math.stackexchange.com/questions/695192/elementary-proof-of-geometric-negative-binomial-distribution-in-birth-death-pr), until I realised this answer is too long and the question was posed 12 years ago.) I’m going to do this in three steps:
+The purpose of this blogpost is to try and give a simple argument that demonstrates why this is the case while trying to minimise complexity and maximise intuition. (This was originally going to be a reply to [this Math.SE question](https://math.stackexchange.com/questions/695192/elementary-proof-of-geometric-negative-binomial-distribution-in-birth-death-pr), until I realised this answer is too long and the question was posed 12 years ago.) I’m going to do this in three steps:
 
 1. Explain an alternative “backwards-in-time” description of the birth process.
 2. Prove that the backwards-in-time description is equivalent to the forwards-in-time description above.
@@ -43,12 +43,12 @@ Earlier, we built the birth times starting from time 0 and moving forwards until
 
 The model is this:
 * Let $A_1 \sim \text{Exp}(\lambda)$. This is the “age” of the first individual: assuming this is less than $M$, this means he was born at time $S_1 = M - A_1$.
-* Let $A_2 \sim \text{Exp}(\lambda)$. This is the “age” of the second individual: assuming this is less than $M$, this means she was born at time $S_2 = M - A_1$.
+* Let $A_2 \sim \text{Exp}(\lambda)$. This is the “age” of the second individual: assuming this is less than $M$, this means she was born at time $S_2 = M - A_2$.
 * If you get an $A_j > M$, this means that individual was “already alive” at time 0. Don’t record a birth date, but count them as an “original individual”.
 * Keep generating $\text{Exp}(\lambda)$ ages, and either recording their birth times or counting them as an original individual.
 * Once you have got to $n$ original individuals, stop.
 
-I claim, and will prove later in step 2, that these birth times $\{S_1, S_2, \dots, S_K\}$ have the same distribution as the birth times $\{T_1, T_2, \dots, T_K\}$ as those in the original forward-in-time description. I have written these as sets because the order may be different: indeed, for the forward-in-time description, we have $T_1 < T_2 < \dots$ by construction, but for the backward-in-time description, all reorderings are equally likely.
+I claim, and will prove later in step 2, that these birth times $\{S_1, S_2, \dots, S_K\}$ have the same distribution as the birth times $\{T_1, T_2, \dots, T_K\}$ in the original forward-in-time description. I have written these as sets because the order may be different: indeed, for the forward-in-time description, we have $T_1 < T_2 < \dots$ by construction, but for the backward-in-time description, all reorderings are equally likely.
 
 ## Step 3: Negative binomial description
 
@@ -64,7 +64,7 @@ and the probability of “success” is
  
 $$ p = \mathbb P(A > M) ‎ =  \mathrm{e}^{-\lambda M} . $$
 
-I like to parameterise my negative binomial distributions by $n$ and $\theta = q/p$, the odds against success. (Everyone uses $n$; my colleagues think my preference for $\theta$ rather than $p$ is totally insane.) So, in this notation,
+I like to parameterise my negative binomial distributions by $n$ and by $\theta = q/p$, the odds against success. (Everyone uses $n$; my colleagues think my preference for $\theta$ rather than $p$ is totally insane.) So, in this notation,
 
 $$ \theta = \frac{1 - \mathrm{e}^{-\lambda M}}{\mathrm{e}^{-\lambda M}} = \mathrm{e}^{\lambda M} - 1 . $$
 
@@ -86,7 +86,7 @@ $$ \theta = \frac{\mathrm{e}^{-\lambda (M-t)} -  \mathrm{e}^{-\lambda (M-s)}}{\m
 
 What about the joint distribution of different intervals $[s_1, t_1], [s_2, t_2], \dots, [s_l, t_l]$, where $s_1 < t_1 < s_2 < \cdots < s_l < t_l$ (to make sure the intervals don’t overlap)?
 
-To describe this, we need the _negative multinomial distribution_. Here, we have $l$ different types of failures, with probabilities $q_1, q_2, \dots, q_l$ and one type of success, with probability $p$. Then $X_j$ is the number of successes of type $j$ before the $n$th success. We again ignore the jeering of my under-informed co-workers and write $\theta_j‎ = q_j / p$, which allows for draws that are not any type of failure nor a success.
+To describe this, we need the _negative multinomial distribution_. Here, we have $l$ different types of failures, with probabilities $q_1, q_2, \dots, q_l$ and one type of success, with probability $p$. Then $X_j$ is the number of failures of type $j$ before the $n$th success. We again ignore the jeering of my under-informed co-workers and write $\theta_j‎ = q_j / p$, which allows for draws that are not any type of failure nor a success.
 
 Again, we let a birth in $[s_j, t_j]$ count as a “failure of type $j$” and an age $A > M$ count as a “success”. We then have a negative multinomial distribution with 
 
@@ -117,7 +117,7 @@ What is the density of this same configuration from the backward-in-time constru
 
 $$ n^{\overline{k}} \times \lambda \mathrm{e}^{-\lambda (M-t_1)} \times \lambda \mathrm{e}^{-\lambda (M-t_2)} \times \cdots \times \mathrm{e}^{-\lambda (M-t_k)} \times (\mathrm{e}^{-\lambda M})^n .$$
 
-The $n^{\overline{k}}$ is the number of ways to order the $k$ births among the first $n-1$ original individuals (the first birth can go in any of the $n$ positions compared to the $n-1$ original individuals, the second birth in any of the $n+1$ positions between the $n-1$ originals and the one new birth, etc). Each of the next $k$ terms is the density of the age $M - t_j$ corresponding to birth time $t_j$, and the final term is the $n$ original individuals whose ages exceed $M$. Rearranging gives 
+The $n^{\overline{k}}$ is the number of ways the $k$ births can be interleaved among the first $n-1$ original individuals (the first birth can go in any of the $n$ positions compared to the $n-1$ original individuals, the second birth in any of the $n+1$ positions between the $n-1$ originals and the one new birth, etc). Each of the next $k$ terms is the density of the age $M - t_j$ corresponding to birth time $t_j$, and the final term is the $n$ original individuals whose ages exceed $M$. Rearranging gives 
  
 $$ n^{\overline{k}} \, \lambda^k \, \mathrm{e}^{-\lambda(t_1 + t_2 + \cdots + t_k)} \mathrm{e}^{-(n+k)\lambda M}  $$
 
