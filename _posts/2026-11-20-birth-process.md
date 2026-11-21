@@ -23,6 +23,8 @@ This gives us the standard way to “build” a birth process up to time $M$ in 
 * The third birth happens at time $T_3 = T_2 + \text{Exp}((n+2)\lambda)$.
 * And so on, until we have a $T_{k+1}$ that exceeds $M$: then we can stop.
 
+![](../assets/img/birth-forwards.png)
+
 I’m a bit embarrassed to say that I only recently learned the following facts about the birth process:
 
 * The total number of births up to time $M$ has a negative binomial distribution.
@@ -49,6 +51,8 @@ The model is this:
 * If you get an $A_j > M$, this means that individual was “already alive” at time 0. Don’t record a birth date, but count them as an “original individual”.
 * Keep generating $\text{Exp}(\lambda)$ ages, and either recording their birth times or counting them as an original individual.
 * Once you have got to $n$ original individuals, stop.
+
+![](../assets/img/birth-backwards.png)
 
 I claim, and will prove later in step 2, that these birth times $\lbrace S_1, S_2, \dots, S_K\rbrace$ have the same distribution as the birth times $\lbrace T_1, T_2, \dots, T_K\rbrace$ in the original forward-in-time description. I have written these as sets because the order may be different: indeed, for the forward-in-time description, we have $T_1 < T_2 < \dots$ by construction, but for the backward-in-time description, all reorderings are equally likely.
 
