@@ -82,11 +82,11 @@ Well, here is the advantage of my notation (and why I pay no heed to the ill-con
 
 $$ p = \mathbb P(s \leq M - A \leq t) =  \mathbb P(M-t \leq A \leq M-s)‎ = \mathrm{e}^{-\lambda (M-t)} -  \mathrm{e}^{-\lambda (M-s)} $$
 
-while a success is still $A > M$, as before. Now, the relevant $\theta$ is
+while a success is still $A > M$, as before. If $A$ is less than $M$ but doesn't land $M - A$ in $[s, t]$, we can call that a draw. Now, the relevant $\theta$ is
 
 $$ \theta = \frac{\mathrm{e}^{-\lambda (M-t)} -  \mathrm{e}^{-\lambda (M-s)}}{\mathrm{e}^{-\lambda M}} = \mathrm{e}^{\lambda t} - \mathrm{e}^{\lambda s} . $$
 
-(Luckily, the $M$s cancel out, as we would expect.)
+Thankfully, the $M$s cancel out, as we would expect.
 
 What about the joint distribution of different intervals $[s_1, t_1], [s_2, t_2], \dots, [s_l, t_l]$, where $s_1 < t_1 < s_2 < \cdots < s_l < t_l$ (to make sure the intervals don’t overlap)?
 
