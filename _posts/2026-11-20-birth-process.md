@@ -33,7 +33,7 @@ The purpose of this blogpost is to try and give a simple argument that demonstra
 
 1. Explain an alternative “backwards-in-time” description of the birth process.
 2. Prove that the backwards-in-time description is equivalent to the forwards-in-time description above.
-3. Show that this leads to the negative binomial interval properties.
+3. Show that considering the backwards-in-time description straightforwardly leads to the negative binomial interval properties.
 
 We will take these steps in the order 1, 3, 2.
 
@@ -52,9 +52,9 @@ I claim, and will prove later in step 2, that these birth times $\lbrace S_1, S_
 
 ## Step 3: Negative binomial description
 
-The negative binomial distribution describes the “number of failures before the $n$th success”.
+The negative binomial distribution describes the “number of failures before the $n$th success”. I wanted to show the negative binomial structure of the birth process not by writing down some complicated equations, but rather by explaining how it naturally corresponds to the "failures before successes" slogan.
 
-Now, think of a “failure” as “generating an age that is less than $M$, which gets recorded” and a “success” as “generating an age which is greater than $M$, which counts as an original individual”. Then the number of recorded births in the above backwards-in-time procedure is exactly the number of failures before the $n$th success: a negative binomial distribution!
+With the backwards-in-time description in our heads, we should think of a “failure” as “generating an age that is less than $M$, which corresponds to a recorded birth” and a “success” as “generating an age which is greater than $M$, which counts as an original individual”. Then the number of recorded births in the above backwards-in-time procedure is exactly the number of "failures" before the $n$th "success" stops the procedure. We have a negative binomial distribution!
 
 Specifically, the probability of “failure” is
 
@@ -68,9 +68,7 @@ I like to parameterise my negative binomial distributions by $n$ and by $\theta 
 
 $$ \theta = \frac{1 - \mathrm{e}^{-\lambda M}}{\mathrm{e}^{-\lambda M}} = \mathrm{e}^{\lambda M} - 1 . $$
 
-I would write this as
-
-$$ \xi \big([0, M]\big) \sim \text{NegBin}(n, \mathrm{e}^{\lambda M} - 1) . $$
+I would write this as the number of births before time $M$ being $\text{NegBin}(n, \mathrm{e}^{\lambda M} - 1)$. The expected nuber of births is $n\theta = n (\mathrm{e}^{\lambda M} - 1)$. If we count the $n$ original individuals too, it's $n (\mathrm{e}^{\lambda M} - 1) + n = n\mathrm{e}^{\lambda M}$, and we see that (on average) the population is growing exponentially.
 
 What about the number of births in an interval $[s, t]$? (We should make sure $M > t$, of course.)
 
