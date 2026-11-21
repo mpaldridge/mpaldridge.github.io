@@ -54,7 +54,7 @@ The model is this:
 
 ![](../assets/img/birth-backwards.png)
 
-I claim, and will prove later in step 2, that these birth times $\lbrace S_1, S_2, \dots, S_K\rbrace$ have the same distribution as the birth times $\lbrace T_1, T_2, \dots, T_K\rbrace$ in the original forward-in-time description. I have written these as sets because the order may be different: indeed, for the forward-in-time description, we have $T_1 < T_2 < \dots$ by construction, but for the backward-in-time description, all reorderings are equally likely.
+I claim, and will prove later in step 2, that these birth times $\lbrace S_1, S_2, \dots, S_K\rbrace$ have the same distribution as the birth times $\lbrace T_1, T_2, \dots, T_K\rbrace$ in the original forward-in-time description. I have written these as sets because the order may be different: indeed, for the forward-in-time description, we have $T_1 < T_2 < \cdots$ by construction, but for the backward-in-time description, all reorderings are equally likely.
 
 ## Step 3: Negative binomial description
 
