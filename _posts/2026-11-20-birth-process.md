@@ -58,7 +58,7 @@ I claim, and will prove later in step 2, that these birth times $\lbrace S_1, S_
 
 ## Step 3: Negative binomial description
 
-The negative binomial distribution describes the “number of failures before the $n$th success”. I wanted to show the negative binomial structure of the birth process not by writing down some complicated equations, but rather by explaining how it naturally corresponds to the "failures before successes" slogan.
+The negative binomial distribution describes the “number of failures before the $n$th success”. I want to show the negative binomial structure of the birth process not by writing down some complicated equations, but rather by explaining how it naturally corresponds to the "failures before successes" slogan.
 
 With the backwards-in-time description in our heads, we should think of a “failure” as “generating an age that is less than $M$, which corresponds to a recorded birth” and a “success” as “generating an age which is greater than $M$, which counts as an original individual”. Then the number of recorded births in the above backwards-in-time procedure is exactly the number of "failures" before the $n$th "success" stops the procedure. We have a negative binomial distribution!
 
