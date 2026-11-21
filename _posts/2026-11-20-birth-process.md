@@ -19,7 +19,7 @@ Two useful facts about the exponential distribution:
 This gives us the standard way to “build” a birth process up to time $M$ in a “forwards-in-time” manner:
 
 * The first birth happens at time $T_1 = \text{Exp}(n\lambda)$. This is because, by Property 1, the first of the $n$ births to occur is the minimum of the $n$ $\text{Exp}(\lambda)$ times.
-* The second birth happens at time $T_2 = T_1 + \text{Exp}((n+1)\lambda)$. This is because, by Property 2, we can start all the $n$ clocks from 0 again, plus the new $n+1$th clock for the newly born baby. The smallest of these is $\text{Exp}((n+1)\lambda)$.
+* The second birth happens at time $T_2 = T_1 + \text{Exp}((n+1)\lambda)$. This is because, by Property 2, we can start all the $n$ clocks from 0 again, plus the new $(n+1)$th clock for the newly born baby. The smallest of these is $\text{Exp}((n+1)\lambda)$.
 * The third birth happens at time $T_3 = T_2 + \text{Exp}((n+2)\lambda)$.
 * And so on, until we have a $T_{k+1}$ that exceeds $M$: then we can stop.
 
@@ -48,7 +48,7 @@ The model is this:
 * Keep generating $\text{Exp}(\lambda)$ ages, and either recording their birth times or counting them as an original individual.
 * Once you have got to $n$ original individuals, stop.
 
-I claim, and will prove later in step 2, that these birth times $\{S_1, S_2, \dots, S_K\}$ have the same distribution as the birth times $\{T_1, T_2, \dots, T_K\}$ in the original forward-in-time description. I have written these as sets because the order may be different: indeed, for the forward-in-time description, we have $T_1 < T_2 < \dots$ by construction, but for the backward-in-time description, all reorderings are equally likely.
+I claim, and will prove later in step 2, that these birth times $\lbrace S_1, S_2, \dots, S_K\rbrace$ have the same distribution as the birth times $\lbrace T_1, T_2, \dots, T_K\rbrace$ in the original forward-in-time description. I have written these as sets because the order may be different: indeed, for the forward-in-time description, we have $T_1 < T_2 < \dots$ by construction, but for the backward-in-time description, all reorderings are equally likely.
 
 ## Step 3: Negative binomial description
 
