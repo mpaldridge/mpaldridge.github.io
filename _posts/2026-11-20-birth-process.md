@@ -29,7 +29,9 @@ I’m a bit embarrassed to say that I only recently learned the following facts 
 * The total number of births in _any_ interval has a negative binomial distribution.
 * The total numbers of births in two or more disjoint intervals have a negative multinomial distribution.
 
-The purpose of this blogpost is to try and give a simple argument that demonstrates why this is the case while trying to minimise complexity and maximise intuition. (This was originally going to be a reply to [this Math.SE question](https://math.stackexchange.com/questions/695192/elementary-proof-of-geometric-negative-binomial-distribution-in-birth-death-pr), until I realised this answer is too long and the question was posed 12 years ago.) I’m going to do this in three steps:
+The purpose of this blogpost is to try and give a simple argument that demonstrates why this is the case while trying to minimise complexity and maximise intuition. That is, I don't just want to follow the standard route: write down an equation and show it happens to be solved by the negative binomial mass function. Rather, I want to show how the "failures until successes" explanation of the negative binomial arises naturally from the birth process. (This was originally going to be a reply to [this Math.SE question](https://math.stackexchange.com/questions/695192/elementary-proof-of-geometric-negative-binomial-distribution-in-birth-death-pr), until I realised this answer is too long and the question was posed 12 years ago.)
+
+I’m going to do this in three steps:
 
 1. Explain an alternative “backwards-in-time” description of the birth process.
 2. Prove that the backwards-in-time description is equivalent to the forwards-in-time description above.
